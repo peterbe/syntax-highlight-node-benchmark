@@ -1,0 +1,2 @@
+var style = window.getComputedStyle(elem, null);
+var rgbObj = style.getPropertyCSSValue('color').getRGBColorValue();

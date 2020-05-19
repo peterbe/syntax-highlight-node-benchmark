@@ -1,0 +1,22 @@
+function move_handler(ev) {
+ // Note: if the user makes more than one "simultaneous" touches, most browsers 
+ // fire at least one touchmove event and some will fire several touchmoves.
+ // Consequently, an application might want to "ignore" some touchmoves.
+ //
+ // This function sets the target element's border to "dashed" to visually
+ // indicate the target received a move event.
+ //
+ ev.preventDefault();
+ if (logEvents) log("touchMove", ev, false);
+ // To avoid too much color flashing many touchmove events are started,
+ // don't update the background if two touch points are active
+ if (!(ev.touches.length == 2 && ev.targetTouches.length == 2))
+   update_background(ev);
+
+ // Set the target element's border to dashed to give a clear visual
+ // indication the element received a move event.
+ ev.target.style.border = "dashed";
+
+ // Check this event for 2-touch Move/Pinch/Zoom gesture
+ handle_pinch_zoom(ev);
+}

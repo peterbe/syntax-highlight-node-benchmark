@@ -1,0 +1,5 @@
+var myIndex = objectStore.index('index');
+var getAllKeysRequest = myIndex.getAllKeys();
+getAllKeysRequest.onsuccess = function() {
+  console.log(getAllKeysRequest.result);
+}

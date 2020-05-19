@@ -1,0 +1,5 @@
+const button = document.getElementById('slide');
+
+button.onclick = function () {
+  document.getElementById('container').scrollLeft += 20;
+};

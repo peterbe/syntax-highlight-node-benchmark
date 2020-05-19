@@ -1,0 +1,3 @@
+<p id="para1">Some text here</p>
+<button onclick="changeColor('blue');">Blue</button>
+<button onclick="changeColor('red');">Red</button>

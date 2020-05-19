@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  border-bottom: 3px dotted navy;
+}
+
+a::after {
+  content: " (" attr(id) ")";
+}
+
+#moz::before {
+  content: url("https://mozorg.cdn.mozilla.net/media/img/favicon.ico") ;
+}
+
+#mdn::before {
+  content: url("https://mdn.mozillademos.org/files/7691/mdn-favicon16.png") ;
+}
+
+li {
+  margin: 1em;
+}

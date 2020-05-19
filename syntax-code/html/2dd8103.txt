@@ -1,0 +1,7 @@
+<!-- <a> element links to the section below -->
+<p><a href="#Section_further_down">
+  Jump to the heading below
+</a></p>
+
+<!-- Heading to link to -->
+<h2 id="Section_further_down">Section further down</h2>

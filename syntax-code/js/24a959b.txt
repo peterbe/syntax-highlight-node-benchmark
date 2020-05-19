@@ -1,0 +1,13 @@
+let pose = xrFrame.getViewerPose(xrReferenceSpace);
+
+if (pose) {
+  let glLayer = xrSession.renderState.baseLayer;
+  gl.bindFrameBuffer(gl.FRAMEBUFFER, glLayer.Framebffer);
+
+  for (let view of pose.views) {
+    let viewport = glLayer.getViewport(view);
+    gl.viewport(viewport.x, viewport.y, viewport.width, viewport.height);
+
+    /* Render the view */
+  }
+}

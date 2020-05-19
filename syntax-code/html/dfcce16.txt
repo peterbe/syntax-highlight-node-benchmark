@@ -1,0 +1,6 @@
+<p>WebGL animation by clearing the drawing buffer with solid
+color and applying scissor test.</p> 
+<button id="animation-onoff">
+  Press here to 
+<strong>[verb goes here]</strong>
+  the animation</button>

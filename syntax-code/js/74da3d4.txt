@@ -1,0 +1,8 @@
+var options = {
+  body: 'Do you like my body?',
+  dir: 'rtl'
+}
+
+var n = new Notification('Test notification',options);
+
+console.log(n.dir) // should return 'rtl'

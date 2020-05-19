@@ -1,0 +1,27 @@
+<h3>A list</h3>
+<p>Note that the border box doesn't include the number, so
+  neither do the client rects.</p>
+
+<div>
+  <strong>Original</strong>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ol>
+</div>
+
+<div>
+  <strong>ol's rect</strong>
+  <ol class="withClientRectsOverlay">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ol>
+</div>
+
+<div>
+  <strong>each li's rect</strong>
+  <ol>
+    <li class="withClientRectsOverlay">Item 1</li>
+    <li class="withClientRectsOverlay">Item 2</li>
+  </ol>
+</div>

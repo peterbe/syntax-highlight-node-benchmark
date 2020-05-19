@@ -1,0 +1,4 @@
+if (done) {
+  controller.close();
+  return;
+}

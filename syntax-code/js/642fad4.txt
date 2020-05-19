@@ -1,0 +1,5 @@
+function logEvent(event) {
+  var msg = "Event <strong>" + event.type + "</strong> at <em>" +
+            event.clientX + ", " + event.clientY + "</em>";
+  log(msg);
+}

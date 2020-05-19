@@ -1,0 +1,11 @@
+const input = document.createElement('input');
+input.type = 'time';
+input.min = '23:00';
+input.max = '01:00';
+input.value = '23:59';
+
+if (input.validity.valid && input.type === 'time') {
+  // <input type=time> reversed range supported
+} else {
+  // <input type=time> reversed range unsupported
+}

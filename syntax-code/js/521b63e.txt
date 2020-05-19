@@ -1,0 +1,6 @@
+// Find the top level stylesheet
+if (stylesheet.parentStyleSheet) {
+  sheet = stylesheet.parentStyleSheet;
+} else {
+  sheet = stylesheet;
+}

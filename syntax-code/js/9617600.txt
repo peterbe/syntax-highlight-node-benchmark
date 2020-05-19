@@ -1,0 +1,2 @@
+// Assuming myButton is a button element
+myButton.onclick = function(event){alert('Hello world')}

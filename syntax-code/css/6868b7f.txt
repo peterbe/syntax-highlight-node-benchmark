@@ -1,0 +1,2 @@
+transform-origin: 0 0;
+transform: translate(-100%, 50%) rotate(45deg) translate(100%, -50%);

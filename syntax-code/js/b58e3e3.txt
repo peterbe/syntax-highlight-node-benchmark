@@ -1,0 +1,2 @@
+formData.set('name', 72);
+formData.get('name'); // "72"

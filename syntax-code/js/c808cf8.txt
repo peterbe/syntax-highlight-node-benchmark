@@ -1,0 +1,2 @@
+let offscreen = new OffscreenCanvas(256, 256);
+let gl = offscreen.getContext('webgl');

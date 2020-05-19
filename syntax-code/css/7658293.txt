@@ -1,0 +1,6 @@
+@keyframe validIdent {
+  /* keyframes go here */
+}
+@keyframe 'validString' { 
+  /* keyframes go here */ 
+}

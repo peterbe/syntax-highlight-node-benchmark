@@ -1,0 +1,3 @@
+utterThis.addEventListener('mark', function(event) { 
+  console.log('A mark was reached: ' + event.name);
+});

@@ -1,0 +1,3 @@
+var mydepthNear = vrDisplayInstance.depthNear;
+
+vrDisplayInstance.depthNear = 1.0;

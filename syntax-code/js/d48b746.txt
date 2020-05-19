@@ -1,0 +1,9 @@
+function drop(e) {
+  e.stopPropagation();
+  e.preventDefault();
+
+  const dt = e.dataTransfer;
+  const files = dt.files;
+
+  handleFiles(files);
+}

@@ -1,0 +1,11 @@
+.box10 {
+margin: 0.5em;
+width: 3em;
+height: 3em;
+border: solid 1px;
+background-color: palegreen;
+transform: skewY(50deg);
+-webkit-transform: skewY(50deg);
+transform-origin: 100% -30%;
+-webkit-transform-origin: 100% -30%;
+}

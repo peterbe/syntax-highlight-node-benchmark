@@ -1,0 +1,7 @@
+<p>This text has a red border.</p>
+<div>
+  <p>This text has a red border.</p>
+</div>
+<div class="bar">
+  <p>This text has a black border (initial default, not inherited).</p>
+</div>

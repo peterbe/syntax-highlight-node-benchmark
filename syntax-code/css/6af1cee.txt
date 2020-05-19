@@ -1,0 +1,24 @@
+/* Keyword values */
+offset-anchor: top;
+offset-anchor: bottom;
+offset-anchor: left;
+offset-anchor: right;
+offset-anchor: center;
+offset-anchor: auto;
+
+/* <percentage> values */
+offset-anchor: 25% 75%;
+
+/* <length> values */
+offset-anchor: 0 0;
+offset-anchor: 1cm 2cm;
+offset-anchor: 10ch 8em;
+
+/* Edge offsets values */
+offset-anchor: bottom 10px right 20px;
+offset-anchor: right 3em bottom 10px;
+
+/* Global values */
+offset-anchor: inherit;
+offset-anchor: initial;
+offset-anchor: unset;

@@ -1,0 +1,1 @@
+para.firstChild.data = "Thru-hiking is great, but ";

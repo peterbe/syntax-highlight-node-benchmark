@@ -1,0 +1,1 @@
+<div class="colors">weird color box</div>

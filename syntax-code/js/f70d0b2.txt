@@ -1,0 +1,2 @@
+element.removeEventListener("mousedown", handleMouseDown, false);     // Fails
+element.removeEventListener("mousedown", handleMouseDown, true);      // Succeeds

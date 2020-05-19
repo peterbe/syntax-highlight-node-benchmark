@@ -1,0 +1,4 @@
+let test = document.createElement('p');
+console.log(test.isConnected); // Returns false
+document.body.appendChild(test);
+console.log(test.isConnected); // Returns true

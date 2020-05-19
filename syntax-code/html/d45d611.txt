@@ -1,0 +1,38 @@
+<div class="grid">
+  <div class="col">
+    <div class="note">
+      Given the following animation:
+      <pre>@keyframes slidein {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}</pre>
+    </div>
+    <div class="row">
+      <div class="cell">
+        <button class="play" title="PLAY"></button>
+      </div>
+      <div class="cell flx">
+        <div class="overlay">animation: 3s ease-in 1s 2 reverse both paused slidein;</div>
+        <div class="animation a1"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell">
+        <button class="pause" title="PAUSE"></button>
+      </div>
+      <div class="cell flx">
+        <div class="overlay">animation: 3s linear 1s slidein;</div>
+        <div class="animation a2"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell">
+        <button class="pause" title="PAUSE"></button>
+      </div>
+      <div class="cell flx">
+        <div class="overlay">animation: 3s slidein;</div>
+        <div class="animation a3"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+gl.drawBuffers([gl.NONE, gl.COLOR_ATTACHMENT1]);

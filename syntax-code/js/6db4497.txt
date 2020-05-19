@@ -1,0 +1,10 @@
+const myButton = document.getElementById('my-button-id');
+const someString = 'Data';
+
+myButton.addEventListener('click', function() {
+  console.log(someString);  // Expected Value: 'Data'
+
+  someString = 'Data Again';
+});
+
+console.log(someString);  // Expected Value: 'Data' (will never output 'Data Again')

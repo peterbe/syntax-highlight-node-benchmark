@@ -1,0 +1,2 @@
+var container = document.querySelector("#test");
+var matches = container.querySelectorAll("div.highlighted > p");

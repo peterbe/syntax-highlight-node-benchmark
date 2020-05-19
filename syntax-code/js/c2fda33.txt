@@ -1,0 +1,26 @@
+function gotStream(stream) {
+  log("Got access to the microphone.");
+
+  let audioTracks = stream.getAudioTracks();
+
+  if (hasAddTrack) {
+    if (audioTracks.length > 0) {
+      audioTracks.forEach(track => callerPC.addTrack(track, stream));
+    }
+  } else {
+    log("Your browser doesn't support RTCPeerConnection.addTrack(). Falling " +
+        "back to the <strong>deprecated</strong> addStream() method...");
+    callerPC.addStream(stream);
+  }
+
+  if (callerPC.getSenders) {
+    dtmfSender = callerPC.getSenders()[0].dtmf;
+  } else {
+    log("Your browser doesn't support RTCPeerConnection.getSenders(), so " +
+        "falling back to use <strong>deprecated</strong> createDTMFSender() " +
+        "instead.");
+    dtmfSender = callerPC.createDTMFSender(audioTracks[0]);
+  }
+
+  dtmfSender.ontonechange = handleToneChangeEvent;
+}

@@ -1,0 +1,3 @@
+const watchID = navigator.geolocation.watchPosition((position) => {
+  doSomething(position.coords.latitude, position.coords.longitude);
+});

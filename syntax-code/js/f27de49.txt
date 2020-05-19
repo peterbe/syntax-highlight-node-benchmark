@@ -1,0 +1,3 @@
+window.addEventListener('deviceproximity', function(event) {
+  console.log("value: " + event.value, "max: " + event.max, "min: " + event.min);
+});

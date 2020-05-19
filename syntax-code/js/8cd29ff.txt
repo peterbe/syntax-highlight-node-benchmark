@@ -1,0 +1,5 @@
+pc.addEventListener("connectionstatechange", ev => {
+  switch(pc.connectionState) {
+    /* ... */
+  }
+}, false);

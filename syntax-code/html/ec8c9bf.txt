@@ -1,0 +1,21 @@
+<table border="1">
+  <colgroup>
+    <col span="2"/>
+    <col class="selected"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>A
+      <td>B
+      <td>C
+    </tr>
+    <tr>
+      <td colspan="2">D</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td colspan="2">G</td>
+    </tr>
+  </tbody>
+</table>

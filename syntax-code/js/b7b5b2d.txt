@@ -1,0 +1,2 @@
+var obj = document.createElement('video');
+console.log(obj.duration); // NaN

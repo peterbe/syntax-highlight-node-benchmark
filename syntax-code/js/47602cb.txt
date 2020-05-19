@@ -1,0 +1,9 @@
+let watchme = document.getElementById('watchme')
+
+watchme.className = 'slidein'
+const listener = (e) => {
+  watchme.className = 'slidein stopped'
+}
+watchme.addEventListener('click', () =>
+  watchme.addEventListener('animationiteration', listener, false)
+)

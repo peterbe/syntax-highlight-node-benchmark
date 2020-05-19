@@ -1,0 +1,10 @@
+box.draw({
+  top    : 0.9,             // y
+  bottom : 0,               // y
+  left   : -0.9,            // x
+  right  : 0.9,             // x
+  w      : 1.1,             // w - shrink this box
+
+  depth  : 0.5,             // z
+  color  : [0.4, 1, 0.4, 1] // green
+});

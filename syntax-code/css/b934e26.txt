@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: checkbox-label;
+-webkit-appearance: checkbox-label; }

@@ -1,0 +1,3 @@
+self.clients.get(id).then(function(client) {    
+  self.clients.openWindow(client.url);   
+});

@@ -1,0 +1,12 @@
+div {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  left: 100px;
+  background-color: skyblue;
+}
+
+.moved {
+  transform: perspective(500px) translateZ(200px);
+  background-color: pink;
+}

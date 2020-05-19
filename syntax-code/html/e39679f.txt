@@ -1,0 +1,10 @@
+<input id="myURL" name="myURL" type="url"
+       list="defaultURLs">
+
+<datalist id="defaultURLs">
+  <option value="https://developer.mozilla.org/">
+  <option value="http://www.google.com/">
+  <option value="http://www.microsoft.com/">
+  <option value="https://www.mozilla.org/">
+  <option value="http://w3.org/">
+</datalist>

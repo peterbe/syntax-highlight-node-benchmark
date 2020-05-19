@@ -1,0 +1,9 @@
+.box {
+  background: pink;
+  height: 80px;
+  width: 80px;
+}
+
+.box:empty {
+  background: lime;
+}

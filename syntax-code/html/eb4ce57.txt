@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>scrollbar-darkshadow-color</title>
+  <style>
+    .BlueShadow {
+      scrollbar-darkshadow-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <textarea class="BlueShadow">The gutter elements in the scroll bar for this element will be blue.</textarea>
+</body>
+</html>

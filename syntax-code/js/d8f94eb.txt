@@ -1,0 +1,6 @@
+const sensor = new AbsoluteOrientationSensor();
+sensor.start();
+sensor.onerror = event => {
+  if (event.error.name === 'SecurityError')
+    console.log("No permissions to use AbsoluteOrientationSensor.");
+};

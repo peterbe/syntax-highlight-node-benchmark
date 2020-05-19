@@ -1,0 +1,5 @@
+self.addEventListener('canmakepayment', function(evt) {
+  // Pre-authorize here.
+  let preAuthSuccess = ...;
+  evt.respondWith(preAuthSuccess);
+});

@@ -1,0 +1,5 @@
+let stream = new MediaStream();
+
+stream.onremovetrack = (event) => {
+  console.log(`${event.track.kind} track removed`);
+};

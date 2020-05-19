@@ -1,0 +1,6 @@
+@font-face {
+  font-family: examplefont;
+  src: local(Example Font),
+       url('examplefont.woff') format("woff"),
+       url('examplefont.otf') format("opentype");
+}

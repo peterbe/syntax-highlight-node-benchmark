@@ -1,0 +1,9 @@
+await navigator.locks.request('my_resource', {ifAvailable: true}, async lock => {
+  if (!lock) {
+    // The lock was not granted - get out fast.
+    return;
+  }
+
+  // The lock was granted, and no other running code in this origin is holding
+  // the 'my_res_lock' lock until this returns.
+});

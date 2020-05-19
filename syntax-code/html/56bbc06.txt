@@ -1,0 +1,5 @@
+<p>Move your mouse over the gray box!</p>
+<div class="demo">
+ <div class="growsandstays">This grows and stays big.</div>
+  <div class="grows">This just grows.</div>
+</div>

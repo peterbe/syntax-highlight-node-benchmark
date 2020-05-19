@@ -1,0 +1,3 @@
+var myWorker = new Worker('worker.js');
+
+myWorker.terminate();

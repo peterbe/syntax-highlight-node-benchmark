@@ -1,0 +1,5 @@
+var req = new XMLHttpRequest();
+req.open("POST", url, true);
+// set headers and mime-type appropriately
+req.setRequestHeader("Content-Length", 741);
+req.sendAsBinary(aBody);

@@ -1,0 +1,4 @@
+navigator.storage.estimate().then(estimate => {
+  // estimate.quota is the estimated quota
+  // estimate.usage is the estimated number of bytes used
+});

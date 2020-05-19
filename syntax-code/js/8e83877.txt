@@ -1,0 +1,8 @@
+const requestor = document.querySelector('div');
+
+document.addEventListener('fullscreenerror', (event) => {
+  console.error('an error occurred changing into fullscreen');
+  console.log(event);
+});
+
+requestor.requestFullscreen();

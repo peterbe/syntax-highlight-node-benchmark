@@ -1,0 +1,20 @@
+const notesInQueue = [];
+
+function scheduleNote(beatNumber, time) {
+
+    // push the note on the queue, even if we're not playing.
+    notesInQueue.push({ note: beatNumber, time: time });
+
+    if (pads[0].querySelectorAll('button')[currentNote].getAttribute('aria-checked') === 'true') {
+        playSweep()
+    }
+    if (pads[1].querySelectorAll('button')[currentNote].getAttribute('aria-checked') === 'true') {
+        playPulse()
+    }
+    if (pads[2].querySelectorAll('button')[currentNote].getAttribute('aria-checked') === 'true') {
+        playNoise()
+    }
+    if (pads[3].querySelectorAll('button')[currentNote].getAttribute('aria-checked') === 'true') {
+        playSourceNode(audioCtx, sample);
+    }
+}

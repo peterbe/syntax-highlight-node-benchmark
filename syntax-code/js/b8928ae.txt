@@ -1,0 +1,3 @@
+XRSession.onselectstart = function(event) {
+  console.log("The user has started a primary action, but might not have completed it.")
+}

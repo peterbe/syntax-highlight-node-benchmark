@@ -1,0 +1,2 @@
+var transaction = db.transaction(['my-store-name']); 
+var transaction = db.transaction('my-store-name');

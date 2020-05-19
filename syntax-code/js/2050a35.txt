@@ -1,0 +1,4 @@
+window.ongamepadconnected = function(event) {
+  // All buttons and axes values can be accessed through
+  event.gamepad;
+};

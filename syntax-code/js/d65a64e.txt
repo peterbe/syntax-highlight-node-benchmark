@@ -1,0 +1,7 @@
+dtmfSender.addEventListener("change", function(event) {
+  if (event.tone !== "") {
+    dialStringBox.innerText += event.tone;
+  } else {
+    sendDTMFButton.disabled = false;
+  }
+}, false);

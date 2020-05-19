@@ -1,0 +1,8 @@
+var context = document.getElementById("mySearchBox").msGetInputContext();
+context.addEventListener("MSCandidateWindowShow", candidateWindowShowHandler);
+
+function candidateWindowShowHandler(e) {
+   var imeRect = context.getCandidateWindowClientRect();
+   var suggestionRect = document.getElementById("mySuggestionList").getBoundingClientRect();
+   // Check if the two rects intersect, and position them away from each other.
+}

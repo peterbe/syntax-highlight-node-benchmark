@@ -1,0 +1,5 @@
+function drop_handler(event)
+{
+  var dragData = event.dataTransfer;
+  console.log("mozCursor = " + dragData.mozCursor);
+}

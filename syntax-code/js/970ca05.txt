@@ -1,0 +1,9 @@
+myArray = ['zero', 'one', 'two'];
+
+myArray.myMethod = function (sProperty) {
+    alert(arguments.length > 0 ? this[sProperty] : this);
+};
+
+setTimeout(alert, 1500, 'Hello world!'); // the standard use of setTimeout and setInterval is preserved, but...
+setTimeout.call(myArray, myArray.myMethod, 2000); // prints "zero,one,two" after 2 seconds
+setTimeout.call(myArray, myArray.myMethod, 2500, 2); // prints "two" after 2,5 seconds

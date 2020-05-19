@@ -1,0 +1,8 @@
+body > header {
+  position: fixed;
+  top: 0;
+}
+body > footer {
+  position: fixed;
+  bottom: 0;
+}

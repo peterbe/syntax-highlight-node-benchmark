@@ -1,0 +1,1 @@
+var myPositionState = PositionSensorVRDevice.getState();

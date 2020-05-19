@@ -1,0 +1,1 @@
+fetch('/test').then((r) => console.log(r.url))

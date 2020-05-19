@@ -1,0 +1,10 @@
+var circle = document.getElementById('circle');
+
+// Point not in circle
+console.log('Point at 10,10:', circle.isPointInStroke(new DOMPoint(10, 10)));
+
+// Point in circle but not stroke
+console.log('Point at 40,30:', circle.isPointInStroke(new DOMPoint(40, 30)));
+
+// Point in circle stroke
+console.log('Point at 83,17:', circle.isPointInStroke(new DOMPoint(83, 17)));

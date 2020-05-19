@@ -1,0 +1,3 @@
+function origin() {
+  window.moveTo(0, 0);
+}

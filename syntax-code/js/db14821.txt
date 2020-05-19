@@ -1,0 +1,3 @@
+document.onpointerlockerror = (event) => {
+  console.log('Error locking pointer');
+};

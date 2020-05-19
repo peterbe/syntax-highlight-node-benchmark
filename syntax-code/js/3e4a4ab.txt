@@ -1,0 +1,2 @@
+var span = document.getElementById("born");
+console.log(span.tagName);

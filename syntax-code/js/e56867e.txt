@@ -1,0 +1,23 @@
+pc.onconnectionstatechange = ev => {
+  switch(pc.connectionState) {
+    case "new":
+    case "checking":
+      setOnlineStatus("Connecting...");
+      break;
+    case "connected":
+      setOnlineStatus("Online");
+      break;
+    case "disconnected":
+      setOnlineStatus("Disconnecting...");
+      break;
+    case "closed":
+      setOnlineStatus("Offline");
+      break;
+    case "failed":
+      setOnlineStatus("Error");
+      break;
+    default:
+      setOnlineStatus("Unknown");
+      break;
+  }
+}

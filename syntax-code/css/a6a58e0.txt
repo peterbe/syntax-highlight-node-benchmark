@@ -1,0 +1,3 @@
+@supports not (property: value) {
+  CSS rules to apply
+}

@@ -1,0 +1,13 @@
+// Manually rotating a point about the origin without matrices
+let point = [10, 2];
+
+// Calculate the distance from the origin
+let distance = Math.sqrt(point[0] * point[0] + point[1] * point[1]);
+
+// The equivalent of 60 degrees, in radians
+let rotationInRadians = Math.PI / 3; 
+
+let transformedPoint = [
+  Math.cos(rotationInRadians) * distance,
+  Math.sin(rotationInRadians) * distance
+];

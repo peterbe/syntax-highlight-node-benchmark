@@ -1,0 +1,4 @@
+brightness(0%)   /* Completely black */
+brightness(0.4)  /* 40% brightness */
+brightness(1)    /* No effect */
+brightness(200%) /* Double brightness */

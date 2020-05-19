@@ -1,0 +1,6 @@
+var mySnapshot = null;
+var request = myFileHandle.getFile();
+
+request.onsuccess = function () {
+  mySnapshot = this.result;
+}

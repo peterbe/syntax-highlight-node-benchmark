@@ -1,0 +1,4 @@
+p {
+  hanging-punctuation: first last;
+  margin: .5rem;
+}

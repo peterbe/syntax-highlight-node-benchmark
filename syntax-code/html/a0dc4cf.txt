@@ -1,0 +1,9 @@
+<style type="text/css">
+  #mybox {
+    background-image: -moz-element(#canvasbg);
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+  }
+</style>

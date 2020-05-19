@@ -1,0 +1,3 @@
+  contentZoom.addEventListener("MSContentZoom", function(e) {
+     zoomFactor.value = contentZoom.msContentZoomFactor.toFixed(2);
+  });

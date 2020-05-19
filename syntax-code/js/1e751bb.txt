@@ -1,0 +1,3 @@
+  // WebVR: Indicate that we are ready to present the rendered frame to the VR display
+  vrDisplay.submitFrame();
+}

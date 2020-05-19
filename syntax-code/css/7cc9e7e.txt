@@ -1,0 +1,14 @@
+#target {
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  font: 16px "Open Sans", "Helvetica", sans-serif;
+  color: white;
+  background-color: blue;
+  border: 2px solid darkblue;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

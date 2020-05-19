@@ -1,0 +1,62 @@
+function sessionStarted(session) {
+  let refSpaceType;
+
+  xrSession = session;  
+  xrButton.innerText = "Exit WebXR";
+  xrSession.addEventListener("end", sessionEnded);
+  
+  let canvas = document.querySelector("canvas");
+  gl = canvas.getContext("webgl", { xrCompatible: true });
+
+  if (allowMouseRotation) {
+    canvas.addEventListener("pointermove", handlePointerMove);
+    canvas.addEventListener("contextmenu", (event) => { event.preventDefault(); });
+  }
+    
+  if (allowKeyboardMotion) {
+    document.addEventListener("keydown", handleKeyDown);
+  }
+
+  shaderProgram = initShaderProgram(gl, vsSource, fsSource);
+
+  programInfo = {
+    program: shaderProgram,
+    attribLocations: {
+      vertexPosition: gl.getAttribLocation(shaderProgram, 'aVertexPosition'),
+      vertexNormal: gl.getAttribLocation(shaderProgram, 'aVertexNormal'),
+      textureCoord: gl.getAttribLocation(shaderProgram, 'aTextureCoord'),
+    },
+    uniformLocations: {
+      projectionMatrix: gl.getUniformLocation(shaderProgram, 'uProjectionMatrix'),
+      modelViewMatrix: gl.getUniformLocation(shaderProgram, 'uModelViewMatrix'),
+      normalMatrix: gl.getUniformLocation(shaderProgram, 'uNormalMatrix'),
+      uSampler: gl.getUniformLocation(shaderProgram, 'uSampler')
+    },
+  };
+
+  buffers = initBuffers(gl);
+  texture = loadTexture(gl, 'https://cdn.glitch.com/a9381af1-18a9-495e-ad01-afddfd15d000%2Ffirefox-logo-solid.png?v=1575659351244');
+  
+  xrSession.updateRenderState({
+    baseLayer: new XRWebGLLayer(xrSession, gl)
+  });
+      
+  if (SESSION_TYPE == "immersive-vr") {
+    refSpaceType = "local";
+  } else {
+    refSpaceType = "viewer";
+  }
+
+  mat4.fromTranslation(cubeMatrix, viewerStartPosition); 
+    
+  vec3.copy(cubeOrientation, viewerStartOrientation);
+
+  xrSession.requestReferenceSpace(refSpaceType)
+  .then((refSpace) => {
+    xrReferenceSpace = refSpace.getOffsetReferenceSpace(
+          new XRRigidTransform(viewerStartPosition, cubeOrientation));
+    animationFrameRequestID = xrSession.requestAnimationFrame(drawFrame);
+  });
+  
+  return xrSession;
+}

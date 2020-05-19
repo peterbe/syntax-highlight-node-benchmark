@@ -1,0 +1,2 @@
+<div id="relative">Relatively positioned</div>
+<div id="absolute">Absolutely positioned</div>

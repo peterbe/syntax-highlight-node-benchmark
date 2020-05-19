@@ -1,0 +1,3 @@
+let SPVEvt = new SecurityPolicyViolationEvent('foo', {
+  ...
+});

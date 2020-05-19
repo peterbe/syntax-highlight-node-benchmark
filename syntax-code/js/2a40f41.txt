@@ -1,0 +1,10 @@
+function calculate_time() {
+  var startTime;
+  var endTime;
+
+  startTime = performance.now();
+  do_task();
+  endTime = performance.now();
+
+  return (endTime - startTime);
+}

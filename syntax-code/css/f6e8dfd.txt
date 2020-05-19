@@ -1,0 +1,19 @@
+body {
+  font: 16px sans-serif;
+}
+
+.emailBox {
+  padding-bottom: 20px;
+}
+
+.messageBox {
+  padding-bottom: 20px;
+}
+
+label {
+  line-height: 22px;
+}
+
+label::after {
+  content: ":";
+}

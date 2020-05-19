@@ -1,0 +1,1 @@
+setTimeout(function(arg1){}.bind(undefined, 10), 1000);

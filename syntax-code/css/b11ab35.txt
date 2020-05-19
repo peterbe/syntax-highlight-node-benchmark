@@ -1,0 +1,19 @@
+.main-header,
+.main-footer  {
+  grid-column: col-start / span 12;
+}
+
+.side1 {
+  grid-column: col-start / span 3;
+  grid-row: 2;
+}
+
+.content {
+  grid-column: col-start 4 / span 6; 
+  grid-row: 2;
+}
+
+.side2 {
+  grid-column: col-start 10 / span 3;
+  grid-row: 2;
+}

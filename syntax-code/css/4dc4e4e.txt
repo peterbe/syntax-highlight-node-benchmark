@@ -1,0 +1,2 @@
+.small { font: 19.9px "Constantia", "Times New Roman", "Georgia", "Palatino", serif; }
+.big   { font: 20px "Constantia", "Times New Roman", "Georgia", "Palatino", serif; }

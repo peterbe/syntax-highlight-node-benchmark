@@ -1,0 +1,3 @@
+ <img src="https://developer.mozilla.org/static/img/favicon72.png" 
+      alt="MDN logo" 
+      srcset="https://developer.mozilla.org/static/img/favicon144.png 2x">

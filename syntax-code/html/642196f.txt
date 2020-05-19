@@ -1,0 +1,1 @@
+<meta property="og:image" content="https://example.com/thumbnail.jpg">

@@ -1,0 +1,5 @@
+    // draw the scene normally, without WebVR - for those who don't have it and want to see the scene in their browser
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    drawScene();

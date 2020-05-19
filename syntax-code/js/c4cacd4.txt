@@ -1,0 +1,6 @@
+var ext = gl.getExtension('EXT_blend_minmax');
+
+gl.blendEquation(ext.MIN_EXT);
+gl.blendEquation(ext.MAX_EXT);
+
+gl.blendEquationSeparate(ext.MIN_EXT, ext.MAX_EXT);

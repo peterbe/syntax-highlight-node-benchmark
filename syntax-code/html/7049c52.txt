@@ -1,0 +1,9 @@
+<div class="controls">
+  <button id="script-error" type="button">Generate script error</button>
+  <img class="bad-img" />
+</div>
+
+<div class="event-log">
+  <label>Event log:</label>
+  <textarea readonly class="event-log-contents" rows="8" cols="30"></textarea>
+</div>

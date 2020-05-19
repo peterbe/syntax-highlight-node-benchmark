@@ -1,0 +1,11 @@
+let v = document.getElementById("myVideo");
+
+v.addEventListener("resize", ev => {
+  let w = v.videoWidth;
+  let h = v.videoHeight;
+
+  if (w && h) {
+    v.style.width = w;
+    v.style.height = h;
+  }
+}, false);

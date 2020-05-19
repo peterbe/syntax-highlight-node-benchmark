@@ -1,0 +1,27 @@
+let supportedHandlers = [
+  {
+    supportedMethods: "basic-card",
+    data: {
+      supportedNetworks: ["visa", "mastercard", "amex", "discover"],
+      supportedTypes: ["credit", "debit"]
+    }
+  }
+];
+
+let defaultPaymentDetails = {
+  total: {label: 'Donation', amount: {currency: 'USD', value: '65.00'}},
+  displayItems: [
+    {
+      label: 'Original donation amount',
+      amount: {currency: 'USD', value: '65.00'}
+    }
+  ],
+  shippingOptions: [
+    {
+      id: 'standard',
+      label: 'Standard shipping',
+      amount: {currency: 'USD', value: '0.00'},
+      selected: true
+    }
+  ]
+};

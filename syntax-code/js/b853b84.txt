@@ -1,0 +1,5 @@
+window.onstorage = function(e) {
+  console.log('The ' + e.key +
+    ' key has been changed from ' + e.oldValue +
+    ' to ' + e.newValue + '.');
+};

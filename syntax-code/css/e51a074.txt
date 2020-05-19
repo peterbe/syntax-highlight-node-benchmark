@@ -1,0 +1,3 @@
+div{ color: black;
+-moz-appearance: relevancy-level-indicator;
+-webkit-appearance: relevancy-level-indicator; }

@@ -1,0 +1,9 @@
+/* Sets paragraph text to be very large */
+p { font-size: xx-large; }
+
+/* Sets <h1> text to be 2.5 times the size
+   of the text around it */
+h1 { font-size: 250%; }
+
+/* Sets text enclosed within span tag to be 16px */
+span { font-size: 16px; }

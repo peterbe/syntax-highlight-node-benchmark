@@ -1,0 +1,2 @@
+<p>Text with stroke</p>
+<input type="color" value="#ff0000">

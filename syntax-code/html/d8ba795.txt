@@ -1,0 +1,2 @@
+<div id="level">(battery level unknown)</div>
+<div id="stateBaterry">(charging state unknown)</div>

@@ -1,0 +1,6 @@
+let layerInit = {
+  framebufferScaleFactor: scaleFactor
+};
+let glLayer = new XRWebGLLayer(xrSession, gl, layerInit);
+
+let glLayer = new XRWebGLLayer(xrSession, gl, { framebufferScaleFactor: scaleFactor });

@@ -1,0 +1,3 @@
+<div id='inner'>
+  Watch this element as you resize your viewport's width and height.
+</div>

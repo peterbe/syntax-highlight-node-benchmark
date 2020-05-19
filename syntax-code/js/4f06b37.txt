@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+para.onpointerover = (event) => {
+  console.log('Pointer moved in');
+};

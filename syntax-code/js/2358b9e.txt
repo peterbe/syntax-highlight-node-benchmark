@@ -1,0 +1,5 @@
+var transformFeedback = gl.createTransformFeedback();
+
+// ...
+
+gl.deleteTransformFeedback(transformFeedback);

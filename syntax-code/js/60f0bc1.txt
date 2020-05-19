@@ -1,0 +1,3 @@
+window.addEventListener('cut', (event) => {
+    console.log('cut action initiated')
+});

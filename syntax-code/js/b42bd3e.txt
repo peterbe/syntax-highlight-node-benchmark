@@ -1,0 +1,1 @@
+gamepadHapticActuatorInstance.pulse(value, duration).then(function(result) { ... });

@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.addEventListener('suspend', (event) => {
+  console.log('Data loading has been suspended.');
+});

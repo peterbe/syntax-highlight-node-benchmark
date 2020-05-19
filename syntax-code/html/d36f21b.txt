@@ -1,0 +1,3 @@
+<p class="normal">This paragraph is normal.</p>
+<p class="italic">This paragraph is italic.</p>
+<p class="oblique">This paragraph is oblique.</p>

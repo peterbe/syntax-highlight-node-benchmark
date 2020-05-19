@@ -1,0 +1,10 @@
+/* There is 5 treads, the last one happens 
+   right before the end of the animation. */
+steps(5, end)
+
+/* A two-step staircase, the first one happening 
+   at the start of the animation. */
+steps(2, start)
+
+/* The second parameter is optional. */
+steps(2)

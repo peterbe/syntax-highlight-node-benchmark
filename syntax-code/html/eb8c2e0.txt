@@ -1,0 +1,1 @@
+<button onclick="alertCookieValue()">Show cookie value</button>

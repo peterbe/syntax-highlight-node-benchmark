@@ -1,0 +1,4 @@
+.radial-circle-close {
+  background: radial-gradient(circle closest-side at 25% 75%,
+      red, yellow 10%, #1e90ff 50%, beige);
+}

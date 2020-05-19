@@ -1,0 +1,1 @@
+filter: url(resources.svg#c1)

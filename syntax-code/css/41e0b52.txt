@@ -1,0 +1,18 @@
+.container {
+  max-width: 500px;
+}
+
+.pageinfo-badge {
+  width: 9em;
+  padding-right: 1em;
+  float: left;
+  clip-path: polygon(100% 0, 100% 50%, 90% 70%, 80% 80%,
+             70% 90%, 50% 100%, 0 100%, 0 0);
+  shape-outside: polygon(100% 0, 100% 50%, 90% 70%, 80% 80%,
+             70% 90%, 50% 100%, 0 100%, 0 0);
+}
+
+.contents {
+  margin-top: 1em;
+  font: 16px Arial,Helvetica,Verdana,sans-serif;
+}

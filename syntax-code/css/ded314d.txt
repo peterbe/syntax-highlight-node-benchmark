@@ -1,0 +1,2 @@
+@supports not (not (transform-origin: 2px)) {}
+@supports (display: grid) and (not (display: inline-grid)) {}

@@ -1,0 +1,3 @@
+window.ontransitionend = () => {
+  console.log('Transition ended');
+};

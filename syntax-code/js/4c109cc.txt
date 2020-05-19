@@ -1,0 +1,3 @@
+var xpath = "//*[text()='XPath example']";
+var result = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+document.querySelector("output").textContent = result.singleNodeValue.localName;

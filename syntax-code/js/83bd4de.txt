@@ -1,0 +1,2 @@
+var templateElement = document.querySelector("#foo");
+var documentFragment = templateElement.content.cloneNode(true);

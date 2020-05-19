@@ -1,0 +1,8 @@
+var vertexShaderSource =
+  'attribute vec4 position;\n' +
+  'void main() {\n' +
+  '  gl_Position = position;\n' +
+  '}\n';
+
+//Use the createShader function from the example above
+var vertexShader = createShader(gl, vertexShaderSource, gl.VERTEX_SHADER)

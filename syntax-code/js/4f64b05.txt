@@ -1,0 +1,3 @@
+// Global vars to cache event state
+var evCache = new Array();
+var prevDiff = -1;

@@ -1,0 +1,7 @@
+let head = document.getElementsByTagName('head').item(0);
+
+if (head.compareDocumentPosition(document.body) & Node.DOCUMENT_POSITION_FOLLOWING) {
+  console.log('Well-formed document');
+} else {
+  console.log('<head> is not before <body>');
+}

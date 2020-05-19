@@ -1,0 +1,4 @@
+body {
+  -webkit-mask-image: url('images/mask.png');
+  -webkit-mask-attachment: fixed;
+}

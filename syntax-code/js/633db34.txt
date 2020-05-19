@@ -1,0 +1,9 @@
+function remove_event(ev) {
+ // Remove this event from the target's cache
+ for (var i = 0; i < evCache.length; i++) {
+   if (evCache[i].pointerId == ev.pointerId) {
+     evCache.splice(i, 1);
+     break;
+   }
+ }
+}

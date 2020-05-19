@@ -1,0 +1,13 @@
+let inboundStream = null;
+
+pc.ontrack = ev => {
+  if (ev.streams && ev.streams[0]) {
+    videoElem.srcObject = ev.streams[0];
+  } else {
+    if (!inboundStream) {
+      inboundStream = new MediaStream();
+      videoElem.srcObject = inboundStream;
+    }
+    inboundStream.addTrack(ev.track);
+  }
+}

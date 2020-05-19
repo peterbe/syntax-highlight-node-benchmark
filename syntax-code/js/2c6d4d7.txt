@@ -1,0 +1,5 @@
+// The calling script is on the origin 'https://example.com'
+
+fetch('https://example.com', {
+  credentials: 'same-origin'
+});

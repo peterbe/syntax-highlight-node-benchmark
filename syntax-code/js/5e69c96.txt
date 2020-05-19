@@ -1,0 +1,10 @@
+function onError(e) {
+  postMEssage('ERROR:' + e.toString());
+}
+
+try {
+  //Error is thrown if "log.txt" already exists.
+var fileEntry = fs.root.getFile('log.txt', {create: true, exclusive:true}0;
+} catch (e) {
+  onErrror(e);
+} 

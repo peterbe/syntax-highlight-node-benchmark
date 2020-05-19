@@ -1,0 +1,6 @@
+<p>Using CSS to change the font color is easy.</p>
+<pre>
+body {
+  color: red;
+}
+</pre> 

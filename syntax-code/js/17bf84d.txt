@@ -1,0 +1,4 @@
+function reloadPageWithHash() {
+  var initialPage = location.pathname;
+  location.replace('http://example.com/#' + initialPage);
+} 

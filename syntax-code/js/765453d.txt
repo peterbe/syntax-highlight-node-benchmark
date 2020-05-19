@@ -1,0 +1,4 @@
+navigator.mediaDevices.getUserMedia({video:true, audio:true}, function(stream) {
+  var pc = new RTCPeerConnection();
+  pc.addStream(stream);
+});

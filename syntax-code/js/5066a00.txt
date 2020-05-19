@@ -1,0 +1,9 @@
+var myFrequencyArray = new Float32Array(5);
+myFrequencyArray[0] = 1000;
+myFrequencyArray[1] = 2000;
+myFrequencyArray[2] = 3000;
+myFrequencyArray[3] = 4000;
+myFrequencyArray[4] = 5000;
+
+var magResponseOutput = new Float32Array(5);
+var phaseResponseOutput = new Float32Array(5);

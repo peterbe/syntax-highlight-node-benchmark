@@ -1,0 +1,4 @@
+<form>
+  <label>Type something:</label>
+  <input type="text">
+</form>

@@ -1,0 +1,2 @@
+canvasCtx.fillStyle = 'rgb(200, 200, 200)';
+canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);

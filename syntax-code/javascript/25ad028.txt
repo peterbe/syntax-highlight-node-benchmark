@@ -1,0 +1,16 @@
+request.show()
+.then(function(paymentResponse) {
+    // Process payment here.
+    // Close the UI:
+    paymentResponse.complete('success').then(function() {
+        // Request additional shipping address details.
+        const additionalDetailsContainer = document.getElementById('additional-details-container');
+        additionalDetailsContainer.style.display = 'block';
+        window.scrollto(additionalDetailsContainer.getBoundingClientRect().x, 0);
+    }).catch(function(error) {
+        // Handle error.
+    });
+})
+.catch(function(error) {
+    // Handle error.
+});

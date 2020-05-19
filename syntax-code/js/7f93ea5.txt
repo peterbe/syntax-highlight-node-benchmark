@@ -1,0 +1,13 @@
+// add an appropriate event listener
+obj.addEventListener("cat", function(e) { process(e.detail) });
+
+// create and dispatch the event
+let event = new CustomEvent("cat", {
+  detail: {
+    hazcheeseburger: true
+  }
+});
+obj.dispatchEvent(event);
+
+// Will return an object contaning the hazcheeseburger property
+let myDetail = event.detail;

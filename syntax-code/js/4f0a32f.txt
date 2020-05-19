@@ -1,0 +1,25 @@
+var targetBox = document.getElementById("target");
+
+targetBox.onpointerdown = handleDown;
+
+function handleDown(evt) {
+  var action;
+ 
+  switch(evt.pointerType) {
+    case "mouse":
+      action = "clicking";
+      break;
+    case "pen":
+      action = "tapping";
+      break;
+    case "touch":
+      action = "touching";
+      break;
+    default:
+      action = "interacting with";
+      break;
+  }
+ 
+  targetBox.innerHTML = "<strong>Thanks for " + action + " me!</strong>";
+  evt.preventDefault();
+}

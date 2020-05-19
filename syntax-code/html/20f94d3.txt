@@ -1,0 +1,2 @@
+<div class="transition"></div>
+<div class="message"></div>

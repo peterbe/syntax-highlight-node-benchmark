@@ -1,0 +1,5 @@
+function osInfo() { 
+  alert(window.navigator.oscpu); 
+}
+
+osInfo(); // alerts "Windows NT 6.0" for example

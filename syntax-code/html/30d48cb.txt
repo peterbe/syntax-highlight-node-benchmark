@@ -1,0 +1,10 @@
+<div id="bordered">You can try out various border repetition rules on me!</div>
+
+<select id="repetition">
+  <option value="stretch">stretch</option>
+  <option value="repeat">repeat</option>
+  <option value="round">round</option>
+  <option value="space">space</option>
+  <option value="stretch repeat">stretch repeat</option>
+  <option value="space round">space round</option>
+</select>

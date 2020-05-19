@@ -1,0 +1,6 @@
+pauseButton.onclick = function(evt) {
+  const newState = !myAudioTrack.enabled;
+
+  pauseButton.innerHTML = newState ? "&#x25B6;&#xFE0F;" : "&#x23F8;&#xFE0F;";
+  myAudioTrack.enabled = newState;
+}

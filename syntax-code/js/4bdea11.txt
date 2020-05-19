@@ -1,0 +1,1 @@
+var blockName = gl.getActiveUniformBlockName(program, 0);

@@ -1,0 +1,4 @@
+span {
+  text-transform: capitalize;
+}
+strong { float: right; }

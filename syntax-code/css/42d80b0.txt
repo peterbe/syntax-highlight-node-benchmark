@@ -1,0 +1,9 @@
+input:-ms-input-placeholder {
+  color: red;
+  font-style: italic;
+}
+
+input:-moz-placeholder {
+  color: red;
+  font-style: italic;
+}

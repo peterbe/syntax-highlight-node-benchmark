@@ -1,0 +1,7 @@
+var request = new XMLHttpRequest();
+request.open('GET', '/bar/foo.txt', false);  // `false` makes the request synchronous
+request.send(null);
+
+if (request.status === 200) {
+  console.log(request.responseText);
+}

@@ -1,0 +1,6 @@
+/* Force the article to print as white-on-black */
+article {
+  -webkit-print-color-adjust: exact;
+  background: #222;
+  color: #eee;
+}

@@ -1,0 +1,17 @@
+function advanceResult() {
+  list.innerHTML = '';
+  var transaction = db.transaction(['rushAlbumList'], "readonly");
+  var objectStore = transaction.objectStore('rushAlbumList');
+
+  objectStore.openCursor().onsuccess = function(event) {
+    var cursor = event.target.result;
+    if(cursor) {
+      var listItem = document.createElement('li');
+      listItem.innerHTML = '<strong>' + cursor.value.albumTitle + '</strong>, ' + cursor.value.year;
+      list.appendChild(listItem);  
+      cursor.advance(2);
+    } else {
+      console.log('Every other entry displayed.');
+    }
+  };
+};

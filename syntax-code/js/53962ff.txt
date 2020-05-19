@@ -1,0 +1,14 @@
+let pc = new RTCPeerConnection();
+let dc = pc.createDataChannel("MessageChannel")}};
+
+dc.onopen = function(event) {
+  document.getElementById("messageBox").disabled = false;
+  document.getElementById("sendButton").disabled = false;
+};
+
+dc.onclose = function(event) {
+  document.getElementById("messageBox").disabled = true;
+  document.getElementById("sendButton").disabled = true;
+}
+
+/* Now negotiate the connection, etc... */

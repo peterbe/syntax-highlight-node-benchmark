@@ -1,0 +1,5 @@
+// Handle messages received on port1
+function onMessage(e) {
+  output.innerHTML = e.data;
+  input.value = '';
+}

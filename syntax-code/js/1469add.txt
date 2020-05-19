@@ -1,0 +1,11 @@
+xrSession.addEventListener("visibilitystate", e => {
+  switch(e.session.visibilitystate) {
+    case "visible":
+    case "visible-blurred":
+      mySessionVisible(true);
+      break;
+    case "hidden":
+      mySessionVisible(false);
+      break;
+  }
+});

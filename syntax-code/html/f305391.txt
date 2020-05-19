@@ -1,0 +1,6 @@
+<p class="content-box">
+  This is a bunch of text split into multiple
+  columns. The CSS `column-fill` property is
+  used to spread the contents evenly across
+  all the columns.
+</p>

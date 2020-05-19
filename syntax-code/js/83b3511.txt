@@ -1,0 +1,10 @@
+const constraints = { audio: true, video: true };
+const config = {
+  iceServers: [{ urls: "stun:stun.mystunserver.tld" }]
+};
+
+const selfVideo = document.querySelector("video.selfview");
+const remoteVideo = document.querySelector("video.remoteview");
+
+const signaler = new SignalingChannel();
+const pc = new RTCPeerConnection(config);

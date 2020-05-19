@@ -1,0 +1,4 @@
+var numFiles = 0;
+var fileArray = {};
+
+inputElement.mozGetFileNameArray(numFiles, fileArray);

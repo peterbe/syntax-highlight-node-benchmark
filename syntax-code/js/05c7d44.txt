@@ -1,0 +1,1 @@
+ServiceWorkerGlobalScope.onnotificationclick = function(NotificationEvent) { ... };

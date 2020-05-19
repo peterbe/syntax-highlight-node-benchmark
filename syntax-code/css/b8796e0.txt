@@ -1,0 +1,21 @@
+td{
+  font-family:"Yu Gothic";
+  font-size:20px;
+}
+th{
+  color:grey;
+  padding-right:10px;
+}
+
+.ruby {
+  font-variant-east-asian: ruby;
+}
+
+.jis78 { 
+  font-variant-east-asian: jis78; 
+}
+
+.traditional{
+  font-variant-east-asian: traditional;
+}
+

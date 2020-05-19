@@ -1,0 +1,9 @@
+function handleICECandidateEvent(event) {
+  if (event.candidate) {
+    sendToServer({
+      type: "new-ice-candidate",
+      target: targetUsername,
+      candidate: event.candidate
+    });
+  }
+}

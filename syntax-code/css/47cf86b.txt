@@ -1,0 +1,8 @@
+input, label {
+  display: block;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  border: 1px solid grey;
+  background: #FFFAAA;
+}

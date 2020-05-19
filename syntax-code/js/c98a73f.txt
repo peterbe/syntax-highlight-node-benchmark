@@ -1,0 +1,1 @@
+​PushManager.getSubscription().then(function(pushSubscription) { ... } );

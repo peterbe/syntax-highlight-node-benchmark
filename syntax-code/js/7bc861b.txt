@@ -1,0 +1,11 @@
+var input  = document.getElementById('input'),
+    kern   = document.getElementById('kern'),
+    nokern = document.getElementById('nokern');
+
+input.addEventListener('keyup', function() {
+  kern.textContent = input.value; /* Update content */
+  nokern.textContent = input.value;
+});
+
+kern.textContent = input.value; /* Initialize content */
+nokern.textContent = input.value;

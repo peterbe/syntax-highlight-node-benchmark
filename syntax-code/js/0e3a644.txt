@@ -1,0 +1,24 @@
+function connectAndDial() {
+  callerPC = new RTCPeerConnection();
+
+  hasAddTrack = (callerPC.addTrack !== undefined);
+
+  callerPC.onicecandidate = handleCallerIceEvent;
+  callerPC.onnegotiationneeded = handleCallerNegotiationNeeded;
+  callerPC.oniceconnectionstatechange = handleCallerIceConnectionStateChange;
+  callerPC.onsignalingstatechange = handleCallerSignalingStateChangeEvent;
+  callerPC.onicegatheringstatechange = handleCallerGatheringStateChangeEvent;
+
+  receiverPC = new RTCPeerConnection();
+  receiverPC.onicecandidate = handleReceiverIceEvent;
+
+  if (hasAddTrack) {
+    receiverPC.ontrack = handleReceiverTrackEvent;
+  } else {
+    receiverPC.onaddstream = handleReceiverAddStreamEvent;
+  }
+
+  navigator.mediaDevices.getUserMedia(mediaConstraints)
+  .then(gotStream)
+  .catch(err => log(err.message));
+}

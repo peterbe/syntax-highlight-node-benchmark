@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.onstalled = (event) => {
+  console.log('Failed to fetch data, but trying.');
+};

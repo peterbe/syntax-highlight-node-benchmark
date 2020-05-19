@@ -1,0 +1,1 @@
+var myDOMRect = new DOMRect(x, y, width, height);

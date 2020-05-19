@@ -1,0 +1,8 @@
+window.addEventListener('unload', logData, false);
+
+function logData() {
+    var client = new XMLHttpRequest();
+    client.open("POST", "/log", false); // third parameter indicates sync xhr. :(
+    client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+    client.send(analyticsData);
+}

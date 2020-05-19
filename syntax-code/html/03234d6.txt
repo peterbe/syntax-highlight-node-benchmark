@@ -1,0 +1,3 @@
+<p>When the process is complete, the utility will output the text
+<samp>Scan complete. Found <em>N</em> results.</samp> You can then
+proceed to the next step.</p>

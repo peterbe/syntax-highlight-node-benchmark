@@ -1,0 +1,2 @@
+<p>Click anywhere to move the ball</p>
+<div id="foo"></div>

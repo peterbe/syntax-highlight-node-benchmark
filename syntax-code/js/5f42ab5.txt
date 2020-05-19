@@ -1,0 +1,35 @@
+let metersInputGroup = document.querySelector('.metersInputGroup');
+let feetInputGroup = document.querySelector('.feetInputGroup');
+let metersInput = document.querySelector('#meters');
+let feetInput = document.querySelector('#feet');
+let inchesInput = document.querySelector('#inches');
+let switchBtn = document.querySelector('input[type="button"]');
+
+switchBtn.addEventListener('click', function() {
+  if(switchBtn.getAttribute('class') === 'meters') {
+    switchBtn.setAttribute('class', 'feet');
+    switchBtn.value = 'Enter height in meters';
+
+    metersInputGroup.style.display = 'none';
+    feetInputGroup.style.display = 'block';
+
+    feetInput.setAttribute('required', '');
+    inchesInput.setAttribute('required', '');
+    metersInput.removeAttribute('required');
+
+    metersInput.value = '';
+  } else {
+    switchBtn.setAttribute('class', 'meters');
+    switchBtn.value = 'Enter height in feet and inches';
+
+    metersInputGroup.style.display = 'block';
+    feetInputGroup.style.display = 'none';
+
+    feetInput.removeAttribute('required');
+    inchesInput.removeAttribute('required');
+    metersInput.setAttribute('required', '');
+
+    feetInput.value = '';
+    inchesInput.value = '';
+  }
+});

@@ -1,0 +1,12 @@
+<p>Please provide the information below. Items marked with "*" are required.</p>
+<form action="" method="get">
+  <p>
+    <label for="userName" required>Your name:</label>
+    <input type="text" id="userName"> (*)
+  </p>
+  <p>
+    <label for="email">Email:</label>
+    <input type="email" id="userEmail">
+  </p>
+  <input type="submit" value="Send" id="sendButton">
+</form>

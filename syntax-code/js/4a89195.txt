@@ -1,0 +1,1 @@
+​PushManager.hasPermission().then(function(pushPermissionStatus) { ... } );

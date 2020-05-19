@@ -1,0 +1,13 @@
+navigator.xr.requestSession("inline").then((xrSession) => {
+  xrSession.addEventListener("visibilitychange", e => {
+    switch(e.session.visiblityState) {
+      case "visible":
+      case "visible-blurred":
+        mySessionVisible(true);
+        break;
+      case "hidden":
+        mySessionVisible(false);
+        break;
+    }
+  });
+});

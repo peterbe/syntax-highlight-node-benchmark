@@ -1,0 +1,1 @@
+elm.setAttribute('class', elm.getAttribute('class'))

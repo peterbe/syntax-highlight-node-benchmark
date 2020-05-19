@@ -1,0 +1,27 @@
+function getXR(usePolyfill) {
+  let tempXR;
+  let tempPoly;
+
+  switch(usePolyfill) {
+    case "if-needed":
+      if (!navigator.xr) {
+        tempPoly = new WebXRPolyfill();
+      }
+      tempXR = navigator.xr;
+      break;
+    case "yes":
+      tempPoly = new WebXRPolyfill();
+      tempXR = navigator.xr;
+      break;
+    case "no":
+    default:
+      tempXR = navigator.xr;
+      break;
+  }
+
+  return tempXR;
+}
+
+const xr = getXR("no");  // Get the native XRSystem object
+const xr = getXR("yes"); // Always returns an XRSystem from the polyfill
+const xr = getXR("if-needed"); // Use the polyfill only if navigator.xr missing

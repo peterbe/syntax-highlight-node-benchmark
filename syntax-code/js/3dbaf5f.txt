@@ -1,0 +1,2 @@
+stream.getTrackById("primary-audio-track").applyConstraints({ volume: 0.5 });
+stream.getTrackById("commentary-track").enabled = true;

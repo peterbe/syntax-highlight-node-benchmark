@@ -1,0 +1,7 @@
+const layerOptions = {
+  ignoreDepthValues: true
+};
+
+xrSession.updateRenderState({
+  baseLayer: new XRWebGLLayer(xrSession, gl, layerOptions);
+});

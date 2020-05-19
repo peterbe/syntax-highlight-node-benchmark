@@ -1,0 +1,4 @@
+<div class="box">
+</div>
+
+<div class="runButton">Click me to run the animation</div>

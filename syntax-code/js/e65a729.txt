@@ -1,0 +1,10 @@
+pc.onicecandidateerror = function(event) {
+  if (event.errorCode >= 300 && event.errorCode <= 699) {
+    // STUN errors are in the range 300-699. See RFC 5389, section 15.6
+    // for a list of codes. TURN adds a few more error codes; see
+    // RFC 5766, section 15 for details.
+  } else if (event.errorCode >= 700 && event.errorCode <= 799) {
+    // Server could not be reached; a specific error number is
+    // provided but these are not yet specified.
+  }
+}

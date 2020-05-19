@@ -1,0 +1,5 @@
+var recognition = new SpeechRecognition();
+
+recognition.onend = function() {
+  console.log('Speech recognition service disconnected');
+}

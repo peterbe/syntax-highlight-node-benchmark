@@ -1,0 +1,6 @@
+var mediaElem = document.querySelector("video, audio");
+var numTextTracks = 0;
+
+if (mediaElem.textTracks) {
+  numTextTracks = mediaElem.textTracks.length;
+}

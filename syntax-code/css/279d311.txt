@@ -1,0 +1,4 @@
+div {
+  background-image:
+     repeating-conic-gradient(#fff 0 9deg, #000 9deg 18deg);
+}

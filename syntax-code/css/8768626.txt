@@ -1,0 +1,7 @@
+progress {
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-inner-element {
+  border: 2px solid black;
+}

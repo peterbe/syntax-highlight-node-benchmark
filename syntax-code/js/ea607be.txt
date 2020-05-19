@@ -1,0 +1,8 @@
+var options = {
+  body: 'Do you like my body?',
+  renotify: true
+}
+
+var n = new Notification('Test notification',options);
+
+console.log(n.renotify) // should log true

@@ -1,0 +1,1 @@
+document.evaluate(".//h2", document.body, null, XPathResult.ANY_TYPE, null);

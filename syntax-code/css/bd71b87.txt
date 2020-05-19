@@ -1,0 +1,4 @@
+li::-moz-list-number {
+  font-style: italic;
+  font-weight: bold;
+}

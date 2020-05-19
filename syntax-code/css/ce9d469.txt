@@ -1,0 +1,47 @@
+p {
+  font-size: 2rem;
+  font-family: Lora, serif;
+}
+.normal {
+  font-variant-ligatures: normal;
+}
+
+.none {
+  font-variant-ligatures: none;
+}
+
+.common-ligatures {
+  font-variant-ligatures: common-ligatures;
+}
+
+.no-common-ligatures {
+  font-variant-ligatures: no-common-ligatures;
+}
+
+.discretionary-ligatures {
+  font-variant-ligatures: discretionary-ligatures;
+}
+
+.no-discretionary-ligatures {
+  font-variant-ligatures: no-discretionary-ligatures;
+}
+
+.historical-ligatures {
+  font-variant-ligatures: historical-ligatures;
+}
+
+.no-historical-ligatures {
+  font-variant-ligatures: no-historical-ligatures;
+}
+
+.contextual {
+  font-variant-ligatures: contextual;
+}
+
+.no-contextual {
+  font-variant-ligatures: no-contextual;
+}
+
+.contextual {
+  font-variant-ligatures: contextual;
+}

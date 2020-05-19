@@ -1,0 +1,4 @@
+element.animate({
+  opacity: [ 0, 1 ], // offset: 0, 1
+  backgroundColor: [ "red", "yellow", "green" ], // offset: 0, 0.5, 1
+}, 2000);

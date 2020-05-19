@@ -1,0 +1,9 @@
+var obj = document.getElementById('example');
+
+obj.addEventListener('loadeddata', function() {
+
+  if(obj.readyState >= 2) {
+    obj.play();
+  }
+
+});

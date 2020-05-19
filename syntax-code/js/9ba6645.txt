@@ -1,0 +1,11 @@
+const videoElement = document.querySelector('video');
+videoElement.videoTracks.onchange = (event) => {
+    console.log(`'${event.type}' event fired`);
+};
+
+// changing the value of `selected` will trigger the `change` event
+const toggleTrackButton = document.querySelector('.toggle-track');
+toggleTrackButton.addEventListener('click', () => {
+  const track = videoElement.videoTracks[0];
+  track.selected = !track.selected;
+});

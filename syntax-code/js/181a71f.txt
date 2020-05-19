@@ -1,0 +1,4 @@
+const list = document.querySelectorAll('input[type=checkbox]');
+for (let checkbox of list) {
+  checkbox.checked = true;
+}

@@ -1,0 +1,12 @@
+.event-log {
+    width: 25rem;
+    height: 4rem;
+    border: 1px solid black;
+    margin: .5rem;
+    padding: .2rem;
+}
+
+input {
+    width: 11rem;
+    margin: .5rem;
+}

@@ -1,0 +1,9 @@
+async function fillSourceBuffer(buffer, msBuffer) {
+  try {
+    while(true) {
+      await msBuffer.appendBufferAsync(buffer);
+    }
+  } catch(e) {
+    handleException(e);
+  }
+}

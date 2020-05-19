@@ -1,0 +1,5 @@
+// inside static/scripts/worker.js
+
+self.addEventListener('message', (event) => {
+    console.log(`Received message from parent: ${event.data}`);  
+});

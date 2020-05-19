@@ -1,0 +1,5 @@
+gl.getParameter(gl.BLEND_EQUATION_RGB) === gl.FUNC_ADD;
+// true
+
+gl.getParameter(gl.BLEND_EQUATION_ALPHA) === gl.FUNC_ADD; 
+// true

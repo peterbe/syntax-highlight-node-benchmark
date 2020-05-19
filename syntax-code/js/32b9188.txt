@@ -1,0 +1,17 @@
+// Old webkitAudioContext code:
+var osc = context.createOscillator();
+osc.type = osc.SINE;     // sine waveform
+osc.type = osc.SQUARE;   // square waveform
+osc.type = osc.SAWTOOTH; // sawtooth waveform
+osc.type = osc.TRIANGLE; // triangle waveform
+osc.setWaveTable(table);
+var isCustom = (osc.type == osc.CUSTOM); // isCustom will be true
+
+// New standard AudioContext code:
+var osc = context.createOscillator();
+osc.type = "sine";       // sine waveform
+osc.type = "square";     // square waveform
+osc.type = "sawtooth";   // sawtooth waveform
+osc.type = "triangle";   // triangle waveform
+osc.setPeriodicWave(table);  // Note: setWaveTable has been renamed to setPeriodicWave!
+var isCustom = (osc.type == "custom"); // isCustom will be true

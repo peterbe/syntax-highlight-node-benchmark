@@ -1,0 +1,2 @@
+gl.getParameter(gl.PACK_ALIGNMENT);
+gl.getParameter(gl.UNPACK_ALIGNMENT);

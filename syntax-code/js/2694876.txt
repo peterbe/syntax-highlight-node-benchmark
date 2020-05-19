@@ -1,0 +1,9 @@
+let dataChannel = pc.createDataChannel("MyApp Channel", {
+  negotiated: true
+});
+
+dataChannel.addEventListener("open", (event) => {
+  beginTransmission(dataChannel);
+});
+
+requestRemoteChannel(dataChannel.id);

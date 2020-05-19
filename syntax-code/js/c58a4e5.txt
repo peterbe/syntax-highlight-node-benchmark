@@ -1,0 +1,3 @@
+var videoEle = document.createElement('video');
+videoEle.defaultMuted = true;
+console.log(videoEle.outerHTML); // <video muted=""></video>

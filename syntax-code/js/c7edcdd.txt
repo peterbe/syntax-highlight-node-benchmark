@@ -1,0 +1,3 @@
+xrSession.onselectstart = onSelectionEvent;
+xrSession.onselect = onSelectionEvent;
+xrSession.onselectend = onSelectionEvent;

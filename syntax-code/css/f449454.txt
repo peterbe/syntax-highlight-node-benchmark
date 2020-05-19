@@ -1,0 +1,9 @@
+.animation {
+  animation: vibrate 0.3s linear infinite both; 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: none;
+  }
+}

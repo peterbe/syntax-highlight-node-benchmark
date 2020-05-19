@@ -1,0 +1,3 @@
+.box {
+  padding-block: 5px 10px;
+}

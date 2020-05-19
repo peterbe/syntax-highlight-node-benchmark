@@ -1,0 +1,6 @@
+var dc = peerConnection.createDataChannel("File Transfer");
+dc.bufferedAmountLowThreshold = 65535;
+
+dc.onbufferedamountlow = function() {
+  /* use send() to queue more data to be sent */
+};

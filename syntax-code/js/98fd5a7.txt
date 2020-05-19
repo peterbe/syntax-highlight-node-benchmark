@@ -1,0 +1,3 @@
+let mathProduct = CSS.px("24").div(CSS.percent("4"));
+// Prints "calc(24px / 4%)"
+mathProduct.toString();

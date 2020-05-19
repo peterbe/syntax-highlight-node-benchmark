@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  background: beige;
+}
+
+div {
+  height: 60px;
+  background: cyan;
+  margin: 5px;
+}
+
+div:nth-child(3) {
+  align-self: flex-end;
+  background: pink;
+}

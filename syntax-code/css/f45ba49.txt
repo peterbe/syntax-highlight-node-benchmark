@@ -1,0 +1,5 @@
+div {
+  width: 120px;
+  height: 120px;
+  float: left; margin-right: 10px; box-sizing: border-box;
+}

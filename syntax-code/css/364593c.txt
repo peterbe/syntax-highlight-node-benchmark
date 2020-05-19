@@ -1,0 +1,4 @@
+input[type="file"]::-ms-browse {
+  color: red;
+  background-color: yellow;
+}

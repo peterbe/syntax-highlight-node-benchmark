@@ -1,0 +1,10 @@
+var req = navigator.push.register();
+
+req.onsuccess = function(e) {
+  var endpoint = req.result;
+  debug("New endpoint: " + endpoint );
+}
+
+req.onerror = function(e) {
+  debug("Error getting a new endpoint: " + JSON.stringify(e));
+}

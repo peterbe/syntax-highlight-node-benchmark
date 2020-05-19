@@ -1,0 +1,5 @@
+async function disableHold(micStream) {
+  await audioTransceiver.sender.replaceTrack(micStream.getAudioTracks()[0]);
+  audioTransceiver.receiver.track.enabled = true;
+  audioTransceiver.direction = "sendrecv";
+}

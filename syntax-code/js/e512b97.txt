@@ -1,0 +1,2 @@
+var offlineAudioCtx = new OfflineAudioContext();
+offlineAudioCtx.oncomplete = function() { ... }

@@ -1,0 +1,5 @@
+// getting
+var iterationCompositeEnumeration = keyframeEffect.iterationComposite;
+
+// setting
+keyframeEffect.iterationComposite = 'replace';

@@ -1,0 +1,3 @@
+<s>Today's Special: Salmon</s> SOLD OUT<br>
+<span style="text-decoration:line-through;">Today's Special:
+  Salmon</span> SOLD OUT

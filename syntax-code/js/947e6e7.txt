@@ -1,0 +1,3 @@
+document.ontransitionrun = () => {
+  console.log('Started transitioning');
+};

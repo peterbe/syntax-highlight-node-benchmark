@@ -1,0 +1,16 @@
+const panner = new PannerNode(audioCtx, {
+    panningModel: pannerModel,
+    distanceModel: distanceModel,
+    positionX: positionX,
+    positionY: positionY,
+    positionZ: positionZ,
+    orientationX: orientationX,
+    orientationY: orientationY,
+    orientationZ: orientationZ,
+    refDistance: refDistance,
+    maxDistance: maxDistance,
+    rolloffFactor: rollOff,
+    coneInnerAngle: innerCone,
+    coneOuterAngle: outerCone,
+    coneOuterGain: outerGain
+})

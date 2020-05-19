@@ -1,0 +1,4 @@
+window.addEventListener('vrdisplaydeactivate', function() {
+  info.textContent = 'Display deactivated.';
+  reportDisplays();
+});

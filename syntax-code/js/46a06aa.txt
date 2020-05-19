@@ -1,0 +1,3 @@
+function isDocumentInFullScreenMode() {
+  return document.fullscreenElement !== null;
+}

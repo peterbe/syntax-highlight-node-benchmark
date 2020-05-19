@@ -1,0 +1,7 @@
+function sendFiles() {
+  const imgs = document.querySelectorAll(".obj");
+  
+  for (let i = 0; i < imgs.length; i++) {
+    new FileUpload(imgs[i], imgs[i].file);
+  }
+}

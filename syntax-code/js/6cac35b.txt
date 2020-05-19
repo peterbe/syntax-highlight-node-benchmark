@@ -1,0 +1,28 @@
+var publicKey = {
+  timeout: 6000, // Accepting to wait for a minute before giving up.
+  challenge: new Uint8Array(26) /* this actually is given from the server */,
+  rp: {
+    name: "Example CORP",
+    id  : "login.example.com"
+  },
+  user: {
+    id: new Uint8Array(26), /* To be changed for each user */
+    name: "jdoe@example.com",
+    displayName: "John Doe",
+  },
+  pubKeyCredParams: [
+    {
+      type: "public-key",
+      alg: -7
+    }
+  ]
+};
+
+navigator.credentials.create({ publicKey })
+  .then(function (newCredentialInfo) {
+    // send attestation response and client extensions
+    // to the server to proceed with the registration
+    // of the credential
+  }).catch(function (err) {
+     console.error(err);
+  });

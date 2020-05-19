@@ -1,0 +1,7 @@
+  function sendMessage() {
+    var message = messageInputBox.value;
+    sendChannel.send(message);
+    
+    messageInputBox.value = "";
+    messageInputBox.focus();
+  }

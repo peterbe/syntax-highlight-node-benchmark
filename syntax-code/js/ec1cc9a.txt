@@ -1,0 +1,9 @@
+if (pc.addTrack !== undefined) {
+  pc.ontrack = ev => {
+    ev.streams.forEach(stream => doAddStream(stream));
+  }
+} else {
+  pc.onaddstream = ev => {
+    doAddStream(ev.stream);
+  }
+}

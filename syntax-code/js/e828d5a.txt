@@ -1,0 +1,10 @@
+var video1 = object.getElementById("video1");
+
+video1.addEventListener('error', function () {
+  var error = video1.error.msExtendedCode;
+  //...
+}, false);
+
+video.addEventListener('canplay', function () {
+  video1.play();
+}, false);

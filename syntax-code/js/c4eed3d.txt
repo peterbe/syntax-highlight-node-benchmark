@@ -1,0 +1,14 @@
+let context = null;
+
+let playButton = null;
+let volumeControl = null;
+
+let oscNode1 = null;
+let oscNode2 = null;
+let oscNode3 = null;
+let constantNode = null;
+let gainNode1 = null;
+let gainNode2 = null;
+let gainNode3 = null;
+
+let playing = false;

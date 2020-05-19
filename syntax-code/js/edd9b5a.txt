@@ -1,0 +1,6 @@
+let box = document.querySelector(".box");
+let image = box.querySelector("img");
+ 
+let newElem = document.createElement("p");
+newElem.innerHTML = `Image: <code>${image.currentSrc}</code>`;
+box.appendChild(newElem);

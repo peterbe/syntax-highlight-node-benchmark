@@ -1,0 +1,10 @@
+var canvas = document.getElementById('canvas');
+var gl = canvas.getContext('webgl');
+
+canvas.addEventListener('webglcontextrestored', function(e) {
+  console.log(e); 
+}, false);
+
+gl.getExtension('WEBGL_lose_context').restoreContext();
+
+// "webglcontextrestored" event is logged.

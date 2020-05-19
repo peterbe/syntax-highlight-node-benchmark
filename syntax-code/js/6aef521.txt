@@ -1,0 +1,2 @@
+// s is a MediaStream 
+var event = new MediaStreamEvent("addstream", {"stream": s});

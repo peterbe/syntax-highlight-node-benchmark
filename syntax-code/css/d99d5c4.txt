@@ -1,0 +1,6 @@
+.fancy {
+  background-image: paint(headerHighlight);
+}
+h1 { --highColour: hsla(155, 90%, 60%, 0.7); }
+h3 { --highColour: hsla(255, 90%, 60%, 0.5); }
+h6 { --highColour: hsla(355, 90%, 60%, 0.3); }

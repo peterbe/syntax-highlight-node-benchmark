@@ -1,0 +1,3 @@
+<head>
+  <isindex prompt="Search Document..." action="/search">
+</head>

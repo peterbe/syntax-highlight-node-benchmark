@@ -1,0 +1,14 @@
+let openRequest = indexedDB.open("telemetry");
+openRequest.onsuccess = (event) => {
+  let db = event.target.result;
+  let store = db.transaction("netlogs").objectStore("netlogs");
+
+  let today = new Date();
+  let yesterday = new Date(today);
+  yesterday.setDate(today.getDate() - 1);
+  let request = store.getKey(IDBKeyRange(yesterday, today));
+  request.onsuccess = (event) => {
+    let when = event.target.result;
+    alert("The 1st activity in last 24 hours was occurred at " + when);
+  };
+};

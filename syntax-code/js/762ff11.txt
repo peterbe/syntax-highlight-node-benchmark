@@ -1,0 +1,12 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const text = 'Abcdefghijklmnop';
+ctx.font = 'italic 50px serif';
+const textMetrics = ctx.measureText(text);
+
+console.log(textMetrics.width);
+// 459.8833312988281
+
+console.log(Math.abs(textMetrics.actualBoundingBoxLeft) +
+            Math.abs(textMetrics.actualBoundingBoxRight));
+// 462.8833333333333

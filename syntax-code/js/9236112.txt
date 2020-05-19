@@ -1,0 +1,3 @@
+document.addEventListener('pointerenter', (event) => {
+  console.log('Pointer entered element');
+});

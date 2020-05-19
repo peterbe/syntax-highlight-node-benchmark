@@ -1,0 +1,4 @@
+let itemPrice = {
+  currency: "USD",
+  value: "42.95"
+};

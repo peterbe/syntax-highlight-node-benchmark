@@ -1,0 +1,3 @@
+<div>Static</div>
+<div class="moved">Moved</div>
+<div>Static</div>

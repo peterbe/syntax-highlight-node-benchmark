@@ -1,0 +1,3 @@
+div{ color: black;
+-moz-appearance: media-seek-back-button;
+-webkit-appearance: media-seek-back-button; }

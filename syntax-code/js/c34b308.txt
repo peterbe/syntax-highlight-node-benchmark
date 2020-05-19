@@ -1,0 +1,3 @@
+document.onvisibilitychange = function() { 
+  console.log("Visibility of page has changed!");
+}; 

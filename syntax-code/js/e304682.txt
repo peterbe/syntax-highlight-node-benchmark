@@ -1,0 +1,6 @@
+function success(position) {
+  const latitude  = position.coords.latitude;
+  const longitude = position.coords.longitude;
+
+  // Do something with your latitude and longitude
+}

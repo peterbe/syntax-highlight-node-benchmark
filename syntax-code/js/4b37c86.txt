@@ -1,0 +1,9 @@
+var targetElement = document.getElementById("elementToAnimate");
+
+var keyframes = new KeyframeEffect( targetElement, keyframeBlock, timingOptions );
+
+// returns #elementToAnimate
+keyframes.target;
+
+// assigns keyframes a new target
+keyframes.target = newTargetElement;

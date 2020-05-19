@@ -1,0 +1,24 @@
+function print_PerformanceEntry(ev) {
+  var properties = ["name", "entryType", "startTime", "duration"];
+
+  // Create a few performance entries
+  performance.mark("Start");
+  do_work(50000);
+  performance.mark("Stop");
+  performance.measure("measure-1");
+
+  var p = performance.getEntries();
+  for (var i=0; i < p.length; i++) {
+    log("PerfEntry[" + i + "]");
+    for (var j=0; j < properties.length; j++) {
+      // check each property in window.performance
+      var supported = properties[j] in p[i];
+      if (supported) {
+        var pe = p[i];
+        log("... " + properties[j] + " = " + pe[properties[j]]);
+      } else {
+        log("... " + properties[j] + " = Not supported");
+      }
+    }
+  }
+}

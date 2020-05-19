@@ -1,0 +1,1 @@
+responseObj.redirect('https://www.example.com', 302);

@@ -1,0 +1,11 @@
+// <div id="one" xmlns:myNS="http://www.mozilla.org/ns/specialspace" 
+//            myNS:special-align="utterleft">one</div> 
+// <div id="two">two</div> 
+
+
+var myns = "http://www.mozilla.org/ns/specialspace"; 
+var d1 = document.getElementById("one"); 
+var d2 = document.getElementById("two"); 
+var a = d1.getAttributeNodeNS(myns, "special-align"); 
+d2.setAttributeNodeNS(a.cloneNode(true));
+alert(d2.attributes[1].value) // returns: `utterleft'

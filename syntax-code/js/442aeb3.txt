@@ -1,0 +1,7 @@
+function logReset(event) {
+  log.textContent = `Form reset! Time stamp: ${event.timeStamp}`;
+}
+
+const form = document.getElementById('form');
+const log = document.getElementById('log');
+form.onreset = logReset;

@@ -1,0 +1,11 @@
+var gamepads = navigator.getGamepads();
+var gp = gamepads[0];
+
+if(gp) {
+  var gpPose = gp.pose;
+  var curPos = gpPose.position;
+  var curOrient = gpPose.orientation;
+  if(poseStatsDisplayed) {
+    displayPoseStats(gpPose);
+  }
+}

@@ -1,0 +1,7 @@
+let iceTransport = pc.getSenders()[0].transport.iceTransport;
+
+iceTransport.addEventListener("statechange", ev => {
+  if (iceTransport.state === "failed") {
+    handleFailure(pc);
+  }
+}, false);

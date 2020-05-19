@@ -1,0 +1,8 @@
+var encoder = new TextEncoder;
+function encodeIntoAtPosition(string, u8array, position) {
+    return encoder.encodeInto(string, position ? u8array.subarray(position|0) : u8array);
+}
+
+var u8array = new Uint8Array(8);
+encodeIntoAtPosition("hello", u8array, 2);
+console.log( "" + u8array.join() ); // 0,0,104,101,108,108,111,0

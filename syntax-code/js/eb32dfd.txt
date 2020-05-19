@@ -1,0 +1,30 @@
+// fileInput is a HTMLInputElement: <input type="file" id="myfileinput" multiple>
+var fileInput = document.getElementById("myfileinput");
+
+// files is a FileList object (similar to NodeList)
+var files = fileInput.files;
+
+// object for allowed media types
+var accept = {
+  binary : ["image/png", "image/jpeg"],
+  text   : ["text/plain", "text/css", "application/xml", "text/html"]
+};
+
+var file;
+
+for (var i = 0; i < files.length; i++) {
+  file = files[i];
+
+  // if file type could be detected
+  if (file !== null) {
+    if (accept.text.indexOf(file.mediaType) > -1) {
+      // file is of type text, which we accept
+      // make sure it's encoded as utf-8
+      var data = file.getAsText("utf-8");
+      // modify data with string methods
+
+    } else if (accept.binary.indexOf(file.mediaType) > -1) {
+      // binary
+    }
+  }
+}

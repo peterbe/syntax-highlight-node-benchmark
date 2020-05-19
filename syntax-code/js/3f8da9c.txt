@@ -1,0 +1,10 @@
+...
+
+  record.onclick = function() {
+    mediaRecorder.start();
+    console.log(mediaRecorder.state);
+    // Will return "recording"
+    console.log("recorder started");
+  }
+
+...

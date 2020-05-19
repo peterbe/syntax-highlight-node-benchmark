@@ -1,0 +1,4 @@
+ <h1>fullscreenchange event example</h1>
+ <div id="fullscreen-div">
+   <button id="toggle-fullscreen">Toggle Fullscreen Mode</button>
+ </div>

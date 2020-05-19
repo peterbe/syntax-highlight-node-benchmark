@@ -1,0 +1,34 @@
+<form>
+  <div>
+    <label for="country">Choose your country:</label>
+    <select id="country" name="country">
+      <option>UK</option>
+      <option selected>US</option>
+      <option>Germany</option>
+    </select>
+  </div>
+  <div>
+    <p>Enter your telephone number: </p>
+    <span class="areaDiv">
+      <input id="areaNo" name="areaNo" type="tel" required
+             placeholder="Area code" pattern="[0-9]{3}"
+             aria-label="Area code">
+      <span class="validity"></span>
+    </span>
+    <span class="number1Div">
+      <input id="number1" name="number1" type="tel" required
+             placeholder="First part" pattern="[0-9]{3}"
+             aria-label="First part of number">
+      <span class="validity"></span>
+    </span>
+    <span class="number2Div">
+      <input id="number2" name="number2" type="tel" required
+             placeholder="Second part" pattern="[0-9]{4}"
+             aria-label="Second part of number">
+      <span class="validity"></span>
+    </span>
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>

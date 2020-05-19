@@ -1,0 +1,6 @@
+<canvas id="canvas"></canvas>
+<div style="display:none;">
+  <img id="source"
+       src="https://mdn.mozillademos.org/files/5397/rhino.jpg"
+       width="300" height="227">
+</div>

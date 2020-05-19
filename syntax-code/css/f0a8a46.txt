@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#log {
+  flex-shrink: 0;
+  padding-left: 3em;
+}
+
+#summaries {
+  flex-grow: 1;
+}

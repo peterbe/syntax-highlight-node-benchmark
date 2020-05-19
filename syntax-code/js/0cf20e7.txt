@@ -1,0 +1,6 @@
+pc.addEventListener("datachannel", ev => {
+  receiveChannel = ev.channel;
+  receiveChannel.onmessage = myHandleMessage;
+  receiveChannel.onopen = myHandleOpen;
+  receiveChannel.onclose = myHandleClose;
+}, false);

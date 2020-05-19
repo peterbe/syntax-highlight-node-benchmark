@@ -1,0 +1,3 @@
+<label id="label1" for="test">Label 1</label>
+<button id="test">Button</button>
+<label id="label2" for="test">Label 2</label>

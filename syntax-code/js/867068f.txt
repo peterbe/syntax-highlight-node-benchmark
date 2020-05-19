@@ -1,0 +1,3 @@
+// Turn on all the internal borders of a table
+var t = document.getElementById("TableID");
+t.rules = "all";

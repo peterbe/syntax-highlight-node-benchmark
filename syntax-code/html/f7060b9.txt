@@ -1,0 +1,2 @@
+<p>Double click anywhere in this example.</p>
+<p id="log"></p>

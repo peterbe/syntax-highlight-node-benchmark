@@ -1,0 +1,6 @@
+<!DOCTYPE HTML>
+<html>
+  <body style="font-weight:bold;">
+    <div style="color:red" id="myElement">..</div>
+  </body>
+</html>

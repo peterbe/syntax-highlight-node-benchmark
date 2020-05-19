@@ -1,0 +1,46 @@
+#container {
+  display: flex;
+}
+
+#container > div:nth-child(-n+2) {
+  margin-right: 20px;  
+}
+
+.scrollContainer {
+  width: 100px;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 20px 0;
+  font-size: 0;
+}
+
+.destination0 {
+  scroll-snap-destination: 0 0;
+}
+
+.destination25 {
+  scroll-snap-destination: 25px 0;
+}
+
+.destination50 {
+  scroll-snap-destination: 50px 0;
+}
+
+.scrollContainer > div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  line-height: 100px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.scrollContainer > div:nth-child(even) {
+  background-color: #87EA87;
+}
+
+.scrollContainer > div:nth-child(odd) {
+  background-color: #87CCEA;
+}

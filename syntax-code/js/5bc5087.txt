@@ -1,0 +1,8 @@
+function removeGamepads() {
+    var gpLi = document.querySelectorAll('.gamepad');
+    for(var i = 0; i < gpLi.length; i++) {
+    list.removeChild(gpLi[i]);
+    }
+
+    reportGamepads();
+}

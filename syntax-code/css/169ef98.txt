@@ -1,0 +1,30 @@
+span {
+  outline-style: solid;
+  display: inline-block;
+  margin: 20px;
+}
+
+#thin {
+  outline-width: thin;
+}
+
+#medium {
+  outline-width: medium;
+}
+
+#thick {
+  outline-width: thick;
+}
+
+#twopixels {
+  outline-width: 2px;
+}
+
+#oneex {
+  outline-width: 1ex;
+}
+
+#em {
+  outline-width: 1.2em;
+}
+

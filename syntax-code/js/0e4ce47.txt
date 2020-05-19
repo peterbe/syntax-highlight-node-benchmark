@@ -1,0 +1,27 @@
+function load_resource() {
+  var image = new Image();
+  image.src = "https://developer.mozilla.org/static/img/opengraph-logo.png";
+}
+function clear_performance_timings() {
+  if (performance === undefined) {
+    log("Browser does not support Web Performance");
+    return;
+  }
+  // Create a resource timing performance entry by loading an image
+  load_resource();
+
+  var supported = typeof performance.clearResourceTimings == "function";
+  if (supported) {
+    console.log("Run: performance.clearResourceTimings()");
+    performance.clearResourceTimings();
+  } else {
+    console.log("performance.clearResourceTimings() NOT supported");
+    return;
+  }
+  // getEntries should now return zero
+  var p = performance.getEntriesByType("resource");
+  if (p.length == 0) 
+    console.log("... Performance data buffer cleared");
+  else
+    console.log("... Performance data buffer NOT cleared!");
+}

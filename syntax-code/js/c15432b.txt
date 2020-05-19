@@ -1,0 +1,4 @@
+let bgImage = allComputedStyles.get('background-image');
+
+console.log( bgImage );             // CSSImageValue
+console.log( bgImage.toString() );  // url("https://mdn.mozillademos.org/files/16793/magicwand.png")

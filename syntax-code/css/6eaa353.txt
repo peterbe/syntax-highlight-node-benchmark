@@ -1,0 +1,6 @@
+.color-hint {
+  background: linear-gradient(blue, 10%, pink);
+}
+.simple-linear {
+  background: linear-gradient(blue, pink);
+}

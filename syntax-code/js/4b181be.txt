@@ -1,0 +1,7 @@
+var init = {
+             data : 'hello message',
+             source : MessagePortReference,
+             ports : MessagePortListReference
+           }
+
+var myEME = new ExtendableMessageEvent('message', init);

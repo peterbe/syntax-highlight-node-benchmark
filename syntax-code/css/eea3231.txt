@@ -1,0 +1,17 @@
+/*
+This example uses the Source Sans Pro OpenType font, developed by Adobe
+and used here under the terms of the SIL Open Font License, Version 1.1:
+http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
+*/
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://mdn.mozillademos.org/files/15757/SourceSansPro-Regular.otf") format("opentype");
+}
+
+.ordinal {
+  font-variant-numeric: ordinal;
+  font-family: "Source Sans Pro";
+}

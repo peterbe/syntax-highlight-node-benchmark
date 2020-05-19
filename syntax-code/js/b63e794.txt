@@ -1,0 +1,15 @@
+const paymentRequest = new PaymentRequest(methodData, details, options);
+
+paymentRequest.addEventListener("shippingaddresschange", event => {
+  let detailsUpdate = checkAddress(paymentRequest.shippingAddress);
+  event.updateWith(detailsUpate);
+}, false);
+
+const checkAddress = theAddress => {
+  let detailsUpdate = {};
+
+  // Check the address, return a PaymentDetailsUpdate object
+  // with any changes or errors.
+
+  return detailsUpdate;  
+};

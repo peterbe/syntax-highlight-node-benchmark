@@ -1,0 +1,9 @@
+<p><span style="font-weight: bold; color: blue">Whoa, bold blue text!</span></p>
+<p><span style="font-weight: italic; color: red">Exciting: italic red text!</span></p>
+<p>Boring normal text ;-(</p>
+
+<hr>
+
+<p contenteditable="true">Go on, try pasting some content into this editable paragraph and see what happens!</p>
+
+<p class="result"></p>

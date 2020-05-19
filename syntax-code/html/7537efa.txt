@@ -1,0 +1,3 @@
+<label for="userPassword">Password: </label>
+<input id="userPassword" type="password" required>
+<input type="submit" value="Submit">

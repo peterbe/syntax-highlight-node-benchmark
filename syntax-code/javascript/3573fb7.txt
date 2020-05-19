@@ -1,0 +1,15 @@
+let paymentRequest = new PaymentRequest(
+    [{supportedMethods: 'https://example.com/preauth'}], ...);
+// Send `CanMakePayment` event to the payment handler.
+paymentRequest.canMakePayment()
+    .then(function(res) {
+      if (res) {
+       // The payment handler has pre-authorized a transaction
+       // with some static amount, e.g., USD $1.00.
+      } else {
+        // Pre-authorization failed or payment handler not installed.
+      }
+    })
+    .catch(function(ex1) {
+      // Unexpected error occurred.
+    });

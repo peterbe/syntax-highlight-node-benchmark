@@ -1,0 +1,2 @@
+var audioCtx = new AudioContext();
+var destination = audioCtx.createMediaStreamDestination();

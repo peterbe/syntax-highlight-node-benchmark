@@ -1,0 +1,2 @@
+var tr = document.getElementById("row1");
+var corner_td = tr.lastChild;

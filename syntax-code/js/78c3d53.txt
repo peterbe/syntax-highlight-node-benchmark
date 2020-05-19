@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+para.onpointerleave = (event) => {
+  console.log('Pointer left element');
+};

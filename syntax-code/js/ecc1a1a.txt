@@ -1,0 +1,18 @@
+const http = require('http');
+
+function requestHandler(request, response) {
+  const headers = {
+    'Server-Timing': `
+      cache;desc="Cache Read";dur=23.2,
+      db;dur=53,
+      app;dur=47.2
+    `.replace(/\n/g, '')
+  };
+  response.writeHead(200, headers);
+  response.write('');
+  return setTimeout(_ => {
+   response.end();
+ }, 1000)
+};
+
+http.createServer(requestHandler).listen(3000).on('error', console.error);

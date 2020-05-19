@@ -1,0 +1,9 @@
+const audioCtx = new AudioContext();
+const button = document.querySelector('button');
+
+button.addEventListener('click', function() {
+      // check if context is in suspended state (autoplay policy)
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+}, false);

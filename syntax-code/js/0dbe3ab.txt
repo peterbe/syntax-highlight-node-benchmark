@@ -1,0 +1,8 @@
+window.onsubmit = function send_analytics() {
+  var data = JSON.stringify({
+    location: location.href,
+    time: Date()
+  });
+
+  navigator.sendBeacon('/analytics', data);
+};

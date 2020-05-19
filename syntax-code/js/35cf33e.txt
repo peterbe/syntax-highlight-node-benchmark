@@ -1,0 +1,2 @@
+  var oTiming = window.performance.timing;
+  var iTimeMS = oTiming.msFirstPaint - oTiming.navigationStart;

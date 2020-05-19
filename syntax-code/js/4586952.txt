@@ -1,0 +1,9 @@
+box.draw({
+  top    : 0.9,             // x
+  bottom : 0,               // x
+  left   : -0.9,            // y
+  right  : 0.9,             // y
+                            
+  depth  : 0.5,             // z
+  color  : [0.4, 1, 0.4, 1] // green
+});

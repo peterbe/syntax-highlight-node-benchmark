@@ -1,0 +1,2 @@
+conic-gradient(red, orange, yellow, green, blue);
+conic-gradient(red 0deg, orange 90deg, yellow 180deg, green 270deg, blue 360deg);

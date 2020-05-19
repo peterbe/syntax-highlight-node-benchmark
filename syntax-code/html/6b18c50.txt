@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>style Property Example</title>
+  <link rel="StyleSheet" href="example.css" type="text/css">
+  <script type="text/javascript">
+    function stilo() {
+      document.getElementById('d').style.color = 'orange';
+    }
+    function resetStyle() {
+      document.getElementById('d').style.color = 'black';
+    }
+  </script>
+ </head>
+
+ <body>
+  <div id="d" class="thunder">Thunder</div>
+  <button onclick="stilo()">Click here to change text color</button>
+  <button onclick="resetStyle()">Reset text color</button>
+ </body>
+</html>

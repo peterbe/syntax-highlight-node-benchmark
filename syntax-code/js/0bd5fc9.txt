@@ -1,0 +1,3 @@
+document.addEventListener('animationstart', () => {
+  console.log('Animation started');
+});

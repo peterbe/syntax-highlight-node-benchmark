@@ -1,0 +1,2 @@
+var food  = window.arguments[0];
+var price = window.arguments[1];

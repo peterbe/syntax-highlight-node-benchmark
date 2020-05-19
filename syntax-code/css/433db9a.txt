@@ -1,0 +1,4 @@
+.readwrite {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+}

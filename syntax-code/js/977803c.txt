@@ -1,0 +1,2 @@
+gl.getParameter(gl.COLOR_WRITEMASK);
+// [true, true, true, false]

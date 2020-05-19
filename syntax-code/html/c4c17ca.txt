@@ -1,0 +1,7 @@
+<style>
+  textarea {
+    background-image: url(checkerboard);
+    background-image: paint(checkerboard);
+  }
+</style>
+<textarea></textarea>

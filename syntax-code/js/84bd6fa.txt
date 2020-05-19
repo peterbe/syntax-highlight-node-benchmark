@@ -1,0 +1,5 @@
+gl.clearBufferiv(gl.COLOR, 0, new Int32Array([r, g, b, a]));
+gl.clearBufferuiv(gl.COLOR, 0, new Uint32Array([r, g, b, a]));
+gl.clearBufferfv(gl.COLOR, 0, new Float32Array([r, g, b, a]));
+gl.clearBufferfv(gl.COLOR, 0, [0.0, 0.0, 0.0, 0.0]);
+gl.clearBufferfi(gl.DEPTH_STENCIL, 0, 1.0, 0);

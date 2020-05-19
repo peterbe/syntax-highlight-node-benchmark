@@ -1,0 +1,7 @@
+gl.getParameter(gl.STENCIL_FAIL);
+gl.getParameter(gl.STENCIL_PASS_DEPTH_PASS);
+gl.getParameter(gl.STENCIL_PASS_DEPTH_FAIL);
+gl.getParameter(gl.STENCIL_BACK_FAIL);
+gl.getParameter(gl.STENCIL_BACK_PASS_DEPTH_PASS);
+gl.getParameter(gl.STENCIL_BACK_PASS_DEPTH_FAIL);
+gl.getParameter(gl.STENCIL_BITS);

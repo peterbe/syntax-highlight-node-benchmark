@@ -1,0 +1,14 @@
+// For illustration only: Note "MISTAKE" of [j] for [i] thus causing desired events to all attach to SAME element
+
+// Case 3
+for(let i=0, j=0 ; i<els.length ; i++){
+  /* do lots of stuff with j */
+  els[j].addEventListener("click", processEvent = function(e){/*do something*/}, false);
+}
+
+// Case 4
+for(let i=0, j=0 ; i<els.length ; i++){
+  /* do lots of stuff with j */
+  function processEvent(e){/*do something*/};
+  els[j].addEventListener("click", processEvent, false); 
+}

@@ -1,0 +1,19 @@
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr auto;
+    font: 1em Helvetica, Arial, sans-serif;
+}
+.wrapper nav {
+    writing-mode: vertical-lr;
+}
+.wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper a {
+    text-decoration: none;
+}

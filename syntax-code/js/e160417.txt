@@ -1,0 +1,12 @@
+paint(ctx, size, props, args) {
+
+	// use our custom arguments
+	const hasStroke = args[0].toString();
+
+	// if stroke arg is 'stroke', don't fill
+	if (hasStroke === 'stroke') {
+		ctx.fillStyle = 'transparent';
+		ctx.strokeStyle = colour;
+	}
+	...
+}

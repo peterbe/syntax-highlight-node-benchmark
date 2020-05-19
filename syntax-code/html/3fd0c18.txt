@@ -1,0 +1,35 @@
+function applyMouseMovement(refSpace) {
+  if (!mouseYaw && !mousePitch && !axialDistance &&
+      !transverseDistance && !verticalDistance) {
+    return refSpace;
+  }
+    
+  // Compute the quaternion used to rotate the image based
+  // on the pitch and yaw.
+ 
+  quat.identity(inverseOrientation);
+  quat.rotateX(inverseOrientation, inverseOrientation, -mousePitch);
+  quat.rotateY(inverseOrientation, inverseOrientation, -mouseYaw);
+      
+  // Compute the true "up" vector for our object.
+ 
+  vec3.cross(vecX, vecY, cubeOrientation);
+  vec3.cross(vecY, cubeOrientation, vecX);
+ 
+  // Now compute the transform that teleports the object to the
+  // specified point and save a copy of it to display to the user
+  // later; otherwise we probably wouldn't need to save mouseMatrix
+  // at all.
+
+  let newTransform = new XRRigidTransform({x: transverseDistance,
+                                           y: verticalDistance,
+                                           z: axialDistance},
+                         {x: inverseOrientation[0], y: inverseOrientation[1],
+                          z: inverseOrientation[2], w: inverseOrientation[3]});
+  mat4.copy(mouseMatrix, newTransform.matrix);
+
+  // Create a new reference space that transforms the object to the new
+  // position and orientation, returning the new reference space.
+
+  return refSpace.getOffsetReferenceSpace(newTransform);
+}

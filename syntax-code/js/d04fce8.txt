@@ -1,0 +1,10 @@
+const gdmOptions = {
+  video: {
+    cursor: "always"
+  },
+  audio: {
+    echoCancellation: true,
+    noiseSuppression: true,
+    sampleRate: 44100
+  }
+}

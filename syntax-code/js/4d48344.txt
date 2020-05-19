@@ -1,0 +1,6 @@
+// doc is a reference to the content document
+function dispatchCustomEvent(doc) {
+  var eventDetail = Components.utils.cloneInto({foo: 'bar'}, doc.defaultView);
+  var myEvent = doc.defaultView.CustomEvent("mytype", eventDetail);
+  doc.dispatchEvent(myEvent);
+}

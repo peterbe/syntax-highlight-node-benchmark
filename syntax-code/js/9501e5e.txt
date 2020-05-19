@@ -1,0 +1,16 @@
+function hide(e){
+  e.currentTarget.style.visibility = 'hidden';
+  console.log(e.currentTarget);
+  // When this function is used as an event handler: this === e.currentTarget
+}
+
+var ps = document.getElementsByTagName('p');
+
+for(var i = 0; i < ps.length; i++){
+  // Console: print the clicked <p> element 
+  ps[i].addEventListener('click', hide, false);
+}
+// Console: print <body>
+document.body.addEventListener('click', hide, false);
+
+// Click around and make paragraphs disappear

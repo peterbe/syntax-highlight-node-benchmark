@@ -1,0 +1,9 @@
+function togglePlay(event) {
+  if (playing) {
+    playButton.innerHTML = "▶️";
+    stopOscillators();
+  } else {
+    playButton.innerHTML = "⏸";
+    startOscillators();
+  }
+}

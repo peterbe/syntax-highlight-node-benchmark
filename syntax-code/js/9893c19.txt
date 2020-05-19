@@ -1,0 +1,5 @@
+function forEachKey(callback) {
+  for (var i = 0; i < localStorage.length; i++) {
+    callback(localStorage.key(i));
+  }
+}

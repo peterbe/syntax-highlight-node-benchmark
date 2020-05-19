@@ -1,0 +1,21 @@
+  const texture = initTexture(gl);
+
+  const video = setupVideo('Firefox.mp4');
+
+  var then = 0;
+
+  // Draw the scene repeatedly
+  function render(now) {
+    now *= 0.001;  // convert to seconds
+    const deltaTime = now - then;
+    then = now;
+
+    if (copyVideo) {
+      updateTexture(gl, texture, video);
+    }
+
+    drawScene(gl, programInfo, buffers, texture, deltaTime);
+
+    requestAnimationFrame(render);
+  }
+  requestAnimationFrame(render);

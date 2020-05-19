@@ -1,0 +1,1 @@
+let theText = myTextInput.value;

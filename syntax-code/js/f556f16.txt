@@ -1,0 +1,2 @@
+elem.style.transform = 'translateY(100px)';
+elem.animate({ transform: 'none', offset: 0 }, 200);

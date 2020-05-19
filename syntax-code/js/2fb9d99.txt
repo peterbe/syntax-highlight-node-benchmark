@@ -1,0 +1,14 @@
+session.onvisibilitychange = (event) => {
+  switch(event.session.visibilityState) {
+    case "hidden":
+      myFrameRate = 10;
+      break;
+    case "blurred-visible":
+      myFrameRate = 30;
+      break;
+    case "visible":
+    default:
+      myFrameRate = 60;
+      break;
+  }
+};

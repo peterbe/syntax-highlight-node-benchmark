@@ -1,0 +1,5 @@
+var p = navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+
+p.then(function(stream) {
+   console.log(stream.id);
+})

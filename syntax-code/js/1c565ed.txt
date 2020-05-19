@@ -1,0 +1,3 @@
+audioCtx.onstatechange = function() {
+  console.log(audioCtx.state);
+}

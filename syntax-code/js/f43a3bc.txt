@@ -1,0 +1,8 @@
+const video = document.querySelector('video');
+const videoSrc = 'https://path/to/video.webm';
+
+video.addEventListener('error', () => {
+  console.error(`Error loading: ${videoSrc}`);
+});
+
+video.setAttribute('src', videoSrc);

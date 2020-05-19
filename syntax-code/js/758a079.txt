@@ -1,0 +1,5 @@
+var dt = event.dataTransfer;
+dt.mozSetDataAt("image/png", stream, 0);
+dt.mozSetDataAt("application/x-moz-file", file, 0);
+dt.setData("text/uri-list", imageurl);
+dt.setData("text/plain", imageurl);

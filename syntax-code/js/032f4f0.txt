@@ -1,0 +1,22 @@
+function handleToneChangeEvent(event) {
+  if (event.tone !== "") {
+    log("Tone played: " + event.tone);
+  } else {
+    log("All tones have played. Disconnecting.");
+    callerPC.getLocalStreams().forEach(function(stream) {
+      stream.getTracks().forEach(function(track) {
+        track.stop();
+      });
+    });
+    receiverPC.getLocalStreams().forEach(function(stream) {
+      stream.getTracks().forEach(function(track) {
+        track.stop();
+      });
+    });
+
+    audio.pause();
+    audio.srcObject = null;
+    receiverPC.close();
+    callerPC.close();
+  }
+}

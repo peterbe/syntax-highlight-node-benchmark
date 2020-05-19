@@ -1,0 +1,1 @@
+mimeType: 'video/mp4; codecs="avc1.424028, mp4a.40.2"'

@@ -1,0 +1,6 @@
+#box2 {
+  background-image: -moz-image-rect(url(https://mdn.mozillademos.org/files/12053/firefox.png), 0%, 100%, 50%, 50%);
+  width:133px;
+  height:136px;
+  position:absolute;
+}

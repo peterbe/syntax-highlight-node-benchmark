@@ -1,0 +1,6 @@
+var vao = gl.createVertexArray();
+gl.bindVertexArray(vao);
+
+// ...
+
+gl.deleteVertexArray(vao);

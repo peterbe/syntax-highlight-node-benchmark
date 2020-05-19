@@ -1,0 +1,12 @@
+<ul class="wrapper">
+   <li><img src="https://placehold.it/200x300" alt="placeholder"></li>
+   <li class="landscape"><img src="https://placehold.it/350x200" alt="placeholder"></li>
+   <li class="landscape"><img src="https://placehold.it/350x200" alt="placeholder"></li>
+   <li class="landscape"><img src="https://placehold.it/350x200" alt="placeholder"></li>
+   <li><img src="https://placehold.it/200x300" alt="placeholder"></li>
+   <li><img src="https://placehold.it/200x300" alt="placeholder"></li>
+   <li class="landscape"><img src="https://placehold.it/350x200" alt="placeholder"></li>
+   <li><img src="https://placehold.it/200x300" alt="placeholder"></li>
+   <li><img src="https://placehold.it/200x300" alt="placeholder"></li>
+   <li><img src="https://placehold.it/200x300" alt="placeholder"></li>
+</ul>

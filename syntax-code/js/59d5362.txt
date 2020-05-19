@@ -1,0 +1,17 @@
+<html>
+<script>
+
+function endTouch(ev) {
+ // Process the event
+}
+
+function init() {
+ var el=document.getElementById("target1");
+ el.ontouchend = endTouch;
+}
+</script>
+<body onload="init();">
+<div id="target1"> Touch me ... </div>
+<div id="target2" ontouchend="endTouch(event)"> Touch me ... </div>
+</body>
+</html>

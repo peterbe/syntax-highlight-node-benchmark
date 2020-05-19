@@ -1,0 +1,17 @@
+let loremIpsum = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing" +
+  " elit. Cras at sem diam. Vestibulum venenatis massa in tincidunt" +
+  " egestas. Morbi eu lorem vel est sodales auctor hendrerit placerat" +
+  " risus. Etiam rutrum faucibus sem, vitae mattis ipsum ullamcorper" +
+  " eu. Donec nec imperdiet nibh, nec vehicula libero. Phasellus vel" +
+  " malesuada nulla. Aliquam sed magna aliquam, vestibulum nisi at," +
+  " cursus nunc.</p>";
+
+function buildContents() {
+  for (let i=0; i<5; i++) {
+    contentBox.appendChild(createArticle(loremIpsum));
+
+    if (!(i % 2)) {
+      loadRandomAd();
+    }
+  }
+}

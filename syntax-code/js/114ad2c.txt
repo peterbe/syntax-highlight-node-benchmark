@@ -1,0 +1,10 @@
+// Offerer side
+
+var pc = new RTCPeerConnection(options);
+var channel = pc.createDataChannel("chat");
+channel.onopen = function(event) {
+  channel.send('Hi you!');
+}
+channel.onmessage = function(event) {
+  console.log(event.data);
+}

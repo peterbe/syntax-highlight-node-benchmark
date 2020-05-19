@@ -1,0 +1,1 @@
+<![CDATA[ ]]> will cause an error ]]>

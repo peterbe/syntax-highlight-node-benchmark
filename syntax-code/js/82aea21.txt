@@ -1,0 +1,2 @@
+var el = document.getElementById('some-element');
+el.setAttribute('style', 'background-color:darkblue;');

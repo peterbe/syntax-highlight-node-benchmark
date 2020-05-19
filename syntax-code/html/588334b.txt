@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Accelerator</title>
+  </head>
+  <body>
+    <label for="oName"><u style="-ms-accelerator: true; accelerator: true">N</u>ame: </label>
+    <input type="text"
+      id="oName"
+      size="25"
+      accesskey="N"
+      value="Your name here" />
+  </body>
+</html>

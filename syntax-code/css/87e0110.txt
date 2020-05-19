@@ -1,0 +1,3 @@
+.wrapper {
+  grid-template-columns: [col-start] 1fr [col-end col-start] 1fr [col-end col-start] 1fr  [col-end col-start] 1fr [col-end];
+} 

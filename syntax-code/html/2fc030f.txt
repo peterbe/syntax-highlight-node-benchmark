@@ -1,0 +1,6 @@
+<p>Initial String
+  <strong>ⓐⓑⓒ (ⓓⓔⓕ) —ⓖⓗⓘ— ⓙkl</strong>
+</p>
+<p>text-transform: capitalize
+  <strong><span>ⓐⓑⓒ (ⓓⓔⓕ) —ⓖⓗⓘ— ⓙkl</span></strong>
+</p>

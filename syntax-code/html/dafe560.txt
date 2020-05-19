@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TextRange Example</title>
+</head>
+<body>
+  <p id="test">SomeTextToBeSelected</p>
+</body>
+</html>

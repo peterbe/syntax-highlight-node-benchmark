@@ -1,0 +1,5 @@
+function handleCancel(evt) {
+  log("pointercancel: id = " + evt.pointerId);
+  var idx = ongoingTouchIndexById(evt.pointerId);
+  ongoingTouches.splice(idx, 1);  // remove it; we're done
+} 

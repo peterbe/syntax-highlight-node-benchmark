@@ -1,0 +1,13 @@
+async function processPayment() {
+  try {
+    const payRequest = new PaymentRequest(methodData, details, options);
+
+    payRequest.onshippingaddresschange = ev => ev.updateWith(checkAddress(payRequest));
+    payRequest.onshippingoptionchange = ev => ev.updateWith(checkShipping(payRequest));
+
+    const repsonse = await payRequest.show();
+    await validateResponse(response);
+  } catch(err) {
+    /* handle the error; AbortError usually means a user cancellation */
+  }
+}

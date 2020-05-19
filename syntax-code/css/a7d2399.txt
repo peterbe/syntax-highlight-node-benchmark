@@ -1,0 +1,4 @@
+input::-ms-value {
+  color: lime;
+  font-style: italic;
+}

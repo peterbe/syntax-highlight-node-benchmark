@@ -1,0 +1,3 @@
+@supports (transition: initial) {
+  /* CSS to use if transitions are supported */
+}

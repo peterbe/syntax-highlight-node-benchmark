@@ -1,0 +1,11 @@
+if (typeof Gyroscope === "function") {
+    // run in circles...
+}
+
+if ("ProximitySensor" in window) {
+    // watch out!
+}
+
+if (window.AmbientLightSensor) {
+    // go dark...
+}

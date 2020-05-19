@@ -1,0 +1,23 @@
+const markerNameA = "example-marker-a"
+const markerNameB = "example-marker-b"
+
+// Run some nested timeouts, and create a PerformanceMark for each.
+performance.mark(markerNameA);
+setTimeout(function() {
+  performance.mark(markerNameB);
+  setTimeout(function() {
+
+    // Create a variety of measurements.
+    performance.measure("measure a to b", markerNameA, markerNameB);
+    performance.measure("measure a to now", markerNameA);
+    performance.measure("measure from navigation start to b", undefined, markerNameB);
+    performance.measure("measure from the start of navigation to now");
+
+    // Pull out all of the measurements.
+    console.log(performance.getEntriesByType("measure"));
+
+    // Finally, clean up the entries.
+    performance.clearMarks();
+    performance.clearMeasures();
+  }, 1000);
+}, 1000);

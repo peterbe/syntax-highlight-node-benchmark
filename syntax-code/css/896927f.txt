@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: meterbar;
+-webkit-appearance: meterbar; }

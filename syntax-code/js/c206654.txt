@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+para.addEventListener('pointercancel', (event) => {
+  console.log('Pointer event cancelled');
+});

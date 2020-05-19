@@ -1,0 +1,3 @@
+var inputs = document.getElementById("my-form").elements;
+var inputByIndex = inputs[0];
+var inputByName = inputs["username"];

@@ -1,0 +1,5 @@
+function thumbnailClickHandler(evt)
+{
+    alert ("Clicked button: " + evt.buttonID);
+}
+document.addEventListener('msthumbnailclick', thumbnailClickHandler); 

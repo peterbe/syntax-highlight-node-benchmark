@@ -1,0 +1,4 @@
+myButton.addEventListener('mousedown', function(e) {
+  if (!e.sourceCapabilities.firesTouchEvents)
+    myButton.classList.add("pressed");
+});

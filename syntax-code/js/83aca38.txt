@@ -1,0 +1,6 @@
+targetBox.onpointerup = handleUp;
+
+function handleUp(evt) {
+  targetBox.innerHTML = "Tap me, click me, or touch me!";
+  evt.preventDefault();
+}

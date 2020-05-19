@@ -1,0 +1,2 @@
+var sampler = gl.createSampler(); 
+gl.bindSampler(0, sampler);

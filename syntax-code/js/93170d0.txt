@@ -1,0 +1,7 @@
+function locationHashChanged() {
+  if (location.hash === '#somecoolfeature') {
+    somecoolfeature();
+  }
+}
+
+window.addEventListener('hashchange', locationHashChanged);

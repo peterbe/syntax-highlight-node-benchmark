@@ -1,0 +1,3 @@
+findString = function findText(text) {
+  alert("String \x22" + text + "\x22 found? " + window.find(text));
+}

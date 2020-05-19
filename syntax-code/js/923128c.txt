@@ -1,0 +1,22 @@
+const videoElem = document.getElementById("video");
+const logElem = document.getElementById("log");
+const startElem = document.getElementById("start");
+const stopElem = document.getElementById("stop");
+
+// Options for getDisplayMedia()
+
+var displayMediaOptions = {
+  video: {
+    cursor: "always"
+  },
+  audio: false
+};
+
+// Set event listeners for the start and stop buttons
+startElem.addEventListener("click", function(evt) {
+  startCapture();
+}, false);
+
+stopElem.addEventListener("click", function(evt) {
+  stopCapture();
+}, false);

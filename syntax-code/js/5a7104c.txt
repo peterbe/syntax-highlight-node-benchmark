@@ -1,0 +1,12 @@
+const log = document.querySelector('.event-log-contents');
+
+window.addEventListener('error', (event) => {
+    log.textContent = log.textContent + `${event.type}: ${event.message}\n`;
+    console.log(event)
+});
+
+const scriptError = document.querySelector('#script-error');
+scriptError.addEventListener('click', () => {
+    const badCode = 'const s;';
+    eval(badCode);
+});

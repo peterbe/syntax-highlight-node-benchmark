@@ -1,0 +1,29 @@
+function onSessionStarted(xrSession) {
+  xrSession.addEventListener("end", onSessionEnded);
+
+  gl = initGraphics(xrSession);
+
+  let glLayer = new XRWebGLLayer(xrSession, gl);
+  xrSession.updateRenderState({ baseLayer: glLayer });
+
+  if (immersiveSession) {
+    xrSession.requestReferenceSpace("bounded-floor").then((refSpace) => {
+      refSpaceCreated(refSpace);
+    }).catch(() => {
+      session.requestReferenceSpace("local-floor").then(refSpaceCreated);
+    });
+  } else {
+    session.requestReferenceSpace("viewer").then(refSpaceCreated);
+  }
+}
+
+function refSpaceCreated(refSpace) {
+  if (immersiveSession) {
+    xrReferenceSpace = refSpace;
+  } else {
+    xrReferenceSpace = refSpace.getOffsetReferenceSpace(
+      new XRRigidTransform({y: -1.5});
+    );
+  }
+  xrSession.requestAnimationFrame(onFrame);
+}

@@ -1,0 +1,3 @@
+pc.getTransceivers().forEach(transceiver => {
+  transceiver.stop();
+});

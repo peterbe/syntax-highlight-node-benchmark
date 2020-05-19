@@ -1,0 +1,3 @@
+window.onafterprint = (event) => {
+  console.log('After print');
+};

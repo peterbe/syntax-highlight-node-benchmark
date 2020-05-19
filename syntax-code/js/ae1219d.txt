@@ -1,0 +1,17 @@
+beforeBtn.addEventListener('click', function() {
+  var tempDiv = document.createElement('div');
+  tempDiv.style.backgroundColor = randomColor();
+  if (activeElem) {
+    activeElem.insertAdjacentElement('beforebegin',tempDiv);
+  }
+  setListener(tempDiv);
+});
+
+afterBtn.addEventListener('click', function() {
+  var tempDiv = document.createElement('div');
+  tempDiv.style.backgroundColor = randomColor();
+  if (activeElem) {
+    activeElem.insertAdjacentElement('afterend',tempDiv);
+  }
+  setListener(tempDiv);
+});

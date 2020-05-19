@@ -1,0 +1,32 @@
+/*
+This example uses the League Mono Variable font, developed by
+Tyler Finck (https://www.tylerfinck.com/) and used here under
+the terms of the SIL Open Font License, Version 1.1:
+http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
+*/
+
+@font-face {
+  src: url('https://mdn.mozillademos.org/files/16014/LeagueMonoVariable.ttf');
+  font-family:'LeagueMonoVariable';
+  font-style: normal;
+  font-stretch: 1% 500%; /* Required by Chrome */
+}
+
+.container {
+  border: 10px solid #f5f9fa;
+  padding: 0 1rem;
+  font: 1.5rem 'LeagueMonoVariable', sans-serif;
+}
+
+.condensed {
+  font-stretch: 50%;
+}
+
+.normal {
+  font-stretch: 100%;
+}
+
+.expanded {
+  font-stretch: 200%;
+}
+

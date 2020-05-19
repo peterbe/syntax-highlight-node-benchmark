@@ -1,0 +1,5 @@
+const form = document.querySelector("form");
+const formTrigger = form.querySelector("button.submit");
+const submitEvent = new SubmitEvent("submit", { submitter: formTrigger });
+
+form.dispatchEvent(submitEvent);

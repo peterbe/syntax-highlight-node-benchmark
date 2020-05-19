@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var distortion = audioCtx.createWaveShaper();
+distortion.curve = myCurveDataArray; // myCurveDataArray is a Float32Array

@@ -1,0 +1,1 @@
+ctx.addHitRegion({control: element});

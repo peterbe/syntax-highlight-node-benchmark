@@ -1,0 +1,14 @@
+function logCopy(event) {
+  log.innerText = 'Copied!\n' + log.innerText;
+}
+
+function preventCut(event) {
+  event.preventDefault();
+  log.innerText = 'Cut blocked!\n' + log.innerText;
+}
+
+const editor = document.getElementById('editor');
+const log = document.getElementById('log');
+
+editor.oncopy = logCopy;
+editor.oncut = preventCut;

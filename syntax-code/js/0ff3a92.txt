@@ -1,0 +1,3 @@
+paymentRequest.onmerchantvalidation = function(event) {
+  event.complete(fetchValidationData(event.validationURL));
+}

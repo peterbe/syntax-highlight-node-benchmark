@@ -1,0 +1,1 @@
+var handle = vrDisplayInstance.requestAnimationFrame(callback);

@@ -1,0 +1,3 @@
+if (table.caption) {
+  // Do something with the caption
+}

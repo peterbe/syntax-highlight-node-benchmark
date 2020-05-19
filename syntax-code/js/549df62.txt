@@ -1,0 +1,22 @@
+var SineWave = function(context) {
+  var that = this;
+  this.x = 0; // Initial sample number
+  this.context = context;
+  this.node = context.createJavaScriptNode(1024, 1, 1);
+  this.node.onaudioprocess = function(e) { that.process(e) };
+}
+
+SineWave.prototype.process = function(e) {
+  var data = e.outputBuffer.getChannelData(0);
+  for (var i = 0; i < data.length; ++i) {
+    data[i] = Math.sin(this.x++);
+  }
+}
+
+SineWave.prototype.play = function() {
+  this.node.connect(this.context.destination);
+}
+
+SineWave.prototype.pause = function() {
+  this.node.disconnect();
+}

@@ -1,0 +1,1 @@
+<p id="log">Click on this document to give it focus.</p>

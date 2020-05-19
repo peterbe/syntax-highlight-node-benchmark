@@ -1,0 +1,45 @@
+.controls {
+  width: 400px;
+  position: relative;
+  vertical-align: middle;
+  height: 44px;
+}
+
+.button {
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+
+.right {
+  width: 50%;
+  font: 14px "Open Sans", "Lucida Grande", "Arial", sans-serif;
+  position: absolute;
+  right: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.right span {
+  vertical-align: middle;
+}
+
+.right input {
+  vertical-align: baseline;
+}
+
+.left {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.left span, .left input {
+  vertical-align: middle;
+}

@@ -1,0 +1,5 @@
+<div class="container">
+    <p class="condensed">an elephantine lizard</p>
+    <p class="normal">an elephantine lizard</p>
+    <p class="expanded">an elephantine lizard</p>
+</div>

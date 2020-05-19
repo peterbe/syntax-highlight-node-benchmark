@@ -1,0 +1,5 @@
+const mediaElement = document.querySelector('video, audio');
+
+mediaElement.textTracks.addEventListener('addtrack', (event) => {
+  console.log(`Text track: ${event.track.label} added`);
+});

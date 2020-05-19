@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <header>
+    <h1>A Fake Blog</h1>
+    <h2>Showing Intersection Observer in action!</h2>
+  </header>
+
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="#link1">A link</a></li>
+        <li><a href="#link2">Another link</a></li>
+        <li><a href="#link3">One more link</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+  </main>
+</div>

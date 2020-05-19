@@ -1,0 +1,5 @@
+<div class="foo">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Quos quaerat sit soluta, quisquam exercitationem delectus qui unde in facere
+necessitatibus aut quia porro dolorem nesciunt enim, at consequuntur aliquam esse?
+</div>

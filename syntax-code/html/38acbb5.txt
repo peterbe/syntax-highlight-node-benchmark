@@ -1,0 +1,7 @@
+<header>
+    <input type="range" id="slant" name="slant" min="-90" max="90" />
+    <label for="slant">Slant</label>
+</header>
+<div class="container">
+    <p class="sample">...it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</p>
+</div>

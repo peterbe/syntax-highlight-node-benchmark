@@ -1,0 +1,2 @@
+var httpHeaders = { 'Content-Type' : 'image/jpeg', 'Accept-Charset' : 'utf-8', 'X-My-Custom-Header' : 'Zeke are cool' };
+var myHeaders = new Headers(httpHeaders);

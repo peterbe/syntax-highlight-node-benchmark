@@ -1,0 +1,12 @@
+someElement.addEventListener('pointerdown', function(event) {
+  if (event.pressure == 0) {
+    // No pressure
+    process_no_pressure(event);
+  } else if (event.pressure == 1) {
+    // Maximum pressure
+    process_max_pressure(event);
+  } else {
+    // Default
+    process_pressure(event);
+  }
+}, false);

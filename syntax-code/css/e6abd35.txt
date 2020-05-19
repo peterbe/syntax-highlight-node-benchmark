@@ -1,0 +1,11 @@
+/* The canonical Bézier curve with four <number> in the [0,1] range. */
+cubic-bezier(0.1, 0.7, 1.0, 0.1)   
+
+/* Using <integer> is valid as any <integer> is also a <number>. */
+cubic-bezier(0, 0, 1, 1)           
+
+/* Negative values for ordinates are valid, leading to bouncing effects.*/
+cubic-bezier(0.1, -0.6, 0.2, 0)    
+
+/* Values > 1.0 for ordinates are also valid. */
+cubic-bezier(0, 1.1, 0.8, 4)

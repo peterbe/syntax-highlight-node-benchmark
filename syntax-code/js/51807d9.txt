@@ -1,0 +1,12 @@
+// Capture promise control functions:
+let resolve, reject; 
+const p = new Promise((res, rej) => { resolve = res; reject = rej; });
+
+// Request the lock:
+navigator.locks.request('my_resource', lock => {
+  // Lock is acquired.
+
+  return p;
+  // Now lock will be held until either resolve() or reject() is called.
+}); 
+

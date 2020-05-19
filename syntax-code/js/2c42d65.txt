@@ -1,0 +1,3 @@
+// get degrees for css
+const degreesX = (q * 180)/Math.PI;
+const degreesY = (q * 180)/Math.PI;

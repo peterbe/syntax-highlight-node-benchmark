@@ -1,0 +1,7 @@
+pc.createAnswer().then(function(answer) {
+  return pc.setLocalDescription(answer);
+})
+.then(function() {
+  // Send the answer to the remote peer through the signaling server.
+})
+.catch(handleGetUserMediaError);

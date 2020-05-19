@@ -1,0 +1,11 @@
+function doDrop(event) {
+  const lines = event.dataTransfer.getData("text/uri-list").split("\n");
+  lines.filter(line => !line.startsWith("#"))
+    .forEach(line => {
+      const link = document.createElement("a");
+      link.href = line;
+      link.textContent = line;
+      event.target.appendChild(link);
+    })
+  event.preventDefault();
+}

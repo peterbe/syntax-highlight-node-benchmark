@@ -1,0 +1,3 @@
+<p>Result of of scissoring.</p>
+<canvas>Your browser does not seem to support 
+    HTML5 canvas.</canvas>

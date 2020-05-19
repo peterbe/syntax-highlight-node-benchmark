@@ -1,0 +1,13 @@
+<script>
+var myStylesheet = document.querySelector('#my-stylesheet');
+
+myStylesheet.onload = function() {
+  // Do something interesting; the sheet has been loaded
+}
+
+myStylesheet.onerror = function() {
+  console.log("An error occurred loading the stylesheet!");
+}
+</script>
+
+<link rel="stylesheet" href="mystylesheet.css" id="my-stylesheet">

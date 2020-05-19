@@ -1,0 +1,8 @@
+var scaleX = window.innerWidth / canvas.width;
+var scaleY = window.innerHeight / canvas.height;
+
+var scaleToFit = Math.min(scaleX, scaleY);
+var scaleToCover = Math.max(scaleX, scaleY);
+
+stage.style.transformOrigin = '0 0'; //scale from top left
+stage.style.transform = 'scale(' + scaleToFit + ')';

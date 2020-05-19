@@ -1,0 +1,4 @@
+var media = '(max-width: 600px)';
+var matches = true;
+
+var myMediaQueryListEvent = new MediaQueryListEvent({media, matches});

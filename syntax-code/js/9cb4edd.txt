@@ -1,0 +1,14 @@
+var treeWalker = document.createTreeWalker(
+  document.body,
+  NodeFilter.SHOW_ELEMENT,
+  { acceptNode: function(node) { return NodeFilter.FILTER_ACCEPT; } },
+  false
+);
+
+var nodeList = [];
+var currentNode = treeWalker.currentNode;
+
+while(currentNode) {
+  nodeList.push(currentNode);
+  currentNode = treeWalker.nextNode();
+}

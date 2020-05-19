@@ -1,0 +1,17 @@
+function getCurrentCandidatePair(statsResults) {
+  statsResults.forEach(report => {
+    if (report.type === "transport") {
+      currentPair = statsResults.get(report.selectedCandidatePairId);
+    }
+  });
+
+  if (!currentPair) {
+    statsResults.forEach(report => {
+      if (report.type === "candidate-pair" && report.selected) {
+        currentPair = report;
+      }
+    });
+  }
+
+  return currentPair;
+}

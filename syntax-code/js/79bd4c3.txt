@@ -1,0 +1,1 @@
+var available_extensions = gl.getSupportedExtensions();

@@ -1,0 +1,3 @@
+db.onclose = function(event) {
+  myAppShowAlert('The database "' + db.name + '" has unexpectedly closed.');
+};

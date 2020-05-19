@@ -1,0 +1,2 @@
+<p>Encoded value: <span id="encoded-value"></span></p>
+<p>Decoded value: <span id="decoded-value"></span></p>

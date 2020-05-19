@@ -1,0 +1,3 @@
+globalScope.onactivate = function(event) {
+  ...
+};

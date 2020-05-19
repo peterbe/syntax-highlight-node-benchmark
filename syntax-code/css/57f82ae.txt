@@ -1,0 +1,21 @@
+p {
+  color: lightgray;
+}
+
+@media (scripting: none) {
+  .script-none {
+     color: red;
+  }
+}
+
+@media (scripting: initial-only) {
+  .script-initial-only {
+    color: red;
+  }
+}
+
+@media (scripting: enabled) {
+  .script-enabled {
+    color: red;
+  }
+}

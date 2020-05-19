@@ -1,0 +1,27 @@
+  <table class="standard-table">
+  <thead>
+    <tr>
+      <th style="text-align: left;" scope="col">Original image</th>
+      <th style="text-align: left;" scope="col">Live example</th>
+      <th style="text-align: left;" scope="col">SVG Equivalent</th>
+      <th style="text-align: left;" scope="col">Static example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img alt="Test_Form.jpg" id="img1" class="internal default" src="/files/3710/Test_Form_2.jpg" style="width: 100%;" /></td>
+      <td><img alt="Test_Form.jpg" id="img2" class="internal default" src="/files/3710/Test_Form_2.jpg" style="width: 100%;" /></td>
+      <td>
+        <div class="svg-container">
+          <svg id="img3" overflow="visible" viewbox="0 0 212 161" color-interpolation-filters="sRGB">
+            <filter id="svgBlur" x="-5%" y="-5%" width="110%" height="110%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3.5"/>
+            </filter>
+            <image xlink:href="/files/3710/Test_Form_2.jpeg" filter="url(#svgBlur)" width="212px" height="161px"/>
+          </svg>
+        </div>
+      </td>
+      <td><img alt="Test_Form_s.jpg" id="img4" class="internal default" src="/files/3711/Test_Form_2_s.jpg" style="width: 100%;" /></td>
+    </tr>
+  </tbody>
+</table>

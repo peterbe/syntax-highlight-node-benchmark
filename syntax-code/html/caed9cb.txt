@@ -1,0 +1,7 @@
+<p>This text is red.</p>
+<div class="foo">
+  <p>This text is also red.</p>
+</div>
+<div class="bar">
+  <p>This text is green (default inherited value).</p>
+</div>

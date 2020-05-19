@@ -1,0 +1,4 @@
+const element = document.querySelector('q');
+const cssPseudoElement = element.pseudo('::before');
+console.log(cssPseudoElement.element); // Outputs [object HTMLQuoteElement] 
+console.log(cssPseudoElement.type); // Outputs '::before'

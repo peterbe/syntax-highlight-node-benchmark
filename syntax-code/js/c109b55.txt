@@ -1,0 +1,1 @@
+var contentType = headerMap["content-type"];

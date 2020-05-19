@@ -1,0 +1,3 @@
+<div id="a" class="circle"></div>
+<div id="b" class="circle"></div>
+<div id="c" class="circle"></div>

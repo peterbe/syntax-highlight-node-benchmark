@@ -1,0 +1,24 @@
+var request = new XMLHttpRequest();
+request.open("GET", "foo.txt", true);
+request.send();
+
+request.onreadystatechange = function() {
+  if(this.readyState == this.HEADERS_RECEIVED) {
+
+    // Get the raw header string
+    var headers = request.getAllResponseHeaders();
+
+    // Convert the header string into an array
+    // of individual headers
+    var arr = headers.trim().split(/[\r\n]+/);
+
+    // Create a map of header names to values
+    var headerMap = {};
+    arr.forEach(function (line) {
+      var parts = line.split(': ');
+      var header = parts.shift();
+      var value = parts.join(': ');
+      headerMap[header] = value;
+    });
+  }
+}

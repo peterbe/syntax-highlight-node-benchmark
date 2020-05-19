@@ -1,0 +1,18 @@
+document.getElementById("applyButton").addEventListener("click", function() {
+  if (!videoTrack && !audioTrack) {
+    startVideo();
+  } else {
+    buildConstraints();
+    if (videoTrack) {
+      videoTrack.applyConstraints(videoConstraints).then(function() {
+        videoSettingsText.value = JSON.stringify(videoTrack.getSettings(), null, 2);
+      }).catch(handleError);
+    }
+
+    if (audioTrack) {
+      audioTrack.applyConstraints(audioConstraints).then(function() {
+        audioSettingsText.value = JSON.stringify(audioTrack.getSettings(), null, 2);
+      }).catch(handleError);
+    }
+  }
+}, false);

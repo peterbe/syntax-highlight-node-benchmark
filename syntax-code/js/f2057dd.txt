@@ -1,0 +1,7 @@
+focusScrollMethod = function getFocus() {          
+  document.getElementById("myButton").focus({preventScroll:false});
+}
+focusNoScrollMethod = function getFocusWithoutScrolling() {          
+  document.getElementById("myButton").focus({preventScroll:true});
+}
+

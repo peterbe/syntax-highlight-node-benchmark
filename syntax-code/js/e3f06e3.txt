@@ -1,0 +1,16 @@
+const stream = new ReadableStream({
+  start(controller) {
+
+  },
+  pull(controller) {
+
+  },
+  cancel() {
+
+  },
+  type,
+  autoAllocateChunkSize
+}, {
+  highWaterMark,
+  size()
+});

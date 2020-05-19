@@ -1,0 +1,27 @@
+<table class="standard-table">
+  <thead>
+    <tr>
+      <th style="text-align: left;" scope="col">Original image</th>
+      <th style="text-align: left;" scope="col">Live example</th>
+      <th style="text-align: left;" scope="col">SVG Equivalent</th>
+      <th style="text-align: left;" scope="col">Static example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img alt="Test_Form_5.jpeg" id="img1" class="internal default" src="/files/3716/Test_Form_5.jpeg" style="width: 100%;" /></td>
+      <td><img alt="Test_Form_5.jpg" id="img2" class="internal default" src="/files/3716/Test_Form_5.jpeg" style="width: 100%;" /></td>
+      <td><div class="svg-container"><svg xmlns="http://www.w3.org/2000/svg" id="img3" viewbox="0 0 276 184" color-interpolation-filters="sRGB">
+ <filter id="grayscale">
+    <feColorMatrix type="matrix"
+               values="0.2126 0.7152 0.0722 0 0
+                       0.2126 0.7152 0.0722 0 0
+                       0.2126 0.7152 0.0722 0 0
+                       0 0 0 1 0"/>
+  </filter>
+  <image xlink:href="/files/3716/Test_Form_5.jpeg" filter="url(#grayscale)" width="276px" height="184px" />
+</svg><div></td>
+      <td><img alt="Test_Form_5_s.jpg" id="img4" class="internal default" src="/files/3717/Test_Form_5_s.jpg" style="width: 100%;" /></td>
+    </tr>
+  </tbody>
+</table>

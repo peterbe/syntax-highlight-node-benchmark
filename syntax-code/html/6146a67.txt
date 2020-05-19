@@ -1,0 +1,6 @@
+<div class="outer">
+  <p>This is in the outer div.</p>
+  <div class="inner">
+    <p>This text is in the inner div.</p>
+  </div>
+</div>

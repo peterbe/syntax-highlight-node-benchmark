@@ -1,0 +1,8 @@
+<div>
+  <input type="checkbox" id="checkbox">
+  <label for="checkbox">This label starts out lime.</label>
+</div>
+<div>
+  <input type="radio" id="radio">
+  <label for="radio">This label starts out lime.</label>
+</div>

@@ -1,0 +1,10 @@
+const vertexList = ...
+const normalMatrix = mat4.create();
+const modelViewMatrix = mat4.create();
+
+function drawScene(gl, view, programInfo, buffers, texture, deltaTime) {
+  ...
+  for (object in scene) {
+    ...
+  }
+}

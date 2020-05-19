@@ -1,0 +1,2 @@
+border-left-style: dotted;
+border-left: none thick green;

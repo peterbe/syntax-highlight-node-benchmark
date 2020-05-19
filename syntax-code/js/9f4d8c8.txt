@@ -1,0 +1,2 @@
+var myHeaders = new Headers(); // Currently empty
+myHeaders.get('Not-Set'); // Returns null

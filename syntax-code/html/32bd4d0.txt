@@ -1,0 +1,14 @@
+<header>
+  <p>This is my header paragraph</p>
+</header>
+
+<main>
+  <ul>
+    <li><p>This is my first</p><p>list item</p></li>
+    <li><p>This is my second</p><p>list item</p></li>
+  </ul>
+</main>
+
+<footer>
+  <p>This is my footer paragraph</p>
+</footer>

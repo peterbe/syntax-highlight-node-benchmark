@@ -1,0 +1,3 @@
+let rotate360 = [
+  { transform: 'rotate(360deg)' }
+];

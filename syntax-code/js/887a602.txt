@@ -1,0 +1,8 @@
+// Create resizable window
+myExternalWindow = window.open("http://myurl.domain", "myWindowName", "resizable");
+
+// Resize window to 500x500
+myExternalWindow.resizeTo(500, 500);
+
+// Make window relatively smaller to 400x400
+myExternalWindow.resizeBy(-100, -100);

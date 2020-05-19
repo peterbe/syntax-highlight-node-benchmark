@@ -1,0 +1,2 @@
+let specific_tbody = document.getElementById(tbody_id);
+let row = specific_tbody.insertRow(index)

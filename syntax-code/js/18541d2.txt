@@ -1,0 +1,3 @@
+gl.getParameter(gl.COLOR_CLEAR_VALUE);
+gl.getParameter(gl.DEPTH_CLEAR_VALUE);
+gl.getParameter(gl.STENCIL_CLEAR_VALUE);

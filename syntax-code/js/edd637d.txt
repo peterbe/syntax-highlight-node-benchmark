@@ -1,0 +1,12 @@
+// in the service worker
+async function messageClient(clientId) {
+    const client = await clients.get(clientId);
+    client.postMessage('Hi client!');
+}
+
+addEventListener('fetch', (event) => {
+    messageClient(event.clientId);
+    event.respondWith(() => {
+      // ...
+    });
+});

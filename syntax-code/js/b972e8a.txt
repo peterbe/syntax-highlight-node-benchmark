@@ -1,0 +1,8 @@
+const numberOfInputs = inputList.length;
+const firstInput = inputList[0];
+
+const firstInputChannelCount = firstInput.length;
+const firstInputFirstChannel = firstInput[0]; // (or inputList[0][0])
+
+const firstChannelByteCount = firstInputFirstChannel.length;
+const firstByteOfFirstChannel = firstInputFirstChannel[0]; // (or inputList[0][0][0])

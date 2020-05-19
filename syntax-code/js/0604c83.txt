@@ -1,0 +1,10 @@
+request.onmerchantvalidation = ev => {
+  ev.complete(async () => {
+    const merchantServerUrl = window.location.origin +
+        '/validation?url=' + encodeURIComponent(ev.validationURL);
+    // get validation data, and complete validation;
+    return await fetch(merchantServerUrl).then(r => r.text());
+  })
+};
+
+const response = await request.show();

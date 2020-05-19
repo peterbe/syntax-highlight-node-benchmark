@@ -1,0 +1,9 @@
+var elem = document.querySelector("video");
+
+elem.audioTrackList.onaddtrack = function(event) {
+  trackEditor.addTrack(event.track);
+};
+
+elem.audioTrackList.onremovetrack = function(event) {
+  trackEditor.removeTrack(event.track);
+};

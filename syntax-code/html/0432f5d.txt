@@ -1,0 +1,2 @@
+<p>Heat the oven to <meter min="200" max="500"
+  value="350">350 degrees</meter>.</p>

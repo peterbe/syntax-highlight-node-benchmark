@@ -1,0 +1,11 @@
+function updateInputSources(session, frame, refSpace) {
+  for (let source of session.inputSources) {
+    if (source.gripSpace) {
+      let gripPose = frame.getPose(source.gripSpace, refSpace);
+
+      if (gripPose) {
+        myRenderHandObject(gripPose, inputSource.handedness);
+      }
+    }
+  }
+}

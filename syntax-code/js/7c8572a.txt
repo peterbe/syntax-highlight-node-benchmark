@@ -1,0 +1,7 @@
+xrSession.onselect = event => {
+  let source = event.inputSource;
+
+  if (source.targetRayMode == "gaze") {
+    /* handle selection using a gaze input */
+  }
+};

@@ -1,0 +1,9 @@
+const el = document.createElement("spider-man");
+
+class SpiderMan extends HTMLElement {}
+customElements.define("spider-man", SpiderMan);
+
+console.assert(!(el instanceof SpiderMan)); // not yet upgraded
+
+customElements.upgrade(el);
+console.assert(el instanceof SpiderMan);    // upgraded!

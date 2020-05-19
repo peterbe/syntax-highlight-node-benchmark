@@ -1,0 +1,5 @@
+<article class="clip">
+  <audio controls></audio>
+  <p>your clip name</p>
+  <button>Delete</button>
+</article>

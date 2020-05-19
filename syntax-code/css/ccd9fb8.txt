@@ -1,0 +1,21 @@
+body {
+  background: beige;
+}
+
+section {
+  transform: rotate(0deg);
+  width: 400px;
+  height: 160px;
+  background: lightgray;
+}
+
+p {
+  position: absolute;
+  left: 80px;
+  top: 30px;
+  width: 50%;   /* == 200px */
+  height: 25%;  /* == 40px */
+  margin: 5%;   /* == 20px */
+  padding: 5%;  /* == 20px */
+  background: cyan;
+}

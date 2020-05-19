@@ -1,0 +1,15 @@
+button.onclick = async function handlePurchase() {
+  // Initialization of PaymentRequest arguments are excerpted for the sake of
+  // brevity. 
+  const payment = new PaymentRequest(methods, details, options);
+  try {
+    const response = await payment.show();
+    // Process response here, including sending payment instrument
+    // (e.g., credit card) information to the server.
+    // paymentResponse.methodName contains the selected payment method
+    // paymentResponse.details contains a payment method specific response
+    await response.complete("success");
+  } catch (err) {
+    console.error("Uh oh, something bad happened", err.message);
+  }
+}

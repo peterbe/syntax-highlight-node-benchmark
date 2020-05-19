@@ -1,0 +1,6 @@
+function dragstart_handler(ev) {
+  // Add different types of drag data
+  ev.dataTransfer.setData("text/plain", ev.target.innerText);
+  ev.dataTransfer.setData("text/html", ev.target.outerHTML);
+  ev.dataTransfer.setData("text/uri-list", ev.target.ownerDocument.location.href);
+}

@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: scrollbarthumb-vertical;
+-webkit-appearance: scrollbarthumb-vertical; }

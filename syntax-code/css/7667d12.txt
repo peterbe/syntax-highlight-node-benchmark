@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 800px;
+}
+.wrapper li {
+    border: 1px solid #ccc;
+}
+.wrapper li.landscape {
+    grid-column-end: span 2;
+}
+.wrapper li img {
+   display: block;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}

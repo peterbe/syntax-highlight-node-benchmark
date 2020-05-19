@@ -1,0 +1,4 @@
+<label for="hexId">Hex ID: </label>
+<input id="hexId" type="password" pattern="[0-9a-fA-F]{4,8}"
+       title="Enter an ID consisting of 4-8 hexadecimal digits"
+       autocomplete="new-password">

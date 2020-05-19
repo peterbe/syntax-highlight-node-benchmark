@@ -1,0 +1,1 @@
+@supports (display: table-cell) and (display: list-item) {}

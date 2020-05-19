@@ -1,0 +1,1 @@
+parentDiv.insertBefore(sp1, sp2.nextSibling)

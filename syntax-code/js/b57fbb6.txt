@@ -1,0 +1,17 @@
+const stream = new WritableStream({
+  start(controller) {
+
+  },
+  write(chunk,controller) {
+
+  },
+  close(controller) {
+
+  },
+  abort(reason) {
+
+  }
+}, {
+  highWaterMark,
+  size()
+});

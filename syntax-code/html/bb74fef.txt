@@ -1,0 +1,6 @@
+<p>Initial String
+  <strong>Σ IS A greek LETTER that appears SEVERAL TIMES IN ΟΔΥΣΣΕΥΣ.</strong>
+</p>
+<p>text-transform: lowercase
+  <strong><span>Σ IS A greek LETTER that appears SEVERAL TIMES IN ΟΔΥΣΣΕΥΣ.</span></strong>
+</p>

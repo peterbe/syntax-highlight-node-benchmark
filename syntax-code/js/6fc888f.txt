@@ -1,0 +1,3 @@
+document.addEventListener('pointermove', (event) => {
+  console.log('Pointer moved');
+});

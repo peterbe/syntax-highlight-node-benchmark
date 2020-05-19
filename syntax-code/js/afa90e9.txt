@@ -1,0 +1,18 @@
+var image1 = document.querySelector('.img1');
+var image2 = document.querySelector('.img2');
+
+var myRequest = new Request('flowers.jpg');
+
+fetch(myRequest).then(function(response) {
+  var response2 = response.clone();
+
+  response.blob().then(function(myBlob) {
+    var objectURL = URL.createObjectURL(myBlob);
+    image1.src = objectURL;
+  });
+
+  response2.blob().then(function(myBlob) {
+    var objectURL = URL.createObjectURL(myBlob);
+    image2.src = objectURL;
+  });
+});

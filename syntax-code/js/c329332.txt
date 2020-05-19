@@ -1,0 +1,16 @@
+// convert a Unicode string to a string in which
+// each 16-bit unit occupies only one byte
+function toBinary(string) {
+  const codeUnits = new Uint16Array(string.length);
+  for (let i = 0; i < codeUnits.length; i++) {
+    codeUnits[i] = string.charCodeAt(i);
+  }
+  return String.fromCharCode(...new Uint8Array(codeUnits.buffer));
+}
+
+// a string that contains characters occupying > 1 byte
+const myString = "☸☹☺☻☼☾☿";
+
+const converted = toBinary(myString);
+const encoded = btoa(converted);
+console.log(encoded);                 // OCY5JjomOyY8Jj4mPyY=

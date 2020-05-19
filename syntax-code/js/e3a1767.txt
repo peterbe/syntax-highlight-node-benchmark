@@ -1,0 +1,8 @@
+var growAlice = function() {
+  aliceChange.playbackRate = 1;
+  aliceChange.play();  
+}
+
+// On tap or click, Alice will grow.
+cake.addEventListener("mousedown", growAlice, false);
+cake.addEventListener("touchstart", growAlice, false);

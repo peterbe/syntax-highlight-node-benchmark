@@ -1,0 +1,4 @@
+<ruby>
+  <rb>超電磁砲</rb>
+  <rp>（</rp><rt>レールガン</rt><rp>）</rp>
+</ruby>

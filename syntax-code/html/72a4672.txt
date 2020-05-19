@@ -1,0 +1,5 @@
+<html>
+  <body>
+    <div style="touch-action:none;">Can't touch this ... </div>
+  </body>
+</html>

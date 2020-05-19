@@ -1,0 +1,10 @@
+// Use the program
+gl.useProgram(program);
+
+// Bind existing attribute data
+gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+gl.enableVertexAttribArray(attributeLocation);
+gl.vertexAttribPointer(attributeLocation, 3, gl.FLOAT, false, 0, 0);
+
+// Draw a single triangle
+gl.drawArrays(gl.TRIANGLES, 0, 3);

@@ -1,0 +1,5 @@
+var range = document.selection.createRange();
+var element = document.getElementById("test");
+range.moveToElementText(element);
+range.select();
+// Selected "SomeTextToBeSelected"

@@ -1,0 +1,8 @@
+/* Keyword values */
+-moz-context-properties: fill;
+-moz-context-properties: fill, stroke;
+
+/* Global values */
+-moz-context-properties: inherit;
+-moz-context-properties: initial;
+-moz-context-properties: unset;

@@ -1,0 +1,2 @@
+var curValue = analyserNode.minDecibels;
+analyserNode.minDecibels = newValue;

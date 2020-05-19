@@ -1,0 +1,18 @@
+<table id="userinfo">
+  <colgroup>
+    <col span="2" class="group1">
+    <col>
+  </colgroup>
+  <tr>
+    <th>UserID</th>
+    <th>Name</th>
+    <th>Avatar</th>
+  </tr>
+  <tr>
+    <td>12345678</td>
+    <td>Johnny Rocket</td>
+    <td><img src="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg"</td>
+  </th>
+</table>
+<pre id="log">
+</pre>

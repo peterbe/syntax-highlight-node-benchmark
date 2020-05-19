@@ -1,0 +1,2 @@
+gl.getParameter(gl.BLEND_COLOR);
+// Float32Array[0, 0.5, 1, 1]

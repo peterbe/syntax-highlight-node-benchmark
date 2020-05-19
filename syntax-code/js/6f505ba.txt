@@ -1,0 +1,5 @@
+const axisQuat = quat.create();
+const rotateMatrix = mat4.create();
+quat.fromEuler(axisQuat, pitchAngle, yawAngle, rollAngle);
+mat4.fromQuat(rotateMatrix, axisQuat);
+mat4.multiply(viewMatrix, viewMatrix, rotateMatrix);

@@ -1,0 +1,7 @@
+p {
+  font-weight: bold;
+}
+a {
+   --colour: red;
+   color: var(--colour);
+}

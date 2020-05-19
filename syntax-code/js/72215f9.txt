@@ -1,0 +1,3 @@
+let lfo = audioCtx.createOscillator();
+lfo.type = 'square';
+lfo.frequency.value = 30;

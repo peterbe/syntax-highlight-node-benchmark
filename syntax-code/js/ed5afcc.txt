@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var scriptNode = audioCtx.createScriptProcessor(4096, 1, 1);
+scriptNode.onaudioprocess = function() { ... }

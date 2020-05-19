@@ -1,0 +1,9 @@
+const para = document.querySelector('p');
+
+document.addEventListener('lostpointercapture', () => {
+  console.log('I\'ve been released!')
+});
+
+para.addEventListener('pointerdown', (event) => {
+  para.setPointerCapture(event.pointerId);
+});

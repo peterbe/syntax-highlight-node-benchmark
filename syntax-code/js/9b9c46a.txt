@@ -1,0 +1,5 @@
+var img = new Image();   // Create new img element
+img.addEventListener('load', function() {
+  // execute drawImage statements here
+}, false);
+img.src = 'myImage.png'; // Set source path

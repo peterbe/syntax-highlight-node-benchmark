@@ -1,0 +1,10 @@
+<form>
+  <div>
+    <label for="mySearch">Search for user</label>
+    <input type="search" id="mySearch" name="q"
+    placeholder="User IDs are 4–8 characters in length" required
+    size="30" minlength="4" maxlength="8">
+    <button>Search</button>
+    <span class="validity"></span>
+  </div>
+</form>

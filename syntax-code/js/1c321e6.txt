@@ -1,0 +1,4 @@
+for (const inputIdx of xrSession.inputSources.keys()) {
+  /* the keys are the indexes into the list of inputs */
+  checkInput(xrSession.inputSources[inputIdx]);
+}

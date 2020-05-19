@@ -1,0 +1,3 @@
+// Set the alignmnet of a table
+var t = document.getElementById('TableA');
+t.align = 'center';

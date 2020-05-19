@@ -1,0 +1,9 @@
+AudioNode.disconnect();
+
+AudioNode.disconnect(output);
+
+AudioNode.disconnect(destination);
+
+AudioNode.disconnect(destination, output);
+
+AudioNode.disconnect(destination, output, input);

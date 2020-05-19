@@ -1,0 +1,2 @@
+var sync = gl.fenceSync(gl.SYNC_GPU_COMMANDS_COMPLETE, 0);
+var status = gl.clientWaitSync(sync, 0, 0);

@@ -1,0 +1,5 @@
+async function emptySourceBuffer(msBuffer) {
+  await msBuffer.removeAsync(0, Infinity).catch(function(e) {
+    handleException(e);
+  }
+}

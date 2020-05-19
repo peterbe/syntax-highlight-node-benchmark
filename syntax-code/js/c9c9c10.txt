@@ -1,0 +1,3 @@
+utterThis.onstart = function(event) {
+  console.log('We have started uttering this speech: ' + event.utterance.text);
+}

@@ -1,0 +1,2 @@
+var myRequest = new Request('flowers.jpg');
+var myReferrer = myRequest.referrerPolicy; // returns "" by default

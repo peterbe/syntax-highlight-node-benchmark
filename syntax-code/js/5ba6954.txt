@@ -1,0 +1,4 @@
+// Scroll to right edge of the page
+let maxX = window.scrollMaxX;
+
+window.scrollTo(maxX, 0);

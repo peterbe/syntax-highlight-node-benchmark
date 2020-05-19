@@ -1,0 +1,3 @@
+vrDisplayInstance.requestPresent(layers).then(function() {
+  // Do something after the presentation has begun
+});

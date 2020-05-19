@@ -1,0 +1,4 @@
+myPeerConnection.setRemoteDescription(new RTCSessionDescription(description))
+.then(function () {
+  return createMyStream();
+})

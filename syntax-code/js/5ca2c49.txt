@@ -1,0 +1,3 @@
+gl.blendEquation(gl.FUNC_ADD);
+gl.blendEquation(gl.FUNC_SUBTRACT);
+gl.blendEquation(gl.FUNC_REVERSE_SUBTRACT);

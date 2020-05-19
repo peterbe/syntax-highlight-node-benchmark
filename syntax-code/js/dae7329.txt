@@ -1,0 +1,3 @@
+window.onvrdisplayconnect = function() {
+  info.textContent = 'Display connected.';
+};

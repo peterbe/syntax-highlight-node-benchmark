@@ -1,0 +1,3 @@
+const record = document.querySelector('.record');
+const stop = document.querySelector('.stop');
+const soundClips = document.querySelector('.sound-clips');

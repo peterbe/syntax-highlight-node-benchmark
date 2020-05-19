@@ -1,0 +1,3 @@
+div{ color: black;
+-moz-appearance: rating-level-indicator;
+-webkit-appearance: rating-level-indicator; }

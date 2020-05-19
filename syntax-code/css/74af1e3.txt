@@ -1,0 +1,12 @@
+div { 
+  margin: 20px;
+  padding: 4px;
+  border: thin black solid;
+} 
+
+#divInfo { 
+  margin: 18px;
+  padding: 8px;
+  background-color:white;
+  font-size:80%; 
+}

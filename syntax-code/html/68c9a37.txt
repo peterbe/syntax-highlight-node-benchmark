@@ -1,0 +1,6 @@
+<script>
+  function logID() { console.log(this.id); }
+</script>
+<table id="my_table" onclick="logID();"><!-- when called, `this` will refer to the global object -->
+  ...
+</table>

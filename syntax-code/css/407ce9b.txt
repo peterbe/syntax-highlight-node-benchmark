@@ -1,0 +1,7 @@
+* {box-sizing: border-box;}
+
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+}

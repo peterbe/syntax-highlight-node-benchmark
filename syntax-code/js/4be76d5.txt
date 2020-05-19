@@ -1,0 +1,3 @@
+var constraints = {
+  facingMode: { exact: "user" }
+};

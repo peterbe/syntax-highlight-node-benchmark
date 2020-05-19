@@ -1,0 +1,4 @@
+let range = document.createRange();
+let referenceNode = document.getElementsByTagName('div').item(0);
+
+range.selectNode(referenceNode);

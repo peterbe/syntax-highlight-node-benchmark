@@ -1,0 +1,5 @@
+if (!navigator.getVRDisplays) {
+  console.error("WebVR is not available");
+} else {
+  /* Use WebVR */
+}

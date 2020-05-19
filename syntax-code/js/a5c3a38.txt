@@ -1,0 +1,12 @@
+const options = {
+  requestShipping: true
+};
+
+const paymentRequest = new PaymentRequest(paymentMethods,
+      detailsForShipping("ground"), options);
+
+paymentRequest.addEventListener("paymentmethodchange", handlePaymentChange, false);
+
+paymentRequest.show()
+.then(response => response.complete("success"))
+.catch(err => console.log("Error handling payment request: " + err));

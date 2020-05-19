@@ -1,0 +1,7 @@
+let constraints = {
+  width: 1920,
+  height: 1080,
+  aspectRatio: 1.777777778
+};
+
+myTrack.applyConstraints(constraints);

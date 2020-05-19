@@ -1,0 +1,26 @@
+function rotateAroundXAxis(a) {
+  return [
+       1,       0,        0,     0,
+       0,  cos(a),  -sin(a),     0,
+       0,  sin(a),   cos(a),     0,
+       0,       0,        0,     1
+  ];
+}
+
+function rotateAroundYAxis(a) {
+  return [
+     cos(a),   0, sin(a),   0,
+          0,   1,      0,   0,
+    -sin(a),   0, cos(a),   0,
+          0,   0,      0,   1
+  ];
+}
+
+function rotateAroundZAxis(a) {
+  return [
+    cos(a), -sin(a),    0,    0,
+    sin(a),  cos(a),    0,    0,
+         0,       0,    1,    0,
+         0,       0,    0,    1
+  ];
+}

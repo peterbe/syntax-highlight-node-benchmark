@@ -1,0 +1,12 @@
+var cred = new FederatedCredential({
+  id: id,
+  name: name,
+  provider: 'https://account.google.com',
+  iconURL: iconUrl
+});
+
+// Store it
+navigator.credentials.store(cred)
+  .then(function() {
+  // Do something else.
+});

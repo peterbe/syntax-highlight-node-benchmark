@@ -1,0 +1,4 @@
+function changeColor(newColor) {
+  elem = document.elementFromPoint(2, 2);
+  elem.style.color = newColor;
+}

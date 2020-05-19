@@ -1,0 +1,3 @@
+XRSession.onselectend = function(event) {
+  console.log("The user has completed a primary action.")
+}

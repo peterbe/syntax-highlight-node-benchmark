@@ -1,0 +1,7 @@
+musicTrack.addEventListener("mute", event => {
+  document.getElementById("timeline-widget").style.backgroundColor = "#aaa";
+}, false);
+
+musicTrack.addEventListener("unmute", event => {
+ document.getElementById("timeline-widget").style.backgroundColor = "#fff";
+}, false);

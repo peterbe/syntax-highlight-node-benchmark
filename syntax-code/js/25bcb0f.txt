@@ -1,0 +1,1 @@
+ cacheState = object.msCaching

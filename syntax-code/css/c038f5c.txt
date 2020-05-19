@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+img {
+    max-width: 100%;
+    display: block;
+}
+.media {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "img content";
+    margin-bottom: 1em;
+}
+.media::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.media .image {
+    float: left;
+    width: 150px;
+    margin-right: 20px; 
+}
+.media .text {  
+    padding: 10px;
+    align-self: end;   
+}

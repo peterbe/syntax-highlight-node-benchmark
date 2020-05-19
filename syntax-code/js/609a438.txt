@@ -1,0 +1,5 @@
+const parent = document.getElementById('parent');
+let child_nodes = parent.childNodes;
+console.log(child_nodes.length); // let's assume "2"
+parent.appendChild(document.createElement('div'));
+console.log(child_nodes.length); // outputs "3"

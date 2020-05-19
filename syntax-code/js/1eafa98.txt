@@ -1,0 +1,3 @@
+viewerRefSpace.addEventListener("reset", (event) => {
+  /* perform reset related tasks */
+});

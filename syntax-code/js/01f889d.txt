@@ -1,0 +1,7 @@
+let rows = document.querySelectorAll('tr');
+
+rows.forEach((row) => {
+  let z = document.createElement("td");
+  z.textContent = `(row #${row.rowIndex})`;
+  row.appendChild(z);
+});

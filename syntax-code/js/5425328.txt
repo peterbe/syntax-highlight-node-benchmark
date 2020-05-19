@@ -1,0 +1,6 @@
+let scaleTransform = [
+  Sx,  0,  0,  0,
+   0, Sy,  0,  0,
+   0,  0, Sz,  0,
+   0,  0,  0,  1
+];

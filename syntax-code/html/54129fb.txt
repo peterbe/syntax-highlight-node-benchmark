@@ -1,0 +1,4 @@
+<div class="container">
+  <div class="view" hidden></div>
+  <img src="https://interactive-examples.mdn.mozilla.net/media/examples/gecko-320-213.jpg">
+</div>

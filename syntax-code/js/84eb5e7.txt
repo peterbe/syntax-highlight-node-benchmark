@@ -1,0 +1,3 @@
+// Set the width of a table border to 2 pixels
+var t = document.getElementById('TableA');
+t.border = '2';

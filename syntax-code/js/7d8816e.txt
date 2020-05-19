@@ -1,0 +1,4 @@
+var clipBox = document.getElementById("compositeMode");
+clipBox.addEventListener("change", function (evt) {
+  document.getElementById("masked").style.maskComposite = evt.target.value;
+});

@@ -1,0 +1,5 @@
+var query = gl.createQuery();
+
+// ...
+
+gl.deleteQuery(query);

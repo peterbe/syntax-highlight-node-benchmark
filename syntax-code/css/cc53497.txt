@@ -1,0 +1,24 @@
+div {
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-width: thin;
+  overflow-y: scroll;
+  font-family: sans-serif;
+  float: left;
+  margin-right: 10px;
+}
+
+.blueScroll {
+  -ms-scrollbar-highlight-color: aqua;
+  -ms-scrollbar-face-color: blue;
+  -ms-scrollbar-arrow-color: blue;
+  border-color: blue;
+}
+
+.redScroll {
+  -ms-scrollbar-highlight-color: bisque;
+  -ms-scrollbar-face-color: red;
+  -ms-scrollbar-arrow-color: red;
+  border-color: red;
+}

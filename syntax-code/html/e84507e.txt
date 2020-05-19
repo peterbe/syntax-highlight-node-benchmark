@@ -1,0 +1,3 @@
+<input onClick="this.select();" value="Sample Text" />
+<!-- equivalent to -->
+<input onClick="this.setSelectionRange(0, this.value.length);" value="Sample Text" />

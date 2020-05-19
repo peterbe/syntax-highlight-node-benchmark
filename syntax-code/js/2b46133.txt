@@ -1,0 +1,4 @@
+var notification = new Notification('To do list', {
+  body: text,
+  icon: img
+});

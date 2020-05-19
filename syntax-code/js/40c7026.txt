@@ -1,0 +1,11 @@
+var myArray = new ArrayBuffer(512);
+var longInt8View = new Uint8Array(myArray);
+
+// generate some data
+for (var i=0; i< longInt8View.length; i++) {
+  longInt8View[i] = i % 256;
+}
+
+var xhr = new XMLHttpRequest;
+xhr.open("POST", url, false);
+xhr.send(myArray);

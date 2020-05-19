@@ -1,0 +1,5 @@
+const videoElement = document.querySelector('video');
+
+videoElement.audioTracks.addEventListener('removetrack', (event) => {
+  console.log(`Audio track: ${event.track.label} removed`);
+});

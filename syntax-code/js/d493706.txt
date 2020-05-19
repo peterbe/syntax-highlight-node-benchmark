@@ -1,0 +1,8 @@
+function scheduler() {
+    // while there are notes that will need to play before the next interval, schedule them and advance the pointer.
+    while (nextNoteTime < audioCtx.currentTime + scheduleAheadTime ) {
+        scheduleNote(currentNote, nextNoteTime);
+        nextNote();
+    }
+    timerID = window.setTimeout(scheduler, lookahead);
+}

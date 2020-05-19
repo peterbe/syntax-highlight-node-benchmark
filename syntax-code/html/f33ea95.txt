@@ -1,0 +1,3 @@
+<p id="list1">123456</p>
+<button id="swap">Swap selected item(s)</button>
+<p id="list2">abcdef</p>

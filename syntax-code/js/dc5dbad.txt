@@ -1,0 +1,5 @@
+var x = document.getElementsByTagName("iframe")[0].contentWindow;
+//x = window.frames[0];
+
+x.document.getElementsByTagName("body")[0].style.backgroundColor = "blue";
+// this would turn the 1st iframe in document blue.

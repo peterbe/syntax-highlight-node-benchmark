@@ -1,0 +1,5 @@
+var canvas = document.getElementById('canvas');
+var dataURL = canvas.toDataURL();
+console.log(dataURL);
+// "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNby
+// blAAAADElEQVQImWNgoBMAAABpAAFEI8ARAAAAAElFTkSuQmCC"

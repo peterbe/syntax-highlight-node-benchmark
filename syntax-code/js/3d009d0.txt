@@ -1,0 +1,4 @@
+window.addEventListener('vrdisplayactivate', function() {
+  info.textContent = 'Display activated.';
+  reportDisplays();
+});

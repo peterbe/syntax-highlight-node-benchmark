@@ -1,0 +1,10 @@
+/* Keyword values */
+box-orient: horizontal;
+box-orient: vertical;
+box-orient: inline-axis;
+box-orient: block-axis;
+
+/* Global values */
+box-orient: inherit;
+box-orient: initial;
+box-orient: unset;

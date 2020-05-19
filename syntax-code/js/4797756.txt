@@ -1,0 +1,17 @@
+var dbName = "sampleDB";
+var dbVersion = 2;
+var request = indexedDB.open(dbName, dbVersion);
+
+request.onupgradeneeded = function(e) {
+  var db = request.result;
+  if (e.oldVersion < 1) {
+    db.createObjectStore("store1");
+  }
+
+  if (e.oldVersion < 2) {
+    db.deleteObjectStore("store1");
+    db.createObjectStore("store2");
+  }
+
+  // etc. for version < 3, 4...
+};

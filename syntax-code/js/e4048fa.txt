@@ -1,0 +1,11 @@
+var evtSource = new EventSource('sse.php');
+
+// addEventListener version
+evtSource.addEventListener('error', (e) => {
+  console.log("An error occurred while attempting to connect.");
+});
+
+// onerror version
+evtSource.onerror = (e) => {
+  console.log("An error occurred while attempting to connect.");
+};

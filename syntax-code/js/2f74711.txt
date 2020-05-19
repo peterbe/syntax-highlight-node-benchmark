@@ -1,0 +1,12 @@
+//Redefine the triangles to use the W component
+var data = new Float32Array([
+  //Triangle 1
+  settings.left,  settings.bottom, settings.depth, settings.w,
+  settings.right, settings.bottom, settings.depth, settings.w,
+  settings.left,  settings.top,    settings.depth, settings.w,
+  
+  //Triangle 2
+  settings.left,  settings.top,    settings.depth, settings.w,
+  settings.right, settings.bottom, settings.depth, settings.w,
+  settings.right, settings.top,    settings.depth, settings.w
+]);

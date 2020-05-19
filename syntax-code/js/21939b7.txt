@@ -1,0 +1,4 @@
+var canvas = document.getElementById('myCanvas');
+var gl = canvas.getContext('webgl');
+
+gl.getParameter(gl.LINE_WIDTH);

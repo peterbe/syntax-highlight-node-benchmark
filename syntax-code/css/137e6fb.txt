@@ -1,0 +1,50 @@
+body, input {
+  font: 14px arial;
+  overflow: hidden;
+}
+
+.propInputCont {
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  width: 80px;
+}
+
+.setPropCont {
+  float: left;
+  margin-right: 5px;
+  width: 120px;
+}
+
+.propInputs, .setPropCont {
+  margin-bottom: 1em;
+}
+
+.curCss {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 80px;
+}
+
+.mandatory {
+  border-bottom-color: red;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.tar {
+  width: 40px;
+  text-align: right;
+}
+.fontfamily {
+  display: inline-block;
+}

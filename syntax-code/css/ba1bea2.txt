@@ -1,0 +1,33 @@
+/* All divs with a `lang` attribute are bold. */
+div[lang] {
+  font-weight: bold;
+}
+
+/* All divs without a `lang` attribute are italicized. */
+div:not([lang]) {
+  font-style: italic;
+}
+
+/* All divs in US English are blue. */
+div[lang~="en-us"] {
+  color: blue;
+}
+
+/* All divs in Portuguese are green. */
+div[lang="pt"] {
+  color: green;
+}
+
+/* All divs in Chinese are red, whether
+   simplified (zh-CN) or traditional (zh-TW). */
+div[lang|="zh"] {
+  color: red;
+}
+
+/* All divs with a Traditional Chinese
+   `data-lang` are purple. */
+/* Note: You could also use hyphenated attributes
+   without double quotes */ 
+div[data-lang="zh-TW"] {
+  color: purple;
+}

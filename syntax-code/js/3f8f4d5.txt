@@ -1,0 +1,3 @@
+var ext = gl.getExtension('WEBGL_color_buffer_float');
+
+gl.renderbufferStorage(gl.RENDERBUFFER, ext.RBGA32F_EXT, 256, 256);

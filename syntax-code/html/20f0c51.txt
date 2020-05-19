@@ -1,0 +1,1 @@
+<canvas id="button" tabindex="0" role="button" aria-pressed="false" aria-label="Start game"></canvas>

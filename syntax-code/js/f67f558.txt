@@ -1,0 +1,7 @@
+if (candidate.component == "rtp") {
+  handleRTPCandidate(candidate);
+} else if (candidate.component == "rtcp") {
+  handleRTCPCandidate(candidate);
+} else {
+  handleUnknownCandidate(candidate);
+}

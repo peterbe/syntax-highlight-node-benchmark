@@ -1,0 +1,6 @@
+<p>Click the "Start" button to begin video recording for a few seconds. You can stop
+   the video by clicking the creatively-named "Stop" button. The "Download"
+   button will download the received data (although it's in a raw, unwrapped form
+   that isn't very useful).
+</p>
+<br>

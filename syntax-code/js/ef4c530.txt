@@ -1,0 +1,5 @@
+function hashHandler() {
+  console.log('The hash has changed!');
+}
+
+window.addEventListener('hashchange', hashHandler, false);

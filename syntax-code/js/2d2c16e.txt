@@ -1,0 +1,40 @@
+// define variables
+var nativePicker = document.querySelector('.nativeWeekPicker');
+var fallbackPicker = document.querySelector('.fallbackWeekPicker');
+var fallbackLabel = document.querySelector('.fallbackLabel');
+
+var yearSelect = document.querySelector('#year');
+var weekSelect = document.querySelector('#fallbackWeek');
+
+// hide fallback initially
+fallbackPicker.style.display = 'none';
+fallbackLabel.style.display = 'none';
+
+// test whether a new date input falls back to a text input or not
+var test = document.createElement('input');
+
+try {
+  test.type = 'week';
+} catch (e) {
+  console.log(e.description);
+}
+
+// if it does, run the code inside the if() {} block
+if(test.type === 'text') {
+  // hide the native picker and show the fallback
+  nativePicker.style.display = 'none';
+  fallbackPicker.style.display = 'block';
+  fallbackLabel.style.display = 'block';
+
+  // populate the weeks dynamically
+  populateWeeks();
+}
+
+function populateWeeks() {
+  // Populate the week select with 52 weeks
+  for(var i = 1; i <= 52; i++) {
+    var option = document.createElement('option');
+    option.textContent = (i < 10) ? ("0" + i) : i;
+    weekSelect.appendChild(option);
+  }
+}

@@ -1,0 +1,2 @@
+gl.clear(gl.DEPTH_BUFFER_BIT);
+gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT);

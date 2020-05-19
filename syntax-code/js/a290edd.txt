@@ -1,0 +1,10 @@
+var cur = first_child(document.getElementById("test"));
+while (cur)
+{
+  if (data_of(cur.firstChild) == "This is the third paragraph.")
+  {
+    cur.className = "magic";
+    cur.firstChild.textContent = "This is the magic paragraph.";
+  }
+  cur = node_after(cur);
+}

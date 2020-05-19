@@ -1,0 +1,5 @@
+  // WebVR: Render the right eye’s view to the right half of the canvas
+  gl.viewport(canvas.width * 0.5, 0, canvas.width * 0.5, canvas.height);
+  gl.uniformMatrix4fv(projectionMatrixLocation, false, frameData.rightProjectionMatrix);
+  gl.uniformMatrix4fv(viewMatrixLocation, false, frameData.rightViewMatrix);
+  drawGeometry();

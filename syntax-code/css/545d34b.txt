@@ -1,0 +1,2 @@
+.content { padding-bottom: 5%; }
+.sidebox { padding-bottom: 10px; }

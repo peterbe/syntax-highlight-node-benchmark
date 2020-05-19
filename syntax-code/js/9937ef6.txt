@@ -1,0 +1,3 @@
+XRSession.addEventListener("end", function(event) {
+  /* the session has shut down */
+});

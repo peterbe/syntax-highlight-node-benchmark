@@ -1,0 +1,25 @@
+<h3>A paragraph with a span inside</h3>
+<p>Both the span and the paragraph have a border set. The
+  client rects are in red. Note that the p has onlyone border
+  box, while the span has multiple border boxes.</p>
+
+<div>
+  <strong>Original</strong>
+  <p>
+    <span>Paragraph that spans multiple lines</span>
+  </p>
+</div>
+
+<div>
+  <strong>p's rect</strong>
+  <p class="withClientRectsOverlay">
+    <span>Paragraph that spans multiple lines</span>
+  </p>
+</div>
+
+<div>
+  <strong>span's rect</strong>
+  <p>
+    <span class="withClientRectsOverlay">Paragraph that spans multiple lines</span>
+  </p>
+</div>

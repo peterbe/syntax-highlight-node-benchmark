@@ -1,0 +1,3 @@
+var retVals = { address: null, delivery: null };
+openDialog("http://example.tld/zzz.xul", "dlg", "modal", "pizza", 6.98,
+    retVals);

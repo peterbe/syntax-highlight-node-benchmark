@@ -1,0 +1,1 @@
+navigator.keyboard.lock(["KeyW", "KeyA", "KeyS", "KeyD"]);

@@ -1,0 +1,3 @@
+XRSession.onvisibilitychange = function(event) {
+  console.log("The visibility the XR session changed.")
+}

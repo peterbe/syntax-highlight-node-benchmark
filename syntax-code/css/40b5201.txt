@@ -1,0 +1,11 @@
+input.studentid:-ms-input-placeholder {
+  background-color: yellow;
+  color: red;
+  font-style: italic;
+}
+
+input.studentid:-moz-placeholder {
+  background-color: yellow;
+  color: red;
+  font-style: italic;
+}

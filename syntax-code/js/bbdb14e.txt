@@ -1,0 +1,2 @@
+setTimeout(myArray.myMethod, 1.0*1000); // prints "[object Window]" after 1 second
+setTimeout(myArray.myMethod, 1.5*1000, '1'); // prints "undefined" after 1.5 seconds

@@ -1,0 +1,17 @@
+* {box-sizing: border-box;}
+    img {max-width: 100%; display: block;}
+    body {
+        font: 1.2em Helvetica, arial, sans-serif;
+    }
+    a:link, a:visited {
+      text-decoration: none;
+      color: #f08c00;
+    }
+    
+    h2 {
+      background-color: #f08c00;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }

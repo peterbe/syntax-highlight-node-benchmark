@@ -1,0 +1,3 @@
+@supports not ((text-align-last: justify) or (-moz-text-align-last: justify)) {
+  … /* CSS to provide fallback alternative for text-align-last: justify */
+}

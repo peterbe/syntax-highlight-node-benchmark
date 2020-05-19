@@ -1,0 +1,18 @@
+const divElem = document.querySelector('div');
+
+document.body.addEventListener('mousemove', evt => {
+  let anim = divElem.animate(
+    { transform: `translate(${ evt.clientX}px, ${evt.clientY}px)` },
+    { duration: 500, fill: 'forwards' }
+  );
+
+  anim.commitStyles();
+
+  //anim.persist()
+
+  anim.onremove = function() {
+    console.log('Animation removed');
+  }
+
+  console.log(anim.replaceState);
+});

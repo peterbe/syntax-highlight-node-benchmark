@@ -1,0 +1,17 @@
+CubeDemo.prototype.computeViewMatrix = function(now) {
+  var moveInAndOut = 20 * Math.sin(now * 0.002);
+  var moveLeftAndRight = 15 * Math.sin(now * 0.0017);
+  
+  // Move the camera around
+  var position = MDN.translateMatrix(moveLeftAndRight, 0, 50 + moveInAndOut );
+  
+  // Multiply together, make sure and read them in opposite order
+  var matrix = MDN.multiplyArrayOfMatrices([
+    // Exercise: rotate the camera view
+    position
+  ]);
+  
+  // Inverse the operation for camera movements, because we are actually
+  // moving the geometry in the scene, not the camera itself.
+  this.transforms.view = MDN.invertMatrix(matrix);
+};

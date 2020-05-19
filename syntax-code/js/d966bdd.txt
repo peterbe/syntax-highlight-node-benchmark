@@ -1,0 +1,1 @@
+avgDataRate = rtcInboundRtpStreamStats.bytesReceived / elapsedTime;

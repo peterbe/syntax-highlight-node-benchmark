@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  font: 1.2em Helvetica, arial, sans-serif;
+}
+.wrapper > * {
+  border: 2px solid #f08c00;
+  background-color: #ffec99;
+  border-radius: 5px;
+  padding: 10px;
+}

@@ -1,0 +1,5 @@
+const transition = document.querySelector('.transition');
+
+transition.addEventListener('transitioncancel', () => {
+  console.log('Transition canceled');
+});

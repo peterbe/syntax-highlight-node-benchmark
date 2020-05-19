@@ -1,0 +1,10 @@
+box.draw({
+  top    : 1,               // y
+  bottom : -1,              // y
+  left   : -1,              // x
+  right  : 1,               // x
+  w      : 1.5,             // w - Bring this box into range
+
+  depth  : -1.5,             // z
+  color  : [0.4, 0.4, 1, 1] // blue
+});

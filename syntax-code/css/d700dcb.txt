@@ -1,0 +1,11 @@
+div {
+  width: 60px;
+  height: 60px;
+  background-color: skyblue;
+}
+
+.moved {
+  /* Equivalent to perspective(500px) translateX(10px) */
+  transform: perspective(500px) translate3d(10px, 0, 0px);
+  background-color: pink;
+}

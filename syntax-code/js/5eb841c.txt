@@ -1,0 +1,7 @@
+xrSession.onselectstart = event => {
+  let targetRayPose = event.frame.getPose(event.inputSource.targetRaySpace,
+                            myRefSpace);
+  if (targetRayPose) {
+    checkAndHandleHit(targetRayPose.transform);
+  }
+};

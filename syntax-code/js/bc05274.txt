@@ -1,0 +1,28 @@
+let xrSession = null;
+let xrReferenceSpace = null;
+let spaceType = null;
+
+function onSessionStarted(session) {
+  xrSession = session;
+
+  spaceType = "bounded-floor";
+  xrSession.requestReferenceSpace(spaceType)
+  .then(onRefSpaceCreated)
+  .catch(() => {
+    spaceType = "local-floor";
+    xrSession.requestReferenceSpace(spaceType)
+    .then(onRefSpaceCreated)
+    .catch(handleError);
+  });
+}
+
+function onRefSpaceCreated(refSpace) {
+  xrSession.updateRenderState({
+    baseLayer: new XRWebGLLayer(xrSession, gl)
+  });
+
+  // Now set up matrices, create a secondary reference space to
+  // transform the viewer's pose, and so forth. Then...
+
+  xrSession.requestAnimationFrame(onDrawFrame);
+}

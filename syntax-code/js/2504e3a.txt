@@ -1,0 +1,1 @@
+let inputSourceList = xrSession.inputSources;

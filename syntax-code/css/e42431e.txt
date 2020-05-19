@@ -1,0 +1,14 @@
+body {
+  background: beige;
+}
+
+section {
+  display: inline;
+  background: lightgray;
+}
+
+p {
+  width: 50%;     /* == half the body's width */
+  height: 200px;  /* Note: a percentage would be 0 */
+  background: cyan;
+}

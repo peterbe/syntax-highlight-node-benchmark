@@ -1,0 +1,10 @@
+//Global var to store a reference to the opened window
+var openedWindow;
+
+function openWindow() {
+  openedWindow = window.open('moreinfo.htm');
+}
+
+function closeOpenedWindow() {
+  openedWindow.close();
+}

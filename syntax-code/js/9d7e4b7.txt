@@ -1,0 +1,8 @@
+const input = document.querySelector('input')
+const log = document.getElementById('log')
+
+input.addEventListener('invalid', logValue)
+
+function logValue(e) {
+  log.textContent += e.target.value
+}

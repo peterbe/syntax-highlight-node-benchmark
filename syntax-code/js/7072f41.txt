@@ -1,0 +1,4 @@
+var canvas = document.getElementById('canvas');
+console.log(canvas.mozOpaque); // true
+// deactivate it
+canvas.mozOpaque = false;

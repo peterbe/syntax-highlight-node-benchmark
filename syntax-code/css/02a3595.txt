@@ -1,0 +1,9 @@
+.exampleOne {
+  -webkit-mask-image: url(mask.png);
+  -webkit-mask-position-y: bottom;
+}
+
+.exampleTwo {
+  -webkit-mask-image: url(mask.png);
+  -webkit-mask-position-y: 25%;
+} 

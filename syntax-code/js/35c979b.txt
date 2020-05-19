@@ -1,0 +1,19 @@
+var warningTimeout;
+var warningBox = document.createElement("div");
+warningBox.className = "warning";
+
+function displayWarning(msg) {
+  warningBox.innerHTML = msg;
+
+  if (document.body.contains(warningBox)) {
+    window.clearTimeout(warningTimeout);
+  } else {
+    // insert warningBox after myTextbox
+    myTextbox.parentNode.insertBefore(warningBox, myTextbox.nextSibling);
+  }
+
+  warningTimeout = window.setTimeout(function() {
+      warningBox.parentNode.removeChild(warningBox);
+      warningTimeout = -1;
+    }, 2000);
+}

@@ -1,0 +1,9 @@
+img {
+  float: left;
+  border: 3px solid black;
+}
+
+article {
+  border: 1px solid black;
+  contain: content;
+}

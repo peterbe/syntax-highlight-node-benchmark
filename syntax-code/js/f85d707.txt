@@ -1,0 +1,15 @@
+var point = new DOMPoint(5, 4);
+var scaleX = 2;
+var scaleY = 3;
+var translateX = 12;
+var translateY = 8;
+var angle = Math.PI / 2;
+var matrix = new DOMMatrix([
+  Math.sin(angle) * scaleX,
+  Math.cos(angle) * scaleX,
+  -Math.sin(angle) * scaleY,
+  Math.cos(angle) * scaleY,
+  translateX,
+  translateY
+]);
+var transformedPoint = point.matrixTransform(matrix);

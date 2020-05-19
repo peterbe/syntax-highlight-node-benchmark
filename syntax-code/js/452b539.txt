@@ -1,0 +1,3 @@
+                // stop the normal presentation, and start the vr presentation
+                window.cancelAnimationFrame(normalSceneFrame);
+                drawVRScene();

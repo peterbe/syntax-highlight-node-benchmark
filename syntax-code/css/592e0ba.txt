@@ -1,0 +1,25 @@
+/*
+AmstelvarAlpha-VF is created by David Berlow (https://github.com/TypeNetwork/Amstelvar)
+and is used here under the terms of its license:
+https://github.com/TypeNetwork/Amstelvar/blob/master/OFL.txt
+*/
+
+@font-face {
+  src: url('https://mdn.mozillademos.org/files/16044/AmstelvarAlpha-VF.ttf');
+  font-family:'AmstelvarAlpha';
+  font-style: normal;
+}
+
+label {
+  font: 1rem monospace;
+}
+
+.container {
+  max-height: 150px;
+  overflow: scroll;
+}
+
+.sample {
+  font: 2rem 'AmstelvarAlpha', sans-serif;
+}
+

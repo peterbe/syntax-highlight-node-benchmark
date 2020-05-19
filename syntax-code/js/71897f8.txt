@@ -1,0 +1,5 @@
+elem.getAnimations().forEach(
+  function(animation){ 
+    return animation.finish();
+  }
+);

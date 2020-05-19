@@ -1,0 +1,5 @@
+// start
+//
+// Called when the body has loaded is created to get the ball rolling.
+
+document.body.onload = start;

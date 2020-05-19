@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.onratechange = (event) => {
+  console.log('The playback rate changed.');
+};

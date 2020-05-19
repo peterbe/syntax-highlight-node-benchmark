@@ -1,0 +1,4 @@
+receiver.getStats().then(function(stats) {
+  document.getElementById("lostpackets").innerText =
+          stats.packetsLost;
+});

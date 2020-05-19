@@ -1,0 +1,6 @@
+// inside worker.js
+
+self.onmessageerror = (event) => {
+    self.postMessage('Error receiving message');
+    console.error(event);  
+};

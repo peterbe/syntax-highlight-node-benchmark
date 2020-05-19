@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.addEventListener('waiting', (event) => {
+  console.log('Video is waiting for more data.');
+});

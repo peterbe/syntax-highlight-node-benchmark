@@ -1,0 +1,1 @@
+var myGamepadAngAcc = gamepadPoseInstance.angularAcceleration;

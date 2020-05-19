@@ -1,0 +1,2 @@
+<input type="text" id="text-box" size="20" value="Mozilla">
+<button onclick="selectText()">Select text</button>

@@ -1,0 +1,5 @@
+const worker = new Worker("static/scripts/worker.js");
+
+worker.addEventListener('message', (event) => {
+    console.log(`Received message from worker: ${event.data}`)
+});

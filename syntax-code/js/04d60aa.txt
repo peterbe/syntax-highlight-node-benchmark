@@ -1,0 +1,10 @@
+onmessage = function(evt) {
+  const canvas = evt.data.canvas;
+  const gl = canvas.getContext("webgl");
+
+  function render(time) {
+    // ... some drawing using the gl context ...
+    requestAnimationFrame(render);
+  }
+  requestAnimationFrame(render);
+};

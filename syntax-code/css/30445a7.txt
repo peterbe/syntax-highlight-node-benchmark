@@ -1,0 +1,4 @@
+:-moz-user-disabled {
+  background-color: lightgray;
+  padding: 8px;
+}

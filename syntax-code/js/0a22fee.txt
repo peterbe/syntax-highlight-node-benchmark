@@ -1,0 +1,5 @@
+function onDrop(event) {
+  const data = event.dataTransfer.getData("text/plain");
+  event.target.textContent = data;
+  event.preventDefault();
+}

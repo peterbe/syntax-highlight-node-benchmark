@@ -1,0 +1,9 @@
+// First, get the Feature Policy object
+const featurePolicy = document.featurePolicy
+
+// Then query feature for specific 
+const allowed = featurePolicy.allowedFeatures()
+
+for (const directive of allowed){
+  console.log(directive)
+}

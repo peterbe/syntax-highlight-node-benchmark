@@ -1,0 +1,5 @@
+function revokePermission() {
+  navigator.permissions.revoke({name:'geolocation'}).then(function(result) {
+    report(result.state);
+  });
+}

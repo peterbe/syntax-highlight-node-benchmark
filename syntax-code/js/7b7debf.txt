@@ -1,0 +1,10 @@
+var intFrameHeight = window.innerHeight; // or
+
+var intFrameHeight = self.innerHeight;
+// will return the height of the frame viewport within the frameset
+
+var intFramesetHeight = parent.innerHeight;
+// will return the height of the viewport of the closest frameset
+
+var intOuterFramesetHeight = top.innerHeight;
+// will return the height of the viewport of the outermost frameset

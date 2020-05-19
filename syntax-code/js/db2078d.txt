@@ -1,0 +1,2 @@
+var d = document.setUserData('key', 15, null);
+console.log(document.getUserData('key')); // 15

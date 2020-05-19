@@ -1,0 +1,1 @@
+inputInstance.indeterminate = true;

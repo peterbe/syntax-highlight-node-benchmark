@@ -1,0 +1,4 @@
+p:last-of-type {
+  color: red;
+  font-style: italic;
+}

@@ -1,0 +1,4 @@
+var maskMode = document.getElementById("maskMode");
+maskMode.addEventListener("change", function (evt) {
+  document.getElementById("masked").style.maskMode = evt.target.value;
+});

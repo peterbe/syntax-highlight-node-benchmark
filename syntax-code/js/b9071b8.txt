@@ -1,0 +1,9 @@
+function overHandler(event) {
+  // Determine the target event's gotpointercapture handler
+  let gotCaptureHandler = event.target.ongotpointercapture;
+}
+
+function init() {
+  let el = document.getElementById('target');
+  el.ongotpointercapture = overHandler;
+}

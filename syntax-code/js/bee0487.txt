@@ -1,0 +1,5 @@
+function finished(e) {
+  logMessage(`Finished script with ID: ${e.target.id}`);
+}
+
+document.addEventListener('afterscriptexecute', finished, true);

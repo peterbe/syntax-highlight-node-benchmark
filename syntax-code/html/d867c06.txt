@@ -1,0 +1,2 @@
+<p style="text-align:center">This line will be centered.<br>
+And so will this line.</p>

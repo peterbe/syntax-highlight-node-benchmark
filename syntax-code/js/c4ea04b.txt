@@ -1,0 +1,4 @@
+let parsedUnit = CSSNumericValue.parse( unit );
+console.log( parsedUnit );        // CSSUnitValue {value: 1.2, unit: "rem"}
+console.log( parsedUnit.unit );   // "rem"
+console.log( parsedUnit.value );  // 1.2

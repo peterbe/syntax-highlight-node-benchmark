@@ -1,0 +1,38 @@
+img.preview {
+  margin: 1rem 0;
+}
+
+.event-log-contents {
+  width: 18rem;
+  height: 5rem;
+  border: 1px solid black;
+  margin: .2rem;
+  padding: .2rem;
+}
+
+.example {
+  display: grid;
+  grid-template-areas:
+              "select  log"
+              "preview log";
+}
+
+.file-select {
+  grid-area: select;
+}
+
+.preview {
+  grid-area: preview;
+}
+
+.event-log {
+  grid-area: log;
+}
+
+.event-log>label {
+  display: block;
+}
+
+.event-log-contents {
+  resize: none;
+}

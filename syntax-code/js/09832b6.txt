@@ -1,0 +1,4 @@
+var aliceTiming = {
+  duration: 3000,
+  iterations: Infinity
+}

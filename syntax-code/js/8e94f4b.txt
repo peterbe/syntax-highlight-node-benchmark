@@ -1,0 +1,3 @@
+recognition.onerror = function(event) { 
+  console.log('Speech recognition error detected: ' + event.error'); 
+}

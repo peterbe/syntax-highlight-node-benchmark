@@ -1,0 +1,10 @@
+<section>
+  <h3>This will be dark green</h3>
+  <p>Text in paragraph will be red.</p>
+  This will also be dark green.
+</section>
+<section class="with-revert">
+  <h3>This will be black</h3>
+  <p>Text in paragraph will be red.</p>
+  This will also be black.
+</section>

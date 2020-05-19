@@ -1,0 +1,8 @@
+function pointerdown_handler(ev) {
+ // The pointerdown event signals the start of a touch interaction.
+ // Save this event for later processing (this could be part of a
+ // multi-touch interaction) and update the background color
+ push_event(ev);
+ if (logEvents) log("pointerDown: name = " + ev.target.id, ev);
+ update_background(ev);
+}

@@ -1,0 +1,26 @@
+function get_cache(ev) {
+ // Return the cache for this event's target element
+ switch(ev.target.id) {
+   case "target1": return evCache1;
+   case "target2": return evCache2;
+   case "target3": return evCache3;
+   default: log("Error with cache handling",ev);
+ }
+}
+
+function push_event(ev) {
+ // Save this event in the target's cache
+ var cache = get_cache(ev);
+ cache.push(ev);
+}
+
+function remove_event(ev) {
+ // Remove this event from the target's cache
+ var cache = get_cache(ev);
+ for (var i = 0; i < cache.length; i++) {
+   if (cache[i].pointerId == ev.pointerId) {
+     cache.splice(i, 1);
+     break;
+   }
+ }
+}

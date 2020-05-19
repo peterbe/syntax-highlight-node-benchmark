@@ -1,0 +1,15 @@
+p {
+  display: inline;
+}
+
+.normal {
+  font-variant-position: normal;
+}
+
+.super {
+  font-variant-position: super;
+}
+
+.sub {
+  font-variant-position: sub;
+}

@@ -1,0 +1,38 @@
+function clear_resource_timings() {
+  if (performance === undefined) {
+    console.log("= performance.clearResourceTimings(): peformance NOT supported");
+    return;
+  }
+  // Check if Performance.clearResourceTiming() is supported 
+  console.log ("= Print performance.clearResourceTimings()");
+  var supported = typeof performance.clearResourceTimings == "function";
+  if (supported) {
+    console.log("... Performance.clearResourceTimings() = supported");
+    performance.clearResourceTimings();
+  } else {
+    console.log("... Performance.clearResourceTiming() = NOT supported");
+    return;
+  }
+  // getEntries should now return zero
+  var p = performance.getEntriesByType("resource");
+  if (p.length == 0)  
+    console.log("... Performance data buffer cleared");
+  else
+    console.log("... Performance data buffer NOT cleared (still have `" + p.length + "` items");
+}
+
+function set_resource_timing_buffer_size(n) {
+  if (performance === undefined) {
+    console.log("= performance.setResourceTimingBufferSize(): peformance NOT supported");
+    return;
+  }
+  // Check if Performance.setResourceTimingBufferSize() is supported 
+  console.log ("= performance.setResourceTimingBufferSize()");
+  var supported = typeof performance.setResourceTimingBufferSize == "function";
+  if (supported) {
+    console.log("... Performance.setResourceTimingBufferSize() = supported");
+    performance.setResourceTimingBufferSize(n);
+  } else {
+    console.log("... Performance.setResourceTimingBufferSize() = NOT supported");
+  }
+}

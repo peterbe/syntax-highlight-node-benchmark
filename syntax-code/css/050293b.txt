@@ -1,0 +1,10 @@
+@counter-style speak-as-example {
+  system: fixed;
+  symbols:     ;
+  suffix: " ";
+  speak-as: numbers;
+}
+
+.list {
+  list-style: speak-as-example;    
+}

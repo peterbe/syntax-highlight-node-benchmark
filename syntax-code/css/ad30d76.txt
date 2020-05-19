@@ -1,0 +1,6 @@
+p {
+  margin: 10px;
+  border: solid cyan;
+  outline: dotted green;
+  -moz-outline-radius-bottomleft: 2em;
+}

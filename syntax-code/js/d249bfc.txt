@@ -1,0 +1,3 @@
+navigator.serviceWorker.onerror = function(errorevent) {
+  console.log(`received error message: ${errorevent.message}`);
+}

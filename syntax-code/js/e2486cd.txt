@@ -1,0 +1,15 @@
+function runTaskQueue(deadline) {
+  while ((deadline.timeRemaining() > 0 || deadline.didTimeout) && taskList.length) {
+    let task = taskList.shift();
+    currentTaskNumber++;
+    
+    task.handler(task.data);
+    scheduleStatusRefresh();
+  }
+ 
+  if (taskList.length) {
+    taskHandle = requestIdleCallback(runTaskQueue, { timeout: 1000} );
+  } else {
+    taskHandle = 0;
+  }
+}

@@ -1,0 +1,3 @@
+navigator.xr.ondevicechange = function(ev) { 
+  console.log("The availability of immersive XR devices has changed.")
+};

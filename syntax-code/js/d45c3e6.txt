@@ -1,0 +1,36 @@
+var canvas = document.getElementById('canvas');
+var d = canvas.width;
+ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(d / 2, 0);
+ctx.lineTo(d, d);
+ctx.lineTo(0, d);
+ctx.closePath();
+ctx.fillStyle = 'yellow';
+ctx.fill();
+
+function blobCallback(iconName) {
+  return function(b) {
+    var r = new FileReader();
+    r.onloadend = function () {
+    // r.result contains the ArrayBuffer.
+    Cu.import('resource://gre/modules/osfile.jsm');
+    var writePath = OS.Path.join(OS.Constants.Path.desktopDir, 
+                                 iconName + '.ico');
+    var promise = OS.File.writeAtomic(writePath, new Uint8Array(r.result), 
+                                      {tmpPath:writePath + '.tmp'});
+    promise.then(
+      function() {
+        console.log('successfully wrote file');
+      },
+      function() {
+        console.log('failure writing file')
+      }
+    );
+  };
+  r.readAsArrayBuffer(b);
+  }
+}
+
+canvas.toBlob(blobCallback('passThisString'), 'image/vnd.microsoft.icon',
+              '-moz-parse-options:format=bmp;bpp=32');

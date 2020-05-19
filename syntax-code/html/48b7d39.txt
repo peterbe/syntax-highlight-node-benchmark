@@ -1,0 +1,2 @@
+<p>Click anywhere to test the <code>metaKey</code> property.</p>
+<p id="log"></p>

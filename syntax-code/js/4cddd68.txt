@@ -1,0 +1,65 @@
+let clear = false, 
+    divInfo = null, 
+    divs = null, 
+    useCapture = false;
+
+window.onload = function () {
+  divInfo = document.getElementById('divInfo')
+  divs = document.getElementsByTagName('div')
+  chCapture = document.getElementById('chCapture')
+  chCapture.onclick = function () {
+    RemoveListeners()
+    AddListeners()
+  }
+  Clear()
+  AddListeners()
+}
+
+function RemoveListeners() {
+  for (let i = 0; i < divs.length; i++) {
+    let d = divs[i]
+    if (d.id != "divInfo") {
+      d.removeEventListener("click", OnDivClick, true)
+      d.removeEventListener("click", OnDivClick, false)
+    }
+  }
+}
+
+function AddListeners() {
+  for (let i = 0; i < divs.length; i++) {
+    let d = divs[i]
+    if (d.id != "divInfo") {
+        if (chCapture.checked) {
+            d.addEventListener("click", OnDivClick, true)
+        }
+        else {
+            d.addEventListener("click", OnDivClick, false)
+            d.onmousemove = function () { clear = true }
+        }
+    }
+  }
+} 
+
+function OnDivClick(e) {
+  if (clear) {
+    Clear()
+    clear = false
+  }
+  if (e.eventPhase == 2)
+    e.currentTarget.style.backgroundColor = 'red';
+    let level = 
+        e.eventPhase == 0 ? "none" : 
+        e.eventPhase == 1 ? "capturing" : 
+        e.eventPhase == 2 ? "target" : 
+        e.eventPhase == 3 ? "bubbling" : "error";
+    divInfo.innerHTML += e.currentTarget.id + "; eventPhase: " + level + "<br/>";
+}
+
+function Clear() {
+  for (let i = 0; i < divs.length; i++) {
+    if (divs[i].id != "divInfo") {
+      divs[i].style.backgroundColor = (i & 1) ? "#f6eedb" : "#cceeff"
+    }
+  }
+  divInfo.innerHTML = ''
+}

@@ -1,0 +1,5 @@
+let chunks = [];
+
+mediaRecorder.ondataavailable = function(e) {
+  chunks.push(e.data);
+}

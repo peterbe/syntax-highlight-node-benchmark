@@ -1,0 +1,2 @@
+let glLayer = xrSession.renderState.baselayer;
+gl.bindFramebuffer(gl.FRAMEBUFFER, glLayer.framebuffer);

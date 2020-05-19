@@ -1,0 +1,26 @@
+function update_background(ev) {
+ // Change background color based on the number of simultaneous touches/pointers
+ // currently down:
+ //   white - target element has no touch points i.e. no pointers down
+ //   yellow - one pointer down
+ //   pink - two pointers down
+ //   lightblue - three or more pointers down
+ var evCache = get_cache(ev);
+ switch (evCache.length) {
+   case 0:
+     // Target element has no touch points
+     ev.target.style.background = "white";
+     break;
+   case 1:
+     // Single touch point
+     ev.target.style.background = "yellow";
+     break;
+   case 2:
+     // Two simultaneous touch points
+     ev.target.style.background = "pink";
+     break;
+   default:
+     // Three or more simultaneous touches
+     ev.target.style.background = "lightblue";
+ }
+}

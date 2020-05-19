@@ -1,0 +1,3 @@
+let position = new CSSPositionValue(
+    new CSSKeywordValue("center"),
+    new CSSUnitValue(10, "px"));

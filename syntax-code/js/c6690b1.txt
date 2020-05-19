@@ -1,0 +1,11 @@
+var bottomBar = document.getElementById('bottombar');
+var viewport = window.visualViewport;
+
+function resizeHandler() {
+   if (viewport.scale > 1.3)
+     bottomBar.style.display = "none";
+   else
+     bottomBar.style.display = "block";
+}
+ 
+window.visualViewport.addEventListener('resize', resizeHandler);

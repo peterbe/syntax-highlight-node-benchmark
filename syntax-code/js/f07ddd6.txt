@@ -1,0 +1,1 @@
+event.dataTransfer.clearData("text/uri-list");

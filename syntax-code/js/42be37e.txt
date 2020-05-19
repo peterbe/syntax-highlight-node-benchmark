@@ -1,0 +1,3 @@
+XRSession.onend = function(event) {
+  console.log("The XR session has ended")
+}

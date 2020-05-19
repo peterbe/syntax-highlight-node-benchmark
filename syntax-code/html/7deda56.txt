@@ -1,0 +1,5 @@
+<!-- Scroll up the document by 5 lines -->
+<button id="scroll-up" onclick="scrollByLines(-5);">Up 5 lines</button>
+
+<!-- Scroll down the document by 5 lines -->
+<button id="scroll-down" onclick="scrollByLines(5);">Down 5 lines</button>

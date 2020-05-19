@@ -1,0 +1,6 @@
+let mayHaveBackdropFlag = false;
+let displaySurface = displayStream.getVideoTracks()[0].getSettings().displaySurface;
+
+if (displaySurface === "monitor" || displaySurface ==="application") {
+  mayHaveBackdropFlag = true;
+}

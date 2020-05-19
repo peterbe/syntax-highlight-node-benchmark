@@ -1,0 +1,128 @@
+html,body {
+  height: 100%;
+  box-sizing: border-box;
+  background: #EEE;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font: 1em monospace;
+}
+
+.row {
+  display: flex;
+  flex: 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 auto;
+}
+
+.cell {
+  margin: .5em;
+  padding: .5em;
+  background-color: #FFF;
+  overflow: hidden;
+  text-align: center;
+  flex: 1;
+}
+
+.note {
+  background: #fff3d4;
+  padding: 1em;
+  margin: .5em .5em 0;
+  font: .8em sans-serif;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.note + .row .cell {
+  margin-top: 0;
+}
+
+.container {
+  display: inline-block;
+  border: 1px dotted grey;
+  position:relative;
+}
+
+.container:before {
+  content: 'margin';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font: italic .6em sans-serif;
+}
+
+.viewbox {
+  box-shadow: 1rem 1rem 0 #EFEFEF inset, -1rem -1rem 0 #EFEFEF inset;
+}
+
+.container.viewbox:after {
+  content: 'viewbox';
+  position: absolute;
+  left: 1.1rem;
+  top: 1.1rem;
+  font: italic .6em sans-serif;
+}
+
+.cell span {
+  display: block;
+  margin-bottom: .5em;
+}
+
+p {
+  font-family: sans-serif;
+  background: #000;
+  color: pink;
+  margin: 2em;
+  padding: 3em 1em;
+  border: 1em solid pink;
+  width: 6em;
+}
+
+.none { clip-path: none; }
+.svg  { clip-path: url(#myPath); }
+.svg2 { clip-path: path('M15,45 A30,30,0,0,1,75,45 A30,30,0,0,1,135,45 Q135,90,75,130 Q15,90,15,45 Z');}
+.shape1 { clip-path: circle(25%); }
+.shape2 { clip-path: circle(25% at 25% 25%); }
+.shape3 { clip-path: fill-box    circle(25% at 25% 25%); }
+.shape4 { clip-path: stroke-box  circle(25% at 25% 25%); }
+.shape5 { clip-path: view-box    circle(25% at 25% 25%); }
+.shape6 { clip-path: margin-box  circle(25% at 25% 25%); }
+.shape7 { clip-path: border-box  circle(25% at 25% 25%); }
+.shape8 { clip-path: padding-box circle(25% at 25% 25%); }
+.shape9 { clip-path: content-box circle(25% at 25% 25%); }
+
+.defs {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+pre { margin-bottom: 0; }
+
+svg {
+  margin: 1em;
+  font-family: sans-serif;
+  width: 192px;
+  height: 192px;
+}
+
+svg rect {
+  stroke: pink;
+  stroke-width: 16px;
+}
+
+svg text {
+  fill: pink;
+  text-anchor: middle;
+}
+
+svg text.em {
+  font-style: italic;
+}

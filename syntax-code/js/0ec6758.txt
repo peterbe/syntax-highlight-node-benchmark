@@ -1,0 +1,3 @@
+svgElem.addEventListener('abort', () => {
+  console.log('Load aborted.');
+})

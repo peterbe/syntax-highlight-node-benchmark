@@ -1,0 +1,2 @@
+<p><label><input type="checkbox" id="checkbox"> Checked</label>
+<p><button id="button">Click me</button>

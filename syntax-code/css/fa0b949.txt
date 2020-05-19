@@ -1,0 +1,2 @@
+::cue(#\31) { color: lime; }
+::cue(#crédit\ de\ transcription) { color: red; }

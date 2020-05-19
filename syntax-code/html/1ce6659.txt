@@ -1,0 +1,2 @@
+<p><a href="#" data-tooltip="First link">See a tooltip here &hellip;</a></p>
+<p><a href="#" data-tooltip="Second link">&hellip; or here!</a></p>

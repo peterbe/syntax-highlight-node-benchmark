@@ -1,0 +1,9 @@
+document.getElementById('toggleBox').addEventListener('click', function() {
+  if (box.style.display == "none") {
+    box.style.display = "flex";
+    document.getElementById("toggleBox").innerHTML = "Hide the box";
+  } else {
+    box.style.display = "none";
+    document.getElementById("toggleBox").innerHTML = "Show the box";
+  }
+});

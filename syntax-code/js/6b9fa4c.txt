@@ -1,0 +1,5 @@
+let displayMediaOptions = {
+  cursor: {
+    exact: "none"
+  }
+};

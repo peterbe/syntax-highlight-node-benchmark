@@ -1,0 +1,3 @@
+<a href="//example.com">Scheme-relative URL</a>
+<a href="/en-US/docs/Web/HTML">Origin-relative URL</a>
+<a href="./p">Directory-relative URL</a>

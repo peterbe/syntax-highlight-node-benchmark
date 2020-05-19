@@ -1,0 +1,14 @@
+let user = "";
+
+function greet() {
+  console.count();
+  return "hi " + user;
+}
+
+user = "bob";
+greet();
+user = "alice";
+greet();
+greet();
+console.count();
+console.countReset();

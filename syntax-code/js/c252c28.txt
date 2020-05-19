@@ -1,0 +1,9 @@
+// Old webkitAudioContext code:
+var panner = context.createPanner();
+panner.panningModel = panner.EQUALPOWER;  // equalpower panning
+panner.panningModel = panner.HRTF;        // HRTF panning
+
+// New standard AudioContext code:
+var panner = context.createPanner();
+panner.panningModel = "equalpower";       // equalpower panning
+panner.panningModel = "HRTF";             // HRTF panning

@@ -1,0 +1,3 @@
+<video controls autoplay src="video.webm">
+ <track default src="track.vtt">
+</video>

@@ -1,0 +1,9 @@
+var promise = navigator.mediaDevices.getUserMedia({ 
+  audio: true, 
+  video: true 
+});
+
+promise.then(function(stream) {
+  var startBtn = document.querySelector('#startBtn');
+  startBtn.disabled = stream.active; 
+};)

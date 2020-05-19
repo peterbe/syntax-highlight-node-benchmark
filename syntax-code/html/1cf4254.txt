@@ -1,0 +1,2 @@
+&lt;strike&gt;:	<strike>Today's Special: Salmon</strike> SOLD OUT<br />
+&lt;s&gt;:	<s>Today's Special: Salmon</s> SOLD OUT

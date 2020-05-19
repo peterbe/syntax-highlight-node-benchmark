@@ -1,0 +1,3 @@
+font-optical-sizing: auto;
+
+font-variation-settings: 'opsz' 36;

@@ -1,0 +1,5 @@
+/* Use the default settings */
+font-variation-settings: normal;
+
+/* Set values for OpenType axis names */
+font-variation-settings: "xhgt" 0.7;

@@ -1,0 +1,2 @@
+gl.getParameter(gl.POLYGON_OFFSET_FACTOR); // 2
+gl.getParameter(gl.POLYGON_OFFSET_UNITS);  // 3

@@ -1,0 +1,5 @@
+WorkerPerformance {now: function}
+  __proto__: WorkerPerformance
+    constructor: function WorkerPerformance() { [native code] }
+    now: function now() { [native code] }
+    __proto__: Object

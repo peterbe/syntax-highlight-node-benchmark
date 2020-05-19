@@ -1,0 +1,21 @@
+const imageUrl = "https://mdn.mozillademos.org/files/16797/clock-demo-400px.png";
+const container = document.querySelector(".container");
+
+function loadImage(url) {
+  const image = new Image(200, 200);
+  image.addEventListener("load",
+    () => container.prepend(image)
+  );
+
+  image.addEventListener("error", () => {
+    const errMsg = document.createElement("output");
+    errMsg.value = `Error loading image at ${url}`;
+    container.append(errMsg);
+  });
+ 
+  image.crossOrigin = "anonymous";
+  image.alt = "";
+  image.src = url;
+}
+
+loadImage(imageUrl);

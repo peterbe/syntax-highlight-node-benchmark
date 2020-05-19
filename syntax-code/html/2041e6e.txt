@@ -1,0 +1,4 @@
+<div>
+  <h1>Heading</h1>
+  <p>Bunch of awesome content</p>
+</div>

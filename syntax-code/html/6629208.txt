@@ -1,0 +1,3 @@
+<div>
+<span>Outer <span>inner</span> outer</span>
+</div>

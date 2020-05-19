@@ -1,0 +1,3 @@
+window.addEventListener('languagechange', function() {
+  console.log('languagechange event detected!'); 
+});

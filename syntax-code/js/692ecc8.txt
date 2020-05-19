@@ -1,0 +1,6 @@
+function dragend_handler(event)
+{
+  var dt = event.dataTransfer;
+  // Remove a text/html item
+  dt.mozClearDataAt("text/html", 1);
+}

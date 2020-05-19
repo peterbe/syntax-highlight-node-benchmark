@@ -1,0 +1,12 @@
+/* 1-value syntax */
+keyword                  /* Either the horizontal or vertical position; the other axis defaults to center */
+value                    /* The position on the x-axis; the y-axis defaults to 50% */
+
+/* 2-value syntax */
+keyword keyword          /* A keyword for each direction (the order is irrelevant) */
+keyword value            /* A keyword for horizontal position, value for vertical position */
+value keyword            /* A value for horizontal position, keyword for vertical position */
+value value              /* A value for each direction (horizontal then vertical) */
+
+/* 4-value syntax */
+keyword value keyword value /* Each value is an offset from the keyword that preceeds it */

@@ -1,0 +1,2 @@
+gl.isEnabled(gl.STENCIL_TEST); 
+// false

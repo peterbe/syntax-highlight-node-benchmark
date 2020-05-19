@@ -1,0 +1,3 @@
+@page :right {
+  margin: 2in 3in;
+} 

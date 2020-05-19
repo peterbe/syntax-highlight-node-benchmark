@@ -1,0 +1,9 @@
+var drinking = document.getElementById('liquid').animate(
+[
+  { height: '100%' },
+  { height: '0' }   
+], {
+  fill: 'forwards',
+  duration: aliceChange.effect.getComputedTiming().duration / 2
+});
+drinking.pause();

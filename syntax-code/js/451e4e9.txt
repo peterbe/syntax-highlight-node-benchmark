@@ -1,0 +1,12 @@
+var xdr = new XDomainRequest();
+xdr.open("POST", "http://example.com/api/method");
+
+xdr.onprogress = function(){
+  //Handle Partial Response with xdr.responseText
+}
+
+xdr.onload = function(){ 
+  //Handle Response with xdr.responseText 
+} 
+
+xdr.send("param1=value1&param2=value2");

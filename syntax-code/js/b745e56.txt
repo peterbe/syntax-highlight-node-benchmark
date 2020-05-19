@@ -1,0 +1,1 @@
+var Mytag = document.registerElement('my-tag');

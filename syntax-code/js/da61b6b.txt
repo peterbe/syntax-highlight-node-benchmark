@@ -1,0 +1,5 @@
+var links = document.getElementsByTagName('link');
+var length = links.length;
+for (var i = 0; i < length; i++) {
+  alert(links[i]);
+}

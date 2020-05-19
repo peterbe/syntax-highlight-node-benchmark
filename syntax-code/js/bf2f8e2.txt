@@ -1,0 +1,3 @@
+document.addEventListener('transitionend', () => {
+  console.log('Transition ended');
+});

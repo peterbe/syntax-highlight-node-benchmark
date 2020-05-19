@@ -1,0 +1,3 @@
+grayscale(0)     /* No effect */
+grayscale(.7)    /* 70% grayscale */
+grayscale(100%)  /* Completely grayscale */

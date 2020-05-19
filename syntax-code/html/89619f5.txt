@@ -1,0 +1,2 @@
+<div>Normal</div>
+<div class="changed">Changed</div>

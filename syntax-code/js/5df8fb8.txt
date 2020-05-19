@@ -1,0 +1,5 @@
+const reader = new FileReader();
+reader.addEventListener('loadend', () => {
+   // reader.result contains the contents of blob as a typed array
+});
+reader.readAsArrayBuffer(blob);

@@ -1,0 +1,2 @@
+<p id="log">Awaiting focus check.</p>
+<button onclick="openWindow()">Open a new window</button>

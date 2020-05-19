@@ -1,0 +1,3 @@
+gl.activeTexture(gl.TEXTURE0);
+gl.getParameter(gl.ACTIVE_TEXTURE);
+// returns "33984" (0x84C0, gl.TEXTURE0 enum value)

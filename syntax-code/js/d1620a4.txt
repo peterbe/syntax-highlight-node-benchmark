@@ -1,0 +1,16 @@
+      switch(cursor.value.month) {
+        case "January":
+          var monthNumber = 0;
+          break;
+        case "February":
+          var monthNumber = 1;
+          break;
+
+        // other lines removed from listing for brevity
+
+        case "December":
+          var monthNumber = 11;
+          break;
+        default:
+          alert('Incorrect month entered in database.');
+      }

@@ -1,0 +1,3 @@
+<label>Do you like peas?
+  <input type="checkbox" name="peas">
+</label>

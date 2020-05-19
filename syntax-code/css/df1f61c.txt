@@ -1,0 +1,7 @@
+simple-custom:not(:defined) {
+  display: none;
+}
+
+simple-custom:defined {
+  display: block;
+}

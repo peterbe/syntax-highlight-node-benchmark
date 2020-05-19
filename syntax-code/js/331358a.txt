@@ -1,0 +1,6 @@
+var mediaQueryList = window.matchMedia('print');
+mediaQueryList.addListener(function(mql) {
+  if(mql.matches) {
+    console.log('webkit equivalent of onbeforeprint');
+  }
+});

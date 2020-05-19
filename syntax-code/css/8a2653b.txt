@@ -1,0 +1,3 @@
+@media (-webkit-transition) {
+  /* CSS to use if transitions are supported */
+}

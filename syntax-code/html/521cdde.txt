@@ -1,0 +1,14 @@
+<div id="no-width">
+  <p>No explicit width.</p>
+  <p class="show-used-width">..</p>
+
+  <div id="width-50">
+    <p>Explicit width: 50%.</p>
+    <p class="show-used-width">..</p>
+
+    <div id="width-inherit">
+      <p>Explicit width: inherit.</p>
+      <p class="show-used-width">..</p>
+    </div>
+  </div>
+</div>

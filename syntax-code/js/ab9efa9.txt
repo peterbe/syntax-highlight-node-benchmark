@@ -1,0 +1,4 @@
+var audioCtx = new AudioContext();
+var source = audioCtx.createMediaElementSource(myMediaElement);
+source.connect(gainNode);
+gainNode.connect(audioCtx.destination);

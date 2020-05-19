@@ -1,0 +1,26 @@
+var pc = new RTCPeerConnection();
+// The following code might be used to handle an offer from a peer when
+// it isn't known whether it supports trickle ICE.
+pc.setRemoteDescription(remoteOffer)
+  .then(_ => pc.createAnswer())
+  .then(answer => pc.setLocalDescription(answer))
+  .then(_ =>     
+    if (pc.canTrickleIceCandidates) {
+      return pc.localDescription;
+    }
+    return new Promise(r => {
+      pc.addEventListener('icegatheringstatechange', e => {
+        if (e.target.iceGatheringState === 'complete') {
+          r(pc.localDescription);
+        }
+      });
+    });
+  })
+  .then(answer => sendAnswerToPeer(answer)) // signaling message
+  .catch(e => handleError(e));
+
+pc.addEventListener('icecandidate', e => {
+  if (pc.canTrickleIceCandidates) {
+    sendCandidateToPeer(e.candidate); // signaling message
+  }
+});

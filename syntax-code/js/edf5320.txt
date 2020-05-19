@@ -1,0 +1,7 @@
+function spawnNotification(theTitle,theBody,shouldRequireInteraction) {
+  var options = {
+      body: theBody,
+      requireInteraction: shouldRequireInteraction
+  }
+  var n = new Notification(theTitle,options);
+}

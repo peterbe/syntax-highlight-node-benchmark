@@ -1,0 +1,7 @@
+audioTracks.onaddtrack = updateTrackCount;
+audioTracks.onremovetrack = updateTrackCount;
+
+function updateTrackCount(event) {
+  trackCount = audioTracks.length;
+  drawTrackCountIndicator(trackCount);
+}

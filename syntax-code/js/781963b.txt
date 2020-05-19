@@ -1,0 +1,10 @@
+async function holdEnded(offer, micStream) {
+  try {
+    await peerConnection.setRemoteDescription(offer);
+    await audioTransceiver.sender.replaceTrack(micStream.getAudioTracks()[0]);
+    audioTransceiver.direction = "sendrecv";
+    await sendAnswer();
+  } catch(err) {
+    /* handle the error */
+  }
+}

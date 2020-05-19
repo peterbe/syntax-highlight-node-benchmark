@@ -1,0 +1,4 @@
+window.addEventListener('vrdisplayconnect', function() {
+  info.textContent = 'Display connected.';
+  reportDisplays();
+});

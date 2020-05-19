@@ -1,0 +1,11 @@
+const p = document.querySelector('p');
+p.onmouseover = logMouseOver;
+p.onmouseout = logMouseOut;
+
+function logMouseOver() {
+  p.innerHTML = 'MOUSE OVER detected';
+}
+
+function logMouseOut() {
+  p.innerHTML = 'MOUSE OUT detected';
+}

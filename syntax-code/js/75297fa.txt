@@ -1,0 +1,17 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+ctx.lineWidth = 16;
+ctx.strokeStyle = 'red';
+
+// Stroke on top of fill
+ctx.beginPath();
+ctx.rect(25, 25, 100, 100);
+ctx.fill();
+ctx.stroke();
+
+// Fill on top of stroke
+ctx.beginPath();
+ctx.rect(175, 25, 100, 100);
+ctx.stroke();
+ctx.fill();

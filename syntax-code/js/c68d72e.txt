@@ -1,0 +1,4 @@
+with(node) { 
+  before("foo");
+}
+// ReferenceError: before is not defined 

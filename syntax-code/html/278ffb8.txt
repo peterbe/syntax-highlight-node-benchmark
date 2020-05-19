@@ -1,0 +1,15 @@
+<!--Sample HTML code-->
+<div id="top">
+  <div id="nested"></div>
+</div>
+
+<script type="text/javascript">
+  let top = document.getElementById("top");
+  let nested = document.getElementById("nested");
+
+  // This first call correctly removes the node
+  let garbage = top.removeChild(nested);
+
+  // Throws Uncaught NotFoundError
+  garbage = top.removeChild(nested);
+</script>

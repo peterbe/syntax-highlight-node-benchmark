@@ -1,0 +1,10 @@
+onmessage = function(event) {
+    if (event.data instanceof Object &&
+        event.data.hasOwnProperty('queryMethod') &&
+        event.data.hasOwnProperty('queryMethodArguments')) {
+        queryableFunctions[event.data.queryMethod]
+            .apply(self, event.data.queryMethodArguments);
+    } else {
+        defaultReply(event.data);
+    }
+}

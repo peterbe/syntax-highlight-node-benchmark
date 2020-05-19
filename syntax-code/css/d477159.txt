@@ -1,0 +1,13 @@
+body {
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  background-color: aliceblue;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(min-content, 1fr);
+  grid-template-rows: auto minmax(min-content, 1fr);
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}

@@ -1,0 +1,5 @@
+div {
+  background: repeating-conic-gradient(
+    from 3deg at 25% 25%, 
+    green, blue 2deg 5deg, green, yellow 15deg 18deg, green 20deg);
+}

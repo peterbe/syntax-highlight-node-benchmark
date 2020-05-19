@@ -1,0 +1,3 @@
+var xpath = "//div/text()";
+var result = document.evaluate(xpath, document, null, XPathResult.STRING_TYPE, null);
+document.querySelector("output").textContent = result.stringValue;

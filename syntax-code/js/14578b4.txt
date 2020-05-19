@@ -1,0 +1,2 @@
+PermissionStatus.onchange = function() { ... }
+PermissionStatus.addEventListener('change', function() { ... })

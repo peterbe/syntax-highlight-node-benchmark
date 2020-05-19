@@ -1,0 +1,4 @@
+mat4.rotate(modelViewMatrix, modelViewMatrix, cubeRotation * .7, [0, 1, 0]);
+
+
+

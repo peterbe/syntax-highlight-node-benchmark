@@ -1,0 +1,11 @@
+function colorForTouch(touch) {
+  var r = touch.pointerId % 16;
+  var g = Math.floor(touch.pointerId / 3) % 16;
+  var b = Math.floor(touch.pointerId / 7) % 16;
+  r = r.toString(16); // make it a hex digit
+  g = g.toString(16); // make it a hex digit
+  b = b.toString(16); // make it a hex digit
+  var color = "#" + r + g + b;
+  log("color for touch with identifier " + touch.pointerId + " = " + color);
+  return color;
+}

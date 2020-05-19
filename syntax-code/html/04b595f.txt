@@ -1,0 +1,9 @@
+<div>
+  <p>This text isn't selected.</p>
+  <p>This text is selected!</p>
+</div>
+
+<div>
+  <p>This text isn't selected.</p>
+  <h2>This text isn't selected: it's not a `p`.</h2>
+</div>

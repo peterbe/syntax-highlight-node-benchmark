@@ -1,0 +1,10 @@
+var offscreen = new OffscreenCanvas(256, 256);
+var gl = offscreen.getContext("webgl");
+
+// ... some drawing using the gl context ...
+
+offscreen.convertToBlob().then(function(blob) {
+  console.log(blob);
+});
+
+// Blob { size: 334, type: "image/png" }

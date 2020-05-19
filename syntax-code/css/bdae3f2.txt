@@ -1,0 +1,8 @@
+th, td {
+  border: 1px solid black;
+  padding:4px 6px;
+}
+
+th {
+  vertical-align: bottom;
+}

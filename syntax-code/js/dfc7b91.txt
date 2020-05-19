@@ -1,0 +1,13 @@
+// Retrieve params via url.search, passed into ctor
+var url = new URL('https://example.com?foo=1&bar=2'); 
+var params = new URLSearchParams(url.search);
+
+// Pass in a string literal 
+var params2 = new URLSearchParams("foo=1&bar=2");
+var params2a = new URLSearchParams("?foo=1&bar=2"); 
+
+// Pass in a sequence of pairs
+var params3 = new URLSearchParams([["foo", "1"], ["bar", "2"]]);
+
+// Pass in a record
+var params4 = new URLSearchParams({"foo": "1", "bar": "2"});

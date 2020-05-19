@@ -1,0 +1,4 @@
+const gl = canvas.getContext('webgl', {
+  antialias: false,
+  depth: false
+});

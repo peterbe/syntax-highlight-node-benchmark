@@ -1,0 +1,23 @@
+process(inputList, outputList, parameters) {
+  const sourceLimit = Math.min(inputList.length, outputList.length);
+
+  for (let inputNum = 0; inputNum < sourceLimit; inputNum++) {
+    let input = inputList[inputNum];
+    let output = outputList[inputNum];
+    let channelCount = Math.min(input.length, output.length);
+
+    for (let channelNum = 0; channelNum < channelCount; channelNum++) {
+      let sampleCount = input[channelNum].length;
+
+      for (let i = 0; i < sampleCount; i++) {
+        let sample = input[channelNum][i];
+
+        /* Manipulate the sample */
+
+        output[channelNum][i] = sample;
+      }
+    }
+  };
+  
+  return true;
+}

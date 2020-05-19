@@ -1,0 +1,8 @@
+var shrinkAlice = function() {
+  // play Alice's animation in reverse
+  aliceChange.playbackRate = -1;
+  aliceChange.play();
+  
+  // play the bottle's animation
+  drinking.play()
+}

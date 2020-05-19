@@ -1,0 +1,2 @@
+div { color: black;
+-moz-appearance: -moz-window-button-restore; }

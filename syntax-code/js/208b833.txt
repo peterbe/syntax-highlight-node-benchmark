@@ -1,0 +1,4 @@
+if(!window.screenLeft) {
+  window.screenLeft = window.screenX;
+  window.screenTop = window.screenY;
+}

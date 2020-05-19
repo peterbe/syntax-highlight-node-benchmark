@@ -1,0 +1,5 @@
+const animated = document.querySelector('.animated');
+
+animated.onanimationstart = () => {
+  console.log('Animation started');
+};

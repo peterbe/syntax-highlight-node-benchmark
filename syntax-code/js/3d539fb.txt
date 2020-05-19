@@ -1,0 +1,16 @@
+<html>
+<script>
+function moveHandler(ev) {
+  // Process the pointermove event
+}
+function init() {
+  let el=document.getElementById('target1');
+  el.onpointermove = moveHandler;
+}
+</script>
+
+<body onload="init();">
+  <div id="target1"> Touch me ... </div>
+  <div id="target2" onpointermove="moveHandler(event)"> Touch me ... </div>
+</body>
+</html>

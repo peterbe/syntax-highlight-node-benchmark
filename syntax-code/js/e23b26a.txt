@@ -1,0 +1,3 @@
+document.fonts.check("12px courier"); // returns true if the font courier is available at 12px
+
+document.fonts.check("12px MyFont", "ß"); // returns true if the font 'MyFont' has a ß character. 

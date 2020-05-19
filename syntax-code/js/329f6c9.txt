@@ -1,0 +1,30 @@
+/*
+Fetch the contents of the "message" textbox, and encode it
+in a form we can use for sign operation.
+*/
+function getMessageEncoding() {
+   const messageBox = document.querySelector(".hmac #message");
+   let message = messageBox.value;
+   let enc = new TextEncoder();
+   return enc.encode(message);
+}
+
+/*
+Fetch the encoded message-to-sign and verify it against the stored signature.
+* If it checks out, set the "valid" class on the signature.
+* Otherwise set the "invalid" class.
+*/
+async function verifyMessage(key) {
+   const signatureValue = document.querySelector(".hmac .signature-value");
+   signatureValue.classList.remove("valid", "invalid");
+
+   let encoded = getMessageEncoding();
+   let result = await window.crypto.subtle.verify(
+     "HMAC",
+     key,
+     signature,
+     encoded
+   );
+
+   signatureValue.classList.add(result ? "valid" : "invalid");
+}

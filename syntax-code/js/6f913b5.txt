@@ -1,0 +1,4 @@
+const div1 = document.getElementById('div1');
+const align = div1.getAttribute('align');
+
+alert(align); // Shows the value of align for the element with id="div1"

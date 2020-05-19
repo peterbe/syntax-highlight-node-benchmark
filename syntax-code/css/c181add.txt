@@ -1,0 +1,42 @@
+html {
+  height:100%;
+}
+body {
+  font: 14px/1.286 "Lucida Grande","Lucida Sans Unicode","DejaVu Sans",Lucida,Arial,Helvetica,sans-serif;
+  color: rgb(51, 51, 51);
+  height:100%;
+  overflow:hidden;
+}
+#img2 {
+  width:100%;
+  height:auto;
+  -moz-filter: saturate(200%);
+  -webkit-filter: saturate(200%);
+  -ms-filter: saturate(200%);
+  filter: saturate(200%); }
+table.standard-table {
+  border: 1px solid rgb(187, 187, 187);
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 0px 0px 1.286em;
+  width: 85%;
+  height: 100%;
+}
+table.standard-table th {
+  border: 1px solid rgb(187, 187, 187);
+  padding: 0px 5px;
+  background: none repeat scroll 0% 0% rgb(238, 238, 238);
+  text-align: left;
+  font-weight: bold;
+}
+table.standard-table td {
+  padding: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: left;
+  vertical-align: top;
+  width:25%;
+  height:auto;
+}
+#img3 {
+  height:100%;
+}

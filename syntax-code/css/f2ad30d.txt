@@ -1,0 +1,1 @@
+conic-gradient(red 40grad, 80grad, blue 360grad);

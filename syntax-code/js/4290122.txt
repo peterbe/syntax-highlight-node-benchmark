@@ -1,0 +1,3 @@
+let indicator = Document.getElementById('indicator');
+indicator.attributeStyleMap.set('display', new CSSKeywordValue('initial'));
+indicator.attributeStyleMap.get('display').value // 'initial'

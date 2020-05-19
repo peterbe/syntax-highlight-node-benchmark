@@ -1,0 +1,5 @@
+// CSSUnparsedValue
+let unit = allComputedStyles.get('--unit');
+
+console.log( unit )    // CSSUnparsedValue {0: " 1.2rem", length: 1} 
+console.log (unit[0] ) // " 1.2rem" 

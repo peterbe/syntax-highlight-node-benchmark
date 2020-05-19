@@ -1,0 +1,5 @@
+// static/scripts/worker.js
+
+self.onmessage = (event) => {
+    console.log(`Received message from parent: ${event.data}`);  
+};

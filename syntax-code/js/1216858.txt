@@ -1,0 +1,7 @@
+const context = new AudioContext();
+
+const osc = new OscillatorNode(context);
+osc.type = 'sawtooth';
+
+const panner = new PannerNode(context);
+panner.panningModel = 'HRTF';

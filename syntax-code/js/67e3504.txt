@@ -1,0 +1,29 @@
+let gl = null;
+let glCanvas = null;
+
+// Aspect ratio and coordinate system
+// details
+
+let aspectRatio;
+let currentRotation = [0, 1];
+let currentScale = [1.0, 1.0];
+
+// Vertex information
+
+let vertexArray;
+let vertexBuffer;
+let vertexNumComponents;
+let vertexCount;
+
+// Rendering data shared with the
+// scalers.
+
+let uScalingFactor;
+let uGlobalColor;
+let uRotationVector;
+let aVertexPosition;
+
+// Animation timing
+
+let previousTime = 0.0;
+let degreesPerSecond = 90.0;

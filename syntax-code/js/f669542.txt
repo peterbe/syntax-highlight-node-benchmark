@@ -1,0 +1,10 @@
+var THRESHOLD = 1500;
+var observe_frame = new PerformanceObserver(function(list) {
+  var perfEntries = list.getEntriesByType("frame");
+  for (var i=0; i < perfEntries.length; i++) {
+    if (perfEntries[i].duration > THRESHOLD) {
+      console.log("Warning: frame '" + THRESHOLD + "' exceeded!");
+    }
+  }
+});
+observe_frame.observe({entryTypes: ['frame']});

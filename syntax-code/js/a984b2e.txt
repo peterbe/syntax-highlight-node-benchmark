@@ -1,0 +1,2 @@
+var dataArray = new Float32Array([1, 2, 3, 4]);
+var sizeInBytes = dataArray.length * dataArray.BYTES_PER_ELEMENT;

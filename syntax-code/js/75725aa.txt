@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+  <title>Web Protocol Handler Sample - Register</title>
+  <script type="text/javascript">
+    navigator.registerProtocolHandler("web+burger",
+                                  "http://www.google.co.uk/?uri=%s",
+                                  "Burger handler");
+  </script>
+</head>
+<body>
+  <h1>Web Protocol Handler Sample</h1>
+  <p>This web page will install a web protocol handler for the <code>web+burger:</code> protocol.</p>
+</body>
+</html>

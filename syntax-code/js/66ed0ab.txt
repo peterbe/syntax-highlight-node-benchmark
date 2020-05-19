@@ -1,0 +1,9 @@
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    if (event.isReload) {
+      //Return something
+    } else {
+      //Return something else
+    };
+  );
+​});

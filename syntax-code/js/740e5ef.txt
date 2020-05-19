@@ -1,0 +1,6 @@
+let log = document.querySelector('#log');
+document.addEventListener('click', logKey);
+
+function logKey(e) {
+  log.textContent = `The ctrl key is pressed: ${e.ctrlKey}`;
+}

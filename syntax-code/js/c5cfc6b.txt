@@ -1,0 +1,7 @@
+let mutedCount = 0;
+
+trackList.forEach((track) => {
+  if (track.muted) {
+    mutedCount += 1;
+  }
+});

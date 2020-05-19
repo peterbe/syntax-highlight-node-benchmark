@@ -1,0 +1,2 @@
+<p>The horizontal coordinates' positions along the X-axis are
+represented as <var>x<sub>1</sub></var> ... <var>x<sub>n</sub></var>.</p>

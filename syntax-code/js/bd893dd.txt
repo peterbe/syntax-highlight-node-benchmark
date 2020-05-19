@@ -1,0 +1,5 @@
+const transition = document.querySelector('.transition');
+
+transition.ontransitionend = () => {
+  console.log('Transition ended');
+};

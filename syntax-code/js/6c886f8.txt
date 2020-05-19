@@ -1,0 +1,6 @@
+dc.addEventListener("close", ev => {
+  messageInputBox.disabled = true;
+  sendButton.disabled = true;
+  connectButton.disabled = false;
+  disconnectButton.disabled = true;
+}, false);

@@ -1,0 +1,1 @@
+<custom-button tabindex="0" role="button">Click Me</custom-button>

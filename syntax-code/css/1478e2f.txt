@@ -1,0 +1,3 @@
+invert(0)     /* No effect */
+invert(.6)    /* 60% inversion */
+invert(100%)  /* Completely inverted */

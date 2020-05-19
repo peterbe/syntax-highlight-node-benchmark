@@ -1,0 +1,12 @@
+async function onXRButtonClick(event) {
+  if (!xrSession) {
+    navigator.xr.requestSession(SESSION_TYPE)
+    .then(sessionStarted);
+  } else {
+    await xrSession.end();
+    
+    if (xrSession) {
+      sessionEnded();
+    }
+  }
+}

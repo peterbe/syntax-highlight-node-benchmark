@@ -1,0 +1,15 @@
+let audioContext = null;
+
+async function createMyAudioProcessor(audioContext) {
+  if (!audioContext) {
+    try {
+      audioContext = new AudioContext();
+      await audioContext.resume();
+      await audioContext.audioWorklet.addModule("module-url/module.js");
+    } catch(e) {
+      return null;
+    }
+  }
+
+  return new AudioWorkletNode(audioContext, "processor-name");
+}

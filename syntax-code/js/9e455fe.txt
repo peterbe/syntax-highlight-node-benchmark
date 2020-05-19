@@ -1,0 +1,4 @@
+pc.onaddstream = function(event) {
+  document.getElementById("received_video").srcObject = event.stream;
+  document.getElementById("hangup-button").disabled = false;
+};

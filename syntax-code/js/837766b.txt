@@ -1,0 +1,23 @@
+// get the element
+const myElement = document.querySelector('a');
+
+// get the <dl> we'll be populating
+const stylesList = document.querySelector('#regurgitation');
+
+// Retrieve all computed styles with computedStyleMap()
+const allComputedStyles = myElement.computedStyleMap();
+
+// array of properties we're interested in
+const ofInterest = ['font-weight', 'border-left-color', 'color', '--colour'];
+
+// iterate thru our properties of interest
+for ( let i = 0; i < ofInterest.length; i++ ) {
+  	// properties
+  const cssProperty = document.createElement('dt');
+  cssProperty.appendChild(document.createTextNode(ofInterest[i]));
+  stylesList.appendChild(cssProperty);
+  	// values
+  const cssValue = document.createElement('dd');
+  cssValue.appendChild(document.createTextNode( allComputedStyles.get(ofInterest[i])));
+	stylesList.appendChild(cssValue);
+}

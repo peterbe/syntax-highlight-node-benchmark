@@ -1,0 +1,14 @@
+let canvas = document.querySelector("canvas");
+gl = canvas.getContext("webgl", { xrCompatible: true });
+setNewWebGLLayer();
+
+function setNewWebGLLayer(gl) {
+  if (!gl) {
+    /* WebGL not available */
+    return;
+  }
+
+  xrSession.updateRenderState({
+    baseLayer: new XRWebGLLayer(xrSession, gl);
+  });
+};

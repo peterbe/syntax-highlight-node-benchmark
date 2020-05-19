@@ -1,0 +1,26 @@
+#container {
+  height: 200px;
+  width: 220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-points-y: repeat(200px);
+  scroll-snap-type: mandatory;
+  font-size: 0;
+}
+
+#container > div {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  line-height: 200px;
+  text-align: center;
+  font-size: 100px;
+}
+
+#container > div:nth-child(even) {
+  background-color: #87EA87;
+}
+
+#container > div:nth-child(odd) {
+  background-color: #87CCEA;
+}

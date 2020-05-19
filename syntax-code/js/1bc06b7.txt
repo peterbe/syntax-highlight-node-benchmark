@@ -1,0 +1,6 @@
+xrSession.updateRenderState({
+  baseLayer: new XRWebGLLayer(xrSession, gl, {
+     alpha: false,
+     ignoredepthValues: true
+  });
+});

@@ -1,0 +1,13 @@
+function drawScene(gl, view, programInfo, buffers, texture, deltaTime) {
+  ...
+  for (object in scene) {
+    let vertexList = ...
+    let normalMatrix = mat4.create();
+    let modelViewMatrix = mat4.create();
+    let objectMatrix = mat4.
+
+    // Apply rotation updates to the object if needed
+
+    mat4.rotate(
+  }
+}

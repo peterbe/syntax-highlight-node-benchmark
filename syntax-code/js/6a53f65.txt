@@ -1,0 +1,17 @@
+const els = document.getElementsByTagName('*');
+
+
+// Case 1
+for(let i=0 ; i < els.length; i++){
+  els[i].addEventListener("click", function(e){/*do something*/}, false);
+}
+
+
+// Case 2
+function processEvent(e){
+  /* do something */
+}
+
+for(let i=0 ; i < els.length; i++){
+  els[i].addEventListener("click", processEvent, false);
+}

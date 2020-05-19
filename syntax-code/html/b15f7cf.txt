@@ -1,0 +1,6 @@
+<p>Initial String
+  <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</strong>
+</p>
+<p>text-transform: uppercase
+  <strong><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ...</span></strong>
+</p>

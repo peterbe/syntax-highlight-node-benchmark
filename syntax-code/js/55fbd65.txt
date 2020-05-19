@@ -1,0 +1,5 @@
+pc.onidpassertionerror = function( ev ) {
+                           alert("The idp uses the following protocol '" + 
+                                 ev.protocol + 
+                                 ".");
+                         }

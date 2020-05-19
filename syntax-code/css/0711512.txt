@@ -1,0 +1,2 @@
+div{ color: black;
+-webkit-appearance: media-time-remaining-display; }

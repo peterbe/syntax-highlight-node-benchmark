@@ -1,0 +1,3 @@
+someElement.addEventListener("pointerdown", function(event) {
+  process_tilt(event.tiltX, event.tiltY);
+}, false);

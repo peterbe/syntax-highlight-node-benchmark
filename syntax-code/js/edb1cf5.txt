@@ -1,0 +1,1 @@
+var trackDefault = new TrackDefault(type, language, label, kinds, byteStreamTrackID);

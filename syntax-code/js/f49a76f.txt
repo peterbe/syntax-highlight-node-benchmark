@@ -1,0 +1,3 @@
+document.onanimationstart = () => {
+  console.log('Animation started');
+};

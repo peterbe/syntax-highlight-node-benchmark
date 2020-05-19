@@ -1,0 +1,29 @@
+xrSession.addEventListener("selectstart", onSelectionEvent);
+xrSession.addEventListener("select", onSelectionEvent);
+xrSession.addEventListener("selectend", onSelectionEvent);
+
+function onSelectionEvent(event) {
+  let source = event.inputSource;
+  let targetObj = null;
+
+  if (source.targetRayMode != "tracked-pointer") {
+    return;
+  }
+
+  let targetRayPose = event.frame.getPose(source.targetRaySpace, myRefSpace);
+  if (!targetRayPose) {
+    return;
+  }
+
+  switch(event.type) {
+    case "selectstart":
+      targetObj = myBeginTracking(targetRayPose.matrix);
+      break;
+    case "select":
+      myDropObject(targetObj, targetRayPose.matrix);
+      break;
+    case "selectend":
+      myStopTracking(targetObj, targetRayPose.matrix);
+      break;
+  }
+}

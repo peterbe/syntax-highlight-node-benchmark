@@ -1,0 +1,28 @@
+#justone {
+  border-color: red;
+}
+
+#horzvert {
+  border-color: gold red;
+}
+
+#topvertbott {
+  border-color: red cyan gold;
+}
+
+#trbl {
+  border-color: red cyan black gold;
+}
+
+/* Set width and style for all divs */
+div {
+  border: solid 0.3em;
+  width: auto;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}

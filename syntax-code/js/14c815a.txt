@@ -1,0 +1,1 @@
+var animationPlaybackEvent = new AnimationPlaybackEvent(type, eventInitDict);

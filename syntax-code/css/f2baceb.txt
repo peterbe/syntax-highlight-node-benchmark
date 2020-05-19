@@ -1,0 +1,4 @@
+select::-ms-value {
+  background-color: transparent;
+  color: inherit;
+}

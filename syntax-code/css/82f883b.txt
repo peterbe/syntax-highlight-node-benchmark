@@ -1,0 +1,5 @@
+thead > tr > th {
+  background-color: #cce;
+  font-size: 18px;
+  border-bottom: 2px solid #999;
+}

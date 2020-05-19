@@ -1,0 +1,11 @@
+let parser = new DOMParser()
+let doc = parser.parseFromString(stringContainingXMLSource, "application/xml")
+// returns a Document, but not an SVGDocument nor an HTMLDocument
+
+parser = new DOMParser();
+doc = parser.parseFromString(stringContainingSVGSource, "image/svg+xml")
+// returns a SVGDocument, which also is a Document.
+
+parser = new DOMParser();
+doc = parser.parseFromString(stringContainingHTMLSource, "text/html")
+// returns an HTMLDocument, which also is a Document.

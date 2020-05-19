@@ -1,0 +1,3 @@
+var pc = new PeerConnection();
+
+pc.setIdentityAssertion("developer.mozilla.org"); 

@@ -1,0 +1,3 @@
+<p><a id="link1" href="#link1">Visit link 1</a></p>
+<p><a id="link2" href="#link2">Try to visit link 2</a> (you can't)</p>
+<p id="log"></p>

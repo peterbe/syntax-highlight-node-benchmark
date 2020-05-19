@@ -1,0 +1,7 @@
+function handleCallerSignalingStateChangeEvent() {
+  log("Caller's signaling state changed to " + callerPC.signalingState);
+}
+
+function handleCallerGatheringStateChangeEvent() {
+  log("Caller's ICE gathering state changed to " + callerPC.iceGatheringState);
+}

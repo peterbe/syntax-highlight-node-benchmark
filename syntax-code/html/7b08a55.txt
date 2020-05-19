@@ -1,0 +1,1 @@
+<p class="goldie">The Mozilla community produces a lot of great software.</p>

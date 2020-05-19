@@ -1,0 +1,7 @@
+let event = new XRInputSourceEvent("select", {
+  frame: eventFrame,
+  inputSource: source
+};
+if (event) {
+  xrSession.dispatchEvent(event);
+}

@@ -1,0 +1,2 @@
+<p>One of the most common equations in all of physics is
+<var>E</var>=<var>m</var><var>c</var><sup>2</sup>.<p>

@@ -1,0 +1,12 @@
+div {
+  background-color: yellow;
+  width: 120px;
+  height: 120px;
+}
+
+.exampleText {
+  writing-mode: vertical-rl;
+  position: relative;
+  inset-block-end: 20px;
+  background-color: #c8c800;
+}

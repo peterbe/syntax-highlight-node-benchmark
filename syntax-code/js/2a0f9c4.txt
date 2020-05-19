@@ -1,0 +1,3 @@
+function setBusyCursor(enable) {
+  window.setCursor(enable ? "wait" : "auto");
+}

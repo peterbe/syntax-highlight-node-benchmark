@@ -1,0 +1,30 @@
+   else {
+    var newItem = [
+      {
+        taskTitle: title.value,
+        hours    : hours.value,
+        minutes  : minutes.value,
+        day      : day.value,
+        month    : month.value,
+        year     : year.value,
+        notified : "no"
+      }
+    ];
+
+    // open a read/write db transaction, ready for adding the data
+    var transaction = db.transaction(["toDoList"], "readwrite");
+    
+    // report on the success of opening the transaction
+    transaction.oncomplete = function(event) {
+      note.innerHTML += '<li>Transaction opened for task addition.</li>';
+    };
+
+    transaction.onerror = function(event) {
+      note.innerHTML += '<li>Transaction not opened due to error. Duplicate items not allowed.</li>';
+    };
+
+    // create an object store on the transaction
+    var objectStore = transaction.objectStore("toDoList");
+
+    // add our newItem object to the object store
+    var request = objectStore.add(newItem[0]); 

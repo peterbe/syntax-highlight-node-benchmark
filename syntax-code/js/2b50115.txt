@@ -1,0 +1,25 @@
+async function requestPayment() {
+  // We start with AU$0 as the total.
+  const initialDetails = {
+    total: {
+      label: "Total",
+      amount: { value: "0", currency: "AUD" },
+    },
+  };
+  const request = new PaymentRequest(methods, initialDetails, options);
+  // Check if the the user supports the `methods`
+  if (!await request.canMakePayment()) {
+    return; // no, so use a web form instead.
+  }
+  // Let's update the total as the sheet is shown
+  const updatedDetails = {
+    total: {
+      label: "Total",
+      amount: { value: "20", currency: "AUD" },
+    },
+  };
+  const response = await request.show(updatedDetails);
+  // Check response, etc...
+}
+
+document.getElementById("buyButton").onclick = requestPayment;

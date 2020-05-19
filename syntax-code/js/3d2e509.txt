@@ -1,0 +1,1 @@
+gl.getBufferParameter(gl.ARRAY_BUFFER, gl.BUFFER_SIZE);

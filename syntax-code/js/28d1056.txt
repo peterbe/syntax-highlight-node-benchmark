@@ -1,0 +1,2 @@
+var mytag = document.getElementsByTagName("my-tag")[0];
+mytag.textContent = "I am a my-tag element.";

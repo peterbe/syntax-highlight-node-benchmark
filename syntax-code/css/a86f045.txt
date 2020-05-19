@@ -1,0 +1,12 @@
+/* Keyword values */
+scroll-padding-bottom: auto;
+
+/* <length> values */
+scroll-padding-bottom: 10px;
+scroll-padding-bottom: 1em;
+scroll-padding-bottom: 10%;
+
+/* Global values */
+scroll-padding-bottom: inherit;
+scroll-padding-bottom: initial;
+scroll-padding-bottom: unset;

@@ -1,0 +1,5 @@
+<div style="font-size:18px;">
+  <p>Full-size text (18px)</p>
+  <p><span style="font-size:50%;">50% (9px)</span></p>
+  <p><span style="font-size:200%;">200% (36px)</span></p>
+</div> 

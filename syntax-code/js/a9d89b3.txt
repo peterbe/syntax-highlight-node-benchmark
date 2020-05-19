@@ -1,0 +1,20 @@
+function displayMatrix(mat, rowLength, target) {
+  let outHTML = "";
+
+  if (mat && rowLength && rowLength <= mat.length) {
+    let numRows = mat.length / rowLength;
+    outHTML = "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>\n<mrow>\n<mo>[</mo>\n<mtable>\n";
+    
+    for (let y=0; y<numRows; y++) {
+      outHTML += "<mtr>\n";
+      for (let x=0; x<rowLength; x++) {
+        outHTML += `<mtd><mn>${mat[(x*rowLength) + y].toFixed(2)}</mn></mtd>\n`;
+      }
+      outHTML += "</mtr>\n";
+    }
+    
+    outHTML += "</mtable>\n<mo>]</mo>\n</mrow>\n</math>";
+  }
+ 
+  target.innerHTML = outHTML;
+}

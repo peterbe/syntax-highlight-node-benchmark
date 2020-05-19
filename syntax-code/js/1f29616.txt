@@ -1,0 +1,5 @@
+workingDirectory.getFile("tmp/log.txt", {}, function(fileEntry) {
+  workingDirectory.getDirectory("log", {}, function(dirEntry) {
+    fileEntry.copyTo(dirEntry);
+  }, handleError);
+}, handleError);

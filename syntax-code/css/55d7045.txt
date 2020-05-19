@@ -1,0 +1,8 @@
+@counter-style symbols-example {
+  system: fixed;
+  symbols: A "1" "\24B7" D E;
+}
+
+.list {
+  list-style: symbols-example;    
+}

@@ -1,0 +1,3 @@
+function disableCharacter(videoElem, characterName) {
+  videoElem.audioTracks.getTrackById(characterName).enabled = false;
+}

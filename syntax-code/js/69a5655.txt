@@ -1,0 +1,3 @@
+webSocket.onerror = function(event) {
+  console.error("WebSocket error observed:", event);
+};

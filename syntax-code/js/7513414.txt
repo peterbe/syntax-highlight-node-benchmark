@@ -1,0 +1,11 @@
+let attackTime = 0.2;
+const attackControl = document.querySelector('#attack');
+attackControl.addEventListener('input', function() {
+    attackTime = Number(this.value);
+}, false);
+
+let releaseTime = 0.5;
+const releaseControl = document.querySelector('#release');
+releaseControl.addEventListener('input', function() {
+    releaseTime = Number(this.value);
+}, false);

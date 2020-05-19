@@ -1,0 +1,5 @@
+xrSession.onsqueeze = event => {
+  if (event.inputSource.handedness != user.handedness) {
+    handleOffhandSqueeze(event.inputSource, event.frame);
+  }
+};

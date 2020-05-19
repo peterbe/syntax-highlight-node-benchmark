@@ -1,0 +1,25 @@
+<form>
+  <div class="nativeWeekPicker">
+    <label for="week">What week would you like to start?</label>
+    <input id="week" type="week" name="week"
+           min="2017-W01" max="2018-W52" required>
+    <span class="validity"></span>
+  </div>
+  <p class="fallbackLabel">What week would you like to start?</p>
+  <div class="fallbackWeekPicker">
+    <div>
+      <span>
+        <label for="week">Week:</label>
+        <select id="fallbackWeek" name="week">
+        </select>
+      </span>
+      <span>
+        <label for="year">Year:</label>
+        <select id="year" name="year">
+          <option value="2017" selected>2017</option>
+          <option value="2018">2018</option>
+        </select>
+      </span>
+    </div>
+  </div>
+</form>

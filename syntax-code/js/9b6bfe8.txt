@@ -1,0 +1,5 @@
+function intersectionCallback(entries) {
+  entries.forEach(function(entry) {
+    entry.target.opacity = entry.intersectionRatio;
+  });
+}

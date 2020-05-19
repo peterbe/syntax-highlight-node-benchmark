@@ -1,0 +1,10 @@
+/* Same as "medium dotted currentcolor" */
+p.foo { column-rule: dotted; }
+
+/* Same as "medium solid blue" */
+p.bar { column-rule: solid blue; }
+
+/* Same as "8px solid currentcolor" */
+p.baz { column-rule: solid 8px; }
+
+p.abc { column-rule: thick inset blue; }

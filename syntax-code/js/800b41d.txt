@@ -1,0 +1,20 @@
+function update_background(ev) {
+ // Change background color based on the number simultaneous touches
+ // in the event's targetTouches list:
+ //   yellow - one tap (or hold)
+ //   pink - two taps
+ //   lightblue - more than two taps
+ switch (ev.targetTouches.length) {
+   case 1:
+     // Single tap`
+     ev.target.style.background = "yellow";
+     break;
+   case 2:
+     // Two simultaneous touches
+     ev.target.style.background = "pink";
+     break;
+   default:
+     // More than two simultaneous touches
+     ev.target.style.background = "lightblue";
+ }
+}

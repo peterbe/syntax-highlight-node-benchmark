@@ -1,0 +1,8 @@
+<div class="controls">
+  <button class="border">Border</button>
+  <button class="bgcolor">Background</button>
+  <button class="color">Text</button>
+</div>
+<div class="box">
+  <p>Box</p>
+</div>

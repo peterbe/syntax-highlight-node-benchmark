@@ -1,0 +1,1 @@
+var myRightDegrees = VRFieldOfView.rightDegrees;

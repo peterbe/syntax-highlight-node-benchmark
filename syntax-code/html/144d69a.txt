@@ -1,0 +1,6 @@
+<p>Initial String
+  <strong>Θα πάμε στο "Θεϊκό φαΐ" ή στη "Νεράιδα"</strong>
+</p>
+<p>text-transform: uppercase
+  <strong><span>Θα πάμε στο "Θεϊκό φαΐ" ή στη "Νεράιδα"</span></strong>
+</p>

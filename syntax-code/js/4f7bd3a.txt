@@ -1,0 +1,9 @@
+paymentRequest.addEventListener("shippingoptionchange", event => {
+  const value = calculateNewTotal(paymentRequest.shippingOption);
+  const total = {
+    currency: "EUR",
+    label: "Total due",
+    value,
+  };
+  event.updateWith({ total });
+}, false);

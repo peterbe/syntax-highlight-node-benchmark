@@ -1,0 +1,4 @@
+window.addEventListener('vrdisplayfocus', function() {
+  info.textContent = 'Display focused.';
+  reportDisplays();
+});

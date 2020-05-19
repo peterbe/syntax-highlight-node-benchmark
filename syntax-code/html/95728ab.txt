@@ -1,0 +1,22 @@
+<div class="outer">
+  <div class="inner">
+    <div class="log">
+      <p>
+        Offset-relative: <span id="offsetX">0</span>,
+        <span id="offsetY">0</span>
+      </p>
+      <p>
+        Client-relative: <span id="clientX">0</span>,
+        <span id="clientY">0</span>
+      </p>
+      <p>
+        Page-relative: <span id="pageX">0</span>,
+        <span id="pageY">0</span>
+      </p>
+      <p>
+        Screen-relative: <span id="screenX">0</span>,
+        <span id="screenY">0</span>
+      </p>
+    </div>
+  </div>
+</div>

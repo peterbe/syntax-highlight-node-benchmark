@@ -1,0 +1,10 @@
+let dc = myPeerConnection.createDataChannel("Message Channel");
+
+dc.onopen = function(event) {
+  let messageBox = document.getElementById("messageBox");
+  let sendButton = document.getElementById("sendButton");
+
+  messageBox.disabled = false;
+  messageBox.focus();
+  sendButton.disabled = false;
+}

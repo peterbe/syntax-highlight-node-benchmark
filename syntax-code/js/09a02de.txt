@@ -1,0 +1,3 @@
+recognition.onsoundstart = function() { 
+  console.log('Some sound is being received'); 
+}

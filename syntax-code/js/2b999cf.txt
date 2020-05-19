@@ -1,0 +1,11 @@
+var cred = new PasswordCredential({
+  id: id,
+  password: password,
+  name: name,
+  iconURL: iconUrl
+});
+
+navigator.credentials.store(cred)
+ .then(function() {
+ // Do something else.
+});

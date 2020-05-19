@@ -1,0 +1,2 @@
+var myIndex = objectStore.index('index');
+console.log(myIndex.isAutoLocale);

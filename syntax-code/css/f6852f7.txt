@@ -1,0 +1,2 @@
+.content { padding-right: 5%; }
+.sidebox { padding-right: 10px; }

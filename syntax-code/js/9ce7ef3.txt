@@ -1,0 +1,20 @@
+function PerfEntry_toJSON() {
+
+  // Create a few performance entries
+  performance.mark("mark-1");
+  performance.mark("mark-2");
+  performance.measure("meas-1", "mark-1", "mark-2");
+
+  var peList = performance.getEntries();
+  var pe = peList[0];
+
+  if (pe.toJSON === undefined) {
+    log ("PerformanceEntry.toJSON() is NOT supported");
+    return;
+  } 
+
+  // Print the PerformanceEntry object
+  var json = pe.toJSON();
+  var s = JSON.stringify(json);
+  log("PerformanceEntry.toJSON = " + s);
+}

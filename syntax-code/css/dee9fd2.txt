@@ -1,0 +1,4 @@
+/* Global values */
+display: inherit;
+display: initial;
+display: unset;

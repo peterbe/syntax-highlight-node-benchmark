@@ -1,0 +1,5 @@
+let videoConstraints = null;
+let audioConstraints = null;
+
+let audioTrack = null;
+let videoTrack = null;

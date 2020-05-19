@@ -1,0 +1,3 @@
+.myclass {
+  background: background1, background 2, ..., backgroundN;
+}

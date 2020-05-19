@@ -1,0 +1,47 @@
+<p>Experiment with media constraints! Edit the constraint sets for the
+   video and audio tracks in the edit boxes on the left, then click the
+   "Apply Constraints" button to try them out. The actual settings the
+   browser selected and is using are shown in the boxes on the right.
+   Below all of that, you'll see the video itself.</p>
+<p>Click the "Start" button to begin.</p>
+
+<h3>Constrainable properties available:</h3>
+<ul id="supportedConstraints">
+</ul>
+<div id="startButton" class="button">
+  Start
+</div>
+<div class="wrapper">
+  <div class="trackrow">
+    <div class="leftside">
+      <h3>Requested video constraints:</h3>
+      <textarea id="videoConstraintEditor" cols=32 rows=8></textarea>
+    </div>
+    <div class="rightside">
+      <h3>Actual video settings:</h3>
+      <textarea id="videoSettingsText" cols=32 rows=8 disabled></textarea>
+    </div>
+  </div>
+  <div class="trackrow">
+    <div class="leftside">
+      <h3>Requested audio constraints:</h3>
+      <textarea id="audioConstraintEditor" cols=32 rows=8></textarea>
+    </div>
+    <div class="rightside">
+      <h3>Actual audio settings:</h3>
+      <textarea id="audioSettingsText" cols=32 rows=8 disabled></textarea>
+    </div>
+  </div>
+ 
+  <div class="button" id="applyButton">
+    Apply Constraints
+  </div>
+</div>
+<video id="video" autoplay></video>
+
+<div class="button" id="stopButton">
+  Stop Video
+</div>
+
+<div id="log">
+</div>

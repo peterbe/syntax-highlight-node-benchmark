@@ -1,0 +1,3 @@
+document.addEventListener('transitionrun', () => {
+  console.log('Transition is running but hasn't necessarily started transitioning yet');
+});

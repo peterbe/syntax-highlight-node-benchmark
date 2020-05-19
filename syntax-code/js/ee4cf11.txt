@@ -1,0 +1,1 @@
+gl.blendEquationSeparate(gl.FUNC_ADD, gl.FUNC_SUBTRACT);

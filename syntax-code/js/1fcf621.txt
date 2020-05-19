@@ -1,0 +1,5 @@
+rtcPeerConnection.onicecandidate = (event) => {
+  if (event.candidate) {
+    sendCandidateToRemotePeer(event.candidate)
+  }
+}

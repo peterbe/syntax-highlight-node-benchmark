@@ -1,0 +1,3 @@
+.container {
+  display:  [ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> ;
+}

@@ -1,0 +1,1 @@
+<div id="outset">This element has an outset border image!</div>

@@ -1,0 +1,6 @@
+const myResponse = Response.error();
+try {
+  myResponse.headers.set('Origin', 'http://mybank.com');
+} catch (e) {
+  console.log('Cannot pretend to be a bank!');
+}

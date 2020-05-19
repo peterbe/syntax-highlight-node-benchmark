@@ -1,0 +1,9 @@
+let batteryIsCharging = false;
+
+navigator.getBattery().then(function(battery) {
+  batteryIsCharging = battery.charging;
+
+  battery.addEventListener('chargingchange', function() {
+    batteryIsCharging = battery.charging;
+  });
+});

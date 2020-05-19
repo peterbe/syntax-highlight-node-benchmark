@@ -1,0 +1,3 @@
+<canvas id="canvas">
+  <input id="button" type="range" min="1" max="12">
+</canvas>

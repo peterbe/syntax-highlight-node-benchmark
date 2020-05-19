@@ -1,0 +1,9 @@
+var parent = document.createElement("div");
+var child = document.createElement("p");
+parent.appendChild(child);
+var span = document.createElement("span");
+
+child.replaceWith(span);
+
+console.log(parent.outerHTML);
+// "<div><span></span></div>"

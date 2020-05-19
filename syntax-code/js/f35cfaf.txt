@@ -1,0 +1,2 @@
+let text = document.getElementById('divA').textContent;
+// The text variable is now: 'This is some text!'

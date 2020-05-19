@@ -1,0 +1,2 @@
+document.getElementById('infoText1').innerHTML += document.getElementById('myText1').isContentEditable;
+document.getElementById('infoText2').innerHTML += document.getElementById('myText2').isContentEditable;

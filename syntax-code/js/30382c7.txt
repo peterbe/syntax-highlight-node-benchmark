@@ -1,0 +1,12 @@
+var client = new XMLHttpRequest();
+client.open("GET", "unicorns-are-teh-awesome.txt", true);
+client.send();
+
+client.onreadystatechange = function() {
+  if(this.readyState == this.HEADERS_RECEIVED) {
+    var contentType = client.getResponseHeader("Content-Type");
+    if (contentType != my_expected_type) {
+      client.abort();
+    }
+  }
+}

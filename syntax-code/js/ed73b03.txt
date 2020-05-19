@@ -1,0 +1,5 @@
+var pc = new RTCPeerConnection(configuration);
+
+/* ... */
+
+var connectionState = pc.connectionState;

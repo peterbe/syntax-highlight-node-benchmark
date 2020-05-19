@@ -1,0 +1,2 @@
+gl.getParameter(gl.DEPTH_RANGE);
+// Float32Array[0.2, 0.6]

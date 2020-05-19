@@ -1,0 +1,2 @@
+var mediaElem = document.querySelector("video");
+mediaElem.load();

@@ -1,0 +1,3 @@
+<p class="normal">Initial letter is normal</p>
+<p class="onefive">Initial letter occupies 1.5 lines</p>
+<p class="three">Initial letter occupies 3 lines</p>

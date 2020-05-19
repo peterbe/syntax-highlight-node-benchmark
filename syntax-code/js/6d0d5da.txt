@@ -1,0 +1,3 @@
+window.addEventListener('devicelight', function(event) {
+  console.log(event.value);
+});

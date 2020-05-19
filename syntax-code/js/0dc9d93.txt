@@ -1,0 +1,1 @@
+let currentState = history.state

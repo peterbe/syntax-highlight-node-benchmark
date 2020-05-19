@@ -1,0 +1,2 @@
+<link rel="stylesheet" href="http://foo.bar.com/base.css" />
+<link rel="stylesheet" media="all and (min-color-index: 256)" href="http://foo.bar.com/color-stylesheet.css" />

@@ -1,0 +1,2 @@
+<p>Click anywhere with one or more mouse buttons.</p>
+<pre id="log">buttons: </pre>

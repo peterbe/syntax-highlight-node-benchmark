@@ -1,0 +1,4 @@
+<div class="wrapper">
+   <p style="writing-mode: horizontal-tb">I have writing mode set to the default <code>horizontal-tb</code></p>
+  <p style="writing-mode: vertical-rl">I have writing mode set to <code>vertical-rl</code></p>
+</div>

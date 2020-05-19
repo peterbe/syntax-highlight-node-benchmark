@@ -1,0 +1,3 @@
+@supports (display: flex) or (display: -webkit-box) {
+  // code for supporting browsers
+}

@@ -1,0 +1,2 @@
+var kbdEvent = new KeyboardEvent("syntheticKey", false);
+console.log(kbdEvent.isComposing); // return false

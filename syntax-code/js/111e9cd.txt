@@ -1,0 +1,2 @@
+var ws = document.createTextNode("  \t \r\n   ")
+ws.isElementContentWhitespace; /* evaluates to true */

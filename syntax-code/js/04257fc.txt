@@ -1,0 +1,4 @@
+const mediaElement = document.querySelectorAll('video, audio')[0];
+mediaElement.textTracks.addEventListener('change', (event) => {
+    console.log(`'${event.type}' event fired`);
+});

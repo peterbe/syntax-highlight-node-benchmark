@@ -1,0 +1,6 @@
+
+        contentType : "audio/ogg",
+        channels : 2,   
+        bitrate : 132700, 
+        samplerate : 5200 
+     

@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.addEventListener('emptied', (event) => {
+  console.log('Uh oh. The media is empty. Did you call load()?');
+});

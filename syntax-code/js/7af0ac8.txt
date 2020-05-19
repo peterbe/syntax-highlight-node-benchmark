@@ -1,0 +1,9 @@
+var frame = document.getElementById("frame");
+var frameDoc = frame.contentDocument;
+var info = document.getElementById("info");
+
+var target = frameDoc.getElementById("overview");
+frameDoc.scrollingElement.scrollTop = target.offsetTop;
+
+info.innerText = "Y offset after scrolling: " +
+                 frame.contentWindow.pageYOffset + " pixels";

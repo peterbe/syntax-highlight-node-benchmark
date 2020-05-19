@@ -1,0 +1,5 @@
+var videoElem = document.getElementById("my_vid");
+var counterElem = document.getElementById("counter");
+var quality = videoElem.getVideoPlaybackQuality();
+
+counterElem.innerText = quality.totalVideoFrames;

@@ -1,0 +1,3 @@
+node.addEventListener('ended', () => {
+  document.getElementById("startButton").disabled = false;
+})

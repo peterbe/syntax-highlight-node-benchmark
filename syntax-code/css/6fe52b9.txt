@@ -1,0 +1,3 @@
+.multicolor-linear { 
+   background: linear-gradient(to left, lime 28px, red 77%, cyan);
+}

@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var myDelay = audioCtx.createDelay(5.0);
+myDelay.delayTime.value = 3.0;

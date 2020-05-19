@@ -1,0 +1,4 @@
+input.example {
+  /* The user will be able to select the text, but not change it. */
+  -moz-user-input: disabled;
+}

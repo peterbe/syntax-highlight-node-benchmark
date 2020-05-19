@@ -1,0 +1,4 @@
+var imageOrientation = document.getElementById("imageOrientation");
+imageOrientation.addEventListener("change", function (evt) {
+  document.getElementById("image").style.imageOrientation = evt.target.value;
+});

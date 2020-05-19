@@ -1,0 +1,3 @@
+.small-caps {
+  font-feature-settings: "smcp", "c2sc";
+}

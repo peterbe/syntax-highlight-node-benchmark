@@ -1,0 +1,7 @@
+var box = document.getElementById("box");
+var iterationCounter = 0;
+
+box.onanimationiteration = function(event) {
+  box.style.animationPlayState = "paused";
+  document.getElementById("play").innerHTML = "Start Iteration #" + (iterationCounter+1);
+};

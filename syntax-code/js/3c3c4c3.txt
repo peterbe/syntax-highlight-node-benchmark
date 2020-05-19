@@ -1,0 +1,2 @@
+gl.getParameter(gl.MAX_VIEWPORT_DIMS);
+// e.g. Int32Array[16384, 16384]

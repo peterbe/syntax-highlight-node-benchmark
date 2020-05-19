@@ -1,0 +1,3 @@
+<p>You should be able to select this text.</p>
+<p class="unselectable">Hey, you can't select this text!</p>
+<p class="all">Clicking once will select all of this text.</p>

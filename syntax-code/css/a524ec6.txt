@@ -1,0 +1,7 @@
+.rotate {
+  transition: rotate 1s;
+}
+
+div:hover .rotate {
+  rotate: 1 -0.5 1 180deg;
+}

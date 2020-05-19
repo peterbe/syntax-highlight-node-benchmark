@@ -1,0 +1,4 @@
+<div class="container">
+  <div class="toaster"></div>
+  <div class="toast">Hello world!</div>
+</div>

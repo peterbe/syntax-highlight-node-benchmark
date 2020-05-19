@@ -1,0 +1,9 @@
+<a  target="_blank" href="https://www.wikipedia.org">
+  Wikipedia
+  <img alt="(opens in new tab)" src="newtab.svg">
+</a>
+
+<a href="2017-annual-report.ppt">
+  2017 Annual Report 
+  <img alt="(PowerPoint file)" src="ppt-icon.svg">
+</a>

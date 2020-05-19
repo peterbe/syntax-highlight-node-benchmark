@@ -1,0 +1,19 @@
+function swapCommentaryMain() {
+  var videoElem = document.getElementById("main-video");
+  var audioTrackMain;
+  var audioTrackCommentary;
+
+  videoElem.audioTracks.forEach(track) {
+    if (track.kind === "main") {
+      audioTrackMain = track;
+    } else if (track.kind === "commentary") {
+      audioTrackCommentary = track;
+    }
+  }
+
+  if (audioTrackMain && audioTrackCommentary) {
+    var commentaryEnabled = audioTrackCommentary.enabled;
+    audioTrackCommentary.enabled = audioTrackMain.enabled;
+    audioTrackMain.enabled = commentaryEnabled;
+  }
+}

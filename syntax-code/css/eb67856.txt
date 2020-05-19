@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: end;
+  grid-auto-rows: 200px;
+}
+.box1 {
+  align-self: stretch;
+}
+.box2 {
+  align-self: start;
+}

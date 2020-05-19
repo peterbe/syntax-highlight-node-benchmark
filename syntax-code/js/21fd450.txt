@@ -1,0 +1,7 @@
+var osc = context.createOscillator();
+osc.start(1);
+osc.stop(1.5);
+
+var src = context.createBufferSource();
+src.start(1, 0.25);
+src.stop(2);

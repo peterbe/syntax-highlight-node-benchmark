@@ -1,0 +1,1 @@
+<p id="log">Move your mouse around.</p>

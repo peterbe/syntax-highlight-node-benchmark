@@ -1,0 +1,8 @@
+<form role="search">
+  <div>
+    <input type="search" id="mySearch" name="q"
+     placeholder="Search the site..."
+     aria-label="Search through site content">
+    <button>Search</button>
+  </div>
+</form>

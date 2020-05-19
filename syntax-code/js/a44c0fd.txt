@@ -1,0 +1,6 @@
+var ssn = document.getElementById("ssn");
+var current = document.getElementById("current");
+
+ssn.oninput = function(event) {
+  current.innerHTML = ssn.value;
+}

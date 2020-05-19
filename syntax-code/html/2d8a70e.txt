@@ -1,0 +1,3 @@
+<p>If your screen uses interlaced rendering, this text should
+   be in a sans-serif font. If your screen uses progressive
+   scanning, you should see a serif font.</p>

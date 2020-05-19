@@ -1,0 +1,6 @@
+var controller = new AbortController(); 
+var signal = controller.signal; 
+
+signal.addEventListener('abort', function() {
+ console.log('Request aborted'); 
+};

@@ -1,0 +1,5 @@
+var canvas = document.getElementById('canvas'); 
+var gl = canvas.getContext('webgl');
+
+gl.getShaderPrecisionFormat(gl.VERTEX_SHADER, gl.MEDIUM_FLOAT).rangeMin; // 127
+gl.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.LOW_INT).rangeMin; // 24

@@ -1,0 +1,9 @@
+navigator.serviceWorker.register('sw.js');
+
+var options = { tag : 'user_alerts' };
+
+navigator.serviceWorker.ready.then(function(registration) {
+  registration.getNotifications(options).then(function(notifications) {
+    // do something with your notifications
+  }) 
+});

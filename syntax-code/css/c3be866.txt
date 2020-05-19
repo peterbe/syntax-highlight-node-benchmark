@@ -1,0 +1,9 @@
+em {
+  font-weight: bold;
+}
+.syn {
+  font-synthesis: style weight;
+}
+.no-syn {
+  font-synthesis: none;
+}

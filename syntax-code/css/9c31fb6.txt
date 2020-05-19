@@ -1,0 +1,27 @@
+p {
+  width: 200px;
+  border: 1px solid;
+  padding: 2px 5px;
+
+  /* BOTH of the following are required for text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.overflow-visible {
+  white-space: initial;
+}
+
+.overflow-clip {
+  text-overflow: clip;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.overflow-string {
+  /* Not supported in most browsers,
+     see the 'Browser compatibility' section below */
+  text-overflow: " [..]";
+}

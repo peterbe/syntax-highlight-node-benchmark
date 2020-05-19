@@ -1,0 +1,5 @@
+h1 {
+  counter-increment: chapter section 2 page;
+  /* Increases the value of the chapter and page counters by 1,
+     and the section counter by 2 */
+}

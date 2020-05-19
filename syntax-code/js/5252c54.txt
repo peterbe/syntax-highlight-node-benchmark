@@ -1,0 +1,7 @@
+document.onfullscreenerror = function ( event ) { 
+  displayWarning("Unable to switch into full-screen mode.");
+}; 
+
+//....
+
+document.documentElement.requestFullscreen();

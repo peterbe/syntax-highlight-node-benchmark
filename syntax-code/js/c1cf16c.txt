@@ -1,0 +1,3 @@
+let myVideo = document.getElementById("myVideoElement");
+
+myVideo.fastSeek(20);

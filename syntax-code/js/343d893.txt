@@ -1,0 +1,5 @@
+var recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+
+recognition.addEventListener('nomatch', function() { 
+  console.log('Speech not recognized');
+});

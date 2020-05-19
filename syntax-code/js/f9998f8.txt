@@ -1,0 +1,4 @@
+var origin = document.getElementById("origin");
+origin.addEventListener("change", function (evt) {
+  document.getElementById("masked").style.maskOrigin = evt.target.value;
+});

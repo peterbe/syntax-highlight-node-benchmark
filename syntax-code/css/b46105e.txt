@@ -1,0 +1,17 @@
+p {
+  color: black;
+}
+
+/* Any color device */
+@media (color) {
+  p {
+    color: red;
+  }
+}
+
+/* Any color device with at least 8 bits per color component */
+@media (min-color: 8) {
+  p {
+    color: #24ba13;
+  }
+}

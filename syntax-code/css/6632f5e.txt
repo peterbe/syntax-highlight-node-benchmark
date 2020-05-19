@@ -1,0 +1,4 @@
+contrast(0)     /* Completely gray */
+contrast(65%)   /* 65% contrast */
+contrast(1)     /* No effect */
+contrast(200%)  /* Double contrast */

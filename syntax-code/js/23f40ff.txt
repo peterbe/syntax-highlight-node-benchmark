@@ -1,0 +1,4 @@
+const iframe  = document.querySelector("iframe");
+const oldNode = iframe.contentWindow.document.getElementById("myNode");
+const newNode = document.importNode(oldNode, true);
+document.getElementById("container").appendChild(newNode);

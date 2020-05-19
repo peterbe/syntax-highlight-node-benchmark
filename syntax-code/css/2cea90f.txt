@@ -1,0 +1,6 @@
+p { 
+   --someVariable: 1.6em;
+   --someOtherVariable: translateX(33vw);
+   --anotherVariable: 42;
+   line-height: var(--someVariable);
+}

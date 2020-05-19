@@ -1,0 +1,2 @@
+var el = document.querySelector("video");
+var tracks = el.audioTracks;

@@ -1,0 +1,12 @@
+// Old webkitAudioContext code:
+var src = context.createBufferSource();
+// Some time later...
+var isFinished = (src.playbackState == src.FINISHED_STATE);
+
+// New AudioContext code:
+var src = context.createBufferSource();
+function endedHandler(event) {
+  isFinished = true;
+}
+var isFinished = false;
+src.onended = endedHandler;

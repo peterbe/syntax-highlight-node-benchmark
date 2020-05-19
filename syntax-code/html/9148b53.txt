@@ -1,0 +1,4 @@
+<div class="box">
+  <div class="float">I am a floated box!</div>
+  <p>I am content inside the container.</p>
+</div>

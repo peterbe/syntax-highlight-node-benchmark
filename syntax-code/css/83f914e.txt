@@ -1,0 +1,11 @@
+input {
+  padding: 2px;
+  display: block;
+  width: calc(100% - 1em);
+}
+
+#formbox {
+  width: calc(100% / 6);
+  border: 1px solid black;
+  padding: 4px;
+}

@@ -1,0 +1,3 @@
+<h1 class="fancy">Largest Header</h1>
+<h6 class="fancy">Smallest Header</h6>
+<h3 class="fancy half">50% width header</h3>

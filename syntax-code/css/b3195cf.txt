@@ -1,0 +1,15 @@
+h1 {
+  text-align: left;
+}
+
+@media (shape: rect) {
+  h1 {
+    text-align: left;
+  }
+}
+
+@media (shape: round) {
+  h1 {
+    text-align: center;
+  }
+}

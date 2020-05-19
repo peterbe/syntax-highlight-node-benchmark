@@ -1,0 +1,5 @@
+.percent {
+  width: 20%;
+  background-color: silver;
+  border: 1px solid red;
+}

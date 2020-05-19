@@ -1,0 +1,7 @@
+stopBtn.onclick = function() {
+  audioCtx.close().then(function() {
+    startBtn.removeAttribute('disabled');
+    susresBtn.setAttribute('disabled', 'disabled');
+    stopBtn.setAttribute('disabled', 'disabled');
+  });
+}

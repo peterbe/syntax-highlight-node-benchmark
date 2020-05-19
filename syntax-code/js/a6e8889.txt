@@ -1,0 +1,3 @@
+// The remote description has been set previously on pc, a RTCPeerconnection
+
+alert(pc.remoteDescription.type);

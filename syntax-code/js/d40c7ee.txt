@@ -1,0 +1,5 @@
+function checkClickMap(e) {
+  if (e.screenX < 50) doRedButton();
+  if (50 <= e.screenX && e.screenX < 100) doYellowButton();
+  if (e.screenX >= 100) doRedButton();
+}

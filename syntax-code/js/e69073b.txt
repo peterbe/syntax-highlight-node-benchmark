@@ -1,0 +1,6 @@
+let layerInit = {
+  depth: false
+};
+let glLayer = new XRWebGLLayer(xrSession, gl, layerInit);
+
+let glLayer = new XRWebGLLayer(xrSession, gl, { depth: false });

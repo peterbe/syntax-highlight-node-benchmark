@@ -1,0 +1,3 @@
+article :last-of-type {
+  background-color: pink;
+}

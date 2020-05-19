@@ -1,0 +1,1 @@
+gl.getParameter(gl.FRAMEBUFFER_BINDING);

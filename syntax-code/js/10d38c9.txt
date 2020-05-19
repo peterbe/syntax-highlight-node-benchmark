@@ -1,0 +1,26 @@
+window.addEventListener("load", function() {
+  let now = new Date().getTime();
+  let loadingTime = now - performance.timing.navigationStart;
+   
+  output = "Load time: " + loadingTime + " ms<br/>";
+  output += "Navigation type: ";
+ 
+  switch(performance.navigation.type) {
+      case PerformanceNavigation.TYPE_NAVIGATE:
+        output += "Navigation";
+      break;
+    case PerformanceNavigation.TYPE_RELOAD:
+        output += "Reload";
+      break;
+    case PerformanceNavigation.TYPE_BACK_FORWARD:
+        output += "History";
+      break;
+    default:
+        output += "Unknown";
+      break;
+  }
+ 
+  output += "<br/>Redirects: " + 
+      performance.navigation.redirectCount;
+  document.querySelector(".output").innerHTML = output;
+}, false);

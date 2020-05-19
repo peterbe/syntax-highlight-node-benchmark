@@ -1,0 +1,28 @@
+if (navigator.xr) {
+  navigator.xr.isSessionSupported('immersive-vr')
+  .then((isSupported) => {
+    if (isSupported) {
+      immersiveButton.addEventListener('click', onButtonClicked);
+      immersiveButton.innerHTML = 'Enter XR';
+      immersiveButton.disabled = false;
+    } else {
+      console.log("WebXR doesn't support immersive-vr mode!");
+    }
+  });
+} else {
+  console.log("WebXR is not available!");
+}
+
+function onButtonClicked() {
+  if (!xrSession) {
+    navigator.xr.requestSession('immersive-vr')
+    .then((session) => {
+      xrSession = session;
+      // onSessionStarted() not shown for reasons of brevity and clarity.
+      onSessionStarted(xrSession);
+    });
+  } else {
+    // Button is a toggle button.
+    xrSession.end().then(() => xrSession = null);
+  }
+}

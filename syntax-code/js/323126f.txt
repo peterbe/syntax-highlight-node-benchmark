@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var biquadFilter = audioCtx.createBiquadFilter();
+biquadfilter.Q.value = 100;

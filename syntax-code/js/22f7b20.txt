@@ -1,0 +1,9 @@
+function handleNegotiationNeededEvent() {
+  pc.createOffer().then(function(offer) {
+    return pc.setLocalDescription(offer);
+  })
+  .then(function() {
+    // Send the offer to the remote peer using the signaling server
+  })
+  .catch(reportError);
+}

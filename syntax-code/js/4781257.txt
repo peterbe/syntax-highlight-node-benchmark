@@ -1,0 +1,3 @@
+if(navigator.canShare(data)) {
+  // We can use share() to share the data! Woop!
+}

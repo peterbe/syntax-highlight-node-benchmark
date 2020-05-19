@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var gainNode = audioCtx.createGain();
+gainNode.gain.value = 0.5;

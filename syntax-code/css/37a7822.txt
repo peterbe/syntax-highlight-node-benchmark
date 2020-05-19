@@ -1,0 +1,4 @@
+p { font: 1.5em "Constantia", "Times New Roman", "Georgia", "Palatino", serif }
+
+.speed       { text-rendering: optimizeSpeed; }
+.legibility  { text-rendering: optimizeLegibility; }

@@ -1,0 +1,6 @@
+.example {
+  /* bottom-to-top layout */
+  -moz-box-direction: reverse;      /* Mozilla */
+  -webkit-box-direction: reverse;   /* WebKit */
+  box-direction: reverse;           /* As specified */
+}

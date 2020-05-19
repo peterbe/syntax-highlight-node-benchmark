@@ -1,0 +1,5 @@
+ var observe_frame = new PerformanceObserver(function(list) {
+   // Process the frame ...
+ });
+ // Only observe 'frame' events
+ observe_frame.observe({entryTypes: ['frame']});

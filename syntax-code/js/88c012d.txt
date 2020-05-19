@@ -1,0 +1,14 @@
+function createArticle(contents) {
+  let articleElem = document.createElement("article");
+  articleElem.id = nextArticleID;
+
+  let titleElem = document.createElement("h2");
+  titleElem.id = nextArticleID;
+  titleElem.innerText = "Article " + nextArticleID + " title";
+  articleElem.appendChild(titleElem);
+
+  articleElem.innerHTML += contents;
+  nextArticleID +=1 ;
+
+  return articleElem;
+}

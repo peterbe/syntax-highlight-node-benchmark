@@ -1,0 +1,2 @@
+var t = document.getElementById('TableA');
+t.cellSpacing = "10";

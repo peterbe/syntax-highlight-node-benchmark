@@ -1,0 +1,9 @@
+// First, get the Feature Policy object
+const featurePolicy = document.featurePolicy
+
+// Then query feature for specific 
+const allowlist = featurePolicy.getAllowlistForFeature("camera")
+
+for (const origin of allowlist){
+  console.log(origin)
+}

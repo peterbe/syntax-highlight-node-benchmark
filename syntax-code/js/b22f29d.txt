@@ -1,0 +1,11 @@
+var element = document.getElementById("myElement");
+var out = "";
+var elementStyle = element.style;
+var computedStyle = window.getComputedStyle(element, null);
+
+for (prop in elementStyle) {
+  if (elementStyle.hasOwnProperty(prop)) {
+    out += "  " + prop + " = '" + elementStyle[prop] + "' > '" + computedStyle[prop] + "'\n";
+  }
+}
+console.log(out)

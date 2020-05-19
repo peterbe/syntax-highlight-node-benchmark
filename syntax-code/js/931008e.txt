@@ -1,0 +1,17 @@
+function updatePosition(offset) {
+  let rad = angle * (Math.PI/180);
+  position.x += (Math.sin(rad) * offset);
+  position.y -= (Math.cos(rad) * offset);
+ 
+  if (position.x < 0) {
+    position.x = 399;
+  } else if (position.x > 399) {
+    position.x = 0;
+  }
+ 
+  if (position.y < 0) {
+    position.y = 399;
+  } else if (position.y > 399) {
+    position.y = 0;
+  }
+}

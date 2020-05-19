@@ -1,0 +1,2 @@
+self.importScripts('foo.js');
+self.importScripts('foo.js', 'bar.js', ...);

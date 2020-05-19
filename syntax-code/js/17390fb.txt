@@ -1,0 +1,5 @@
+self.addEventListener('pushsubscriptionchange', function() {
+  // do something, usually resubscribe to push and
+  // send the new subscription details back to the
+  // server via XHR or Fetch
+});

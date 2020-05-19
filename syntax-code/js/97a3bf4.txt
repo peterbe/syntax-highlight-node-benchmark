@@ -1,0 +1,6 @@
+var startTime = document.getElementById("startTime");
+var valueSpan = document.getElementById("value");
+
+startTime.addEventListener("input", function() {
+  valueSpan.innerText = startTime.value;
+}, false);

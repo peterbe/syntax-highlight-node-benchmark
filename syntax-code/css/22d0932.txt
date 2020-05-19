@@ -1,0 +1,3 @@
+#btn:hover {
+  background-position: <pixels shifted right>px <pixels shifted down>px;
+}

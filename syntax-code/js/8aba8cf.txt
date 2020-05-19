@@ -1,0 +1,14 @@
+function handleNegotiationNeededEvent() {
+  myPeerConnection.createOffer().then(function(offer) {
+    return myPeerConnection.setLocalDescription(offer);
+  })
+  .then(function() {
+    sendToServer({
+      name: myUsername,
+      target: targetUsername,
+      type: "video-offer",
+      sdp: myPeerConnection.localDescription
+    });
+  })
+  .catch(reportError);
+}

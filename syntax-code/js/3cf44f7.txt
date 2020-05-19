@@ -1,0 +1,2 @@
+var myRequest = new Request('flowers.jpg');
+var myURL = myRequest.url; // "http://mdn.github.io/fetch-examples/fetch-request/flowers.jpg"

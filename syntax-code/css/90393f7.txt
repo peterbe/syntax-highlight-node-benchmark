@@ -1,0 +1,15 @@
+p {
+  font-family: cursive;
+}
+
+@media (scan: interlace) {
+  p {
+    font-family: sans-serif;
+  }
+}
+
+@media (scan: progressive) {
+  p {
+    font-family: serif;
+  }
+}

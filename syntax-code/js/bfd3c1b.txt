@@ -1,0 +1,8 @@
+var ac = new AudioContext();
+var mediaElement = document.createElement('audio');
+
+var options = {
+  mediaElement : mediaElement 
+}
+
+var myAudioSource = new MediaElementAudioSourceNode(ac, options);

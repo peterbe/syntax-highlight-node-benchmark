@@ -1,0 +1,2 @@
+let audioList = document.getElementById("audioList");
+let videoList = document.getElementById("videoList");

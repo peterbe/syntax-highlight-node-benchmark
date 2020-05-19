@@ -1,0 +1,4 @@
+osc.connect(panner)
+   .connect(context.destination);
+
+osc.start(0);

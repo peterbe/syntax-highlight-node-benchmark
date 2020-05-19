@@ -1,0 +1,10 @@
+// Get Alice's arm, and wave it up and down
+document.getElementById("alice_arm").animate([ 
+  { transform: 'rotate(10deg)' }, 
+  { transform: 'rotate(-40deg)' }
+], {
+  easing: 'steps(2, end)',
+  iterations: Infinity,
+  direction: 'alternate',
+  duration: 600
+});

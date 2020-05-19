@@ -1,0 +1,9 @@
+.box6 {
+margin: 0.5em;
+width: 3em;
+height: 3em;
+border: solid 1px;
+background-color: palegreen;
+transform: scale(1.7);
+-webkit-transform: scale(1.7);
+}

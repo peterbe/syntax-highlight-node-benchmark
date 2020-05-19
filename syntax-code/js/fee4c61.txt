@@ -1,0 +1,1 @@
+track.connect(gainNode).connect(audioContext.destination);

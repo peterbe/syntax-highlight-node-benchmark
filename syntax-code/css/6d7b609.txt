@@ -1,0 +1,12 @@
+#box {
+  width: 200px;
+  height: 200px;
+  left: 50px;
+  top: 50px;
+  border: 1px solid #7788FF;
+  margin: 0;
+  position: relative;
+  background-color: #2233FF;
+  display: flex;
+  justify-content: center;
+}

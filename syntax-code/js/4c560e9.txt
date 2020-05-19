@@ -1,0 +1,5 @@
+document.getAnimations().forEach(
+  function (animation) {
+    animation.playbackRate *= .5;
+  }
+);

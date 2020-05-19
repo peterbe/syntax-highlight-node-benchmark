@@ -1,0 +1,24 @@
+.jump-start {
+   animation-timing-function: steps(5, jump-start);
+}
+.jump-end {
+   animation-timing-function: steps(5, jump-end);
+}
+.jump-none {
+   animation-timing-function: steps(5, jump-none);
+}
+.jump-both {
+   animation-timing-function: steps(5, jump-both);
+}
+.start { 
+   animation-timing-function: steps(5, start); 
+} 
+.end { 
+   animation-timing-function: steps(5, end); 
+}
+.step-start {
+   animation-timing-function: step-start;
+}
+.step-end {
+   animation-timing-function: step-end;
+}

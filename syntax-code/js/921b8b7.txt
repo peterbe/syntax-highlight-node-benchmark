@@ -1,0 +1,18 @@
+<!-- controller.html -->
+<script>
+  connection.send("{string: '你好，世界!', lang: 'zh-CN'}");
+  connection.send("{string: 'こんにちは、世界!', lang: 'ja'}");
+  connection.send("{string: '안녕하세요, 세계!', lang: 'ko'}");
+  connection.send("{string: 'Hello, world!', lang: 'en-US'}");
+</script>
+
+<!-- presentation.html -->
+<script>
+  connection.onmessage = function (message) {
+    var messageObj = JSON.parse(message.data);
+    var spanElt = document.createElement("SPAN");
+    spanElt.lang = messageObj.lang;
+    spanElt.textContent = messageObj.string;
+    document.appendChild(spanElt);
+  };
+</script>

@@ -1,0 +1,3 @@
+<p class="longhand">Here's some text with a 2px red underline.</p>
+<p class="under-and-over">This one has under and overline.</p>
+<p class="shorthand">This will have a 1px blue underline if shorthand is supported.</p>

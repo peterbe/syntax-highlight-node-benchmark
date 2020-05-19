@@ -1,0 +1,3 @@
+div{ color: black;
+-moz-appearance: discrete-capacity-level-indicator;
+-webkit-appearance: discrete-capacity-level-indicator; }

@@ -1,0 +1,1 @@
+var matches = documentfrag.querySelectorAll("div.note, div.alert");

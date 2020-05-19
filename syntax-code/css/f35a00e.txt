@@ -1,0 +1,5 @@
+h1 {
+  counter-set: chapter section 1 page;
+  /* Sets the chapter and page counters to 0,
+     and the section counter to 1 */
+}

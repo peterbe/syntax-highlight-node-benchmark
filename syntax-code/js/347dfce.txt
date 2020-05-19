@@ -1,0 +1,11 @@
+var xmlhttp = new XMLHttpRequest(),
+  method = 'GET',
+  url = 'https://developer.mozilla.org/';
+
+xmlhttp.open(method, url, true);
+xmlhttp.onabort = function () {
+  console.log('** The request was aborted');
+};
+xmlhttp.send();
+//..
+xmlhttp.abort(); // This will invoke our onabort handler above

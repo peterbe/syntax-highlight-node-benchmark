@@ -1,0 +1,55 @@
+#wrap {
+  width: 700px;
+  margin: 0 auto;
+  background: #5C5C5C;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+#example_1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: #D8F5FF;
+}
+
+#example_2 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: #C1FFDB;
+
+}
+#example_3 {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: #FFD7C2;
+}
+
+#example_4 {
+  width:200px;
+  height:200px;
+  position:absolute;
+  bottom:10px;
+  right:20px;
+  background-color:#FFC7E4;
+}
+#example_5 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100px; 
+  background-color: #D7FFC2;
+}

@@ -1,0 +1,3 @@
+offscreen.getContext("webgl", 
+                 { antialias: false,
+                   depth: false });

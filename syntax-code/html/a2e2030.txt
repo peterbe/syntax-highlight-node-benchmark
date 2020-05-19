@@ -1,0 +1,4 @@
+<h1>Sender</h1>
+<label for="message">Type a message to broadcast:</label><br/>
+<textarea id="message" name="message" rows="1" cols="40">Hello</textarea>
+<button id="broadcast-message" type="button">Broadcast message</button>

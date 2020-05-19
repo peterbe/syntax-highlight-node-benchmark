@@ -1,0 +1,3 @@
+var retVals = window.arguments[2];
+retVals.address  = enteredAddress;
+retVals.delivery = "immediate";

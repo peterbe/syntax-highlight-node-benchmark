@@ -1,0 +1,9 @@
+const channel = new BroadcastChannel('example-channel');
+
+channel.addEventListener('message', (event) => {
+  received.textContent = event.data;
+});
+
+channel.addEventListener('messageerror', (event) => {
+  console.error(event);
+});

@@ -1,0 +1,7 @@
+myPeerConnection = new RTCPeerConnection({
+  iceServers: [
+    {
+      urls: "stun:stunserver.example.org"
+    }
+  ]
+});

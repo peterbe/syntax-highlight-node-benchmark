@@ -1,0 +1,29 @@
+.container {
+  height: 3rem;
+}
+
+.event-log {
+  width: 25rem;
+  height: 2rem;
+  border: 1px solid black;
+  margin: .2rem;
+  padding: .2rem;
+}
+
+.animation.active {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 2;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,5 @@
+if (screen.pixelDepth < 8) {
+  // use low-color version of page
+} else { 
+  // use regular, colorful page
+}

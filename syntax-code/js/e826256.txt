@@ -1,0 +1,4 @@
+let parent = document.createElement("div")
+parent.append("Some text")
+
+console.log(parent.textContent) // "Some text"

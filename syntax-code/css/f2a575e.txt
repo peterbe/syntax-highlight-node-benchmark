@@ -1,0 +1,10 @@
+.box {
+  width: 200px;
+  border: 2px solid rgba(150, 150, 150, 255);
+  padding: 0.5em;
+  word-break: break-all;
+}
+
+.box img {
+  width: 200px;
+}

@@ -1,0 +1,29 @@
+.main {
+  width: 300px;
+  height:300px;
+  border: 1px solid black;
+}
+
+.button {
+  cursor: pointer;
+  width: 300px;
+  border: 1px solid black;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  color: white;
+  background-color: darkgreen;
+  font: 14px "Open Sans", "Arial", sans-serif;
+}
+
+#text {
+  width: 160px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  align-self: center;
+  color: white;
+  font: bold 2em "Lucida Grande", "Open Sans", sans-serif;
+}

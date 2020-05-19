@@ -1,0 +1,4 @@
+window.onvrdisplaydisconnect = function() {
+  info.textContent = 'Display disconnected.';
+  reportDisplays();
+);

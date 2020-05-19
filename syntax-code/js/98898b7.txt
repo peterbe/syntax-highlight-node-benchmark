@@ -1,0 +1,5 @@
+// getting
+var compositeEnumeration = keyframeEffect.composite;
+
+// setting
+keyframeEffect.composite = 'accumulate';

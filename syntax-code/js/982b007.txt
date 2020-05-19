@@ -1,0 +1,2 @@
+// When you know the second applet is the one you want
+my_java_app = document.applets[1];

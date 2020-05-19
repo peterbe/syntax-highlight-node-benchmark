@@ -1,0 +1,1 @@
+<a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>

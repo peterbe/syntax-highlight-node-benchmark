@@ -1,0 +1,1 @@
+gl.enable(gl.DITHER);

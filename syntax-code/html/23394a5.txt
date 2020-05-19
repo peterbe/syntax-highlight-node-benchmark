@@ -1,0 +1,8 @@
+<!-- inaccessible -->
+<p>Enter your name: <input id="name" type="text" size="30"></p>
+
+<!-- implicit label -->
+<p><label>Enter your name: <input id="name" type="text" size="30"></label></p>
+
+<!-- explicit label -->
+<p><label for="name">Enter your name: </label><input id="name" type="text" size="30"></p>

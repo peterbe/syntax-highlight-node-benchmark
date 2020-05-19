@@ -1,0 +1,4 @@
+var curMode = sourceBuffer.mode;
+if (curMode == 'segments') {
+  sourceBuffer.mode = 'sequence';
+}

@@ -1,0 +1,3 @@
+if (document.createElement("foo").tagName == "FOO") {
+  /* Document is not XML */
+}

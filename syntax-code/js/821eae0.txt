@@ -1,0 +1,2 @@
+var myWorker = new SharedWorker('worker.js');
+myWorker.port.start();

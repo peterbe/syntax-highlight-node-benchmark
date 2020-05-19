@@ -1,0 +1,12 @@
+let input = document.querySelector('input');
+
+input.onblur = inputBlur;
+input.onfocus = inputFocus;
+
+function inputBlur() {
+  input.value = 'Focus has been lost';
+}
+
+function inputFocus() {
+  input.value = 'Focus is here';
+}

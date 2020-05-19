@@ -1,0 +1,1 @@
+var numBytes = imageData.data.length;

@@ -1,0 +1,24 @@
+<table class="standard-table">
+  <thead>
+    <tr>
+      <th style="text-align: left;" scope="col">Original image</th>
+      <th style="text-align: left;" scope="col">Live example</th>
+      <th style="text-align: left;" scope="col">SVG Equivalent</th>
+      <th style="text-align: left;" scope="col">Static example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img alt="Test_Form_6.jpeg" id="img1" class="internal default" src="/files/3718/Test_Form_6.jpeg" style="width: 100%;" /></td>
+      <td><img alt="Test_Form_6.jpg" id="img2" class="internal default" src="/files/3718/Test_Form_6.jpeg" style="width: 100%;" /></td>
+      <td><div class="svg-container"><svg xmlns="http://www.w3.org/2000/svg" id="img3" viewbox="0 0 266 190" color-interpolation-filters="sRGB">
+ <filter id="hue-rotate">
+    <feColorMatrix type="hueRotate"
+               values="90"/>
+  </filter>
+  <image xlink:href="/files/3718/Test_Form_6.jpeg" filter="url(#hue-rotate)" width="266px" height="190px" />
+</svg><div></td>
+      <td><img alt="Test_Form_6_s.jpg" id="img4" class="internal default" src="/files/3719/Test_Form_6_s.jpg" style="width: 100%;" /></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,5 @@
+function switchCameras(track, camera) {
+  const constraints = track.getConstraints();
+  constraints.facingMode = camera;
+  track.applyConstraints(constraints);
+}

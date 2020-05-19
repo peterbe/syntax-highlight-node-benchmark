@@ -1,0 +1,1 @@
+const track = mediaStream.getVideoTracks()[0];

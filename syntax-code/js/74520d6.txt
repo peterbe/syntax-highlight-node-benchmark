@@ -1,0 +1,5 @@
+pc.oniceconnectionstatechange = ev => {
+  if (pc.iceConnectionState === "disconnected") {
+    closeVideoCall(pc);  // Our code to shut down the call
+  }
+}

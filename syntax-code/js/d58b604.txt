@@ -1,0 +1,6 @@
+let data = buffer.getChannelData(0); // get data
+
+// fill the buffer with noise
+for (let i = 0; i < bufferSize; i++) {
+    data[i] = Math.random() * 2 - 1;
+}

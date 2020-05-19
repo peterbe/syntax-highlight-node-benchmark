@@ -1,0 +1,7 @@
+#mozdiv1 {
+  word-spacing: 15px;
+}
+
+#mozdiv2 {
+  word-spacing: 5em;
+} 

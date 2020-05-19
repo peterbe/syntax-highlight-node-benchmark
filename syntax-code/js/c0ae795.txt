@@ -1,0 +1,29 @@
+var publicKey = {
+  challenge: /* from the server */,
+  rp: {
+    name: "Example CORP",
+    id  : "login.example.com"
+  },
+  user: {
+    id: new Uint8Array(16),
+    name: "jdoe@example.com",
+    displayName: "John Doe"
+  },
+  pubKeyCredParams: [
+    {
+      type: "public-key",
+      alg: -7
+    }
+  ]
+};
+
+navigator.credentials.create({ publicKey })
+  .then(function (newCredentialInfo) {
+    var attestationObj = newCredentialInfo.response.attestationObject;
+    // This will be a CBOR encoded ArrayBuffer
+    
+    // Do something with the response
+    // (sending it back to the relying party server maybe?)
+  }).catch(function (err) {
+     console.error(err);
+  });

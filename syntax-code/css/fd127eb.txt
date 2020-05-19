@@ -1,0 +1,4 @@
+.radial-gradient {
+  width: 120px;
+  height: 120px;
+}

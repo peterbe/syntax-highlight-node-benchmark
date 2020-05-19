@@ -1,0 +1,4 @@
+const RADIANS_PER_DEGREE = Math.PI / 180.0;
+
+let degreesToRadians = (deg) => deg * RADIANS_PER_DEGREE;
+let radiansToDegrees = (rad) => rad / RADIANS_PER_DEGREE;

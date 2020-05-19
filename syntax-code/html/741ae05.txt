@@ -1,0 +1,2 @@
+<p>Visible text</p>
+<p class="secret">Invisible text</p>

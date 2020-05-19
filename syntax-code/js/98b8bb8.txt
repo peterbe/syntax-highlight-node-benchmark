@@ -1,0 +1,7 @@
+(function loop(){
+   setTimeout(function() {
+      // Your logic here
+
+      loop();
+  }, delay);
+})();

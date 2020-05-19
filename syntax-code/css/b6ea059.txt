@@ -1,0 +1,34 @@
+var outer = document.createElement('ul');
+var items = document.getItems();
+for (var item = 0; item < items.length; item += 1) {
+  var itemLi = document.createElement('li');
+  var inner = document.createElement('ul');
+  for (var name = 0; name < items[item].properties.names.length; name += 1) {
+    var propLi = document.createElement('li');
+    propLi.appendChild(document.createTextNode(items[item].properties.names[name]));
+    inner.appendChild(propLi);
+  }
+  itemLi.appendChild(inner);
+  outer.appendChild(itemLi);
+}
+document.body.appendChild(outer);
+
+If faced with the following from an earlier example:
+
+<section itemscope itemtype="http://example.org/animals#cat">
+<h1 itemprop="name http://example.com/fn">Hedral</h1>
+<p itemprop="desc">Hedral is a male american domestic
+shorthair, with a fluffy <span
+itemprop="http://example.com/color">black</span> fur with <span
+itemprop="http://example.com/color">white</span> paws and belly.</p>
+<img itemprop="img" src="hedral.jpeg" alt="" title="Hedral, age 18 months">
+</section>
+
+...it would result in the following output:
+
+name
+http://example.com/fn
+desc
+http://example.com/color
+img
+(The duplicate occurrence of "http://example.com/color" is not included in the list.)

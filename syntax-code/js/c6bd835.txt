@@ -1,0 +1,5 @@
+document.exitPointerLock = document.exitPointerLock    ||
+                           document.mozExitPointerLock;
+
+// Attempt to unlock
+document.exitPointerLock();

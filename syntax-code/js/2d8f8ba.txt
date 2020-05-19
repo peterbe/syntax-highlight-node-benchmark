@@ -1,0 +1,9 @@
+let iceTransport = pc.getSenders[0].transport.iceTransport;
+let localProtoElem = document.getElementById("local-protocol");
+let remoteProtoElem = document.getElementById("remote-protocol");
+
+iceTransport.addEventListener("selectedcandidatepairchange", ev => {
+  let pair = iceTransport.getSelectedCandidatePair();
+  localProtoElem.innerText = pair.local.protocol.toUpperCase();
+  remoteProtoElem.innerText = pair.remote.protocol.toUpperCase();
+}, false)

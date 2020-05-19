@@ -1,0 +1,21 @@
+<script type="text/javascript">
+var windowObjectReference = null; // global variable
+
+function openRequestedPopup(url, windowName) {
+  if(windowObjectReference == null || windowObjectReference.closed) {
+    windowObjectReference = window.open(url, windowName,
+           "resizable,scrollbars,status");
+  } else {
+    windowObjectReference.focus();
+  };
+}
+</script>
+ 
+(...)
+
+<p><a
+ href="http://www.spreadfirefox.com/"
+ target="PromoteFirefoxWindow"
+ onclick="openRequestedPopup(this.href, this.target); return false;"
+ title="This link will create a new window or will re-use an already opened one"
+>Promote Firefox adoption</a></p>

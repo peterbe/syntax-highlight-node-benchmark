@@ -1,0 +1,9 @@
+.exampleone {
+  -webkit-mask-image: url('mask.png');
+  -webkit-mask-repeat-y: repeat;
+}
+
+.exampletwo {
+  -webkit-mask-image: url('mask.png');
+  -webkit-mask-repeat-y: no-repeat;
+}

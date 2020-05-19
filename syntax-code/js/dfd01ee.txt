@@ -1,0 +1,3 @@
+function handleCancelEvent(event) {
+  log("Animation canceled", event);
+};

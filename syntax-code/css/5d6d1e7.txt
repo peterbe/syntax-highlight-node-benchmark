@@ -1,0 +1,3 @@
+@supports (property1: value) or (property2: value) {
+  CSS rules to apply
+}

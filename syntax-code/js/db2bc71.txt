@@ -1,0 +1,14 @@
+const el = document.querySelector('.transition');
+const message = document.querySelector('.message');
+
+el.addEventListener('transitionrun', function() {
+  message.textContent = 'transitionrun fired';
+});
+
+el.addEventListener('transitionstart', function() {
+  message.textContent = 'transitionstart fired';
+});
+
+el.addEventListener('transitionend', function() {
+  message.textContent = 'transitionend fired';
+});

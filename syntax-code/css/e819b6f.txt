@@ -1,0 +1,3 @@
+div{ color: black;
+-moz-appearance: media-controls-dark-bar-background;
+-webkit-appearance: media-controls-dark-bar-background; }

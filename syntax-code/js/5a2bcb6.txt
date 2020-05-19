@@ -1,0 +1,2 @@
+setTimeout("alert('Hi!')", 50); // equivalent to using window.setTimeout.
+alert(window === window.window); // displays "true"

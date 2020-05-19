@@ -1,0 +1,6 @@
+function doDragOver(event) {
+  const isLink = event.dataTransfer.types.includes("text/uri-list");
+  if (isLink) {
+    event.preventDefault();
+  }
+}

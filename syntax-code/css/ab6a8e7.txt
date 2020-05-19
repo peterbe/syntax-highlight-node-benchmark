@@ -1,0 +1,14 @@
+/* Keyword values */
+scale: none;
+
+/* Single values */
+/* values of more than 1 make the element grow */
+scale: 2;
+/* values of less than 1 make the element shrink */
+scale: 0.5;
+
+/* Two values */
+scale: 2 0.5;
+
+/* Three values */
+scale: 2 0.5 2;

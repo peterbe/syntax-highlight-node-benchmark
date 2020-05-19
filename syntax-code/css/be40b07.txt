@@ -1,0 +1,14 @@
+/* Fallback */
+/* In the component’s style: */
+.component .header {
+  color: var(--header-color, blue); /* header-color isn’t set, and so remains blue, the fallback value */
+}
+
+.component .text {
+  color: var(--text-color, black);
+}
+
+/* In the larger application’s style: */
+.component {
+  --text-color: #080;
+}

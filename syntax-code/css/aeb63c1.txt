@@ -1,0 +1,3 @@
+#grid {
+  grid-gap: 20px 5px;
+}

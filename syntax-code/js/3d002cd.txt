@@ -1,0 +1,8 @@
+  // You can get the position, orientation, etc. of the display from the current frame's pose
+
+  var curFramePose = frameData.pose;
+  var curPos = curFramePose.position;
+  var curOrient = curFramePose.orientation;
+  if(poseStatsDisplayed) {
+    displayPoseStats(curFramePose);
+  }

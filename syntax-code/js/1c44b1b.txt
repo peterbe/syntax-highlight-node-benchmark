@@ -1,0 +1,7 @@
+  var src0 = context.createBufferSource();
+  var src1 = context.createBufferSource();
+  // Set buffers and other parameters...
+  src0.start(0);
+  src1.start(0);
+  // Some time later...
+  console.log(context.activeSourceCount);

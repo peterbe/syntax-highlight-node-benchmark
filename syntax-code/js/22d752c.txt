@@ -1,0 +1,19 @@
+function set_handlers(name) {
+ // Install event handlers for the given element
+ var el=document.getElementById(name);
+ el.onpointerdown = pointerdown_handler;
+ el.onpointermove = pointermove_handler;
+
+ // Use same handler for pointer{up,cancel,out,leave} events since
+ // the semantics for these events - in this app - are the same.
+ el.onpointerup = pointerup_handler;
+ el.onpointercancel = pointerup_handler;
+ el.onpointerout = pointerup_handler;
+ el.onpointerleave = pointerup_handler;
+}
+
+function init() {
+ set_handlers("target1");
+ set_handlers("target2");
+ set_handlers("target3");
+}

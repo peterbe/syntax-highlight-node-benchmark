@@ -1,0 +1,4 @@
+squareNumber.onchange = function() {
+  myWorker.port.postMessage([squareNumber.value,squareNumber.value]);
+  console.log('Message posted to worker');
+}

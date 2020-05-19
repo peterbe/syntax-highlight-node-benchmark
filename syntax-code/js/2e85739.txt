@@ -1,0 +1,8 @@
+// we want to load the following 3x3 matrix into attribute named "matrix3x3"
+// 0 1 2
+// 3 4 5
+// 6 7 8
+const matrix3x3Location = gl.getAttribLocation(shaderProgram, 'matrix3x3');
+gl.vertexAttrib3f(matrix3x3Location,     0, 3, 6);
+gl.vertexAttrib3f(matrix3x3Location + 1, 1, 4, 7);
+gl.vertexAttrib3f(matrix3x3Location + 2, 2, 5, 8);

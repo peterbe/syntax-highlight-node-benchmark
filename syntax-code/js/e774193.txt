@@ -1,0 +1,14 @@
+// in the page being controlled
+const swPath = 'static/scripts/sw.js';
+
+function handleServiceWorkerActive(registration) {
+    if (registration.active) {
+        const serviceWorker = registration.active;
+        const button = document.querySelector('#worker-message');
+        button.addEventListener('click', ()  => {
+            serviceWorker.postMessage('Hi service worker');
+        });
+    }
+}
+
+navigator.serviceWorker.register(swPath).then(handleServiceWorkerActive);

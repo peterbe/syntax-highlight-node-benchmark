@@ -1,0 +1,4 @@
+var div1 = document.getElementById("d1");
+var text_field = document.getElementById("t");
+
+text_field.value = div1.nodeName;

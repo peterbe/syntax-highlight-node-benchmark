@@ -1,0 +1,7 @@
+var parent = document.createElement("div");
+var p = document.createElement("p");
+var span = document.createElement("span");
+parent.append(p);
+parent.prepend(span);
+
+console.log(parent.childNodes); // NodeList [ <span>, <p> ]

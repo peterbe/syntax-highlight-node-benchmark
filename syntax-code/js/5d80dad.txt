@@ -1,0 +1,9 @@
+var nommingCake = document.getElementById('eat-me_sprite').animate(
+[
+  { transform: 'translateY(0)' },
+  { transform: 'translateY(-80%)' }   
+], {
+  fill: 'forwards',
+  easing: 'steps(4, end)',
+  duration: aliceChange.effect.timing.duration / 2
+});

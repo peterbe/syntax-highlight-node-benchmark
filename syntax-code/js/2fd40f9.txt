@@ -1,0 +1,2 @@
+var loop = video.loop;
+audio.loop = true;

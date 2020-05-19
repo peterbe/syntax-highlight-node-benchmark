@@ -1,0 +1,4 @@
+if (document.anchors.length >= 5) {
+  dump("dump found too many anchors");
+  window.location = "http://www.google.com";
+}

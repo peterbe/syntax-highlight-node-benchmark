@@ -1,0 +1,13 @@
+section {
+  max-width: 400px;
+}
+
+.shape {
+  float: left;
+  width: 150px;
+  height: 150px;
+  background-color: maroon;
+  clip-path: polygon(0 0, 150px 150px, 0 150px);
+  shape-outside: polygon(0 0, 150px 150px, 0 150px);
+  shape-margin: 20px;
+}

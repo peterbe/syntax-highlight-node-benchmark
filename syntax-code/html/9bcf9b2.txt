@@ -1,0 +1,13 @@
+<div id="context">
+    <div id="element-1">
+        <div id="element-1.1"></div>
+        <div id="element-1.2"></div>
+    </div>
+    <div id="element-2">
+        <div id="element-2.1"></div>
+    </div>
+</div>
+<p>
+    Selected elements ids :
+    <span id="results"></span>
+</p>

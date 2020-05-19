@@ -1,0 +1,3 @@
+const mediaSource = new MediaSource();
+const video = document.createElement('video');
+video.srcObject = mediaSource;

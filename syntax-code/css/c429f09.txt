@@ -1,0 +1,22 @@
+div {
+  width: 250px;
+  margin-bottom: 5px;
+  border: 2px solid blue;
+}
+
+#taller {
+  height: 50px;
+}
+
+#shorter {
+  height: 25px;
+}
+
+#parent {
+  height: 100px;
+}
+
+#child {
+  height: 50%;
+  width: 75%;
+}

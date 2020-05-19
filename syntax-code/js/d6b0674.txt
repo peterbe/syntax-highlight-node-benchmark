@@ -1,0 +1,3 @@
+new Path2D();     // empty path object
+new Path2D(path); // copy from another Path2D object
+new Path2D(d);    // path from SVG path data

@@ -1,0 +1,16 @@
+<form>
+  <p>Login to your account</p>
+  <div>
+    <label for="userId">User ID</label>
+    <input type="text" id="userId" name="userId">
+  </div>
+  <div>
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd" name="pwd">
+  </div>
+  <div>
+    <input id="image" type="image"
+      src="https://raw.githubusercontent.com/mdn/learning-area/master/html/forms/image-type-example/login.png"
+      alt="Login" width="200" height="100">
+  </div>
+</form>

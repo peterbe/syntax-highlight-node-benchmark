@@ -1,0 +1,8 @@
+// Assuming 'request' which is a FileRequest object
+
+request.onprogress = function (status) {
+  var progress = document.querySelector('progress');
+
+  progress.value = status.loaded;
+  progress.max   = status.total;
+}

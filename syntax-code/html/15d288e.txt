@@ -1,0 +1,1 @@
+<div id="gradient">This element is surrounded by a gradient-based border image!</div>

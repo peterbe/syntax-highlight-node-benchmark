@@ -1,0 +1,3 @@
+range = document.createRange();
+referenceNode = document.getElementsByTagName("div")[0];
+range.selectNodeContents(referenceNode);

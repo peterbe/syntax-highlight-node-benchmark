@@ -1,0 +1,1 @@
+const xr = navigator.xr;

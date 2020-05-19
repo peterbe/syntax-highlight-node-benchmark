@@ -1,0 +1,3 @@
+    // WebVR: Check to see if WebVR is supported
+    if(navigator.getVRDisplays) {
+      console.log('WebVR 1.1 supported');

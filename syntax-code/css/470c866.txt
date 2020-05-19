@@ -1,0 +1,21 @@
+#sval {
+  border: ridge #ccc;
+  border-width: 6px;
+}
+#bival {
+  border: solid red;
+  border-width: 2px 10px;
+}
+#treval {
+  border: dotted orange;
+  border-width: 0.3em 0 9px;
+}
+#fourval {
+  border: solid lightgreen;
+  border-width: thin medium thick 1em;
+}
+p {
+  width: auto;
+  margin: 0.25em;
+  padding: 0.25em;
+}

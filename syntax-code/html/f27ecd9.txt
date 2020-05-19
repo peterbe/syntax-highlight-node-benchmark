@@ -1,0 +1,2 @@
+<input id="myURL" name="myURL" type="url"
+       value="http://www.example.com">

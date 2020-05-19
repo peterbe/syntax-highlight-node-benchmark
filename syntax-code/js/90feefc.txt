@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var biquadFilter = audioCtx.createBiquadFilter();
+biquadFilter.detune.value = 100;

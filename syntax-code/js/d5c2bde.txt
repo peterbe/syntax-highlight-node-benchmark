@@ -1,0 +1,2 @@
+// sets identityResult to [4,3,2,1]
+let identityResult = multiplyMatrixAndPoint(identityMatrix, [4, 3, 2, 1]);

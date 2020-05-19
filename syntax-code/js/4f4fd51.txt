@@ -1,0 +1,9 @@
+function numbersOnly(event) {
+  return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));
+}
+
+const input = document.querySelector('input');
+input.onkeypress = numbersOnly;
+
+// Prevent pasting (since pasted content might include non-number characters)
+input.onpaste = event => false;

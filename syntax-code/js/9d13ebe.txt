@@ -1,0 +1,3 @@
+vrDisplayInstance.exitPresent().then(function() {
+  // Do something after the presentation has ended
+});

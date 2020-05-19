@@ -1,0 +1,2 @@
+var global = {data: 0};
+alert(global === window.global); // displays "true"

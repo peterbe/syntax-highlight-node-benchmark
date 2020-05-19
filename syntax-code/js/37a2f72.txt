@@ -1,0 +1,16 @@
+var restartConfig = { iceServers: [{
+                          urls: "turn:asia.myturnserver.net",
+                          username: "allie@oopcode.com",
+                          credential: "topsecretpassword"
+                      }]
+};
+
+myPeerConnection.setConfiguration(restartConfig);
+
+myPeerConnection.createOffer({"iceRestart": true}).then(function(offer) {
+  return myPeerConnection.setLocalDescription(offer);
+})
+.then(function() {
+  // send the offer to the other peer using the signaling server
+})
+.catch(reportError);

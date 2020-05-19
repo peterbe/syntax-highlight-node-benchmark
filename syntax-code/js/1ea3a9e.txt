@@ -1,0 +1,3 @@
+// Set table background colour to lightblue
+var t = document.getElementById('TableA');
+t.bgColor = 'lightblue';

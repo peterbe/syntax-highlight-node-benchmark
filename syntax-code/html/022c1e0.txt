@@ -1,0 +1,6 @@
+<form>
+  <div>
+    <input type="search" id="mySearch" name="q">
+    <button>Search</button>
+  </div>
+</form>

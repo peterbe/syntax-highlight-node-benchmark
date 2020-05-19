@@ -1,0 +1,1 @@
+var myStageParameters = vrDisplayInstance.stageParameters;

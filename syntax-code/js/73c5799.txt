@@ -1,0 +1,7 @@
+const audioContext = new AudioContext()
+await audioContext.audioWorklet.addModule('test-processor.js')
+const testNode = new AudioWorkletNode(audioContext, 'test-processor', {
+  processorOptions: {
+    someUsefulVariable: new Map([[1, 'one'], [2, 'two']])
+  }
+})

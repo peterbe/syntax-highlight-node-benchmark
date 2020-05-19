@@ -1,0 +1,1 @@
+screen.lockOrientation('landscape');

@@ -1,0 +1,1 @@
+animationTiming = animation.getTiming();

@@ -1,0 +1,2 @@
+let xrViewport = xrWebGLLayer.getViewport(xrView);
+gl.viewport(xrViewport.x, xrViewport.y, xrViewport.width, xrViewport.height);

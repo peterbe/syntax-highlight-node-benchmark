@@ -1,0 +1,1 @@
+<img src="image.png" style="border: dashed 2px #333388;">

@@ -1,0 +1,2 @@
+cake.addEventListener("mousedown", growAlice, false);
+cake.addEventListener("touchstart", growAlice, false);

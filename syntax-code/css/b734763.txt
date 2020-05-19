@@ -1,0 +1,6 @@
+p {
+  width: 12em;
+  height: 6em;
+  border: dotted;
+  overflow: visible; /* content is not clipped */ 
+}

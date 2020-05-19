@@ -1,0 +1,8 @@
+// Given this HTML: <body id="oldBodyElement"></body>
+alert(document.body.id); // "oldBodyElement"
+
+const aNewBodyElement = document.createElement("body");
+
+aNewBodyElement.id = "newBodyElement";
+document.body = aNewBodyElement;
+alert(document.body.id); // "newBodyElement"

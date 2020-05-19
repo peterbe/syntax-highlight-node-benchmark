@@ -1,0 +1,2 @@
+gl.getParameter(gl.VIEWPORT);
+// e.g. Int32Array[0, 0, 640, 480]

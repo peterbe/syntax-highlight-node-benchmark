@@ -1,0 +1,7 @@
+pc.onicecandidate = function(event) {
+  if (event.candidate) {
+    // Send the candidate to the remote peer
+  } else {
+    // All ICE candidates have been sent
+  }
+}

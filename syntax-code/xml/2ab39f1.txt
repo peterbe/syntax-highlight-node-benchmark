@@ -1,0 +1,1 @@
+<div x:id="example" onclick="console.log(this.attributes[0].prefix)"/>

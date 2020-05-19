@@ -1,0 +1,3 @@
+recognition.onsoundend = function(event) { 
+  console.log('Sound has stopped being received'); 
+}

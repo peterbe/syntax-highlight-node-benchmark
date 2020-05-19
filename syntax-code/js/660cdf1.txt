@@ -1,0 +1,2 @@
+// get the first style sheet’s first rule
+var first_rule = document.styleSheets[0].cssRules[0];

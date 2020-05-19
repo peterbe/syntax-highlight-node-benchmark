@@ -1,0 +1,10 @@
+function notePressed(event) {
+  if (event.buttons & 1) {
+    let dataset = event.target.dataset;
+
+    if (!dataset["pressed"]) {
+      oscList[dataset["octave"][dataset["note"]]] = playTone(dataset["frequency"]);
+      dataset["pressed"] = "yes";
+    }
+  }
+}

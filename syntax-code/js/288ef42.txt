@@ -1,0 +1,40 @@
+function recordStream(stream) {
+  let recorder = null;
+  let bufferList = [];
+
+  try {
+    recorder = new MediaRecorder(stream);
+  } catch(err) {
+    return err.name;     /* return the error name */
+  }
+
+  recorder.ondataavailable = function(event) {
+    bufferList.push(event.data);
+  };
+
+  recorder.onerror = function(event) {
+    let error = event.error;
+
+    switch(error.name) {
+      case InvalidStateError:
+        showNotification("You can't record the video right " +
+                         "now. Try again later.");
+        break;
+      case SecurityError:
+        showNotification("Recording the specified source " +
+                         "is not allowed due to security " +
+                         "restrictions.");
+        break;
+      default:
+        showNotification("A problem occurred while trying " +
+                         "to record the video.");
+        break;
+    }
+  };
+
+  /* this would be a good place to create a Worker to handle
+     writing the buffers to disk periodically */
+
+  recorder.start(100);  /* 100ms time slices per buffer */
+  return recorder;
+}

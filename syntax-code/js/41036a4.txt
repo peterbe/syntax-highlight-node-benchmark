@@ -1,0 +1,9 @@
+function log(text) {
+  if (!logFragment) {
+      logFragment = document.createDocumentFragment();
+  }
+ 
+  let el = document.createElement("div");
+  el.innerHTML = text;
+  logFragment.appendChild(el);
+}

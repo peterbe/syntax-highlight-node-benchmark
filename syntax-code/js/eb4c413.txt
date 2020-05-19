@@ -1,0 +1,3 @@
+gl.scissor(0, 0, 200, 200);
+gl.getParameter(gl.SCISSOR_BOX);
+// Int32Array[0, 0, 200, 200]

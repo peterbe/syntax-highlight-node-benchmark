@@ -1,0 +1,14 @@
+<label for="foods">What do you want to eat?</label><br>
+<select id="foods" name="foods" size="7" multiple>
+  <option value="1">Burrito</option>
+  <option value="2">Cheeseburger</option>
+  <option value="3">Double Bacon Burger Supreme</option>
+  <option value="4">Pepperoni Pizza</option>
+  <option value="5">Taco</option>
+</select>
+<br>
+<button name="order" id="order">
+  Order Now
+</button>
+<p id="output">
+</p>

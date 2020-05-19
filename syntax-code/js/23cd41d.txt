@@ -1,0 +1,7 @@
+let videoElement = document.getElementById("video");
+let logElement = document.getElementById("log");
+let supportedConstraintList = document.getElementById("supportedConstraints");
+let videoConstraintEditor = document.getElementById("videoConstraintEditor");
+let audioConstraintEditor = document.getElementById("audioConstraintEditor");
+let videoSettingsText = document.getElementById("videoSettingsText");
+let audioSettingsText = document.getElementById("audioSettingsText");

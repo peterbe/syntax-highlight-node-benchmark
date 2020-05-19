@@ -1,0 +1,9 @@
+// addEventListener version
+window.addEventListener('online', (event) => {
+    console.log("You are now connected to the network.");
+});
+
+// ononline version
+window.ononline = (event) => {
+  console.log("You are now connected to the network.");
+};

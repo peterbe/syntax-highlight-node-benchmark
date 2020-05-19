@@ -1,0 +1,5 @@
+var boxRotationTiming = {
+  duration: 2000,
+  iterations: 1,
+  fill: "none"
+};

@@ -1,0 +1,3 @@
+ctx.decodeAudioData(audioData).then(function(decodedData) {
+ // use the decoded data here
+});

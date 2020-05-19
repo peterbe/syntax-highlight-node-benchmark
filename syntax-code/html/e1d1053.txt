@@ -1,0 +1,2 @@
+<canvas id="one"></canvas>
+<canvas id="two"></canvas>

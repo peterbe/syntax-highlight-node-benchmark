@@ -1,0 +1,3 @@
+reader.closed.then(() => {
+  console.log('reader closed');
+})

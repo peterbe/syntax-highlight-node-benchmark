@@ -1,0 +1,2 @@
+<div>XPath example</div>
+<div>Tag names of the matched nodes: <output></output></div>

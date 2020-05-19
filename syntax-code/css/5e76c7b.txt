@@ -1,0 +1,15 @@
+@keyframes jiggle {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(25px);
+  }
+}
+
+@media (update: fast) {
+  p {
+    animation: 1s jiggle linear alternate infinite;
+  }
+}

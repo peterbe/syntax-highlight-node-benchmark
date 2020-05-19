@@ -1,0 +1,7 @@
+var form = document.querySelector('#form');
+var creds = new PasswordCredential(form);
+// Store the credentials.
+navigator.credentials.store(creds)
+  .then(function(creds) {
+  // Do something with the credentials if you need to.
+});

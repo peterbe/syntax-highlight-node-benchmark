@@ -1,0 +1,6 @@
+if (window.fullScreen) {
+  // it's fullscreen!
+}
+else {
+  // not fullscreen!
+}

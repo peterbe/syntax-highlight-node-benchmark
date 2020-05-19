@@ -1,0 +1,22 @@
+//matrixB • matrixA
+function multiplyMatrices(matrixA, matrixB) {
+  // Slice the second matrix up into rows
+  let row0 = [matrixB[ 0], matrixB[ 1], matrixB[ 2], matrixB[ 3]];
+  let row1 = [matrixB[ 4], matrixB[ 5], matrixB[ 6], matrixB[ 7]];
+  let row2 = [matrixB[ 8], matrixB[ 9], matrixB[10], matrixB[11]];
+  let row3 = [matrixB[12], matrixB[13], matrixB[14], matrixB[15]];
+
+  // Multiply each row by matrixA
+  let result0 = multiplyMatrixAndPoint(matrixA, row0);
+  let result1 = multiplyMatrixAndPoint(matrixA, row1);
+  let result2 = multiplyMatrixAndPoint(matrixA, row2);
+  let result3 = multiplyMatrixAndPoint(matrixA, row3);
+
+  // Turn the result rows back into a single matrix
+  return [
+    result0[0], result0[1], result0[2], result0[3],
+    result1[0], result1[1], result1[2], result1[3],
+    result2[0], result2[1], result2[2], result2[3],
+    result3[0], result3[1], result3[2], result3[3]
+  ];
+}

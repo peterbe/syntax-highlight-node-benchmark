@@ -1,0 +1,8 @@
+<!--  decrements by intervals of 900 seconds (15 minute) -->
+<input type="time" max="17:00" step="900">
+
+<!-- decrements by intervals of 7 days (one week) -->
+<input type="date" max="2019-12-25" step="7">
+
+<!-- decrements by intervals of 12 months (one year) -->
+<input type="month" max="2019-12" step="12">

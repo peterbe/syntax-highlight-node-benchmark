@@ -1,0 +1,5 @@
+if (ipBanList.includes(candidate.address)) {
+  rejectCandidate(candidate);
+} else {
+  acceptCandidate(candidate);
+}

@@ -1,0 +1,4 @@
+var windTopLeft = new DOMPoint(window.screenX, window.screenY);
+var newTopLeft = DOMPoint.fromPoint(windTopLeft);
+newTopLeft.x += 100;
+newTopLeft.y += 100;

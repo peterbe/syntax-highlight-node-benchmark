@@ -1,0 +1,10 @@
+<div id="masked">
+</div>
+<select id="repetition">
+  <option value="repeat-x">repeat-x</option>
+  <option value="repeat-y">repeat-y</option>
+  <option value="repeat" selected>repeat</option>
+  <option value="space">space</option>
+  <option value="round">round</option>
+  <option value="no-repeat">no-repeat</option>
+</select>

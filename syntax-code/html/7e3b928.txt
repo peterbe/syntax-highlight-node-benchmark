@@ -1,0 +1,1 @@
+<div class="foo" style="color: red;">What color am I?</div>

@@ -1,0 +1,1 @@
+el.addEventListener('wheel', zoom);

@@ -1,0 +1,20 @@
+// Make a stream from a file.
+var stream = Components.classes["@mozilla.org/network/file-input-stream;1"]
+                       .createInstance(Components.interfaces.nsIFileInputStream);
+stream.init(file, 0x04 | 0x08, 0644, 0x04); // file is an nsIFile instance   
+
+// Try to determine the MIME type of the file
+var mimeType = "text\/plain";
+try {
+  var mimeService = Components.classes["@mozilla.org/mime;1"]
+          .getService(Components.interfaces.nsIMIMEService);
+  mimeType = mimeService.getTypeFromFile(file); // file is an nsIFile instance
+}
+catch (oEvent) { /* eat it; just use text/plain */ }
+
+// Send    
+var req = Components.classes["@mozilla.org/xmlextras/xmlhttprequest;1"]
+                    .createInstance(Components.interfaces.nsIXMLHttpRequest);
+req.open('PUT', url, false); /* synchronous! */
+req.setRequestHeader('Content-Type', mimeType);
+req.send(stream);

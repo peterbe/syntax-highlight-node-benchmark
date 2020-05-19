@@ -1,0 +1,18 @@
+.group1 {
+  background-color: #d7d9f2;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(100, 100, 100);
+  font-family: sans-serif;
+}
+
+td, th {
+  border: 1px solid rgb(100, 100, 100);
+  padding: 10px 14px;
+}
+
+td > img {
+  max-width: 4em;
+}

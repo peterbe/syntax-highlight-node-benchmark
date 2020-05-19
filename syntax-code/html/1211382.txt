@@ -1,0 +1,25 @@
+<html>
+  <script>
+    function downHandler(ev) {
+      let el = document.getElementById("target");
+      // Element "target" will receive/capture further events
+      el.setPointerCapture(ev.pointerId);
+    }
+
+    function cancelHandler(ev) {
+      let el = document.getElementById("target");
+      // Release the pointer capture
+      el.releasePointerCapture(ev.pointerId);
+    }
+
+    function init() {
+      let el = document.getElementById("target");
+      // Register pointerdown and pointercancel handlers
+      el.onpointerdown = downHandler;
+      el.onpointercancel = cancelHandler;
+    }
+  </script>
+  <body onload="init();">
+    <div id="target"> Touch me ... </div>
+  </body>
+</html>

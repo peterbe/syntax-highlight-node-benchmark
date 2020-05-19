@@ -1,0 +1,6 @@
+function scheduleStatusRefresh() {
+    if (!statusRefreshScheduled) {
+      requestAnimationFrame(updateDisplay);
+      statusRefreshScheduled = true;
+  }
+}

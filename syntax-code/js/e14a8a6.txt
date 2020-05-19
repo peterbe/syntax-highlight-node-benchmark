@@ -1,0 +1,9 @@
+for (let source in xrSession.inputSources) {
+  if (source.gripSpace) {
+    let gripPose = frame.getPose(source.gripSpace, xrRefSpace);
+
+    if (gripPose) {
+      myDrawMeshUsingTransform(controllerMesh, gripPose.transform.matrix);
+    }
+  }
+}

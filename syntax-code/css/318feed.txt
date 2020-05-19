@@ -1,0 +1,18 @@
+table {
+  border: 1px solid blue;
+}
+
+/* Selects the last three elements */
+tr:nth-last-child(-n+3) {
+  background-color: pink;
+}
+
+/* Selects every element starting from the second to last item */
+tr:nth-last-child(n+2) {
+  color: blue;
+}
+
+/* Select only the last second element */
+tr:nth-last-child(2) {
+  font-weight: 600;
+}

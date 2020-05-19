@@ -1,0 +1,7 @@
+const offlineCtx = new OfflineAudioContext({
+  numberOfChannels: 2,
+  length: 44100 * 40,
+  sampleRate: 44100,
+});
+const source = offlineCtx.createBufferSource();
+// etc...

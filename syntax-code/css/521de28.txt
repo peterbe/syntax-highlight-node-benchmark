@@ -1,0 +1,20 @@
+/* Exact height */
+@media (height: 360px) {
+  div {
+    color: red;
+  }
+}
+
+/* Minimum height */
+@media (min-height: 25rem) {
+  div {
+    background: yellow;
+  }
+}
+
+/* Maximum height */
+@media (max-height: 40rem) {
+  div {
+    border: 2px solid blue;
+  }
+}

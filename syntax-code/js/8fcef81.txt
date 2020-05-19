@@ -1,0 +1,16 @@
+function handleUserlistMsg(msg) {
+  var i;
+  var listElem = document.querySelector(".userlistbox");
+
+  while (listElem.firstChild) {
+    listElem.removeChild(listElem.firstChild);
+  }
+
+  msg.users.forEach(function(username) {
+    var item = document.createElement("li");
+    item.appendChild(document.createTextNode(username));
+    item.addEventListener("click", invite, false);
+
+    listElem.appendChild(item);
+  });
+}

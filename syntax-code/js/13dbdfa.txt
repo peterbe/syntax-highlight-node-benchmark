@@ -1,0 +1,8 @@
+pc.onicecandidate = ev => {
+  if (ev.candidate) {
+    sendMessage({
+      type: "new-ice-candidate",
+      candidate: event.candidate
+    });
+  }
+};

@@ -1,0 +1,27 @@
+  var blobList = [];
+
+    document.getElementById("pasteZone").addEventListener('paste', handlePaste, false);
+
+    function handlePaste(evt) {
+      var fileList = window.clipboardData.files; // Note that window.DataTransfer.files is not applicable.
+
+      if (!fileList) {
+        console.log("fileList is null.");
+        return;
+      }
+
+      for (var i = 0; i < fileList.length; i++) {
+        var file = fileList[i];
+        var url = URL.createObjectURL(file);
+
+        if (evt.convertURL) { // Use standard if available.
+          evt.convertURL(file, "specified", url);
+        } else {
+          evt.msConvertURL(file, "specified", url);
+        }
+
+        console.log("Local file: " + file.name + " (" + file.size + ")");
+        blobList.push(file);
+      } // for
+    } // handlePaste
+

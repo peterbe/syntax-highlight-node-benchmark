@@ -1,0 +1,3 @@
+document.querySelector("my-video").audioTracks.onremovetrack = function(event) {
+  myTrackCount = document.querySelector("my-video").audioTracks.length;
+};

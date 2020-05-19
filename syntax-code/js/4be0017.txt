@@ -1,0 +1,7 @@
+var dataInit = {
+  data : 'Some sample text'
+}
+
+var myPushEvent = new PushEvent('push', dataInit);
+
+myPushEvent.data.text(); // should return 'Some sample text'

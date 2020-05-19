@@ -1,0 +1,4 @@
+const source = new AudioBufferSourceNode(...);
+const rate = 5.3;
+source.playbackRate.value = rate;
+console.log(source.playbackRate.value === rate);

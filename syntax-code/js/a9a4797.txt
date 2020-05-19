@@ -1,0 +1,10 @@
+// Check the status of each data cell in a table
+const table = document.getElementById('forecast-table'); 
+const cells = table.getElementsByTagName('td');
+
+for (let cell of cells) {
+  let status = cell.getAttribute('data-status');
+  if (status === 'open') {
+    // Grab the data 
+  }
+}

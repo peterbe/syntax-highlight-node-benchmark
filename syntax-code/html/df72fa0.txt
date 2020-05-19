@@ -1,0 +1,3 @@
+<button data-playing="false" role="switch" aria-checked="false">
+    <span>Play/Pause</span>
+</button>

@@ -1,0 +1,3 @@
+<div class="wrapper">
+  <div class="thing">I am placed in an area named content.</div>
+</div>

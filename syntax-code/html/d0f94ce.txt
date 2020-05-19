@@ -1,0 +1,4 @@
+<map name="mainmenu-map">
+  <area shape="circle" coords="25, 25, 75, 75" href="/index.html" alt="Return to home page">
+  <area shape="rect" coords="25, 25, 100, 150" href="/index.html" alt="Shop">
+</map>

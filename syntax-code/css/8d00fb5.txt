@@ -1,0 +1,17 @@
+#defaultThemes,
+#nonDefaultThemes {
+  background-color: #FFA0A0;
+}
+
+#defaultThemes:-moz-system-metric(windows-default-theme) {
+  background-color: #A0FFA0;
+}
+
+#nonDefaultThemes:not(-moz-system-metric(windows-default-theme)) {
+  background-color: #A0FFA0;
+}
+
+#notSupported:-moz-system-metric(windows-default-theme),
+#notSupported:not(:-moz-system-metric(windows-default-theme)) {
+  display: none;
+}

@@ -1,0 +1,19 @@
+async function captureWithCursor() {
+  let supportedConstraints = navigator.mediaDevices.getSupportedConstraints();
+  let displayMediaOptions = {
+    video: {
+      displaySurface: "browser"
+    },
+    audio: false;
+  };
+
+  if (supportedConstraints.cursor) {
+    displayMediaOptions.video.cursor = "always";
+  }
+
+  try {
+    videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
+  } catch(err) {
+    /* handle the error */
+  }
+}

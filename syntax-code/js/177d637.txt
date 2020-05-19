@@ -1,0 +1,2 @@
+// Get the distributed nodes
+var nodes = myContentObject.getDistributedNodes();

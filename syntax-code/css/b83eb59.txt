@@ -1,0 +1,10 @@
+/* Keyword value */
+max-height: auto;
+
+/* <length> values */
+max-height: 400px;
+max-height: 50em;
+max-height: 20cm;
+
+/* <percentage> value */
+max-height: 75%;

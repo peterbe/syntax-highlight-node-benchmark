@@ -1,0 +1,9 @@
+.container {
+    background-color:orange;
+    width:320px;
+    border:1px solid black;
+}
+div {
+    width:320px;
+    background-color:gold;
+}

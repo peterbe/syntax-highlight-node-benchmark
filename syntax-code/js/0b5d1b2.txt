@@ -1,0 +1,14 @@
+[].forEach.call(document.querySelectorAll('[title][id]'), function (node) {
+  node.addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.location.hash = '#' + $(this).attr('id');
+  });
+});
+[].forEach.call(document.querySelectorAll('[title]'), function (node) {
+  node.addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.location.hash = '';
+  });
+});

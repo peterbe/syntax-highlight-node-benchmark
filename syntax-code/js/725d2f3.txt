@@ -1,0 +1,21 @@
+function recordStream(stream) {
+  let recorder = null;
+  let bufferList = [];
+
+  try {
+    recorder = new MediaRecorder(stream);
+  } catch(err) {
+    /* exception while trying to create the recorder; handle that */
+  }
+
+  recorder.ondataavailable = function(event) {
+    bufferList.push(event.data);
+  };
+
+  recorder.onerror = function(event) {
+    let error = event.error;
+  };
+
+  recorder.start(100);  /* 100ms time slices per buffer */
+  return recorder;
+}

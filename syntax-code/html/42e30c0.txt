@@ -1,0 +1,2 @@
+<h1>Receiver 1</h1>
+<div id="received"></div>

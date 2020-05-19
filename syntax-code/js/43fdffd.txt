@@ -1,0 +1,25 @@
+function callback(mutationList) {
+  mutationList.forEach(function(mutation) {
+    switch(mutation.type) {
+      case "attributes":
+        switch(mutation.attributeName) {
+          case "status":
+            userStatusChanged(mutation.target.username, mutation.target.status);
+            break;
+          case "username":
+            usernameChanged(mutation.oldValue, mutation.target.username);
+            break;
+        }
+        break;
+    }
+  });
+}
+
+var userListElement = document.querySelector("#userlist");
+
+var observer = new MutationObserver(callback);
+observer.observe(userListElement, {
+  attributeFilter: [ "status", "username" ],
+  attributeOldValue: true,
+  subtree: true
+});

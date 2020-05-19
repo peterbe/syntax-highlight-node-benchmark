@@ -1,0 +1,28 @@
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.shape {
+  width: 8em;
+  height: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 18s linear infinite;
+  background: lightsalmon;
+  border-radius: 42%;
+  margin: 1em;
+}
+
+.paused {
+  background-color: #ddd;
+}
+
+.paused .shape {
+  animation-play-state: paused;
+}

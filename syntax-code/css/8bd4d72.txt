@@ -1,0 +1,21 @@
+div.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  zoom: 1.5;
+}
+div#a {
+  background-color: gold;
+  zoom: normal;
+}
+div#b {
+  background-color: green;
+  zoom: 200%;
+}
+div#c {
+  background-color: blue;
+  zoom: 2.9;
+}

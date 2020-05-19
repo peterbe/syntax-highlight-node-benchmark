@@ -1,0 +1,10 @@
+function setCustomFOV(up,right,down,left) {
+  var testFOV = new VRFieldOfView(up,right,down,left);
+
+  gHMD.setFieldOfView(testFOV,testFOV,0.01,10000.0);
+
+  var lEye = gHMD.getEyeParameters('left');
+  var rEye = gHMD.getEyeParameters('right');
+  console.log(lEye.currentFieldOfView);
+  console.log(rEye.currentFieldOfView);
+}

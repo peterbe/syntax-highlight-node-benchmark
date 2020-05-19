@@ -1,0 +1,2 @@
+<p class="mono">Your device supports monochrome pixels!</p>
+<p class="no-mono">Your device doesn't support monochrome pixels.</p>

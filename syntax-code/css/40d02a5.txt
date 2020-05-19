@@ -1,0 +1,6 @@
+.radial-gradient {
+  background: repeating-radial-gradient(ellipse farthest-corner at 20% 20%,
+      red, black 5%, blue 5%, green 10%);
+  background: repeating-radial-gradient(ellipse farthest-corner at 20% 20%, 
+      red 0 5%, green 5% 10%);
+}

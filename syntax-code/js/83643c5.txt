@@ -1,0 +1,3 @@
+    //Specifies the output device id that the audio will be sent to.
+    msAudioDeviceType: string;
+    readonly msGraphicsTrustStatus: MSGraphicsTrust;

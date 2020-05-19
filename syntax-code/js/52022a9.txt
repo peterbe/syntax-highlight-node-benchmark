@@ -1,0 +1,1 @@
+var myImageData = ctx.createImageData(width, height);

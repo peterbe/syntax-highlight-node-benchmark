@@ -1,0 +1,3 @@
+animation.currentTime =
+  animation.effect.getComputedTiming().delay +
+  animation.effect.getComputedTiming().activeDuration / 2;

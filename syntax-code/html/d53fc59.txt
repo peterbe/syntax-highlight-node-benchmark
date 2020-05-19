@@ -1,0 +1,21 @@
+<table class="table_1">
+  <tr>
+    <td>Moe</td>
+    <td>Larry</td>
+  </tr>
+  <tr>
+    <td>Curly</td>
+    <td></td>
+  </tr>
+</table>
+<br>
+<table class="table_2">
+  <tr>
+    <td>Moe</td>
+    <td>Larry</td>
+  </tr>
+  <tr>
+    <td>Curly</td>
+    <td></td>
+  </tr>
+</table>

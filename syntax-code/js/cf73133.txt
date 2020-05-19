@@ -1,0 +1,1 @@
+var myPanner = new PannerNode(context, options);

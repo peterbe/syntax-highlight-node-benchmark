@@ -1,0 +1,1 @@
+<input id="myURL" name="myURL" type="url">

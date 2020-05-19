@@ -1,0 +1,13 @@
+function log(msg, event) {
+  let logBox = document.getElementById("log");
+ 
+  logBox.innerHTML += msg;
+ 
+  if (event) {
+    logBox.innerHTML += " <code>"+ event.animationName +
+        "</code> at time " + event.elapsedTime.toFixed(2) +
+        " seconds.";
+  }
+ 
+  logBox.innerHTML += "\n";
+};

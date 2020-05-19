@@ -1,0 +1,7 @@
+let span = document.querySelector("span");
+let classes = span.classList;
+let iterator = classes.entries();
+
+for (let value of iterator) {
+  span.textContent += value + ' ++ ';
+}

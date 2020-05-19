@@ -1,0 +1,22 @@
+let request;
+
+function process() {
+  let options = {requestShipping: true};
+
+  try {
+    request = new PaymentRequest(supportedHandlers, defaultPaymentDetails, options);
+    // Add event listeners here.
+    request.onshippingaddresschange = handleAddressChange;
+    // Call show() to trigger the browser's payment flow.
+    request.show().then(function(instrumentResponse) {
+      // Do something with the response from the UI.
+      console.log("Got response!");
+    })
+    .catch(function(err) {
+      // Do something with the error from request.show().
+      console.error(`Error from show(): ${err}`);
+    });
+  } catch (e) {
+    // Catch any errors from trying to create the PaymentRequest object.
+  }
+}

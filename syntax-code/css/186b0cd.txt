@@ -1,0 +1,19 @@
+p {
+  display: none;
+}
+
+/* Any monochrome device */
+@media (monochrome) {
+  p.mono {
+    display: block;
+    color: #333;
+  }
+}
+
+/* Any non-monochrome device */
+@media (monochrome: 0) {
+  p.no-mono {
+    display: block;
+    color: #ee3636;
+  }
+}

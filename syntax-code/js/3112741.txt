@@ -1,0 +1,19 @@
+function callback(mutationList) {
+  mutationList.forEach(function(mutation) {
+    switch(mutation.type) {
+      case "attributes":
+        notifyUser("Attribute name " + mutation.attributeName +
+            " changed to " + mutation.target[mutation.attributeName] +
+            " (was " + mutation.oldValue + ")");
+        break;
+    }
+  });
+}
+
+var targetNode = document.querySelector("#target");
+
+var observer = new MutationObserver(callback);
+observer.observe(targetNode, {
+  attributes: true,
+  attributeOldValue: true
+});

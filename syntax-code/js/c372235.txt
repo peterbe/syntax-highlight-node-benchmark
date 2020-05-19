@@ -1,0 +1,2 @@
+var availSendCodecs = transceiver.sender.getCapabilities("video").codecs;
+var availReceiveCodecs = transceiver.receiver.getCapabilities("video").codecs;

@@ -1,0 +1,8 @@
+context = new AudioContext();
+osc = context.createOscillator();
+osc.connect(context.destination);
+
+/* Schedule the start and stop times for the oscillator */
+
+osc.start(context.currentTime + 2);
+osc.stop(context.currentTime + 3);

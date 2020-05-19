@@ -1,0 +1,4 @@
+document.getElementById("element-to-paste-text").addEventListener("paste", evt => {
+  evt.target.textContent = evt.clipboardData.getData("text/plain").toUpperCase();
+  evt.preventDefault();
+});

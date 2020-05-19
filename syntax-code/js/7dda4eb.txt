@@ -1,0 +1,2 @@
+var tn = document.createTextNode("Hello world");
+tn.isElementContentWhitespace; /* evaluates to false */

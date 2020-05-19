@@ -1,0 +1,10 @@
+async function record() {
+    const stream = await navigator.mediaDevices.getUserMedia({audio: true});
+    const recorder = new MediaRecorder(stream);
+    recorder.addEventListener('error', (event) => {
+        console.error(`error recording stream: ${event.error.name}`)
+    });
+    recorder.start();
+}
+
+record();

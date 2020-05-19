@@ -1,0 +1,9 @@
+@counter-style options {
+  system: fixed;
+  symbols: A B C D;
+  suffix: ") ";
+}
+
+.choices {
+  list-style: options;    
+}

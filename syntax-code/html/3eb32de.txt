@@ -1,0 +1,2 @@
+<div>XPath example</div>
+<div>Number of &lt;div&gt;s: <output></output></div>

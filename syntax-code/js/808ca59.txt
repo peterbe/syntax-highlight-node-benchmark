@@ -1,0 +1,4 @@
+let element = document.getElementById("top");
+while (element.firstChild) {
+  element.removeChild(element.firstChild);
+}

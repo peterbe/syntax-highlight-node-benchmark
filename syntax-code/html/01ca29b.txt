@@ -1,0 +1,5 @@
+<div id="container">
+  <div id="content">Click the button to slide right!</div>
+</div>
+
+<button id="slide" type="button">Slide right</button>

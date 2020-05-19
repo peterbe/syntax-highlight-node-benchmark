@@ -1,0 +1,11 @@
+if(navigator.mozGetUserMedia) {
+  navigator.mozGetUserMedia(
+    constraints,
+    success,
+    failure);
+} else {
+  navigator.getUserMedia(
+    constraints,
+    success,
+    failure);
+}

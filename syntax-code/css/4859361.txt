@@ -1,0 +1,9 @@
+/* Keyword values */
+scroll-snap-align: none;
+scroll-snap-align: start end; /* when two values set first is block, second inline */
+scroll-snap-align: center;
+
+/* Global values */
+scroll-snap-align: inherit;
+scroll-snap-align: initial;
+scroll-snap-align: unset;

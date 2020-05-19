@@ -1,0 +1,5 @@
+var mql = window.matchMedia('(max-width: 600px)');
+
+if(mql.matches) {
+  // media query test returning true
+}

@@ -1,0 +1,6 @@
+var goFaster = function() {
+  redQueen_alice.updatePlaybackRate(redQueen_alice.playbackRate * 1.1);
+}
+
+document.addEventListener("click", goFaster);
+document.addEventListener("touchstart", goFaster);

@@ -1,0 +1,14 @@
+@keyframes colorchange {
+  0% { background: yellow }
+  100% { background: blue }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.changing {
+  animation: colorchange 2s;
+}

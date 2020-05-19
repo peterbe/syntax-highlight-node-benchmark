@@ -1,0 +1,12 @@
+paint(ctx, size, props, args) {
+
+		const strokeWidth = args[1];
+
+		if (strokeWidth.unit === 'px') {
+			ctx.lineWidth = strokeWidth.value;
+		} else {
+			ctx.lineWidth = 1.0;
+		}
+
+	...
+}

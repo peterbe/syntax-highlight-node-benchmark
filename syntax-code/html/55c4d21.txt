@@ -1,0 +1,9 @@
+  <div class="messagebox">
+    <label for="message">Enter a message:
+      <input type="text" name="message" id="message" placeholder="Message text"
+              inputmode="latin" size=60 maxlength=120 disabled>
+    </label>
+    <button id="sendButton" name="sendButton" class="buttonright" disabled>
+      Send
+    </button>
+  </div>

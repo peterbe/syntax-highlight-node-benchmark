@@ -1,0 +1,27 @@
+<html>
+  <script>
+    function downHandler(ev) {
+      const el = document.getElementById("target");
+      // Element 'target' will receive/capture further events
+      el.setPointerCapture(ev.pointerId);
+
+      /* ... */
+
+      // Check whether element still has pointer capture
+      let pointerCap = el.hasPointerCapture(ev.pointerId);
+      if(pointerCap) {
+        // We've still got pointer capture 
+      } else {
+        // oops, we've lost pointer capture!
+      }
+    }
+
+    function init() {
+      const el = document.getElementById("target");
+      el.onpointerdown = downHandler;
+    }
+  </script>
+  <body onload="init();">
+    <div id="target">Touch this element with a pointer.</div>
+  </body>
+</html>

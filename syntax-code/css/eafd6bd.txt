@@ -1,0 +1,26 @@
+.outer {
+  width: 1000px;
+  height: 200px;
+  background-color: red;
+}
+
+.inner {
+  position: relative;
+  width: 500px;
+  height: 150px;
+  top: 25px;
+  left: 100px;
+  background-color: blue;
+  color: white;
+  cursor: crosshair;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.log {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}

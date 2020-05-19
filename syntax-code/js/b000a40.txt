@@ -1,0 +1,7 @@
+let box = document.querySelector(".box");
+box.ontransitionrun = function(event) {
+  box.innerHTML = "Zooming...";
+} 
+box.ontransitionend = function(event) {
+  box.innerHTML = "Done!";
+}

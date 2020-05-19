@@ -1,0 +1,11 @@
+<canvas id="canvas" width="400" height="200" class="playable-canvas"></canvas>
+<div class="playable-buttons">
+  <input id="edit" type="button" value="Edit" />
+  <input id="reset" type="button" value="Reset" />
+</div>
+<textarea id="code" class="playable-code">
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineWidth = 15;
+ctx.lineTo(100, 100);
+ctx.stroke();</textarea>

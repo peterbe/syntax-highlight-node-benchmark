@@ -1,0 +1,6 @@
+if (window.isSecureContext) {
+  // Page is a secure context so service workers are now available
+  navigator.serviceWorker.register("/offline-worker.js").then(function () {
+    ...
+  });
+}

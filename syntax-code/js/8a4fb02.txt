@@ -1,0 +1,3 @@
+svgElem.addEventListener('error', () => {
+  console.log('SVG not loaded properly.');
+})

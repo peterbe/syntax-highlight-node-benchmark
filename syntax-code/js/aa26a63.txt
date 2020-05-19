@@ -1,0 +1,13 @@
+function preventScrollWheel(event) {
+  if (typeof event.cancelable !== 'boolean' || event.cancelable) {
+    // The event can be canceled, so we do so.
+    event.preventDefault();
+  } else {
+    // The event cannot be canceled, so it is not safe
+    // to call preventDefault() on it.
+    console.warn(`The following event couldn't be canceled:`);
+    console.dir(event);
+  }
+}
+
+document.addEventListener('wheel', preventScrollWheel);

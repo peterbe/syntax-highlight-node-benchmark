@@ -1,0 +1,1 @@
+var el = document.body.querySelector("style[type='text/css'], style:not([type])");

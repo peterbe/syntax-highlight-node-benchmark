@@ -1,0 +1,18 @@
+<div>
+  <input type="radio" name="my-input" id="yes">
+  <label for="yes">Yes</label>
+
+  <input type="radio" name="my-input" id="no">
+  <label for="no">No</label>
+</div>
+
+<div>
+  <input type="checkbox" name="my-checkbox" id="opt-in">
+  <label for="opt-in">Check me!</label>
+</div>
+
+<select name="my-select" id="fruit">
+  <option value="opt1">Apples</option>
+  <option value="opt2">Grapes</option>
+  <option value="opt3">Pears</option>
+</select>

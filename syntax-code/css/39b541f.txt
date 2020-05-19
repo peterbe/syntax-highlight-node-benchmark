@@ -1,0 +1,12 @@
+.foo {
+  cursor: crosshair;
+}
+
+.bar {
+  cursor: zoom-in;
+} 
+
+/* A fallback keyword value is required when using a URL */
+.baz {
+  cursor: url("hyper.cur"), auto;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Example new-window form submission</title>
+</head>
+<body>
+
+<form action="test.php" target="_blank">
+  <p><label>First name: <input type="text" name="firstname"></label></p>
+  <p><label>Last name: <input type="text" name="lastname"></label></p>
+  <p><label><input type="password" name="pwd"></label></p>
+
+  <fieldset>
+   <legend>Pet preference</legend>
+    
+    <p><label><input type="radio" name="pet" value="cat"> Cat</label></p>
+    <p><label><input type="radio" name="pet" value="dog"> Dog</label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Owned vehicles</legend>
+
+    <p><label><input type="checkbox" name="vehicle" value="Bike">I have a bike</label></p>
+    <p><label><input type="checkbox" name="vehicle" value="Car">I have a car</label></p>
+  </fieldset>
+
+  <p><button>Submit</button></p>
+</form>
+
+</body>
+</html>

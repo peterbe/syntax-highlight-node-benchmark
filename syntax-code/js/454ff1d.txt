@@ -1,0 +1,2 @@
+url.hash = 'tabby';
+console.log(url.href); // "http://www.example.com/cats#tabby"

@@ -1,0 +1,8 @@
+...
+
+ pause.onclick = function() {
+     mediaRecorder.pause();
+     console.log("recording paused");
+ }
+
+...

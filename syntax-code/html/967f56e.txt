@@ -1,0 +1,6 @@
+<form id="form">
+  <label>Test field: <input type="text"></label>
+  <br><br>
+  <button type="submit">Submit form</button>
+</form>
+<p id="log"></p>

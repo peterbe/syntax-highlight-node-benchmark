@@ -1,0 +1,36 @@
+const XR = navigator.xr;
+
+let requestHandle = null;
+let xrSession = null;
+
+if (XR) {
+  XR.isSessionSupported('immersive-vr')
+  .then((isSupported) => {
+    if (isSupported) {
+      startXR();
+    }
+  });
+}
+
+function frameCallback(time, xrFrame) {
+  xrSession.requestAnimationFrame(frameCallback);
+  
+  // Update and render the frame
+}
+
+async function startXR() {
+  xrSession = XR.requestSession("immersive-vr");
+
+  if (xrSession) {
+    stopButton.onclick = stopXR;
+    requestHandle = xrSession.requestAnimationFrame(frameCallback);
+  }
+}
+
+function pauseXR() {
+  if (xrSession && requestHandle) {
+    xrSession.cancelAnimationFrame(requestHandle);
+    requestHandle = null;
+  }
+}
+

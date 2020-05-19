@@ -1,0 +1,7 @@
+async openCall(pc) {
+  const gumStream = await navigator.mediaDevices.getUserMedia(
+                          {video: true, audio: true});
+  for (const track of gumStream.getTracks()) {
+    pc.addTrack(track);
+  }
+}

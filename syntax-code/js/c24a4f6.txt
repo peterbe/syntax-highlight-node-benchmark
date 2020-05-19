@@ -1,0 +1,4 @@
+var stream = pc.getStreamById(myTrackId);
+if (stream) {
+  console.log("Found stream: " + stream.id);
+}

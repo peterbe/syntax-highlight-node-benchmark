@@ -1,0 +1,5 @@
+let entries = performance.getEntriesByType('resource');
+console.log(entries[0].serverTiming);
+// 0: PerformanceServerTiming {name: "cache", duration: 23.2, description: "Cache Read"}
+// 1: PerformanceServerTiming {name: "db", duration: 53, description: ""}
+// 2: PerformanceServerTiming {name: "app", duration: 47.2, description: ""}

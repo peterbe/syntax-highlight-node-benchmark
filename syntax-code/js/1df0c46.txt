@@ -1,0 +1,7 @@
+console.assert(false, 'the word is %s', 'foo');
+// correct output in Node.js and some browsers
+//     (e.g. Firefox v60.0.2):
+// Assertion failed: the word is foo
+// incorrect output in some browsers
+//     (e.g. Chrome v67.0.3396.87):
+// Assertion failed: the word is %s foo

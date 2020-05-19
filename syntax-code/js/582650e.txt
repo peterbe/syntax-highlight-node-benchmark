@@ -1,0 +1,19 @@
+self.registration.showNotification("New mail from Alice", {
+  actions: [
+    {
+      action: 'archive',
+      title: 'Archive'
+    }
+  ]
+});
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+  if (event.action === 'archive') {
+    // Archive action was clicked
+    archiveEmail();
+  } else {
+    // Main body of notification was clicked
+    clients.openWindow('/inbox');
+  }
+}, false);

@@ -1,0 +1,3 @@
+function stop(stream) {
+  stream.getTracks().forEach(track => track.stop());
+}

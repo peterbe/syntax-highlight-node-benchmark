@@ -1,0 +1,7 @@
+function requestFullScreen() {
+  if (document.fullscreenEnabled) {
+    videoElement.requestFullScreen();
+  } else {
+    console.log('Your browser cannot use fullscreen right now');
+  }
+}

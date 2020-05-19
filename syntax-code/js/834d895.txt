@@ -1,0 +1,4 @@
+let taskList = [];
+let totalTaskCount = 0;
+let currentTaskNumber = 0;
+let taskHandle = null;

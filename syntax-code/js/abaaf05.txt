@@ -1,0 +1,10 @@
+var req = navigator.push.unregister(pushEndpoint);
+
+req.onsuccess = function(e) {
+  var endpoint = req.result;
+  debug("Unregistered endpoint: " + endpoint );
+}
+
+req.onerror = function(e) {
+  debug("Error unregistering the endpoint: " + JSON.stringify(e));
+}

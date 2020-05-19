@@ -1,0 +1,18 @@
+article {
+  margin: 1em;
+  max-width: 60em;
+  min-width: 20em;
+  height: 100vh;
+  border: 4em solid #880E4F;
+  border-radius: 7em;
+  padding: 1.5em;
+  font: 16px "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+}
+
+article img {
+  display: block;
+  max-width: 100%;
+  border: 1px solid #888;
+  box-shadow: 0 0.5em 0.3em #888;
+  margin-bottom: 1.25em;
+}

@@ -1,0 +1,8 @@
+var origin = document.origin; 
+// On this page, returns:'https://developer.mozilla.org'
+
+var origin = document.origin; 
+// On "about:blank", returns:'null'
+
+var origin = document.origin; 
+// On "data:text/html,<b>foo</b>", returns:'null'

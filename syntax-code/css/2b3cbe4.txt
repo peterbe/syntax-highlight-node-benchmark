@@ -1,0 +1,8 @@
+.box {
+  width: 400px;
+  height: 250px;
+  border: 2px solid darkblue;
+  background-color: blue;
+  color: white;
+  font: 16px "Zilla", "Open Sans", "Helvetica", "Arial", sans-serif;
+}

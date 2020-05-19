@@ -1,0 +1,2 @@
+const stateObj = { foo: 'bar' };
+history.pushState(stateObj, '', 'bar.html');

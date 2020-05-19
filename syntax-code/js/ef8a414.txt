@@ -1,0 +1,28 @@
+var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+var myAudio = document.querySelector('audio');
+
+var panControl = document.querySelector('.panning-control');
+var panValue = document.querySelector('.panning-value');
+
+pre.innerHTML = myScript.innerHTML;
+
+// Create a MediaElementAudioSourceNode
+// Feed the HTMLMediaElement into it
+var source = audioCtx.createMediaElementSource(myAudio);
+
+// Create a stereo panner
+var panNode = audioCtx.createStereoPanner();
+
+// Event handler function to increase panning to the right and left
+// when the slider is moved
+
+panControl.oninput = function() {
+  panNode.pan.setValueAtTime(panControl.value, audioCtx.currentTime);
+  panValue.innerHTML = panControl.value;
+}
+
+// connect the MediaElementAudioSourceNode to the panNode
+// and the panNode to the destination, so we can play the
+// music and adjust the panning using the controls
+source.connect(panNode);
+panNode.connect(audioCtx.destination);

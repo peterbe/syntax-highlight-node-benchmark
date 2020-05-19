@@ -1,0 +1,3 @@
+document.documentElement.clientWidth /* 800 */
+window.innerWidth /* 800 */
+window.outerWidth /* 800 in Firefox, 1200 in chrome */

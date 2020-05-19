@@ -1,0 +1,2 @@
+someElement.addEventListener("mouseup", handleMouseUp, passiveSupported
+                               ? { passive: true } : false);

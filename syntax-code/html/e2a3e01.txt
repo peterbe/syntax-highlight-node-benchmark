@@ -1,0 +1,1 @@
+<input class="ignored" value="The user cannot focus on this element.">

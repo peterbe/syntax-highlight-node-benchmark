@@ -1,0 +1,3 @@
+// sd is a RTCSessionDescriptor
+
+alert(JSON.stringify(sd)); // This call the toJSON() method behind the scene.

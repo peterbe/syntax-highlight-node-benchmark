@@ -1,0 +1,3 @@
+visualViewport.addEventListener('scroll', function() {
+  ...
+});

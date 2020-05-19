@@ -1,0 +1,6 @@
+let iterationCount = 0;
+
+window.addEventListener('animationiteration', () => {
+  iterationCount++;
+  console.log(`Animation iteration count: ${iterationCount}`);
+});

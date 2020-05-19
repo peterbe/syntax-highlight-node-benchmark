@@ -1,0 +1,3 @@
+<div id="kern"></div>
+<div id="nokern"></div>
+<textarea id="input">AV T. ij</textarea>

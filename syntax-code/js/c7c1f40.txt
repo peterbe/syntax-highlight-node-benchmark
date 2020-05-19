@@ -1,0 +1,6 @@
+listener.forwardX.value = 0;
+listener.forwardY.value = 0;
+listener.forwardZ.value = -1;
+listener.upX.value = 0;
+listener.upY.value = 1;
+listener.upZ.value = 0;

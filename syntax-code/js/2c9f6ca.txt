@@ -1,0 +1,5 @@
+  // WebVR: Create the required projection and view matrix locations needed
+  // for passing into the uniformMatrix4fv methods below
+
+  var projectionMatrixLocation = gl.getUniformLocation(shaderProgram, "projMatrix");
+  var viewMatrixLocation = gl.getUniformLocation(shaderProgram, "viewMatrix");

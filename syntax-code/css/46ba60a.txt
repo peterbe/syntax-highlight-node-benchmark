@@ -1,0 +1,8 @@
+.mydiv {
+  filter: grayscale(50%);
+}
+
+/* Gray all images by 50% and blur by 10px */
+img {
+  filter: grayscale(0.5) blur(10px);
+}

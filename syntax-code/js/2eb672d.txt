@@ -1,0 +1,7 @@
+dc.onmessage = ev => {
+  let newParagraph = document.createElement("p");
+  let textNode = document.createTextNode(event.data);
+  newParagraph.appendChild(textNode);
+
+  document.body.appendChild(newParagraph);
+}

@@ -1,0 +1,6 @@
+.new-entry::after {
+  content: " New!";  /* The leading space creates separation
+                        between the added content and the
+                        rest of the content */
+  color: red;
+}

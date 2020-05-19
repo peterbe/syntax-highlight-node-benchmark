@@ -1,0 +1,6 @@
+<ecomm:business id="soda_shop" type="brick_n_mortar" xmlns:ecomm="http://example.com/ecomm">
+  <ecomm:partners>
+    <ecomm:partner id="1001">Tony's Syrup Warehouse
+    </ecomm:partner>
+  </ecomm:partner>
+</ecomm:business>

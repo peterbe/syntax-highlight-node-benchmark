@@ -1,0 +1,10 @@
+var request = new PaymentRequest(supportedInstruments, details, options);
+
+// Call show() to trigger the browser's payment flow.
+request.show().then(function(instrumentResponse) {
+  // Do something with the response from the UI.
+  console.log(instrumentResponse.details);
+})
+.catch(function(err) {
+  // Do something with the error from request.show().
+});

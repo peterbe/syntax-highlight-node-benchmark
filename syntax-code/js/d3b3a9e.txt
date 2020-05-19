@@ -1,0 +1,5 @@
+var audioElement = new Audio('car_horn.wav');
+audioElement.addEventListener('loadeddata', () => {
+  let duration = audioElement.duration;
+  // The duration variable now holds the duration (in seconds) of the audio clip 
+})

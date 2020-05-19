@@ -1,0 +1,7 @@
+    localConnection.onicecandidate = e => !e.candidate
+        || remoteConnection.addIceCandidate(e.candidate)
+        .catch(handleAddCandidateError);
+
+    remoteConnection.onicecandidate = e => !e.candidate
+        || localConnection.addIceCandidate(e.candidate)
+        .catch(handleAddCandidateError);

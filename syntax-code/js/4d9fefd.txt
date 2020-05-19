@@ -1,0 +1,19 @@
+let pulseTime = 1;
+function playPulse() {
+    let osc = audioCtx.createOscillator();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(pulseHz, audioCtx.currentTime);
+
+    let amp = audioCtx.createGain();
+    amp.gain.setValueAtTime(1, audioCtx.currentTime);
+
+    let lfo = audioCtx.createOscillator();
+    lfo.type = 'square';
+    lfo.frequency.setValueAtTime(lfoHz, audioCtx.currentTime);
+
+    lfo.connect(amp.gain);
+    osc.connect(amp).connect(audioCtx.destination);
+    lfo.start();
+    osc.start();
+    osc.stop(audioCtx.currentTime + pulseTime);
+}

@@ -1,0 +1,11 @@
+let positionInterval = window.setInterval(() => {
+  if (myMedia.isPlaying) {
+    navigator.mediaSession.setPositionState({
+      duration: myMedia.trackDurationInSeconds,
+      playbackRate: myMedia.playbackRate,
+      position: myMedia.trackPlayPositionInSeconds
+    });
+  } else {
+    window.clearInterval(positionInterval);
+  }
+}, 1000);

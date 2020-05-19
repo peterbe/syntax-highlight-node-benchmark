@@ -1,0 +1,7 @@
+const immersiveOK = await navigator.xr.isSessionSupported("immersive-vr");
+if (immersiveOK) {
+  // Create and use an immersive VR session
+} else {
+  // Create an inline session instead, or tell the user about the
+  // incompatibility if inline is required
+}

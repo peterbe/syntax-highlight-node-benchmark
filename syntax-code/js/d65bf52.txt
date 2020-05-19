@@ -1,0 +1,3 @@
+svgElem.addEventListener('unload', () => {
+  console.log('SVG unloaded.');
+})

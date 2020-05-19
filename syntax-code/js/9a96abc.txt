@@ -1,0 +1,7 @@
+videoTracks.onaddtrack = updateTrackCount;
+videoTracks.onremovetrack = updateTrackCount;
+
+function updateTrackCount(event) {
+  trackCount = videoTracks.length;
+  drawTrackCountIndicator(trackCount);
+}

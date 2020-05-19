@@ -1,0 +1,4 @@
+var foo = document.getElementById("foo"); 
+if (foo.hasAttribute("bar")) { 
+    // do something
+}

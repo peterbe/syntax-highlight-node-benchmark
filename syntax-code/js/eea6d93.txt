@@ -1,0 +1,25 @@
+function print_json() {
+  var json;
+  var o = document.getElementsByTagName("output")[0];
+
+  if (window.performance.toJSON === undefined) {
+    json = "window.performance.toJSON() is NOT supported";
+    o.innerHTML += json + "<br>";
+  } else {
+    var s;
+    json = window.performance.toJSON();
+
+    // Print the performance object
+    s = JSON.stringify(json);
+    o.innerHTML = "<p>performance = " + s + "</p>";
+
+    // Print the performance.timing and performance.navigation objects
+    var perf = JSON.parse(s);
+
+    var timing = perf.timing;
+    o.innerHTML += "<p>peformance.timing = " + JSON.stringify(timing) + "</p>";
+
+    var navigation = perf.navigation;
+    o.innerHTML += "<p>peformance.navigation = " + JSON.stringify(navigation) + "</p>";
+  }
+}

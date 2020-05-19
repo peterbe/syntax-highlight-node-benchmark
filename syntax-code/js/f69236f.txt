@@ -1,0 +1,6 @@
+function LogGLError(where) {
+  let err = gl.getError();
+  if (err) {
+    console.error(`WebGL error returned by ${where}: ${err}`);
+  }
+}

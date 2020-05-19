@@ -1,0 +1,1 @@
+openDialog("http://example.tld/zzz.xul", "dlg", "", "pizza", 6.98);

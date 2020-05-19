@@ -1,0 +1,2 @@
+background: url(no-dimensions-or-ratio.svg);
+background-size: contain;

@@ -1,0 +1,3 @@
+var fileArray = {"/foo/bar.txt", "/foo/foosball.txt"};
+
+inputElement.mozSetFileNameArray(fileArray, fileArray.length);

@@ -1,0 +1,16 @@
+function setupXRButton() {
+  if (navigator.xr.isSessionSupported) {
+    navigator.xr.isSessionSupported(SESSION_TYPE)
+    .then((supported) => {
+      xrButton.disabled = !supported;
+    });
+  } else {
+    navigator.xr.supportsSession(SESSION_TYPE)
+    .then(() => {
+      xrButton.disabled = false;
+    })
+    .catch(() => {
+      xrButton.disabled = true;
+    });
+  }
+}

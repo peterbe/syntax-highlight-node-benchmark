@@ -1,0 +1,5 @@
+function teeStream() {
+    const teedOff = stream.tee();
+    readStream(teedOff[0], list2);
+    readStream(teedOff[1], list3);
+  }

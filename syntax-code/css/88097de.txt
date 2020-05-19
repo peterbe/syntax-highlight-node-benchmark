@@ -1,0 +1,5 @@
+@media (overflow-inline: scroll) {
+  p {
+    color: red;
+  }
+}

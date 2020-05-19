@@ -1,0 +1,8 @@
+const rootElement = document.documentElement;
+const firstTier = rootElement.childNodes;
+// firstTier is a NodeList of the direct children of the root element
+// such as <head> and <body>
+
+for (const child of firstTier) {
+   // do something with each direct child of the root element
+}

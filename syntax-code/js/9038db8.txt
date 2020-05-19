@@ -1,0 +1,15 @@
+//The options object was previously created. 
+navigator.credentials.get(options).then(function(creds) {
+  if (creds.type == 'password') {
+    var form = new FormData();
+    var csrf_token = document.querySelector('csrf_token').value;
+    form.append('csrf_token', csrf_token);
+
+    creds.additionalData = form;
+
+    fetch('https://www.example.com', {
+      method: 'POST',
+      credentials: creds
+    });
+  };
+});

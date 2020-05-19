@@ -1,0 +1,13 @@
+// 'loadstart' fires first, then 'load', then 'loadend'
+
+image.addEventListener('load', function(e) {
+  console.log('Image loaded');
+});
+
+image.addEventListener('loadstart', function(e) {
+  console.log('Image load started');
+});
+
+image.addEventListener('loadend', function(e) {
+  console.log('Image load finished');
+});

@@ -1,0 +1,13 @@
+<ul>
+  <li>first item</li>
+  <li>second item
+  <!-- Look, the closing </li> tag is not placed here! -->
+    <ol>
+      <li>second item first subitem</li>
+      <li>second item second subitem</li>
+      <li>second item third subitem</li>
+    </ol>
+  <!-- Here is the closing </li> tag -->
+  </li>
+  <li>third item</li>
+</ul>

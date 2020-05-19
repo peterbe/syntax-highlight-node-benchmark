@@ -1,0 +1,3 @@
+window.addEventListener('devicemotion', function(event) {
+  console.log(event.acceleration.x + ' m/s2');
+});

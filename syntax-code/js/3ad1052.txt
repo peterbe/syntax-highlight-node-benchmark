@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+document.addEventListener('pointerlockerror', (event) => {
+  console.log('Error locking pointer');
+});

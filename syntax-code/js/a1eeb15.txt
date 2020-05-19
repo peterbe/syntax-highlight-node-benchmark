@@ -1,0 +1,1 @@
+var myHasPosition = VRPositionState.hasPosition;

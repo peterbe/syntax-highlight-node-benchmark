@@ -1,0 +1,3 @@
+window.onvrdisplaypointerrestricted = function() {
+  // Run code to handle pointer lock
+};

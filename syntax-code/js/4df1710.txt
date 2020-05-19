@@ -1,0 +1,5 @@
+fetch(request)
+  .then(response => response.blob())
+  .then(blob => {
+    image.src = URL.createObjectURL(blob);
+  });

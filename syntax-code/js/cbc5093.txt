@@ -1,0 +1,2 @@
+gl.getFramebufferAttachmentParameter(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, 
+                                     gl.FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE);

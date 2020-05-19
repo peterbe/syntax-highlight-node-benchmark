@@ -1,0 +1,7 @@
+function drop_handler(event)
+{
+  var files = [];
+  var dt = event.dataTransfer;
+  for (var i = 0; i < dt.mozItemCount; i++)
+    files.push(dt.mozGetDataAt("application/x-moz-file", i));
+}

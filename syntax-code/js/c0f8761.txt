@@ -1,0 +1,7 @@
+var iceTransport = pc.getSenders()[0].transport.transport;
+
+iceTransport.ongatheringstatechange = function(event) {
+  if (iceTransport.gatheringState == "complete") {
+    allCandidatesReceived(pc);
+  }
+}

@@ -1,0 +1,2 @@
+<input value="Try selecting some text in this element.">
+<p id="log"></p>

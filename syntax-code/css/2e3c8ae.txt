@@ -1,0 +1,4 @@
+:-moz-suppressed {
+  background: yellow;
+  padding: 8px;
+}

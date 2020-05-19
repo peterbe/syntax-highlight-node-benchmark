@@ -1,0 +1,18 @@
+const checkoutButton = document.getElementById('checkout-button');
+checkoutButton.innerText = "Loading...";
+if (window.PaymentRequest) {
+  let request = new PaymentRequest(buildSupportedPaymentMethodNames(),
+      buildShoppingCartDetails());
+  request.canMakePayment().then(function(canMakeAFastPayment) {
+    if (canMakeAFastPayment) {
+      checkoutButton.innerText = "Fast Checkout with W3C";
+    } else {
+      checkoutButton.innerText = "Setup W3C Checkout";
+    }
+  }).catch(function(error) {
+    // The user may have turned off the querying functionality in their
+    // privacy settings. The website does not know whether they can make
+    // a fast payment, so pick a generic title.
+    checkoutButton.innerText = "Checkout with W3C";
+  });
+}

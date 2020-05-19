@@ -1,0 +1,14 @@
+input {
+  caret-color: auto;
+  display: block;
+  margin-bottom: .5em;
+}
+
+input.custom {
+  caret-color: red;
+}
+
+
+p.custom {
+  caret-color: green;
+}

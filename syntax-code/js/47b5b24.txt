@@ -1,0 +1,7 @@
+const iframe = document.querySelector('iframe');
+const iframeImages = iframe.contentDocument.querySelectorAll('img');
+const newParent = document.getElementById('images');
+
+iframeImages.forEach(function(imgEl) {
+  newParent.appendChild(document.adoptNode(imgEl));
+});

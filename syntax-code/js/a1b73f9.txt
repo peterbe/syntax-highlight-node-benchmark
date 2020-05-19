@@ -1,0 +1,12 @@
+customElement.prototype.getData = url => {
+  if (this.cache[url]) {
+    this.data = this.cache[url];
+    this.dispatchEvent(new Event("load"));
+  } else {
+    fetch(url).then(result => result.arrayBuffer()).then(data => {
+      this.cache[url] = data;
+      this.data = data;
+      this.dispatchEvent(new Event("load"));
+    });
+  }
+};

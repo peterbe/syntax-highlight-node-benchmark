@@ -1,0 +1,2 @@
+div{ color: black;
+-webkit-appearance: searchfield-cancel-button; }

@@ -1,0 +1,8 @@
+let myVector = [2, 1, -3];
+let scaleTransform = [
+  2, 0, 0, 0,
+  0, 2, 0, 0,
+  0, 0, 2, 0,
+  0, 0, 0, 1
+];
+vec4.transformMat4(myVector, myVector, scaleTransform);

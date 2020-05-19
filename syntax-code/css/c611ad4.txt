@@ -1,0 +1,7 @@
+.box { 
+  background-image: url("images/my-background.png"); 
+} 
+
+.box {
+  background-image: url("https://www.exammple.com/images/my-background.png");
+} 

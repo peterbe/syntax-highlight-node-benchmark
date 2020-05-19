@@ -1,0 +1,12 @@
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "/path/to/audio.ogg", true);
+xhr.responseType = "arraybuffer";
+xhr.send();
+xhr.onload = function() {
+  var decodedBuffer = context.createBuffer(xhr.response, false);
+  if (decodedBuffer) {
+    // Decoding was successful, do something useful with the audio buffer
+  } else {
+    alert("Decoding the audio buffer failed");
+  }
+};

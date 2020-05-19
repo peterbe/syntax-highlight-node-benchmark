@@ -1,0 +1,14 @@
+ var observe_all = new PerformanceObserver(function(list) {
+   var perfEntries = list.getEntries();
+   for (var i=0; i < perfEntries.length; i++) {
+     switch (perfEntries[i].entryType) {
+       case "frame": process_frame(perfEntries[i]); break; 
+       case "mark": process_mark(perfEntries[i]); break; 
+       case "measure": process_measure(perfEntries[i]); break; 
+       case "resource": process_resource(perfEntries[i]); break; 
+       default: console.log("Unexpected performance entry type: " + perfEntries[i].entryType); 
+     }
+  }
+ });
+ // Observe frame, mark, measure and resource events
+ observe_frame.observe({entryTypes: ['frame', 'mark', 'measure', 'resource']});

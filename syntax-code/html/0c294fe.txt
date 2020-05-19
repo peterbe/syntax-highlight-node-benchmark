@@ -1,0 +1,1 @@
+<div>My width has a <code>calc()</code> function</div>

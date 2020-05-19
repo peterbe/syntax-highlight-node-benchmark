@@ -1,0 +1,1 @@
+<a href="#">This link has a special focus style.</a>

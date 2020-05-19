@@ -1,0 +1,23 @@
+let lastNoteDrawn = 3;
+
+function draw() {
+    let drawNote = lastNoteDrawn;
+    let currentTime = audioCtx.currentTime;
+
+    while (notesInQueue.length && notesInQueue[0].time < currentTime) {
+        drawNote = notesInQueue[0].note;
+        notesInQueue.splice(0,1);   // remove note from queue
+    }
+
+    // We only need to draw if the note has moved.
+    if (lastNoteDrawn != drawNote) {
+        pads.forEach(function(el, i) {
+            el.children[lastNoteDrawn].style.borderColor = 'hsla(0, 0%, 10%, 1)';
+            el.children[drawNote].style.borderColor = 'hsla(49, 99%, 50%, 1)';
+        });
+
+        lastNoteDrawn = drawNote;
+    }
+    // set up to draw again
+    requestAnimationFrame(draw);
+}

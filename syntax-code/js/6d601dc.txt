@@ -1,0 +1,3 @@
+function cb() { f(); setTimeout(cb, 0); }
+setTimeout(cb, 0);
+setInterval(f, 0);

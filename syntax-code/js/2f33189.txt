@@ -1,0 +1,3 @@
+svgElem.addEventListener('scroll', () => {
+  console.log('SVG scrolled.');
+})

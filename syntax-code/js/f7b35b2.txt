@@ -1,0 +1,7 @@
+const animated = document.querySelector('.animated');
+
+animated.addEventListener('animationcancel', () => {
+  console.log('Animation canceled');
+});
+
+animated.style.display = 'none';

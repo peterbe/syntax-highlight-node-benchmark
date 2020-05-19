@@ -1,0 +1,11 @@
+const popupWindow = null;
+
+function refreshPopupWindow() {
+  if (popupWindow && !popupWindow.closed) {
+    // popupWindow is open, refresh it
+    popupWindow.location.reload(true);
+  } else {
+    // Open a new popup window
+    popupWindow = window.open('popup.html', 'dataWindow');
+  }
+}

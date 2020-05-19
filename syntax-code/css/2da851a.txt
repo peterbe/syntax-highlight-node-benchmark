@@ -1,0 +1,13 @@
+.px_length {
+  width: 200px;
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+}
+
+.em_length {
+  width: 20em;
+  background-color: white;
+  color: red;
+  border: 1px solid black;
+}

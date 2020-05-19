@@ -1,0 +1,5 @@
+var d = document.getElementById("d");
+console.log(d.outerHTML);
+
+// The string '<div id="d"><p>Content</p><p>Further Elaborated</p></div>'
+// is written to the console window

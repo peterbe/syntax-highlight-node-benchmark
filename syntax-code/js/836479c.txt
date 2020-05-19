@@ -1,0 +1,9 @@
+function handleICEConnectionStateChangeEvent(event) {
+  switch(myPeerConnection.iceConnectionState) {
+    case "closed":
+    case "failed":
+    case "disconnected":
+      closeVideoCall();
+      break;
+  }
+}

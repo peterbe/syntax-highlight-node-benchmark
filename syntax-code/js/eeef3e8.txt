@@ -1,0 +1,10 @@
+const myInit = {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'image/jpeg'
+  },
+  mode: 'cors',
+  cache: 'default'
+};
+
+let myRequest = new Request('flowers.jpg', myInit);

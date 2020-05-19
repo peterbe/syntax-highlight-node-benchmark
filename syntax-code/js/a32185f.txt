@@ -1,0 +1,3 @@
+if (dataChannel.negotiated) {
+  shutdownRemoteChannel(dataChannel.id);
+}

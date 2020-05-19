@@ -1,0 +1,5 @@
+          // Starting the presentation when the button is clicked: It can only be called in response to a user gesture
+          btn.addEventListener('click', function() {
+            if(btn.textContent === 'Start VR display') {
+              vrDisplay.requestPresent([{ source: canvas }]).then(function() {
+                console.log('Presenting to WebVR display');

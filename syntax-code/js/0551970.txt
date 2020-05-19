@@ -1,0 +1,9 @@
+var iceTransport = pc.getSenders()[0].transport.iceTransport;
+var localProto = document.getElementById("local-protocol");
+var remoteProto = document.getElementById("remote-protocol");
+
+iceTransport.onselectedcandidatepairchange = function(event) {
+  var pair = iceTransport.getSelectedCandidatePair();
+  localProtocol.innerText = pair.local.protocol.toUpperCase();
+  remoteProtocol.innerText = pair.remote.protocol.toUpperCase();
+}

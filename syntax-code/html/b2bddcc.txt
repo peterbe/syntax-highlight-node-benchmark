@@ -1,0 +1,5 @@
+<div>
+  <p>Some text</p>
+</div>
+<p>Top node at point 30, 20:</p>
+<div id="output"></div>

@@ -1,0 +1,1 @@
+var myAudioSource = new MediaElementAudioSourceNode(context, options);

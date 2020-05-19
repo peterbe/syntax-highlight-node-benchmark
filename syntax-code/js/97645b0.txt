@@ -1,0 +1,15 @@
+// Old webkitAudioContext code:
+var src = context.createBufferSource();
+src.buffer = someBuffer;
+src.gain.value = 0.5;
+src.connect(context.destination);
+src.noteOn(0);
+
+// New standard AudioContext code:
+var src = context.createBufferSource();
+src.buffer = someBuffer;
+var gain = context.createGain();
+src.connect(gain);
+gain.gain.value = 0.5;
+gain.connect(context.destination);
+src.start(0);

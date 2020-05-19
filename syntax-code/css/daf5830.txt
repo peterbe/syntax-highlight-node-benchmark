@@ -1,0 +1,3 @@
+font-stretch: 115%;
+
+font-variation-settings: 'wdth' 115;

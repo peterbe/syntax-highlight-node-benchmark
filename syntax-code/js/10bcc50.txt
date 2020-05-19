@@ -1,0 +1,10 @@
+function handleCallerIceEvent(event) {
+  if (event.candidate) {
+    log("Adding candidate to receiver: " + event.candidate.candidate);
+
+    receiverPC.addIceCandidate(new RTCIceCandidate(event.candidate))
+    .catch(err => log("Error adding candidate to receiver: " + err));
+  } else {
+    log("Caller is out of candidates.");
+  }
+}

@@ -1,0 +1,3 @@
+// Create a new paragraph element, and append it to the end of the document body
+let p = document.createElement("p");
+document.body.appendChild(p);

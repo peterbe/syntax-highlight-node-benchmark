@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+para.addEventListener('pointerup', (event) => {
+  console.log('Pointer up');
+});

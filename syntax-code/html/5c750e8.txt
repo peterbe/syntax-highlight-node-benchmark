@@ -1,0 +1,12 @@
+<div id="masked">
+</div>
+<select id="clipBox">
+  <option value="content-box">content-box</option>
+  <option value="padding-box">padding-box</option>
+  <option value="border-box" selected>border-box</option>
+  <option value="margin-box">margin-box</option>
+  <option value="fill-box">fill-box</option>
+  <option value="stroke-box">stroke-box</option>
+  <option value="view-box">view-box</option>
+  <option value="no-clip">no-clip</option>
+</select>

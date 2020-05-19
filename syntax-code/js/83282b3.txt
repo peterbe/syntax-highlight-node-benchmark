@@ -1,0 +1,11 @@
+// This will return the width of the viewport
+var intFrameWidth = window.innerWidth;
+
+// This will return the width of the frame viewport within a frameset
+var intFrameWidth = self.innerWidth;
+
+// This will return the width of the viewport of the closest frameset
+var intFramesetWidth = parent.innerWidth;
+
+// This will return the width of the viewport of the outermost frameset
+var intOuterFramesetWidth = top.innerWidth;

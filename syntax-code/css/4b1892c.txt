@@ -1,0 +1,11 @@
+.prompt {
+  color: #b00;
+}
+
+samp > kbd {
+  font-weight: bold;
+}
+
+.cursor {
+  color: #00b;
+}

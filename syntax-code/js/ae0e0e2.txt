@@ -1,0 +1,9 @@
+// addEventListener version
+document.addEventListener('selectionchange', () => {
+  console.log(document.getSelection());
+});
+
+// onselectionchange version
+document.onselectionchange = () => {
+  console.log(document.getSelection());
+};

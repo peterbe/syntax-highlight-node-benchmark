@@ -1,0 +1,33 @@
+function handleKeyDown(event) {
+  switch(event.key) {
+    case "w":
+    case "W":
+      verticalDistance -= MOVE_DISTANCE;
+      break;
+    case "s":
+    case "S":
+      verticalDistance += MOVE_DISTANCE;
+      break;
+    case "a":
+    case "A":
+      transverseDistance += MOVE_DISTANCE;
+      break;
+    case "d":
+    case "D":
+      transverseDistance -= MOVE_DISTANCE;
+      break;
+    case "ArrowUp":
+      axialDistance += MOVE_DISTANCE;
+      break;
+    case "ArrowDown":
+      axialDistance -= MOVE_DISTANCE;
+      break;
+    case "r":
+    case "R":
+      transverseDistance = axialDistance = verticalDistance = 0;
+      mouseYaw = mousePitch = 0;
+      break;
+    default:
+      break;
+  }
+}

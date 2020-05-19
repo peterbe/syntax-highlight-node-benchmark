@@ -1,0 +1,3 @@
+background-image: image-set( "cat.png" 1x,
+                             "cat-2x.png" 2x,
+                             "cat-print.png" 600dpi);

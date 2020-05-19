@@ -1,0 +1,13 @@
+#grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50px 1fr;
+}
+
+#areaA {
+  background-color: lime;
+}
+
+#areaB {
+  background-color: yellow;
+}

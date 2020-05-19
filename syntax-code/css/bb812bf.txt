@@ -1,0 +1,15 @@
+.gradient-example {
+  width: 50px;
+  height: 100px;
+  background-image: linear-gradient(blue, red);
+
+  /* Not safe to use */
+  background-size: 25px;
+  background-size: 50%;
+  background-size: auto 50px;
+  background-size: auto 50%;
+
+  /* Safe to use */
+  background-size: 25px 50px;
+  background-size: 50% 50%;
+}

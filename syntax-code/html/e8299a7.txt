@@ -1,0 +1,3 @@
+<div>
+  <span class="exampleText">Example text</span>
+</div>

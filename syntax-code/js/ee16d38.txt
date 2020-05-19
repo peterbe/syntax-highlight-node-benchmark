@@ -1,0 +1,2 @@
+let logElem = document.getElementById("log");
+let log = s => logElem.innerHTML += s + "<br>";

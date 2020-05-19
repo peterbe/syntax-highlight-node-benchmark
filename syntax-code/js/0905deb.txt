@@ -1,0 +1,9 @@
+interfaceElement.addEventListener("mousedown", function() {
+  try {
+    player.finish();
+  } catch(e if e instanceof InvalidState) {
+    console.log("finish() called on paused or finished animation.");
+  } catch(e);
+    logMyErrors(e); //pass exception object to error handler
+  }
+});

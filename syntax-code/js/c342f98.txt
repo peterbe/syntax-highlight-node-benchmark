@@ -1,0 +1,6 @@
+if(document.pointerLockElement === canvas ||
+  document.mozPointerLockElement === canvas) {
+    console.log('The pointer lock status is now locked');
+} else {
+    console.log('The pointer lock status is now unlocked');
+}

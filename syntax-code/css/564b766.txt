@@ -1,0 +1,3 @@
+div { color: transparent;
+-moz-appearance: scale-horizontal;
+-webkit-appearance: scale-horizontal; }

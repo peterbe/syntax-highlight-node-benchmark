@@ -1,0 +1,4 @@
+<div class="example">
+  <p>I will be second from the bottom of div.example, centered horizontally.</p>
+  <p>I will be on the bottom of div.example, centered horizontally.</p>
+</div>

@@ -1,0 +1,15 @@
+function applyMouseMovement(refSpace) {
+  if (!mouseYaw && !mousePitch) {
+    return refSpace;
+  }
+  
+  quat.identity(inverseOrientation);
+  quat.rotateX(inverseOrientation, inverseOrientation, -mousePitch);
+  quat.rotateY(inverseOrientation, inverseOrientation, -mouseYaw);
+
+  let newTransform = new XRRigidTransform({x: 0, y:  0, z: 0},
+                         {x: inverseOrientation[0], y: inverseOrientation[1],
+                          z: inverseOrientation[2], w: inverseOrientation[3]});
+
+  return refSpace.getOffsetReferenceSpace(newTransform);
+}

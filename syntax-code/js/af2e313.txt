@@ -1,0 +1,2 @@
+mat4.translate(viewMatrix, viewMatrix,
+     [-trackDistance, -pedestalDistance, dollyDistance]);

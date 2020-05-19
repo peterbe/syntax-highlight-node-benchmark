@@ -1,0 +1,4 @@
+let myRejectionEvent = new PromiseRejectionEvent("unhandledrejection", {
+  promise : myPromise,
+  reason : "My house is on fire"
+});

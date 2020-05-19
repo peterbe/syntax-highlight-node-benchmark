@@ -1,0 +1,5 @@
+function sendToServer(msg) {
+  var msgJSON = JSON.stringify(msg);
+
+  connection.send(msgJSON);
+}

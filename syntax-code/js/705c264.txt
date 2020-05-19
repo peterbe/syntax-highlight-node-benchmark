@@ -1,0 +1,5 @@
+// Register touch event handlers
+someElement.addEventListener('touchstart', process_touchstart, false);
+someElement.addEventListener('touchmove', process_touchmove, false);
+someElement.addEventListener('touchcancel', process_touchcancel, false);
+someElement.addEventListener('touchend', process_touchend, false);

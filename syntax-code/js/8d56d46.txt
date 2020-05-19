@@ -1,0 +1,3 @@
+window.onunhandledrejection = function(e) {
+  console.log(e.reason);
+}

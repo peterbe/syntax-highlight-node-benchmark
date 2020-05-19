@@ -1,0 +1,3 @@
+utterThis.addEventListener('pause', function(event) { 
+  console.log('Speech paused after ' + event.elapsedTime + ' milliseconds.');
+});

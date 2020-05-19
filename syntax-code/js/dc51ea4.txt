@@ -1,0 +1,20 @@
+// Create a bunch of marks.
+performance.mark("squirrel");
+performance.mark("squirrel");
+performance.mark("monkey");
+performance.mark("monkey");
+performance.mark("dog");
+performance.mark("dog");
+
+// Get all of the PerformanceMark entries.
+const allEntries = performance.getEntriesByType("mark");
+console.log(allEntries.length);
+// 6
+
+// Get all of the "monkey" PerformanceMark entries.
+const monkeyEntries = performance.getEntriesByName("monkey");
+console.log(monkeyEntries.length);
+// 2
+
+// Clear out all of the marks.
+performance.clearMarks();

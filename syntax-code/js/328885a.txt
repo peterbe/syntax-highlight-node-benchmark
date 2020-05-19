@@ -1,0 +1,3 @@
+var mydepthFar = vrDisplayInstance.depthFar;
+
+vrDisplayInstance.depthFar = 7500.0;

@@ -1,0 +1,29 @@
+function insertBreakAtPoint(e) {
+  var range;
+  var textNode;
+  var offset;
+
+  if (document.caretPositionFromPoint) {
+    range = document.caretPositionFromPoint(e.clientX, e.clientY);
+    textNode = range.offsetNode;
+    offset = range.offset;
+  } else if (document.caretRangeFromPoint) {
+    range = document.caretRangeFromPoint(e.clientX, e.clientY);
+    textNode = range.startContainer;
+    offset = range.startOffset;
+  }
+
+  // only split TEXT_NODEs
+  if (textNode.nodeType == 3) {
+    var replacement = textNode.splitText(offset);
+    var br = document.createElement('br');
+    textNode.parentNode.insertBefore(br, replacement);
+  }
+}
+
+window.onload = function (){
+  var paragraphs = document.getElementsByTagName("p");
+  for (i=0 ; i < paragraphs.length; i++) {
+    paragraphs[i].addEventListener("click", insertBreakAtPoint, false);
+  }
+};

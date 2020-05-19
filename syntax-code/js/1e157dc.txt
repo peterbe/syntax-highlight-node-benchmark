@@ -1,0 +1,11 @@
+let noiseDuration = 1;
+const durControl = document.querySelector('#duration');
+durControl.addEventListener('input', function() {
+    noiseDuration = Number(this.value);
+}, false);
+
+let bandHz = 1000;
+const bandControl = document.querySelector('#band');
+bandControl.addEventListener('input', function() {
+    bandHz = Number(this.value);
+}, false);

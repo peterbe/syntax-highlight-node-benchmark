@@ -1,0 +1,23 @@
+.header {
+    grid-area: hd;
+}
+.footer {
+    grid-area: ft;
+}
+.content {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sd;
+}
+
+.wrapper {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "hd"
+      "main"
+      "sd"
+      "ft";
+}

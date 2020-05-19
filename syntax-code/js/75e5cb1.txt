@@ -1,0 +1,4 @@
+window.addEventListener("gamepaddisconnected", function(e) {
+  console.log("Gamepad disconnected from index %d: %s",
+  e.gamepad.index, e.gamepad.id);
+});

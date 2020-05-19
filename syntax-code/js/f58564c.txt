@@ -1,0 +1,7 @@
+// When the cake or bottle runs out... 
+nommingCake.onfinish = endGame;
+drinking.onfinish = endGame;
+
+// ...or Alice reaches the end of her animation
+aliceChange.onfinish = endGame;
+

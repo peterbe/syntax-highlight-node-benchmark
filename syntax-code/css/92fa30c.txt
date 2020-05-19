@@ -1,0 +1,12 @@
+:link {
+  outline: 1px dotted blue;
+  background-color: white;
+  /* The default value of background-color is `transparent`. You need to
+     specify a different value, otherwise changes on :visited won't apply. */
+}
+
+:visited {
+  outline-color: orange;    /* Visited links have an orange outline */
+  background-color: green;  /* Visited links have a green background */
+  color: yellow;            /* Visited links have yellow colored text */
+}

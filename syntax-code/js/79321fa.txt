@@ -1,0 +1,26 @@
+var endGame = function() {
+  
+  // get Alice's timeline's playhead location
+  var alicePlayhead = aliceChange.currentTime;
+  var aliceTimeline = aliceChange.effect.getComputedTiming().activeDuration;
+
+  // stops Alice's and other animations
+  stopPlayingAlice();
+
+  // depending on which third it falls into
+  var aliceHeight = alicePlayhead / aliceTimeline;
+
+  if (aliceHeight <= .333){
+    // Alice got smaller!
+    ...
+
+  } else if (aliceHeight >= .666) {
+    // Alice got bigger!
+    ...
+
+  } else {
+    // Alice didn't change significantly    
+    ...
+
+  }
+}

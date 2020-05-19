@@ -1,0 +1,1 @@
+<p>This text should be black on non-color devices, red on devices with a low number of colors, and greenish on devices with a high number of colors.</p>

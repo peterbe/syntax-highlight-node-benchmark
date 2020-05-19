@@ -1,0 +1,1 @@
+<span id="href" title="href"><span id="protocol" title="protocol">http:</span>//<span id="host" title="host"><span id="hostname" title="hostname">example.org</span>:<span id="port" title="port">8888</span></span><span id="pathname" title="pathname">/foo/bar</span><span id="search" title="search">?q=baz</span><span id="hash" title="hash">#bang</span></span>

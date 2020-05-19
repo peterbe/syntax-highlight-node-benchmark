@@ -1,0 +1,5 @@
+// The following statements
+// both have the effect of
+// refreshing the page
+window.history.go(0)
+window.history.go()

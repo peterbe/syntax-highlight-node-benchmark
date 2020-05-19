@@ -1,0 +1,10 @@
+//Taking care of the browser-specific prefix
+window.requestFileSystemSync  = window.requestFileSystemSync || window.webkitRequestFileSystemSync;
+
+// The first parameter defines the type of storage: persistent or temporary
+// Next, set the size of space needed (in bytes)
+// initFs is the success callback
+// And the last one is the error callback
+// for denial of access and other errors. 
+
+var fs = requestFileSystemSync(TEMPORARY, 1024*1024 /*1MB*/);

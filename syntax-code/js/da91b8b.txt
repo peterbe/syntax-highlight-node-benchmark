@@ -1,0 +1,7 @@
+function playSample(audioContext, audioBuffer) {
+    const sampleSource = audioContext.createBufferSource();
+    sampleSource.buffer = audioBuffer;
+    sampleSource.connect(audioContext.destination)
+    sampleSource.start();
+    return sampleSource;
+}

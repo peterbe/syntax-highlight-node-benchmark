@@ -1,0 +1,3 @@
+<div>
+  <p class="translate">Translation</p>
+</div>

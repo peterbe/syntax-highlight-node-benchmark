@@ -1,0 +1,1 @@
+conic-gradient(red .8rad, yellow .6rad, blue 1.3rad);

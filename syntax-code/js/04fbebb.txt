@@ -1,0 +1,31 @@
+var frameData = new VRFrameData();
+var vrDisplay;
+
+navigator.getVRDisplays().then(function(displays) {
+  vrDisplay = displays[0];
+  console.log('Display found');
+  // Starting the presentation when the button is clicked: It can only be called in response to a user gesture
+  btn.addEventListener('click', function() {
+    vrDisplay.requestPresent([{ source: canvas }]).then(function() {        
+      drawVRScene();
+    });
+  });
+});
+
+// WebVR: Draw the scene for the WebVR display.
+function drawVRScene() {
+  // WebVR: Request the next frame of the animation
+  vrSceneFrame = vrDisplay.requestAnimationFrame(drawVRScene);
+
+  // Populate frameData with the data of the next frame to display
+  vrDisplay.getFrameData(frameData);
+
+  // grab the current timestamp on each run of the rendering loop
+  // and do something with it
+  framedata.timestamp
+
+    ...
+
+  // WebVR: Indicates that we are ready to present the rendered frame to the VR display
+  vrDisplay.submitFrame();
+}

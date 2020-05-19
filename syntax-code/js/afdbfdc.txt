@@ -1,0 +1,6 @@
+const myElement = document.querySelector('q');
+const mySelector = '::after';
+const cssPseudoElement = myElement.pseudo(mySelector);
+const typeOfPseudoElement = cssPseudoElement.type;
+
+console.log(mySelector === typeOfPseudoElement); // Outputs true

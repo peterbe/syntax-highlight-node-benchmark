@@ -1,0 +1,2 @@
+#myId#myId span { color: yellow; }
+.myClass.myClass span { color: orange; }

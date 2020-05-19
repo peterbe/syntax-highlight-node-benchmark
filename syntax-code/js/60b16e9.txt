@@ -1,0 +1,4 @@
+channel.port1.onmessage = handleMessage;
+function handleMessage(e) {
+  para.innerHTML = e.data;
+}   

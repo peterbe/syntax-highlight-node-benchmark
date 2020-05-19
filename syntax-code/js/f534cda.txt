@@ -1,0 +1,3 @@
+self.addEventListener('message', function(messageEvent) {
+  console.log('Handling message event:', messageEvent);
+})

@@ -1,0 +1,10 @@
+box.draw({
+  top    : 0.5,             // y
+  bottom : -0.5,            // y
+  left   : -0.5,            // x
+  right  : 0.5,             // x
+  w      : 0.7,             // w - enlarge this box
+
+  depth  : 0,               // z
+  color  : [1, 0.4, 0.4, 1] // red
+});

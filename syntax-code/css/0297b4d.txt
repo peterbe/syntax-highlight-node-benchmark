@@ -1,0 +1,2 @@
+background: url(100px-height-3x4-ratio.svg);
+background-size: 150px auto;

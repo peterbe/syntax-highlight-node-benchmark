@@ -1,0 +1,5 @@
+// Prints "1cm"
+console.log(CSS.cm("1").min(CSS.cm("2")).toString());
+
+// Prints "max(1cm, 0.393701in)"
+console.log(CSS.cm("1").max(CSS.in("0.393701")).toString());

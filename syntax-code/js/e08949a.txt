@@ -1,0 +1,10 @@
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  var scrollOptions = {
+    left: leftInput.value,
+    top: topInput.value,
+    behavior: scrollInput.checked ? 'smooth' : 'auto'
+  }
+
+  window.scrollTo(scrollOptions);
+});

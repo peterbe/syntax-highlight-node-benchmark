@@ -1,0 +1,3 @@
+var img = new Image();
+img.src = 'someimage.png';
+var ptrn = ctx.createPattern(img, 'repeat');

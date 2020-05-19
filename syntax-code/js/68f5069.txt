@@ -1,0 +1,21 @@
+function validatePayment(response) {
+  const correctionPromises
+  let paymentErrors = {};
+  let payerErrors = {};
+
+  // Check payer details
+
+  if (!validEmail(response.payerEmail)) {
+    payerErrors.email = "Please make sure you enter a valid email address."
+  }
+  if (!validName(response.payerName)) {
+    payerErrors.email = "Please enter a valid name, using only <appropriate characters>."
+  }
+  if (!validPhone(response.payerPhone)) {
+    payerErrors.phone = "Please enter a valid phone number in the form ###-###-####."
+  }
+
+  // Check everything else too...
+
+  // 
+}

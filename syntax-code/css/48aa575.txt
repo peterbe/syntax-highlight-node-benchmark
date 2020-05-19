@@ -1,0 +1,9 @@
+p { 
+  text-decoration: underline wavy red;
+  text-underline-offset: 1em;
+}
+
+.twolines {
+  text-decoration-color: purple;
+  text-decoration-line: underline overline;
+}

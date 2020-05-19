@@ -1,0 +1,10 @@
+let tick = 0;
+
+function drawFrame(time, frame) {
+  animationFrameRequestID = frame.session.requestAnimationFrame(drawFrame);
+
+  if (!(tick % 2)) {
+    /* Draw the scene */
+  }
+  tick++;
+}

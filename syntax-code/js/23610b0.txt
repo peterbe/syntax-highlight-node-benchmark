@@ -1,0 +1,34 @@
+function closeVideoCall() {
+  var remoteVideo = document.getElementById("received_video");
+  var localVideo = document.getElementById("local_video");
+
+  if (myPeerConnection) {
+    myPeerConnection.ontrack = null;
+    myPeerConnection.onremovetrack = null;
+    myPeerConnection.onremovestream = null;
+    myPeerConnection.onicecandidate = null;
+    myPeerConnection.oniceconnectionstatechange = null;
+    myPeerConnection.onsignalingstatechange = null;
+    myPeerConnection.onicegatheringstatechange = null;
+    myPeerConnection.onnegotiationneeded = null;
+
+    if (remoteVideo.srcObject) {
+      remoteVideo.srcObject.getTracks().forEach(track => track.stop());
+    }
+
+    if (localVideo.srcObject) {
+      localVideo.srcObject.getTracks().forEach(track => track.stop());
+    }
+
+    myPeerConnection.close();
+    myPeerConnection = null;
+  }
+
+  remoteVideo.removeAttribute("src");
+  remoteVideo.removeAttribute("srcObject");
+  localVideo.removeAttribute("src");
+  remoteVideo.removeAttribute("srcObject");
+
+  document.getElementById("hangup-button").disabled = true;
+  targetUsername = null;
+}

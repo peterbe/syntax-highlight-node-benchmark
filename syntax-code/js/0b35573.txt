@@ -1,0 +1,1 @@
+ctx.drawWindow(window, 0, 0, 100, 200, 'rgb(255,255,255)');

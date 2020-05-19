@@ -1,0 +1,8 @@
+// dataset selectors
+const refs = [...document.querySelectorAll(`[data-name*="funnel-chart-percent"]`)];
+
+// attribute selectors
+// const refs = [...document.querySelectorAll(`[class*="funnel-chart-percent"]`)];
+// const refs = [...document.querySelectorAll(`[class^="funnel-chart-percent"]`)];
+// const refs = [...document.querySelectorAll(`[class$="funnel-chart-percent"]`)];
+// const refs = [...document.querySelectorAll(`[class~="funnel-chart-percent"]`)];

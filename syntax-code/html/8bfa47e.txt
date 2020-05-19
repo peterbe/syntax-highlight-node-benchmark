@@ -1,0 +1,8 @@
+<p id="para-01">
+  <span>First span</span>
+</p>
+
+<script>
+  var p01 = document.getElementById('para-01');
+  console.log(p01.firstChild.nodeName);
+</script>

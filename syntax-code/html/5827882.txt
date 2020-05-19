@@ -1,0 +1,9 @@
+<html>
+ <body onload="draw();">
+   <canvas id="canvas" width="150" height="150"></canvas>
+   <div style="display:none;">
+     <img id="source" src="https://mdn.mozillademos.org/files/5397/rhino.jpg" width="300" height="227">
+     <img id="frame" src="https://mdn.mozillademos.org/files/242/Canvas_picture_frame.png" width="132" height="150">
+   </div>
+ </body>
+</html>

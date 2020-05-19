@@ -1,0 +1,19 @@
+function applyViewerControls(refSpace) {
+  if (!mouseYaw && !mousePitch && !axialDistance &&
+      !transverseDistance && !verticalDistance) {
+    return refSpace;
+  }
+  
+  quat.identity(inverseOrientation);
+  quat.rotateX(inverseOrientation, inverseOrientation, -mousePitch);
+  quat.rotateY(inverseOrientation, inverseOrientation, -mouseYaw);
+ 
+  let newTransform = new XRRigidTransform({x: transverseDistance,
+                                           y: verticalDistance,
+                                           z: axialDistance},
+                         {x: inverseOrientation[0], y: inverseOrientation[1],
+                          z: inverseOrientation[2], w: inverseOrientation[3]});
+  mat4.copy(mouseMatrix, newTransform.matrix);
+ 
+  return refSpace.getOffsetReferenceSpace(newTransform);
+}

@@ -1,0 +1,14 @@
+let options = {
+  types: ['intervention'],
+  buffered: true
+}
+
+let observer = new ReportingObserver(function(reports, observer) {
+  let firstReport = reports[0];
+  console.log(firstReport.type); // intervention
+  console.log(firstReport.body.id);
+  console.log(firstReport.body.message);
+  console.log(firstReport.body.sourceFile);
+  console.log(firstReport.body.lineNumber);
+  console.log(firstReport.body.columnNumber);
+}, options);

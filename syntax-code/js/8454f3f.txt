@@ -1,0 +1,7 @@
+let log = document.getElementById('log');
+
+document.ondblclick = logDoubleClick;
+
+function logDoubleClick(e) {
+  log.textContent = `Position: (${e.clientX}, ${e.clientY})`;
+}

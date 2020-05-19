@@ -1,0 +1,2 @@
+var scrollElm = document.scrollingElement;
+scrollElm.scrollTop = 0;

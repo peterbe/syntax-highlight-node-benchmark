@@ -1,0 +1,14 @@
+.box0 {
+    margin-bottom:1em;
+    height:3em;
+}
+.box1 {
+    margin-bottom:-1.5em;
+    height:4em;
+}
+.box2 {
+    border:1px dashed black;
+    border-width:1px 0;
+    margin-bottom:2em;
+}
+

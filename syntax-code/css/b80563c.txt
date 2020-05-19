@@ -1,0 +1,1 @@
+filter: contrast(200%)

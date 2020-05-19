@@ -1,0 +1,1 @@
+var myGamepadOrientation = gamepadPoseInstance.orientation;

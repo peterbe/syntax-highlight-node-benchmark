@@ -1,0 +1,27 @@
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  position: absolute;
+}
+
+.circle-1 {
+  background: red;
+}
+
+.circle-2 {
+  background: lightgreen;
+  left: 40px;
+}
+
+.circle-3 {
+  background: blue;
+  left: 20px;
+  top: 40px;
+}
+
+.isolate {
+  isolation: isolate; /* Without isolation, the background color will be taken into account */
+  position: relative;
+}

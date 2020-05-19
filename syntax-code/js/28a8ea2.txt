@@ -1,0 +1,7 @@
+function playSourceNode(audioContext, audioBuffer) {
+  const soundSource = audioContext.createBufferSource();
+  soundSource.buffer = audioBuffer;
+  soundSource.connect(audioContext.destination);
+  soundSource.start();
+  return soundSource;
+}

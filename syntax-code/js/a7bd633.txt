@@ -1,0 +1,19 @@
+// Add a track to a stream and the peer connection said stream was added to:
+
+stream.addTrack(track);
+if (pc.addTrack) {
+  pc.addTrack(track, stream);
+} else {
+  // If you have code listening for negotiationneeded events:
+  setTimeout(() => pc.dispatchEvent(new Event('negotiationneeded')));
+}
+
+// Remove a track from a stream and the peer connection said stream was added to:
+
+stream.removeTrack(track);
+if (pc.removeTrack) {
+  pc.removeTrack(pc.getSenders().find(sender => sender.track == track));
+} else {
+  // If you have code listening for negotiationneeded events:
+  setTimeout(() => pc.dispatchEvent(new Event('negotiationneeded')));
+}

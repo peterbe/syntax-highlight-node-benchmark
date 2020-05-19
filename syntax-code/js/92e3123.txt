@@ -1,0 +1,22 @@
+// Log events flag
+var logEvents = false;
+
+// Logging/debugging functions
+function enableLog(ev) {
+  logEvents = logEvents ? false : true;
+}
+
+function log(prefix, ev) {
+  if (!logEvents) return;
+  var o = document.getElementsByTagName('output')[0];
+  var s = prefix + ": pointerID = " + ev.pointerId +
+                " ; pointerType = " + ev.pointerType +
+                " ; isPrimary = " + ev.isPrimary;
+  o.innerHTML += s + " 
+";
+} 
+
+function clearLog(event) {
+ var o = document.getElementsByTagName('output')[0];
+ o.innerHTML = "";
+}

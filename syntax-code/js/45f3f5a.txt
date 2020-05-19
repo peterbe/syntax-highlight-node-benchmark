@@ -1,0 +1,8 @@
+let fd = new FormData();
+fd.append('test', 'test');
+
+let fdEv = new FormDataEvent('formdata', { formData: fd });
+
+for (let value of fdEv.formData.values()) {
+  console.log(value);
+}

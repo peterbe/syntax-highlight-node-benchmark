@@ -1,0 +1,9 @@
+let paraNode = document.querySelector("p");
+let paraTextNode = paraNode.childNodes[1];
+
+let range = document.createRange();
+range.setStart(paraTextNode, 6);
+range.setEnd(paraTextNode, paraTextNode.length-1);
+
+let fragment = range.cloneContents();
+document.body.appendChild(fragment);

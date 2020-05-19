@@ -1,0 +1,3 @@
+window.onbeforeprint = (event) => {
+  console.log('Before print');
+};

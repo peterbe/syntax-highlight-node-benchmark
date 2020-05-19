@@ -1,0 +1,1 @@
+animation.oncancel = function() { animation.effect.target.remove(); };

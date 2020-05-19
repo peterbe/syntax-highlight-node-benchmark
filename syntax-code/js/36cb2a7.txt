@@ -1,0 +1,10 @@
+var xhr = new XMLHttpRequest(),
+    method = "GET",
+    url = "https://developer.mozilla.org/";
+xhr.open(method, url, true);
+
+xhr.send();
+
+if (OH_NOES_WE_NEED_TO_CANCEL_RIGHT_NOW_OR_ELSE) {
+  xhr.abort();
+}

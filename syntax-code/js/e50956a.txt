@@ -1,0 +1,5 @@
+async function do_read() {
+  await navigator.locks.request('my_resource', {mode: 'shared'}, async lock => {
+    // Read code here.
+  });
+}

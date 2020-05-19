@@ -1,0 +1,3 @@
+function keyEvent(event) {
+  console.log("Location of key pressed: " + event.location);
+}

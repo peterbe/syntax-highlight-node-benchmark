@@ -1,0 +1,17 @@
+function playTone(freq) {
+  let osc = audioContext.createOscillator();
+  osc.connect(masterGainNode);
+ 
+  let type = wavePicker.options[wavePicker.selectedIndex].value;
+ 
+  if (type == "custom") {
+    osc.setPeriodicWave(customWaveform);
+  } else {
+    osc.type = type;
+  }
+
+  osc.frequency.value = freq;
+  osc.start();
+ 
+  return osc;
+}

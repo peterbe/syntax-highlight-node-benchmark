@@ -1,0 +1,3 @@
+drawScene(gl, programInfo, buffers, texture, deltaTime);
+...
+function drawScene(gl, programInfo, buffers, texture, deltaTime) {

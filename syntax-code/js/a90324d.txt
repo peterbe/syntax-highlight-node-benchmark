@@ -1,0 +1,7 @@
+fetch(url).then(function(response) {
+  if (!response.ok) {
+    throw new TypeError('Bad response status');
+  }
+  return cache.put(url, response);
+})
+

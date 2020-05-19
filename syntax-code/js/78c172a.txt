@@ -1,0 +1,2 @@
+var isTabStop = element.tabStop;
+element.tabStop = (true|false);

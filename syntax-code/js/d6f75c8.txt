@@ -1,0 +1,1 @@
+const renderTime = perfData.domComplete - perfData.domLoading;

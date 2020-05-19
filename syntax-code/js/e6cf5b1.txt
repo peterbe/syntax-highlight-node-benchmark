@@ -1,0 +1,2 @@
+var filestream = load_binary_resource(url);
+var abyte = filestream.charCodeAt(x) & 0xff; // throw away high-order byte (f7)

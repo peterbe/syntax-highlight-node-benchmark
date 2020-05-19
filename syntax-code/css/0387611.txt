@@ -1,0 +1,3 @@
+@supports (display: flex) {
+  // code for supporting browsers
+}

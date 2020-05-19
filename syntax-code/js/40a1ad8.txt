@@ -1,0 +1,2 @@
+var img = new Image();   // Create new img element
+img.src = 'myImage.png'; // Set source path

@@ -1,0 +1,13 @@
+const writableStream = new WritableStream({
+  write(chunk) {
+    ...
+  },
+  close() {
+    ...
+  },
+  abort(err) {
+    ...
+  }
+}, queuingStrategy);
+
+...

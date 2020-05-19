@@ -1,0 +1,13 @@
+// this utility converts amount of rotation around the Y axis
+// (i.e. rotation in the 'horizontal plane') to an orientation vector
+const yRotationToVector = degrees => {
+  // convert degrees to radians and offset the angle so 0 points towards the listener
+  const radians = (degrees - 90) * (Math.PI / 180);
+  // using cosine and sine here ensures the output values are always normalised
+  // i.e. they range between -1 and 1
+  const x = Math.cos(radians);
+  const z = Math.sin(radians);
+  
+  // we hard-code the Y component to 0, as Y is the axis of rotation
+  return [x, 0, z];
+};

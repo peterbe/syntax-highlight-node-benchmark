@@ -1,0 +1,5 @@
+var isSynthetic = document.mozSyntheticDocument;
+
+if (isSynthetic) {
+  /* insert your menu item here */
+}

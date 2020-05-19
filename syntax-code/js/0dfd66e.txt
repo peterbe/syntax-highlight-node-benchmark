@@ -1,0 +1,6 @@
+btn.addEventListener('click', function() {
+  serviceWorkerRegistration.pushManager.subscribe(options)
+  .then(function(pushSubscription) {
+    // handle subscription
+  });
+})

@@ -1,0 +1,2 @@
+defaultValue = (rangeElem.max < rangeElem.min) ? rangeElem.min
+               : rangeElem.min + (rangeElem.max - rangeElem.min)/2;

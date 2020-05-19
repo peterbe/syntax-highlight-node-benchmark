@@ -1,0 +1,1 @@
+gl.clearStencil(1);

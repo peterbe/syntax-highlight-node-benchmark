@@ -1,0 +1,19 @@
+// Dummy payment request to check whether payment can be made
+new PaymentRequest(buildSupportedPaymentMethodData(),
+      {total: {label: 'Stub', amount: {currency: 'USD', value: '0.01'}}})
+      .canMakePayment()
+      .then(function(result) {
+        if(result) {
+          // Real payment request
+          var request = new PaymentRequest(buildSupportedPaymentMethodData(),
+                                           checkoutObject);
+
+          request.show().then(function(paymentResponse) {
+            // Here we would process the payment.
+            paymentResponse.complete('success')
+              .then(function() {
+                // Finish handling payment
+            });
+          })
+        }
+      })

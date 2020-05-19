@@ -1,0 +1,2 @@
+var pc = new RTCPeerConnection(configuration);
+var state = pc.signalingState;

@@ -1,0 +1,2 @@
+var evtSource = new EventSource('sse.php');
+console.log(evtSource.url);

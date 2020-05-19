@@ -1,0 +1,3 @@
+elem.animate({ transform: 'translateY(100px)' }, 200).finished.then(() => {
+  elem.style.transform = 'translateY(100px)';
+});

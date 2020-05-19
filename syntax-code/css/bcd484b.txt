@@ -1,0 +1,4 @@
+div {
+  background-image:
+     conic-gradient(from 40deg, #fff, #000);
+}

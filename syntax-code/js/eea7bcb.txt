@@ -1,0 +1,3 @@
+window.addEventListener('transitioncancel', () => {
+  console.log('Transition canceled');
+});

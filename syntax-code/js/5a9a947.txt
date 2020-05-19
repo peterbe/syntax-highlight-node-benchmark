@@ -1,0 +1,10 @@
+//startSimulation and pauseSimulation defined elsewhere
+function handleVisibilityChange() {
+  if (document.hidden) {
+    pauseSimulation();
+  } else  {
+    startSimulation();
+  }
+}
+
+document.addEventListener("visibilitychange", handleVisibilityChange, false);

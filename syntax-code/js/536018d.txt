@@ -1,0 +1,4 @@
+track.addEventListener('ended', () => {
+  let statusElem = document.getElementById("status-icon");
+  statusElem.src = "/images/stopped-icon.png";
+})

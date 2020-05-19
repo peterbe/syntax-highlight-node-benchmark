@@ -1,0 +1,3 @@
+blur(0)        /* No effect */
+blur(8px)      /* Blur with 8px radius */
+blur(1.17rem)  /* Blur with 1.17rem radius */

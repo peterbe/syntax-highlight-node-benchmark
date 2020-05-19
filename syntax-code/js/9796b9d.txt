@@ -1,0 +1,3 @@
+window.onappinstalled = function() { 
+  console.log('Thank you for installing our app!'); 
+};

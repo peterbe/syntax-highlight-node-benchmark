@@ -1,0 +1,4 @@
+var node = document.documentElement.firstChild;
+if (node.nodeType !== Node.COMMENT_NODE) {
+  console.warn("You should comment your code!");
+}

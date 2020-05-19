@@ -1,0 +1,2 @@
+<p>Press any key or click the mouse to get the event type.</p>
+<p id="log"></p>

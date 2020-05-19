@@ -1,0 +1,4 @@
+function handleICEGatheringStateChangeEvent(event) {
+  // Our sample just logs information to console here,
+  // but you can do whatever you need.
+}

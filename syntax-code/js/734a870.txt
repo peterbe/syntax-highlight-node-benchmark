@@ -1,0 +1,5 @@
+workingDirectory.getFile("tmp/workfile.json", {}, function(fileEntry) {
+  fileEntry.remove(function() {
+    /* the file was removed successfully */
+  });
+}, handleError);

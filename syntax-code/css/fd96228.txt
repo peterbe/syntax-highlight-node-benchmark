@@ -1,0 +1,3 @@
+.conic-gradient {
+  background: conic-gradient(from 45deg, red, orange, yellow, green, blue, purple);
+}

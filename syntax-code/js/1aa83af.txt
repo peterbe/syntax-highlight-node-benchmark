@@ -1,0 +1,2 @@
+var audioCtx = new AudioContext();
+var buffer = audioCtx.createBuffer(2, 22050, 44100);

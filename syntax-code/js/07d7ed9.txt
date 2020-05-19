@@ -1,0 +1,3 @@
+var screenAvailWidth = window.screen.availWidth;
+
+console.log(screenAvailWidth);

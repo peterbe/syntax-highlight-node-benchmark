@@ -1,0 +1,2 @@
+// Get the number of pixels scrolled.
+var intElemScrollTop = someElement.scrollTop;

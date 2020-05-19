@@ -1,0 +1,8 @@
+<div class="controls">
+  <button id="reload" type="button">Reload</button>
+</div>
+
+<div class="event-log">
+  <label>Event log:</label>
+  <textarea readonly class="event-log-contents" rows="8" cols="30"></textarea>
+</div>

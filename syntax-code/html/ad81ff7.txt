@@ -1,0 +1,5 @@
+<section class="box" id="sect1">
+  <div class="funnel-chart-percent1">10.900%</div>
+  <div class="funnel-chart-percent2">3700.00%</div>
+  <div class="funnel-chart-percent3">0.00%</div>
+</section>

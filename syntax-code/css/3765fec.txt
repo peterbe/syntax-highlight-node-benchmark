@@ -1,0 +1,5 @@
+#main,
+.content,
+article {
+  font-size: 1.1em;
+}

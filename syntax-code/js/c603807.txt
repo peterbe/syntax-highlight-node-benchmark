@@ -1,0 +1,3 @@
+if (bgRule.parentStyleSheet != mySheet) {
+  // Alien style rule!
+}

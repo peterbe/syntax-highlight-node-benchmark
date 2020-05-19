@@ -1,0 +1,17 @@
+...
+if (navigator.mediaDevices.getUserMedia) {
+  var constraints = { audio: true, video: true };
+  var chunks = [];
+
+  var onSuccess = function(stream) {
+    var options = {
+      audioBitsPerSecond : 128000,
+      videoBitsPerSecond : 2500000,
+      mimeType : 'video/mp4'
+    }
+    var mediaRecorder = new MediaRecorder(stream,options);
+    m = mediaRecorder;
+
+...
+  }
+}

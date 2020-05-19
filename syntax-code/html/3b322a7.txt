@@ -1,0 +1,9 @@
+<main>
+  <button>Select Footer</button>
+  <p>Welcome to my website.</p>
+  <p>I hope you enjoy your visit.</p>
+</main>
+<footer>
+  <address>webmaster@example.com</address>
+  <p>© 2019</p>
+</footer>

@@ -1,0 +1,2 @@
+importScripts('foo.js');
+console.log(navigator);

@@ -1,0 +1,17 @@
+var i, fileInput, files, allowedFileTypes;
+
+// fileInput is a HTMLInputElement: <input type="file" multiple id="myfileinput">
+fileInput = document.getElementById("myfileinput");
+
+// files is a FileList object (simliar to NodeList)
+files = fileInput.files;
+
+// our application only allows GIF, PNG, and JPEG images
+allowedFileTypes = ["image/png", "image/jpeg", "image/gif"];
+
+for (i = 0; i < files.length; i++) {
+  // Test if file.type is an allowed file type.
+  if (allowedFileTypes.indexOf(files[i].type) > -1) {
+    // file type matched is one of allowed file types. Do something here.
+  }
+});

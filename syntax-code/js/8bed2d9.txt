@@ -1,0 +1,3 @@
+function copyTouch(touch) {
+  return { identifier: touch.pointerId, pageX: touch.clientX, pageY: touch.clientY };
+}

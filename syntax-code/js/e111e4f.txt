@@ -1,0 +1,3 @@
+self.onclose = function() {
+  console.log('Your worker instance has been closed');
+}

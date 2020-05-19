@@ -1,0 +1,5 @@
+req.addEventListener("loadend", loadEnd);
+
+function loadEnd(e) {
+  console.log("The transfer finished (although we don't know if it succeeded or not).");
+} 

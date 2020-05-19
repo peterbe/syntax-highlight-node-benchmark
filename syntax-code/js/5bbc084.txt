@@ -1,0 +1,5 @@
+sourceBuffer.addEventListener('updateend', function (_) {
+  ...
+});
+
+sourceBuffer.appendBuffer(buf);

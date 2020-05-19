@@ -1,0 +1,1 @@
+var myEventObject = new VRDisplayEvent(type, eventInitDict);

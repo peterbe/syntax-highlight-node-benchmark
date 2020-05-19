@@ -1,0 +1,3 @@
+svgElem.addEventListener('resize', () => {
+  console.log('SVG resized.');
+})

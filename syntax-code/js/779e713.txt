@@ -1,0 +1,7 @@
+var pointDesc = {
+  x: window.screenX,
+  y: window.screenY,
+  z: 5.0
+};
+
+var windTopLeft = DOMPoint.fromPoint(pointDesc);

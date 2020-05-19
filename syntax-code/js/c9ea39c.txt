@@ -1,0 +1,8 @@
+let glLayer = xrSession.renderState.baseLayer;
+gl.bindFrameBuffer(gl.FRAMEBUFFER, glLayer.framebuffer);
+
+/* .. */
+
+if (!glLayer.antialias) {
+  /* compensate for lack of antialiasing */
+}

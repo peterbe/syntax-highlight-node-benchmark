@@ -1,0 +1,4 @@
+console.log = msg => logElem.innerHTML += `${msg}<br>`;
+console.error = msg => logElem.innerHTML += `<span class="error">${msg}</span><br>`;
+console.warn = msg => logElem.innerHTML += `<span class="warn">${msg}<span><br>`;
+console.info = msg => logElem.innerHTML += `<span class="info">${msg}</span><br>`;

@@ -1,0 +1,2 @@
+var container = document.querySelector("#userlist");
+var matches = container.querySelectorAll("li[data-active=1]");

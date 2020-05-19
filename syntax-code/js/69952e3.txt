@@ -1,0 +1,8 @@
+function drawAdTimer(adBox) {
+  let timerBox = adBox.querySelector(".timer");
+  let totalSeconds = adBox.dataset.totalViewTime / 1000;
+  let sec = Math.floor(totalSeconds % 60);
+  let min = Math.floor(totalSeconds / 60);
+
+  timerBox.innerText = min + ":" + sec.toString().padStart(2, "0");
+}

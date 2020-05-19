@@ -1,0 +1,8 @@
+var program = gl.createProgram();
+
+// Attach pre-existing shaders
+gl.attachShader(program, vertexShader);
+gl.attachShader(program, fragmentShader);
+gl.linkProgram(program);
+
+gl.getAttachedShaders(program);

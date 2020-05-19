@@ -1,0 +1,2 @@
+location.assign("http://www.mozilla.org"); // or
+location = "http://www.mozilla.org";

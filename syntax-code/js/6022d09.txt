@@ -1,0 +1,3 @@
+var myMessage = new MessageEvent('worker', {
+  data : 'hello'
+});

@@ -1,0 +1,8 @@
+var treeWalker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_ELEMENT,
+    { acceptNode: function(node) { return NodeFilter.FILTER_ACCEPT; } },
+    false
+);
+var node = treeWalker.nextNode(); // returns the first child of root, as it is the next node in document order
+

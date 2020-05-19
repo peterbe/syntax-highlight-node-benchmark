@@ -1,0 +1,13 @@
+html {
+  font-family: sans-serif;
+}
+canvas {
+  background: #fff;
+  border: 1px dashed;
+}
+a {
+  display: inline-block;
+  background: #69c;
+  color: #fff;
+  padding: 5px 10px;
+}

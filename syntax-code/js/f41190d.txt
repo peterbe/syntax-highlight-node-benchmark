@@ -1,0 +1,10 @@
+// turn on scissor test
+gl.enable(gl.SCISSOR_TEST);
+
+// set the scissor rectangle
+gl.scissor(x, y, width, height);
+
+// execute drawing commands in the scissor box (e.g. clear)
+
+// turn off scissor test again
+gl.disable(gl.SCISSOR_TEST);

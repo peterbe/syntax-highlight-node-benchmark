@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px; 
+}
+.box1 {
+  align-self: stretch;
+}
+.box2 {
+  align-self: flex-start;
+}

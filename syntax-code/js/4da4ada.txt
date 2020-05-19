@@ -1,0 +1,11 @@
+let pulseHz = 880;
+const hzControl = document.querySelector('#hz');
+hzControl.addEventListener('input', function() {
+    pulseHz = Number(this.value);
+}, false);
+
+let lfoHz = 30;
+const lfoControl = document.querySelector('#lfo');
+lfoControl.addEventListener('input', function() {
+    lfoHz = Number(this.value);
+}, false);

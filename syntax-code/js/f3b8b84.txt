@@ -1,0 +1,3 @@
+worker.onlanguagechange = function(event) {
+  console.log('languagechange event detected!');
+};

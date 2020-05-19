@@ -1,0 +1,4 @@
+<div id="grid">
+  <div id="areaA">A</div>
+  <div id="areaB">B</div>
+</div>

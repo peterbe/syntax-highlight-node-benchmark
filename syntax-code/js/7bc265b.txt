@@ -1,0 +1,3 @@
+for (const source of xrSession.inputSources.values()) {
+  checkInput(source);
+}

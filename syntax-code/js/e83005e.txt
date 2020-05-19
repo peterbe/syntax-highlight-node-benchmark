@@ -1,0 +1,1 @@
+var myReason = vrDisplayEventInstance.reason;

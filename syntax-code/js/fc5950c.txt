@@ -1,0 +1,1 @@
+pc.ontrack = ({streams: [stream]} => videoElem.srcObject = stream;

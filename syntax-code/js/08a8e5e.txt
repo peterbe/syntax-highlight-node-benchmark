@@ -1,0 +1,9 @@
+var myDiv = document.getElementById("myDiv"),
+    boxObj = document.getBoxObjectFor (myDiv);
+ 
+alert (
+  "x:" + boxObj.x +
+  ", y:" + boxObj.y +
+  ", Width:" + boxObj.width +
+  ", Height:" + boxObj.height
+);

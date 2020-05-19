@@ -1,0 +1,13 @@
+<p>
+   This is a paragraph with some content. Open up this example in Codepen or 
+   JSFiddle, and change some features. Try adding some CSS, such as a width 
+   for this paragraph, or adding a CSS property to the ofInterst array.
+</p>
+<table id="regurgitation">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+      <th>Unit</th>
+    </tr>
+</table>

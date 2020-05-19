@@ -1,0 +1,9 @@
+function log(msg) {
+  logElement.innerHTML += (msg + "<br>");
+}
+
+function handleError(reason) {
+  log("Error <code>" + reason.name +
+      "</code> in constraint <code>" + reason.constraint +
+      "</code>: " + reason.message);
+}

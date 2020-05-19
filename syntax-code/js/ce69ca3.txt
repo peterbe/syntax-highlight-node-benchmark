@@ -1,0 +1,7 @@
+pc.addEventListener("iceconnectionstatechange", event => {
+  if (pc.iceConnectionState === "failed") {
+    /* possibly reconfigure the connection in some way here */
+    /* then request ICE restart */
+    pc.restartIce();
+  }
+});

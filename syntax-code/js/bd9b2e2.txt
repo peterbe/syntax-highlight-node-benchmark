@@ -1,0 +1,9 @@
+var oReq = new XMLHttpRequest();
+
+oReq.onload = function(e) {
+  var arraybuffer = oReq.response; // not responseText
+  /* ... */
+}
+oReq.open("GET", url);
+oReq.responseType = "arraybuffer";
+oReq.send();

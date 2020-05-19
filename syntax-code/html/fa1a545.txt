@@ -1,0 +1,5 @@
+<span class="orange fruit">Orange Fruit</span>
+<span class="orange juice">Orange Juice</span>
+<span class="apple juice">Apple Juice</span>
+<span class="foo bar">Something Random</span>
+<textarea id="resultArea" style="width:98%;height:7em"></textarea>

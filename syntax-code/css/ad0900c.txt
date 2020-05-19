@@ -1,0 +1,4 @@
+input[type=checkbox] {
+   position: absolute;
+   top: -100px;
+}

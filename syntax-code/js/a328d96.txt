@@ -1,0 +1,11 @@
+let log = document.createTextNode('?');   // let log = new Text('?');
+
+function logButtons(e) {
+  log.data = `${e.buttons} (${e.type})`;  // log.nodeValue= `${e.buttons} (${e.type})`;
+}
+
+document.addEventListener('mouseup', logButtons);
+document.addEventListener('mousedown', logButtons);
+// document.addEventListener('mousemove', logButtons);
+
+document.querySelector('#log').appendChild(log)

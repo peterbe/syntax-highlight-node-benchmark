@@ -1,0 +1,8 @@
+dc.onopen = ev => {
+  messageInputBox.disabled = false;
+  sendMessageButton.disabled = false;
+  disconnectButton.disabled = false;
+  connectButton.disabled = true;
+
+  messageInputBox.focus();
+}

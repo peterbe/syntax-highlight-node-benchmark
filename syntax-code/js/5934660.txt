@@ -1,0 +1,3 @@
+let supported = navigator.mediaDevices.getSupportedConstraints();
+
+document.getElementById("frameRateSlider").disabled = !supported["frameRate"];

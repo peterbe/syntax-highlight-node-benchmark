@@ -1,0 +1,2 @@
+var sliceWidth = WIDTH * 1.0 / bufferLength;
+var x = 0;

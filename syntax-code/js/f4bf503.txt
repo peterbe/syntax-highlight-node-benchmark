@@ -1,0 +1,3 @@
+document.getElementById("selectAll").onclick = function() {
+  document.getElementById("userPassword").select();
+}

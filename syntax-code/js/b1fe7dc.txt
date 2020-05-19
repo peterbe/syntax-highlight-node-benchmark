@@ -1,0 +1,8 @@
+// Check that the URI scheme of the current tab in Firefox is 'http',
+// assuming this code runs in context of browser.xul
+let uriObj = content.document.documentURIObject;
+let uriPort = uriObj.port;
+
+if (uriObj.schemeIs('http')) {
+  ...
+}

@@ -1,0 +1,1 @@
+gl.bindAttribLocation(program, colorLocation, 'vColor');

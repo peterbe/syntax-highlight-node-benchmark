@@ -1,0 +1,4 @@
+let span = document.querySelector("span");
+let classes = span.classList;
+let item = classes.item(classes.length-1);
+span.textContent = item;

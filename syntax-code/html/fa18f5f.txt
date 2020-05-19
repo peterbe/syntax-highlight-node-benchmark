@@ -1,0 +1,14 @@
+<html>
+ <head>
+  <link rel="StyleSheet" href="example.css" type="text/css" />
+  <script>
+   function stilo() {
+    alert(document.styleSheets[0].ownerNode);
+   }
+  </script> 
+ </head>
+ <body>
+   <button onclick="stilo()">ss</button>
+ </body>
+</html>
+// Displays "object HTMLLinkElement"

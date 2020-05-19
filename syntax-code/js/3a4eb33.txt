@@ -1,0 +1,2 @@
+let pRange = document.createRange();
+pRange.selectNodeContents(document.querySelector("#entry1 p"));

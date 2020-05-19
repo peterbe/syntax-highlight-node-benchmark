@@ -1,0 +1,12 @@
+case 'back':
+    if (transform.zAxis > innerBound) {
+        transform.zAxis -= 0.01;
+        panner.positionZ.value += 40;
+    }
+break;
+case 'forward':
+    if (transform.zAxis < outerBound) {
+        transform.zAxis += 0.01;
+        panner.positionZ.value -= 40;
+    }
+break;

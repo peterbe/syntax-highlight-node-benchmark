@@ -1,0 +1,1 @@
+<button class="button-play" role="switch" data-playing="false" aria-pressed="false">Play</button>

@@ -1,0 +1,5 @@
+var recognition = new SpeechRecognition();
+
+recognition.onaudiostart = function() {
+  console.log('Audio capturing started');
+}

@@ -1,0 +1,1 @@
+<img class="grayscale" src="myPicture.png" alt="Description of my picture" />

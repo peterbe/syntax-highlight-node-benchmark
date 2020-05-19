@@ -1,0 +1,1 @@
+var fileEntry = fs.root.getFile('seekrits.txt', {create: true});

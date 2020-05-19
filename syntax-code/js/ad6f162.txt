@@ -1,0 +1,8 @@
+const textarea = document.querySelector('textarea');
+const log = document.getElementById('log');
+
+textarea.onscroll = logScroll;
+
+function logScroll(e) {
+  log.textContent = `Scroll position: ${e.target.scrollTop}`;
+}

@@ -1,0 +1,18 @@
+            } else {
+              vrDisplay.exitPresent();
+              console.log('Stopped presenting to WebVR display');
+
+              btn.textContent = 'Start VR display';
+
+              // Stop the VR presentation, and start the normal presentation
+              vrDisplay.cancelAnimationFrame(vrSceneFrame);
+              drawScene();
+            }
+          });
+        }
+      });
+    } else {
+      console.log('WebVR API not supported by this browser.');
+    }
+  }
+}

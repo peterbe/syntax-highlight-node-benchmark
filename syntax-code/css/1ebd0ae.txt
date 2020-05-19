@@ -1,0 +1,3 @@
+td:-moz-drag-over {
+  color: red;
+}

@@ -1,0 +1,9 @@
+function dragend_handler(event)
+{
+  var dragData = event.dataTransfer;
+  var node = dragData.mozSourceNode;
+  if (node != null)
+    console.log("mozSourceNode = " + dragData.mozSourceNode);
+  else
+    console.log("mozSourceNode is null");
+}

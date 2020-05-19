@@ -1,0 +1,3 @@
+window.onanimationcancel = () => {
+  console.log('Animation canceled');
+};

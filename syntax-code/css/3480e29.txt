@@ -1,0 +1,4 @@
+:-moz-loading {
+  background-color: #aaa;
+  background-image: url(loading-animation.gif) center no-repeat;
+}

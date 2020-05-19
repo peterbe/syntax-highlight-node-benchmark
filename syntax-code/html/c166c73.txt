@@ -1,0 +1,1 @@
+<input type="hidden" id="timezone" name="timezone" value="-08:00">

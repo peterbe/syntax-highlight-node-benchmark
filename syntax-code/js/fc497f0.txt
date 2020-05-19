@@ -1,0 +1,6 @@
+var videoElem = document.getElementById("my_vid");
+var percentElem = document.getElementById("percent");
+var quality = videoElem.getVideoPlaybackQuality();
+
+var dropPercent = (quality.droppedVideoFrames/quality.totalVideoFrames)*100;
+percentElem.innerText = Math.trunc(dropPercent).toString(10);

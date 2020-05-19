@@ -1,0 +1,8 @@
+.highlight {
+  animation: highlight linear 1s;
+}
+
+@keyframes highlight {
+  from { outline: 1px solid #f00f; }
+  to   { outline: 1px solid #f000; }
+}

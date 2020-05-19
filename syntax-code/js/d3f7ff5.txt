@@ -1,0 +1,1 @@
+iirFilter.getFrequencyResponse(myFrequencyArray, magResponseOutput, phaseResponseOutput);

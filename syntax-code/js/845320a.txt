@@ -1,0 +1,1 @@
+var myImageData = ctx.getImageData(left, top, width, height);

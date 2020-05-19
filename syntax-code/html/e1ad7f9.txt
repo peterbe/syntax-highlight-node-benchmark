@@ -1,0 +1,20 @@
+<p>Without perspective:</p>
+<div class="no-perspective-box">
+  <div class="face front">A</div>
+  <div class="face top">B</div>
+  <div class="face left">C</div>
+</div>
+
+<p>With perspective (9cm):</p>
+<div class="perspective-box-far">
+  <div class="face front">A</div>
+  <div class="face top">B</div>
+  <div class="face left">C</div>
+</div>
+
+<p>With perspective (4cm):</p>
+<div class="perspective-box-closer">
+  <div class="face front">A</div>
+  <div class="face top">B</div>
+  <div class="face left">C</div>
+</div>

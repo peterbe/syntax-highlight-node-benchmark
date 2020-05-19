@@ -1,0 +1,12 @@
+/* Keyword values */
+scroll-padding-block-end: auto;
+
+/* <length> values */
+scroll-padding-block-end: 10px;
+scroll-padding-block-end: 1em;
+scroll-padding-block-end: 10%;
+
+/* Global values */
+scroll-padding-block-end: inherit;
+scroll-padding-block-end: initial;
+scroll-padding-block-end: unset;

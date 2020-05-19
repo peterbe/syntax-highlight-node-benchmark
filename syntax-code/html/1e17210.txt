@@ -1,0 +1,1 @@
+<img class="my-image" src="https://wikipedia.org/static/images/project-logos/frwiki-1.5x.png">

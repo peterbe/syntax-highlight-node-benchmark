@@ -1,0 +1,11 @@
+{ 
+  alpha: true, 
+  antialias: true, 
+  depth: true, 
+  failIfMajorPerformanceCaveat: false, 
+  powerPreference: "default",
+  premultipliedAlpha: true, 
+  preserveDrawingBuffer: false, 
+  stencil: false,
+  desynchronized: false
+}

@@ -1,0 +1,4 @@
+var iframeDocument = document.getElementsByTagName("iframe")[0].contentDocument; 
+
+iframeDocument.body.style.backgroundColor = "blue";
+// This would turn the iframe blue.

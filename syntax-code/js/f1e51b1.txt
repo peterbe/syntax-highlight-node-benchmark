@@ -1,0 +1,1 @@
+var point = DOMPointReadOnly.fromPoint({x: 100, y: 100, z: 50; w: 1.0});

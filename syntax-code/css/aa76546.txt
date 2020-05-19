@@ -1,0 +1,29 @@
+body {
+  font: 22px arial, sans-serif;
+}
+
+.container {
+  top: 2em;
+  width: 22em;
+  height: 14em;
+  border: 2px solid #22d;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #a9f;
+}
+
+.inner-container {
+  padding: 1em 2em;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.pixel-ratio {
+  position: relative;
+  margin: auto;
+  height: 1.2em;
+  text-align: right;
+  bottom: 0;
+  right: 1em;
+  font-weight: bold;
+}

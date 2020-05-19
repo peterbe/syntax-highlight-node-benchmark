@@ -1,0 +1,2 @@
+html { writing-mode: vertical-rl; font: 24px serif }
+.num { text-combine-upright: all }

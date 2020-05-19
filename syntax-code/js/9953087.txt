@@ -1,0 +1,5 @@
+caches.open('v1').then(function(cache) {
+  cache.delete('/images/image.png').then(function(response) {
+    someUIUpdateFunction();
+  });
+})

@@ -1,0 +1,9 @@
+/* assuming we have the following HTML
+<select id="s">
+    <option>First</option>
+    <option>Second</option>
+    <option>Third</option>
+</select>
+*/ 
+
+var s = document.getElementById('s');

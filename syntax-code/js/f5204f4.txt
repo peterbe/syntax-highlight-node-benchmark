@@ -1,0 +1,9 @@
+window.addEventListener('userproximity', function(event) {
+  if (event.near) {
+    // let's power off the screen
+    navigator.mozPower.screenEnabled = false;
+  } else {
+    // Otherwise, let's power on the screen
+    navigator.mozPower.screenEnabled = true;
+  }
+});

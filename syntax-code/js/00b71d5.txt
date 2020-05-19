@@ -1,0 +1,3 @@
+document.onselectstart = function() {
+  console.log('Selection started!');
+}; 

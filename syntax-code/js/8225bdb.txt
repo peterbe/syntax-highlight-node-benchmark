@@ -1,0 +1,11 @@
+var pc, sender;
+navigator.getUserMedia({video: true}, function(stream) {
+  pc = new RTCPeerConnection();
+  var track = stream.getVideoTracks()[0];
+  sender = pc.addTrack(track, stream);
+});
+
+document.getElementById("closeButton").addEventListener("click", function(event) {
+  pc.removeTrack(sender);
+  pc.close();
+}, false);

@@ -1,0 +1,5 @@
+window.addEventListener("gamepaddisconnected", function(e) {
+  gamepadInfo.innerHTML = "Waiting for gamepad.";
+
+  cancelRequestAnimationFrame(start);
+});

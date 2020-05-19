@@ -1,0 +1,17 @@
+function intersectionCallback(entries) {
+  entries.forEach(function(entry) {
+    let adBox = entry.target;
+
+    if (entry.isIntersecting) {
+      if (entry.intersectionRatio >= 0.75) {
+        adBox.dataset.lastViewStarted = entry.time;
+        visibleAds.add(adBox);
+      }
+    } else {
+      visibleAds.delete(adBox);
+      if ((entry.intersectionRatio === 0.0) && (adBox.dataset.totalViewTime >= 60000)) {
+        replaceAd(adBox);
+      }
+    }
+  });
+}

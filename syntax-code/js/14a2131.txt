@@ -1,0 +1,6 @@
+// Printing all messages to console
+navigator.requestMIDIAccess().then(midiAccess => {
+  Array.from(midiAccess.inputs).forEach(input => {
+    input[1].onmidimessage = console.log;
+  })
+});

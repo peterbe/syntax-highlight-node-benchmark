@@ -1,0 +1,4 @@
+if (candidate1.foundation == candidate2.foundation) {
+  /* the two candidates are the same, even if they're on
+     different transports */
+}

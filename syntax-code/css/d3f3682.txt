@@ -1,0 +1,2 @@
+background-color: red;
+background: url(images/bg.gif) no-repeat left top;

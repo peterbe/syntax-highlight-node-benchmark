@@ -1,0 +1,2 @@
+<input id="telNo" name="telNo" type="tel"
+       placeholder="123-4567-8901">

@@ -1,0 +1,7 @@
+const targetFrame = window.top.frames[1];
+const targetOrigin = 'https://example.org';
+const windowMessageButton = document.querySelector('#window-message');
+
+windowMessageButton.addEventListener('click', () => {
+    targetFrame.postMessage('hello there', targetOrigin);
+});

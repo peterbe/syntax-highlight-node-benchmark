@@ -1,0 +1,23 @@
+/* Keyword values */
+grid-area: auto;
+grid-area: auto / auto;
+grid-area: auto / auto / auto;
+grid-area: auto / auto / auto / auto;
+
+/* <custom-ident> values */
+grid-area: some-grid-area;
+grid-area: some-grid-area / another-grid-area;
+
+/* <integer> && <custom-ident>? values */
+grid-area:  4 some-grid-area;
+grid-area:  4 some-grid-area / 2 another-grid-area;
+
+/* span && [ <integer> || <custom-ident> ] values */
+grid-area: span 3;
+grid-area: span 3 / span some-grid-area;
+grid-area: 2 span / another-grid-area span;
+
+/* Global values */
+grid-area: inherit;
+grid-area: initial;
+grid-area: unset;

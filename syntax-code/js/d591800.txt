@@ -1,0 +1,11 @@
+WorkerLocation {hash: "", search: "", pathname: "/worker.js", port: "8000", hostname: "localhost"…}
+  hash: ""
+  host: "localhost:8000"
+  hostname: "localhost"
+  href: "http://localhost:8000/worker.js"
+  origin: "http://localhost:8000"
+  pathname: "/worker.js"
+  port: "8000"
+  protocol: "http:"
+  search: ""
+  __proto__: WorkerLocation

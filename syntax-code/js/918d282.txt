@@ -1,0 +1,4 @@
+let foo = document.getElementById('foo'); 
+if (foo.hasAttributes()) { 
+  // Do something with 'foo.attributes'
+}

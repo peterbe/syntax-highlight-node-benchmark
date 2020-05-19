@@ -1,0 +1,4 @@
+var p = document.getElementsByTagName("p")[0];
+console.log(p.nodeName); // shows: "P"
+p.outerHTML = "<div>This div replaced a paragraph.</div>";
+console.log(p.nodeName); // still "P";

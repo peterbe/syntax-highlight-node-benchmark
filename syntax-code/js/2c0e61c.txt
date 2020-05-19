@@ -1,0 +1,6 @@
+var button = document.querySelector("button"); 
+var input = document.querySelector("input"); 
+
+button.addEventListener("click", function(){
+  input.toggleAttribute("readonly");
+});

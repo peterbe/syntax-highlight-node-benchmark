@@ -1,0 +1,1 @@
+observer.root.style.border = "2px solid #44aa44";

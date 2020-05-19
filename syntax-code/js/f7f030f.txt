@@ -1,0 +1,7 @@
+const audioCtx = new window.AudioContext();
+let options = {
+  mediaStream : stream
+}
+
+let source = new MediaStreamAudioSourceNode(audioCtx, options);
+console.log(source.mediaStream);

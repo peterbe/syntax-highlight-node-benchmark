@@ -1,0 +1,4 @@
+var clipBox = document.getElementById("clipBox");
+clipBox.addEventListener("change", function (evt) {
+  document.getElementById("masked").style.maskClip = evt.target.value;
+});

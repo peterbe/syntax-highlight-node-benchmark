@@ -1,0 +1,4 @@
+// for cssrule: body { background-color: darkblue; }
+var stylesheet = document.styleSheets[0];
+
+alert(stylesheet.cssRules[0].selectorText); // body

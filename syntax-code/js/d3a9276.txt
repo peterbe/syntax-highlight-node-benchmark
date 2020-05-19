@@ -1,0 +1,4 @@
+window.addEventListener('vrdisplayblur', function() {
+  info.textContent = 'Display unfocused.';
+  reportDisplays();
+});

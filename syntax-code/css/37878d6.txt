@@ -1,0 +1,7 @@
+#replaced {
+  content: url("https://mdn.mozillademos.org/files/12668/MDN.svg");
+}
+
+#replaced::after { /* will not show if element replacement is supported */
+  content: " (" attr(id) ")"; 
+}

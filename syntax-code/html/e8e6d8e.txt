@@ -1,0 +1,7 @@
+<h2>Paperback Best Sellers</h2>
+<ol>
+  <li>Political Thriller</li>
+  <li class="new-entry">Halloween Stories</li>
+  <li>My Biography</li>    
+  <li class="new-entry">Vampire Romance</li>
+</ol>

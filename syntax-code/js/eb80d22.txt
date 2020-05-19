@@ -1,0 +1,16 @@
+<html>
+<script>
+function upHandler(ev) {
+  // Process the pointerup event
+}
+function init() {
+  let el = document.getElementById('target1');
+  el.onpointerup = upHandler;
+}
+</script>
+
+<body onload="init();">
+  <div id="target1"> Touch me ... </div>
+  <div id="target2" onpointerup="upHandler(event)"> Touch me ... </div>
+</body>
+</html>

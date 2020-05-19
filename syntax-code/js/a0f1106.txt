@@ -1,0 +1,4 @@
+let sources = xrSession.inputSources;
+if (sources.length > 0) {
+  handleInput(sources[0]);
+}

@@ -1,0 +1,1 @@
+let imageCapture = new ImageCapture(track);

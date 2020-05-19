@@ -1,0 +1,8 @@
+const ok = "a";
+console.log(ok.codePointAt(0).toString(16)); //   61: occupies < 1 byte
+
+const notOK = "✓"
+console.log(ok.codePointAt(0).toString(16)); // 2713: occupies > 1 byte
+
+console.log(btoa(ok));    // YQ==
+console.log(btoa(notOK)); // error

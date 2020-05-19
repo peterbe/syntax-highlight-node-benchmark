@@ -1,0 +1,20 @@
+function handleRefreshInterval() {
+  let redrawList = [];
+
+  visibleAds.forEach(function(adBox) {
+    let previousTime = adBox.dataset.totalViewTime;
+    updateAdTimer(adBox);
+
+    if (previousTime != adBox.dataset.totalViewTime) {
+      redrawList.push(adBox);
+    }
+  });
+
+  if (redrawList.length) {
+    window.requestAnimationFrame(function(time) {
+      redrawList.forEach(function(adBox) {
+        drawAdTimer(adBox);
+      });
+    });
+  }
+}

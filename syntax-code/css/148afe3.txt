@@ -1,0 +1,18 @@
+body {
+  background: beige;
+}
+
+section {
+  display: block;
+  width: 400px;
+  height: 160px;
+  background: lightgray;
+}
+
+p {
+  width: 50%;   /* == 400px * .5 = 200px */
+  height: 25%;  /* == 160px * .25 = 40px */
+  margin: 5%;   /* == 400px * .05 = 20px */
+  padding: 5%;  /* == 400px * .05 = 20px */
+  background: cyan;
+}

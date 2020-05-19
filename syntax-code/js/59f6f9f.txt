@@ -1,0 +1,7 @@
+textTracks.onaddtrack = updateTrackCount;
+textTracks.onremovetrack = updateTrackCount;
+
+function updateTrackCount(event) {
+  trackCount = textTracks.length;
+  drawTrackCountIndicator(trackCount);
+}

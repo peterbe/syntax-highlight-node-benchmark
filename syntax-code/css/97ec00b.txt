@@ -1,0 +1,1 @@
+p { overflow: hidden; /* no scrollbars are provided */ }

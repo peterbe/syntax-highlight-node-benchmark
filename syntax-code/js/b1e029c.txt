@@ -1,0 +1,10 @@
+function rotateViewBy(dx, dy) {
+  mouseYaw -= dx * MOUSE_SPEED;
+  mousePitch -= dy * MOUSE_SPEED;
+
+  if (mousePitch < -Math.PI * 0.5) {
+    mousePitch = -Math.PI * 0.5;
+  } else if (mousePitch > Math.PI * 0.5) {
+    mousePitch = Math.PI * 0.5;
+  }
+}

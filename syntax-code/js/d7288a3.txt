@@ -1,0 +1,27 @@
+var mediaConstraints = {
+  audio: true, // We want an audio track
+  video: true // ...and we want a video track
+};
+
+function invite(evt) {
+  if (myPeerConnection) {
+    alert("You can't start a call because you already have one open!");
+  } else {
+    var clickedUsername = evt.target.textContent;
+
+    if (clickedUsername === myUsername) {
+      alert("I'm afraid I can't let you talk to yourself. That would be weird.");
+      return;
+    }
+
+    targetUsername = clickedUsername;
+    createPeerConnection();
+
+    navigator.mediaDevices.getUserMedia(mediaConstraints)
+    .then(function(localStream) {
+      document.getElementById("local_video").srcObject = localStream;
+      localStream.getTracks().forEach(track => myPeerConnection.addTrack(track, localStream));
+    })
+    .catch(handleGetUserMediaError);
+  }
+}

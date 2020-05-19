@@ -1,0 +1,20 @@
+// Using a normal cursor to grab whole customer record objects
+index.openCursor().onsuccess = function(event) {
+  var cursor = event.target.result;
+  if (cursor) {
+    // cursor.key is a name, like "Bill", and cursor.value is the whole object.
+    console.log("Name: " + cursor.key + ", SSN: " + cursor.value.ssn + ", email: " + cursor.value.email);
+    cursor.continue();
+  }
+};
+
+// Using a key cursor to grab customer record object keys
+index.openKeyCursor().onsuccess = function(event) {
+  var cursor = event.target.result;
+  if (cursor) {
+    // cursor.key is a name, like "Bill", and cursor.value is the SSN.
+    // No way to directly get the rest of the stored object.
+    console.log("Name: " + cursor.key + ", SSN: " + cursor.primaryKey);
+    cursor.continue();
+  }
+};

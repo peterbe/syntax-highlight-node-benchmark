@@ -1,0 +1,29 @@
+let outputElem = document.getElementById("output");
+
+let userLanguages = {
+  "Mike": "en",
+  "Teresa": "es"
+};
+
+function greetUser(user) {
+  function localGreeting(user) {
+    let greeting;
+    let language = userLanguages[user];
+    
+    switch(language) {
+      case "es":
+        greeting = `¡Hola, ${user}!`;
+        break;
+      case "en":
+      default:
+        greeting = `Hello, ${user}!`;
+        break;
+    }
+    return greeting;
+  }
+  outputElem.innerHTML += localGreeting(user) + "<br>\r";
+}
+
+greetUser("Mike");
+greetUser("Teresa");
+greetUser("Veronica");

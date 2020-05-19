@@ -1,0 +1,12 @@
+fetch("awesome-picture.jpg").then(function(response) {
+  let elem = document.getElementById("warning-message-box");
+  if (response.redirected) {
+    elem.innerHTML = "Unexpected redirect";
+  } else {
+    elem.innerHTML = "";
+  }
+  return response.blob();
+}).then(function(imageBlob) {
+  let imgObjectURL = URL.createObjectURL(imageBlob);
+  document.getElementById("img-element-id").src = imgObjectURL;
+});

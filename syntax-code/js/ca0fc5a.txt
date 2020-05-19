@@ -1,0 +1,3 @@
+pc.onaddstream = function( ev ) {
+  alert("A stream (id: '" + ev.stream.id + "') has been added to this connection.");
+};

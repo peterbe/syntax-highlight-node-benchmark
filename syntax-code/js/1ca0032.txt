@@ -1,0 +1,11 @@
+// inside main.js
+
+const worker = new Worker("static/scripts/worker.js");
+
+worker.onmessage = (event) => {
+    console.error(`Received message from worker: ${event}`);
+};
+
+worker.onmessageerror = (event) => {
+    console.error(`Error receiving message from worker: ${event}`);
+};

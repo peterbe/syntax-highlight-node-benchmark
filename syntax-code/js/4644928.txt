@@ -1,0 +1,4 @@
+with(node) { 
+  after("foo");
+}
+// ReferenceError: after is not defined 

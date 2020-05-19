@@ -1,0 +1,11 @@
+ul {
+  font-size: 0;
+  ...
+}
+
+li {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  ...
+}

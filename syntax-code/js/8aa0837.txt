@@ -1,0 +1,2 @@
+      // Then get the displays attached to the computer
+      navigator.getVRDisplays().then(function(displays) {

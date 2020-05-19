@@ -1,0 +1,2 @@
+conic-gradient(#fff 90deg, #000 0.25turn 0.5turn, #fff 1rad 1.5rad, #000 300grad);
+background-size: 25% 25%;

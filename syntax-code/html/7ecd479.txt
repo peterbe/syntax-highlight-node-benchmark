@@ -1,0 +1,18 @@
+<style>
+  div {
+    margin: 0em;
+    padding: 2em;
+  }
+  #target1 {
+    background: white;
+    border: 1px solid black;
+  }
+  #target2 {
+    background: white;
+    border: 1px solid black;
+  }
+  #target3 {
+    background: white;
+    border: 1px solid black;
+  }
+</style>

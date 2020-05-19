@@ -1,0 +1,10 @@
+function decryptMessage(key, ciphertext) {
+  return window.crypto.subtle.decrypt(
+    {
+      name: "AES-CBC",
+      iv: iv
+    },
+    key,
+    ciphertext
+  );
+}

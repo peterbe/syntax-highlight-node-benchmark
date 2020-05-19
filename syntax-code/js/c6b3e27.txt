@@ -1,0 +1,4 @@
+function stilo() {
+  alert(document.styleSheets[0].cssRules[0].style.cssText);
+}
+// displays "background-color: gray;"

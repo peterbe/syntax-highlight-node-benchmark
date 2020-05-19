@@ -1,0 +1,11 @@
+async function validateResponse(response) {
+  try {
+    if (await checkAllValues(response)) {
+      await response.complete("success");
+    } else {
+      await response.complete("fail");
+    }
+  } catch(err) {
+    await response.complete("fail");
+  }
+}

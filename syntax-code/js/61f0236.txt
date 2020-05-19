@@ -1,0 +1,2 @@
+url.pathname = 'démonstration.html';
+console.log(url.href); // "http://www.example.com/d%C3%A9monstration.html"

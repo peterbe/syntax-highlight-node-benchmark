@@ -1,0 +1,9 @@
+<form> 
+  <div>
+    <label for="example">Type in some sample text</label>
+    <input id="example" type="text">
+  </div>
+  <div>
+    <input type="reset" value="Reset the form">
+  </div>
+</form>

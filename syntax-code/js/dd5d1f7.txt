@@ -1,0 +1,27 @@
+const jwkEcKey = {
+  "crv": "P-384",
+  "d": "wouCtU7Nw4E8_7n5C1-xBjB4xqSb_liZhYMsy8MGgxUny6Q8NCoH9xSiviwLFfK_",
+  "ext": true,
+  "key_ops": ["sign"],
+  "kty": "EC",
+  "x": "SzrRXmyI8VWFJg1dPUNbFcc9jZvjZEfH7ulKI1UkXAltd7RGWrcfFxqyGPcwu6AQ",
+  "y": "hHUag3OvDzEr0uUQND4PXHQTXP5IDGdYhJhL-WLKjnGjQAw0rNGy5V29-aV-yseW"
+};
+
+/*
+Import a PEM encoded RSA private key, to use for RSA-PSS signing.
+Takes a string containing the PEM encoded key, and returns a Promise
+that will resolve to a CryptoKey representing the private key.
+*/
+function importPrivateKey(jwk) {
+  return window.crypto.subtle.importKey(
+    "jwk",
+    jwk,
+    {
+      name: "ECDSA",
+      namedCurve: "P-384"
+    },
+    true,
+    ["sign"]
+  );
+}

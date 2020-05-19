@@ -1,0 +1,5 @@
+session.onend = (event) => {
+  /* the session has shut down */
+
+  freeResources();
+};

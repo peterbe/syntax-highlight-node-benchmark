@@ -1,0 +1,5 @@
+var flg = document.queryCommandSupported("SelectAll");
+
+if(flg) {
+  // ...Do something
+}

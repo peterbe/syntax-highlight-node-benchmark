@@ -1,0 +1,5 @@
+if (candidate.type == "host") {
+  showHostControls();
+} else {
+  hideHostControls();
+}

@@ -1,0 +1,3 @@
+function changeVolume(event) {
+  masterGainNode.gain.value = volumeControl.value
+}

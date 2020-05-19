@@ -1,0 +1,11 @@
+function decryptMessage(key, ciphertext) {
+  return window.crypto.subtle.decrypt(
+    {
+      name: "AES-CTR",
+      counter,
+      length: 64
+    },
+    key,
+    ciphertext
+  );
+}

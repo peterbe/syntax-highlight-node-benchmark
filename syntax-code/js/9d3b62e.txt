@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.onseeked = (event) => {
+  console.log('Video found the playback position it was looking for.');
+};

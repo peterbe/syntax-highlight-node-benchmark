@@ -1,0 +1,6 @@
+function focusInput() {
+  document.getElementById('myText').focus();
+}
+function blurInput() {
+  document.getElementById('myText').blur();
+}

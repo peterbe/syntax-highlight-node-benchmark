@@ -1,0 +1,6 @@
+#gradient {
+  width: 200px;
+  border: 30px solid;
+  border-image: repeating-linear-gradient(45deg, #f33, #3bf, #f33 30px) 60;
+  padding: 20px;
+}

@@ -1,0 +1,1 @@
+const evtSource = new EventSource("//api.example.com/ssedemo.php", { withCredentials: true } );

@@ -1,0 +1,3 @@
+objectStore.getAll().onsuccess = function(event) {
+  console.log("Got all customers: " + event.target.result);
+};

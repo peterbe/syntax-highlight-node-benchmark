@@ -1,0 +1,3 @@
+var barWidth = (WIDTH / bufferLength) * 2.5;
+var barHeight;
+var x = 0;

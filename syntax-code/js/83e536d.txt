@@ -1,0 +1,1 @@
+var intervalID = setInterval(function(arg1) {}.bind(undefined, 10), 1000);

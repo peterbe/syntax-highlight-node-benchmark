@@ -1,0 +1,1 @@
+let aBlock = document.createElement('block').appendChild( document.createElement('b') );

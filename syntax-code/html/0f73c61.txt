@@ -1,0 +1,3 @@
+<label for="pin">PIN:</label>
+<input id="pin" type="password" inputmode="numeric" minlength="4"
+       maxlength="8" size="8">

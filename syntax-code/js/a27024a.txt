@@ -1,0 +1,4 @@
+window.onvrdisplayblur = function() {
+  info.textContent = 'Display unfocused.';
+  reportDisplays();
+};

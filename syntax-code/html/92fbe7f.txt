@@ -1,0 +1,9 @@
+<label for="telNo">Phone number: </label>
+<input id="telNo" name="telNo" type="tel" list="defaultTels">
+
+<datalist id="defaultTels">
+  <option value="111-1111-1111">
+  <option value="122-2222-2222">
+  <option value="333-3333-3333">
+  <option value="344-4444-4444">
+</datalist>

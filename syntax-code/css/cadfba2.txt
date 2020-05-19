@@ -1,0 +1,20 @@
+#outer {
+  width: 250px;
+  height: 125px;
+  display: flex;
+}
+
+#red {
+  flex-grow: 1;
+  background: red;
+}
+
+#blue {
+  flex-grow: 1;
+  background: blue;
+}
+
+#log {
+  max-height: 120px;
+  overflow-y: scroll;
+}

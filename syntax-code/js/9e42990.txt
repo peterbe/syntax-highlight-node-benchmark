@@ -1,0 +1,1 @@
+piNode = document.createProcessingInstruction(target, data)

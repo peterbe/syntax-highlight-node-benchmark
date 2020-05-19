@@ -1,0 +1,5 @@
+const pannerControl = document.querySelector('#panner');
+
+pannerControl.addEventListener('input', function() {
+    panner.pan.value = this.value;
+}, false);

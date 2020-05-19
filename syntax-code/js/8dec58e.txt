@@ -1,0 +1,9 @@
+var clockImage = document.querySelector("img");
+let p = document.createElement("p");
+
+if (!clockImage.currentSrc.endsWith("200px.png")) {
+  p.innerText = "Using the 200px image.";
+} else {
+  p.innerText = "Using the 400px image!";
+}
+document.body.appendChild(p);

@@ -1,0 +1,6 @@
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioContext = new AudioContext();
+
+const oscillatorNode = audioContext.createOscillator();
+const gainNode = audioContext.createGain();
+const finish = audioContext.destination;

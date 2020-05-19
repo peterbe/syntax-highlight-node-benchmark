@@ -1,0 +1,6 @@
+dc.onclose = ev => {
+  messageInputBox.disabled = true;
+  sendButton.disabled = true;
+  connectButton.disabled = false;
+  disconnectButton.disabled = true;
+}

@@ -1,0 +1,3 @@
+var xpath = "//div";
+var result = document.evaluate(xpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+document.querySelector("output").textContent = result.snapshotLength;

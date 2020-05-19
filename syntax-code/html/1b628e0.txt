@@ -1,0 +1,3 @@
+<p>Thru-hiking is great, but <a
+  href="http://en.wikipedia.org/wiki/Absentee_ballot">casting a
+  ballot</a> is tricky.</p>

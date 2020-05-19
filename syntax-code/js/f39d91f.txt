@@ -1,0 +1,13 @@
+const controller = new AbortController();
+// Wait at most 200ms.
+setTimeout(() => controller.abort(), 200);
+
+try {
+  await navigator.locks.request('my_resource', {signal: controller.signal}, async lock => {
+    // The lock was acquired!
+  });
+} catch (ex) {
+  if (ex.name === 'AbortError') {
+    // The request aborted before it could be granted.
+  }
+}

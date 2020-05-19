@@ -1,0 +1,5 @@
+const audioCtx = new AudioContext();
+const delayNode = new DelayNode(audioCtx, {
+  delayTime: 0.5,
+  maxDelayTime: 2,
+});

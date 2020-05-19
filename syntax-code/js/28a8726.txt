@@ -1,0 +1,20 @@
+var openRequest = indexedDB.open('db', 2);
+console.log(openRequest.transaction); // Will log "null".
+
+openRequest.onupgradeneeded = function(event) {
+  console.log(openRequest.transaction.mode); // Will log "versionchange".
+  var db = openRequest.result;
+  if (event.oldVersion < 1) {
+    // New database, create "books" object store.
+    db.createObjectStore('books');
+  }
+  if (event.oldVersion < 2) {
+    // Upgrading from v1 database: add index on "title" to "books" store.
+    var bookStore = openRequest.transaction.objectStore('books');
+    bookStore.createIndex('by_title', 'title');
+  }
+};
+
+openRequest.onsuccess = function() {
+  console.log(openRequest.transaction); // Will log "null".
+};

@@ -1,0 +1,4 @@
+const foo = document.getElementById('foo');
+for (let i = 0; i < foo.children.length; i++) {
+  console.log(foo.children[i].tagName);
+}

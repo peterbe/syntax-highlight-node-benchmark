@@ -1,0 +1,4 @@
+with(node) { 
+  remove();
+}
+// ReferenceError: remove is not defined 

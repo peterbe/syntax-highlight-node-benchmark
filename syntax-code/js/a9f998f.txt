@@ -1,0 +1,6 @@
+var formElement = document.querySelector("form");
+var formData = new FormData(formElement);
+var request = new XMLHttpRequest();
+request.open("POST", "submitform.php");
+formData.append("serialnumber", serialNumber++);
+request.send(formData);

@@ -1,0 +1,6 @@
+onfetch = (e) => {
+  e.respondWith(fetch('/page2').then((r) => {
+    r.usefinalURL = true;
+    return r;
+  })
+}

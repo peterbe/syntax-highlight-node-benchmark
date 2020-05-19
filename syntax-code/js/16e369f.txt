@@ -1,0 +1,5 @@
+function starting(e) {
+  logMessage("Starting script with ID: " + e.target.id);
+}
+
+document.addEventListener("beforescriptexecute", starting, true);

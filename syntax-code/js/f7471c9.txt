@@ -1,0 +1,9 @@
+function sessionEnded() {
+  xrButton.innerText = "Enter WebXR";
+  
+  if (animationFrameRequestID) {
+    xrSession.cancelAnimationFrame(animationFrameRequestID);
+    animationFrameRequestID = 0;
+  }
+  xrSession = null;
+}

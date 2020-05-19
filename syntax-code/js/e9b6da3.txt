@@ -1,0 +1,1 @@
+let myRequest = new Request('flowers.jpg', myInit);

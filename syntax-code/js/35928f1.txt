@@ -1,0 +1,2 @@
+var dMuted = video.defaultMuted;
+audio.defaultMuted = true;

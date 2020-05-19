@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <tr>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Major</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3741255</td>
+      <td>Jones, Martha</td>
+      <td>Computer Science</td>
+    </tr>
+    <tr>
+      <td>3971244</td>
+      <td>Nim, Victor</td>
+      <td>Russian Literature</td>
+    </tr>
+    <tr>
+      <td>4100332</td>
+      <td>Petrov, Alexandra</td>
+      <td>Astrophysics</td>
+    </tr>
+  </tbody>
+</table>

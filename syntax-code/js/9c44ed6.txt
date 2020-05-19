@@ -1,0 +1,3 @@
+let audioContext = new AudioContext();
+
+let myConstantSource = new ConstantSourceNode(audioContext, { offset: 0.5 });

@@ -1,0 +1,3 @@
+self.ononline = function() {
+  console.log('Your worker is now online');
+}

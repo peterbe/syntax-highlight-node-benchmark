@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: tab-scroll-arrow-back;
+-webkit-appearance: tab-scroll-arrow-back; }

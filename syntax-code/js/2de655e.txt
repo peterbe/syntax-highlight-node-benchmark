@@ -1,0 +1,7 @@
+let result = document.getElementById("result");
+
+if (navigator.mediaDevices.getSupportedConstraints().deviceId) {
+  result.innerHTML = "Supported!";
+} else {
+  result.innerHTML = "Not supported!";
+}

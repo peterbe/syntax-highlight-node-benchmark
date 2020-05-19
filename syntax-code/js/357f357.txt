@@ -1,0 +1,3 @@
+document.onpointerout = (event) => {
+  console.log('Pointer moved out');
+};

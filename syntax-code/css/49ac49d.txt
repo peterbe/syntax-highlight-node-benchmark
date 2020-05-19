@@ -1,0 +1,9 @@
+/* Keyword value */
+max-zoom: auto;
+
+/* <number> values */
+max-zoom: 0.8;
+max-zoom: 2.0;
+
+/* <percentage> value */
+max-zoom: 150%;

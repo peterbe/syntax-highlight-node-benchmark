@@ -1,0 +1,9 @@
+var mimeTypes = navigator.MimeType;
+var flashPlugin = mimeTypes['video/x-flv'];
+if (typeof flashPlugin === "undefined") {
+  var vid = document.createElement('video');
+  // Use vid.canPlayType() to test for a supported mime type.
+} else {
+  // Notify the user that flash is being deprecated and they
+  //   should upgrade their browser.
+}

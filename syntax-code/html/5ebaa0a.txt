@@ -1,0 +1,2 @@
+<p class="normal">Firefox rocks!</p>
+<p class="small">Firefox rocks!</p>

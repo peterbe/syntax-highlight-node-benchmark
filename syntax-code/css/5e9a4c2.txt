@@ -1,0 +1,3 @@
+.diagonal-gradient {
+  background: linear-gradient(to bottom right, blue, pink);
+}

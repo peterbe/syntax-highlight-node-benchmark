@@ -1,0 +1,5 @@
+<form>
+  <label for="bday-month">What month were you born in?</label>
+  <input id="bday-month" type="month" name="bday-month"
+         min="1900-01" max="1999-12">
+</form>

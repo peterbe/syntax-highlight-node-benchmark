@@ -1,0 +1,7 @@
+pc.oniceconnectionstatechange = function(event) {
+  if (pc.iceConnectionState === "failed" ||
+      pc.iceConnectionState === "disconnected" ||
+      pc.iceConnectionState === "closed") {
+    // Handle the failure
+  }
+};

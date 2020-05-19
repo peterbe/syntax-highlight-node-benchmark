@@ -1,0 +1,3 @@
+if ([...event.dataTransfer.types].includes('text/html')) {
+  // Do something
+}

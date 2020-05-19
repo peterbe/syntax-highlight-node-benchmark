@@ -1,0 +1,14 @@
+const getDeviceGroup = mainDevInfo => {
+  let devList = [];
+
+  navigator.mediaDevices.enumerateDevices()
+  .then(devices => {
+    devices.forEach(device => {
+      if (device.groupId === mainDevInfo.groupId) {
+        devList.push(device);
+      }
+    });
+  });
+
+  return devList;
+};

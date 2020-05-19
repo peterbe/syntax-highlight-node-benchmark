@@ -1,0 +1,11 @@
+.two {
+  color: var(--my-var, red); /* Red if --my-var is not defined */
+}
+
+.three {
+  background-color: var(--my-var, var(--my-background, pink)); /* pink if --my-var and --my-background are not defined */
+}
+
+.three {
+  background-color: var(--my-var, --my-background, pink); /* Invalid: "--my-background, pink" */
+}

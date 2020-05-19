@@ -1,0 +1,2 @@
+<canvas id="canvas"></canvas>
+<p>In path: <code id="result">false</code></p>

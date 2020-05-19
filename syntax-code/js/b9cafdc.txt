@@ -1,0 +1,39 @@
+function setup() {
+  noteFreq = createNoteTable();
+ 
+  volumeControl.addEventListener("change", changeVolume, false);
+ 
+  masterGainNode = audioContext.createGain();
+  masterGainNode.connect(audioContext.destination);
+  masterGainNode.gain.value = volumeControl.value;
+ 
+  // Create the keys; skip any that are sharp or flat; for
+  // our purposes we don't need them. Each octave is inserted
+  // into a <div> of class "octave".
+ 
+  noteFreq.forEach(function(keys, idx) {
+    let keyList = Object.entries(keys);
+    let octaveElem = document.createElement("div");
+    octaveElem.className = "octave";
+    
+    keyList.forEach(function(key) {
+      if (key[0].length == 1) {
+        octaveElem.appendChild(createKey(key[0], idx, key[1]));
+      }
+    });
+
+    keyboard.appendChild(octaveElem);
+  });
+
+  document.querySelector("div[data-note='B'][data-octave='5']").scrollIntoView(false);
+ 
+  sineTerms = new Float32Array([0, 0, 1, 0, 1]);
+  cosineTerms = new Float32Array(sineTerms.length);
+  customWaveform = audioContext.createPeriodicWave(cosineTerms, sineTerms);
+ 
+  for (i=0; i<9; i++) {
+      oscList[i] = [];
+  }
+}
+
+setup();

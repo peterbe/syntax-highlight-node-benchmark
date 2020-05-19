@@ -1,0 +1,7 @@
+<div id="masked">
+</div>
+<select id="maskMode">
+  <option value="alpha">alpha</option>
+  <option value="luminance">luminance</option>
+  <option value="match-source">match-source</option>
+</select>

@@ -1,0 +1,9 @@
+function gotICECandidateMessage(msg) {
+  var iceCandidate = new RTCIceCandidate({
+        candidate: msg.candidate;
+  });
+
+  pc.addIceCandidate(iceCandidate).catch({
+    /* handle error */
+  });
+}

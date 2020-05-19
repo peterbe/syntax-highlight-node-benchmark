@@ -1,0 +1,14 @@
+var xhr = new XMLHttpRequest();
+xhr.open('GET', '/server', true);
+
+xhr.timeout = 2000; // time in milliseconds
+
+xhr.onload = function () {
+  // Request finished. Do processing here.
+};
+
+xhr.ontimeout = function (e) {
+  // XMLHttpRequest timed out. Do something here.
+};
+
+xhr.send(null);

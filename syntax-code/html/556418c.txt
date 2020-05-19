@@ -1,0 +1,4 @@
+<ruby>
+  <rb>This is a long text to check</rb>
+  <rp>（</rp><rt>short ruby</rt><rp>）</rp>
+</ruby>

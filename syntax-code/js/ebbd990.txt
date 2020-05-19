@@ -1,0 +1,1 @@
+var myPosition = VRPose.position;

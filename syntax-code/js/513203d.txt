@@ -1,0 +1,20 @@
+<!-- controller.html -->
+<button id="reconnectBtn" style="display: none;">Reconnect</button>
+<script>
+  var reconnect = function () {
+    // read presId from localStorage if exists
+    var presId = localStorage["presId"];
+    // presId is mandatory when reconnecting to a presentation.
+    if (!!presId) {
+      request.reconnect(presId)
+        // The new connection to the presentation will be passed to
+        // setConnection on success.
+        .then(setConnection);
+        // No connection found for presUrl and presId, or an error occurred.
+    }
+  };
+  // On navigation of the controller, reconnect automatically.
+  document.addEventListener("DOMContentLoaded", reconnect);
+  // Or allow manual reconnection.
+  reconnectBtn.onclick = reconnect;
+</script>

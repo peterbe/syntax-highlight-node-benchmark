@@ -1,0 +1,30 @@
+var publicKey = {
+  challenge: new Uint8Array(26) /* this actually is given from the server */,
+  rp: {
+    name: "Example CORP",
+    id  : "login.example.com"
+  },
+  user: {
+    // To be changed for each user
+    id: new Uint8Array.from(window.atob("LAEGMLKJNRLKGNAMLAFALFKA="), c=>c.charCodeAt(0));
+
+    name: "jdoe@example.com",
+    displayName: "John Doe",
+    icon: "https://gravatar.com/avatar/jdoe.png"
+  },
+  pubKeyCredParams: [
+    {
+      type: "public-key",
+      alg: -7
+    }
+  ]
+};
+
+navigator.credentials.create({ publicKey })
+  .then(function (newCredentialInfo) {
+    // send attestation response and client extensions
+    // to the server to proceed with the registration
+    // of the credential
+  }).catch(function (err) {
+     console.error(err);
+  });

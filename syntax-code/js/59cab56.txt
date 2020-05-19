@@ -1,0 +1,3 @@
+myHeaders.append('Content-Type', 'image/jpeg');
+myHeaders.has('Content-Type'); // Returns true
+myHeaders.has('Accept-Encoding'); // Returns false

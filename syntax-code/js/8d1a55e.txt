@@ -1,0 +1,4 @@
+element.addEventListener("load", () => console.log("Loaded data"));
+console.log("Fetching data...");
+element.getData();
+console.log("Data fetched");

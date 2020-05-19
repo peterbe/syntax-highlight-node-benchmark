@@ -1,0 +1,8 @@
+function playSweep() {
+     let osc = audioCtx.createOscillator();
+     osc.setPeriodicWave(wave);
+     osc.frequency.value = 440;
+     osc.connect(audioCtx.destination);
+     osc.start();
+     osc.stop(audioCtx.currentTime + 1);
+}

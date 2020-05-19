@@ -1,0 +1,9 @@
+window.addEventListener('message', (event) => {
+    const myPort = event.ports[0];
+
+    myPort.addEventListener('message', (event) => {
+        received.textContent = event.data;
+    });
+
+    myPort.start();
+});

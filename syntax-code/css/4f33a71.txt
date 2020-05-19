@@ -1,0 +1,7 @@
+p.para1 {
+  font-language-override: normal;
+}
+
+p.para2 {
+  font-language-override: "DAN";
+}

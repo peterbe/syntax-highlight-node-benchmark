@@ -1,0 +1,3 @@
+navigator.mediaDevices.addEventListener('devicechange', function(event) {
+  updateDeviceList();
+});

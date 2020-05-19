@@ -1,0 +1,1 @@
+speechRecognitionList.addFromString(grammar, 1);

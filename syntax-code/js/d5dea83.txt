@@ -1,0 +1,3 @@
+function changeVolume(event) {
+  constantNode.offset.value = volumeControl.value;
+}

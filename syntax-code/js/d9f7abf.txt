@@ -1,0 +1,5 @@
+var parent = document.createElement("div");
+parent.append("Some text");
+parent.prepend("Headline: ");
+
+console.log(parent.textContent); // "Headline: Some text"

@@ -1,0 +1,1 @@
+cssStyleSheet.addRule(selector, styles, 0);

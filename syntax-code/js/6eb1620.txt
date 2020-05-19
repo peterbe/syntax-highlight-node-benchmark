@@ -1,0 +1,8 @@
+const viewerStartPosition = vec3.fromValues(0, 0, -10);
+const viewerStartOrientation = vec3.fromValues(0, 0, 1.0);
+
+const cubeOrientation = vec3.create();
+const cubeMatrix = mat4.create();
+const mouseMatrix = mat4.create();
+const inverseOrientation = quat.create();
+const RADIANS_PER_DEGREE = Math.PI / 180.0;

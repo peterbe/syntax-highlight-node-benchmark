@@ -1,0 +1,14 @@
+function handleStart(evt) {
+  log("pointerdown.");
+  var el = document.getElementsByTagName("canvas")[0];
+  var ctx = el.getContext("2d");
+        
+  log("pointerdown: id = " + evt.pointerId);
+  ongoingTouches.push(copyTouch(evt));
+  var color = colorForTouch(evt);
+  ctx.beginPath();
+  ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);  // a circle at the start
+  ctx.arc(evt.clientX, evt.clientY, 4, 0, 2 * Math.PI, false);  // a circle at the start
+  ctx.fillStyle = color;
+  ctx.fill();
+}

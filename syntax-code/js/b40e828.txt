@@ -1,0 +1,5 @@
+if (navigator.receiver) {
+  footer.innerHTML = "Receiving presentation";
+}  else {
+  footer.innerHTML = "(idle)";
+}

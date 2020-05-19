@@ -1,0 +1,3 @@
+var select = document.querySelector('.select');
+var inner = select.querySelectorAll(':scope .outer .inner');
+inner.length; // 0

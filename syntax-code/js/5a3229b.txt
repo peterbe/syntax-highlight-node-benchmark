@@ -1,0 +1,10 @@
+function dragstart_handler(event)
+{
+  var dt = event.dataTransfer;
+  var idx = dt.mozItemCount;
+  // Add two new items to the drag transfer 
+  if (idx >= 0) {
+    dt.mozSetDataAt("text/uri-list","http://www.example.com/", idx);
+    dt.mozSetDataAt("text/html", "Hello World", idx+1);
+  }
+}

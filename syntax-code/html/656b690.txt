@@ -1,0 +1,2 @@
+<button class="green button" type="button">Start Game</button>
+<button class="blue button use-webxr" type="button">Start Game (VR mode)</button>

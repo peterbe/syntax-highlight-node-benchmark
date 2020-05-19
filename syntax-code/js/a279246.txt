@@ -1,0 +1,5 @@
+formData.append('name', true);
+formData.append('name', 74);
+formData.append('name', 'John');
+
+formData.getAll('name'); // ["true", "74", "John"]

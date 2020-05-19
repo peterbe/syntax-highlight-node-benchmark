@@ -1,0 +1,3 @@
+firstImage = imageCollection.item(0);
+
+firstImage = imageCollection[0];

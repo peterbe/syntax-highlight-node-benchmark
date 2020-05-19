@@ -1,0 +1,21 @@
+<div id="container">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<select id="justifyContent">
+  <option value="start">start</option>
+  <option value="end">end</option>
+  <option value="flex-start">flex-start</option>
+  <option value="flex-end">flex-end</option>
+  <option value="center">center</option>
+  <option value="left">left</option>
+  <option value="right">right</option>
+  <option value="baseline">baseline</option>
+  <option value="first baseline">first baseline</option>
+  <option value="last baseline">last baseline</option>
+  <option value="space-between" selected>space-between</option>
+  <option value="space-around">space-around</option>
+  <option value="space-evenly">space-evenly</option>
+  <option value="stretch">stretch</option>
+</select>

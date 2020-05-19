@@ -1,0 +1,9 @@
+var reader = new FileReader();
+console.log('EMPTY', reader.readyState); // readyState will be 0
+
+reader.readAsText(blob);
+console.log('LOADING', reader.readyState); // readyState will be 1
+
+reader.onloadend = function () {
+  console.log('DONE', reader.readyState); // readyState will be 2
+};

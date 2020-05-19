@@ -1,0 +1,25 @@
+/* Keyword values */
+place-items: auto center;
+place-items: normal start;
+
+/* Positional alignment */
+place-items: center normal;
+place-items: start auto;
+place-items: end normal;
+place-items: self-start auto;
+place-items: self-end normal;
+place-items: flex-start auto;
+place-items: flex-end normal;
+place-items: left auto;
+place-items: right normal;
+
+/* Baseline alignment */
+place-items: baseline normal;
+place-items: first baseline auto;
+place-items: last baseline normal;
+place-items: stretch auto;
+
+/* Global values */
+place-items: inherit;
+place-items: initial;
+place-items: unset;

@@ -1,0 +1,2 @@
+This text has special styles when you highlight it.
+<p>Also try selecting text in this paragraph.</p>

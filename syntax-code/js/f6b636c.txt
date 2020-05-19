@@ -1,0 +1,3 @@
+svgElem.addEventListener('load', () => {
+  console.log('SVG loaded.');
+})

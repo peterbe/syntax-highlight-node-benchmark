@@ -1,0 +1,12 @@
+async function start() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+
+    for (const track of stream.getTracks()) {
+      pc.addTrack(track, stream);
+    }
+    selfVideo.srcObject = stream;
+  } catch(err) {
+    console.error(err);
+  }
+}

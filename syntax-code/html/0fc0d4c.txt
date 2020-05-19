@@ -1,0 +1,2 @@
+<p>You can also create a new document using the keyboard shortcut
+<kbd><kbd>Ctrl</kbd>+<kbd>N</kbd></kbd>.</p>

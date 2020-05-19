@@ -1,0 +1,21 @@
+// Old webkitAudioContext code:
+var filter = context.createBiquadFilter();
+filter.type = filter.LOWPASS;   // lowpass filter
+filter.type = filter.HIGHPASS;  // highpass filter
+filter.type = filter.BANDPASS;  // bandpass filter
+filter.type = filter.LOWSHELF;  // lowshelf filter
+filter.type = filter.HIGHSHELF; // highshelf filter
+filter.type = filter.PEAKING;   // peaking filter
+filter.type = filter.NOTCH;     // notch filter
+filter.type = filter.ALLPASS;   // allpass filter
+
+// New standard AudioContext code:
+var filter = context.createBiquadFilter();
+filter.type = "lowpass";        // lowpass filter
+filter.type = "highpass";       // highpass filter
+filter.type = "bandpass";       // bandpass filter
+filter.type = "lowshelf";       // lowshelf filter
+filter.type = "highshelf";      // highshelf filter
+filter.type = "peaking";        // peaking filter
+filter.type = "notch";          // notch filter
+filter.type = "allpass";        // allpass filter

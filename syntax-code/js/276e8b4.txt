@@ -1,0 +1,8 @@
+let keyPair = window.crypto.subtle.generateKey(
+  {
+    name: "ECDSA",
+    namedCurve: "P-384"
+  },
+  true,
+  ["sign", "verify"]
+);

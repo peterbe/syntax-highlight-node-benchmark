@@ -1,0 +1,3 @@
+animateElem.onrepeat = () => {
+  console.log('repeatEvent fired');
+}

@@ -1,0 +1,1 @@
+console.log(window.getSelection().containsNode(document.body, true));

@@ -1,0 +1,6 @@
+animation.pause();
+animation.ready.then(function() {
+  // Displays 'running'
+  alert(animation.playState);
+});
+animation.play();

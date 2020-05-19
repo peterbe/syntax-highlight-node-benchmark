@@ -1,0 +1,8 @@
+let r = document.createRange();
+let startNode = document.querySelector("section h2").childNodes[0];
+r.setStart(startNode, 11);
+
+let endNode = document.querySelector("#entry1 p em").childNodes[0];
+r.setEnd(endNode, 2);
+
+let fragment = r.cloneContents();

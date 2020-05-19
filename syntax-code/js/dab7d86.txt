@@ -1,0 +1,14 @@
+let options = {
+  types: ['deprecation'],
+  buffered: true
+}
+
+let observer = new ReportingObserver(function(reports, observer) {
+  reportBtn.onclick = () => displayReports(reports);
+}, options);
+
+observer.observe()
+
+...
+
+observer.disconnect()

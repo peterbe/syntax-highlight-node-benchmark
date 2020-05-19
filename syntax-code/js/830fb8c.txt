@@ -1,0 +1,2 @@
+affixScriptToHead("myScript1.js");
+affixScriptToHead("myScript2.js", function () { alert("The script \"myScript2.js\" has been correctly loaded."); });

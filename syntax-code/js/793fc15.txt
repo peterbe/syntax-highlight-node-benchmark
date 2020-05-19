@@ -1,0 +1,3 @@
+document.querySelector("video").videoTracks.onaddtrack = function(event) {
+  addToTrackList(event.track);
+};

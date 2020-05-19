@@ -1,0 +1,16 @@
+const mediaSource = new MediaSource();
+const video = document.createElement('video');
+// Older browsers may not have srcObject
+if ('srcObject' in video) {
+  try {
+    video.srcObject = mediaSource;
+  } catch (err) {
+    if (err.name != "TypeError") {
+      throw err;
+    }
+    // Even if they do, they may only support MediaStream
+    video.src = URL.createObjectURL(mediaSource);
+  }
+} else {
+  video.src = URL.createObjectURL(mediaSource);
+}

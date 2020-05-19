@@ -1,0 +1,8 @@
+let customElem = document.querySelector('my-shadow-dom-element');
+let shadow = customElem.shadowRoot;
+
+// Another way to check whether the shadow root is open; it will return null if not
+if(shadow) {
+  // If it is open, close it to stop people stealing our secrets!
+  shadow.mode = 'closed';
+}

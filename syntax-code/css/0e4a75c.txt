@@ -1,0 +1,18 @@
+aside {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: cornsilk;
+  padding: 5px 10px;
+}
+
+aside ul {
+  padding-left: 0;
+}
+
+aside ul li {
+  list-style: none;
+}
+
+aside ul li a {
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+function dragWithCustomImage(event) {
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = 50;
+
+  const ctx = canvas.getContext("2d");
+  ctx.lineWidth = 4;
+  ctx.moveTo(0, 0);
+  ctx.lineTo(50, 50);
+  ctx.moveTo(0, 50);
+  ctx.lineTo(50, 0);
+  ctx.stroke();
+
+  const dt = event.dataTransfer;
+  dt.setData('text/plain', 'Data to Drag');
+  dt.setDragImage(canvas, 25, 25);
+}

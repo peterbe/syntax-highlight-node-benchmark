@@ -1,0 +1,15 @@
+p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.horizontal {
+  text-underline-position: under;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-underline-position: left;
+}

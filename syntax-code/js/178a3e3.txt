@@ -1,0 +1,12 @@
+function updateAdTimer(adBox) {
+  let lastStarted = adBox.dataset.lastViewStarted;
+  let currentTime = performance.now();
+
+  if (lastStarted) {
+    let diff = currentTime - lastStarted;
+
+    adBox.dataset.totalViewTime = parseFloat(adBox.dataset.totalViewTime) + diff;
+  }
+
+  adBox.dataset.lastViewStarted = currentTime;
+}

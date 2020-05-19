@@ -1,0 +1,3 @@
+var offscreen = new OffscreenCanvas(256, 256);
+offscreen.width; // 256
+offscreen.width = 512;

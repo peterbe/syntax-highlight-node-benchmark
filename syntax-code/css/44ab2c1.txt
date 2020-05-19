@@ -1,0 +1,10 @@
+div {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.skewed {
+  transform: skew(10deg); /* Equal to skewX(10deg) */
+  background-color: pink;
+}

@@ -1,0 +1,7 @@
+p {
+  outline: 1px dashed red;
+  outline-offset: 10px;
+  background: yellow;
+  border: 1px solid blue;
+  margin: 15px;
+}

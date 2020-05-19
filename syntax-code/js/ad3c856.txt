@@ -1,0 +1,3 @@
+var ac = new AudioContext();
+
+var myDestination = new MediaStreamAudioDestinationNode(ac);

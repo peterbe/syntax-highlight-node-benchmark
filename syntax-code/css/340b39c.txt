@@ -1,0 +1,6 @@
+.box {
+  border-end-start-radius: 1em;
+  border-end-end-radius: 0;
+  border-start-end-radius: 20px;
+  border-start-start-radius: 40px;
+}

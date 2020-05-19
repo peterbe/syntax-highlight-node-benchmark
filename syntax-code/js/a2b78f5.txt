@@ -1,0 +1,3 @@
+recognition.onspeechstart = function() {
+  console.log('Speech has been detected');
+}

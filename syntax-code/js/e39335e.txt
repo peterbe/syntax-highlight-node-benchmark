@@ -1,0 +1,2 @@
+// Shrink the window 
+window.resizeBy(-200, -200);

@@ -1,0 +1,13 @@
+#box {
+  width: var(--boxwidth);
+  height: var(--boxwidth);
+  left: 0;
+  top: 0;
+  border: 1px solid #7788FF;
+  margin: 0;
+  position: relative;
+  background-color: #2233FF;
+  display: flex;
+  justify-content: center;
+  animation: 2s ease-in-out 0s infinite alternate both paused slideBox;
+} 

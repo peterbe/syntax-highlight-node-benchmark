@@ -1,0 +1,8 @@
+function doDrop(event) {
+  const supportedTypes = ["application/x-moz-file", "text/uri-list", "text/plain"];
+  const types = event.dataTransfer.types.filter(type => supportedTypes.includes(type));
+  if (types.length) {
+    const data = event.dataTransfer.getData(types[0]);
+  }
+  event.preventDefault();
+}

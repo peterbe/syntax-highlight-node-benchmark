@@ -1,0 +1,9 @@
+.outer {
+  border: 2px solid red;
+  width: 300px;
+  display: contents;
+}
+
+.outer > div {
+  border: 1px solid green;
+}

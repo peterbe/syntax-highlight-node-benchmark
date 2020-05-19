@@ -1,0 +1,4 @@
+<p>Press keys on the keyboard to see what the KeyboardEvent's key and code
+   values are for each one.</p>
+<div id="output">
+</div>

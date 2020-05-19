@@ -1,0 +1,29 @@
+xrSession.addEventListener("squeezestart", onSqueezeEvent);
+xrSession.addEventListener("squeeze", onSqueezeEvent);
+xrSession.addEventListener("squeezeend", onSqueezeEvent);
+
+function onSqueezeEvent(event) {
+  let source = event.inputSource;
+  let targetObj = null;
+
+  if (source.targetRayMode != "tracked-pointer") {
+    return;
+  }
+
+  let targetRayPose = event.frame.getPose(source.targetRaySpace, myRefSpace);
+  if (!targetRayPose) {
+    return;
+  }
+
+  switch(event.type) {
+    case "squeezestart":
+      targetObj = myBeginTracking(targetRayPose.matrix);
+      break;
+    case "squeeze":
+      myDropObject(targetObj, targetRayPose.matrix);
+      break;
+    case "squeezeend":
+      myStopTracking(targetObj, targetRayPose.matrix);
+      break;
+  }
+}

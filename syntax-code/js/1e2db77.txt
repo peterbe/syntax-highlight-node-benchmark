@@ -1,0 +1,5 @@
+let glLayer = xrSession.renderState.baseLayer;
+gl.bindFramebuffer(gl.FRAMEBUFFER, glLayer.framebuffer);
+
+frameWidth = glLayer.framebufferWidth;
+frameHeight = glLayer.framebufferHeight;

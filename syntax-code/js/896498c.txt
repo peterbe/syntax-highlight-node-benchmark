@@ -1,0 +1,4 @@
+var canvas = document.getElementById('canvas');
+gl = canvas.getContext('webgl');
+
+gl.getExtension('WEBGL_lose_context').loseContext();

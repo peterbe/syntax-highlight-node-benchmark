@@ -1,0 +1,3 @@
+node.onended = function(event) {
+  document.getElementById("startButton").disabled = false;
+}

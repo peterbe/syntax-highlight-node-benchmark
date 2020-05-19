@@ -1,0 +1,5 @@
+viewerPose = xrFrame.getViewerPose(xrReferenceSpace);
+
+if (viewerPose) {
+  /* render the pose's views */
+}

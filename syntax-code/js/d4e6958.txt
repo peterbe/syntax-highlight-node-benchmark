@@ -1,0 +1,4 @@
+const audioContext = new AudioContext()
+await audioContext.audioWorklet.addModule('test-processor.js')
+const node = new AudioWorkletNode(audioContext, 'test-processor')
+node.connect(audioContext.destination)

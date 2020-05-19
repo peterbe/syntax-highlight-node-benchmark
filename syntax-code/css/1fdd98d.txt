@@ -1,0 +1,10 @@
+@keyframes slideBox {
+  from {
+    left:0;
+    top:0;
+  }
+  to {
+    left:calc(100% - var(--boxwidth));
+    top:calc(100% - var(--boxwidth))
+  }
+}

@@ -1,0 +1,5 @@
+element.animate({
+  opacity: [ 0, 0.9, 1 ],
+  offset: [ 0, 0.8 ], // Shorthand for [ 0, 0.8, 1 ]
+  easing: [ 'ease-in', 'ease-out' ],
+}, 2000);

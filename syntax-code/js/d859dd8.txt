@@ -1,0 +1,1 @@
+event.dataTransfer.setData("text/plain", "This is text to drag");

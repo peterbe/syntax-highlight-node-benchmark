@@ -1,0 +1,4 @@
+tbody > tr > th:first-of-type {
+  text-align: left;
+  background-color: rgb(225, 229, 244);
+}

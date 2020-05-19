@@ -1,0 +1,2 @@
+repeating-conic-gradient(red, orange, yellow, green, blue 50%);
+repeating-conic-gradient(from -45deg, red 45deg, orange, yellow, green, blue 225deg)

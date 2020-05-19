@@ -1,0 +1,8 @@
+var myInit = { method: 'GET',
+               headers: {
+                   'Content-Type': 'image/jpeg'
+               },
+               mode: 'cors',
+               cache: 'default' };
+
+var myRequest = new Request('flowers.jpg', myInit);

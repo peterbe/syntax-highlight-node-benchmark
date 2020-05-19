@@ -1,0 +1,5 @@
+let parent = document.createElement("div")
+let p = document.createElement("p")
+parent.append(p)
+
+console.log(parent.childNodes) // NodeList [ <p> ]

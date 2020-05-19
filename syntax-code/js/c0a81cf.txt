@@ -1,0 +1,2 @@
+// Let us open our database
+var request = window.indexedDB.open("MyTestDatabase", 3);

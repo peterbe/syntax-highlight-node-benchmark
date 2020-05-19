@@ -1,0 +1,3 @@
+var dt = event.dataTransfer;
+dt.setData("text/uri-list", "https://www.mozilla.org");
+dt.setData("text/plain", "https://www.mozilla.org");

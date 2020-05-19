@@ -1,0 +1,2 @@
+console.log(document.getElementById("b1").previousSibling); // <img id="b0">
+console.log(document.getElementById("b2").previousSibling.id); // "b1"

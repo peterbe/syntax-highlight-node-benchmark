@@ -1,0 +1,3 @@
+var {
+  font: bold 15px "Courier", "Courier New", monospace;
+}

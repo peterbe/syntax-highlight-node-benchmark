@@ -1,0 +1,5 @@
+<html>
+ <body onload="draw();">
+   <canvas id="canvas" width="130" height="100"></canvas>
+ </body>
+</html>

@@ -1,0 +1,8 @@
+<form action="/search">
+  <hr>
+  <label>
+    Search Document...
+    <input name="isindex">
+  </label>
+  <hr>
+</form>

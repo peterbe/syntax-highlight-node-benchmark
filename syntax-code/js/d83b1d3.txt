@@ -1,0 +1,2 @@
+var ram1 = window.navigator.deviceMemory;
+var ram2 = navigator.deviceMemory;

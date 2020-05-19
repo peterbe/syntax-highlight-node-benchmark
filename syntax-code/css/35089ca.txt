@@ -1,0 +1,12 @@
+.multiposition-stops { 
+   background: linear-gradient(to left, 
+       lime 20%, red 30%, red 45%, cyan 55%, cyan 70%, yellow 80% );  
+   background: linear-gradient(to left, 
+       lime 20%, red 30% 45%, cyan 55% 70%, yellow 80% ); 
+}
+.multiposition-stop2 { 
+   background: linear-gradient(to left, 
+      lime 25%, red 25%, red 50%, cyan 50%, cyan 75%, yellow 75% ); 
+   background: linear-gradient(to left, 
+      lime 25%, red 25% 50%, cyan 50% 75%, yellow 75% ); 
+}

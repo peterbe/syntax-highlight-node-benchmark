@@ -1,0 +1,3 @@
+.auto-spaced-linear-gradient {
+  background: linear-gradient(red, yellow, blue, orange);
+}

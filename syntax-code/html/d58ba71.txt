@@ -1,0 +1,3 @@
+<p>The variables <var>minSpeed</var> and <var>maxSpeed</var> control
+   the minimum and maximum speed of the apparatus in revolutions
+   per minute (RPM).</p>

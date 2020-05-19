@@ -1,0 +1,4 @@
+// create a new channel listening to the "internal_notification" channel.
+
+var bc = new BroadcastChannel('internal_notification');
+bc.postMessage('New listening connected!');

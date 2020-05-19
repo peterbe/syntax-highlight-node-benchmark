@@ -1,0 +1,3 @@
+canvasCtx.lineWidth = 2;
+canvasCtx.strokeStyle = 'rgb(0, 0, 0)';
+canvasCtx.beginPath();

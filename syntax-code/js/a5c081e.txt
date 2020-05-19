@@ -1,0 +1,20 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const imageData = ctx.createImageData(100, 100);
+
+// Iterate through every pixel
+for (let i = 0; i < imageData.data.length; i += 4) {
+  // Percentage in the x direction, times 255
+  let x = (i % 400) / 400 * 255;
+  // Percentage in the y direction, times 255
+  let y = Math.ceil(i / 400) / 100 * 255;
+
+  // Modify pixel data
+  imageData.data[i + 0] = x;        // R value
+  imageData.data[i + 1] = y;        // G value
+  imageData.data[i + 2] = 255 - x;  // B value
+  imageData.data[i + 3] = 255;      // A value
+}
+
+// Draw image data to the canvas
+ctx.putImageData(imageData, 20, 20);

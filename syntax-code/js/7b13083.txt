@@ -1,0 +1,9 @@
+var xmlhttp = new XMLHttpRequest(),
+  method = 'GET',
+  url = 'https://developer.mozilla.org/';
+
+xmlhttp.open(method, url, true);
+xmlhttp.onloadstart = function () {
+  console.log("Download underway");
+};
+xmlhttp.send();

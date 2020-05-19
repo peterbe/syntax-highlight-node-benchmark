@@ -1,0 +1,10 @@
+function handleInput(e) {
+  // Checks whether the event bubbles and ...
+  if (!e.bubbles) {
+    // ... passes the event along if does not
+    passItOn(e);
+  }
+
+  // Already bubbling
+  doOutput(e);
+}

@@ -1,0 +1,7 @@
+let positionState = {
+  duration: Infinity;
+  playbackRate: 1.0;
+  position: 0.0;
+};
+
+navigator.mediaSession.setPositionState(positionState);

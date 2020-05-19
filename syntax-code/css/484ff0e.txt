@@ -1,0 +1,5 @@
+hue-rotate(-90deg)  /* Same as 270deg rotation */
+hue-rotate(0deg)    /* No effect */
+hue-rotate(90deg)   /* 90deg rotation */
+hue-rotate(.5turn)  /* 180deg rotation */
+hue-rotate(405deg)  /* Same as 45deg rotation */

@@ -1,0 +1,11 @@
+.wrapper ul {   
+    overflow: hidden;
+    margin: 0 -10px;
+    padding: 0;
+    list-style: none;
+}
+.wrapper li {
+    float: left;
+    width: calc(33.333333% - 20px);
+    margin: 0 10px 20px 10px;
+}

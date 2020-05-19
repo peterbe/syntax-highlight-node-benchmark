@@ -1,0 +1,11 @@
+{
+  "cardNumber' : '9999999999999999",
+  "cardholderName' : 'Mr Dick Straw",
+  "cardSecurityCode" : "999",
+  "expiryMonth" : "07",
+  "expiryYear" : "2021",
+  "billingAddress" : {
+    "country" : "GB",
+    // etc. billing address is a PaymentAddress object
+  }
+}

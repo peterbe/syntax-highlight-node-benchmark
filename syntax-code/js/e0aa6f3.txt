@@ -1,0 +1,26 @@
+  function disconnectPeers() {
+ 
+    // Close the RTCDataChannels if they're open.
+    
+    sendChannel.close();
+    receiveChannel.close();
+    
+    // Close the RTCPeerConnections
+    
+    localConnection.close();
+    remoteConnection.close();
+
+    sendChannel = null;
+    receiveChannel = null;
+    localConnection = null;
+    remoteConnection = null;
+    
+    // Update user interface elements
+    
+    connectButton.disabled = false;
+    disconnectButton.disabled = true;
+    sendButton.disabled = true;
+    
+    messageInputBox.value = "";
+    messageInputBox.disabled = true;
+  }

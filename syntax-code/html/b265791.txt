@@ -1,0 +1,4 @@
+<div id="parent">Parent
+  <div id="noWidth">No width</div>
+  <div id="width">width: 100px</div>
+</div>

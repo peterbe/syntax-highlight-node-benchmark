@@ -1,0 +1,6 @@
+let parent = document.createElement("div")
+
+with(parent) { 
+  append("foo")
+}
+// ReferenceError: append is not defined 

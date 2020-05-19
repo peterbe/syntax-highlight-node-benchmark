@@ -1,0 +1,4 @@
+zoomctx.drawImage(canvas, 
+                  Math.min(Math.max(0, x - 5), img.width - 10),
+                  Math.min(Math.max(0, y - 5), img.height - 10),
+                  10, 10, 0, 0, 200, 200);

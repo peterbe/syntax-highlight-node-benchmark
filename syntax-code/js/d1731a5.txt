@@ -1,0 +1,4 @@
+xr.requestSession("immersive-vr").then((session) => {
+  xrSession = session;
+  /* continue to set up the session */
+});

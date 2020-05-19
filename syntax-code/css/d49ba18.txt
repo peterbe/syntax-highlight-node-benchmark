@@ -1,0 +1,25 @@
+.narrow {
+  padding: 10px;
+  border: 1px solid;
+  width: 500px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.normal {
+  word-break: normal;
+}
+
+.breakAll {
+  word-break: break-all;
+}
+
+.keepAll {
+  word-break: keep-all;
+}
+
+.breakWord { 
+  word-break: break-word; 
+} 

@@ -1,0 +1,9 @@
+/* Keyword values */
+-moz-user-input: none;
+-moz-user-input: enabled;
+-moz-user-input: disabled;
+
+/* Global values */
+-moz-user-input: inherit;
+-moz-user-input: initial;
+-moz-user-input: unset;

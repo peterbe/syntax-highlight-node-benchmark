@@ -1,0 +1,5 @@
+document.forms['myform'].method = 'post';
+
+const formElement = document.createElement("form"); // Create a form
+document.body.appendChild(formElement);
+console.log(formElement.method); // 'get'   

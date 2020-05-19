@@ -1,0 +1,1 @@
+var url = event.dataTransfer.getData("URL");

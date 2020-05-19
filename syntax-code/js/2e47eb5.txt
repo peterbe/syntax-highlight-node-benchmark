@@ -1,0 +1,19 @@
+const address = document.getElementById('address');
+const log = document.getElementById('log');
+
+// Log info
+address.childNodes.forEach(node => {
+  const li = document.createElement('li');
+  li.textContent = `${node.nodeName}, ${node.nodeValue}`;
+  log.appendChild(li);
+});
+
+// Highlight the street and city
+const startOffset = 2;  // Start at third node: 101 E. Main St.
+const endOffset = 5;    // End at fifth node: Dodge City, KS
+const range = document.createRange();
+range.setStart(address, startOffset);
+range.setEnd(address, endOffset);
+
+const mark = document.createElement('mark');
+range.surroundContents(mark);

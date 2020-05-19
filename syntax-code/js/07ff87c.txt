@@ -1,0 +1,31 @@
+var openReq = mozIndexedDB.open("MyTestDatabase", 2);
+
+openReq.onblocked = function(event) {
+  // If some other tab is loaded with the database, then it needs to be closed
+  // before we can proceed.
+  console.log("Please close all other tabs with this site open!");
+};
+  
+openReq.onupgradeneeded = function(event) {
+  // All other databases have been closed. Set everything up.
+  db.createObjectStore(/* ... */);
+  useDatabase(db);
+};
+  
+openReq.onsuccess = function(event) {
+  var db = event.target.result;
+  useDatabase(db);
+  return;
+};
+
+function useDatabase(db) {
+  // Make sure to add a handler to be notified if another page requests a version
+  // change. We must close the database. This allows the other page to upgrade the database.
+  // If you don't do this then the upgrade won't happen until the user closes the tab.
+  db.onversionchange = function(event) {
+    db.close();
+    console.log("A new version of this page is ready. Please reload or close this tab!");
+  };
+
+  // Do stuff with the database.
+}

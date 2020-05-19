@@ -1,0 +1,2 @@
+  // Populate frameData with the data of the next frame to display
+  vrDisplay.getFrameData(frameData);

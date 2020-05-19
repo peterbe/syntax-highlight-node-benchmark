@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" charset="UTF-8" />
+<title>Sending forms with FormData &ndash; MDN</title>
+<script>
+"use strict";
+
+function ajaxSuccess () {
+  console.log(this.responseText);
+}
+
+function AJAXSubmit (oFormElement) {
+  if (!oFormElement.action) { return; }
+  var oReq = new XMLHttpRequest();
+  oReq.onload = ajaxSuccess;
+  if (oFormElement.method.toLowerCase() === "post") {
+    oReq.open("post", oFormElement.action);
+    oReq.send(new FormData(oFormElement));
+  } else {
+    var oField, sFieldType, nFile, sSearch = "";
+    for (var nItem = 0; nItem < oFormElement.elements.length; nItem++) {
+      oField = oFormElement.elements[nItem];
+      if (!oField.hasAttribute("name")) { continue; }
+      sFieldType = oField.nodeName.toUpperCase() === "INPUT" ?
+          oField.getAttribute("type").toUpperCase() : "TEXT";
+      if (sFieldType === "FILE") {
+        for (nFile = 0; nFile < oField.files.length;
+            sSearch += "&" + escape(oField.name) + "=" + escape(oField.files[nFile++].name));
+      } else if ((sFieldType !== "RADIO" && sFieldType !== "CHECKBOX") || oField.checked) {
+        sSearch += "&" + escape(oField.name) + "=" + escape(oField.value);
+      }
+    }
+    oReq.open("get", oFormElement.action.replace(/(?:\?.*)?$/, sSearch.replace(/^&/, "?")), true);
+    oReq.send(null);
+  }
+}
+</script>
+</head>
+<body>
+
+<h1>Sending forms with FormData</h1>
+
+<h2>Using the GET method</h2>
+
+<form action="register.php" method="get" onsubmit="AJAXSubmit(this); return false;">
+  <fieldset>
+    <legend>Registration example</legend>
+    <p>
+      First name: <input type="text" name="firstname" /><br />
+      Last name: <input type="text" name="lastname" />
+    </p>
+    <p>
+      <input type="submit" value="Submit" />
+    </p>
+  </fieldset>
+</form>
+
+<h2>Using the POST method</h2>
+<h3>Enctype: application/x-www-form-urlencoded (default)</h3>
+
+<form action="register.php" method="post" onsubmit="AJAXSubmit(this); return false;">
+  <fieldset>
+    <legend>Registration example</legend>
+    <p>
+      First name: <input type="text" name="firstname" /><br />
+      Last name: <input type="text" name="lastname" />
+    </p>
+    <p>
+      <input type="submit" value="Submit" />
+    </p>
+  </fieldset>
+</form>
+
+<h3>Enctype: text/plain</h3>
+
+<p>The text/plain encoding is not supported by the FormData API.</p>
+
+<h3>Enctype: multipart/form-data</h3>
+
+<form action="register.php" method="post" enctype="multipart/form-data"
+    onsubmit="AJAXSubmit(this); return false;">
+  <fieldset>
+    <legend>Upload example</legend>
+    <p>
+      First name: <input type="text" name="firstname" /><br />
+      Last name: <input type="text" name="lastname" /><br />
+      Sex:
+      <input id="sex_male" type="radio" name="sex" value="male" />
+      <label for="sex_male">Male</label>
+      <input id="sex_female" type="radio" name="sex" value="female" />
+      <label for="sex_female">Female</label><br />
+      Password: <input type="password" name="secret" /><br />
+      What do you prefer:
+      <select name="image_type">
+        <option>Books</option>
+        <option>Cinema</option>
+        <option>TV</option>
+      </select>
+    </p>
+    <p>
+      Post your photos:
+      <input type="file" multiple name="photos[]">
+    </p>
+    <p>
+      <input id="vehicle_bike" type="checkbox" name="vehicle[]" value="Bike" />
+      <label for="vehicle_bike">I have a bike</label><br />
+      <input id="vehicle_car" type="checkbox" name="vehicle[]" value="Car" />
+      <label for="vehicle_car">I have a car</label>
+    </p>
+    <p>
+      Describe yourself:<br />
+      <textarea name="description" cols="50" rows="8"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Submit" />
+    </p>
+  </fieldset>
+</form>
+</body>
+</html>

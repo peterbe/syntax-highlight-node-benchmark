@@ -1,0 +1,4 @@
+var range = document.createRange();
+range.setStart(startNode,startOffset);
+range.setEnd(endNode,endOffset);
+var startRangeOffset = range.startOffset;

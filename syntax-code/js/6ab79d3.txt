@@ -1,0 +1,5 @@
+var oReq = new XMLHttpRequest();
+oReq.open("GET", url);
+// retrieve data unprocessed as a binary string
+oReq.overrideMimeType("text/plain; charset=x-user-defined");
+/* ... */

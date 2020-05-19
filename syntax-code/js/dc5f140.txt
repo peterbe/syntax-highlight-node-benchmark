@@ -1,0 +1,2 @@
+formData.append('userpic[]', myFileInput.files[0], 'chris1.jpg');
+formData.append('userpic[]', myFileInput.files[1], 'chris2.jpg');

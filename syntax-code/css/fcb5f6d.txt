@@ -1,0 +1,3 @@
+:is(ol, ul, menu, dir) :is(ol, ul, menu, dir) :is(ul, menu, dir) {
+  list-style-type: square;
+}

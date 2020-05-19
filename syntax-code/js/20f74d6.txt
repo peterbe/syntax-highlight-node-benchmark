@@ -1,0 +1,10 @@
+async function holdRequested(offer) {
+  try {
+    await peerConnection.setRemoteDescription(offer);
+    await audioTransceiver.sender.replaceTrack(null);
+    audioTransceiver.direction = "recvonly";
+    await sendAnswer();
+  } catch(err) {
+    /* handle the error */
+  }
+}

@@ -1,0 +1,2 @@
+var FileSystemDirectoryEntry = window.FileSystemDirectoryEntry || window.DirectoryEntry;
+var FileSystemEntry = window.FileSystemEntry || window.Entry;

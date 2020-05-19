@@ -1,0 +1,1 @@
+<input type="text" name="name" value="initial value" style="ime-mode: disabled">

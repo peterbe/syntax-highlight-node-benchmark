@@ -1,0 +1,1 @@
+div{ color: black; -webkit-appearance: push-button; }

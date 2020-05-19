@@ -1,0 +1,1 @@
+setInterval(checkDeadlines, 1000);

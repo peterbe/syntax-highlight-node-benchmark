@@ -1,0 +1,7 @@
+let responses = [ /* conjoined response tree */ ]
+let {readable, writable} = new TransformStream
+
+responses.reduce(
+  (a, res, i, arr) => a.then(() => res.pipeTo(writable, {preventClose: (i+1) !== arr.length})),
+  Promise.resolve()
+)

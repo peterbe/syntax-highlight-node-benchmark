@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.container {
+  width: 100vh;
+  height: 95vh;
+  font: 16px Arial,Helvetica,sans-serif;
+}
+
+.left-margin {
+  background-color: rgb(241, 240, 237, 255);
+  width: 9em;
+  height: 100%;
+  float: left;
+  margin-right: 5px;
+  padding-right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-margin img {
+  width: 6em;
+}
+
+.contents {
+  background-color: rgb(241, 240, 235, 255);
+  height: 100%;
+  margin-left: 2em;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 1em;
+}

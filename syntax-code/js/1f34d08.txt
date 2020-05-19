@@ -1,0 +1,4 @@
+// html: <div id="top" /> 
+let t = document.getElementById("top"); 
+let idAttr = t.getAttributeNode("id"); 
+alert(idAttr.value == "top")

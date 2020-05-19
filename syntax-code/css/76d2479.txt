@@ -1,0 +1,18 @@
+.jump-start {
+   transition-timing-function: steps(5, jump-start);
+}
+.jump-end {
+   transition-timing-function: steps(5, jump-end);
+}
+.jump-none {
+   transition-timing-function: steps(5, jump-none);
+}
+.jump-both {
+   transition-timing-function: steps(5, jump-both);
+}
+.step-start {
+   transition-timing-function: step-start;
+}
+.step-end {
+   transition-timing-function: step-end;
+}

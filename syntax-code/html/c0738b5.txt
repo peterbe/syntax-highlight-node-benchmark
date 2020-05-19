@@ -1,0 +1,9 @@
+<div style="width:400px; height:400px; background:-moz-element(#myBackground1) no-repeat;">
+  <p>This box uses the element with the #myBackground1 ID as its background!</p>
+</div>
+
+<div style="overflow:hidden; height:0;">
+  <div id="myBackground1" style="width:1024px; height:1024px; background-image: linear-gradient(to right, red, orange, yellow, white);">
+  <p style="transform-origin:0 0; transform: rotate(45deg); color:white;">This text is part of the background. Cool, huh?</p>
+  </div>
+</div>

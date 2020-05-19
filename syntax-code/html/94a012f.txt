@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Various DOM Tests</title>
+
+<script>
+// changing bar states on the existing window
+netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserWrite");
+window.personalbar.visible = !window.personalbar.visible;
+</script>
+
+</head>
+<body>
+  <p>Various DOM Tests</p>
+</body>
+</html>

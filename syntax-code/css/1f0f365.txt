@@ -1,0 +1,7 @@
+#btn1 {
+  background-position: -20px 0px;
+}
+
+#btn2 {
+  background-position: -40px 0px;
+}

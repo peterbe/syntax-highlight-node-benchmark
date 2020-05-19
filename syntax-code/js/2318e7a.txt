@@ -1,0 +1,7 @@
+tracks.forEach(function(track) {
+  if (track.language === userLanguage) {
+    track.enabled = true;
+  } else {
+    track.enabled = false;
+  }
+});

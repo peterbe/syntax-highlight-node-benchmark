@@ -1,0 +1,2 @@
+// In a Web worker, on the page https://developer.mozilla.org/en-US/URLUtilsReadOnly.href
+var result = window.self.toString(); // Returns:'https://developer.mozilla.org/en-US/URLUtilsReadOnly.href'

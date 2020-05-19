@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: menuarrow;
+-webkit-appearance: menuarrow; }

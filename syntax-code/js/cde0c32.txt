@@ -1,0 +1,11 @@
+let worldRefSpace;
+
+async function runXR(xrSession) {
+  worldRefSpace = await xrSession.requestReferenceSpace("immersive-vr");
+
+  if (worldRefSpace) {
+    viewerRefSpace = worldRefSpace.getOffsetReferenceSpace(
+        new XRRigidTransform(viewerStartPosition, viewerStartOrientation));
+    animationFrameRequestID = xrSession.requestAnimationFrame(myDrawFrame);
+  }
+}

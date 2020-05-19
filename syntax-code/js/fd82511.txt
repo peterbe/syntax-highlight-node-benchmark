@@ -1,0 +1,1 @@
+elem1 = document.forms[0]['myFormControl']['o1']; // Returns the HTMLOptionElement representing #o1

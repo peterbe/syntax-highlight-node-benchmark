@@ -1,0 +1,7 @@
+/* <url> value */
+-moz-binding: url(http://www.example.org/xbl/htmlBindings.xml#checkbox);
+
+/* Global values */
+-moz-binding: inherited;
+-moz-binding: initial;
+-moz-binding: unset;

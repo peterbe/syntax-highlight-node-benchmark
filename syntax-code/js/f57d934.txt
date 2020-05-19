@@ -1,0 +1,9 @@
+// an object whose properties are objects
+
+var family = {};
+
+family.mother = new Person("Jane", "Smith");
+family.father = new Person("John", "Smith");
+family.daughter = new Person("Emily", "Smith");
+
+console.table(family);

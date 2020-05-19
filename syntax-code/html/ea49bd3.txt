@@ -1,0 +1,4 @@
+<video controls id="myvideo">
+  <source src="somevideo.webm"></source>
+  <source src="somevideo.mp4"></source>
+</video>

@@ -1,0 +1,6 @@
+<ul class="choices">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>None of the above</li>
+</ul>

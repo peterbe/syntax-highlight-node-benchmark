@@ -1,0 +1,16 @@
+let someMatrix = [
+  4, 0, 0, 0,
+  0, 3, 0, 0,
+  0, 0, 5, 0,
+  4, 8, 4, 1
+]
+
+let identityMatrix = [
+  1, 0, 0, 0,
+  0, 1, 0, 0,
+  0, 0, 1, 0,
+  0, 0, 0, 1
+];
+
+// Returns a new array equivalent to someMatrix
+let someMatrixResult = multiplyMatrices(identityMatrix, someMatrix);

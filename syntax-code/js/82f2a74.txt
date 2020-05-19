@@ -1,0 +1,9 @@
+setInterval( function() {
+
+  // Make sure the playback rate never falls below .4
+
+  if (redQueen_alice.playbackRate > .4) {
+    redQueen_alice.playbackRate *= .9;    
+  }
+
+}, 3000);

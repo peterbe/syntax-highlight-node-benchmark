@@ -1,0 +1,5 @@
+let btnWidth = allComputedStyles.get('width')
+
+console.log( btnWidth );             // CSSMathSum
+console.log( btnWidth.values );      // CSSNumericArray {0: CSSUnitValue, 1: CSSUnitValue, length: 2} 
+console.log( btnWidth.operator );    // 'sum'

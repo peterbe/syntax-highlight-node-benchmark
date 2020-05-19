@@ -1,0 +1,4 @@
+var foo = document.getElementById('foo');
+if (foo.childElementCount > 0) {
+  // Do something
+}

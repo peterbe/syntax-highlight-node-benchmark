@@ -1,0 +1,4 @@
+range = document.createRange();
+range.selectNode(document.getElementsByTagName("div").item(0));
+documentFragment = range.cloneContents();
+document.body.appendChild(documentFragment);

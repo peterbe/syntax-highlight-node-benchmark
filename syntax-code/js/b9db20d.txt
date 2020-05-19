@@ -1,0 +1,14 @@
+function enqueueTask(taskHandler, taskData) {
+  taskList.push({
+    handler: taskHandler,
+    data: taskData
+  });
+ 
+  totalTaskCount++;
+ 
+  if (!taskHandle) {
+    taskHandle = requestIdleCallback(runTaskQueue, { timeout: 1000 });
+  }
+ 
+  scheduleStatusRefresh();
+}

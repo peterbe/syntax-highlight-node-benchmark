@@ -1,0 +1,7 @@
+function handleOrientationChange(evt) {
+  if (evt.matches) {
+    /* The viewport is currently in portrait orientation */
+  } else {
+    /* The viewport is currently in landscape orientation */
+  }
+}

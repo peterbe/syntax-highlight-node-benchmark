@@ -1,0 +1,9 @@
+// addEventListener version
+window.addEventListener('offline', (event) => {
+    console.log("The network connection has been lost.");
+});
+
+// onoffline version
+window.onoffline = (event) => {
+  console.log("The network connection has been lost.");
+};

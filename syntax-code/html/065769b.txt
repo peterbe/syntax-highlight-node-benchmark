@@ -1,0 +1,3 @@
+<label id="label1" for="test">Label 1</label>
+<meter id="test" min="0" max="100" value="70">70</meter>
+<label id="label2" for="test">Label 2</label>

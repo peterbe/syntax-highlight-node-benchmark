@@ -1,0 +1,28 @@
+var publicKey = {
+  challenge: /* from the server */,
+  rp: {
+    name: "Example CORP",
+    id  : "login.example.com",
+    icon: "https://login.example.com/login.ico"
+  },
+  user: {
+    id: new Uint8Array(16),
+    name: "jdoe@example.com",
+    displayName: "John Doe"
+  },
+  pubKeyCredParams: [
+    {
+      type: "public-key",
+      alg: -7
+    }
+  ]
+};
+
+navigator.credentials.create({ publicKey })
+  .then(function (newCredentialInfo) {
+    // send attestation response and client extensions
+    // to the server to proceed with the registration
+    // of the credential
+  }).catch(function (err) {
+     console.error(err);
+  });

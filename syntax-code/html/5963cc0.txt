@@ -1,0 +1,3 @@
+<div id="mybox">
+  <p>This is a box!</p>
+</div>

@@ -1,0 +1,6 @@
+<p>The ordinal number "fifth" can be abbreviated in various
+languages as follows:</p>
+<ul>
+  <li>English: 5<sup>th</sup></li>
+  <li>French: 5<sup>ème</sup></li>
+</ul>

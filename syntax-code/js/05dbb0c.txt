@@ -1,0 +1,7 @@
+gl.getParameter(gl.STENCIL_FUNC);
+gl.getParameter(gl.STENCIL_VALUE_MASK);
+gl.getParameter(gl.STENCIL_REF);
+gl.getParameter(gl.STENCIL_BACK_FUNC);
+gl.getParameter(gl.STENCIL_BACK_VALUE_MASK);
+gl.getParameter(gl.STENCIL_BACK_REF);
+gl.getParameter(gl.STENCIL_BITS);

@@ -1,0 +1,2 @@
+let parser = new DOMParser()
+let doc = parser.parseFromString(stringContainingXMLSource, "application/xml")

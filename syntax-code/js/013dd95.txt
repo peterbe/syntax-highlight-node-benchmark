@@ -1,0 +1,9 @@
+function createPerspectiveMatrix(viewport, fovDegrees, nearClip, farClip) {
+  const fovRadians = fov * (Math.PI / 180.0);
+  const aspectRatio = viewport.width / viewport.height;
+  
+  const transform = mat4.create();
+  mat4.perspective(transform, fovRadians, aspectRatio,
+                   nearClip, farClip);
+  return transform;
+}

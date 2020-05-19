@@ -1,0 +1,10 @@
+const fileInput = document.querySelector('#fileInput');
+fileInput.addEventListener('change', (event) => {
+  // files is a FileList object (similar to NodeList) 
+  const files = event.target.files;
+
+  for (let file of files) {
+    const date = new Date(file.lastModified);
+    console.log(`${file.name} has a last modified date of ${date}`);
+  }
+});

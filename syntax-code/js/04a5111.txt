@@ -1,0 +1,8 @@
+const animated = document.querySelector('.animated');
+
+let iterationCount = 0;
+
+animated.addEventListener('animationiteration', () => {
+  iterationCount++;
+  console.log(`Animation iteration count: ${iterationCount}`);
+});

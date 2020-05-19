@@ -1,0 +1,8 @@
+function getCurrentSettings() {
+  if (videoTrack) {
+    videoSettingsText.value = JSON.stringify(videoTrack.getSettings(), null, 2);
+  }
+  if (audioTrack) {
+    audioSettingsText.value = JSON.stringify(audioTrack.getSettings(), null, 2);
+  }
+}

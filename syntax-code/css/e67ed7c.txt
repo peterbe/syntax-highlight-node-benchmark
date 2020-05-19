@@ -1,0 +1,15 @@
+/* Keyword values */
+-webkit-text-stroke-width: thin;
+-webkit-text-stroke-width: medium;
+-webkit-text-stroke-width: thick;
+
+/* <length> values */
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-width: 0.1em;
+-webkit-text-stroke-width: 1mm;
+-webkit-text-stroke-width: 5pt;
+
+/* Global values */
+-webkit-text-stroke-width: inherit;
+-webkit-text-stroke-width: initial;
+-webkit-text-stroke-width: unset;

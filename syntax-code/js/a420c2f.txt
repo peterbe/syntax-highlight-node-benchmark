@@ -1,0 +1,2 @@
+gl.getParameter(gl.SAMPLE_COVERAGE_VALUE);  // 0.5
+gl.getParameter(gl.SAMPLE_COVERAGE_INVERT); // false

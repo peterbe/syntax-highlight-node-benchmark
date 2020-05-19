@@ -1,0 +1,6 @@
+div {
+  border-bottom-left-radius:40%;
+  border-style: black 3px double;
+  background-color: rgb(250,20,70);
+  background-clip: content-box;
+}

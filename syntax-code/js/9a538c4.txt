@@ -1,0 +1,1 @@
+var recWidth = DOMRect.width;

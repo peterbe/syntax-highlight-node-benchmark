@@ -1,0 +1,17 @@
+p {
+  color: gray;
+}
+
+@media (inverted-colors: inverted) {
+  p {
+    background: black;
+    color: yellow;
+  }
+}
+
+@media (inverted-colors: none) {
+  p {
+    background: #eee;
+    color: red;
+  }
+}

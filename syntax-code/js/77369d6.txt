@@ -1,0 +1,2 @@
+mat4.invert(normalMatrix, modelViewMatrix);
+mat4.transpose(normalMatrix, normalMatrix);

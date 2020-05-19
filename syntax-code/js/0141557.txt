@@ -1,0 +1,6 @@
+var videoElem = document.querySelector("video");
+var numVideoTracks = 0;
+
+if (videoElem.videoTracks) {
+  numVideoTracks = videoElem.videoTracks.length;
+}

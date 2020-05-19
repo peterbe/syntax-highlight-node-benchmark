@@ -1,0 +1,8 @@
+/* Keyword values */
+-moz-user-focus: normal;
+-moz-user-focus: ignore;
+
+/* Global values */
+-moz-user-focus: inherit;
+-moz-user-focus: initial;
+-moz-user-focus: unset;

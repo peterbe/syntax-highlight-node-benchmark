@@ -1,0 +1,11 @@
+let video = document.querySelector('video');
+video.addEventListener('loadedmetadata', () => {
+  const track = video.addTextTrack("captions", "简体中文Subtitles", "zh_CN");
+  track.mode = "showing";
+
+  const cueCn = new VTTCue(0, 2.500, '字幕会在0至2.5秒间显示');
+  track.addCue(cueCn);
+
+  const cueEn = new VTTCue(2.6, 4, 'Subtitles will display between 2.6 and 4 seconds');
+  track.addCue(cueEn);
+});

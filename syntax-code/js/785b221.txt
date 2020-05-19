@@ -1,0 +1,10 @@
+// An all-purpose function to pause the animations on Alice, the cupcake, and the bottle that reads "drink me."
+var stopPlayingAlice = function() {
+  aliceChange.pause();
+  nommingCake.pause();
+  drinking.pause();
+};
+
+// When the user releases the cupcake or the bottle, pause the animations.
+cake.addEventListener("mouseup", stopPlayingAlice, false);
+bottle.addEventListener("mouseup", stopPlayingAlice, false);

@@ -1,0 +1,3 @@
+stopButton.addEventListener("click", function() {
+  stop(preview.srcObject);
+}, false);

@@ -1,0 +1,1 @@
+const aNumber = Number(window.prompt("Type a number", ""));

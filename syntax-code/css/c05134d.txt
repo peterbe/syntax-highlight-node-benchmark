@@ -1,0 +1,10 @@
+div {
+  width: 60px;
+  height: 60px;
+  background-color: skyblue;
+}
+
+.moved {
+  transform: translate(10px, 10px);
+  background-color: pink;
+}

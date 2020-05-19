@@ -1,0 +1,8 @@
+playButton.addEventListener('pointerup', function(event) {
+  var audio = document.querySelector('audio');
+
+  // User interacted with the page. Let's play audio...
+  audio.play()
+  .then(_ => { /* Set up media session controls, as shown above. */ })
+  .catch(error => { console.log(error) });
+});

@@ -1,0 +1,11 @@
+/* Keyword value */
+perspective: none;
+
+/* <length> values */
+perspective: 20px;  
+perspective: 3.5em;
+
+/* Global values */
+perspective: inherit;
+perspective: initial;
+perspective: unset;

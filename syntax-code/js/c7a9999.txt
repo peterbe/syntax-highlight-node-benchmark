@@ -1,0 +1,2 @@
+var nodeList = document.msElementsFromRect(x,y,width,height)
+var nodeList = document.msElementsFromPoint(x,y)

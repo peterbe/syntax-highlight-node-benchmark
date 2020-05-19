@@ -1,0 +1,7 @@
+.img1 {
+  width: 100px;
+  height: 100px;
+  -moz-context-properties: fill, stroke;
+  fill: lime;
+  stroke: purple;
+}

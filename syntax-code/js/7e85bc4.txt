@@ -1,0 +1,18 @@
+// Randomizer function
+var getRandomMsRange = function(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+// Loop through each tear
+tears.forEach(function(el) { 
+
+  // Animate each tear
+  el.animate(
+    tearsFalling, 
+    {
+       delay: getRandomMsRange(-1000, 1000), // randomized for each tear
+       duration: getRandomMsRange(2000, 6000), // randomized for each tear
+       iterations: Infinity,
+       easing: "cubic-bezier(0.6, 0.04, 0.98, 0.335)"
+    });
+});

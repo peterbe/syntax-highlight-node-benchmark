@@ -1,0 +1,2 @@
+gl.enable(gl.BLEND);
+gl.blendFunc(gl.SRC_COLOR, gl.DST_COLOR);

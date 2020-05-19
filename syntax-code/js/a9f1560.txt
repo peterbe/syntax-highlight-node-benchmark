@@ -1,0 +1,6 @@
+for (var i = 0; i < tracks.length; i++) {
+  if (tracks[i].language === userLanguage) {
+    tracks[i].selected = true;
+    break;
+  }
+});

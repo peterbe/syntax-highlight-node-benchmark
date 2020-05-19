@@ -1,0 +1,5 @@
+let dataChannel = pc.createDataChannel("MyApp Channel");
+
+dataChannel.addEventListener("open", (event) => {
+  beginTransmission(dataChannel);
+});

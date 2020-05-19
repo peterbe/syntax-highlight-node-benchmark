@@ -1,0 +1,19 @@
+/* Feature detection */
+let passiveIfSupported = false;
+
+try {
+  window.addEventListener("test", null, 
+    Object.defineProperty(
+      {}, 
+      "passive", 
+      {
+        get: function() { passiveIfSupported = { passive: false }; }
+      }
+    )
+  );
+} catch(err) {}
+
+window.addEventListener('scroll', function(event) {
+  /* do something */
+  // can't use event.preventDefault();
+}, passiveIfSupported );

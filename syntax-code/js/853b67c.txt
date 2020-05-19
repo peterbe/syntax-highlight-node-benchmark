@@ -1,0 +1,5 @@
+var recognition = new SpeechRecognition();
+
+recognition.serviceURI = 'http://www.example.com';
+
+...

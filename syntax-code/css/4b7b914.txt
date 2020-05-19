@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: button-arrow-down;
+-webkit-appearance: button-arrow-down; }

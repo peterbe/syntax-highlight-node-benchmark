@@ -1,0 +1,8 @@
+header {
+  height: 70px;
+}
+
+.main-controls {
+  padding-bottom: 0.7rem;
+  height: 170px;
+}

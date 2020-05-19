@@ -1,0 +1,4 @@
+my_element.addEventListener('click', (e) => {
+  console.log(this.className)           // WARNING: `this` is not `my_element`
+  console.log(e.currentTarget === this) // logs `false`
+})

@@ -1,0 +1,26 @@
+/*
+Mutator Sans is created by LettError (https://github.com/LettError/mutatorSans)
+and is used here under the terms of its license:
+https://github.com/LettError/mutatorSans/blob/master/LICENSE
+*/
+
+@font-face {
+  src: url('https://mdn.mozillademos.org/files/16011/MutatorSans.ttf');
+  font-family:'MutatorSans';
+  font-style: normal;
+}
+
+label {
+  font: 1rem monospace;
+  white-space: nowrap;
+}
+
+.container {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.sample {
+  text-transform: uppercase;
+  font: 1.5rem 'MutatorSans', sans-serif;
+}

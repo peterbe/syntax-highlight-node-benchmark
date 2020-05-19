@@ -1,0 +1,5 @@
+/* Simple usage  - style defaults to decimal */
+counters(countername, '-');
+
+/* changing the counter display */
+counters(countername, '.', upper-roman)

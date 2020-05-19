@@ -1,0 +1,3 @@
+WebGLActiveInfo? getActiveAttrib(WebGLProgram? program, GLuint index); 
+WebGLActiveInfo? getActiveUniform(WebGLProgram? program, GLuint index);
+WebGLActiveInfo? getTransformFeedbackVarying(WebGLProgram? program, GLuint index)

@@ -1,0 +1,9 @@
+const para = document.querySelector('p');
+
+para.ongotpointercapture = () => {
+  console.log('I\'ve been captured!')
+};
+
+para.addEventListener('pointerdown', (event) => {
+  para.setPointerCapture(event.pointerId);
+});

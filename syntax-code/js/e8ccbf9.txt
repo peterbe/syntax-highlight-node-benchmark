@@ -1,0 +1,4 @@
+myWorker.port.onmessage = function(e) {
+  result2.textContent = e.data;
+  console.log('Message received from worker');
+}

@@ -1,0 +1,3 @@
+document.addEventListener("securitypolicyviolation", (e) => {
+  console.log(e.violatedDirective);
+});

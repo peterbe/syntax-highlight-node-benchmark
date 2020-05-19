@@ -1,0 +1,8 @@
+#output {
+  width: 440px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  display: block;
+}

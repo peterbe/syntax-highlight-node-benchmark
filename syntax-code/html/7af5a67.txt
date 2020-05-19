@@ -1,0 +1,2 @@
+<label for="pin">PIN: </label>
+<input id="pin" type="password" inputmode="numeric">

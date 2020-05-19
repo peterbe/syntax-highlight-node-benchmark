@@ -1,0 +1,1 @@
+<input type="email" placeholder="sophie@example.com">

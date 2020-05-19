@@ -1,0 +1,3 @@
+document.getElementById('divA').textContent = 'This text is different!';
+// The HTML for divA is now:
+// <div id="divA">This text is different!</div>

@@ -1,0 +1,2 @@
+var myRequest = new Request('flowers.jpg');
+var myDestination = myRequest.destination; // returns the empty string by default

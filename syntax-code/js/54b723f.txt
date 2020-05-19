@@ -1,0 +1,18 @@
+function calculateAverageQP(stats) {
+  let frameCount = 0;
+
+  switch(stats.type) {
+    case "inbound-rtp":
+    case "remote-inbound-rtp":
+      frameCount = stats.framesDecoded;
+      break;
+    case "outbound-rtp":
+    case "remote-outbound-rtp":
+      frameCount = stats.framesEncoded;
+      break;
+    default:
+      return 0;
+  }
+
+  return status.qpSum / frameCount;
+}

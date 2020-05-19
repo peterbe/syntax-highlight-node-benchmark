@@ -1,0 +1,3 @@
+let audioContext = new (window.AudioContext || window.webkitAudioContext);
+let oscList = [];
+let masterGainNode = null;

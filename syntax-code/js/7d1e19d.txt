@@ -1,0 +1,3 @@
+let setX = window.screen.width - window.screen.availLeft;
+let setY = window.screen.height - window.screen.availTop;
+window.moveTo(setX, setY);

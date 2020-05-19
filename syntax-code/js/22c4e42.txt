@@ -1,0 +1,2 @@
+let slots = this.shadowRoot.querySelector('slot');
+let elements = slots.assignedElements({flatten: true});

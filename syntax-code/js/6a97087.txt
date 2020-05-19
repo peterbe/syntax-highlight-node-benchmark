@@ -1,0 +1,3 @@
+const innerCone = 60;
+const outerCone = 90;
+const outerGain = 0.3;

@@ -1,0 +1,15 @@
+// calculate the vector for no rotation
+// this means the sound will play at full volume
+const [x1, y1, z1] = yRotationToVector(0);
+// schedule the no-rotation vector immediately
+panner.orientationX.setValueAtTime(x1, context.currentTime);
+panner.orientationY.setValueAtTime(y1, context.currentTime);
+panner.orientationZ.setValueAtTime(z1, context.currentTime);
+
+// calculate the vector for -22.4 degrees 
+// since our coneOuterAngle is 45, this will just about make the sound audible
+// if we set it to +/-22.5, the sound volume will be 0, as the threshold is exclusive
+const [x2, y2, z2] = yRotationToVector(-22.4);
+panner.orientationX.setValueAtTime(x2, context.currentTime + 2);
+panner.orientationY.setValueAtTime(y2, context.currentTime + 2);
+panner.orientationZ.setValueAtTime(z2, context.currentTime + 2);

@@ -1,0 +1,5 @@
+navigator.serviceWorker.getRegistration('/app').then(function(registration) {
+  if(registration){
+    document.querySelector('#status').textContent = 'ServiceWorkerRegistration found.';  
+  }
+});

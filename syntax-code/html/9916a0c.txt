@@ -1,0 +1,11 @@
+<p>
+  <label>Enter a number between 0 and 400 that is divisible by 5: 
+   <input type="number" step="5" id="theNumber" min="0" max="400">
+  </label>
+</p>
+<p>
+  <label>Enter how many values of step you would like to increment by or leave it blank:
+   <input type="number" step="1" id="decrementer" min="-2" max="15">
+  </label>
+</p>
+<input type="button" value="Decrement" id="theButton">

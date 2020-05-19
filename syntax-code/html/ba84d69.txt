@@ -1,0 +1,30 @@
+<HTML>
+    <HEAD>
+        <TITLE> ... whatever ... </TITLE>
+        <LINK, META, BASE, etc. as applicable for the head of this document>
+        <NEXTID N="z20">
+    </HEAD>
+    
+    <BODY>
+        <A NAME="z0" HREF="#z4">FIRST SECTION HEADING</A>
+        <A NAME="z1" HREF="#z5">SECOND SECTION HEADING</A>
+        <A NAME="z8" HREF="#z14">NEWLY INSERTED THIRD SECTION HEADING</A>
+        <A NAME="z9" HREF="#z15">NEWLY INSERTED FOURTH SECTION HEADING</A>
+        <A NAME="z2" HREF="#z6">ORIGINAL THIRD (NOW FIFTH) SECTION HEADING</A>
+        <A NAME="z3" HREF="#z7">ORIGINAL FOURTH (NOW SIXTH) SECTION HEADING</A>
+        <A NAME="z10" HREF="#z16">SEVENTH SECTION HEADING</A>
+        <A NAME="z11" HREF="#z17">EIGHTH SECTION HEADING</A>
+        <A NAME="z12" HREF="#z18">NINTH SECTION HEADING</A>
+        <A NAME="z13" HREF="#z19">TENTH SECTION HEADING</A>
+        <H2><A NAME="z4">FIRST SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z5">SECOND SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z14">NEWLY INSERTED THIRD SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z15">NEWLY INSERTED FOURTH SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z6">ORIGINAL THIRD (NOW FIFTH) SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z7">ORIGINAL FOURTH (NOW SIXTH) SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z16">SEVENTH SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z17">EIGHTH SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z18">NINTH SECTION HEADING</A></H1><P> ... whatever ... </P>
+        <H2><A NAME="z19">TENTH SECTION HEADING</A></H1><P> ... whatever ... </P>
+    </BODY>
+</HTML>

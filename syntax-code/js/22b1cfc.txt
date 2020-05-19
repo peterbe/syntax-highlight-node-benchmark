@@ -1,0 +1,9 @@
+var xmlhttp = new XMLHttpRequest(),
+  method = 'GET',
+  url = 'https://developer.mozilla.org/';
+
+xmlhttp.open(method, url, true);
+xmlhttp.onload = function () {
+  // Do something with the retrieved data ( found in xmlhttp.response )
+};
+xmlhttp.send();

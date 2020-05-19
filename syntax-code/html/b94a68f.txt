@@ -1,0 +1,15 @@
+<canvas id="canvas" width="400" height="200" class="playable-canvas"></canvas>
+<svg id="svg1" style="display:none"></svg>
+<div class="playable-buttons">
+  <input id="edit" type="button" value="Edit" />
+  <input id="reset" type="button" value="Reset" />
+</div>
+<textarea id="code" class="playable-code" style="height:120px">
+var img = new Image();
+img.src = 'https://mdn.mozillademos.org/files/222/Canvas_createpattern.png';
+img.onload = function() {
+  var pattern = ctx.createPattern(img, 'repeat');
+  pattern.setTransform(matrix.rotate(-45).scale(1.5));
+  ctx.fillStyle = pattern;
+  ctx.fillRect(0, 0, 400, 400);
+};</textarea>

@@ -1,0 +1,6 @@
+<div id="container" onclick="rotate()">
+  <div id="box1" style="left:0px;top:0px;">Top left</div>
+  <div id="box2" style="left:133px;top:0px;">Top right</div>
+  <div id="box3" style="left:0px;top:136px;">Bottom left</div>
+  <div id="box4" style="left:133px;top:136px;">Bottom right</div>
+</div>

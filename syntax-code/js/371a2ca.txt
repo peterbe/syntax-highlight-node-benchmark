@@ -1,0 +1,1 @@
+var defaultWasPrevented = event.defaultPrevented;

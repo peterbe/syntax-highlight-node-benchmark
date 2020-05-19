@@ -1,0 +1,8 @@
+document.hasStorageAccess().then(hasAccess => {
+  if (hasAccess) {
+    // storage access has been granted already.
+  } else {
+    // storage access hasn't been granted already;
+    // you may want to call requestStorageAccess().
+  }
+});

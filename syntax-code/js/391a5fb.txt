@@ -1,0 +1,4 @@
+window.onvrdisplayactivate = function() {
+  info.textContent = 'Display activated.';
+  reportDisplays();
+};

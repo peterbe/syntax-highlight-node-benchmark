@@ -1,0 +1,11 @@
+var evtSource = new EventSource('sse.php');
+
+// addEventListener version
+evtSource.addEventListener('open', (e) => {
+  console.log("The connection has been established.");
+});
+
+// onopen version
+evtSource.onopen = (e) => {
+  console.log("The connection has been established.");
+};

@@ -1,0 +1,3 @@
+document.addEventListener('pointerleave', (event) => {
+  console.log('Pointer left element');
+});

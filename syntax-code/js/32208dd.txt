@@ -1,0 +1,8 @@
+async function createImmersiveSession(xr) {
+  try {
+    session = await xr.requestSession("immersive-vr");
+    return session;
+  } catch(error) {
+    throw error;
+  }
+}

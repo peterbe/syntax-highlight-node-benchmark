@@ -1,0 +1,3 @@
+recognition.onspeechend = function() { 
+  console.log('Speech has stopped being detected'); 
+}

@@ -1,0 +1,3 @@
+window.addEventListener('appinstalled', function() { 
+  console.log('Thank you for installing our app!'); 
+});

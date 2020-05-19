@@ -1,0 +1,5 @@
+const animated = document.querySelector('.animated');
+
+animated.addEventListener('animationend', () => {
+  console.log('Animation ended');
+});

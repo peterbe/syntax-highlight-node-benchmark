@@ -1,0 +1,3 @@
+myHeaders.append('Accept-Encoding', 'deflate');
+myHeaders.append('Accept-Encoding', 'gzip');
+myHeaders.getAll('Accept-Encoding'); // Returns [ "deflate", "gzip" ]

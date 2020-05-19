@@ -1,0 +1,5 @@
+window.addEventListener("unload", function logData() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "/log", false); // third parameter of `false` means synchronous
+  xhr.send(analyticsData); 
+});

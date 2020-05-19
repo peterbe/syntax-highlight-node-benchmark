@@ -1,0 +1,3 @@
+avgCheckInterval = (candidatePairStats.lastRequestTimestamp -
+                    candidatePairStats.firstRequestTimestamp) /
+                   candidatePairStats.requestsSent;

@@ -1,0 +1,10 @@
+function replaceAd(adBox) {
+  let visibleTime;
+
+  updateAdTimer(adBox);
+
+  visibleTime = adBox.dataset.totalViewTime
+  console.log("  Replacing ad: " + adBox.querySelector("h2").innerText + " - visible for " + visibleTime)
+
+  loadRandomAd(adBox);
+}

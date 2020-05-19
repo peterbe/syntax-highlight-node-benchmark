@@ -1,0 +1,5 @@
+// Log events flag
+var logEvents = false;
+
+// Touch Point cache
+var tpCache = new Array();

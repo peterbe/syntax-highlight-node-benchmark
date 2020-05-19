@@ -1,0 +1,4 @@
+// in the service worker
+addEventListener('message', (event) => {
+    console.log(`The client sent me a message: ${event.data}`);
+});

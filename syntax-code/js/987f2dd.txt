@@ -1,0 +1,2 @@
+var sampler = gl.createSampler();
+gl.getSamplerParameter(sampler, gl.TEXTURE_COMPARE_FUNC);

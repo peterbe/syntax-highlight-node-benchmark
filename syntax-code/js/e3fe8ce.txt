@@ -1,0 +1,11 @@
+pc.oniceconnectionstatechange = function(evt) {
+  if (pc.iceConnectionState === "failed") {
+    if (pc.restartIce) {
+      pc.restartIce();
+    } else {
+      pc.createOffer({ iceRestart: true })
+      .then(pc.setLocalDescription)
+      .then(sendOfferToServer);
+    }
+  }
+}

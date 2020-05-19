@@ -1,0 +1,6 @@
+analyser.fftSize = 256;
+var bufferLength = analyser.frequencyBinCount;
+console.log(bufferLength);
+var dataArray = new Uint8Array(bufferLength);
+
+canvasCtx.clearRect(0, 0, WIDTH, HEIGHT);

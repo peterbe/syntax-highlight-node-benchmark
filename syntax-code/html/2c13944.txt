@@ -1,0 +1,8 @@
+<div>
+  <span>This is a span.</span>
+  <span>This is another span.</span>
+  <em>This is emphasized.</em>
+  <span>Wow, this span gets limed!!!</span>
+  <strike>This is struck through.</strike>
+  <span>Here is one last span.</span>
+</div>

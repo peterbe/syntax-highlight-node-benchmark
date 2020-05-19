@@ -1,0 +1,5 @@
+  var minuteCheck  = now.getMinutes();
+  var hourCheck    = now.getHours();
+  var dayCheck     = now.getDate();
+  var monthCheck   = now.getMonth();
+  var yearCheck    = now.getFullYear();

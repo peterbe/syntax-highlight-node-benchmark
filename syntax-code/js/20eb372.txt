@@ -1,0 +1,39 @@
+WebGLBox.prototype.draw = function(settings) {
+  // Create some attribute data; these are the triangles that will end being
+  // drawn to the screen. There are two that form a square.
+
+  var data = new Float32Array([
+ 
+    //Triangle 1
+    settings.left,  settings.bottom, settings.depth,
+    settings.right, settings.bottom, settings.depth,
+    settings.left,  settings.top,    settings.depth,
+  
+    //Triangle 2
+    settings.left,  settings.top,    settings.depth,
+    settings.right, settings.bottom, settings.depth,
+    settings.right, settings.top,    settings.depth
+  ]);
+
+  // Use WebGL to draw this onto the screen.
+
+  // Performance Note: Creating a new array buffer for every draw call is slow.
+  // This function is for illustration purposes only.
+
+  var gl = this.gl;
+
+  // Create a buffer and bind the data
+  var buffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+  gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
+
+  // Setup the pointer to our attribute data (the triangles)
+  gl.enableVertexAttribArray(this.positionLocation);
+  gl.vertexAttribPointer(this.positionLocation, 3, gl.FLOAT, false, 0, 0);
+
+  // Setup the color uniform that will be shared across all triangles
+  gl.uniform4fv(this.colorLocation, settings.color);
+
+  // Draw the triangles to the screen
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+}

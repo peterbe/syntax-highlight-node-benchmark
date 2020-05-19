@@ -1,0 +1,10 @@
+/* An example with one viewport value: */
+@viewport {
+    width: 320px;
+}
+
+/* An example with two viewport values: */
+@viewport {
+    width: 320px, 120px;
+}
+

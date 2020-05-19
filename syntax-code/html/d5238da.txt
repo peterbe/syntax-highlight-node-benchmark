@@ -1,0 +1,3 @@
+<div class="light">You can barely see this.</div>
+<div class="medium">This is easier to see.</div>
+<div class="heavy">This is very easy to see.</div>

@@ -1,0 +1,3 @@
+window.ongamepaddisconnected = function() {
+  // A gamepad has been disconnected
+};

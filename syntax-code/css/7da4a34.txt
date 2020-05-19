@@ -1,0 +1,18 @@
+.ease {
+   transition-timing-function: ease;
+}
+.easein {
+   transition-timing-function: ease-in;
+}
+.easeout {
+   transition-timing-function: ease-out;
+}
+.easeinout {
+   transition-timing-function: ease-in-out;
+}
+.linear {
+   transition-timing-function: linear;
+}
+.cb {
+   transition-timing-function: cubic-bezier(0.2,-2,0.8,2);
+}

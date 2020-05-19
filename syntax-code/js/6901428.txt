@@ -1,0 +1,2 @@
+var oscillator = audioCtx.createOscillator();
+oscillator.frequency.setValueAtTime(440, audioCtx.currentTime); // value in hertz

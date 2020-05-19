@@ -1,0 +1,2 @@
+<command type="command" label="Save"
+    icon="icons/save.png" onclick="save()">

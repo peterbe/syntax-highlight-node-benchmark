@@ -1,0 +1,3 @@
+const stylesheets = document.styleSheets;
+let stylesheet = stylesheets[0];
+console.log(stylesheet.media.mediaText);

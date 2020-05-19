@@ -1,0 +1,31 @@
+<html>
+<body onload="start()">
+</body>
+<script>
+    function start() {
+       var mybody = document.getElementsByTagName("body")[0];
+       mytable = document.createElement("table");
+       mytablebody = document.createElement("tbody");
+
+       for(var row = 0; row < 2; row++) {
+           mycurrent_row=document.createElement("tr");
+           for(var col = 0; col < 2; col++) {
+               mycurrent_cell = document.createElement("td");
+               currenttext = document.createTextNode("cell is: " + row + col);
+               mycurrent_cell.appendChild(currenttext);
+               mycurrent_row.appendChild(mycurrent_cell);
+               // set the cell background color
+               // if the column is 0. If the column is 1 hide the cell
+               if (col === 0) {
+                   mycurrent_cell.style.background = "rgb(255,0,0)";
+               } else {
+                   mycurrent_cell.style.display = "none";
+               }
+           }
+           mytablebody.appendChild(mycurrent_row);
+       }
+       mytable.appendChild(mytablebody);
+       mybody.appendChild(mytable);
+    }
+</script>
+</html>

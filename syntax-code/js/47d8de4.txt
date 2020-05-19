@@ -1,0 +1,6 @@
+var AudioContext = window.AudioContext || window.webkitAudioContext;
+
+var audioCtx = new AudioContext({
+  latencyHint: 'interactive',
+  sampleRate: 44100,
+});

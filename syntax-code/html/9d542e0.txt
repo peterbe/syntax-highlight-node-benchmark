@@ -1,0 +1,38 @@
+<form>
+  <label class="nativeDatePicker">Enter your birthday:
+    <input type="date" name="bday">
+    <span class="validity"></span>
+  </label>
+
+  <fieldset class="fallbackDatePicker" hidden>
+    <legend class="fallbackLabel">Enter your birthday:</legend>
+
+    <label>
+      Day:
+      <select name="day"></select>
+    </label>
+
+    <label>
+      Month:
+      <select name="month">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+    </label>
+
+    <label>
+      Year:
+      <select name="year"></select>
+    </label>
+  </fieldset>
+</form>

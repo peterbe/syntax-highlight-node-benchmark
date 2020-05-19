@@ -1,0 +1,2 @@
+var pageTimeline = document.timeline;
+var thisMoment = pageTimeline.currentTime;

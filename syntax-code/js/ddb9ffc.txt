@@ -1,0 +1,4 @@
+let price = {
+  currency: "JPY",
+  value: "1000"
+}

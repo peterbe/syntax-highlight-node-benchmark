@@ -1,0 +1,4 @@
+<label for="hz">Hz</label>
+<input name="hz" id="hz" type="range" min="660" max="1320" value="880" step="1" />
+<label for="lfo">LFO</label>
+<input name="lfo" id="lfo" type="range" min="20" max="40" value="30" step="1" />

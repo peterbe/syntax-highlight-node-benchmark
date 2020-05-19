@@ -1,0 +1,9 @@
+label {
+    font-family: 'NotoColorEmoji';
+    font-size: 3rem;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    z-index: 5;
+    cursor: pointer;
+}

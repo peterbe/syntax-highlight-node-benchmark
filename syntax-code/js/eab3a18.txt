@@ -1,0 +1,1 @@
+var point2D = DOMPointReadOnly.fromPoint({x: 25, y: 25});

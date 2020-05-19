@@ -1,0 +1,3 @@
+let values = new CSSUnparsedValue( ['1em', '#445566', '-45px'] );
+
+console.log( values.length ) // 3

@@ -1,0 +1,14 @@
+var bestCandidate = {
+  candidate: "",
+  sdpMid: null,
+  sdpMLineIndex: null,
+  priority: 0
+};
+
+function handleCandidate(candidateString) {
+  var candidate = new RTCIceCandidate(candidateString);
+
+  if (candidate.priority > bestCandidate.priority) {
+    bestCandidate = candidate;
+  }
+}

@@ -1,0 +1,1 @@
+gl.getShaderParameter(shader, gl.SHADER_TYPE);

@@ -1,0 +1,4 @@
+var shader = gl.createShader(gl.VERTEX_SHADER);
+gl.shaderSource(shader, originalSource);
+
+var source = gl.getShaderSource(shader);

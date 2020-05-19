@@ -1,0 +1,5 @@
+<form id="form" method="post">
+  <input type="text" name="id" autocomplete="username" />
+  <input type="password" name="password" autocomplete="current-password" />
+  <input type="hidden" name="csrf_token" value="*****" />
+</form>

@@ -1,0 +1,3 @@
+myElement.attributeStyleMap.set('margin', CSS.px(40));
+let currentMargin = myElement.attributeStyleMap.get('margin');
+console.log(currentMargin.value, currentMargin.unit); // 40, 'px'

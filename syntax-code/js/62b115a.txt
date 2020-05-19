@@ -1,0 +1,1 @@
+pc.onremovestream = function(ev) { alert("onremovestream event detected!"); };

@@ -1,0 +1,6 @@
+var matches = element.getElementsByClassName('colorbox');
+
+while (matches.length > 0) {
+  matches.item(0).classList.add('hueframe');
+  matches[0].classList.remove('colorbox');
+}

@@ -1,0 +1,12 @@
+p {
+  margin: 0;
+  text-indent: 3ch;
+}
+
+p.pilcrow {
+   text-indent: 0;
+   display: inline;
+}
+p.pilcrow + p.pilcrow::before {
+  content: " ¶ ";
+}

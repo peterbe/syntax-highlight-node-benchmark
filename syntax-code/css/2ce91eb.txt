@@ -1,0 +1,7 @@
+input:-ms-input-placeholder {
+  border-color: silver;
+}
+
+input:-moz-placeholder {
+  border-color: silver;
+}

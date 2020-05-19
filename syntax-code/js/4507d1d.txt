@@ -1,0 +1,4 @@
+var sel = document.selection;
+var range = sel.createRange();
+alert(range.text);
+// Output plaintext of the selection

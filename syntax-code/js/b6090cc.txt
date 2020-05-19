@@ -1,0 +1,3 @@
+await navigator.locks.request('my_resource', async lock => {
+  // The lock was granted.
+});

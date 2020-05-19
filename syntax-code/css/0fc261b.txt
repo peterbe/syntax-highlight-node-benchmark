@@ -1,0 +1,3 @@
+/* Keyword values */
+-ms-ime-align: auto;
+-ms-ime-align: after;

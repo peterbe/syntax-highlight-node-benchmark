@@ -1,0 +1,8 @@
+ var rabbitDownKeyframes = new KeyframeEffect( 
+    whiteRabbit, // element to animate
+    [
+      { transform: 'translateY(0%)' }, // keyframe 
+      { transform: 'translateY(100%)' } // keyframe
+    ], 
+    { duration: 3000, fill: 'forwards' } // keyframe options
+  );

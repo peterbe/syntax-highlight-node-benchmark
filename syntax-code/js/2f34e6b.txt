@@ -1,0 +1,6 @@
+window.CSS.registerProperty({
+  name: '--my-prop',
+  syntax: '<color>',
+  inherits: false,
+  initialValue: '#c0ffee',
+});

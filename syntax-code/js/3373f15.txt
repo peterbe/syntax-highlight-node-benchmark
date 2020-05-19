@@ -1,0 +1,2 @@
+gl.enable(gl.POLYGON_OFFSET_FILL);
+gl.polygonOffset(2, 3);

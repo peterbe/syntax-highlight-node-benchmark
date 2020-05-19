@@ -1,0 +1,5 @@
+range = document.createRange();
+newNode = document.createElement("p");
+newNode.appendChild(document.createTextNode("New Node Inserted Here"));
+range.selectNode(document.getElementsByTagName("div").item(0));
+range.insertNode(newNode);

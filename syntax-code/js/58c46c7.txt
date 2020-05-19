@@ -1,0 +1,5 @@
+let span = document.getElementsByTagName("span")[0]
+let classes = span.classList;
+
+classes.remove("c", "b");
+span.textContent = classes;

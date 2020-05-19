@@ -1,0 +1,6 @@
+function handleNewICECandidateMsg(msg) {
+  var candidate = new RTCIceCandidate(msg.candidate);
+
+  myPeerConnection.addIceCandidate(candidate)
+    .catch(reportError);
+}

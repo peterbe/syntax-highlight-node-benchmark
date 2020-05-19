@@ -1,0 +1,2 @@
+let iscEvent = new XRInputSourcesChangeEvent("inputsourceschange", { session: xrSession,
+                           added: [newInputSource], removed: [] });

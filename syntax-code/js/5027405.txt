@@ -1,0 +1,4 @@
+// Old method names
+var gain = context.createGainNode();
+var delay = context.createDelayNode();
+var js = context.createJavascriptNode(1024);

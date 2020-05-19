@@ -1,0 +1,10 @@
+  // Update the rotation for the next draw, if it's time to do so.
+
+  var currentTime = (new Date).getTime();
+  if (lastCubeUpdateTime) {
+    var delta = currentTime - lastCubeUpdateTime;
+
+    cubeRotation += (30 * delta) / 1000.0;
+  }
+
+  lastCubeUpdateTime = currentTime;

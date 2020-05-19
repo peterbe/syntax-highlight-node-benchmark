@@ -1,0 +1,4 @@
+window.addEventListener('vrdisplaydisconnect', function() {
+  info.textContent = 'Display disconnected.';
+  reportDisplays();
+});

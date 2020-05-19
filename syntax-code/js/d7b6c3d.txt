@@ -1,0 +1,54 @@
+// create a canvas element and append it to our dom
+const canvasContainer = document.querySelector('.filter-graph');
+const canvasEl = document.createElement('canvas');
+canvasContainer.appendChild(canvasEl);
+
+// set 2d context and set dimesions
+const canvasCtx = canvasEl.getContext('2d');
+const width = canvasContainer.offsetWidth;
+const height = canvasContainer.offsetHeight;
+canvasEl.width = width;
+canvasEl.height = height;
+
+// set background fill
+canvasCtx.fillStyle = 'white';
+canvasCtx.fillRect(0, 0, width, height);
+
+// set up some spacing based on size
+const spacing = width/16;
+const fontSize = Math.floor(spacing/1.5);
+
+// draw our axis
+canvasCtx.lineWidth = 2;
+canvasCtx.strokeStyle = 'grey';
+
+canvasCtx.beginPath();
+canvasCtx.moveTo(spacing, spacing);
+canvasCtx.lineTo(spacing, height-spacing);
+canvasCtx.lineTo(width-spacing, height-spacing);
+canvasCtx.stroke();
+
+// axis is gain by frequency -> make labels
+canvasCtx.font = fontSize+'px sans-serif';
+canvasCtx.fillStyle = 'grey';
+canvasCtx.fillText('1', spacing-fontSize, spacing+fontSize);
+canvasCtx.fillText('g', spacing-fontSize, (height-spacing+fontSize)/2);
+canvasCtx.fillText('0', spacing-fontSize, height-spacing+fontSize);
+canvasCtx.fillText('Hz', width/2, height-spacing+fontSize);
+canvasCtx.fillText('20k', width-spacing, height-spacing+fontSize);
+
+// loop over our magnitude response data and plot our filter
+
+canvasCtx.beginPath();
+
+for(let i = 0; i < magResponseOutput.length; i++) {
+
+    if (i === 0) {
+        canvasCtx.moveTo(spacing, height-(magResponseOutput[i]*100)-spacing );
+    } else {
+        canvasCtx.lineTo((width/totalArrayItems)*i, height-(magResponseOutput[i]*100)-spacing );
+    }
+
+}
+
+canvasCtx.stroke();

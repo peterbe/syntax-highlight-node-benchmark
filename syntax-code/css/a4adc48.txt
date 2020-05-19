@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: menulist-textfield;
+-webkit-appearance: menulist-textfield; }

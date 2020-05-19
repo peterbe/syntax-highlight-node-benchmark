@@ -1,0 +1,5 @@
+offlineAudioCtx.oncomplete = function() {
+  console.log('Offline audio processing now complete');
+  showModalDialog('Song processed and ready to play');
+  playBtn.disabled = false;
+}

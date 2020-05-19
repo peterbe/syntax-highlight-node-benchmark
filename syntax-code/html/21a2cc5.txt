@@ -1,0 +1,4 @@
+<input type="text" value="Type whatever you want here.">
+<input type="text" value="This is a read-only field." readonly>
+<p>This is a normal paragraph.</p>
+<p contenteditable="true">You can edit this paragraph!</p>

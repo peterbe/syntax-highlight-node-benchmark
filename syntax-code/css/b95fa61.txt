@@ -1,0 +1,3 @@
+sepia(0)     /* No effect */
+sepia(.65)   /* 65% sepia */
+sepia(100%)  /* Completely sepia */

@@ -1,0 +1,8 @@
+interface MSSiteModeEvent extends Event {
+    buttonID: number;
+    actionURL: string;
+}
+declare var MSSiteModeEvent: {
+    prototype: MSSiteModeEvent;
+    new(): MSSiteModeEvent;
+}

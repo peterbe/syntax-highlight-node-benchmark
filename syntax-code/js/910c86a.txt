@@ -1,0 +1,4 @@
+const obj_url = URL.createObjectURL(blob);
+const iframe = document.getElementById('viewer');
+iframe.setAttribute('src', obj_url);
+URL.revokeObjectURL(obj_url);

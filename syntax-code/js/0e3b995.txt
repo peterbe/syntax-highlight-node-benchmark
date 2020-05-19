@@ -1,0 +1,4 @@
+var maskSize = document.getElementById("maskSize");
+maskSize.addEventListener("change", function (evt) {
+  document.getElementById("masked").style.maskSize = evt.target.value;
+});

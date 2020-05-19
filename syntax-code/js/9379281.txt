@@ -1,0 +1,8 @@
+dtmfSender.ontonechange = function( ev ) {
+  let tone = ev.tone;
+  if (tone === "") {
+    tone = "&lt;none&gt;"
+  }
+
+  document.getElementById("playingTone").innerText = tone;
+};

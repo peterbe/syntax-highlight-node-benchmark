@@ -1,0 +1,17 @@
+p {
+  margin: 0;
+  font-size: 4em;
+  -webkit-text-stroke-color: red;
+}
+
+#thin {
+  -webkit-text-stroke-width: thin;
+}
+
+#medium {
+  -webkit-text-stroke-width: 3px;
+}
+
+#thick {
+  -webkit-text-stroke-width: 1.5mm;
+}

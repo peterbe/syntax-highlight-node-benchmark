@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.ondurationchange = (event) => {
+  console.log('Not sure why, but the duration of the video has changed.');
+};

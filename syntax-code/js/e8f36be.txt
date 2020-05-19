@@ -1,0 +1,1 @@
+document.querySelector(".runButton").addEventListener("click", play, false);

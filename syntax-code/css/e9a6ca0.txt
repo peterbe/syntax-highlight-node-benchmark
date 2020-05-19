@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  grid-template-areas: "control  log";
+}
+
+.controls {
+  grid-area: control;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-log {
+  grid-area: log;
+}
+
+.event-log-contents {
+  resize: none;
+}
+
+label, button {
+  display: block;
+}
+
+button {
+  height: 2rem;
+  margin: .5rem;
+}
+
+img {
+  width: 0;
+  height: 0;
+}

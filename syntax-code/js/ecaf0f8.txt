@@ -1,0 +1,8 @@
+const audioContext = new AudioContext()
+await audioContext.audioWorklet.addModule('ping-pong-processor.js')
+const pingPongNode = new AudioWorkletNode(audioContext, 'ping-pong-processor')
+// send the message containing 'ping' string
+// to the AudioWorkletProcessor from the AudioWorkletNode every second
+setInterval(() => pingPongNode.port.postMessage('ping'), 1000)
+pingPongNode.port.onmessage = (e) => console.log(e.data)
+pingPongNode.connect(audioContext.destination)

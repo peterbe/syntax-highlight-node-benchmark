@@ -1,0 +1,5 @@
+function do_write() {
+  await navigator.locks.request('my_resource', {mode: 'exclusive'}, async lock => {
+    // Write code here.
+  });
+}

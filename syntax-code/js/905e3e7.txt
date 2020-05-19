@@ -1,0 +1,8 @@
+let contentBox;
+
+let nextArticleID = 1;
+let visibleAds = new Set();
+let previouslyVisibleAds = null;
+
+let adObserver;
+let refreshIntervalID = 0;

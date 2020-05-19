@@ -1,0 +1,7 @@
+if (entry.isDirectory) {
+  processSubdirectory(entry);
+} else if (entry.isFile) {
+  processFile(entry);
+} else {
+  displayErrorMessage("Unsupported file system entry specified.");
+}

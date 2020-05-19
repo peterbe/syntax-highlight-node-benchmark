@@ -1,0 +1,10 @@
+<div id="masked">
+</div>
+<select id="maskSize">
+  <option value="auto">auto</option>
+  <option value="40% 80%">40% 80%</option>
+  <option value="50%" selected>50%</option>
+  <option value="200px 100px">200px 100px</option>
+  <option value="cover">cover</option>
+  <option value="contain">contain</option>
+</select>

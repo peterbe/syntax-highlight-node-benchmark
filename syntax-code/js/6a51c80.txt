@@ -1,0 +1,2 @@
+var samples = gl.getInternalformatParameter(gl.RENDERBUFFER, 
+                                            gl.RGBA8, gl.SAMPLES);

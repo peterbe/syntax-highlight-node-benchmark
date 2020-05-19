@@ -1,0 +1,3 @@
+window.addEventListener("unload", function logData() {
+  navigator.sendBeacon("/log", analyticsData);
+});

@@ -1,0 +1,3 @@
+<div class="linear-repeat">Repeating linear gradient</div>
+<br>
+<div class="radial-repeat">Repeating radial gradient</div>

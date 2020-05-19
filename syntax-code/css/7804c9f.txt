@@ -1,0 +1,3 @@
+button#tiny {
+  touch-action: none;
+}

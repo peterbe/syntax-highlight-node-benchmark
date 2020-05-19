@@ -1,0 +1,3 @@
+btn.addEventListener('click', () => {
+  resizeObserver.disconnect();
+})

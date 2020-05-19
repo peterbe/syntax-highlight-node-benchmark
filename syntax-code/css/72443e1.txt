@@ -1,0 +1,1 @@
+filter: contrast(175%) brightness(103%)

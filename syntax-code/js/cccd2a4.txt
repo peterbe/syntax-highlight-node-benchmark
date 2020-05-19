@@ -1,0 +1,12 @@
+function HTMLinXHR() {
+  if (!window.XMLHttpRequest)
+    return false;
+  var req = new window.XMLHttpRequest();
+  req.open('GET', window.location.href, false);
+  try {
+    req.responseType = 'document';
+  } catch(e) {
+    return true;
+  }
+  return false;
+}

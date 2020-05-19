@@ -1,0 +1,13 @@
+function getFlashVersion() {
+  var flash = navigator.plugins.namedItem('Shockwave Flash');
+  if (typeof flash != 'object') {
+    // flash is not present
+    return undefined;
+  }
+  if(flash.version){ 
+    return flash.version;
+  } else {
+    //No version property (e.g. in Chrome)
+    return flash.description.replace(/Shockwave Flash /,"");
+  }
+}

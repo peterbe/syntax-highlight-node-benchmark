@@ -1,0 +1,5 @@
+var recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+
+recognition.addEventListener('speechend', function() { 
+  console.log('Speech has stopped being detected');
+});

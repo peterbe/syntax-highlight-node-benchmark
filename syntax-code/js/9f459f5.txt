@@ -1,0 +1,2 @@
+const bufferSize = audioCtx.sampleRate * noiseLength;
+const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);

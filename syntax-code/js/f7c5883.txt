@@ -1,0 +1,4 @@
+var options = {
+  attributes: true,
+  subtree: false
+};

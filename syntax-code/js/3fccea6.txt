@@ -1,0 +1,4 @@
+//Bind array buffer to a Vertex Buffer Object
+const vbo = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
+gl.bufferData(gl.ARRAY_BUFFER, buffer, gl.STATIC_DRAW);

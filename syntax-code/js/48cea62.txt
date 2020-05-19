@@ -1,0 +1,4 @@
+//Inside a service worker.
+self.onnotificationclose = function(event) {
+  console.log('On notification close: ', event.notification.tag);
+};

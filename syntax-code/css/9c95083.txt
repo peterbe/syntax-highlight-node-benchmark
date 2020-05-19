@@ -1,0 +1,7 @@
+div:where(.outer) p {
+  color: orange;
+}
+
+div p {
+  color: blueviolet;
+}

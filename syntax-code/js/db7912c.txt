@@ -1,0 +1,63 @@
+function loadRandomAd(replaceBox) {
+  let ads = [
+    {
+      bgcolor: "#cec",
+      title: "Eat Green Beans",
+      body: "Make your mother proud—they're good for you!"
+    },
+    {
+      bgcolor: "aquamarine",
+      title: "MillionsOfFreeBooks.whatever",
+      body: "Read classic literature online free!"
+    },
+    {
+      bgcolor: "lightgrey",
+      title: "3.14 Shades of Gray: A novel",
+      body: "Love really does make the world go round..."
+    },
+    {
+      bgcolor: "#fee",
+      title: "Flexbox Florist",
+      body: "When life's layout gets complicated, send flowers."
+    }
+  ];
+  let adBox, title, body, timerElem;
+
+  let ad = ads[Math.floor(Math.random()*ads.length)];
+
+  if (replaceBox) {
+    adObserver.unobserve(replaceBox);
+    adBox = replaceBox;
+    title = replaceBox.querySelector(".title");
+    body = replaceBox.querySelector(".body");
+    timerElem = replaceBox.querySelector(".timer");
+  } else {
+    adBox = document.createElement("div");
+    adBox.className = "ad";
+    title = document.createElement("h2");
+    body = document.createElement("p");
+    timerElem = document.createElement("div");
+    adBox.appendChild(title);
+    adBox.appendChild(body);
+    adBox.appendChild(timerElem);
+  }
+
+  adBox.style.backgroundColor = ad.bgcolor;
+
+  title.className = "title";
+  body.className = "body";
+  title.innerText = ad.title;
+  body.innerHTML = ad.body;
+
+  adBox.dataset.totalViewTime = 0;
+  adBox.dataset.lastViewStarted = 0;
+
+  timerElem.className="timer";
+  timerElem.innerText = "0:00";
+
+  if (!replaceBox) {
+    contentBox.appendChild(adBox);
+  }
+
+  adObserver.observe(adBox);
+}

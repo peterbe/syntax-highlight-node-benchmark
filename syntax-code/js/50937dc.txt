@@ -1,0 +1,3 @@
+window.addEventListener('copy', (event) => {
+    console.log('copy action initiated')
+});

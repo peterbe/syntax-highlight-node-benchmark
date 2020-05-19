@@ -1,0 +1,4 @@
+saturate(0)     /* Completely unsaturated */
+saturate(.4)    /* 40% saturated */
+saturate(100%)  /* No effect */
+saturate(200%)  /* Double saturation */

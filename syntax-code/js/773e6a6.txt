@@ -1,0 +1,3 @@
+var pc = new PeerConnection();
+
+pc.getIdentityAssertion(); // Not mandatory, but we know that we will need it in the future.

@@ -1,0 +1,3 @@
+document.onpointerup = (event) => {
+  console.log('Pointer up');
+};

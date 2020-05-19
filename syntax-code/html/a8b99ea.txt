@@ -1,0 +1,3 @@
+<table id="my_table" onclick="console.log(this.id);"><!-- `this` refers to the table; logs 'my_table' -->
+  ...
+</table>

@@ -1,0 +1,10 @@
+var pc = new RTCPeerConnection();
+var dc = pc.createDataChannel("BackChannel");
+
+function sendMessage(msg) {
+  let obj = {
+    "message": msg,
+    "timestamp": new Date()
+  }
+  dc.send(JSON.stringify(obj));
+}

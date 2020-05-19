@@ -1,0 +1,13 @@
+body {
+  background: beige;
+}
+
+div {
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  bottom: 20%;
+  left: 15%;
+  background: gold;
+  border: 1px solid blue;
+}

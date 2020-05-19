@@ -1,0 +1,10 @@
+<!-- controller.html -->
+<!-- Setting presentation.defaultRequest allows the page to specify the
+     PresentationRequest to use when the controlling UA initiates a
+     presentation. -->
+<script>
+  navigator.presentation.defaultRequest = new PresentationRequest(presUrls);
+  navigator.presentation.defaultRequest.onconnectionavailable = function(evt) {
+    setConnection(evt.connection);
+  };
+</script>

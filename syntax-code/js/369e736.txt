@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+para.onpointerup = (event) => {
+  console.log('Pointer up');
+};

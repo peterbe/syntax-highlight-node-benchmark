@@ -1,0 +1,4 @@
+var textDecoder1 = new TextDecoder("iso-8859-2");
+var textDecoder2 = new TextDecoder();
+var textDecoder3 = new TextDecoder("csiso2022kr", {fatal: true}); // Allows EncodingError exception to be thrown.
+var textDecoder4 = new TextDecoder("iso-2022-cn"); // Throw a TypeError exception.

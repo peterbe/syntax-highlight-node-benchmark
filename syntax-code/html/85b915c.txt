@@ -1,0 +1,5 @@
+<table border="1">
+  <tr>
+    <td width="100px" height="100px">Drag Over</td>
+  </tr>
+</table>

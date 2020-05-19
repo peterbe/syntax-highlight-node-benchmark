@@ -1,0 +1,4 @@
+span {
+  text-transform: full-width;
+}
+strong { width: 100%; float: right; }

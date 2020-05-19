@@ -1,0 +1,4 @@
+let noteFreq = null;
+let customWaveform = null;
+let sineTerms = null;
+let cosineTerms = null;

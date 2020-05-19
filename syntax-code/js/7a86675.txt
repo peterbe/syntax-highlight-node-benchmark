@@ -1,0 +1,3 @@
+myrows = mytable.rows;
+firstRow = mytable.rows[0];
+lastRow = mytable.rows.item(mytable.rows.length-1);

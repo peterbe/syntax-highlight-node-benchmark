@@ -1,0 +1,1 @@
+var myInstallEvent = new InstallEvent(type, init);

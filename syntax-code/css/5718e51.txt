@@ -1,0 +1,7 @@
+.wrapper {
+  writing-mode: vertical-lr;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 10px;
+}

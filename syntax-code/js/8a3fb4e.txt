@@ -1,0 +1,7 @@
+const fileWithDate = new File([], 'file.bin', {
+  lastModified: new Date(2017, 1, 1),
+});
+console.log(fileWithDate.lastModified); //returns 1485903600000
+
+const fileWithoutDate = new File([], 'file.bin');
+console.log(fileWithoutDate.lastModified); //returns current time

@@ -1,0 +1,7 @@
+// this snippet compares the base language and 
+// redirects to another url based on language
+if (document.documentElement.lang === "en") {
+  window.location.href = "Some_document.html.en";
+} else if (document.documentElement.lang === "ru") {
+  window.location.href = "Some_document.html.ru";
+}

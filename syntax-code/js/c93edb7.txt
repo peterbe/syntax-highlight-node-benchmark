@@ -1,0 +1,3 @@
+if (table.tHead == my_head_el) {
+  // ...
+}

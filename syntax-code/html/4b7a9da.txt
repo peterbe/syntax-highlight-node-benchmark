@@ -1,0 +1,3 @@
+<div class="messagebox" id="receivebox">
+  <p>Messages received:</p>
+</div>

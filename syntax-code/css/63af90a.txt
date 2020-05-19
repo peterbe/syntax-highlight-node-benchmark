@@ -1,0 +1,4 @@
+/* avoid page break before the div */
+div.note { 
+    page-break-before: avoid;
+} 

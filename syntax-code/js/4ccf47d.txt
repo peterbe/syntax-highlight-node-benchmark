@@ -1,0 +1,2 @@
+let amp = audioCtx.createGain();
+amp.gain.setValueAtTime(1, audioCtx.currentTime);

@@ -1,0 +1,11 @@
+let span = document.querySelector("span");
+let classes = span.classList;
+
+let result = classes.replace("c", "z");
+console.log(result);
+
+if (result) {
+  span.textContent = classes;
+} else {
+  span.textContent = 'token not replaced successfully';
+}

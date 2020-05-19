@@ -1,0 +1,4 @@
+let targetRayPose = frame.session.getPose(mainController.targetRaySpace,
+                       viewerRefSpace);
+let targetRayOrigin = targetRayPose.transform.position;
+let targetRayVector = targetRayPose.transform.orientation;

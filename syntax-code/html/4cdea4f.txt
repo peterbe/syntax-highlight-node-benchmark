@@ -1,0 +1,2 @@
+<p class="small-caps">Firefox rocks, small caps!</p>
+<p class="normal">Firefox rocks, normal caps!</p>

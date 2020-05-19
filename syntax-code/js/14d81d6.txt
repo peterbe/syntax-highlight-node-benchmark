@@ -1,0 +1,7 @@
+const positionX = posX;
+const positionY = posY;
+const positionZ = posZ;
+
+const orientationX = 0.0;
+const orientationY = 0.0;
+const orientationZ = -1.0;

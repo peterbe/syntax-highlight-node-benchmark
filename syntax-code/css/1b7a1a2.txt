@@ -1,0 +1,3 @@
+@supports (background: paint(id)) {
+  background-image: paint(checkerboard);
+}

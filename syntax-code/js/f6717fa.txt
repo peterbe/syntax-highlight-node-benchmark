@@ -1,0 +1,8 @@
+pc.ontrack = ({track, streams}) => {
+  track.onunmute = () => {
+    if (remoteVideo.srcObject) {
+      return;
+    }
+    remoteVideo.srcObject = streams[0];
+  };
+};

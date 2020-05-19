@@ -1,0 +1,4 @@
+if (icpStats.responsesReceived > 0
+    && icpStats.consentExpiredTimestamp < performance.now()) {
+  /* at least one ICE response has been received */
+}

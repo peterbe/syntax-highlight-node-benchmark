@@ -1,0 +1,24 @@
+// Get a LockedFile object from the handle
+var myFile = myFileHandle.open('readwrite');
+
+// Retrieve the size of the file
+var getmeta = myFile.getMetadata();
+
+getmeta.onsuccess = function () {
+  var size = this.result.size;
+
+  // The reading operation will start with the byte at index 0 in the file
+  myFile.location = 0;
+
+  // Start a reading operation for the whole file content
+  var reading = myFile.readAsText(size);
+
+  reading.onsuccess = function () {
+    console.log('The content of the file is:');
+    console.log(this.result);
+  }
+
+  reading.onerror = function () {
+    console.log('Something goes wrong in the reading process: ' + this.error);
+  }
+}

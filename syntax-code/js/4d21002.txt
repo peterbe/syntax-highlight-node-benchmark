@@ -1,0 +1,20 @@
+function checkPageFocus() {
+  let body = document.querySelector('body');
+  let log = document.getElementById('log');
+
+  if (document.hasFocus()) {
+    log.textContent = 'This document has the focus.';
+    body.style.background = '#fff';
+  }
+  else {
+    log.textContent = 'This document does not have the focus.';
+    body.style.background = '#ccc';
+  }
+}
+
+function openWindow() {
+  window.open('https://developer.mozilla.org/', 'MDN', 'width=640,height=320,left=150,top=150');
+}
+
+// Check page focus every 300 milliseconds
+setInterval(checkPageFocus, 300);

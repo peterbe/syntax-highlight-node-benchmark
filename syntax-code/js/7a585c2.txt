@@ -1,0 +1,7 @@
+function locationHashChanged() {
+  if (location.hash === '#cool-feature') {
+    console.log("You're visiting a cool feature!");
+  }
+}
+
+window.onhashchange = locationHashChanged;

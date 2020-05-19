@@ -1,0 +1,12 @@
+div {
+  font-size: 2rem;
+  font-family: serif;
+}
+
+#nokern {
+  font-kerning: none;
+}
+
+#kern {
+  font-kerning: normal;
+}

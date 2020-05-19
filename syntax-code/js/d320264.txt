@@ -1,0 +1,5 @@
+let stream = new MediaStream();
+
+stream.addEventListener('addtrack', (event) => {
+  console.log(`New ${event.track.kind} track added`);
+});

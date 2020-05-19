@@ -1,0 +1,3 @@
+document.querySelectorAll("video, audio")[0].textTracks.onremovetrack = function(event) {
+  myTrackCount = document.querySelectorAll("video, audio")[0].textTracks.length;
+};

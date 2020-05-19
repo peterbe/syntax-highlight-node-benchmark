@@ -1,0 +1,8 @@
+let options = {
+  antialias: getPreferenceValue("antialiasing")
+};
+
+let glLayer = new XRWebGLLayer(xrSession, gl, options);
+if (glLayer) {
+  xrSession.updateRenderState({ baseLayer: glLayer });
+}

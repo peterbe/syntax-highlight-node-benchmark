@@ -1,0 +1,26 @@
+/* CSS Basic User Interface Module Level 4 values */
+appearance: none;
+appearance: auto;
+appearance: button;
+appearance: textfield;
+appearance: searchfield;
+appearance: textarea;
+appearance: push-button;
+appearance: button-bevel;
+appearance: slider-horizontal;
+appearance: checkbox;
+appearance: radio;
+appearance: square-button;
+appearance: menulist;
+appearance: menulist-button;
+appearance: listbox;
+appearance: meter;
+appearance: progress-bar;
+
+/* Partial list of available values in Gecko */
+-moz-appearance: scrollbarbutton-up;
+-moz-appearance: button-bevel;
+
+/* Partial list of available values in WebKit/Blink (as well as Gecko and Edge) */
+-webkit-appearance: media-mute-button;
+-webkit-appearance: caret;

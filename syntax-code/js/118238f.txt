@@ -1,0 +1,3 @@
+db.transaction("customers").objectStore("customers").get("444-44-4444").onsuccess = function(event) {
+  console.log("Name for SSN 444-44-4444 is " + event.target.result.name);
+};

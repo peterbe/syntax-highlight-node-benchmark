@@ -1,0 +1,1 @@
+gl.uniformMatrix4fv(this.locations.model, false, new Float32Array(this.transforms.model));

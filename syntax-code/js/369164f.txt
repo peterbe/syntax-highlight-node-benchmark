@@ -1,0 +1,19 @@
+// WebVR variables
+
+var frameData = new VRFrameData();
+var vrDisplay;
+var btn = document.querySelector('.stop-start');
+var normalSceneFrame;
+var vrSceneFrame;
+
+var poseStatsBtn = document.querySelector('.pose-stats');
+var poseStatsSection = document.querySelector('section');
+poseStatsSection.style.visibility = 'hidden'; // hide it initially
+
+var posStats = document.querySelector('.pos');
+var orientStats = document.querySelector('.orient');
+var linVelStats = document.querySelector('.lin-vel');
+var linAccStats = document.querySelector('.lin-acc');
+var angVelStats = document.querySelector('.ang-vel');
+var angAccStats = document.querySelector('.ang-acc');
+var poseStatsDisplayed = false;

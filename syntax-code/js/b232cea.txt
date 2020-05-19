@@ -1,0 +1,11 @@
+for each object in the scene
+  bindProgram()
+  bindUniforms()
+  bindBuffers()
+  bindTextures()
+  for each view in the pose's views list
+    get the XRWebGLLayer's viewport
+    set the WebGL viewport to match
+    bindVertices()
+    bindMatrices()
+    drawMyObject()

@@ -1,0 +1,2 @@
+<input type="text" placeholder="Type something here to see its length." size="50">
+<p id="log"></p>

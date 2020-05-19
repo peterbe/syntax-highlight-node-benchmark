@@ -1,0 +1,2 @@
+// In a Web worker, on the page https://developer.mozilla.org/en-US/URLUtilsReadOnly.host
+var result = window.self.host; // Returns:'developer.mozilla.org:80'

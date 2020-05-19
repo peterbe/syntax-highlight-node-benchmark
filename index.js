@@ -130,7 +130,7 @@ function* walker(root, depth = 0) {
   }
 }
 
-const ROOT = "/tmp/syntax-code";
+const ROOT = "./syntax-code";
 
 // Testing if they work
 

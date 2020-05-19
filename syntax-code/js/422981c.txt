@@ -1,0 +1,1 @@
+gl.drawElements(gl.POINTS, 8, gl.UNSIGNED_BYTE, 0);

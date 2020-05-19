@@ -1,0 +1,3 @@
+function errorCallback(error) {
+  alert(`ERROR(${error.code}): ${error.message}`);
+};

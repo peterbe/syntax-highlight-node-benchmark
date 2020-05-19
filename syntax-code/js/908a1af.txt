@@ -1,0 +1,4 @@
+for (let i = 0, numFiles = fileList.length; i < numFiles; i++) {
+  const file = fileList[i];
+  // ...
+}

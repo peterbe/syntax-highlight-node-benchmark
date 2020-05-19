@@ -1,0 +1,12 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+let matrix = ctx.currentTransform;
+matrix.a = 1;
+matrix.b = 1;
+matrix.c = 0;
+matrix.d = 1;
+matrix.e = 0;
+matrix.f = 0;
+ctx.currentTransform = matrix;
+ctx.fillRect(0, 0, 100, 100);

@@ -1,0 +1,6 @@
+<p>Initial String
+  <strong>Ĩ is a Lithuanian LETTER as is J́</strong>
+</p>
+<p>text-transform: lowercase
+  <strong><span lang="lt">Ĩ is a Lithuanian LETTER as is J́</span></strong>
+</p>

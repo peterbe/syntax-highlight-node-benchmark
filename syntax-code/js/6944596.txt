@@ -1,0 +1,3 @@
+element.addEventListener('transitionstart', () => {
+  console.log('Started transitioning');
+});

@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+para.onpointermove = (event) => {
+  console.log('Pointer moved');
+};

@@ -1,0 +1,1 @@
+blueComponent = imageData.data[((50 * (imageData.width * 4)) + (200 * 4)) + 2];

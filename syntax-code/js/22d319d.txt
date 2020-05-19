@@ -1,0 +1,9 @@
+function noteReleased(event) {
+  let dataset = event.target.dataset;
+
+  if (dataset && dataset["pressed"]) {
+    oscList[dataset["octave"][dataset["note"]]].stop();
+    oscList[dataset["octave"][dataset["note"]]] = null;
+    delete dataset["pressed"];
+  }
+}

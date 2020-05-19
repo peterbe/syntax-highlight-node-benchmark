@@ -1,0 +1,3 @@
+if (!navigator.cookieEnabled) { 
+  // The browser does not support or is blocking cookies from being set.
+}

@@ -1,0 +1,17 @@
+// Taking care of the browser-specific prefixes.
+  window.resolveLocalFileSystemURL = window.resolveLocalFileSystemURL ||
+                                     window.webkitResolveLocalFileSystemURL;
+
+// Create web workers
+  var worker = new Worker('worker.js');
+  worker.onmessage = function(e) {
+    var urls = e.data.entries;
+    urls.forEach(function(url, i) {
+      window.resolveLocalFileSystemURL(url, function(fileEntry) {
+        // Print out file's name.
+        console.log(fileEntry.name); 
+      });
+    });
+  };
+
+  worker.postMessage({'cmd': 'list'});

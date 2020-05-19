@@ -1,0 +1,10 @@
+function update(e) {
+  setCoords(e, "offset");
+  setCoords(e, "client");
+  setCoords(e, "page");
+  setCoords(e, "screen");
+}
+
+inner.addEventListener("mouseenter", update, false);
+inner.addEventListener("mousemove", update, false);
+inner.addEventListener("mouseleave", update, false);

@@ -1,0 +1,4 @@
+input:placeholder-shown {
+  color: red;
+  font-style: italic;
+}

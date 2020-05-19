@@ -1,0 +1,13 @@
+// Create the event.
+var event = document.createEvent('Event');
+
+// Define that the event name is 'build'.
+event.initEvent('build', true, true);
+
+// Listen for the event.
+elem.addEventListener('build', function (e) {
+  // e.target matches elem
+}, false);
+
+// Target can be any Element or other EventTarget.
+elem.dispatchEvent(event);

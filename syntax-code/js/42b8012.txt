@@ -1,0 +1,10 @@
+var myHeaders = new Headers({
+    'Content-Type': 'text/xml'
+});
+
+// or, using an array of arrays:
+myHeaders = new Headers([
+    ['Content-Type', 'text/xml']
+]);
+
+myHeaders.get('Content-Type') // should return 'text/xml'

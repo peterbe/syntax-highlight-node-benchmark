@@ -1,0 +1,1 @@
+assert(para.firstChild.wholeText == "Thru-hiking is great!    However, ");

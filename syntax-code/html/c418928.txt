@@ -1,0 +1,1 @@
+<img src="filesystem:http://my-awesome-website.woot/temporary/awesomesauce.jpg">

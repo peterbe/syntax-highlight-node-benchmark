@@ -1,0 +1,5 @@
+.exampleText {
+  writing-mode: vertical-lr;
+  text-combine-upright: digits 2;
+  font: 36px serif;
+}

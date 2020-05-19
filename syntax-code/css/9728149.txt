@@ -1,0 +1,12 @@
+article {
+  background-color: white;
+  padding: 6px;
+}
+
+article:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+article h2 {
+  margin-top: 0;
+}

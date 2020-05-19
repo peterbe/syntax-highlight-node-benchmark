@@ -1,0 +1,4 @@
+window.onvrdisplayfocus = function() {
+  info.textContent = 'Display focused.';
+  reportDisplays();
+};

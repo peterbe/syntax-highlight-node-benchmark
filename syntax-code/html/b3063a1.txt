@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+
+<link id="LinkedStyle" rel="stylesheet" href="document.css" type="text/css" media="screen" />
+<style id="InlineStyle" rel="stylesheet" type="text/css" media="screen, print">
+p { color: blue; }
+</style>
+</head>
+<body>
+
+<script>
+alert('LinkedStyle: ' + document.getElementById('LinkedStyle').media); // 'screen'
+alert('InlineStyle: ' + document.getElementById('InlineStyle').media); // 'screen, print'
+</script>
+
+</body>
+</html>

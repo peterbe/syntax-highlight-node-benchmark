@@ -1,0 +1,3 @@
+xrSession.onsqueezestart = onSqueezeEvent;
+xrSession.onsqueeze = onSqueezeEvent;
+xrSession.onsqueezeend = onSqueezeEvent;

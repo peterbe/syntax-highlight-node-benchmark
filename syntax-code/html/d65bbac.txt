@@ -1,0 +1,1 @@
+<div class="readwrite">The user is able to change this text.</div>

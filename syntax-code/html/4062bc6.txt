@@ -1,0 +1,1 @@
+<img src="taco-tuesday.jpg" longDesc="image-descriptions/taco-tuesday.html">

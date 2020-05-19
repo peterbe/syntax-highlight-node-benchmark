@@ -1,0 +1,2 @@
+// Check if the autofocus attribute on the <select>
+var hasAutofocus = document.getElementById('mySelect').autofocus;

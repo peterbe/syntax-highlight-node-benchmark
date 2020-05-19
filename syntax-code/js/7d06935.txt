@@ -1,0 +1,7 @@
+var doc = new DOMParser().parseFromString('<foo />', 'application/xml');
+var pi = doc.createProcessingInstruction('xml-stylesheet', 'href="mycss.css" type="text/css"');
+
+doc.insertBefore(pi, doc.firstChild);
+
+console.log(new XMLSerializer().serializeToString(doc));
+// Displays: <?xml-stylesheet href="mycss.css" type="text/css"?><foo/>

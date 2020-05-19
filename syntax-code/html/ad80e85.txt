@@ -1,0 +1,4 @@
+<svg width="250" height="250" viewBox="0 0 50 50">
+  <rect width="25" height="25" fill="red" />
+  <rect id="transformed" width="25" height="25" fill="blue" />
+</svg>

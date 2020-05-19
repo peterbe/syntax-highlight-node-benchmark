@@ -1,0 +1,88 @@
+function moveBoombox(direction, prevMove) {
+    switch (direction) {
+        case 'left':
+            if (transform.xAxis > leftBound) {
+                transform.xAxis -= 5;
+                panner.positionX.value -= 0.1;
+            }
+        break;
+        case 'up':
+            if (transform.yAxis > topBound) {
+                transform.yAxis -= 5;
+                panner.positionY.value -= 0.3;
+            }
+        break;
+        case 'right':
+            if (transform.xAxis < rightBound) {
+                transform.xAxis += 5;
+                panner.positionX.value += 0.1;
+            }
+        break;
+        case 'down':
+            if (transform.yAxis < bottomBound) {
+                transform.yAxis += 5;
+                panner.positionY.value += 0.3;
+            }
+        break;
+        case 'back':
+            if (transform.zAxis > innerBound) {
+                transform.zAxis -= 0.01;
+                panner.positionZ.value += 40;
+            }
+        break;
+        case 'forward':
+            if (transform.zAxis < outerBound) {
+                transform.zAxis += 0.01;
+                panner.positionZ.value -= 40;
+            }
+        break;
+        case 'rotate-left':
+            transform.rotateY -= degreesY;
+           
+            // 'left' is rotation about y-axis with negative angle increment
+            z = panner.orientationZ.value*Math.cos(q) - panner.orientationX.value*Math.sin(q);
+            x = panner.orientationZ.value*Math.sin(q) + panner.orientationX.value*Math.cos(q);
+            y = panner.orientationY.value;
+
+            panner.orientationX.value = x;
+            panner.orientationY.value = y;
+            panner.orientationZ.value = z;
+        break;
+        case 'rotate-right':
+            transform.rotateY += degreesY;
+            // 'right' is rotation about y-axis with positive angle increment
+            z = panner.orientationZ.value*Math.cos(-q) - panner.orientationX.value*Math.sin(-q);
+            x = panner.orientationZ.value*Math.sin(-q) + panner.orientationX.value*Math.cos(-q);
+            y = panner.orientationY.value;
+            panner.orientationX.value = x;
+            panner.orientationY.value = y;
+            panner.orientationZ.value = z;
+        break;
+        case 'rotate-up':
+            transform.rotateX += degreesX;
+            // 'up' is rotation about x-axis with negative angle increment
+            z = panner.orientationZ.value*Math.cos(-q) - panner.orientationY.value*Math.sin(-q);
+            y = panner.orientationZ.value*Math.sin(-q) + panner.orientationY.value*Math.cos(-q);
+            x = panner.orientationX.value;
+            panner.orientationX.value = x;
+            panner.orientationY.value = y;
+            panner.orientationZ.value = z;
+        break;
+        case 'rotate-down':
+            transform.rotateX -= degreesX;
+            // 'down' is rotation about x-axis with positive angle increment
+            z = panner.orientationZ.value*Math.cos(q) - panner.orientationY.value*Math.sin(q);
+            y = panner.orientationZ.value*Math.sin(q) + panner.orientationY.value*Math.cos(q);
+            x = panner.orientationX.value;
+            panner.orientationX.value = x;
+            panner.orientationY.value = y;
+            panner.orientationZ.value = z;
+        break;
+    }
+
+  boombox.style.transform = 'translateX('+transform.xAxis+'px) translateY('+transform.yAxis+'px) scale('+transform.zAxis+') rotateY('+transform.rotateY+'deg) rotateX('+transform.rotateX+'deg)';
+
+  const move = prevMove || {};
+  move.frameId = requestAnimationFrame(() => moveBoombox(direction, move));
+    return move;
+}

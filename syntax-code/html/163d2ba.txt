@@ -1,0 +1,2 @@
+<label for="userPassword">Password:</label>
+<input id="userPassword" type="password" autocomplete="current-password">

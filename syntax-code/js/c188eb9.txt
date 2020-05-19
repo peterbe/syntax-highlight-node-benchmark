@@ -1,0 +1,5 @@
+// Iterate over element's attributes
+for (let name of element.getAttributeNames()) {
+  let value = element.getAttribute(name);
+  console.log(name, value);
+}

@@ -1,0 +1,14 @@
+// reduced time precision (1ms) in Firefox 60
+performance.now();
+// 8781416
+// 8781815
+// 8782206
+// ...
+
+
+// reduced time precision with `privacy.resistFingerprinting` enabled
+performance.now();
+// 8865400
+// 8866200
+// 8866700
+// ...

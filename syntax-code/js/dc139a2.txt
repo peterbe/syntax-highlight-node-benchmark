@@ -1,0 +1,25 @@
+let xrPermissionDesc = {
+  name: "xr",
+  mode: "immersive-vr",
+  optionalFeatures: [ "bounded-floor" ]
+};
+
+if (navigator.permissions) {
+  navigator.permissions.query(xrPermissionDesc).then(({state}) => {
+    switch(state) {
+      case "granted":
+        setupXR();
+        break;
+      case "prompt":
+        promptAndSetupXR();
+        break;
+      default:
+        /* do nothing otherwise */
+       break;
+  }
+  .catch(err) {
+    console.log(err);
+  }
+} else {
+  setupXR();
+}

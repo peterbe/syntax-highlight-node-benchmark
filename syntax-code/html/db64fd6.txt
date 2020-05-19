@@ -1,0 +1,2 @@
+<label for="ticketNum">Number of tickets you would like to buy:</label>
+<input id="ticketNum" type="number" name="ticketNum" value="0">

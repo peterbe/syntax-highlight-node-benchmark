@@ -1,0 +1,4 @@
+<p>This is the first sentence.
+  <span style="font-size:0.8em">This whole sentence is in small
+  letters.</span>
+</p>

@@ -1,0 +1,11 @@
+<form>
+  <div>
+    <label for="month">What month would you like to visit us (Summer months only, please)?</label>
+    <input id="month" type="month" name="month"
+           min="2017-06" max="2017-09" required>
+    <span class="validity"></span>
+  </div>
+  <div>
+      <input type="submit" value="Submit form">
+  </div>
+</form>

@@ -1,0 +1,6 @@
+fetch("awesome-picture.jpg", { redirect: "error" }).then(function(response) {
+  return response.blob();
+}).then(function(imageBlob) {
+  let imgObjectURL = URL.createObjectURL(imageBlob);
+  document.getElementById("img-element-id").src = imgObjectURL;
+});

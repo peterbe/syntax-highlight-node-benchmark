@@ -1,0 +1,1 @@
+<p>Try opening the context menu. Is it disabled?<p>

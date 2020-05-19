@@ -1,0 +1,8 @@
+var elt = document.createElement("a");
+var linkText = document.createTextNode("My link");
+elt.appendChild(linkText);
+elt.href = "https://developer.mozilla.org/en-US/";
+elt.referrerPolicy = "no-referrer";
+
+var div = document.getElementById("divAround");
+div.appendChild(elt); // When clicked, the link will not send a referrer header.

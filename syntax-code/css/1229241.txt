@@ -1,0 +1,10 @@
+#container {
+  width:267px;
+  height:272px;
+  top:100px;
+  left:100px;
+  position:absolute;
+  font-size:16px;
+  text-shadow:white 0px 0px 6px;
+  text-align:center;
+}

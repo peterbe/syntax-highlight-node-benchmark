@@ -1,0 +1,4 @@
+var candidateLoc = {
+  address: candidate.ip,
+  port: candidate.port
+}

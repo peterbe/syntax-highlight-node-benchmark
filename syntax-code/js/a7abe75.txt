@@ -1,0 +1,7 @@
+var tracks = document.querySelector('video').textTracks; 
+
+for (var i = 0, L = tracks.length; i < L; i++) { /* tracks.length == 10 */
+   if (tracks[i].language == 'en') {
+      console.dir(tracks[i]);
+   }
+}

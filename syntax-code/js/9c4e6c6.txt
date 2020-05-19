@@ -1,0 +1,70 @@
+<!-- controller.html -->
+<button id="disconnectBtn" style="display: none;">Disconnect</button>
+<button id="stopBtn" style="display: none;">Stop</button>
+<button id="reconnectBtn" style="display: none;">Reconnect</button>
+<script>
+  let connection;
+
+  // The Disconnect and Stop buttons are visible if there is a connected presentation
+  const stopBtn = document.querySelector("#stopBtn");
+  const reconnectBtn = document.querySelector("#reconnectBtn");
+  const disconnectBtn = document.querySelector("#disconnectBtn");
+
+  stopBtn.onclick = _ => {
+    connection && connection.terminate();
+  };
+
+  disconnectBtn.onclick = _ => {
+    connection && connection.close();
+  };
+
+  function setConnection(newConnection) {
+    // Disconnect from existing presentation, if not attempting to reconnect
+    if (connection && connection != newConnection && connection.state != 'closed') {
+      connection.onclosed = undefined;
+      connection.close();
+    }
+
+    // Set the new connection and save the presentation ID
+    connection = newConnection;
+    localStorage["presId"] = connection.id;
+
+    function showConnectedUI() {
+      // Allow the user to disconnect from or terminate the presentation
+      stopBtn.style.display = "inline";
+      disconnectBtn.style.display = "inline";
+      reconnectBtn.style.display = "none";
+    }
+
+    function showDisconnectedUI() {
+      disconnectBtn.style.display = "none";
+      stopBtn.style.display = "none";
+      reconnectBtn.style.display = localStorage["presId"] ? "inline" : "none";
+    }
+
+    // Monitor the connection state
+    connection.onconnect = _ => {
+      showConnectedUI();
+
+      // Register message handler
+      connection.onmessage = message => {
+        console.log(`Received message: ${message.data}`);
+      };
+
+      // Send initial message to presentation page
+      connection.send("Say hello");
+    };
+
+    connection.onclose = _ => {
+      connection = null;
+      showDisconnectedUI();
+    };
+
+    connection.onterminate = _ => {
+      // Remove presId from localStorage if exists
+      delete localStorage["presId"];
+      connection = null;
+      showDisconnectedUI();
+    };
+  };
+</script>

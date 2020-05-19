@@ -1,0 +1,9 @@
+const details = {
+  id: "super-store-order-123-12312",
+  total: {
+    label: "Total due",
+    amount: { currency: "USD", value: "65.00" },
+  },
+};
+const request = new PaymentRequest(methodData, details);
+console.log(request.id); // super-store-order-123-12312

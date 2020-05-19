@@ -1,0 +1,20 @@
+* [lang^=en] {
+  color: green;
+}
+
+*.warning {
+  color: red;
+}
+
+*#maincontent {
+  border: 1px solid blue;
+}
+
+.floating {
+  float: left
+}
+
+/* automatically clear the next sibling after a floating element */
+.floating + * {
+  clear: left;
+}

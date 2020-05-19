@@ -1,0 +1,10 @@
+document.getElementById("startButton").addEventListener("click", function() {
+  navigator.mediaDevices.getUserMedia({
+      video: {
+        width: 160,
+        height: 120,
+        frameRate: 15
+      }
+  }).then(stream => videoElement.srcObject = stream)
+    .catch(err => log(err.name + ": " + err.message));
+}, false);

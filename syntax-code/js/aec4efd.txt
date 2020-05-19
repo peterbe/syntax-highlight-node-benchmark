@@ -1,0 +1,13 @@
+// Create the query list.
+const mediaQueryList = window.matchMedia("(orientation: portrait)");
+
+// Define a callback function for the event listener.
+function handleOrientationChange(mql) {
+  // ...
+}
+
+// Run the orientation change handler once.
+handleOrientationChange(mediaQueryList);
+
+// Add the callback function as a listener to the query list.
+mediaQueryList.addListener(handleOrientationChange);

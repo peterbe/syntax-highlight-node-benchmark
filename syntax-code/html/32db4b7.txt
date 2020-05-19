@@ -1,0 +1,11 @@
+<div class="main">
+  <div id="box">
+    <div id="text">Box</div>
+  </div>
+</div>
+
+<div class="button" id="play">
+  Play Animation
+</div>
+
+<pre id="log"></pre>

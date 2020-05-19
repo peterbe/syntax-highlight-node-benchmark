@@ -1,0 +1,10 @@
+  processor.timerCallback = function timerCallback() {
+    if (this.video.paused || this.video.ended) {
+      return;
+    }
+    this.computeFrame();
+    let self = this;
+    setTimeout(function() {
+        self.timerCallback();
+      }, 0);
+  },

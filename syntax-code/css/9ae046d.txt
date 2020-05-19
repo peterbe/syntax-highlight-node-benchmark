@@ -1,0 +1,8 @@
+/* Keyword values */
+-moz-stack-sizing: auto;
+-moz-stack-sizing: ignore;
+
+/* Global values */
+-moz-stack-sizing: inherit;
+-moz-stack-sizing: initial;
+-moz-stack-sizing: unset;

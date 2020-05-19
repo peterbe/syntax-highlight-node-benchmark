@@ -1,0 +1,25 @@
+:not(.unknown) {
+  color: lightgray;
+}
+
+@media (grid: 0) {
+  .unknown {
+    color: lightgray;
+  }
+
+  .bitmap {
+    color: red;
+    text-transform: uppercase;
+  }
+}
+
+@media (grid: 1) {
+  .unknown {
+    color: lightgray;
+  }
+
+  .grid {
+    color: black;
+    text-transform: uppercase;
+  }
+}

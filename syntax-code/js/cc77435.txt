@@ -1,0 +1,19 @@
+window.addEventListener("load", startup, false);
+
+function startup() {
+  contentBox = document.querySelector("main");
+
+  document.addEventListener("visibilitychange", handleVisibilityChange, false);
+
+  let observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: [0.0, 0.75]
+  };
+
+  adObserver = new IntersectionObserver(intersectionCallback,
+                    observerOptions);
+
+  buildContents();
+  refreshIntervalID = window.setInterval(handleRefreshInterval, 1000);
+}

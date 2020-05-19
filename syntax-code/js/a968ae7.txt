@@ -1,0 +1,1 @@
+gl.bindBufferBase(gl.TRANSFORM_FEEDBACK_BUFFER, 0, buffer);

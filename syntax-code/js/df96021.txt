@@ -1,0 +1,10 @@
+let w = 1.5; // width  (x)
+let h = 0.7; // height (y)
+let d = 1;   // depth  (z)
+
+let scaleMatrix = [
+    w,    0,    0,   0,
+    0,    h,    0,   0,
+    0,    0,    d,   0,
+    0,    0,    0,   1
+];

@@ -1,0 +1,7 @@
+function validateResponse(response) {
+  if (checkAllValues(response) {
+    response.complete("success");
+  } else {
+    response.complete("fail");
+  }
+}

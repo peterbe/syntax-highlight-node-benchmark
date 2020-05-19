@@ -1,0 +1,5 @@
+function validateResponse(response) {
+  checkAllValues(response)
+    .then(response => response.complete("success"))
+    .catch(response => response.complete("fail"));
+}

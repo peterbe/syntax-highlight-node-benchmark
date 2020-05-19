@@ -1,0 +1,2 @@
+<div class="source" contenteditable="true">Try copying text from this box...</div>
+<div class="target" contenteditable="true">...and pasting it into this one</div>

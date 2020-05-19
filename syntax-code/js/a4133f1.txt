@@ -1,0 +1,5 @@
+function showMessage(message) {
+    console.log(message + this.responseText);
+}
+
+loadFile("message.txt", showMessage, "New message!\n\n");

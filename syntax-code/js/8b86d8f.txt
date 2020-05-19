@@ -1,0 +1,21 @@
+//Create a video configuration to be tested
+const videoDecoderConfig = {
+  type : 'file', // 'record', 'transmission', or 'media-source'
+  video : {
+    contentType : "video/webm;codecs=vp8", // valid content type
+    width : 800,     // width of the video
+    height : 600,    // height of the video
+    bitrate : 10000, // number of bits used to encode 1s of video
+    framerate : 30   // number of frames making up that 1s.
+  }
+};
+
+const audioEncoderConfig = { 
+  type : 'file', // 'record', 'transmission', or 'media-source'
+  audio : {
+    contentType : "audio/ogg", // valid content type 
+    channels : 2,     // audio channels used by the track
+    bitrate : 132700, // number of bits used to encode 1s of audio 
+    samplerate : 5200 // number of audio samples making up that 1s. 
+  }
+};

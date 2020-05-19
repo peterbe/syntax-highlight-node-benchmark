@@ -1,0 +1,9 @@
+let box = document.getElementById("box");
+
+box.onanimationstart = function(event) {
+  log("Animation started", event);
+}
+
+box.onanimationend = function(event) {
+  log("Animation stopped", event);
+}; 

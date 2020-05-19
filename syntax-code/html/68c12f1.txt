@@ -1,0 +1,1 @@
+<img src="imagenotfound.gif" onerror="this.onerror=null;this.src='imagefound.gif';" />

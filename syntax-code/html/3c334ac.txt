@@ -1,0 +1,2 @@
+<p>Firefox rocks!</p>
+<p class="variant">Firefox rocks!</p>

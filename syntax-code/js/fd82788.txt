@@ -1,0 +1,1 @@
+var xCoordinate = element.cx;

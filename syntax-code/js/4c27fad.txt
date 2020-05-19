@@ -1,0 +1,4 @@
+var myEventObject = new VRDisplayEvent('custom', {
+  display: vrDisplay,
+  reason: 'Custom reason'
+});

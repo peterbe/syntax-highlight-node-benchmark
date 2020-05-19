@@ -1,0 +1,4 @@
+<div style="background:red; width:180px; padding:10px;">
+  <div id="out"></div>
+  <input type="text">
+</div>

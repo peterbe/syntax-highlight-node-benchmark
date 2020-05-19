@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: treeview;
+-webkit-appearance: treeview; }

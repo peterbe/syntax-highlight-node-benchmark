@@ -1,0 +1,11 @@
+window.addEventListener('gamepadconnected', function(e) {
+  info.textContent = 'Gamepad ' + e.gamepad.index + ' connected.';
+  if(!initialRun) {
+      setTimeout(removeGamepads, 1000);
+  }
+});
+
+window.addEventListener('gamepaddisconnected', function(e) {
+  info.textContent = 'Gamepad ' + e.gamepad.index + ' disconnected.';
+  setTimeout(removeGamepads, 1000);
+});

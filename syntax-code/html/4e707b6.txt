@@ -1,0 +1,4 @@
+<select id="mySelect" autofocus>
+  <option>Option 1</option>
+  <option>Option 2</option>
+</select>

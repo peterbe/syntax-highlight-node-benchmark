@@ -1,0 +1,16 @@
+const log = document.getElementById('log');
+
+function logCopy(event) {
+  log.innerText = 'Copy blocked!\n' + log.innerText;
+  event.preventDefault();
+}
+
+function logPaste(event) {
+  log.innerText = 'Paste blocked!\n' + log.innerText;
+  event.preventDefault();
+}
+
+const editor = document.getElementById('editor');
+
+editor.oncopy = logCopy;
+editor.onpaste = logPaste;

@@ -1,0 +1,1 @@
+w = (4 * scaleFactor) + (1 * scaleFactor)

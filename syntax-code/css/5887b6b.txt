@@ -1,0 +1,3 @@
+opacity(0%)   /* Completely transparent */
+opacity(50%)  /* 50% transparent */
+opacity(1)    /* No effect */

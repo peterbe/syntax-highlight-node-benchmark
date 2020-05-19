@@ -1,0 +1,1 @@
+<iframe allow="display-capture" src="/some-other-document.html">

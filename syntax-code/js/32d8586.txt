@@ -1,0 +1,9 @@
+someElement.addEventListener('pointerdown', function(event) {
+  if (event.twist == 0) {
+    // No twist
+    process_no_twist(event);
+  } else {
+    // Default
+    process_twist(event);
+  }
+}, false);

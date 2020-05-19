@@ -1,0 +1,10 @@
+var rtcConfig = {
+  iceServers: [
+    {
+      urls: "turn:myturn.server.ip",
+      username: "username",
+      credential: "password"
+    }
+  ],
+  iceTransportPolicy: "relay"
+}

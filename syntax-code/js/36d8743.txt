@@ -1,0 +1,5 @@
+let span = document.querySelector("span");
+let classes = span.classList;
+let length = classes.length;
+
+span.textContent = `classList length = ${length}`;

@@ -1,0 +1,24 @@
+.fancy {
+  text-shadow: 2px 2px 3px gold;
+}
+
+/* <p> elements that are not in the class `.fancy` */
+p:not(.fancy) {
+  color: green;
+}
+
+/* Elements that are not <p> elements */ 
+body :not(p) {
+  text-decoration: underline;
+}
+
+/* Elements that are not <div> and not <span> elements */
+body :not(div):not(span) {
+  font-weight: bold;
+}
+
+/* Elements that are not `.crazy` or `.fancy` */
+/* Note that this syntax is not well supported yet. */
+body :not(.crazy, .fancy) {
+  font-family: sans-serif;
+}

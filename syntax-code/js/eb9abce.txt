@@ -1,0 +1,5 @@
+window.onpagehide = event => {
+  if (event.persisted) {
+    /* the page isn't being discarded, so it can be reused later */
+  }
+}

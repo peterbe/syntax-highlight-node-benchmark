@@ -1,0 +1,3 @@
+myTrack.onmute = function(evt) {
+  playStateIcon.innerHTML = "&#1F507;";
+}; 

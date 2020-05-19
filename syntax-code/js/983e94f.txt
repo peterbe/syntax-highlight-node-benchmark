@@ -1,0 +1,4 @@
+// If the stylesheet is disabled... 
+if (stylesheet.disabled) {
+  // ... apply styles in-line.
+}

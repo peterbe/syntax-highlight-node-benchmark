@@ -1,0 +1,16 @@
+targetElement.addEventListener('pointerdown', function(event) {
+  // Call the appropriate pointer type handler
+  switch (event.pointerType) {
+    case 'mouse': 
+      process_pointer_mouse(event); 
+      break;
+    case 'pen': 
+      process_pointer_pen(event); 
+      break;
+    case 'touch': 
+      process_pointer_touch(event); 
+      break;
+    default:
+      console.log(`pointerType ${event.pointerType} is not suported`);
+  }
+}, false);

@@ -1,0 +1,17 @@
+const writableStream = new WritableStream({
+  start(controller) {
+    // do stuff with controller
+
+    // error stream if necessary
+    controller.error('My stream is broken');
+  },
+  write(chunk, controller) {
+    ...
+  },
+  close(controller) {
+    ...
+  },
+  abort(err) {
+    ...
+  }
+});

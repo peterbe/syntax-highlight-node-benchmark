@@ -1,0 +1,5 @@
+let insertFakeCursorFlag = false;
+
+if (displayStream.getVideoTracks()[0].getSettings().cursor === "never") {
+  insertFakeCursorFlag = true;
+}

@@ -1,0 +1,12 @@
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.image {
+  width: 100%;
+}
+
+.output {
+  padding-top: 2em;
+}

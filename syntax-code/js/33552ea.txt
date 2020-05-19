@@ -1,0 +1,8 @@
+context = new AudioContext();
+osc = context.createOscillator();
+osc.connect(context.destination);
+
+/* Let's play a sine wave for one second. */
+
+osc.start();
+osc.stop(context.currentTime + 1);

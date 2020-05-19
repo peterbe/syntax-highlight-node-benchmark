@@ -1,0 +1,6 @@
+var trans1 = db.transaction("foo", "readwrite");
+var trans2 = db.transaction("foo", "readwrite");
+var objectStore2 = trans2.objectStore("foo")
+var objectStore1 = trans1.objectStore("foo")
+objectStore2.put("2", "key");
+objectStore1.put("1", "key");

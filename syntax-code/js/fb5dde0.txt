@@ -1,0 +1,3 @@
+utterThis.addEventListener('end', function(event) { 
+  console.log('Utterance has finished being spoken after ' + event.elapsedTime + ' milliseconds.');
+});

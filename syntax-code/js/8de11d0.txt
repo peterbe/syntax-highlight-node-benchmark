@@ -1,0 +1,2 @@
+myHeaders.append('Content-Type', 'image/jpeg');
+myHeaders.getAll('Content-Type'); // Returns [ "image/jpeg" ]

@@ -1,0 +1,2 @@
+const response = await fetch('assets/geometry.bin');
+const buffer = await response.arrayBuffer();

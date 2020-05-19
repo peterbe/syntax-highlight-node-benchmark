@@ -1,0 +1,5 @@
+var gp = navigator.getGamepads()[0]; // Get the first gamepad object
+
+if(gp.buttons[0].pressed == true) {
+  // respond to button being pressed 
+}

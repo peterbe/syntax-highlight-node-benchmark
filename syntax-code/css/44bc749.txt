@@ -1,0 +1,9 @@
+/* Keyword values */
+overflow-wrap: normal;
+overflow-wrap: break-word;
+overflow-wrap: anywhere;
+
+/* Global values */
+overflow-wrap: inherit;
+overflow-wrap: initial;
+overflow-wrap: unset;

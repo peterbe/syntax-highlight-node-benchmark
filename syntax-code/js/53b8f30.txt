@@ -1,0 +1,2 @@
+setTimeout.call(myArray, myArray.myMethod, 2.0*1000); // error: "NS_ERROR_XPC_BAD_OP_ON_WN_PROTO: Illegal operation on WrappedNative prototype object"
+setTimeout.call(myArray, myArray.myMethod, 2.5*1000, 2); // same error

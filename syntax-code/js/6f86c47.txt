@@ -1,0 +1,3 @@
+mat4.rotateX(viewMatrix, viewMatrix, pitchAngle);
+mat4.rotateY(viewMatrix, viewMatrix, yawAngle);
+mat4.rotateZ(viewMatrix, viewMatrix, rollAngle);

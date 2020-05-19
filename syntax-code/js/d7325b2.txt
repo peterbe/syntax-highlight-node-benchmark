@@ -1,0 +1,6 @@
+speedSelector.addEventListener('input', evt => {
+  cartoon.updatePlaybackRate(parseFloat(evt.target.value));
+  cartoon.ready.then(() => {
+    console.log(`Playback rate set to ${cartoon.playbackRate}`);
+  });
+});

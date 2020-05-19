@@ -1,0 +1,4 @@
+var colorPicker = document.querySelector("input");
+colorPicker.addEventListener("change", function(evt) {
+  document.querySelector("p").style.webkitTextStrokeColor = evt.target.value;
+});

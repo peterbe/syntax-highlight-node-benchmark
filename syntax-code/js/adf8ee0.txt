@@ -1,0 +1,16 @@
+function cartesianToHomogeneous(point) 
+  let x = point[0];
+  let y = point[1];
+  let z = point[2];
+  
+  return [x, y, z, 1];
+}
+
+function homogeneousToCartesian(point) {
+  let x = point[0];
+  let y = point[1];
+  let z = point[2];
+  let w = point[3];
+  
+  return [x/w, y/w, z/w];
+}

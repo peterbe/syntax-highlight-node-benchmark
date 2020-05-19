@@ -1,0 +1,5 @@
+const video = document.getElementById('video');
+const obj_url = URL.createObjectURL(blob);
+video.src = obj_url;
+video.play();
+URL.revokeObjectURL(obj_url);

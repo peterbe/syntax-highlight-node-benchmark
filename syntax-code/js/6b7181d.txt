@@ -1,0 +1,11 @@
+workingDirectory.getFile("tmp/workfile.json", { create: true }, function(fileEntry) {
+  fileEntry.getMetadata(function(metadata) {
+    if ((new Date().getFullYear() - metadata.modificationTime.getFullYear()) >= 5) {
+      fileEntry.remove(function() {
+        workingDirectory.getFile("tmp/workfile.json", { create: true }, function(newEntry) {
+          fileEntry = newEntry;
+        });
+      });
+    }
+  });
+}, handleError); 

@@ -1,0 +1,11 @@
+// Old webkitAudioContext code:
+var panner = context.createPanner();
+panner.distanceModel = panner.LINEAR_DISTANCE;      // linear distance model
+panner.distanceModel = panner.INVERSE_DISTANCE;     // inverse distance model
+panner.distanceModel = panner.EXPONENTIAL_DISTANCE; // exponential distance model
+
+// Mew standard AudioContext code:
+var panner = context.createPanner();
+panner.distanceModel = "linear";                    // linear distance model
+panner.distanceModel = "inverse";                   // inverse distance model
+panner.distanceModel = "exponential";               // exponential distance model

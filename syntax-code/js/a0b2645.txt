@@ -1,0 +1,6 @@
+canvas.oncontextmenu = (event) => { event.preventDefault(); };
+canvas.addEventListener("mousemove", (event) => {
+  if (event.buttons & 2) {
+    rotateViewBy(event.movementX, event.movementY);
+  }
+});

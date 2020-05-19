@@ -1,0 +1,6 @@
+navigator.serviceWorker.ready.then(function(reg) {
+  reg.pushManager.getSubscription().then(function(subscription) {
+    var mySubscription = subscription.toJSON();
+    // do something with subscription details
+  })        
+});

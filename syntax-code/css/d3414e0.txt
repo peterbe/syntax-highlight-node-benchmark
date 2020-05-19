@@ -1,0 +1,3 @@
+.shape {
+  shape-outside: circle(50%) border-box;
+}

@@ -1,0 +1,12 @@
+if (sendToClients) {
+  var msgString = JSON.stringify(msg);
+  var i;
+
+  if (msg.target && msg.target !== undefined && msg.target.length !== 0) {
+    sendToOneUser(msg.target, msgString);
+  } else {
+    for (i=0; i<connectionArray.length; i++) {
+      connectionArray[i].send(msgString);
+    }
+  }
+}

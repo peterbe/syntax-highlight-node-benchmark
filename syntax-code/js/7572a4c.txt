@@ -1,0 +1,6 @@
+pc.ondatachannel = function(event) {
+  inboundDataChannel = event.channel;
+  inboundDataChannel.onmessage = handleIncomingMessage;
+  inboundDataChannel.onopen = handleChannelOpen;
+  inboundDataChannel.onclose = handleChannelClose;
+}

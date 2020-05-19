@@ -1,0 +1,2 @@
+gl.getParameter(gl.DEPTH_WRITEMASK);
+// false

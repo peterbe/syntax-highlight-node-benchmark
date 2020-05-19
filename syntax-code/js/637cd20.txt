@@ -1,0 +1,35 @@
+function handleVideoOfferMsg(msg) {
+  var localStream = null;
+
+  targetUsername = msg.name;
+  createPeerConnection();
+
+  var desc = new RTCSessionDescription(msg.sdp);
+
+  myPeerConnection.setRemoteDescription(desc).then(function () {
+    return navigator.mediaDevices.getUserMedia(mediaConstraints);
+  })
+  .then(function(stream) {
+    localStream = stream;
+    document.getElementById("local_video").srcObject = localStream;
+
+    localStream.getTracks().forEach(track => myPeerConnection.addTrack(track, localStream));
+  })
+  .then(function() {
+    return myPeerConnection.createAnswer();
+  })
+  .then(function(answer) {
+    return myPeerConnection.setLocalDescription(answer);
+  })
+  .then(function() {
+    var msg = {
+      name: myUsername,
+      target: targetUsername,
+      type: "video-answer",
+      sdp: myPeerConnection.localDescription
+    };
+
+    sendToServer(msg);
+  })
+  .catch(handleGetUserMediaError);
+}

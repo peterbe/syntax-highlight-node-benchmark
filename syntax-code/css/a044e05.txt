@@ -1,0 +1,2 @@
+contain: strict;
+contain: strict style;

@@ -1,0 +1,41 @@
+.parent {
+    width: 250px;
+    height: 125px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+}
+
+.box1 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-timing-function: linear;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+}

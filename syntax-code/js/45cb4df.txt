@@ -1,0 +1,10 @@
+//Taking care of the browser-specific prefix
+window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
+
+// The first parameter defines the type of storage: persistent or temporary
+// Next, set the size of space needed (in bytes)
+// initFs is the success callback
+// And the last one is the error callback
+// for denial of access and other errors. 
+
+window.requestFileSystem(window.PERSISTENT, 1024*1024,onInitFs,errorHandler);

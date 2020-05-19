@@ -1,0 +1,7 @@
+<svg>
+  <g class="isolate">
+    <circle cx="40" cy="40" r="40" fill="red"/>
+    <circle cx="80" cy="40" r="40" fill="lightgreen"/>
+    <circle cx="60" cy="80" r="40" fill="blue"/>
+  </g>
+</svg>

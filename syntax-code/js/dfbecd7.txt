@@ -1,0 +1,23 @@
+    // now we need to update the value of notified to "yes" in this particular data object, so the
+    // notification won't be set off on it again
+
+    // first open up a tranaction as usual
+    var objectStore = db.transaction(['toDoList'], "readwrite").objectStore('toDoList');
+
+    // get the to-do list object that has this title as it's title
+    var request = objectStore.get(title);
+
+    request.onsuccess = function() {
+      // grab the data object returned as the result
+      var data = request.result;
+      
+      // update the notified value in the object to "yes"
+      data.notified = "yes";
+      
+      // create another request that inserts the item back into the database
+      var requestUpdate = objectStore.put(data);
+      
+      // when this new request succeeds, run the displayData() function again to update the display
+      requestUpdate.onsuccess = function() {
+        displayData();
+      }

@@ -1,0 +1,10 @@
+/* Keyword value */
+min-width: auto;
+
+/* <length> values */
+min-width: 320px;
+min-width: 40em;
+min-width: 5cm;
+
+/* <percentage> value */
+min-width: 25%;

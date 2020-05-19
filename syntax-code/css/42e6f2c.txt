@@ -1,0 +1,3 @@
+div { color: black; height:20px;
+-moz-appearance: listbox;
+-webkit-appearance: listbox; }

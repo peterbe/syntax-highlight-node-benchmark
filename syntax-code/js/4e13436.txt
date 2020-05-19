@@ -1,0 +1,11 @@
+var container = document.getElementById("container");
+var d = document.getElementById("d");
+
+console.log(container.firstChild.nodeName); // logs "DIV"
+
+d.outerHTML = "<p>This paragraph replaced the original div.</p>";
+
+console.log(container.firstChild.nodeName); // logs "P"
+
+// The #d div is no longer part of the document tree,
+// the new paragraph replaced it.

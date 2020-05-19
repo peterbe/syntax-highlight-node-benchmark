@@ -1,0 +1,5 @@
+var audioCtx = new AudioContext();
+var analyser = audioCtx.createAnalyser();
+var dataArray = new Uint8Array(analyser.frequencyBinCount); // Uint8Array should be the same length as the frequencyBinCount 
+
+void analyser.getByteFrequencyData(dataArray); // fill the Uint8Array with data returned from getByteFrequencyData() 

@@ -1,0 +1,6 @@
+li {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: -0.25rem;
+}

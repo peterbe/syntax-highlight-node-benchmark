@@ -1,0 +1,6 @@
+<span class="tweaked" id="source" draggable="true">
+  Select this element, drag it to the Drop Zone and then release the selection to move the element.
+</span>
+<span class="tweaked" id="target">Drop Zone</span>
+<div>Status: <span id="status">Drag to start</span></div>
+<div>Data is: <span id="data">uninitialized</span></div>

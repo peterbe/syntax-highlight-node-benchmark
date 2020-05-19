@@ -1,0 +1,5 @@
+var audioCtx = new AudioContext();
+var source = audioCtx.createMediaElementSource(myMediaElement);
+source.connect(gainNode);
+audioCtx.destination.maxChannelCount = 2;
+gainNode.connect(audioCtx.destination);

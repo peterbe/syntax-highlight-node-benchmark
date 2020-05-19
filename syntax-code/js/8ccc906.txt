@@ -1,0 +1,10 @@
+let span = document.querySelector("span");
+let classes = span.classList;
+let iterator = classes.values();
+
+classes.forEach(
+  function(value, key, listObj) {
+    span.textContent += `${value} ${key}/${this}  ++  `;
+  },
+  "arg"
+);

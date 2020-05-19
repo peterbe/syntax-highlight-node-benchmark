@@ -1,0 +1,20 @@
+var xCoord = 50;
+var yCoord = 100;
+var canvasWidth = 1024;
+
+function getColorIndicesForCoord(x, y, width) {
+  var red = y * (width * 4) + x * 4;
+  return [red, red + 1, red + 2, red + 3];
+}
+
+var colorIndices = getColorIndicesForCoord(xCoord, yCoord, canvasWidth);
+
+var redIndex = colorIndices[0];
+var greenIndex = colorIndices[1];
+var blueIndex = colorIndices[2];
+var alphaIndex = colorIndices[3];
+
+var redForCoord = imageData.data[redIndex];
+var greenForCoord = imageData.data[greenIndex];
+var blueForCoord = imageData.data[blueIndex];
+var alphaForCoord = imageData.data[alphaIndex];

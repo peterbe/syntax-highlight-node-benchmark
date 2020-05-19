@@ -1,0 +1,12 @@
+pc.addEventListener("icegatheringstatechange", ev => {
+  let connection = ev.target;
+
+  switch(connection.iceGatheringState) {
+    case "gathering":
+      /* collection of candidates has begun */
+      break;
+    case "complete":
+      /* collection of candidates is finished */
+      break;
+  }
+}, false);

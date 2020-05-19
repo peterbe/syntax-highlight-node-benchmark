@@ -1,0 +1,4 @@
+a {
+  --colour: red;
+  color: var(--colour);
+}

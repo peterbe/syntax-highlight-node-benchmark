@@ -1,0 +1,18 @@
+// Define the key frames
+var spriteFrames = [
+  { transform: 'translateY(0)' },
+  { transform: 'translateY(-100%)' }   
+];
+
+// Get the element that represents Alice and the Red Queen
+var redQueen_alice_sprite = document.getElementById('red-queen_and_alice_sprite');
+
+// Animate Alice and the Red Queen using steps()
+var redQueen_alice = redQueen_alice_sprite.animate(
+spriteFrames, {
+  easing: 'steps(7, end)',
+  direction: "reverse",
+  duration: 600,
+  playbackRate: 1,
+  iterations: Infinity
+});

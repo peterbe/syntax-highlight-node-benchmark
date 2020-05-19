@@ -1,0 +1,4 @@
+<p>This paragraph contains a link:
+  <a href="#">This link will turn red while you click on it.</a>
+  The paragraph will get a gray background while you click on it or the link.
+</p>

@@ -1,0 +1,4 @@
+// video
+video.playbackRate = 1.5;
+// audio
+audio.playbackRate = 1.0;

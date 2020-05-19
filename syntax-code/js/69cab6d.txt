@@ -1,0 +1,2 @@
+document.getElementById('miterLimit').value = document.getElementById('canvas').getContext('2d').miterLimit;
+draw();

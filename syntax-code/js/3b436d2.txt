@@ -1,0 +1,16 @@
+let shipSize = {
+  width: 30,
+  height: 30
+};
+
+let position = {
+  x: 200,
+  y: 200
+};
+
+let moveRate = 9;
+let turnRate = 5;
+
+let angle = 0;
+
+let spaceship = document.getElementById("spaceship");

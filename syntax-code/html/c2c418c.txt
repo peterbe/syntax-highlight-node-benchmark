@@ -1,0 +1,5 @@
+<p>
+  <span>This text is red.</span>
+  <em>This text is in the initial color (typically black).</em>
+  <span>This is red again.</span>
+</p>

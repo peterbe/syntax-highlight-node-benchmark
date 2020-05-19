@@ -1,0 +1,4 @@
+<p>Apples, Bananas, and Oranges.</p>
+<button type="button" onClick='findString("Apples")'>Search for Apples</button>
+<button type="button" onClick='findString("Banana")'>Search for Banana</button>
+<button type="button" onClick='findString("Orange")'>Search for Orange</button>

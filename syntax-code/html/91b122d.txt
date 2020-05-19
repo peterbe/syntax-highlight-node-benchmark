@@ -1,0 +1,7 @@
+<div class="container">
+  <p>Please enter your name using lowercase letters only.</p>
+
+  <form>
+    <input type="text" id="my-textbox">
+  </form>
+</div>

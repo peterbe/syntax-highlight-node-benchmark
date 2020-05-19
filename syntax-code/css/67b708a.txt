@@ -1,0 +1,31 @@
+div.example {
+  border-style: solid;
+
+  display: -moz-box; /* Mozilla */
+  display: -webkit-box; /* WebKit */
+
+  /* Make this box taller than the children, 
+     so there is room for the box-pack */
+  height: 300px;
+  /* Make this box wide enough to show the contents 
+     are centered horizontally */
+  width: 300px;
+  
+  /* Children should be oriented vertically */
+  -moz-box-orient: vertical; /* Mozilla */
+  -webkit-box-orient: vertical; /* WebKit */
+
+  /* Align children to the horizontal center of this box */
+  -moz-box-align: center; /* Mozilla */
+  -webkit-box-align: center; /* WebKit */
+
+  /* Pack children to the bottom of this box */
+  -moz-box-pack: end;             /* Mozilla */
+  -webkit-box-pack: end;          /* WebKit */
+}
+
+div.example p {
+  /* Make children narrower than their parent,
+     so there is room for the box-align */
+  width: 200px;
+}

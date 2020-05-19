@@ -1,0 +1,3 @@
+var anc = document.createElement("a");
+anc.href = "https://developer.mozilla.org?a=b&c=d";
+console.log(anc.outerHTML); // output: "<a href='https://developer.mozilla.org?a=b&amp;c=d'></a>"

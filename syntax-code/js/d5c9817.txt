@@ -1,0 +1,7 @@
+{
+  audio: true,
+  video: {
+    width: { min: 1280 },
+    height: { min: 720 }
+  }
+}

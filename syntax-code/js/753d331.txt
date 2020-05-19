@@ -1,0 +1,2 @@
+// Connection to a broadcast channel
+const bc = new BroadcastChannel('test_channel');

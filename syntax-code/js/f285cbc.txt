@@ -1,0 +1,1 @@
+viewerPose = xrFrame.getViewerPose(adjReferenceSpace);

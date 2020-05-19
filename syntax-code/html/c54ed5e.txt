@@ -1,0 +1,3 @@
+<p class="unknown">I don't know if you're using a grid device. :-(</p>
+<p class="bitmap">You are using a bitmap device.</p>
+<p class="grid">You are using a grid device! Neato!</p>

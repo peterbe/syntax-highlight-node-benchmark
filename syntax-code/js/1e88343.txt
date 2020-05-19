@@ -1,0 +1,5 @@
+// arrays for our frequency response
+const totalArrayItems = 30;
+let myFrequencyArray = new Float32Array(totalArrayItems);
+let magResponseOutput = new Float32Array(totalArrayItems);
+let phaseResponseOutput = new Float32Array(totalArrayItems);

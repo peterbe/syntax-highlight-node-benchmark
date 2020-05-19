@@ -1,0 +1,5 @@
+if(crossOriginIsolated) {
+  // Post SharedArrayBuffer
+} else {
+  // Do something else
+}

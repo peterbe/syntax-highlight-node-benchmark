@@ -1,0 +1,11 @@
+async function onActivateXRButton(event) {
+  if (!xrSession) {
+    navgator.xr.requestSession("immersive-vr"), {
+      requiredFeatures: ["local-floor"],
+      optionalFeatures: ["bounded-floor"]
+    }).then((session) => {
+      xrSession = session;
+      startSessionAnimation();
+    });
+  }
+}

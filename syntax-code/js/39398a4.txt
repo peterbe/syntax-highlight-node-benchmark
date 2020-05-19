@@ -1,0 +1,2 @@
+rtt = rtcIceCandidatePairStats.totalRoundTripTime /
+        rtcIceCandidatePairStats.responsesReceived;

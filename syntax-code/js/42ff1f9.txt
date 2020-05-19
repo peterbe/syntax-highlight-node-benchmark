@@ -1,0 +1,5 @@
+// touchmove handler
+function process_touchmove(ev) {
+  // Call preventDefault() to prevent any further handling
+  ev.preventDefault();
+}

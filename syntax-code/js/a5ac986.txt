@@ -1,0 +1,7 @@
+index.openKeyCursor(null, "nextunique").onsuccess = function(event) {
+  var cursor = event.target.result;
+  if (cursor) {
+    // Do something with the entries.
+    cursor.continue();
+  }
+};

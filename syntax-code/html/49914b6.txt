@@ -1,0 +1,47 @@
+<div id="wrap">
+  <div id="example_1">
+    <pre>
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    </pre>
+    <p>The only containing element for this div is the main window, so it positions itself in relation to it.</p>
+  </div>
+
+  <div id="example_2">
+    <pre>
+      position: relative;
+      top: 0;
+      right: 0;
+    </pre>
+    <p>Relative position in relation to its siblings.</p>
+  </div>
+
+  <div id="example_3">
+    <pre>
+      float: right;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    </pre>
+    <p>Relative to its sibling div above, but removed from flow of content.</p>
+
+    <div id="example_4">
+      <pre>
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+      </pre>
+      <p>Absolute position inside of a parent with relative position</p>
+    </div>
+
+    <div id="example_5"> 
+      <pre>
+        position: absolute; 
+        right: 0;
+        left: 0;
+        top: 200px; 
+      </pre> 
+      <p>Absolute position with both left and right declared</p> </div>
+  </div>
+</div>

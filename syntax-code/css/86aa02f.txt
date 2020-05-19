@@ -1,0 +1,9 @@
+.wavy { 
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
+
+.both {
+  text-decoration-line: underline overline;
+}

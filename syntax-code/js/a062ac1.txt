@@ -1,0 +1,31 @@
+var title = "Walk dog";
+
+// Open up a transaction as usual
+var objectStore = db.transaction(['toDoList'], "readwrite").objectStore('toDoList');
+
+// Get the to-do list object that has this title as it's title
+var objectStoreTitleRequest = objectStore.get(title);
+
+objectStoreTitleRequest.onsuccess = function() {
+  // Grab the data object returned as the result
+  var data = objectStoreTitleRequest.result;
+
+  // Update the notified value in the object to "yes"
+  data.notified = "yes";
+
+  // Create another request that inserts the item back 
+  // into the database
+  var updateTitleRequest = objectStore.put(data);
+
+  // When this new request succeeds, run the displayData()
+  // function again to update the display
+  updateTitleRequest.onsuccess = function() {
+    displayData();
+  };
+};
+
+objectStoreTitleRequest.onerror = function() {
+  // If an error occurs with the request, log what it is
+  console.log("There has been an error with retrieving your data: " + objectStoreTitleRequest.error);
+  // TODO what about event parameter into onerror()? What will be inside of this event?
+};

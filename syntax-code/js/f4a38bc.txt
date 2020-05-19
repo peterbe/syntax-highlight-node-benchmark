@@ -1,0 +1,9 @@
+function decryptMessage(privateKey, ciphertext) {
+  return window.crypto.subtle.decrypt(
+    {
+      name: "RSA-OAEP"
+    },
+    privateKey,
+    ciphertext
+  );
+}

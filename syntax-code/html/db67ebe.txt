@@ -1,0 +1,9 @@
+<p id="p">selectedIndex: 0</p>
+
+<select id="select">
+  <option selected>Option A</option>
+  <option>Option B</option>
+  <option>Option C</option>
+  <option>Option D</option>
+  <option>Option E</option>
+</select>

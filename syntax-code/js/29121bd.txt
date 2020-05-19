@@ -1,0 +1,10 @@
+var anchors = document.getElementsByTagName("a");
+var length = anchors.length;
+for (var i = 0; i < length; i++) {
+  var list = anchors[i].relList;
+  var listLength = list.length;
+  console.log("New anchor node found with", listLength, "link types in relList.");
+  for (var j = 0; j < listLength; j++) {
+    console.log(list[j]);
+  }
+}

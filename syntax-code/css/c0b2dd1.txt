@@ -1,0 +1,6 @@
+.box {
+  border-block: 2px solid green;
+  border-inline-width: 4px;
+  border-inline-style: dotted;
+  border-inline-color: rebeccapurple;
+}

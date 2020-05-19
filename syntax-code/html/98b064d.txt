@@ -1,0 +1,1 @@
+<div class="percent">Width in percentage</div>

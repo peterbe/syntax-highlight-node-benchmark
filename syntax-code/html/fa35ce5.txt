@@ -1,0 +1,2 @@
+<p>This example logs <b>everything</b> between the bold <b>words</b>. Look at the output below.</p>
+<p id="log"></p>

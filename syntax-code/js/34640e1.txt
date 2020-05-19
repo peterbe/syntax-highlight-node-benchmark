@@ -1,0 +1,4 @@
+formData.has('username'); // Returns false
+formData.append('username', 'Chris');
+formData.has('username'); // Returns true
+

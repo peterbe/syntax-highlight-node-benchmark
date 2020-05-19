@@ -1,0 +1,15 @@
+function addImageToList(url) {
+  const list = document.querySelector("div.photo-list");
+
+  let newItem = document.createElement("div");
+  newItem.className = "photo-item";
+
+  let newImg = document.createElement("img");
+  newImg.loading = "lazy";
+  newImg.width = 320;
+  newImg.height = 240;
+  newImg.src = url;
+
+  newItem.appendChild(newImg);
+  list.appendChild(newItem);
+}

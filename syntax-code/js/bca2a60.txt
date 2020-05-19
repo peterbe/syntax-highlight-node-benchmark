@@ -1,0 +1,3 @@
+utterThis.addEventListener('resume', function(event) { 
+  console.log('Speech resumed after ' + event.elapsedTime + ' milliseconds.');
+});

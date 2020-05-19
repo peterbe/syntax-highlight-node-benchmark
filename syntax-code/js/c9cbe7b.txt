@@ -1,0 +1,11 @@
+var
+  nLastVisit = parseFloat(document.cookie.replace(/(?:(?:^|.*;)\s*last_modif\s*\=\s*([^;]*).*$)|^.*$/, "$1")),
+  nLastModif = Date.parse(document.lastModified);
+
+if (isNaN(nLastVisit) || nLastModif > nLastVisit) {
+  document.cookie = "last_modif=" + Date.now() + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=" + location.pathname;
+
+  if (isFinite(nLastVisit)) {
+    alert("This page has been changed!");
+  }
+}

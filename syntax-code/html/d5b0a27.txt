@@ -1,0 +1,6 @@
+<img id="image" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+    alt="Orientation taken from the image">
+<select id="imageOrientation">
+  <option value="from-image">from-image</option>
+  <option value="none">none</option>
+</select>

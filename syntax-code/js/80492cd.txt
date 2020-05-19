@@ -1,0 +1,1 @@
+gl.disable(gl.DITHER);

@@ -1,0 +1,8 @@
+const cats = document.querySelectorAll('.sharedTimelineCat');
+const sharedTimeline = new DocumentTimeline({ originTime: 500 });
+
+for (const cat of cats) {
+  const catKeyframes = new KeyframeEffect(cat, keyframes, timing);
+  const catAnimation = new Animation(catKeyframes, sharedTimeline);
+  catAnimation.play(); 
+}

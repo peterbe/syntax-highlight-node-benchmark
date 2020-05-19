@@ -1,0 +1,5 @@
+var myWorker = new Worker('worker.js');
+
+myWorker.onerror = function() {
+  console.log('There is an error with your worker!');
+}

@@ -1,0 +1,2 @@
+let observer = new IntersectionObserver(myObserverCallback,
+                   {threshold: 0.1});

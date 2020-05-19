@@ -1,0 +1,15 @@
+let sin = Math.sin;
+let cos = Math.cos;
+
+// NOTE: There is no perspective in these transformations, so a rotation
+//       at this point will only appear to only shrink the div
+
+let a = Math.PI * 0.3; //Rotation amount in radians
+
+// Rotate around Z axis
+let rotateZMatrix = [
+  cos(a), -sin(a),    0,    0,
+  sin(a),  cos(a),    0,    0,
+       0,       0,    1,    0,
+       0,       0,    0,    1
+];

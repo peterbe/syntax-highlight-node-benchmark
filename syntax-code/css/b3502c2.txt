@@ -1,0 +1,13 @@
+table {
+  border-collapse:collapse;
+}
+td, th {
+  border: 1px black solid; padding: 3px;
+}
+th {
+  background-color: lightgray;
+}
+.example {
+  height:75px;
+  width:75px;
+}

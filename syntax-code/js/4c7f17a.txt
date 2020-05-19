@@ -1,0 +1,2 @@
+console.log('the word is %s', 'foo');
+// output: the word is foo

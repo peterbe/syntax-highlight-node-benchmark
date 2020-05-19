@@ -1,0 +1,3 @@
+// Given: <div id="div1" align="left" width="200px"> 
+document.getElementById("div1").removeAttribute("align"); 
+// Now: <div id="div1" width="200px">

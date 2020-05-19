@@ -1,0 +1,11 @@
+// Create media configuration to be tested
+const mediaConfig = {
+    type : 'file',  // see MediaDecodingConfiguration and MediaEncodingConfiguration
+    video : {
+        contentType : "video/webm;codecs=vp8", // valid content type
+        width : 800,     // width of the video
+        height : 600,    // height of the video
+        bitrate : 10000, // number of bits used to encode 1s of video
+        framerate : 30   // number of frames making up that 1s.
+     }
+};

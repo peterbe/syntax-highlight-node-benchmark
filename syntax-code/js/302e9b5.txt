@@ -1,0 +1,6 @@
+evtSource.addEventListener("ping", function(event) {
+  const newElement = document.createElement("li");
+  const time = JSON.parse(event.data).time;
+  newElement.innerHTML = "ping at " + time;
+  eventList.appendChild(newElement);
+});

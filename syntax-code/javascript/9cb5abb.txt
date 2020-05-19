@@ -1,0 +1,19 @@
+const checkoutButton = document.getElementById('checkout-button');
+if (window.PaymentRequest) {
+  let request = new PaymentRequest(buildSupportedPaymentMethodNames(),
+      buildShoppingCartDetails());
+  checkoutButton.addEventListener('click', function() {
+    request.show().then(function(paymentResponse) {
+      // Handle successful payment
+    }).catch(function(error) {
+      // Handle cancelled or failed payment. For example, redirect to
+      // the legacy web form checkout:
+      window.location.href = '/legacy-web-form-checkout';
+    });
+    // Every click on the checkout button should use a new instance of
+    // PaymentRequest object, because PaymentRequest.show() can be
+    // called only once per instance.
+    request = new PaymentRequest(buildSupportedPaymentMethodNames(),
+        buildShoppingCartDetails());
+  });
+}

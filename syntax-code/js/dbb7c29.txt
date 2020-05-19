@@ -1,0 +1,5 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+ctx.font = 'bold 48px serif';
+ctx.strokeText('Hello world', 50, 100);

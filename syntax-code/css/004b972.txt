@@ -1,0 +1,8 @@
+ol.normal {
+  list-style-type: upper-alpha;
+}
+
+/* or use the shortcut "list-style": */
+ol.shortcut {
+  list-style: upper-alpha;
+}

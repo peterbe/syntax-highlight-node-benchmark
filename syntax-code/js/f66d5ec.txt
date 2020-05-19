@@ -1,0 +1,1 @@
+alert('Your browser version is reported as ' + navigator.appVersion);

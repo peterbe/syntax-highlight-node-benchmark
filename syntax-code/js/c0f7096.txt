@@ -1,0 +1,1 @@
+var splitter = new ChannelSpitterNode(context, options);

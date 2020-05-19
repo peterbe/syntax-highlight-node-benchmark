@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var myListener = audioCtx.listener;
+myListener.setOrientation(0,0,-1,0,1,0);

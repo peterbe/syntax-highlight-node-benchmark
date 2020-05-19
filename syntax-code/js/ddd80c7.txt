@@ -1,0 +1,3 @@
+canvas.onclick = function() {
+  canvas.requestPointerLock();
+}

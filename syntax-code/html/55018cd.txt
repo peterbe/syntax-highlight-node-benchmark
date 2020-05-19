@@ -1,0 +1,8 @@
+<div style="background-color:navy;">
+  <div style="width:50%; margin-left:20%; background-color:chartreuse;">
+    Width: 50%, Left margin: 20%
+  </div>
+  <div style="width:30%; margin-left:60%; background-color:pink;">
+    Width: 30%, Left margin: 60%
+  </div>
+</div>

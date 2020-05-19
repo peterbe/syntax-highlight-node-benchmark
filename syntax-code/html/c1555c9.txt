@@ -1,0 +1,6 @@
+<p>Initial String
+  <strong lang="nl">The Dutch word: "ijsland" starts with a digraph.</strong>
+</p>
+<p>text-transform: capitalize
+  <strong><span lang="nl">The Dutch word: "ijsland" starts with a digraph.</span></strong>
+</p>

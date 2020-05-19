@@ -1,0 +1,3 @@
+utterThis.onmark = function(event) {
+  console.log('A mark was reached: ' + event.name);
+}

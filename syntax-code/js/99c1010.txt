@@ -1,0 +1,3 @@
+navigator.serviceWorker.onmessage = function(messageevent) {
+  console.log(`received data: ${messageevent.data}`);
+}

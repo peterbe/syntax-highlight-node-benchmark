@@ -1,0 +1,10 @@
+let x = 50;
+let y = 100;
+let z = 0;
+
+let translationMatrix = [
+    1,    0,    0,   0,
+    0,    1,    0,   0,
+    0,    0,    1,   0,
+    x,    y,    z,   1
+];

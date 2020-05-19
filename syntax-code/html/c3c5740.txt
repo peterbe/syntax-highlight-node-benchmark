@@ -1,0 +1,5 @@
+<person-details>
+  <p slot="person-name">Dr. Shazaam</p>
+  <span slot="person-age">Immortal</span>
+  <span slot="person-occupation">Superhero</span>
+</person-details>

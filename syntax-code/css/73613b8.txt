@@ -1,0 +1,7 @@
+.target {
+  filter: url(#c1);
+}
+
+.mydiv {
+  filter: url(commonfilters.xml#large-blur);
+}

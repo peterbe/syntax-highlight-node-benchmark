@@ -1,0 +1,8 @@
+.wrapper {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper > div {
+  flex: 1 1 150px;
+}

@@ -1,0 +1,1 @@
+ctx.drawImage(myImage, 0.3, 0.5);

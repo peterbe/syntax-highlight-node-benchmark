@@ -1,0 +1,17 @@
+window.onload = function() {
+    // lum in sRGB
+    var lum = {
+        r: 0.33,
+        g: 0.33,
+        b: 0.33
+    };
+    // resize canvas
+    canvas1.width = width;
+    canvas1.height = height;
+    canvas2.width = width;
+    canvas2.height = height;
+    lightMix()
+    colorSphere();
+    runComposite();
+    return;
+};

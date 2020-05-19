@@ -1,0 +1,3 @@
+document.addEventListener('pointerdown', (event) => {
+  console.log('Pointer down event');
+});

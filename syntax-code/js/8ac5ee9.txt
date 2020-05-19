@@ -1,0 +1,15 @@
+var pc = new RTCPeerConnection();
+var dc = pc.createDataChannel("my channel", {
+           protocol: "json"
+});
+
+function handleChannelMessage(dataChannel, msg) {
+  switch(dataChannel.protocol) {
+    case "json":
+      /* process JSON data */
+      break;
+    case "raw":
+      /* process raw binary data */
+      break;
+  }
+}

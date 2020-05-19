@@ -1,0 +1,21 @@
+const isUsableNetworkType = stats => {
+  switch(stats.networkType) {
+    case "ethernet":
+    case "vpn":
+      return true;
+
+    case "bluetooth":
+    case "cellular":
+    case "wimax":
+    case "unknown":
+    default:
+      return false;
+  }
+}
+
+if (rtcStats && rtcStats.type === "local-candidate") {
+  if (!isUsableNetworkType(rtcStats)) {
+    abortConnection();
+    return;
+  }
+}

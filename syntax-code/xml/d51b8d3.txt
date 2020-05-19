@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:svg="http://www.w3.org/2000/svg">
+<head>
+  <script type="application/javascript"><![CDATA[
+  function test() {
+    var text = document.getElementById('text');
+    var circle = document.getElementById('circle');
+    
+    text.value = "<svg:circle> has:\n" +
+                 "localName = '" + circle.localName + "'\n" +
+                 "namespaceURI = '" + circle.namespaceURI + "'";
+  }
+  ]]></script>
+</head>
+<body onload="test()">
+  <svg:svg version="1.1"
+    width="100px" height="100px"
+    viewBox="0 0 100 100">
+    <svg:circle cx="50" cy="50" r="30" style="fill:#aaa" id="circle"/>
+  </svg:svg>
+  <textarea id="text" rows="4" cols="55"/>
+</body>
+</html>

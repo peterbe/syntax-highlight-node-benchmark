@@ -1,0 +1,4 @@
+const dt = event.dataTransfer;
+dt.setData("application/x.bookmark", bookmarkString);
+dt.setData("text/uri-list", "https://www.mozilla.org");
+dt.setData("text/plain", "https://www.mozilla.org");

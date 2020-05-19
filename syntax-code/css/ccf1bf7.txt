@@ -1,0 +1,9 @@
+/* Keyword values */
+user-modify: read-only;
+user-modify: read-write;
+user-modify: write-only;
+
+/* Global values */
+user-modify: inherit;
+user-modify: initial;
+user-modify: unset;

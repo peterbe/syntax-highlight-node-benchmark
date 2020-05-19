@@ -1,0 +1,12 @@
+<!-- controller.html -->
+<script>
+  presentBtn.onclick = function () {
+    // Start new presentation.
+    request.start()
+      // The connection to the presentation will be passed to setConnection on
+      // success.
+      .then(setConnection);
+      // Otherwise, the user canceled the selection dialog or no screens were
+      // found.
+  };
+</script>

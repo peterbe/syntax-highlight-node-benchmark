@@ -1,0 +1,3 @@
+navigator.registerProtocolHandler("web+burger",
+                                  "http://www.google.co.uk/?uri=%s",
+                                  "Burger handler");

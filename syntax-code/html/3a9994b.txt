@@ -1,0 +1,4 @@
+<audio id="example" preload="auto">
+ <source src="sound.ogg" type="audio/ogg" />
+</audio>
+

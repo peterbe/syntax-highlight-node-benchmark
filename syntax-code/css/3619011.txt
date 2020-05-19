@@ -1,0 +1,3 @@
+:root { --text-color: 16px; } 
+p { color: blue; } 
+p { color: var(--text-color); }

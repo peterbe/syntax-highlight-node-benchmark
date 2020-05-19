@@ -1,0 +1,4 @@
+let myString = 'Hello world';
+
+// Output "Hello world" to the console
+console.log(myString)

@@ -1,0 +1,31 @@
+function create_frame_observer() {
+  if (window.PerformanceObserver === undefined) return;
+  
+  // Register the performance observer
+  var observe_frame = new PerformanceObserver(function(list) {
+    // Log the frame entries
+    var perfEntries = list.getEntriesByType("frame");
+    for (var i=0; i < perfEntries.length; i++) {
+      console.log("OBS #1: [" + i + "] = " + perfEntries[i].name);
+    }
+  });
+  // Only observe 'frame' events
+  observe_frame.observe({entryTypes: ['frame']});
+}
+
+function init () {
+  create_frame_observer();
+
+  var obs = new PerformanceObserver(frame_observer_2);
+  obs.observe({entryTypes: ['frame']});
+}
+
+function frame_observer_2(list) {
+  // Log the frame entries
+  var perfEntries = list.getEntriesByType("frame");
+  for (var i=0; i < perfEntries.length; i++) {
+    console.log("OBS #2: [" + i + "] = " + perfEntries[i].name);
+  }
+}
+
+<body onload="init(event)">

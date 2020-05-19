@@ -1,0 +1,6 @@
+.colorhint-gradient {
+  background: linear-gradient(to top, black, 20%, cyan);
+}
+.regular-progression { 
+  background: linear-gradient(to top, black, cyan);
+}

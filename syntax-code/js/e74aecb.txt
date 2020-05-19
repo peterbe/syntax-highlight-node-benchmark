@@ -1,0 +1,2 @@
+var oscillator = audioCtx.createOscillator();
+oscillator.detune.setValueAtTime(100, audioCtx.currentTime); // value in cents

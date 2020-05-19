@@ -1,0 +1,4 @@
+// set up rotation constants
+const rotationRate = 60; // bigger number equals slower sound rotation
+
+const q = Math.PI/rotationRate; //rotation increment in radians

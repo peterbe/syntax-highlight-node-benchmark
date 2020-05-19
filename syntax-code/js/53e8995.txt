@@ -1,0 +1,5 @@
+var recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+
+recognition.addEventListener('soundend', function(event) { 
+  console.log('Sound has stopped being received');
+});

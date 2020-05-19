@@ -1,0 +1,11 @@
+navigator.getUserMedia({video: true}, function(stream) {
+  pc.onaddstream({stream: stream});
+  // Adding a local stream won't trigger the onaddstream callback
+  pc.addStream(stream);
+
+  pc.createOffer(function(offer) {
+    pc.setLocalDescription(new RTCSessionDescription(offer), function() {
+      // send the offer to a server to be forwarded to the friend you're calling.
+    }, error);
+  }, error);
+}

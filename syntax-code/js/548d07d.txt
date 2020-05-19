@@ -1,0 +1,14 @@
+// Create a set of keyframes to slide the rabbit down the hole--and keep him down with 'fill'!
+var rabbitDownKeyframes = new KeyframeEffect(
+  whiteRabbit,
+  [
+    { transform: 'translateY(0%)' }, 
+    { transform: 'translateY(100%)' }
+  ], {
+    duration: 3000, 
+    fill: 'forwards' 
+  }
+);
+
+// Set up the rabbit's animation to play on command by calling rabbitDownAnimation.play() later
+var rabbitDownAnimation = new Animation(rabbitDownKeyframes, document.timeline);

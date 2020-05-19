@@ -1,0 +1,5 @@
+pc.onidentityresult = function( ev ) {
+                         alert("A new identity assertion (blob: '" + 
+                               ev.assertion + 
+                               "') has been generated.");
+                      }

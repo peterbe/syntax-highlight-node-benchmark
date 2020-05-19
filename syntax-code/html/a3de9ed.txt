@@ -1,0 +1,19 @@
+<p>Click somewhere in this example. Then click the button below to expand the selection. Watch what happens!</p>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+<label for="granularity">Granularity:</label>
+<select id="granularity">
+  <option value="character">Character</option>
+  <option value="word">Word</option>
+  <option value="sentence">Sentence</option>
+  <option value="line">Line</option>
+  <option value="paragraph">Paragraph</option>
+  <option value="lineboundary">Line Boundary</option>
+  <option value="sentenceboundary">Sentence Boundary</option>
+  <option value="paragraphboundary">Paragraph Boundary</option>
+  <option value="documentboundary">Document Boundary</option>
+</select>
+
+<br><br>
+
+<button>Extend selection</button>

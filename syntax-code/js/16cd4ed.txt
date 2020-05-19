@@ -1,0 +1,3 @@
+/* Place the caret at the beginning of an HTML document's body. */
+var body = document.getElementsByTagName("body")[0];
+window.getSelection().collapse(body,0);

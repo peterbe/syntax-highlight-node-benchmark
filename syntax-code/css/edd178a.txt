@@ -1,0 +1,7 @@
+.two {
+  --test: 10px;
+}
+
+.three {
+  --test: 2em;
+}

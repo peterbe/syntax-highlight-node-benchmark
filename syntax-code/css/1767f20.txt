@@ -1,0 +1,10 @@
+div { background-color: yellow; }
+.light {
+  opacity: 0.2; /* Barely see the text over the background */
+}
+.medium {
+  opacity: 0.5; /* See the text more clearly over the background */
+}
+.heavy {
+  opacity: 0.9; /* See the text very clearly over the background */
+}

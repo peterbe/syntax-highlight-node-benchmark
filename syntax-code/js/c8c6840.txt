@@ -1,0 +1,70 @@
+function createCanvas() {
+    var canvas = document.createElement("canvas"); 
+    canvas.style.background = "url("+op_8x8.data+")";
+    canvas.style.border = "1px solid #000";
+    canvas.style.margin = "5px";
+    canvas.width = width/2;
+    canvas.height = height/2;
+    return canvas;
+}
+
+function runComposite() {
+    var dl = document.createElement("dl");
+    document.body.appendChild(dl);
+    while(gco.length) {
+        var pop = gco.pop();
+        var dt = document.createElement("dt");
+        dt.textContent = pop;
+        dl.appendChild(dt);
+        var dd = document.createElement("dd");
+        var p = document.createElement("p");
+        p.textContent = gcoText.pop();
+        dd.appendChild(p);
+
+        var canvasToDrawOn = createCanvas();
+        var canvasToDrawFrom = createCanvas();
+        var canvasToDrawResult = createCanvas();
+
+        var ctx = canvasToDrawResult.getContext('2d');
+        ctx.clearRect(0, 0, width, height)
+        ctx.save();
+        ctx.drawImage(canvas1, 0, 0, width/2, height/2);
+        ctx.globalCompositeOperation = pop;
+        ctx.drawImage(canvas2, 0, 0, width/2, height/2);
+        ctx.globalCompositeOperation = "source-over";
+        ctx.fillStyle = "rgba(0,0,0,0.8)";
+        ctx.fillRect(0, height/2 - 20, width/2, 20);
+        ctx.fillStyle = "#FFF";
+        ctx.font = "14px arial";
+        ctx.fillText(pop, 5, height/2 - 5);
+        ctx.restore();
+
+        var ctx = canvasToDrawOn.getContext('2d');
+        ctx.clearRect(0, 0, width, height)
+        ctx.save();
+        ctx.drawImage(canvas1, 0, 0, width/2, height/2);
+        ctx.fillStyle = "rgba(0,0,0,0.8)";
+        ctx.fillRect(0, height/2 - 20, width/2, 20);
+        ctx.fillStyle = "#FFF";
+        ctx.font = "14px arial";
+        ctx.fillText('existing content', 5, height/2 - 5);
+        ctx.restore();
+
+        var ctx = canvasToDrawFrom.getContext('2d');
+        ctx.clearRect(0, 0, width, height)
+        ctx.save();
+        ctx.drawImage(canvas2, 0, 0, width/2, height/2);
+        ctx.fillStyle = "rgba(0,0,0,0.8)";
+        ctx.fillRect(0, height/2 - 20, width/2, 20);
+        ctx.fillStyle = "#FFF";
+        ctx.font = "14px arial";
+        ctx.fillText('new content', 5, height/2 - 5);
+        ctx.restore();
+
+        dd.appendChild(canvasToDrawOn);
+        dd.appendChild(canvasToDrawFrom);
+        dd.appendChild(canvasToDrawResult);
+
+        dl.appendChild(dd);
+    }
+};

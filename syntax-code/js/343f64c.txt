@@ -1,0 +1,5 @@
+function sendData (sData) {
+  location.search = sData;
+}
+
+// in html: <button onclick="sendData('Some data');">Send data</button>

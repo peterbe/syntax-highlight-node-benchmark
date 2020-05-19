@@ -1,0 +1,5 @@
+if ("mediaCapabilities" in navigator) {
+  // mediaCapabilities is available
+} else {
+  // mediaCapabilities IS NOT available
+}

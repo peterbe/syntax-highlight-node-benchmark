@@ -1,0 +1,6 @@
+element.removeEventListener("mousedown", handleMouseDown, { passive: true });     // Succeeds
+element.removeEventListener("mousedown", handleMouseDown, { capture: false });    // Succeeds
+element.removeEventListener("mousedown", handleMouseDown, { capture: true });     // Fails
+element.removeEventListener("mousedown", handleMouseDown, { passive: false });    // Succeeds
+element.removeEventListener("mousedown", handleMouseDown, false);                 // Succeeds
+element.removeEventListener("mousedown", handleMouseDown, true);                  // Fails

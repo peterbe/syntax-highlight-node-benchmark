@@ -1,0 +1,2 @@
+var lineargradient = ctx.createLinearGradient(0, 0, 150, 150);
+var radialgradient = ctx.createRadialGradient(75, 75, 0, 75, 75, 100);

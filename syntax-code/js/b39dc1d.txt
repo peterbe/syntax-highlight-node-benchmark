@@ -1,0 +1,8 @@
+var oReq = new XMLHttpRequest();
+
+oReq.upload.addEventListener("progress", updateProgress);
+oReq.upload.addEventListener("load", transferComplete);
+oReq.upload.addEventListener("error", transferFailed);
+oReq.upload.addEventListener("abort", transferCanceled);
+
+oReq.open();

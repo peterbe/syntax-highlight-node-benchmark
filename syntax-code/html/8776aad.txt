@@ -1,0 +1,4 @@
+<aside>
+  <h3>My Card</h3>
+  <p>Double click to resize this object.</p>
+</aside>

@@ -1,0 +1,3 @@
+var offscreen = new OffscreenCanvas(256, 256);
+offscreen.height; // 256
+offscreen.height = 512;

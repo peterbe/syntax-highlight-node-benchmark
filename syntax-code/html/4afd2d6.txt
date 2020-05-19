@@ -1,0 +1,2 @@
+<div id="highlight"></div>
+<p>This example positions a "highlight" rectangle behind the contents of a range. The range's content <b>starts here</b> and continues on until it <b>ends here</b>. The bounding client rectangle contains everything selected in the range.</p>

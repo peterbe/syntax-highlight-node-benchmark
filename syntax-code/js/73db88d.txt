@@ -1,0 +1,16 @@
+if ("onpointerlockchange" in document) {
+  document.addEventListener('pointerlockchange', lockChangeAlert, false);
+} else if ("onmozpointerlockchange" in document) {
+  document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
+}
+
+function lockChangeAlert() {
+  if(document.pointerLockElement === canvas ||
+  document.mozPointerLockElement === canvas) {
+    console.log('The pointer lock status is now locked');
+    // Do something useful in response
+  } else {
+    console.log('The pointer lock status is now unlocked');
+    // Do something useful in response
+  }
+}

@@ -1,0 +1,4 @@
+var target = document.getElementById("target");
+
+var touch1 = Document.createTouch(window, target, 1, 15, 20, 35, 40);
+var touch2 = Document.createTouch(window, target, 2, 25, 30, 45, 50);

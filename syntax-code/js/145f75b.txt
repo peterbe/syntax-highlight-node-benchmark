@@ -1,0 +1,8 @@
+var parent = document.createElement("div");
+var child = document.createElement("p"); 
+parent.appendChild(child);
+
+child.after("Text"); 
+
+console.log(parent.outerHTML);
+// "<div><p></p>Text</div>"

@@ -1,0 +1,10 @@
+/* Follow the path direction, with optional additional angle */
+offset-rotate: auto;
+offset-rotate: auto 45deg;
+
+/* Follow the path direction but facing the opposite direction of `auto` */
+offset-rotate: reverse;
+
+/* Keep a constant rotation regardless the position on the path */
+offset-rotate: 90deg;
+offset-rotate: .5turn;

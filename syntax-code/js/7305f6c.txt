@@ -1,0 +1,5 @@
+rect = elt.getBoundingClientRect()
+// The result in emptyObj is {} 
+emptyObj = Object.assign({}, rect)
+emptyObj = { ...rect }
+{width, ...emptyObj} = rect

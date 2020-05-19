@@ -1,0 +1,5 @@
+/* Make second-level headers green */
+h2 { color: green; }
+
+/* ...but leave those in the sidebar alone so they use their parent's color */
+#sidebar h2 { color: inherit; }

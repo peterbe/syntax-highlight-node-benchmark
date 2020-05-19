@@ -1,0 +1,6 @@
+var controller = new AbortController();
+var signal = controller.signal;
+
+// ...
+
+signal.aborted ? console.log('Request has been aborted') : console.log('Request not aborted');

@@ -1,0 +1,4 @@
+input[type=range]::-moz-range-progress {
+  background-color: green;
+  height: 1em;
+}

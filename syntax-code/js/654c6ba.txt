@@ -1,0 +1,18 @@
+var biquadFilter = audioCtx.createBiquadFilter();
+biquadFilter.type = "lowshelf";
+biquadFilter.frequency.value = 1000;
+biquadFilter.gain.value = range.value;
+
+  ...
+
+function calcFrequencyResponse() {
+  biquadFilter.getFrequencyResponse(myFrequencyArray,magResponseOutput,phaseResponseOutput);
+
+  for(i = 0; i <= myFrequencyArray.length-1;i++){
+    var listItem = document.createElement('li');
+    listItem.innerHTML = '<strong>' + myFrequencyArray[i] + 'Hz</strong>: Magnitude ' + magResponseOutput[i] + ', Phase ' + phaseResponseOutput[i] + ' radians.';
+    freqResponseOutput.appendChild(listItem);
+  }
+}
+
+calcFrequencyResponse();

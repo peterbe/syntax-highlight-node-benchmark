@@ -1,0 +1,5 @@
+/* General structure */
+@IDENTIFIER (RULE);
+
+/* Example: tells browser to use UTF-8 character set */
+@charset "utf-8";

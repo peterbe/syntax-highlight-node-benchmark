@@ -1,0 +1,5 @@
+let someDiv = document.getElementById('container');
+let position = new CSSPositionValue(CSS.px(5), CSS.px(10));
+
+someDiv.attributeStyleMap.set('object-position', position);
+console.log(position.x.value, position.y.value);

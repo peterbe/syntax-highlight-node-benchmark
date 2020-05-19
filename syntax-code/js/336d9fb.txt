@@ -1,0 +1,9 @@
+var growAlice = function() {
+
+  // Play Alice's animation.
+  aliceChange.play();
+
+  // Play the cake's animation.
+  nommingCake.play();
+
+}

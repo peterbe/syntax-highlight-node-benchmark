@@ -1,0 +1,3 @@
+    var myVideo = document.getElementById("videoTag1");
+       myVideo.msZoom = true;
+       myVideo.play();

@@ -1,0 +1,4 @@
+<div class="box">
+  <div><strong>Log:</strong></div>
+  <div class="log"></div>
+</div>

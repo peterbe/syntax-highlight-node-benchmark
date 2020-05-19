@@ -1,0 +1,7 @@
+pc.onsignalingstatechange = ev => {
+  switch(pc.signalingState) {
+    case "stable":
+      updateStatus("ICE negotiation complete");
+      break;
+    }
+};

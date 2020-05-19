@@ -1,0 +1,6 @@
+var pc = new RTCPeerConnection();
+var iceServers = pc.getDefaultIceServers();
+
+if (iceServers.length === 0) {
+  // Deal with the lack of default ICE servers, possibly by using our own defaults
+}

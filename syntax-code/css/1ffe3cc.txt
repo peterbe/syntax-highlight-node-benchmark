@@ -1,0 +1,3 @@
+.exampleone {
+  -moz-appearance: toolbarbutton;
+}

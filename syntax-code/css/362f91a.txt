@@ -1,0 +1,3 @@
+ruby {
+  text-emphasis: none;
+}

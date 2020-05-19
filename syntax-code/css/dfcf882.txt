@@ -1,0 +1,2 @@
+1fr    /* Using an integer value */
+2.5fr  /* Using a float value */

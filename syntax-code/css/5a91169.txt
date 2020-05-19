@@ -1,0 +1,3 @@
+table { max-height: 75%; }
+
+form { max-height: none; }

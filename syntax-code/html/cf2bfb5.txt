@@ -1,0 +1,8 @@
+<div class="main">
+  <div id="box">
+    <div id="text">Look! A box!</div>
+  </div>
+</div>
+<div class="button" id="animateButton">
+  Animate!
+</div>

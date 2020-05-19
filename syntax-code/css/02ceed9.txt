@@ -1,0 +1,3 @@
+.wrapper {
+  grid-template-columns: repeat(4, [col1-start] 1fr [col2-start] 3fr);
+}

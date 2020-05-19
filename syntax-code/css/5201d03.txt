@@ -1,0 +1,1 @@
+cursor: url(one.svg), url(two.svg) 5 5, progress;

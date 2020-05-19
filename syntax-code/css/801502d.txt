@@ -1,0 +1,29 @@
+input[type="checkbox"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: solid;
+  margin: 0;
+}
+
+input[type="checkbox"]:checked {
+  background: gray;
+}
+
+@media (pointer: fine) {
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border-width: 1px;
+    border-color: blue;
+  }
+}
+
+@media (pointer: coarse) {
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    border-color: red;
+  }
+}

@@ -1,0 +1,3 @@
+var tex = gl.createTexture();
+gl.bindTexture(gl.TEXTURE_2D, tex);
+gl.pixelStorei(gl.PACK_ALIGNMENT, 4);

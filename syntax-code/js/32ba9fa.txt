@@ -1,0 +1,5 @@
+const frameEl = window.frameElement;
+// If we're embedded, change the containing element's URL to 'http://mozilla.org/'
+if (frameEl) {
+  frameEl.src = 'http://mozilla.org/';
+}

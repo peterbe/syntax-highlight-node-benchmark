@@ -1,0 +1,5 @@
+@supports (display: grid) {
+    .wrapper {
+        /* do anything for grid supporting browsers here. */
+    }
+}

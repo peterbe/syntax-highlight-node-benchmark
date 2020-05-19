@@ -1,0 +1,9 @@
+<form>
+  <label for="bday">Enter your birthday:
+    <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}">
+    <span class="validity"></span>
+  </label>
+  <p>
+    <button>Submit</button>
+  </p>
+</form>

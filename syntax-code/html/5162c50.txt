@@ -1,0 +1,5 @@
+<p>Paint by holding down the mouse button and moving it.
+  <a href="" download="my_painting.png">Download my painting</a>
+</p>
+
+<canvas width="300" height="300"></canvas>

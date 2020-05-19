@@ -1,0 +1,22 @@
+function WebGLBox() {
+  // Setup the canvas and WebGL context
+  this.canvas = document.getElementById('canvas');
+  this.canvas.width = window.innerWidth;
+  this.canvas.height = window.innerHeight;
+  this.gl = MDN.createContext(canvas);
+  
+  var gl = this.gl; 
+
+  // Setup a WebGL program, anything part of the MDN object is defined outside of this article
+  this.webglProgram = MDN.createWebGLProgramFromIds(gl, 'vertex-shader', 'fragment-shader');
+  gl.useProgram(this.webglProgram);
+  
+  // Save the attribute and uniform locations
+  this.positionLocation = gl.getAttribLocation(this.webglProgram, 'position');
+  this.colorLocation = gl.getUniformLocation(this.webglProgram, 'color');
+  
+  // Tell WebGL to test the depth when drawing, so if a square is behind
+  // another square it won't be drawn
+  gl.enable(gl.DEPTH_TEST);
+  
+}

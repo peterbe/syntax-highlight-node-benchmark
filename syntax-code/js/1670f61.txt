@@ -1,0 +1,4 @@
+animation.ready.then(function() {
+  // Do whatever needs to be done when
+  // the animation is ready to run
+});

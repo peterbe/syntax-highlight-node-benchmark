@@ -1,0 +1,7 @@
+function handleCallerIceConnectionStateChange() {
+  log("Caller's connection state changed to " + callerPC.iceConnectionState);
+  if (callerPC.iceConnectionState === "connected") {
+    log("Sending DTMF: \"" + dialString + "\"");
+    dtmfSender.insertDTMF(dialString, 400, 50);
+  }
+}

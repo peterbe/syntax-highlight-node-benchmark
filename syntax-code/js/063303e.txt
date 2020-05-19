@@ -1,0 +1,5 @@
+if (e.isTrusted) {
+  /* The event is trusted */
+} else {
+  /* The event is not trusted */
+}

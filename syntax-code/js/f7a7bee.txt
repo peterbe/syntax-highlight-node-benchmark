@@ -1,0 +1,5 @@
+document.getElementById("files").addEventListener("change", function(event) {
+  event.target.webkitEntries.forEach(function(entry) {
+    /* do stuff with the entry */
+  });
+});

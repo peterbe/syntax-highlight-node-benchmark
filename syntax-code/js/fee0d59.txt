@@ -1,0 +1,5 @@
+async function setupSample() {
+    const filePath = 'dtmf.mp3';
+    const sample = await getFile(audioCtx, filePath);
+    return sample;
+}

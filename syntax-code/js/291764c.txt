@@ -1,0 +1,3 @@
+self.onerror = function() {
+  console.log('There is an error inside your worker!');
+}

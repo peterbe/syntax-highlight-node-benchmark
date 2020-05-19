@@ -1,0 +1,7 @@
+stream.onremovetrack = function(event) {
+  let trackList = document.getElementById("tracks");
+  let label = document.createElement("li");
+
+  label.innerHTML = "Removed: " + event.track.kind + ": " + event.track.label;
+  trackList.appendChild(label);
+};

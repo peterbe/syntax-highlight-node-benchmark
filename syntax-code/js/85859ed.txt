@@ -1,0 +1,9 @@
+var xmlhttp = new XMLHttpRequest(),
+  method = 'GET',
+  url = 'https://developer.mozilla.org/';
+
+xmlhttp.open(method, url, true);
+xmlhttp.onerror = function () {
+  console.log("** An error occurred during the transaction");
+};
+xmlhttp.send();

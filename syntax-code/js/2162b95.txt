@@ -1,0 +1,7 @@
+// Assuming a shader with the following declaration:
+// uniform UBOData {
+//   mat4 foo;
+// } instanceName;
+
+// use the block name, not the instance name:
+var blockIndex = gl.getUniformBlockIndex(program, 'UBOData');

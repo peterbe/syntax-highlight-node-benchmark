@@ -1,0 +1,6 @@
+/* Black shadow with 10px blur */
+drop-shadow(16px 16px 10px black)
+
+/* Reddish shadow with 1rem blur and .3rem spread */
+/* WARNING: not generally supported by browsers */
+drop-shadow(.5rem .5rem 1rem .3rem #e23)

@@ -1,0 +1,26 @@
+function updateDisplay() {
+  let scrolledToEnd = logElem.scrollHeight - logElem.clientHeight <= logElem.scrollTop + 1;
+ 
+  if (totalTaskCount) {
+    if (progressBarElem.max != totalTaskCount) {
+      totalTaskCountElem.textContent = totalTaskCount;
+      progressBarElem.max = totalTaskCount;
+    }
+
+    if (progressBarElem.value != currentTaskNumber) {
+      currentTaskNumberElem.textContent = currentTaskNumber;
+      progressBarElem.value = currentTaskNumber;
+    }
+  }
+  
+  if (logFragment) {
+    logElem.appendChild(logFragment);
+    logFragment = null;
+  }
+ 
+  if (scrolledToEnd) {
+      logElem.scrollTop = logElem.scrollHeight - logElem.clientHeight;
+  }
+ 
+  statusRefreshScheduled = false;
+}

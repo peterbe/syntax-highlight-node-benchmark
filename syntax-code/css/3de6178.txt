@@ -1,0 +1,18 @@
+.ease {
+   animation-timing-function: ease;
+}
+.easein {
+   animation-timing-function: ease-in;
+}
+.easeout {
+   animation-timing-function: ease-out;
+}
+.easeinout {
+   animation-timing-function: ease-in-out;
+}
+.linear {
+   animation-timing-function: linear;
+}
+.cb {
+   animation-timing-function: cubic-bezier(0.2,-2,0.8,2);
+}

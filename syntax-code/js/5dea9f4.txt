@@ -1,0 +1,3 @@
+self.onlanguagechange = function() {
+  console.log('Your preferred language settings have been changed');
+}

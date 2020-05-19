@@ -1,0 +1,7 @@
+/* Keyword values */
+font-smooth: auto;
+font-smooth: never;
+font-smooth: always;
+
+/* <length> value */
+font-smooth: 2em;

@@ -1,0 +1,10 @@
+handlePaymentChange = event => {
+  const detailsUpdate = {};
+
+  if (event.methodName === "https://apple.com/apple-pay") {
+    const serviceFeeInfo = calculateServiceFee(event.methodDetails);
+    Object.assign(detailsUpdate, serviceFeeInfo);
+  }
+
+  event.updateWith(detailsUpdate);
+}, false);

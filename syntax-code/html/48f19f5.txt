@@ -1,0 +1,2 @@
+<div class="shape">Spinning</div>
+<p class="note" hidden>Click to unpause.</p>

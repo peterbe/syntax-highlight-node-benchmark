@@ -1,0 +1,12 @@
+/* Keyword value */
+range: auto;
+
+/* Range values */
+range: 2 5;
+range: infinite 10;
+range: 6 infinite;
+range: infinite infinite;
+
+/* Multiple range values */
+range: 2 5, 8 10;
+range: infinite 6, 10 infinite;

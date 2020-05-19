@@ -1,0 +1,2 @@
+const pannerOptions = { pan: 0 };
+const panner = new StereoPannerNode(audioContext, pannerOptions);

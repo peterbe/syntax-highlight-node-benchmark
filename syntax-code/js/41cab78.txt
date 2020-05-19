@@ -1,0 +1,1 @@
+const numFiles = fileList.length;

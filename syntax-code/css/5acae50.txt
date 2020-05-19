@@ -1,0 +1,17 @@
+#alice {
+  animation: aliceTumbling infinite 3s linear;
+}
+
+@keyframes aliceTumbling {
+  0% {
+    color: #000;
+    transform: rotate(0) translate3D(-50%, -50%, 0);    
+  }
+  30% {
+    color: #431236;
+  }
+  100% {
+    color: #000;
+    transform: rotate(360deg) translate3D(-50%, -50%, 0);
+  }
+}

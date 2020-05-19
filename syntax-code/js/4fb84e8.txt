@@ -1,0 +1,12 @@
+const video = document.querySelector('video');
+const videoSrc = 'https://path/to/video.webm';
+
+video.addEventListener('abort', () => {
+  console.log(`Abort loading: ${videoSrc}`);
+});
+
+const source = document.createElement('source');
+source.setAttribute('src', videoSrc);
+source.setAttribute('type', 'video/webm');
+
+video.appendChild(source);

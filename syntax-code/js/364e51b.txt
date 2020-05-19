@@ -1,0 +1,8 @@
+function handleRemoveTrackEvent(event) {
+  var stream = document.getElementById("received_video").srcObject;
+  var trackList = stream.getTracks();
+ 
+  if (trackList.length == 0) {
+    closeVideoCall();
+  }
+}

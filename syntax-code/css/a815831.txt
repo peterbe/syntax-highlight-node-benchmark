@@ -1,0 +1,8 @@
+::-moz-progress-bar {
+  background-color: red;
+}
+
+/* Force indeterminate bars to have zero width */
+:indeterminate::-moz-progress-bar {
+  width: 0;
+}

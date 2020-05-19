@@ -1,0 +1,3 @@
+XRSession.oninputsourceschange = function(event) {
+  console.log("The list of active XR input sources has changed.")
+}

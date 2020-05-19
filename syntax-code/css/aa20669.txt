@@ -1,0 +1,7 @@
+p {
+  white-space: pre;
+}
+
+.custom {
+  tab-size: 3;
+}

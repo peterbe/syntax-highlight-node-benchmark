@@ -1,0 +1,7 @@
+let ruleList = document.styleSheets[0].cssRules;
+
+for (let rule of ruleList) {
+  if (rule.ownerRule) {
+    checkStylesheet(rule.ownerRule.styleSheet);
+  }
+}

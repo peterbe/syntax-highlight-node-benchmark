@@ -1,0 +1,2 @@
+<p id="content">0123456789</p>
+<p id="log"></p>

@@ -1,0 +1,3 @@
+<div class="bgSizeCover">
+  <p>Try resizing this element!</p>
+</div>

@@ -1,0 +1,15 @@
+var audio = document.querySelector("#player");
+audio.src = "song.mp3";
+
+navigator.mediaSession.setActionHandler('play', play);
+navigator.mediaSession.setActionHandler('pause', pause);
+
+function play() {
+   audio.play();
+   navigator.mediaSession.playbackState = "playing";
+}
+
+function pause() {
+   audio.pause();
+   navigator.mediaSession.playbackState = "paused";
+}

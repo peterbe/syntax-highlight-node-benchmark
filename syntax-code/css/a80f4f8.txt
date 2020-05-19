@@ -1,0 +1,4 @@
+@supports ((perspective: 10px) or (-moz-perspective: 10px) or (-webkit-perspective: 10px) or
+         (-ms-perspective: 10px) or (-o-perspective: 10px)) {
+  … /* CSS applied when 3D transforms, prefixed or not, are supported */
+}

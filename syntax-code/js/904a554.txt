@@ -1,0 +1,10 @@
+const videoConfiguration = {
+  type: "file",
+    video: {
+      contentType: "video/webm;codecs=vp8", 
+      width: 800,     
+      height: 600,    
+      bitrate: 10000, 
+      framerate: 15  
+   }
+};

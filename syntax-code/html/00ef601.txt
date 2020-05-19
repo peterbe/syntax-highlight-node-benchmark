@@ -1,0 +1,3 @@
+<div id="target">
+  Tap me, click me, or touch me!
+</div>

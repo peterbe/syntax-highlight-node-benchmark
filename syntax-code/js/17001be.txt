@@ -1,0 +1,15 @@
+pc.onicegatheringstatechange = function() {
+  let label = "Unknown";
+
+  switch(pc.iceGatheringState) {
+    case "new":
+    case "complete":
+      label = "Idle";
+      break;
+    case "gathering":
+      label = "Determining route";
+      break;
+  }
+
+  document.getElementById("iceStatus").innerHTML = label;
+}

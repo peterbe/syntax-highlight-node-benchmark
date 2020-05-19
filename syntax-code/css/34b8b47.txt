@@ -1,0 +1,3 @@
+@media (-webkit-animation) {
+  /* CSS to use if animations are supported */
+}

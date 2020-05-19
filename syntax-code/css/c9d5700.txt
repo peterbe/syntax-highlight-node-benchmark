@@ -1,0 +1,9 @@
+#example {
+  padding: 20px;
+  background-color: gray;
+  border: 10px solid black;
+  -moz-border-top-colors: #e00 #c30 #c50 #c60 #c70 #c80 #c90 #ca0 #cb0 #cc0;
+  -moz-border-right-colors: red #f60 #f80 #f90 #fa0 #fb0 #fc0 #fd0 #fe0 #ff0;
+  -moz-border-bottom-colors: red #f60 #f80 #f90 #fa0 #fb0 #fc0 #fd0 #fe0 #ff0;
+  -moz-border-left-colors: #e00 #c30 #c50 #c60 #c70 #c80 #c90 #ca0 #cb0 #cc0;
+}

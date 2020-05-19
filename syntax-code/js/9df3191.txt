@@ -1,0 +1,6 @@
+let bandpass = audioCtx.createBiquadFilter();
+bandpass.type = 'bandpass';
+bandpass.frequency.value = 1000;
+
+// connect our graph
+noise.connect(bandpass).connect(audioCtx.destination);

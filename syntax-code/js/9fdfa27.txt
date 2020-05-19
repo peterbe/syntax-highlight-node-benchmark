@@ -1,0 +1,5 @@
+let scripts = document.scripts;
+
+if (scripts.length) {
+  alert('This page has scripts!');
+}

@@ -1,0 +1,2 @@
+var blockSize = gl.getActiveUniformBlockParameter(program,
+                      blockIndex, gl.UNIFORM_BLOCK_DATA_SIZE);

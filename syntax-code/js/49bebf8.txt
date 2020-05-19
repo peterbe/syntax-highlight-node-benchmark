@@ -1,0 +1,7 @@
+function displayPoseStats(pose) {
+  var pos = pose.position;
+  var orient = pose.orientation;
+  var linVel = pose.linearVelocity;
+  var linAcc = pose.linearAcceleration;
+  var angVel = pose.angularVelocity;
+  var angAcc = pose.angularAcceleration;

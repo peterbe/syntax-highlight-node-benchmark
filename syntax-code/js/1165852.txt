@@ -1,0 +1,6 @@
+
+        contentType : "audio/ogg", // valid content type 
+        channels : 2,     // audio channels used by the track
+        bitrate : 132700, // number of bits used to encode 1s of audio 
+        samplerate : 5200 // number of audio samples making up that 1s. 
+     

@@ -1,0 +1,5 @@
+var gamepadInfo = document.getElementById("gamepad-info");
+var ball = document.getElementById("ball");
+var start;
+var a = 0;
+var b = 0;

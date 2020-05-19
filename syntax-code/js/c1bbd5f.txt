@@ -1,0 +1,3 @@
+if (icpStats.requestsReceived > 0) {
+  /* at least one ICE request has been received */
+}

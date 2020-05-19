@@ -1,0 +1,35 @@
+let lastFrameTime = 0;
+
+function drawFrame(time, frame) {
+  let session = frame.session;
+  let adjustedRefSpace = xrReferenceSpace;
+  let pose = null;
+ 
+  animationFrameRequestID = session.requestAnimationFrame(drawFrame); 
+  adjustedRefSpace = applyViewerControls(xrReferenceSpace);
+  pose = frame.getViewerPose(adjustedRefSpace);
+ 
+  if (pose) {
+    let glLayer = session.renderState.baseLayer;
+    
+    gl.bindFramebuffer(gl.FRAMEBUFFER, glLayer.framebuffer);
+    LogGLError("bindFrameBuffer");
+
+    gl.clearColor(0, 0, 0, 1.0);
+    gl.clearDepth(1.0);                 // Clear everything
+    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    LogGLError("glClear");
+        
+    const deltaTime = (time - lastFrameTime) * 0.001;  // Convert to seconds
+    lastFrameTime = time;
+
+    for (let view of pose.views) {
+      let viewport = glLayer.getViewport(view);
+      gl.viewport(viewport.x, viewport.y, viewport.width, viewport.height);
+      LogGLError(`Setting viewport for eye: ${view.eye}`);
+      gl.canvas.width = viewport.width * pose.views.length;
+      gl.canvas.height = viewport.height;
+      drawScene(gl, view, programInfo, buffers, texture, deltaTime);
+    }
+  }
+}

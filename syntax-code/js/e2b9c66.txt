@@ -1,0 +1,18 @@
+var update = function () { 
+   document.getElementById("container").style.placeContent = document.getElementById("alignContentAlignment").value + " " + document.getElementById("justifyContentAlignment").value; 
+}
+
+var alignContentAlignment = document.getElementById("alignContentAlignment");
+alignContentAlignment.addEventListener("change",  update);
+
+var justifyContentAlignment = document.getElementById("justifyContentAlignment");
+justifyContentAlignment.addEventListener("change", update);
+
+var writingM = document.getElementById("writingMode"); 
+writingM.addEventListener("change", function (evt) { 
+   document.getElementById("container").style.writingMode = evt.target.value; 
+});
+var direction = document.getElementById("direction"); 
+direction.addEventListener("change", function (evt) { 
+   document.getElementById("container").style.direction = evt.target.value; 
+});

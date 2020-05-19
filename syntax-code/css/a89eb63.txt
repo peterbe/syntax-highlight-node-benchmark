@@ -1,0 +1,25 @@
+.page {
+  background-color: #8cffa0;
+  height: 90px;
+  width: 200px;
+  columns: 1;
+  column-width: 100px;
+}
+
+.list, ol, ul, p {
+  break-inside: avoid;
+}
+
+p {
+  background-color: #8ca0ff;
+}
+
+ol, ul, .list {
+  margin: 0.5em 0;
+  display: block;
+  background-color: orange;
+}
+
+p:first-child {
+  margin-top: 0;
+}

@@ -1,0 +1,7 @@
+progress {
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  background-color: orange;
+}

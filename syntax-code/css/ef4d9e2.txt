@@ -1,0 +1,11 @@
+.colors {
+  background-color: red;
+  color: grey; 
+}
+
+@media (forced-colors: active) {
+  .colors {
+    background-color: white;
+    color: black;
+  }
+}

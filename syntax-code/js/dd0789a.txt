@@ -1,0 +1,5 @@
+localConnection = new RTCPeerConnection();
+
+sendChannel = localConnection.createDataChannel("sendChannel");
+sendChannel.onopen = handleSendChannelStatusChange;
+sendChannel.onclose = handleSendChannelStatusChange;

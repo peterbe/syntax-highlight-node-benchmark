@@ -1,0 +1,3 @@
+<input type="text" id="myTextField" value="Text field.">
+<p></p>
+<button type="button" onclick="focusMethod()">Click me to focus on the text field!</button>

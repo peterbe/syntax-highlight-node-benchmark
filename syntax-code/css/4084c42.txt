@@ -1,0 +1,21 @@
+body {
+  font: 14px "Open Sans", "Arial", sans-serif;
+}
+
+audio {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 160px;
+}
+
+.button {
+  cursor: pointer;
+  width: 160px;
+  border: 1px solid black;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  color: white;
+  background-color: darkgreen;
+}

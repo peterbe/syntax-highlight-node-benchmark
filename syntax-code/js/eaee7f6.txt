@@ -1,0 +1,3 @@
+window.addEventListener('vrdisplaypointerrestricted', function() {
+  // Run code to handle pointer lock
+});

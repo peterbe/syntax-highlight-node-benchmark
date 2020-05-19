@@ -1,0 +1,4 @@
+    var flip = document.querySelector('#flip');
+    flip.addEventListener('click', function() {
+      video.msHorizontalMirror = true;
+    });

@@ -1,0 +1,1 @@
+gl.generateMipmap(gl.TEXTURE_2D);

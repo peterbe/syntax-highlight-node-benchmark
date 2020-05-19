@@ -1,0 +1,4 @@
+gl.getError(); // gl.NO_ERROR (0)
+
+gl.enable(gl.FOOBAR);
+gl.getError(); // gl.INVALID_ENUM;

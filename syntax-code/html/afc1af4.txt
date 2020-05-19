@@ -1,0 +1,2 @@
+<p>First encounter with attributes and sending data to GPU. Click
+on the canvas to change the horizontal position of the square.</p>

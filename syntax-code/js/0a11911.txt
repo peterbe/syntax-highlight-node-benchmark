@@ -1,0 +1,5 @@
+if (mediaQueryList.matches) {
+  /* The viewport is currently in portrait orientation */
+} else {
+  /* The viewport is not currently in portrait orientation, therefore landscape */
+}

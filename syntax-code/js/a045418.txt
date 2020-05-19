@@ -1,0 +1,3 @@
+document.ontransitioncancel = () => {
+  console.log('Transition canceled');
+};

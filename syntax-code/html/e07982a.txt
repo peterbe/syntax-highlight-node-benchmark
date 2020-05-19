@@ -1,0 +1,2 @@
+<p>[ Here would go the result of WebGL feature detection ]</p>
+<button>Press here to detect WebGLRenderingContext</button>

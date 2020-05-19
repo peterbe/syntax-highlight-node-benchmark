@@ -1,0 +1,25 @@
+if(window.XDomainRequest){
+  var xdr = new XDomainRequest();
+
+  xdr.open("get", "http://example.com/api/method");
+
+  xdr.onprogress = function () {
+    //Progress
+  };
+
+  xdr.ontimeout = function () { 
+    //Timeout
+  };
+
+  xdr.onerror = function () { 
+    //Error Occurred
+  };
+
+  xdr.onload = function() {
+    //success(xdr.responseText);
+  }
+
+  setTimeout(function () {
+    xdr.send();
+  }, 0);
+}

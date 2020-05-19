@@ -1,0 +1,12 @@
+let myForm = document.querySelector("form");
+let submitButton = myForm.querySelector("#main-submit");
+
+if (myForm.requestSubmit) {
+  if (submitButton) {
+    myForm.requestSubmit(submitButton);
+  } else {
+    myForm.requestSubmit();
+  }
+} else {
+  myForm.submit();
+}

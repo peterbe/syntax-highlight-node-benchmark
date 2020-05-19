@@ -1,0 +1,29 @@
+const request = new PaymentRequest(methodData, details, options);
+// Async update to details
+request.onshippingaddresschange = ev => {
+  ev.updateWith(checkShipping(request));
+};
+// Sync update to the total
+request.onshippingoptionchange = ev => {
+  const shippingOption = shippingOptions.find(
+    option => option.id === request.id
+  );
+  const newTotal = {
+    currency: "USD",
+    label: "Total due",
+    value: calculateNewTotal(shippingOption),
+  };
+  ev.updateWith({ ...details, total: newTotal });
+};
+async function checkShipping(request) {
+  try {
+    const json = request.shippingAddress.toJSON();
+
+    await ensureCanShipTo(json);
+    const { shippingOptions, total } = await calculateShipping(json);
+
+    return { ...details, shippingOptions, total };
+  } catch (err) {
+    return { ...details, error: `Sorry! we can't ship to your address.` };
+  }
+}

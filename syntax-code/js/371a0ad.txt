@@ -1,0 +1,13 @@
+function setResourceTimingBufferSize(maxSize) {
+  if (performance === undefined) {
+    log("Browser does not support Web Performance");
+    return;
+  }
+  var supported = typeof performance.setResourceTimingBufferSize == "function";
+  if (supported) {
+    log("... Performance.setResourceTimingBufferSize() = Yes");
+    performance.setResourceTimingBufferSize(maxSize);
+  } else {
+    log("... Performance.setResourceTimingBufferSize() = NOT supported");
+  }
+}

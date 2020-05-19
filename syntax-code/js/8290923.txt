@@ -1,0 +1,1 @@
+let isLogicalSurface = displayStream.getVideoTracks()[0].getSettings().logicalSurface;

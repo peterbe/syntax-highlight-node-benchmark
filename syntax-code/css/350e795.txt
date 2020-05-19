@@ -1,0 +1,10 @@
+/* Keyword value */
+min-height: auto;
+
+/* <length> values */
+min-height: 120px;
+min-height: 20em;
+min-height: 10cm;
+
+/* <percentage> value */
+min-height: 25%;

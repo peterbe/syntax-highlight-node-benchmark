@@ -1,0 +1,3 @@
+<p>Donate US $65 to our worthwhile cause and we will send you a totally
+not-useless gift as a token of our thanks!</p>
+<button id="pay">Donate Now</button>

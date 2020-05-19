@@ -1,0 +1,1 @@
+activeInfo = gl.getTransformFeedbackVarying(program, 0);

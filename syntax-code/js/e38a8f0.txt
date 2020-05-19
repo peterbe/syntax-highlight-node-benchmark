@@ -1,0 +1,12 @@
+let lastFrameTime = 0;
+
+function drawFrame(time, frame) {
+  /* ... schedule next frame, prepare the buffer, etc ... */
+
+  const deltaTime = (time - lastFrameTime) * 0.001;
+  lastFrameTime = time;
+
+  for (let view of pose.views) {
+    /* render each view */
+  }
+}

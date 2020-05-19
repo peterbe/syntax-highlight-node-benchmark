@@ -1,0 +1,5 @@
+let f = new FontFace('test', 'url(x)');
+
+f.load().then(function() {
+  // Ready to use the font in a canvas context
+});

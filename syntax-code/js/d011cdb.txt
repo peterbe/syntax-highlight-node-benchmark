@@ -1,0 +1,1 @@
+vrDisplayInstance.getFrameData(frameData);

@@ -1,0 +1,4 @@
+const flipped = document.getElementById('flipped');
+const matrix = new DOMMatrixReadOnly();
+const flippedMatrix = matrix.flipX();
+flipped.setAttribute('transform', flippedMatrix.toString());

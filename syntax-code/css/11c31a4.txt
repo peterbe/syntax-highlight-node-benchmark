@@ -1,0 +1,32 @@
+.event-log-contents {
+  width: 18rem;
+  height: 5rem;
+  border: 1px solid black;
+  margin: .2rem;
+  padding: .2rem;
+}
+
+.example {
+  display: grid;
+  grid-template-areas:
+              "button log"
+              "video  log";
+}
+
+button {
+  grid-area: button;
+  width: 10rem;
+  margin: .5rem 0;
+}
+
+video {
+  grid-area: video;
+}
+
+.event-log {
+  grid-area: log;
+}
+
+.event-log>label {
+  display: block;
+}

@@ -1,0 +1,6 @@
+<span>This is not red.</span>
+<p>Here is a paragraph.</p>
+<code>Here is some code.</code>
+<span>And here is a red span!</span>
+<code>More code...</code>
+<span>And this is a red span!</span>

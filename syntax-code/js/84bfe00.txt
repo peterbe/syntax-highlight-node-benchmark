@@ -1,0 +1,23 @@
+// Only match "Donna"
+var singleKeyRange = IDBKeyRange.only("Donna");
+
+// Match anything past "Bill", including "Bill"
+var lowerBoundKeyRange = IDBKeyRange.lowerBound("Bill");
+
+// Match anything past "Bill", but don't include "Bill"
+var lowerBoundOpenKeyRange = IDBKeyRange.lowerBound("Bill", true);
+
+// Match anything up to, but not including, "Donna"
+var upperBoundOpenKeyRange = IDBKeyRange.upperBound("Donna", true);
+
+// Match anything between "Bill" and "Donna", but not including "Donna"
+var boundKeyRange = IDBKeyRange.bound("Bill", "Donna", false, true);
+
+// To use one of the key ranges, pass it in as the first argument of openCursor()/openKeyCursor()
+index.openCursor(boundKeyRange).onsuccess = function(event) {
+  var cursor = event.target.result;
+  if (cursor) {
+    // Do something with the matches.
+    cursor.continue();
+  }
+};

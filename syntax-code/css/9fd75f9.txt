@@ -1,0 +1,4 @@
+#clipped {
+  margin-bottom: 20px;
+  clip-path: url(#cross);
+}

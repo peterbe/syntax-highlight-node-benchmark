@@ -1,0 +1,5 @@
+function dragend_handler(event)
+{
+  var dragData = event.dataTransfer;
+  console.log("mozUserCancelled = " + dragData.mozUserCancelled);
+}

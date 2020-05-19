@@ -1,0 +1,2 @@
+console.log(document.location); 
+// Prints a Location object to the console

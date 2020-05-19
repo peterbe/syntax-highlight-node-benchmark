@@ -1,0 +1,4 @@
+<h1 class="small">Small H1</h1>
+<h1 class="larger">Larger H1</h1>
+<h1 class="point">24 point H1</h1>
+<h1 class="percent">200% H1</h1>

@@ -1,0 +1,16 @@
+span {
+  position: relative;
+}
+
+span::after {
+  right: -18px;
+  position: absolute;
+}
+
+input:invalid + span::after {
+  content: '✖';
+}
+
+input:valid + span::after {
+  content: '✓';
+}

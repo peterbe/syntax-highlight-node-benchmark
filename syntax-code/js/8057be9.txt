@@ -1,0 +1,8 @@
+function intersectionCallback(entries) {
+  entries.forEach(function(entry) {
+    refreshZones.push({
+      element: entry.target,
+      rect: entry.intersectionRect
+    });
+  });
+}

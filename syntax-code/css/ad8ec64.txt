@@ -1,0 +1,14 @@
+/* Odd paragraphs */
+p:nth-of-type(2n+1) {
+  color: red;
+}
+
+/* Even paragraphs */
+p:nth-of-type(2n) {
+  color: blue;
+}
+
+/* First paragraph */
+p:nth-of-type(1) {
+  font-weight: bold;
+}

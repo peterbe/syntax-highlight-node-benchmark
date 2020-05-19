@@ -1,0 +1,2 @@
+var keyframes = new KeyframeEffect(element, keyframeSet, keyframeOptions);
+var keyframes = new KeyframeEffect(sourceKeyFrames);

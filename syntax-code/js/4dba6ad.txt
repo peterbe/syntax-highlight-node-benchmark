@@ -1,0 +1,1 @@
+gl.vertexAttribI4i(a_foobar, 10);

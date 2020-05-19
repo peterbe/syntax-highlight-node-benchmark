@@ -1,0 +1,17 @@
+.container {
+  width: 320px;
+  height: 213px;
+  background: black;
+}
+
+.view {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+}
+
+img {
+  mix-blend-mode: darken;
+}

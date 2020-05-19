@@ -1,0 +1,3 @@
+document.forms['myform'].addEventListener('submit', function() {
+  document.forms['myform'].reportValidity();
+}, false);

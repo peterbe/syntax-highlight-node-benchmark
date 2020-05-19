@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.oncanplay = (event) => {
+  console.log('Video can start, but not sure it will play through.');
+};

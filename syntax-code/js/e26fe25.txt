@@ -1,0 +1,5 @@
+document.querySelector('.playAndRecord').addEventListener('click', function() {
+  var playbackElement = document.getElementById("playback");
+  var captureStream = playbackElement.captureStream();
+  playbackElement.play();
+});

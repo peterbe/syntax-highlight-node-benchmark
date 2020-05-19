@@ -1,0 +1,4 @@
+<form>
+  <label for="appt-time">Choose an appointment time: </label>
+  <input id="appt-time" type="time" name="appt-time">
+</form>

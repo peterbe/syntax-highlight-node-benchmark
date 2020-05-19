@@ -1,0 +1,9 @@
+function gotFileSystem(fs) {
+  let path = "";
+
+  fs.root.getFile("data.json", { create: true, exclusive: true }, function(entry) {
+    path = fullPath;
+  }, handleError(error));
+
+  return path;
+}

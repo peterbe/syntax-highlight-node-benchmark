@@ -1,0 +1,5 @@
+@media (color-gamut: srgb) {
+  p {
+    background: #f4ae8a;
+  }
+}

@@ -1,0 +1,3 @@
+input[type=checkbox]:checked ~ aside {
+  transform: translateX(0);
+}

@@ -1,0 +1,1 @@
+let gainParam = myAudioWorkletNode.parameters.get("gain");

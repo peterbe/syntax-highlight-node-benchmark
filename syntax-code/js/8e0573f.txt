@@ -1,0 +1,6 @@
+const badDomain = "www.example.xxx";
+
+if (document.domain === badDomain) {
+  // Just an example: window.close() sometimes has no effect
+  window.close();
+}

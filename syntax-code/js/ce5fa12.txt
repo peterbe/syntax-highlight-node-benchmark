@@ -1,0 +1,7 @@
+let zoom = document.querySelector('#zoom');
+const capabilities = track.getCapabilities();
+// Check whether zoom is supported or not.
+if(!capabilities.zoom) {
+  return;
+}
+track.applyConstraints({ advanced : [{ zoom: zoom.value }] });

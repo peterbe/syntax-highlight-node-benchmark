@@ -1,0 +1,16 @@
+@media (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+          "hd hd hd hd   hd   hd   hd   hd   hd"
+          "sd sd sd main main main main main main"
+          "sd sd sd  ft  ft   ft   ft   ft   ft";
+    }
+}
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-areas: 
+          "hd hd hd   hd   hd   hd   hd   hd hd"
+          "sd sd main main main main main ft ft";
+    }
+}

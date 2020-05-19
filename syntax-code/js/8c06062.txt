@@ -1,0 +1,10 @@
+function handleCancel(evt) {
+  evt.preventDefault();
+  console.log("touchcancel.");
+  var touches = evt.changedTouches;
+  
+  for (var i = 0; i < touches.length; i++) {
+    var idx = ongoingTouchIndexById(touches[i].identifier);
+    ongoingTouches.splice(idx, 1);  // remove it; we're done
+  }
+}

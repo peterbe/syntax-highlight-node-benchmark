@@ -1,0 +1,9 @@
+#mybox {
+  background: linear-gradient(to bottom, yellow, cyan);
+  width: 200px;
+  height: 200px;
+}
+
+#mybox:-moz-window-inactive {
+  background: cyan;
+}

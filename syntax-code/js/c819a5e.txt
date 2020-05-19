@@ -1,0 +1,4 @@
+canvas.requestPointerLock = canvas.requestPointerLock ||
+                            canvas.mozRequestPointerLock;
+
+canvas.requestPointerLock()

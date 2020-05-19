@@ -1,0 +1,1 @@
+var myGamepadAngVel = gamepadPoseInstance.angularVelocity;

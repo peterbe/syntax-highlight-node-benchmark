@@ -1,0 +1,13 @@
+<html>
+    <canvas id="bezier" width="336" height="336">
+    </canvas>
+    <form>
+       <label for="x1">x1 = </label><input onchange="updateCanvas();" type="text" maxlength=6 id="x1" value="0.79" class='field'>
+       <label for="y1">y1 = </label><input onchange="updateCanvas();return true;"  type="text" maxlength=6 id="y1" value="0.33" class='field'>
+       <label for="x2">x2 = </label><input onchange="updateCanvas();return true;"  type="text" maxlength=6 id="x2" value="0.14" class='field'>
+       <label for="y2">y2 = </label><input onchange="updateCanvas();return true;"  type="text" maxlength=6 id="y2" value="0.53" class='field'>
+       <br>
+       <output id="output">Log</output>
+    </form>
+</html>
+     

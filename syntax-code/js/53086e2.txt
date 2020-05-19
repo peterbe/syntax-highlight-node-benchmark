@@ -1,0 +1,2 @@
+let slottedSpan = document.querySelector('my-paragraph span')
+console.log(slottedSpan.assignedSlot); // logs '<slot name="my-text">'

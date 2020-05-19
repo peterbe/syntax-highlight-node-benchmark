@@ -1,0 +1,1 @@
+var rabbitDownAnimation = new Animation(rabbitDownKeyframes, document.timeline);

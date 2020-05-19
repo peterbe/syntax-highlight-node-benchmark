@@ -1,0 +1,5 @@
+let ruleList = document.styleSheets[0].cssRules;
+
+for (let rule of ruleList) {
+  processRule(rule);
+}

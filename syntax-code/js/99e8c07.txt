@@ -1,0 +1,4 @@
+ var s = new XMLSerializer();
+ var d = document;
+ var str = s.serializeToString(d);
+ saveXML(str);

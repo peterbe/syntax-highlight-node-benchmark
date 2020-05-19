@@ -1,0 +1,3 @@
+li {
+	background-image: paint(hollowHighlights, stroke, 10px);
+}

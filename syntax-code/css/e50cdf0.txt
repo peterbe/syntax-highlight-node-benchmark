@@ -1,0 +1,7 @@
+article {
+  columns: 3;
+}
+
+h2 {
+  column-span: all;
+}

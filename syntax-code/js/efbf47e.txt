@@ -1,0 +1,8 @@
+var shrinkAlice = function() {
+  aliceChange.playbackRate = -1;
+  aliceChange.play();
+}
+
+// On tap or click, Alice will shrink.
+bottle.addEventListener("mousedown", shrinkAlice, false);
+bottle.addEventListener("touchstart", shrinkAlice, false);

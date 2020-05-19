@@ -1,0 +1,4 @@
+if (candidate.protocol == "tcp") {
+  if (candidate.tcpType == "so") {
+    adjustForSimultaneousOpen(candidate);
+}

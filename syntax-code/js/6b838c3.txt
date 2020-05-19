@@ -1,0 +1,8 @@
+const mediaStream = await navigator.mediaDevices.getUserMedia({video: true});
+const video = document.createElement('video');
+if ('srcObject' in video) {
+  video.srcObject = mediaStream;
+} else {
+  // Avoid using this in new browsers, as it is going away.
+  video.src = URL.createObjectURL(mediaStream);
+}

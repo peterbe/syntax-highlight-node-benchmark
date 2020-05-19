@@ -1,0 +1,2 @@
+const maxActions = Notification.maxActions;
+console.log('This device can display at most ' + maxActions + ' actions on each notification.');

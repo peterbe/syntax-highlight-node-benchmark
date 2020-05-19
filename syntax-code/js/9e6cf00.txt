@@ -1,0 +1,11 @@
+const videoElement = document.querySelector('video');
+videoElement.audioTracks.onchange = (event) => {
+    console.log(`'${event.type}' event fired`);
+};
+
+// changing the value of `enabled` will trigger the `change` event
+const toggleTrackButton = document.querySelector('.toggle-track');
+toggleTrackButton.addEventListener('click', () => {
+  const track = videoElement.audioTracks[0];
+  track.enabled = !track.enabled;
+});

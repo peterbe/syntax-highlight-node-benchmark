@@ -1,0 +1,3 @@
+window.addEventListener("rejectionhandled", event => {
+  console.log("Promise rejected; reason: " + event.reason);
+}, false);

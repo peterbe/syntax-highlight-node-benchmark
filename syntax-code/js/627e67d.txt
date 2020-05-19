@@ -1,0 +1,5 @@
+const inputElement = document.querySelector('input[type="text"]');
+
+inputElement.addEventListener('compositionend', (event) => {
+  console.log(`generated characters were: ${event.data}`);
+});

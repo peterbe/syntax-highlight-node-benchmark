@@ -1,0 +1,10 @@
+<p>The width of content is 500px; the flex-basis of the flex items is 120px.</p>
+<p>A, B, C have flex-shrink:1 set. D and E have flex-shrink:2 set</p>
+<p>The width of D and E is less than the others.</p>
+<div id="content">
+  <div class="box" style="background-color:red;">A</div>
+  <div class="box" style="background-color:lightblue;">B</div>
+  <div class="box" style="background-color:yellow;">C</div>
+  <div class="box1" style="background-color:brown;">D</div>
+  <div class="box1" style="background-color:lightgreen;">E</div>
+</div>

@@ -1,0 +1,4 @@
+.shape {
+  float: left;
+  shape-outside: inset(20px 10px 20px 10px round 10px);
+}

@@ -1,0 +1,6 @@
+const audioCtx = new AudioContext();
+const analyser = audioCtx.createAnalyser();
+// Float32Array should be the same length as the frequencyBinCount
+const myDataArray = new Float32Array(analyser.frequencyBinCount); 
+// fill the Float32Array with data returned from getFloatFrequencyData()
+analyser.getFloatFrequencyData(myDataArray);

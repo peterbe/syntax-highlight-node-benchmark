@@ -1,0 +1,8 @@
+<section>
+  <div class="offset-anchor1"></div>
+</section>
+<section>
+  <div class="offset-anchor2"></div>
+</section>
+<section>
+  <div class="offset-anchor3"></div>

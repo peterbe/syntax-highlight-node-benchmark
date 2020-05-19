@@ -1,0 +1,10 @@
+<!--Sample HTML code-->
+<div id="top"> </div>
+
+<script type="text/javascript">
+  let top = document.getElementById("top");
+  let nested = document.getElementById("nested");
+
+  // Throws Uncaught TypeError
+  let garbage = top.removeChild(nested);
+</script>

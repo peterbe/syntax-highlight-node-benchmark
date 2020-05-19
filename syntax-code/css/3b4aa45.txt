@@ -1,0 +1,4 @@
+.paused {
+  background: #ddd;
+  color: #555;
+}

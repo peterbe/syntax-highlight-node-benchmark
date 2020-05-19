@@ -1,0 +1,23 @@
+.container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: snapInterval(0%, 100%);
+  width: 480px;
+  height: 270px;
+}
+
+.imageContainer {
+  -ms-scroll-chaining: chained;
+  -ms-overflow-style: none;
+  -ms-content-zooming: zoom;
+  -ms-scroll-rails: none;
+  -ms-scroll-limit-y-min: 100%;
+  -ms-scroll-limit-y-max: 500%;
+  -ms-scroll-snap-type: proximity;
+  -ms-scroll-snap-points-y: snapList(100%, 200%, 300%, 400%, 500%);
+  -ms-overflow-style: none;
+  width: 480px;
+  height: 270px;
+  overflow: auto;
+}

@@ -1,0 +1,2 @@
+var candidatePair = pc.getSenders()[0].transport.transport.getSelectedCandidatePair();
+var remoteCandidate = candidatePair.remote;

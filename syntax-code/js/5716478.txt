@@ -1,0 +1,9 @@
+let image = document.querySelector("article img");
+let break40 = document.getElementById("break40");
+let break50 = document.getElementById("break50");
+
+break40.addEventListener("click",
+    event => image.sizes = image.sizes.replace(/50em,/, "40em,"));
+
+break50.addEventListener("click",
+    event => image.sizes = image.sizes.replace(/40em,/, "50em,"));

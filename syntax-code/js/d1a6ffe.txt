@@ -1,0 +1,7 @@
+function handleSignalingStateChangeEvent(event) {
+  switch(myPeerConnection.signalingState) {
+    case "closed":
+      closeVideoCall();
+      break;
+  }
+};

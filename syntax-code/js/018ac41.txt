@@ -1,0 +1,13 @@
+// test-processor.js
+class TestProcessor extends AudioWorkletProcessor {
+  constructor (options) {
+    super()
+    console.log(options.numberOfInputs)
+    console.log(options.processorOptions.someUsefulVariable)
+  }
+  process (inputs, outputs, parameters) {
+    return true
+  }
+}
+
+registerProcessor('test-processor', TestProcessor)

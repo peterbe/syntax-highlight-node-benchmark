@@ -1,0 +1,6 @@
+<form>
+  <p>Textarea with fixed number of characters per line:<br />
+    <textarea cols="50" rows="10" onkeypress="return checkRows(this, event);"
+              onpaste="return false;"></textarea>
+  </p>
+</form>

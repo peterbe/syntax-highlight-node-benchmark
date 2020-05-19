@@ -1,0 +1,13 @@
+<h4>A list of four items (styled):</h4>
+<ol>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+</ol>
+
+<h4>A list of two items (unstyled):</h4>
+<ol>
+  <li>One</li>
+  <li>Two</li>
+</ol>

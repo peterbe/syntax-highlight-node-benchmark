@@ -1,0 +1,3 @@
+<img src="//developer.mozilla.org/static/img/opengraph-logo.png"
+  alt="MDN logo" width="128" height="146"
+  class="opacity">

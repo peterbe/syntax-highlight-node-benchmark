@@ -1,0 +1,11 @@
+<div class="main">
+  <div id="box" onanimationcancel="handleCancelEvent(event);">
+    <div id="text">Box</div>
+  </div>
+</div>
+
+<div class="button" id="toggleBox">
+  Hide the Box
+</div>
+
+<pre id="log"></pre>

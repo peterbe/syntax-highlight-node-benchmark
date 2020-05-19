@@ -1,0 +1,8 @@
+let gyroscope = new Gyroscope({frequency: 60});
+
+gyroscope.addEventListener('reading', e => {
+  console.log("Angular velocety along the X-axis " + gyroscope.x);
+  console.log("Angular velocety along the Y-axis " + gyroscope.y);
+  console.log("Angular velocety along the Z-axis " + gyroscope.z);
+});
+gyroscope.start();

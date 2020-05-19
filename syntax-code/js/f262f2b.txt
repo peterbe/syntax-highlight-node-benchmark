@@ -1,0 +1,3 @@
+const xDistanceMoved = xSpeedPerSecond * deltaTime;
+const yDistanceMoved = ySpeedPerSecond * deltaTime;
+const ZDistanceMoved = zSpeedPerSecond * deltaTime;

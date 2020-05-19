@@ -1,0 +1,4 @@
+var maskPosition = document.getElementById("maskPosition");
+maskPosition.addEventListener("change", function (evt) {
+  document.getElementById("masked").style.maskPosition = evt.target.value;
+});

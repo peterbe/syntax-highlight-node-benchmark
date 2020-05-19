@@ -1,0 +1,3 @@
+gl.getParameter(gl.DITHER);
+gl.getParameter(gl.VERSION);
+gl.getParameter(gl.VIEWPORT);

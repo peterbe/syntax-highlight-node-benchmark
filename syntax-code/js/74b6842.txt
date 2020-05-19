@@ -1,0 +1,6 @@
+var pc = new RTCPeerConnection();
+var dc = pc.createDataChannel("my channel");
+
+if (!dc.ordered) {
+  // Handle unordered messaging
+}

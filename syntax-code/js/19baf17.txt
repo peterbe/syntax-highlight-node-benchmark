@@ -1,0 +1,3 @@
+var point2D = new DOMPointReadOnly(50, 25);
+var point3D = new DOMPointReadOnly(50, 0, 10);
+var perspectivePoint3D = new DOMPointReadOnly(50, 50, 25, 0.5);

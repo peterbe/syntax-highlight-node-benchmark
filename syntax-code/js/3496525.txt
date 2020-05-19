@@ -1,0 +1,8 @@
+function pointerup_handler(ev) {
+  if (logEvents) log(ev.type, ev);
+  // Remove this touch point from the cache and reset the target's
+  // background and border
+  remove_event(ev);
+  update_background(ev);
+  ev.target.style.border = "1px solid black";
+}

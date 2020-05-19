@@ -1,0 +1,5 @@
+var recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+
+recognition.addEventListener('speechstart', function() { 
+  console.log('Speech has been detected');
+});

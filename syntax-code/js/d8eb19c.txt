@@ -1,0 +1,5 @@
+pc.onbufferedamountlow = ev => {
+  if (source.position <= source.length) {
+    dc.send(source.readFile(65536));
+  }
+}

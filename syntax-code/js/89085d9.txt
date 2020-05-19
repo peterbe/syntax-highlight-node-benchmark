@@ -1,0 +1,7 @@
+let el = document.getElementById('item');
+
+if (el.className === 'active'){
+  el.className = 'inactive';
+} else {
+  el.className = 'active';
+}

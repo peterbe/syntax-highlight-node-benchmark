@@ -1,0 +1,7 @@
+var pc = new RTCPeerConnection();
+var dc = pc.createDataChannel("my channel");
+
+/* ... */
+
+document.getElementById("channel-name").innerHTML =
+          "<span class='channelName'>" + dc.label + "</span>";

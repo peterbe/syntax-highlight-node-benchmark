@@ -1,0 +1,2 @@
+<input type="text" placeholder="Type something here, then click outside of the field." size="50">
+<p id="log"></p>

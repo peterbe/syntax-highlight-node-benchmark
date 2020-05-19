@@ -1,0 +1,5 @@
+lfo.connect(amp.gain);
+osc.connect(amp).connect(audioCtx.destination);
+lfo.start();
+osc.start();
+osc.stop(audioCtx.currentTime + pulseTime);

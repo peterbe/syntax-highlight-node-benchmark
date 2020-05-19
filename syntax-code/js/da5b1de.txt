@@ -1,0 +1,8 @@
+for (let view of pose.views) {
+  let viewport = glLayer.getViewport(view);
+
+  gl.viewport(viewport.x, viewport.y, viewport.width, viewport.height);
+  
+  // Draw the scene; the eye being drawn is identified
+  // by view.eye.
+}

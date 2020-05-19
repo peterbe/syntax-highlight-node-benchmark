@@ -1,0 +1,9 @@
+@counter-style pad-example {
+  system: numeric;
+  symbols: "0" "1" "2" "3" "4" "5";
+  pad: 2 "0";
+}
+
+.list {
+  list-style: pad-example;
+}

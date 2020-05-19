@@ -1,0 +1,4 @@
+var videoElt = document.getElementById('my_vid');
+var quality = videoElt.getVideoPlaybackQuality();
+
+alert(quality.totalFrameDelay);

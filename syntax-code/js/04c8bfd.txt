@@ -1,0 +1,20 @@
+function buildShaderProgram(shaderInfo) {
+  let program = gl.createProgram();
+
+  shaderInfo.forEach(function(desc) {
+    let shader = compileShader(desc.id, desc.type);
+
+    if (shader) {
+      gl.attachShader(program, shader);
+    }
+  });
+
+  gl.linkProgram(program)
+
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    console.log("Error linking shader program:");
+    console.log(gl.getProgramInfoLog(program));
+  }
+
+  return program;
+}

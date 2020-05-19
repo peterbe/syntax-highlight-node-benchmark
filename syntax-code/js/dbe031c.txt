@@ -1,0 +1,5 @@
+navigator.clipboard.writeText("<empty clipboard>").then(function() {
+  /* clipboard successfully set */
+}, function() {
+  /* clipboard write failed */
+});

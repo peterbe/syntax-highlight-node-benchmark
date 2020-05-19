@@ -1,0 +1,2 @@
+<label for="telNo">Phone number:</label>
+<input id="telNo" name="telNo" type="tel">

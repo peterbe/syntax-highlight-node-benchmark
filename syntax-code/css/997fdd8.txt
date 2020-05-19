@@ -1,0 +1,21 @@
+.slidein {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+.stopped {
+  animation-name: none;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 50%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}

@@ -1,0 +1,12 @@
+await do_something_without_lock();
+
+// Request the lock.
+await navigator.locks.request('my_resource', async lock => {
+  // The lock has been acquired.
+  await do_something_with_lock();
+  await do_something_else_with_lock();
+  // Now the lock will be released.
+});
+// The lock has been released.
+
+await do_something_else_without_lock();

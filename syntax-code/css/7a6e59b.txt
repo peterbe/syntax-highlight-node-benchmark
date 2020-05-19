@@ -1,0 +1,10 @@
+iframe {
+  width: 620px;
+  height: 450px;
+  border: 1px solid black;
+}
+
+#info {
+  margin-top: 20px;
+  font: 16px "Open Sans", "Helvetica", "Arial";
+}

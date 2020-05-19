@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: number-input;
+-webkit-appearance: number-input; }

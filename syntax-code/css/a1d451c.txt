@@ -1,0 +1,3 @@
+.striped { 
+   background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%); 
+}

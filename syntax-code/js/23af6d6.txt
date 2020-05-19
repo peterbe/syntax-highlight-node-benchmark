@@ -1,0 +1,7 @@
+// Interpret the received data as plain text
+
+req = new XMLHttpRequest();
+req.overrideMimeType("text/plain");
+req.addEventListener("load", callback, false);
+req.open("get", url);
+req.send();

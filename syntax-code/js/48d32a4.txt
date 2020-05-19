@@ -1,0 +1,4 @@
+var repetition = document.getElementById("repetition");
+repetition.addEventListener("change", function (evt) {
+  document.getElementById("masked").style.maskRepeat = evt.target.value;
+});

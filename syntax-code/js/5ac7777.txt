@@ -1,0 +1,5 @@
+var trackList = document.querySelector("video, audio").textTracks;
+
+trackList.onchange = function(event) {
+   .... /* do something */
+};

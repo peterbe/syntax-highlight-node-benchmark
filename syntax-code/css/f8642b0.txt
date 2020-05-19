@@ -1,0 +1,8 @@
+/* <length> values */
+scroll-margin: 10px;
+scroll-margin: 1em .5em 1em 1em;
+
+/* Global values */
+scroll-margin: inherit;
+scroll-margin: initial;
+scroll-margin: unset;

@@ -1,0 +1,17 @@
+function reportGamepads() {
+    var gamepads = navigator.getGamepads();
+    console.log(gamepads.length + ' controllers');
+    for(var i = 0; i < gamepads.length; ++i) {
+        var gp = gamepads[i];
+        var listItem = document.createElement('li');
+        listItem.classList = 'gamepad';
+        listItem.innerHTML = '<strong>Gamepad ' + gp.index + '</strong> (' + gp.id + ')'
+                 + '<br>Associated with VR Display ID: ' + gp.displayId
+                 + '<br>Gamepad associated with which hand: ' + gp.hand
+                 + '<br>Available haptic actuators: ' + gp.hapticActuators.length
+                 + '<br>Gamepad can return position info: ' + gp.pose.hasPosition
+                 + '<br>Gamepad can return orientation info: ' + gp.pose.hasOrientation;
+        list.appendChild(listItem);
+    }
+    initialRun = false;
+}

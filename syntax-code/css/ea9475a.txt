@@ -1,0 +1,9 @@
+/* Single <length-percentage> values */
+transform: translate(200px);
+transform: translate(50%);
+
+/* Double <length-percentage> values */
+transform: translate(100px, 200px);
+transform: translate(100px, 50%);
+transform: translate(30%, 200px);
+transform: translate(30%, 50%);

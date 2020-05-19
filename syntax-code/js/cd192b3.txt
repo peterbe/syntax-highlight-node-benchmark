@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var biquadFilter = audioCtx.createBiquadFilter();
+biquadFilter.frequency.value = 3000;

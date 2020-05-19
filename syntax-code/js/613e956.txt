@@ -1,0 +1,15 @@
+// Taking care of the browser-specific prefixes.
+window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem; 
+
+...
+
+// Opening a file system with temporary storage
+window.requestFileSystem(TEMPORARY, 1024*1024 /*1MB*/, function(fs) {
+  fs.root.getFile('log.txt', {}, function(fileEntry) {
+    
+    fileEntry.remove(function() {
+      console.log('File removed.');
+    }, onError);
+  
+  }, onError);
+}, onError); 

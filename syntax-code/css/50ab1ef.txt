@@ -1,0 +1,8 @@
+/* Default value */
+offset-distance: 0;
+
+/* the middle of the offset-path */
+offset-distance: 50%;
+
+/* a fixed length positioned along the path */
+offset-distance: 40px;

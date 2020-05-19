@@ -1,0 +1,3 @@
+document.onpointerlockchange = (event) => {
+  console.log('Pointer lock changed');
+};

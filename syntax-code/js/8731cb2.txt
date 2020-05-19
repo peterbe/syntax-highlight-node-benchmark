@@ -1,0 +1,3 @@
+document.onpointerover = (event) => {
+  console.log('Pointer moved in');
+};

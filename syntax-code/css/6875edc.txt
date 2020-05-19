@@ -1,0 +1,3 @@
+.exampleone {
+  -moz-binding: url(http://www.example.org/xbl/htmlBindings.xml#radiobutton);
+}

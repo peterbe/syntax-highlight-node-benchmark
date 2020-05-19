@@ -1,0 +1,1 @@
+ctx.putImageData(myImageData, 0, 0);

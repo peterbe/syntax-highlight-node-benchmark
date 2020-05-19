@@ -1,0 +1,4 @@
+cite {
+  font-style: normal;
+  text-decoration: underline;
+}

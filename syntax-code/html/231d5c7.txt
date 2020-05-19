@@ -1,0 +1,3 @@
+<div>
+  This box has a border on the top side.
+</div>

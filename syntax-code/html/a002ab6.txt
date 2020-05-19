@@ -1,0 +1,2 @@
+<div>XPath example</div>
+<div>Number of matched nodes: <output></output></div>

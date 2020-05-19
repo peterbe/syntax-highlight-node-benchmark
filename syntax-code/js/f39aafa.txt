@@ -1,0 +1,5 @@
+myButton.addEventListener('mousedown', function(e) {
+  // Touch event case handled above, don't change the style again on tap.
+  if (!e.sourceCapabilities.firesTouchEvents)
+    myButton.classList.add("pressed");
+});

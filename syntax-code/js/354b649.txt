@@ -1,0 +1,1 @@
+span.classList.add("d", "e", "f");

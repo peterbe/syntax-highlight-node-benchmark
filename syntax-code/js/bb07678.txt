@@ -1,0 +1,7 @@
+// Set multiple styles in a single statement
+elt.style.cssText = "color: blue; border: 1px solid black"; 
+// Or
+elt.setAttribute("style", "color:red; border: 1px solid blue;");
+
+// Set specific style while leaving other inline style values untouched
+elt.style.color = "blue";

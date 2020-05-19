@@ -1,0 +1,16 @@
+<div id="parentElement">
+  <span id="childElement">foo bar</span>
+</div>
+
+<script>
+// Create a new, plain <span> element
+let sp1 = document.createElement("span")
+
+// Get the reference element
+let sp2 = document.getElementById("childElement")
+// Get the parent element
+let parentDiv = sp2.parentNode
+
+// Insert the new element into before sp2
+parentDiv.insertBefore(sp1, sp2)
+</script>

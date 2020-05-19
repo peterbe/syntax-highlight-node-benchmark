@@ -1,0 +1,9 @@
+xrSession.onsqueezestart = event => {
+  if (event.inputSource.handedness == user.handedness) {
+    let targetRayPose = event.frame.getPose(event.inputSource.targetRaySpace, myRefSpace;
+
+    if (targetRayPose) {
+      user.heldObject = findObjectUsingRay(targetRayPose.transform);
+    }
+  }
+};

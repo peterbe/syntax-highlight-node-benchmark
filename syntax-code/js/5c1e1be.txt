@@ -1,0 +1,5 @@
+function handlePointerMove(event) {
+  if (event.buttons & 2) {
+    rotateViewBy(event.movementX, event.movementY);
+  }
+}

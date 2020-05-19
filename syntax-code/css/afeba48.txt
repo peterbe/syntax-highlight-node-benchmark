@@ -1,0 +1,14 @@
+.grid {
+  max-width: 1200px;
+  margin: 0 auto; // horizontally centers the container
+}
+
+/* Remove the max-width and margins if the browser supports Grid */
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    /* Other grid code goes here */
+    max-width: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,2 @@
+<p class="wavy">Here's some text with wavy red underline!</p>
+<p class="both">This text has lines both above and below it.</p>

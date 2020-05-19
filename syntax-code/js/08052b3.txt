@@ -1,0 +1,3 @@
+window.onorientationchange = function() { 
+  console.log("the orientation of the device is now " + screen.orientation.angle);
+};

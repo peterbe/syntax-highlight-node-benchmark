@@ -1,0 +1,7 @@
+[id="someElement"] p {
+  color: blue;
+}
+
+p.awesome {
+  color: red;
+}

@@ -1,0 +1,1 @@
+<input type="number" placeholder="x10" step="10" min="0" max="100" id="number">

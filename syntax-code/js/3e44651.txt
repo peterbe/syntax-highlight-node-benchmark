@@ -1,0 +1,3 @@
+navigator.registerProtocolHandler("web+burger",
+                                  "https://burgers.example.com/?burger=%s",
+                                  "Burger handler");

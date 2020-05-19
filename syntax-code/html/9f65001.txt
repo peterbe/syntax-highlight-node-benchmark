@@ -1,0 +1,4 @@
+<div class="media">
+    <div class="image"><img src="http://placehold.it/150x150" alt="placeholder"></div>
+    <div class="text">This is a media object example. I am using floats for older browsers and grid for new ones.</div>
+</div>

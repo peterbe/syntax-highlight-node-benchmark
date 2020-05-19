@@ -1,0 +1,8 @@
+let span = document.querySelector("span");
+let classes = span.classList;
+let result = classes.contains("c");
+if (result) {
+  span.textContent = "The classList contains 'c'";
+} else {
+   span.textContent = "The classList does not contain 'c'";
+}

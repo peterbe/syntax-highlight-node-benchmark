@@ -1,0 +1,4 @@
+var b = document.querySelector("button"); 
+
+b.setAttribute("name", "helloButton");
+b.setAttribute("disabled", "");

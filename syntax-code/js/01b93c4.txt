@@ -1,0 +1,8 @@
+function onXRSessionStarted(xrSession) {
+  let glCanvas = document.createElement("canvas");
+  let gl = glCanvas.getContext("webgl", { xrCompatible: true });
+
+  loadWebGLResources();
+
+  xrSession.updateRenderState({ baseLayer: new XRWebGLLayer(xrSession, gl) });
+}

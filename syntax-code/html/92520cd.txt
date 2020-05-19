@@ -1,0 +1,2 @@
+<div>XPath example</div>
+<div>Is XPath result a node set: <output></output></div>

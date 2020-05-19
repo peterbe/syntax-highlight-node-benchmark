@@ -1,0 +1,2 @@
+var tables = document.getElementsByTagName("table"); 
+var firstTable = tables.item(1); // or simply tables[1] - returns the second table in the DOM

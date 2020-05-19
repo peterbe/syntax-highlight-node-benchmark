@@ -1,0 +1,3 @@
+.simple-linear {
+  background: linear-gradient(blue, pink);
+}

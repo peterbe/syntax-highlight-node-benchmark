@@ -1,0 +1,4 @@
+// New method names
+var gain = context.createGain();
+var delay = context.createDelay();
+var js = context.createScriptProcessor(1024);

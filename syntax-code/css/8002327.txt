@@ -1,0 +1,11 @@
+a {
+  color: #fff;
+  background-color: #333;
+  transition: all 1s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  background-color: #fff;
+}

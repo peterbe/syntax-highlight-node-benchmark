@@ -1,0 +1,4 @@
+target.addEventListener("pointerdown", function(ev) {
+   // Calculate the contact area
+   var area = ev.width * ev.height;
+ }, false);

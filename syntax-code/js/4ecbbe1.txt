@@ -1,0 +1,6 @@
+var request = db.transaction(["customers"], "readwrite")
+                .objectStore("customers")
+                .delete("444-44-4444");
+request.onsuccess = function(event) {
+  // It's gone!
+};

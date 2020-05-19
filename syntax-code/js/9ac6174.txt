@@ -1,0 +1,5 @@
+let startTime = performance.now();
+
+/* ... do things for a while ... */
+
+let elapsedTime = performance.now() - startTime;

@@ -1,0 +1,7 @@
+function handleReceiverTrackEvent(event) {
+  audio.srcObject = event.streams[0];
+}
+
+function handleReceiverAddStreamEvent(event) {
+  audio.srcObject = event.stream;
+}

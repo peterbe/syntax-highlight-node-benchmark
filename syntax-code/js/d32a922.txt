@@ -1,0 +1,9 @@
+// addEventListener version
+document.addEventListener('selectstart', () => {
+  console.log('Selection started'); 
+});
+
+// onselectstart version
+document.onselectstart = () => {
+  console.log('Selection changed.');
+};

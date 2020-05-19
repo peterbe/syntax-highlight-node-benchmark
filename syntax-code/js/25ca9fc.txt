@@ -1,0 +1,6 @@
+let layerInit = {
+  stencil: false
+};
+let glLayer = new XRWebGLLayer(xrSession, gl, layerInit);
+
+let glLayer = new XRWebGLLayer(xrSession, gl, { stencil: false });

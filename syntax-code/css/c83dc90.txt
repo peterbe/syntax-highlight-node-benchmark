@@ -1,0 +1,7 @@
+*#foo {
+  color: green;
+}
+
+*[id="foo"] {
+  color: purple;
+}

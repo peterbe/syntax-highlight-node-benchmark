@@ -1,0 +1,7 @@
+<div class="animation-example">
+    <div class="container">
+        <p class="animation">You chose a cold night to visit our planet.</p>
+    </div>
+    <button class="activate" type="button">Activate animation</button>
+    <div class="event-log"></div>
+</div>

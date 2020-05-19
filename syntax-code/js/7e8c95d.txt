@@ -1,0 +1,15 @@
+var elem1, elem2;
+
+// document.forms is an HTMLCollection
+
+elem1 = document.forms[0];
+elem2 = document.forms.item(0);
+
+alert(elem1 === elem2); // shows: "true"
+
+elem1 = document.forms.myForm;
+elem2 = document.forms.namedItem("myForm");
+
+alert(elem1 === elem2); // shows: "true"
+
+elem1 = document.forms["named.item.with.periods"];

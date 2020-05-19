@@ -1,0 +1,1 @@
+linear-gradient(red 40%, yellow 30%, blue 65%);

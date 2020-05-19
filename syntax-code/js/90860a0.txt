@@ -1,0 +1,1 @@
+let absolute = new URL(relative, frame.contentWindow.location.href)

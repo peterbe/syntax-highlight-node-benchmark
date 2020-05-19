@@ -1,0 +1,7 @@
+let result = document.getElementById("result");
+
+if (navigator.mediaDevices.getSupportedConstraints().noiseSuppression) {
+    result.innerHTML = "Supported!";
+} else {
+    result.innerHTML = "Not supported!";
+}

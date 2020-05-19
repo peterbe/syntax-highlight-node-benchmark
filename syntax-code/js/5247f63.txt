@@ -1,0 +1,5 @@
+db.onerror = function(event) {
+  // Generic error handler for all errors targeted at this database's
+  // requests!
+  console.error("Database error: " + event.target.errorCode);
+};

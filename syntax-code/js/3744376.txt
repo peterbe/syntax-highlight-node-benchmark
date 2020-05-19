@@ -1,0 +1,16 @@
+var button = document.querySelector('button');
+var html = document.querySelector('html');
+
+function random(number) {
+  return Math.floor(Math.random() * number);
+}
+
+button.onclick = function() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  button.style.backgroundColor = rndCol;
+};
+
+button.onauxclick = function() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  button.style.color = rndCol;
+}

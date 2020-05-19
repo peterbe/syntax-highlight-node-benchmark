@@ -1,0 +1,10 @@
+// Connect to a channel
+var bc = new BroadcastChannel('test_channel');
+
+// More operations (like postMessage, …)
+
+// Log the channel name to the console
+console.log(bc.name); // "test_channel"
+
+// When done, disconnect from the channel
+bc.close();

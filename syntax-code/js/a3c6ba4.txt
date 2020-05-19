@@ -1,0 +1,3 @@
+MediaSource.isTypeSupported('audio/mp3'); // false
+MediaSource.isTypeSupported('video/mp4'); // true
+MediaSource.isTypeSupported('video/mp4; codecs="avc1.4D4028, mp4a.40.2"'); // true

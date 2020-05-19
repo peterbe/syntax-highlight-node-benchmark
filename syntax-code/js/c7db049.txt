@@ -1,0 +1,3 @@
+window.addEventListener('hashchange', function() {
+  console.log('The hash has changed!')
+}, false);

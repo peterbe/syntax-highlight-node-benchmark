@@ -1,0 +1,3 @@
+recognition.onaudiostart = function() {
+  console.log('Audio capturing started');
+}

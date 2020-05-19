@@ -1,0 +1,5 @@
+playButton.addEventListener('click', function() {
+    if (this.dataset.playing === 'false') {
+        srcNode = playSourceNode(audioCtx, sample);
+        ...
+}, false);

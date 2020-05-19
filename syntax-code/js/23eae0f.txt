@@ -1,0 +1,12 @@
+var customers = [];
+
+objectStore.openCursor().onsuccess = function(event) {
+  var cursor = event.target.result;
+  if (cursor) {
+    customers.push(cursor.value);
+    cursor.continue();
+  }
+  else {
+    console.log("Got all customers: " + customers);
+  }
+};

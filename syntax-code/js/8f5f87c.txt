@@ -1,0 +1,9 @@
+registerPaint('cssPaintFunctionName', class {
+     static get inputProperties() { return ['PropertyName1', '--customPropertyName2']; }
+     static get inputArguments() { return ['<color>']; }
+     static get contextOptions() { return {alpha: true}; }
+
+     paint(drawingContext, elementSize, styleMap) {
+         // Paint code goes here.
+     } 
+});

@@ -1,0 +1,15 @@
+interface MSManipulationEvent extends UIEvent {
+    readonly currentState: number;
+    readonly inertiaDestinationX: number;
+    readonly inertiaDestinationY: number;
+    readonly lastState: number;
+    initMSManipulationEvent(typeArg: string, canBubbleArg: boolean, cancelableArg: boolean, viewArg: Window, detailArg: number, lastState: number, currentState: number): void;
+    readonly MS_MANIPULATION_STATE_ACTIVE: number;
+    readonly MS_MANIPULATION_STATE_CANCELLED: number;
+    readonly MS_MANIPULATION_STATE_COMMITTED: number;
+    readonly MS_MANIPULATION_STATE_DRAGGING: number;
+    readonly MS_MANIPULATION_STATE_INERTIA: number;
+    readonly MS_MANIPULATION_STATE_PRESELECT: number;
+    readonly MS_MANIPULATION_STATE_SELECTING: number;
+    readonly MS_MANIPULATION_STATE_STOPPED: number;
+}

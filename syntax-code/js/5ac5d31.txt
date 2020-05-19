@@ -1,0 +1,15 @@
+/* assuming we have the following HTML
+<select id='s'>
+    <option>First</option>
+    <option selected>Second</option>
+    <option>Third</option>
+</select>
+*/
+
+var select = document.getElementById('s');
+
+// return the index of the selected option
+console.log(select.selectedIndex); // 1
+
+// return the value of the selected option
+console.log(select.options[select.selectedIndex].value) // Second

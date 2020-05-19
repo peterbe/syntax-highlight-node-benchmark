@@ -1,0 +1,6 @@
+function stopOscillators() {
+  oscNode1.stop();
+  oscNode2.stop();
+  oscNode3.stop();
+  playing = false;
+}

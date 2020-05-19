@@ -1,0 +1,45 @@
+// The page has loaded. Should the page use PaymentRequest?
+// If PaymentRequest fails, should the page fallback to manual
+// web form checkout?
+const supportedPaymentMethods = ...
+let shouldCallPaymentRequest = true;
+let fallbackToLegacyOnPaymentRequestFailure = false;
+(new PaymentRequest(supportedPaymentMethods,
+    {total: {label: 'Stub', amount: {currency: 'USD', value: '0.01'}}})
+.canMakePayment()
+.then(function(result) {
+  shouldCallPaymentRequest = result;
+}).catch(function(error) {
+  console.log(error);
+  // The user may have turned off query ability in their privacy settings.
+  // Let's use PaymentRequest by default and fallback to legacy
+  // web form based checkout.
+  shouldCallPaymentRequest = true;
+  fallbackToLegacyOnPaymentRequestFailure = true;
+});
+
+// User has clicked on the checkout button. We know
+// what's in the cart, but we don't have a `Checkout` object.
+function onCheckoutButtonClicked(lineItems) {
+  callServerToRetrieveCheckoutDetails(lineItems);
+}
+
+// The server has constructed the `Checkout` object. Now we know
+// all of the prices and shipping options.
+function onServerCheckoutDetailsRetrieved(checkoutObject) {
+  if (shouldCallPaymentRequest) {
+    const request = new PaymentRequest(supportedPaymentMethods, checkoutObject);
+    request.show().then(function(paymentResponse) {
+      // Post the results to the server and call `paymeResponse.complete()`.
+    }).catch(function(error) {
+      console.log(error);
+      if (fallbackToLegacyOnPaymentRequestFailure) {
+        window.location.href = '/legacy-web-form-checkout';
+      } else {
+        showCheckoutErrorToUser();
+      }
+    });
+  } else {
+    window.location.href = '/legacy-web-form-checkout';
+  }
+}

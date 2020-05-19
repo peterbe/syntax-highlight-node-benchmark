@@ -1,0 +1,14 @@
+// reduced time precision (2ms) in Firefox 60
+animation.startTime;
+// 23.404
+// 24.192
+// 25.514
+// ...
+
+
+// reduced time precision with `privacy.resistFingerprinting` enabled
+animation.startTime;
+// 49.8
+// 50.6
+// 51.7
+// ...

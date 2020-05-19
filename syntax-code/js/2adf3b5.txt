@@ -1,0 +1,16 @@
+const writableStream = new WritableStream({
+  write(chunk) {
+    ...
+  },
+  close() {
+    ...
+  },
+  abort(err) {
+    ...
+  }
+}, queuingStrategy);
+
+...
+
+// abort the stream later on, when required
+writableStream.abort();

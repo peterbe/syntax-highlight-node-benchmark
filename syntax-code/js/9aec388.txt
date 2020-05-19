@@ -1,0 +1,14 @@
+navigator.serviceWorker.ready.then(function(reg) {  
+
+  ...
+
+      // set up a message channel to communicate with the SW
+      var channel = new MessageChannel();
+      channel.port1.onmessage = function(e) {
+        console.log(e.origin);
+        handleChannelMessage(e.data);
+      }
+      
+      mySW = reg.active;
+      mySW.postMessage('hello', [channel.port2]);
+  });

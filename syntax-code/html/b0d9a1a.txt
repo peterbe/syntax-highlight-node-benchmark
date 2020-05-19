@@ -1,0 +1,2 @@
+<input type="text" id="text-box" size="20" value="Hello world!">
+<button onclick="selectText()">Select text</button>

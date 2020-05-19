@@ -1,0 +1,4 @@
+<form>
+  <label for="my-button">My button: </label>
+  <button id="my-button" type="button">Try Clicking Me or My Label!</button>
+</form>

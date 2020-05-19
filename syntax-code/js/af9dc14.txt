@@ -1,0 +1,9 @@
+function showLoc() {
+  var oLocation = location, aLog = ["Property (Typeof): Value", "location (" + (typeof oLocation) + "): " + oLocation ];
+  for (var sProp in oLocation){
+  aLog.push(sProp + " (" + (typeof oLocation[sProp]) + "): " + (oLocation[sProp] || "n/a"));
+  }
+  alert(aLog.join("\n"));
+}
+
+// in html: <button onclick="showLoc();">Show location properties</button>

@@ -1,0 +1,3 @@
+@page {
+  bleed: 1cm;
+}

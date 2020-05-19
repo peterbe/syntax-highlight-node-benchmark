@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="left-margin">
+    <img src="/files/16861/margin-flourish.svg" alt="">
+  </div>
+  <div class="contents">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Quisque quis orci ligula. Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit. In ac neque libero.
+    Vivamus consectetur rhoncus elit eget porta. Etiam
+    pulvinar ex id sapien laoreet, quis aliquet odio
+    lobortis. Nam ac mauris at risus laoreet cursus vitae et
+    sapien. Etiam molestie auctor eros, ac porta risus
+    scelerisque sit amet. Ut nunc neque, porta eu auctor at,
+    tempor et arcu.</p>
+  </div>
+</div>

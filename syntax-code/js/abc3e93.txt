@@ -1,0 +1,5 @@
+setupSample()
+    .then((sample) => {
+        // sample is our buffered file
+        // ...
+});

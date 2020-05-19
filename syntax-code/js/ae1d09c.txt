@@ -1,0 +1,6 @@
+document.getElementById("animateButton").addEventListener("click", event => {
+  document.getElementById("box").animate(
+    boxRotationKeyframes,
+    boxRotationTiming
+  );
+}, false);

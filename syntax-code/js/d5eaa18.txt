@@ -1,0 +1,3 @@
+function whichCamera(track) {
+  return track.getSettings().facingMode;
+}

@@ -1,0 +1,5 @@
+<link href="reset.css" rel="stylesheet" type="text/css">
+
+<link href="default.css" rel="stylesheet" type="text/css" title="Default Style">
+<link href="fancy.css" rel="alternate stylesheet" type="text/css" title="Fancy">
+<link href="basic.css" rel="alternate stylesheet" type="text/css" title="Basic">

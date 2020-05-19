@@ -1,0 +1,2 @@
+var myTextbox = document.getElementById('my-textbox');
+myTextbox.addEventListener('keypress', checkName, false);

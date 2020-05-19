@@ -1,0 +1,5 @@
+xrSession.updateRenderState({
+  baseLayer: new XRWebGLLayer(xrSession, gl, {
+     framebufferScaleFactor: 0.5
+  });
+});

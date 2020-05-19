@@ -1,0 +1,5 @@
+xrReferenceSpace.addEventListener("reset", event => {
+  for (let obj of scene.objects) {
+    mat4.multiply(obj.transform, obj.transform, event.transform);
+  }
+});

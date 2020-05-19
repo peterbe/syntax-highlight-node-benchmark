@@ -1,0 +1,6 @@
+document.addEventListener('pointerlockerror', lockError, false);
+document.addEventListener('mozpointerlockerror', lockError, false);
+
+function lockError(e) {
+  alert("Pointer lock failed"); 
+}

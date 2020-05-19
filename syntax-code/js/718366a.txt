@@ -1,0 +1,5 @@
+const para = document.querySelector('p');
+
+para.addEventListener('pointerenter', (event) => {
+  console.log('Pointer entered element');
+});

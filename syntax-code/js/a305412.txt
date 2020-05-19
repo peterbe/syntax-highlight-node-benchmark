@@ -1,0 +1,3 @@
+if (window.parent != window.top) {
+  // We're deeper than one down
+}

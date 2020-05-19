@@ -1,0 +1,17 @@
+function QueryableWorker(url, defaultListener, onError) {
+    var instance = this,
+        worker = new Worker(url),
+        listeners = {};
+
+    this.defaultListener = defaultListener || function() {};
+    
+    if (onError) {worker.onerror = onError;}
+    
+    this.postMessage = function(message) {
+        worker.postMessage(message);
+    }
+
+    this.terminate = function() {
+        worker.terminate();
+    }
+}

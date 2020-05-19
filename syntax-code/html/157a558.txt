@@ -1,0 +1,2 @@
+<button class="registered">Background Registered</button>
+<button class="unregistered">Background Not Registered</button>

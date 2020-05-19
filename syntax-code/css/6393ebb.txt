@@ -1,0 +1,6 @@
+.exampleText {
+  writing-mode: vertical-rl;
+  background-color: yellow;
+  block-size: 100%;
+  max-inline-size: 200px;
+}

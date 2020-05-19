@@ -1,0 +1,13 @@
+window.onload = window.onunload = function analytics(event) {
+  if (!navigator.sendBeacon) return;
+
+  var url = "https://example.com/analytics";
+  // Create the data to send
+  var data = "state=" + event.type + "&location=" + location.href;
+
+  // Send the beacon
+  var status = navigator.sendBeacon(url, data);
+
+  // Log the data and result
+  console.log("sendBeacon: URL = ", url, "; data = ", data, "; status = ", status);
+};

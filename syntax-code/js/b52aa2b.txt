@@ -1,0 +1,7 @@
+pitch.onchange = function() {
+  pitchValue.textContent = pitch.value;
+}
+
+rate.onchange = function() {
+  rateValue.textContent = rate.value;
+}

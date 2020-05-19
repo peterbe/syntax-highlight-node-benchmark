@@ -1,0 +1,9 @@
+var pc = new RTCPeerConnection();
+…
+var sd = pc.pendingLocalDescription;
+if (sd) {
+  // There's a description change underway!
+}
+else {
+  // No description change pending
+}

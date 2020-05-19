@@ -1,0 +1,6 @@
+navigator.permissions.query({name:'geolocation'}).then(function(permissionStatus) {
+  console.log('geolocation permission status is ', permissionStatus.state);
+  permissionStatus.onchange = function() {
+    console.log('geolocation permission status has changed to ', this.state);
+  };
+});

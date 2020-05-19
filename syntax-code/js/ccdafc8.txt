@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var panner = audioCtx.createPanner();
+panner.maxDistance = 10000;

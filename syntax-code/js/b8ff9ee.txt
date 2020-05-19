@@ -1,0 +1,3 @@
+var topLeft = new DOMPoint(window.screenX, window.screenY);
+
+var pointJSON = topLeft.toJSON();

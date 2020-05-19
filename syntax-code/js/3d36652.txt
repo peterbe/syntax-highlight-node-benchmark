@@ -1,0 +1,3 @@
+window.addEventListener('transitionend', () => {
+  console.log('Transition ended');
+});

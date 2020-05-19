@@ -1,0 +1,4 @@
+/* The object is not a keyboard shortcut (the default) */
+-ms-accelerator: false
+/* The object is a keyboard shortcut */
+-ms-accelerator: true

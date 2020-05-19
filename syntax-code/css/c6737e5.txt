@@ -1,0 +1,9 @@
+main > div {
+  height: 300px;
+  width: 500px;
+  overflow: auto;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  overscroll-behavior-x: contain;
+}

@@ -1,0 +1,17 @@
+const p = document.querySelector('p');
+
+// Get contents of <p> as a text node
+const foobar = p.firstChild;
+
+// Split 'foobar' into two text nodes, 'foo' and 'bar',
+// and save 'bar' as a const
+const bar = foobar.splitText(3);
+
+// Create a <u> element containing ' new content '
+const u = document.createElement('u');
+u.appendChild(document.createTextNode(' new content '));
+
+// Add <u> before 'bar'
+p.insertBefore(u, bar);
+
+// The result is: <p>foo<u> new content </u>bar</p>

@@ -1,0 +1,23 @@
+div {
+  margin-bottom: 10px;
+}
+
+input:invalid + span {
+  position: relative;
+}
+
+input:invalid + span:after {
+  content: '✖';
+  position: absolute;
+  right: -18px;
+}
+
+input:valid + span {
+  position: relative;
+}
+
+input:valid + span:after {
+  content: '✓';
+  position: absolute;
+  right: -18px;
+}

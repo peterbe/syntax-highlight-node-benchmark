@@ -1,0 +1,4 @@
+// Assigning transparent colors to stroke and fill style
+
+ctx.strokeStyle = 'rgba(255, 0, 0, 0.5)';
+ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';

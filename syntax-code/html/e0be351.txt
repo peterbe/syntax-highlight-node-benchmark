@@ -1,0 +1,5 @@
+<p id="myText1">Uneditable Paragraph</p>
+<p id="myText2" contentEditable="true">Editable Paragraph</p>
+
+<p id="infoText1">Can edit the first paragraph? </p>
+<p id="infoText2">Can edit the second paragraph? </p>

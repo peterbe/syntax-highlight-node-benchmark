@@ -1,0 +1,2 @@
+formData.append('username', 'Chris');
+formData.append('userpic', myFileInput.files[0], 'chris.jpg');

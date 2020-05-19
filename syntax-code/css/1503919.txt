@@ -1,0 +1,17 @@
+.longhand { 
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+
+.under-and-over {
+  text-decoration-line: underline overline;
+  text-decoration-style: solid;
+  text-decoration-color: orange;
+  text-decoration-thickness: 0.2rem;
+}
+
+.shorthand {
+  text-decoration: underline solid blue 1px;
+}

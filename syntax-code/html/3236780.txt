@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <header class="main-header">I am the header</header>
+  <aside class="side1">I am sidebar 1</aside>
+  <article class="content">I am the main article</article>
+  <aside class="side2">I am sidebar 2</aside>
+  <footer class="main-footer">I am the footer</footer>
+</div>

@@ -1,0 +1,12 @@
+self.addEventListener("push", event => {
+  let message = event.data.json();
+
+  switch(message.type) {
+    case "init":
+      doInit();
+      break;
+    case "shutdown":
+      doShutdown();
+      break;
+  }
+}, false);

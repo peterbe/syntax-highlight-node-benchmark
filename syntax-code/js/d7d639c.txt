@@ -1,0 +1,2 @@
+// Select <h1> elements and elements with class="error"
+myContentObject.select = "h1 .error";

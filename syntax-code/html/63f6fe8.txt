@@ -1,0 +1,3 @@
+<img id="b0">
+<img id="b1">
+<img id="b2">

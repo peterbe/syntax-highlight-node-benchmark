@@ -1,0 +1,17 @@
+window.addEventListener("load", onLoad);
+
+function onLoad() {
+  xrButton = document.querySelector("#enter-xr");
+  xrButton.addEventListener("click", onXRButtonClick);
+
+  projectionMatrixOut = document.querySelector("#projection-matrix div");
+  modelMatrixOut = document.querySelector("#model-view-matrix div");
+  cameraMatrixOut = document.querySelector("#camera-matrix div");
+  mouseMatrixOut = document.querySelector("#mouse-matrix div");
+  
+  if (!navigator.xr || enableForcePolyfill) {
+    console.log("Using the polyfill");
+    polyfill = new WebXRPolyfill();
+  }
+  setupXRButton();
+}

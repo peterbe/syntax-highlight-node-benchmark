@@ -1,0 +1,11 @@
+
+.snappy1 {
+  -ms-content-zoom-snap-points: snapInterval(0%, 100%);
+  ...
+}
+
+.snappy2 {
+  -ms-content-zoom-snap-points: snapList(100%, 200%, 300%, 400%, 500%);
+  ...
+}
+  

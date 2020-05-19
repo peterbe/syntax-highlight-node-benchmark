@@ -1,0 +1,3 @@
+XRSession.onend = function(event) {
+ /* the session has shut down */
+}

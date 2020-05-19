@@ -1,0 +1,6 @@
+let pos = new CSSPositionValue(
+    new CSSUnitValue( 5, "px" ),
+    new CSSUnitValue( 10, "em" ));
+
+console.log( pos.x.unit ); // "px"
+console.log( pos.y.unit ); // "em"

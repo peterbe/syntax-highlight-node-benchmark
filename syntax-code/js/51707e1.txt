@@ -1,0 +1,23 @@
+...
+
+  pause.onclick = function() {
+    if(MediaRecorder.state === "recording") {
+      mediaRecorder.pause();
+      // recording paused
+    } else if(MediaRecorder.state === "paused") {
+      mediaRecorder.resume();
+      // resume recording
+    }
+  }
+
+  mediaRecorder.onpause = function() {
+    // do something in response to
+    // recording being paused
+  }
+
+  mediaRecorder.onresume = function() {
+    // do something in response to
+    // recording being resumed
+  }
+
+...

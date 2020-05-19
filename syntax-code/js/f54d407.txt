@@ -1,0 +1,3 @@
+window.onvrdisplaypointerunrestricted = function() {
+  // Run code to handle freeing app from pointer lock
+};

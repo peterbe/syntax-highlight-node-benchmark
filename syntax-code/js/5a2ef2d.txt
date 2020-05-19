@@ -1,0 +1,3 @@
+document.ontransitionend = () => {
+  console.log('Transition ended');
+};

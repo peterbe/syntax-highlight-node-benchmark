@@ -1,0 +1,4 @@
+:-moz-broken {
+  background: bisque;
+  padding: 8px;
+}

@@ -1,0 +1,7 @@
+var iceTransport = pc.getSenders()[0].transport.iceTransport;
+
+iceTransport.onstatechange = function(event) {
+  if (iceTransport.state == "failed") {
+    handleFailure(pc);
+  }
+}

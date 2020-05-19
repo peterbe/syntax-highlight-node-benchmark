@@ -1,0 +1,7 @@
+const state = await navigator.locks.query();
+for (const lock of state.held) {
+  console.log(`held lock: name ${lock.name}, mode ${lock.mode}`);
+}
+for (const request of state.pending) {
+  console.log(`requested lock: name ${request.name}, mode ${request.mode}`);
+}

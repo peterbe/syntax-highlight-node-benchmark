@@ -1,0 +1,4 @@
+var oReq = new XMLHttpRequest();
+
+oReq.open("GET", url + ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime());
+oReq.send(null);

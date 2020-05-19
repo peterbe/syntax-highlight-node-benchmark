@@ -1,0 +1,3 @@
+utterThis.onpause = function(event) {
+  console.log('Speech paused after ' + event.elapsedTime + ' milliseconds.');
+}

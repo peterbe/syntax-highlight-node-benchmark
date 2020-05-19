@@ -1,0 +1,1 @@
+var constraints = { video: { frameRate: { ideal: 10, max: 15 } } };

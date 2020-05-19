@@ -1,0 +1,24 @@
+// Open the database
+const openRequest = window.indexedDB.open('toDoList', 4);
+
+openRequest.onupgradeneeded = (event) => {
+  const db = event.target.result;
+
+  db.onerror = () => {
+    console.log('Error creating database');
+  };
+
+  // Create an objectStore for this database
+  var objectStore = db.createObjectStore('toDoList', { keyPath: 'taskTitle' });
+
+  // define what data items the objectStore will contain
+  objectStore.createIndex('hours', 'hours', { unique: false });
+  objectStore.createIndex('minutes', 'minutes', { unique: false });
+  objectStore.createIndex('day', 'day', { unique: false });
+  objectStore.createIndex('month', 'month', { unique: false });
+  objectStore.createIndex('year', 'year', { unique: false });
+};
+
+openRequest.onsuccess = (event) => {
+  console.log('Database opened successfully!');
+};

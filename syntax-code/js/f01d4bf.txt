@@ -1,0 +1,9 @@
+// First, make sure you created index in request.onupgradeneeded:
+// objectStore.createIndex("name", "name");
+// Otherwize you will get DOMException.
+
+var index = objectStore.index("name");
+
+index.get("Donna").onsuccess = function(event) {
+  console.log("Donna's SSN is " + event.target.result.ssn);
+};

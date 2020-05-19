@@ -1,0 +1,1 @@
+var myAngularVelocity = VRPose.angularVelocity;

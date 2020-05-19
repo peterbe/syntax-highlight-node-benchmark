@@ -1,0 +1,4 @@
+importScripts();                         /* imports nothing */
+importScripts('foo.js');                 /* imports just "foo.js" */
+importScripts('foo.js', 'bar.js');       /* imports two scripts */
+importScripts('//example.com/hello.js'); /* You can import scripts from other origins */

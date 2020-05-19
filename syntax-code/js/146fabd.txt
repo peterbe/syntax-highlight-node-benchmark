@@ -1,0 +1,2 @@
+myHeaders.delete('Content-Type');
+myHeaders.get('Content-Type'); // Returns null, as it has been deleted

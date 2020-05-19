@@ -1,0 +1,9 @@
+@counter-style circled-digits {
+  system: fixed;
+  symbols: ➀ ➁ ➂;
+  suffix: ' ';
+}
+
+ul {
+  list-style: circled-digits;
+}

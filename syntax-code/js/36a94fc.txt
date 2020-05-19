@@ -1,0 +1,7 @@
+var trackList = document.querySelector("video").audioTracks;
+
+trackList.onchange = function(event) {
+  trackList.forEach(function(track) {
+    updateTrackEnabledButton(track.id, track.enabled);
+  });
+};

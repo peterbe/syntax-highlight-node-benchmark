@@ -1,0 +1,4 @@
+const blob = offscreenCanvas.convertToBlob({
+  type: "image/jpeg",
+  quality: 0.95
+});

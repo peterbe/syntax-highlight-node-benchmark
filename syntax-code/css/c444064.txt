@@ -1,0 +1,2 @@
+cross-fade( url(red.png), url(yellow.png), url(blue.png)); /* all three will be 33.3333% opaque */
+cross-fade( url(red.png) 33.33%, url(yellow.png) 33.33%, url(blue.png) 33.33%); 

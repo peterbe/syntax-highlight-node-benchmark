@@ -1,0 +1,5 @@
+var activeAttrib = gl.getActiveAttrib(program, index);
+activeAttrib.name;
+
+var activeUniform = gl.getActiveUniform(program, index);
+activeUniform.name;

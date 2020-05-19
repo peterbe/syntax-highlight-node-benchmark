@@ -1,0 +1,6 @@
+try {
+  const value = myFunction();
+  console.log(value);
+} catch(err) {
+  console.log(err);
+}

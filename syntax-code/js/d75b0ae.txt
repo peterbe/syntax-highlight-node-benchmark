@@ -1,0 +1,22 @@
+var one = document.querySelector('.one');
+var two = document.querySelector('.two');
+
+var aOffset = document.getElementById('aOffset');
+var fOffset = document.getElementById('fOffset');
+
+var button = document.querySelector('button');
+
+var output = document.querySelector('.output');
+
+var selection;
+
+button.onclick = function() {
+  try {
+    selection = document.getSelection();
+    selection.setBaseAndExtent(one, aOffset.value, two, fOffset.value);
+    var text = selection.toString();
+    output.textContent = text;
+  } catch(e) {
+    output.textContent = e.message;
+  }
+}

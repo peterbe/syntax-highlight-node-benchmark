@@ -1,0 +1,3 @@
+div { color: transparent;
+-moz-appearance: splitter;
+-webkit-appearance: splitter; }

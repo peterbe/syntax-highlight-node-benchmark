@@ -1,0 +1,15 @@
+.top caption {
+  caption-side: top;
+}
+
+.bottom caption {
+  caption-side: bottom;
+}
+
+table {
+  border: 1px solid red;
+}
+
+td {
+  border: 1px solid blue;
+}

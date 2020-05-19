@@ -1,0 +1,2 @@
+gl.framebufferTextureLayer(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, 
+                           texture, 0, 8);

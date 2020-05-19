@@ -1,0 +1,15 @@
+var el = document.getElementById('element');
+
+// Set will-change when the element is hovered
+el.addEventListener('mouseenter', hintBrowser);
+el.addEventListener('animationEnd', removeHint);
+
+function hintBrowser() {
+  // The optimizable properties that are going to change
+  // in the animation's keyframes block
+  this.style.willChange = 'transform, opacity';
+}
+
+function removeHint() {
+  this.style.willChange = 'auto';
+}

@@ -1,0 +1,1 @@
+new Audio("music.ogg").play();

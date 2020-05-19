@@ -1,0 +1,6 @@
+const video = document.querySelector('video');
+
+video.onended = (event) => {
+  console.log('Video stopped either because 1) it was over, ' +
+      'or 2) no further data is available.');
+};

@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var convolver = audioCtx.createConvolver();
+convolver.buffer = myAudioBuffer;

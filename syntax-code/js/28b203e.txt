@@ -1,0 +1,5 @@
+pc.ontrack = e => {
+  videoElement.srcObject = e.streams[0];
+  hangupButton.disabled = false;
+  return false;
+}

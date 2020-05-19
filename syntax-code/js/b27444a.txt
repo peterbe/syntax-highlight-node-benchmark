@@ -1,0 +1,2 @@
+  var gainNode = context.createGain();
+  gainNode.gain.setTargetValueAtTime(0.0, 10.0, 1.0);

@@ -1,0 +1,2 @@
+var source = context.createBufferSource();
+source.looping = true;

@@ -1,0 +1,22 @@
+.box1 {
+  grid-column-start: main-start;
+  grid-row-start: main-start;
+  grid-row-end: main-end;
+}
+
+.box2 {
+  grid-column-start: content-end;
+  grid-row-start: main-start;
+  grid-row-end: content-end;
+}
+
+.box3 {
+  grid-column-start: content-start;
+  grid-row-start: main-start;
+}
+
+.box4 {
+  grid-column-start: content-start;
+  grid-column-end: main-end;
+  grid-row-start: content-end;
+}

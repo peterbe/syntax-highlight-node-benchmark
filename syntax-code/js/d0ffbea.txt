@@ -1,0 +1,20 @@
+let dialString = "12024561111";
+
+let callerPC = null;
+let receiverPC = null;
+let dtmfSender = null;
+
+let hasAddTrack = false;
+
+let mediaConstraints = {
+  audio: true,
+  video: false
+};
+
+let offerOptions = {
+  offerToReceiveAudio: 1,
+  offerToReceiveVideo: 0
+};
+
+let dialButton = null;
+let logElement = null;

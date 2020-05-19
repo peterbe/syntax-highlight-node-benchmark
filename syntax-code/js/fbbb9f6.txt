@@ -1,0 +1,7 @@
+  function handleLocalAddCandidateSuccess() {
+    connectButton.disabled = true;
+  }
+ 
+  function handleRemoteAddCandidateSuccess() {
+    disconnectButton.disabled = false;
+  }

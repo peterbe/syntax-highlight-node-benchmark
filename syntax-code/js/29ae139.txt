@@ -1,0 +1,8 @@
+var initialRun = true;
+
+if(navigator.getVRDisplays && navigator.getGamepads) {
+  info.textContent = 'WebVR API and Gamepad API supported.'
+  reportDisplays();
+} else {
+  info.textContent = 'WebVR API and/or Gamepad API not supported by this browser.'
+}

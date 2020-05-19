@@ -1,0 +1,3 @@
+div { color: black;
+-moz-appearance: range;
+-webkit-appearance: range; }

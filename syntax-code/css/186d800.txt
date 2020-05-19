@@ -1,0 +1,3 @@
+.mainsheet {
+  -moz-stack-sizing: ignore;
+}

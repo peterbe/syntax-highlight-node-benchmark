@@ -1,0 +1,2 @@
+function checkDeadlines() {
+  var now = new Date();

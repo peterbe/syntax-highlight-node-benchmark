@@ -1,0 +1,9 @@
+/* Keyword values */
+speak-as: auto;
+speak-as: bullets;
+speak-as: numbers;
+speak-as: words;
+speak-as: spell-out;
+
+/* @counter-style name value */
+speak-as: <counter-style-name>;

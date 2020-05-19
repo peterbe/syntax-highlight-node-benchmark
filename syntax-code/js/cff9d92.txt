@@ -1,0 +1,42 @@
+let lastFrameTime = 0;
+
+function myDrawFrame(currentFrameTime, frame) {
+  let session = frame.session;
+  let viewerPose;
+
+  // Schedule the next frame to be painted when the time comes.
+
+  animationFrameRequestID = session.requestAnimationFrame(myDrawFrame);
+
+  // Get an XRViewerPose representing the position and
+  // orientation of the viewer. If successful, render the
+  // frame.
+
+  viewerPose = frame.getViewerPose(viewerRefSpace);
+  if (viewerPose) {
+    let glLayer = session.renderState.baseLayer;
+    gl.bindFrameBuffer(gl.FRAMEBUFFER, glLayer.framebuffer);
+
+    // Start by erasing the color and depth framebuffers.
+
+    gl.clearColor(0, 0, 0, 1.0);
+    gl.clearDepth(1.0);
+    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+    // Compute the time elapsed since the last frame was rendered.
+    // Use this value to ensure your animation runs at the exact
+    // rate you intend.
+
+    const deltaTime = currentFrameTime - lastFrameTime;
+    lastFrameTime = time;
+
+    // Now call the scene rendering code once for each of
+    // the session's views.
+
+    for (let view of viewerPose.views) {
+      let viewport = glLayer.getViewport(view);
+      gl.viewport(viewport.x, viewport.y, viewport.width, viewport.height);
+      myDrawSceneIntoView(view, deltaTime);
+    }
+  }
+}

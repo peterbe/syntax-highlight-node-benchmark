@@ -1,0 +1,3 @@
+track.oncuechange = function () {
+  let cues = track.activeCues; // array of current cues
+}

@@ -1,0 +1,16 @@
+let skipTime = 7;
+
+navigator.mediaSession.setActionHandler("seekforward", handleSeek);
+navigator.mediaSession.setActionHandler("seekbackward", handleSeek);
+
+function handleSeek(details) {
+  switch(details.action) {
+    case "seekforward":
+      audio.currentTime = Math.min(audio.currentTime + skipTime,
+              audio.duration);
+      break;
+    case "seekbackward":
+      audio.currentTime = Math.max(audio.currentTime - skipTime, 0);
+      break;
+  }
+}

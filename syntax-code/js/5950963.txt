@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var panNode = audioCtx.createStereoPanner();
+panNode.pan.value = -0.5;

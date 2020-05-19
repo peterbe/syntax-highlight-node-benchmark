@@ -1,0 +1,55 @@
+html {
+  height:100%;
+}
+body {
+  font: 14px/1.286 "Lucida Grande","Lucida Sans Unicode","DejaVu Sans",Lucida,Arial,Helvetica,sans-serif;
+  color: rgb(51, 51, 51);
+  height:100%;
+  overflow:hidden;
+}
+#img2 {
+  width:100%;
+  height:auto;
+  -moz-filter: drop-shadow(16px 16px 10px black);
+  -webkit-filter: drop-shadow(16px 16px 10px black);
+  -ms-filter: drop-shadow(16px 16px 10px black);
+  filter: drop-shadow(16px 16px 10px black);
+}
+#img12 {
+  width:100%;
+  height:auto;
+  -moz-filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+  -webkit-filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+  -ms-filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+  filter: drop-shadow(8px 9px 5px rgba(0,0,0,.8));
+}
+table.standard-table {
+  border: 1px solid rgb(187, 187, 187);
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 0px 0px 1.286em;
+  width: 85%;
+  height: 100%;
+}
+#irregular-shape {
+  width: 64%;
+}
+table.standard-table th {
+  border: 1px solid rgb(187, 187, 187);
+  padding: 0px 5px;
+  background: none repeat scroll 0% 0% rgb(238, 238, 238);
+  text-align: left;
+  font-weight: bold;
+}
+table.standard-table td {
+  padding: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: left;
+  vertical-align: top;
+  width:25%;
+  height:auto;
+}
+#img3, #img13 {
+  width:100%;
+  height:auto;
+}

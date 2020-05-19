@@ -1,0 +1,1 @@
+aliceChange.currentTime = aliceChange.effect.getComputedTiming().duration / 2;

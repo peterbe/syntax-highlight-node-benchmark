@@ -1,0 +1,2 @@
+<input id="telNo" name="telNo" type="tel"
+       size="20" minlength="9" maxlength="14">

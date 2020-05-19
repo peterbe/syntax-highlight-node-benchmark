@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  grid-template-areas: "select result";
+}
+
+select {
+  grid-area: select;
+}
+
+.result {
+  grid-area: result;
+}

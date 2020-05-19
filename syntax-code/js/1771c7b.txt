@@ -1,0 +1,1 @@
+gl.clearDepth(0.5);

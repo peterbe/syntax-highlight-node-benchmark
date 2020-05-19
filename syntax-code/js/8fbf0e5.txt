@@ -1,0 +1,16 @@
+function getElementsByTagNameNSWrapper (ns, elName, doc, context) {
+ if (!doc) {
+  doc = document;
+ }
+ if (!context) {
+  context = doc;
+ }
+
+ var result = doc.evaluate('//*[local-name()="'+elName+'" and namespace-uri() = "'+ns+'"]', context, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+
+        var a = [];
+        for(var i = 0; i < result.snapshotLength; i++) {
+            a[i] = result.snapshotItem(i);
+        }
+        return a;
+}

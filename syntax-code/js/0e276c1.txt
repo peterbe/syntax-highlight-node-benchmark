@@ -1,0 +1,2 @@
+let p = document.getElementById("para1")
+let p_prime = p.cloneNode(true)

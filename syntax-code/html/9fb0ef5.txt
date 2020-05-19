@@ -1,0 +1,6 @@
+<div class="container">
+  <div>Flex Item</div> 
+  <div>Flex Item</div>    
+</div> 
+
+Not a flex item

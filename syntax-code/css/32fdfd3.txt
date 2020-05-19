@@ -1,0 +1,12 @@
+a {
+  /* Specify non-transparent defaults to certain properties,
+     allowing them to be styled with the :visited state */
+  background-color: white;
+  border: 1px solid white;
+}
+
+a:visited {
+  background-color: yellow;
+  border-color: hotpink;
+  color: hotpink;
+}

@@ -1,0 +1,4 @@
+/* <symbol> values */
+suffix: "";
+suffix: ") ";
+suffix: url(bullet.png);

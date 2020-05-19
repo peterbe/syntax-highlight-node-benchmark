@@ -1,0 +1,26 @@
+var IDBReq = window.indexedDB.open('myFileStorageDataBase');
+
+// If necessary, let's create a datastore for the files
+IDBReq.onupgradeneeded = function () {
+  this.result.createObjectStore('files');
+}
+
+IDBReq.onsuccess = function () {
+  var DB = this.result;
+
+  // Let's create a new file
+  var handleReq = DB.mozCreateFileHandle("test.txt", "plain/text");
+
+  handleReq.onsuccess = function () {
+    var myFileHandle = this.result;
+    var store = DB.transaction(['files'], 'readwrite').objectStore('files');
+
+    // Let's store the file permanently
+    // HINT: it could be handy to use the file name as the storage key
+    var storeReq = store.add(myFileHandle, myFileHandle.name);
+
+    storeReq.onsuccess = function () {
+      console.log('The file has been successfully stored and can be retrieved anytime.')
+    }
+  }
+}

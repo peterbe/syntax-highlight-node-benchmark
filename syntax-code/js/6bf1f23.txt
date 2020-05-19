@@ -1,0 +1,27 @@
+let lightboxElem = document.querySelector("#lightbox");
+let lightboxImgElem = lightboxElem.querySelector("img");
+let lightboxControlsElem = lightboxElem.querySelector(".toolbar");
+
+async function loadImage(url, elem) {
+  return new Promise((resolve, reject) => {
+    elem.onload = () => resolve(elem);
+    elem.onerror = reject;
+    elem.src = src;
+  });
+}
+
+async function lightBox(url) {
+  lightboxElem.style.display = "block";
+  await loadImage("https://somesite.net/huge-image.jpg", lightboxImgElem);
+  lightboxControlsElem.disabled = false;
+}
+
+/* ... */
+
+function fixRedEyeCommand() {
+  if (lightboxElem.style.display === "block" && lightboxImgElem.complete) {
+    fixRedEye(lightboxImgElem);
+  } else {
+    /* can't start doing this until the image is fully loaded */
+  }
+}

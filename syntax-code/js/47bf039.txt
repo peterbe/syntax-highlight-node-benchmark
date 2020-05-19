@@ -1,0 +1,3 @@
+ServiceWorkerGlobalScope.skipWaiting().then(function() {
+  //Do something
+});

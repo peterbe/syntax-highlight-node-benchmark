@@ -1,0 +1,6 @@
+target.addEventListener('pointerdown', function(event) {
+   if (event.isPrimary) 
+     process_primary_pointer(event);
+   else
+     process_secondary_pointer(event);
+ }, false);

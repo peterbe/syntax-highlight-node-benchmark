@@ -1,0 +1,5 @@
+const videoElement = document.querySelector('video');
+
+videoElement.videoTracks.onaddtrack = (event) => {
+  console.log(`Video track: ${event.track.label} added`);
+};

@@ -1,0 +1,2 @@
+var myRequest = new Request('flowers.jpg');
+var newRequest = myRequest.clone(); // a copy of the request is now stored in newRequest

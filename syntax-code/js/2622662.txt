@@ -1,0 +1,3 @@
+var n = new Notification('Hello');
+var init = { notification: n };
+var myNotificationEvent = new NotificationEvent(type, init);

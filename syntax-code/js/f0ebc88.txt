@@ -1,0 +1,9 @@
+// Old webkitAudioContext code:
+var osc = context.createOscillator();
+var table = context.createWaveTable(realArray, imaginaryArray);
+osc.setWaveTable(table);
+
+// New standard AudioContext code:
+var osc = context.createOscillator();
+var table = context.createPeriodicWave(realArray, imaginaryArray);
+osc.setPeriodicWave(table);

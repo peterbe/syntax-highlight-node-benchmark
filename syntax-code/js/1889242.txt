@@ -1,0 +1,12 @@
+var synth = window.speechSynthesis;
+
+synth.addEventListener('voiceschanged', function() {
+  var voices = synth.getVoices();
+  for(i = 0; i < voices.length ; i++) {
+    var option = document.createElement('option');
+    option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
+    option.setAttribute('data-lang', voices[i].lang);
+    option.setAttribute('data-name', voices[i].name);
+    voiceSelect.appendChild(option);
+  }
+});

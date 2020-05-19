@@ -1,0 +1,3 @@
+if (node.parentElement) {
+    node.parentElement.style.color = "red";
+}

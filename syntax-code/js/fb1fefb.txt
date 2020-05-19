@@ -1,0 +1,2 @@
+gl.enable(gl.STENCIL_TEST);
+gl.stencilOp(gl.INCR, gl.DECR, gl.INVERT);

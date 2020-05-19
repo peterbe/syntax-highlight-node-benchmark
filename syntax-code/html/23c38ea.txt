@@ -1,0 +1,6 @@
+<div style="width:400px; height:100px; background:-moz-element(#myBackground2);">
+</div>
+
+<div style="overflow:hidden; height:0;">
+  <button id="myBackground2" type="button">Evil button!</button>
+</div>

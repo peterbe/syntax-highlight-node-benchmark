@@ -1,0 +1,3 @@
+if (glLayer.ignoreDepthValues) {
+  /* not using the depth buffer */
+}

@@ -1,0 +1,22 @@
+<canvas id="canvas" width="400" height="200" class="playable-canvas"></canvas>
+<div class="playable-buttons">
+  <input id="edit" type="button" value="Edit" />
+  <input id="reset" type="button" value="Reset" />
+</div>
+<textarea id="code" class="playable-code" style="height:250px">
+ctx.beginPath();
+ctx.arc(100, 100, 75, 0, 2 * Math.PI, false);
+ctx.lineWidth = 5;
+ctx.stroke();
+
+// eyes
+ctx.beginPath();
+ctx.arc(70, 80, 10, 0, 2 * Math.PI, false);
+ctx.arc(130, 80, 10, 0, 2 * Math.PI, false);
+ctx.fill();
+ctx.addHitRegion({id: "eyes"});
+
+// mouth
+ctx.beginPath();
+ctx.arc(100, 110, 50, 0, Math.PI, false);
+ctx.stroke();</textarea>

@@ -1,0 +1,19 @@
+const moveControls = document.querySelector('#move-controls').querySelectorAll('button');
+const boombox = document.querySelector('.boombox-body');
+
+// the values for our css transforms
+let transform = {
+    xAxis: 0,
+    yAxis: 0,
+    zAxis: 0.8,
+    rotateX: 0,
+    rotateY: 0
+}
+
+// set our bounds
+const topBound = -posY;
+const bottomBound = posY;
+const rightBound = posX;
+const leftBound = -posX;
+const innerBound = 0.1;
+const outerBound = 1.5;

@@ -1,0 +1,3 @@
+// static/scripts/worker.js
+
+self.postMessage('I\'m alive!');

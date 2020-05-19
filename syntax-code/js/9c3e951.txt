@@ -1,0 +1,1 @@
+para.firstChild.replaceWholeText("Thru-hiking is great, but ");

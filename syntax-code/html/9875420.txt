@@ -1,0 +1,2 @@
+<div>XPath example</div>
+<div>Text content of the &lt;div&gt; above: <output></output></div>

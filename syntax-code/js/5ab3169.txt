@@ -1,0 +1,3 @@
+el.ontransitionrun = () => {
+  console.log('Transition started running, and will start transitioning when the transition delay has expired');
+};

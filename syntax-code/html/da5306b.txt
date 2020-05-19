@@ -1,0 +1,4 @@
+<p>The following media constraints are supported by your browser:</p>
+
+<ul id="constraintList">
+</ul>

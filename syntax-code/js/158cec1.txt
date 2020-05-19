@@ -1,0 +1,3 @@
+myHeaders.set('Accept-Encoding', 'deflate');
+myHeaders.set('Accept-Encoding', 'gzip');
+myHeaders.get('Accept-Encoding'); // Returns 'gzip'

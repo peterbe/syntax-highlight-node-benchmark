@@ -1,0 +1,4 @@
+window.onvrdisplaydeactivate = function() {
+  info.textContent = 'Display deactivated.';
+  reportDisplays();
+};

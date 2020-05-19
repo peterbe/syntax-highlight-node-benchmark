@@ -1,0 +1,20 @@
+var progress = document.querySelector('progress');
+var myFile   = myFileHandle.open('readonly');
+
+// Let's read a 1GB file
+var action   = myFile.readAsArrayBuffer(1000000000);
+
+action.onprogress = function (event) {
+  if (progress) {
+    progress.value = event.loaded;
+    progress.max   = event.total;
+  }
+}
+
+action.onsuccess = function () {
+  console.log('Yeah \o/ Just read a 1GB file');
+}
+
+action.onerror = function () {
+  console.log('Oups :( Unable to read a 1GB file')
+}

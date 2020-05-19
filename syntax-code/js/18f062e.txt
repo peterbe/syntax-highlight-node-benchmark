@@ -1,0 +1,14 @@
+pc = new RTCPeerConnection({
+  iceServers: [
+    {
+      urls: "turn:fake.turnserver.url",
+      username: "someusername",
+      credential: "somepassword"
+    }
+  ]
+});
+
+pc.addEventListener("track", e => {
+  videoElement.srcObject = e.streams[0];
+  hangupButton.disabled = false;
+}, false);

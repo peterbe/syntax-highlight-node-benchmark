@@ -1,0 +1,3 @@
+<script>
+   CSS.paintWorklet.addModule('checkboardWorklet.js');
+</script>

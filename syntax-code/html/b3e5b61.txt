@@ -1,0 +1,2 @@
+<h1>Drawing with mouse events</h1>
+<canvas id="myPics" width="560" height="360"></canvas>

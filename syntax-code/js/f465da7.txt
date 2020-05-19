@@ -1,0 +1,12 @@
+// Answerer side
+
+var pc = new RTCPeerConnection(options);
+pc.ondatachannel = function(event) {
+  var channel = event.channel;
+﻿  channel.onopen = function(event) {
+    channel.send('Hi back!');
+  }
+  channel.onmessage = function(event) {
+    console.log(event.data);
+  }
+}

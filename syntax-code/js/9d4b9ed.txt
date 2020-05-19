@@ -1,0 +1,7 @@
+var osc = context.createOscillator();
+osc.noteOn(1);
+osc.noteOff(1.5);
+
+var src = context.createBufferSource();
+src.noteGrainOn(1, 0.25);
+src.noteOff(2);

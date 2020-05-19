@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.onvolumechange = (event) => {
+  console.log('The volume changed.');
+};

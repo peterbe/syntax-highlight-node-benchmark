@@ -1,0 +1,14 @@
+#bitmap {
+  width: 200px;
+  background-color: #ffa;
+  border: 36px solid orange;
+  margin: 30px;
+  padding: 10px;
+
+  border-image:
+      url("https://mdn.mozillademos.org/files/4127/border.png")  /* source */
+      27 /                    /* slice */
+      36px 28px 18px 8px /    /* width */
+      18px 14px 9px 4px       /* outset */
+      round;                  /* repeat */
+}

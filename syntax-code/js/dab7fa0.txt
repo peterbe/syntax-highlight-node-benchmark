@@ -1,0 +1,2 @@
+var video = document.createElement('video');
+console.log(video.currentTime);

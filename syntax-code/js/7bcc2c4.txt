@@ -1,0 +1,7 @@
+const log = document.getElementById('log');
+
+document.addEventListener('keyup', logKey);
+
+function logKey(e) {
+  log.textContent += ` ${e.code}`;
+}

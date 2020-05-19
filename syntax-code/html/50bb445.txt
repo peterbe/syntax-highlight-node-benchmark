@@ -1,0 +1,2 @@
+  <video src="http://www.contoso.com/videos/video.mp4"  
+       msPlayToPreferredSourceUri="http://www.contoso.com/catalogid=1234" /> 

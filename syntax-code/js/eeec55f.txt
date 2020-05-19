@@ -1,0 +1,4 @@
+let musicContext = new AudioContext({
+  latencyHint: "playback",
+  sampleRate: 48000
+});

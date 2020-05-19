@@ -1,0 +1,5 @@
+if (document.currentScript.async) {
+  console.log("Executing asynchronously");
+} else {
+  console.log("Executing synchronously");
+}

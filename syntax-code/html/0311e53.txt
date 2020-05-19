@@ -1,0 +1,2 @@
+<canvas>Your browser does not seem to support 
+    HTML5 canvas.</canvas>

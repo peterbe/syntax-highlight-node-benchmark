@@ -1,0 +1,5 @@
+let playbackRate = 1;
+const rateControl = document.querySelector('#rate');
+rateControl.addEventListener('input', function() {
+    playbackRate = Number(this.value);
+}, false);

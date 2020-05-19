@@ -1,0 +1,7 @@
+this.addListeners = function(name, listener) {
+    listeners[name] = listener;
+}
+
+this.removeListeners = function(name) {
+    delete listeners[name];
+}

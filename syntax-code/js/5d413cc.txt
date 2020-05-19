@@ -1,0 +1,4 @@
+// Scroll to the bottom of the page
+let maxY = window.scrollMaxY;
+
+window.scrollTo(0, maxY);

@@ -1,0 +1,34 @@
+var db;
+
+// Let us open our database
+var DBOpenRequest = window.indexedDB.open("toDoList", 4);
+
+DBOpenRequest.onsuccess = function(event) {
+  note.innerHTML += '<li>Database initialised.</li>';
+
+  // store the result of opening the database in the db variable.
+  // This is used a lot below
+  db = DBOpenRequest.result;    
+
+  // Run the displayData() function to populate the task list with
+  // all the to-do list data already in the IDB
+  displayData();
+
+};
+
+// open a read/write db transaction, ready for adding the data
+var transaction = db.transaction(["toDoList"], "readwrite");
+
+// report on the success of opening the transaction
+transaction.oncomplete = function(event) {
+  note.innerHTML += '<li>Transaction completed: database modification finished.</li>';
+};
+
+transaction.onerror = function(event) {
+  note.innerHTML += '<li>Transaction not opened due to error. Duplicate items not allowed.</li>';
+};
+
+// you would then go on to do something to this database
+// via an object store
+var objectStore = transaction.objectStore("toDoList");
+// etc.

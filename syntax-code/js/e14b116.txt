@@ -1,0 +1,16 @@
+function keyDownHandler(event) {
+  if (event.key == "Tab") {
+    let elem = event.target;
+    let str = elem.value;
+    
+    let position = elem.selectionStart;
+    let newStr = str.substring(0, position) + "  " +
+            str.substring(position, str.length);
+    elem.value = newStr;
+    elem.selectionStart = elem.selectionEnd = position + 2;
+    event.preventDefault();
+  }
+}
+
+videoConstraintEditor.addEventListener("keydown", keyDownHandler, false);
+audioConstraintEditor.addEventListener("keydown", keyDownHandler, false);

@@ -1,0 +1,5 @@
+let tempo = 60.0;
+const bpmControl = document.querySelector('#bpm');
+bpmControl.addEventListener('input', function() {
+    tempo = Number(this.value);
+}, false);

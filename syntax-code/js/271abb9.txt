@@ -1,0 +1,3 @@
+document.addEventListener('pointerup', (event) => {
+  console.log('Pointer up');
+});

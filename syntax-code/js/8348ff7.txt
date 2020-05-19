@@ -1,0 +1,4 @@
+
+
+// return stream's desired size
+let size = writer.desiredSize;

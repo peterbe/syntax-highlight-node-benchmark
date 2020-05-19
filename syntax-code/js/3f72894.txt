@@ -1,0 +1,15 @@
+var revokeBtn = document.querySelector('.revoke');
+
+  ...
+
+revokeBtn.onclick = function() {
+  revokePermission();
+}
+
+  ...
+
+function revokePermission() {
+  navigator.permissions.revoke({name:'geolocation'}).then(function(result) {
+    report(result.state);
+  });
+}

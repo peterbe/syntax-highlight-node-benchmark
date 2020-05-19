@@ -1,0 +1,7 @@
+// Recommended
+window.setTimeout(function() {
+  alert('Hello World!');
+}, 500);
+
+// Not recommended
+window.setTimeout("alert('Hello World!');", 500);

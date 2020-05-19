@@ -1,0 +1,11 @@
+elem.addEventListener('click', async evt => {
+  const animation = elem.animate(
+    { transform: `translate(${evt.clientX}px, ${evt.clientY}px)` },
+    { duration: 800, fill: 'forwards' }
+  );
+  await animation.finished;
+  // commitStyles will record the style up to and including `animation` and
+  // update elem’s specified style with the result.
+  animation.commitStyles();
+  animation.cancel();
+});

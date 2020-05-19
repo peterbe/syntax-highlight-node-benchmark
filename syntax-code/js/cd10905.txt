@@ -1,0 +1,3 @@
+window.addEventListener('animationcancel', () => {
+  console.log('Animation canceled');
+});

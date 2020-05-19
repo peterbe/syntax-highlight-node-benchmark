@@ -1,0 +1,2 @@
+<textarea>Try selecting some text in this element.</textarea>
+<p id="log"></p>

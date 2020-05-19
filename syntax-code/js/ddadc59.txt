@@ -1,0 +1,26 @@
+function enableLog(ev) {
+  logEvents = logEvents ? false : true;
+}
+
+function log(name, ev, printTargetIds) {
+  var o = document.getElementsByTagName('output')[0];
+  var s = name + ": touches = " + ev.touches.length + 
+                " ; targetTouches = " + ev.targetTouches.length +
+                " ; changedTouches = " + ev.changedTouches.length;
+  o.innerHTML += s + " 
+";
+
+  if (printTargetIds) {
+    s = "";
+    for (var i=0; i < ev.targetTouches.length; i++) {
+      s += "... id = " + ev.targetTouches[i].identifier + " 
+";
+    }
+    o.innerHTML += s;
+  }
+} 
+
+function clearLog(event) {
+ var o = document.getElementsByTagName('output')[0];
+ o.innerHTML = "";
+}

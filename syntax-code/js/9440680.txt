@@ -1,0 +1,4 @@
+sender.getStats().then(function(stats) {
+  document.getElementById("currentRTT").innerText =
+          stats.roundTripTime;
+});

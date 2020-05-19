@@ -1,0 +1,13 @@
+<div class="wrapper">
+     <div>One</div>
+     <div>Two</div>
+     <div>Three</div>
+     <div>Four
+     <br>This cell   
+     <br>Has extra   
+     <br>content.   
+     <br>Max is auto 
+     <br>so the row expands.
+     </div>
+     <div>Five</div>
+</div>

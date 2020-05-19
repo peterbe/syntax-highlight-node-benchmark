@@ -1,0 +1,11 @@
+div {
+  background-color: yellow;
+  width: 120px;
+  height: 120px;
+}
+
+.exampleText {
+  writing-mode: vertical-rl;
+  padding-inline: 20px 40px;
+  background-color: #c8c800;
+}

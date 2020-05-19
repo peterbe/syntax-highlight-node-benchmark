@@ -1,0 +1,20 @@
+/* Exact resolution */
+@media (resolution: 150dpi) {
+  p {
+    color: red;
+  }
+}
+
+/* Minimum resolution */
+@media (min-resolution: 72dpi) {
+  p {
+    text-decoration: underline;
+  }
+}
+
+/* Maximum resolution */
+@media (max-resolution: 300dpi) {
+  p {
+    background: yellow;
+  }
+}

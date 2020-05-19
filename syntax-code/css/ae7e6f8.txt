@@ -1,0 +1,3 @@
+@supports (property: value) {
+  CSS rules to apply
+}

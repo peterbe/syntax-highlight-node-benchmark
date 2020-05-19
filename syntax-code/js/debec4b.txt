@@ -1,0 +1,6 @@
+pc.onidpassertionerror = function( ev ) {
+                           alert("The idp requested an authentication" +
+                                 " to be performed at th3 URL '" + 
+                                 ev.url + 
+                                 "'.");
+                         }

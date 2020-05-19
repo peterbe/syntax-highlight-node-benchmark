@@ -1,0 +1,4 @@
+myPeerConnection.addEventListener("negotiationneeded", event => {
+  await myPeerConnection.setLocalDescription();
+  signalRemotePeer({ description: myPeerConnection.localDescription });
+});

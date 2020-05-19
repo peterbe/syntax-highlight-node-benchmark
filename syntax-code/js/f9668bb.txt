@@ -1,0 +1,7 @@
+var trackList = document.querySelector("video").videoTracks;
+
+trackList.onchange = function(event) {
+  trackList.forEach(function(track) {
+    updateTrackSelectedButton(track.id, track.selected);
+  });
+};

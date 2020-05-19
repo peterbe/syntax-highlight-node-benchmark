@@ -1,0 +1,22 @@
+body {
+  background: beige;
+}
+
+section {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 400px;
+  height: 160px;
+  padding: 30px 20px;
+  background: lightgray;
+}
+
+p {
+  position: absolute;
+  width: 50%;   /* == (400px + 20px + 20px) * .5 = 220px */
+  height: 25%;  /* == (160px + 30px + 30px) * .25 = 55px */
+  margin: 5%;   /* == (400px + 20px + 20px) * .05 = 22px */
+  padding: 5%;  /* == (400px + 20px + 20px) * .05 = 22px */
+  background: cyan;
+}

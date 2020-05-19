@@ -1,0 +1,5 @@
+<iframe id="frame">
+</iframe>
+
+<div id="info">
+</div>

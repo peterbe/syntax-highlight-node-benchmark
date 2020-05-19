@@ -1,0 +1,9 @@
+@counter-style fisheye {
+  system: cyclic;
+  symbols: ◉;
+  suffix: " ";
+}
+
+ul {
+  list-style: fisheye;
+}

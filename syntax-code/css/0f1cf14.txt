@@ -1,0 +1,9 @@
+@media (-moz-windows-accent-color-in-titlebar: 1) {
+  h1 {
+    color: -moz-win-accentcolortext;
+  }
+
+  body {
+    background-color: -moz-win-accentcolor;
+  }
+}

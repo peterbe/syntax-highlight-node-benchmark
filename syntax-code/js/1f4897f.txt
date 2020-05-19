@@ -1,0 +1,24 @@
+// Create a small helper to show how many PerformanceMark entries there are.
+function logMarkCount() {
+  console.log(
+    "Found this many entries: " + performance.getEntriesByType("mark").length
+  );
+}
+
+// Create a bunch of marks.
+performance.mark("squirrel");
+performance.mark("squirrel");
+performance.mark("monkey");
+performance.mark("monkey");
+performance.mark("dog");
+performance.mark("dog");
+
+logMarkCount() // "Found this many entries: 6"
+
+// Delete just the "squirrel" PerformanceMark entries.
+performance.clearMarks('squirrel');
+logMarkCount() // "Found this many entries: 4"
+
+// Delete all of the PerformanceMark entries.
+performance.clearMarks();
+logMarkCount() // "Found this many entries: 0"

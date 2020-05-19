@@ -1,0 +1,30 @@
+var colorSphere = function(element) {
+    var ctx = canvas1.getContext("2d");
+    var width = 360;
+    var halfWidth = width / 2;
+    var rotate = (1 / 360) * Math.PI * 2; // per degree
+    var offset = 0; // scrollbar offset
+    var oleft = -20;
+    var otop = -20;
+    for (var n = 0; n <= 359; n ++) {
+        var gradient = ctx.createLinearGradient(oleft + halfWidth, otop, oleft + halfWidth, otop + halfWidth);
+        var color = Color.HSV_RGB({ H: (n + 300) % 360, S: 100, V: 100 });
+        gradient.addColorStop(0, "rgba(0,0,0,0)");
+        gradient.addColorStop(0.7, "rgba("+color.R+","+color.G+","+color.B+",1)");
+        gradient.addColorStop(1, "rgba(255,255,255,1)");
+        ctx.beginPath();
+        ctx.moveTo(oleft + halfWidth, otop);
+        ctx.lineTo(oleft + halfWidth, otop + halfWidth);
+        ctx.lineTo(oleft + halfWidth + 6, otop);
+        ctx.fillStyle = gradient;
+        ctx.fill();
+        ctx.translate(oleft + halfWidth, otop + halfWidth);
+        ctx.rotate(rotate);
+        ctx.translate(-(oleft + halfWidth), -(otop + halfWidth));
+    }
+    ctx.beginPath();
+    ctx.fillStyle = "#00f";
+    ctx.fillRect(15,15,30,30)
+    ctx.fill();
+    return ctx.canvas;
+};

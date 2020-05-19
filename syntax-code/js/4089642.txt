@@ -1,0 +1,9 @@
+xrSession.onsqueeze = event => {
+  if (event.inputSource.handedness == user.handedness) {
+    let targetRayPose = event.frame.getPose(event.inputSource.targetRaySpace, myRefSpace);
+
+    if (user.heldObject && targetRayPose) {
+      dropObjectUsingRay(user.heldObject, targetRayPose.transform.matrix):
+    }
+  }
+};

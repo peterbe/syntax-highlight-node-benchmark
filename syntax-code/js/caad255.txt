@@ -1,0 +1,6 @@
+const element = document.getElementById('content');
+const textNode = element.childNodes[0];
+const range = document.createRange();
+range.setStart(textNode, 0);  // Start at first character
+range.setEnd(textNode, 5);    // End at fifth character
+document.getElementById('log').textContent = range;

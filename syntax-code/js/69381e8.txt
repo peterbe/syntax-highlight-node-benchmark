@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.ontimeupdate = (event) => {
+  console.log('The currentTime attribute has been updated. Again.');
+};

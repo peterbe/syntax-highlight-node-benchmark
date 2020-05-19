@@ -1,0 +1,1 @@
+gl.getParameter(gl.TEXTURE_BINDING_2D);

@@ -1,0 +1,5 @@
+<picture> 
+   <source srcset="mdn-logo-wide.png" media="(min-width: 800px)">
+   <source srcset="mdn-logo-medium.png" media="(min-width: 600px)">
+   <img src="mdn-logo-narrow.png" alt="MDN Web Docs">
+</picture>

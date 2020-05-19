@@ -1,0 +1,5 @@
+pc.onsignalingstatechange = function(event) {
+  if (pc.signalingState === "have-local-pranswer") {
+    // setLocalDescription() has been called with an answer
+  }
+};

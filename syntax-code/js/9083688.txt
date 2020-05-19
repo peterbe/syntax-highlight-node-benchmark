@@ -1,0 +1,12 @@
+const xCoord = 50;
+const yCoord = 100;
+const canvasWidth = 1024;
+
+const getColorIndicesForCoord = (x, y, width) => {
+  const red = y * (width * 4) + x * 4;
+  return [red, red + 1, red + 2, red + 3];
+};
+
+const colorIndices = getColorIndicesForCoord(xCoord, yCoord, canvasWidth);
+
+const [redIndex, greenIndex, blueIndex, alphaIndex] = colorIndices;

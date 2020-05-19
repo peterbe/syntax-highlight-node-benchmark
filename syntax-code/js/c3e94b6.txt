@@ -1,0 +1,6 @@
+function start() {
+  canvas = document.getElementById("glcanvas");
+
+  initWebGL(canvas);      // Initialize the GL context
+
+  // WebGL setup code here

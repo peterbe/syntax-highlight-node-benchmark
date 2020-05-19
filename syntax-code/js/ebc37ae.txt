@@ -1,0 +1,6 @@
+gl.getParameter(gl.STENCIL_WRITEMASK);
+// 110101
+gl.getParameter(gl.STENCIL_BACK_WRITEMASK);
+// 110101
+gl.getParameter(gl.STENCIL_BITS);
+// 0

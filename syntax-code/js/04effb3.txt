@@ -1,0 +1,17 @@
+/*
+Fetch the contents of the "message" textbox, and encode it
+in a form we can use for the sign operation.
+*/
+function getMessageEncoding() {
+  const messageBox = document.querySelector(".hmac #message");
+  let message = messageBox.value;
+  let enc = new TextEncoder();
+  return enc.encode(message);
+}
+
+let encoded = getMessageEncoding();
+let signature = await window.crypto.subtle.sign(
+  "HMAC",
+  key,
+  encoded
+);

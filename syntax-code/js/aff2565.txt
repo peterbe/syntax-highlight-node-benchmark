@@ -1,0 +1,13 @@
+let slantLabel = document.querySelector('label[for="slant"]');
+let slantInput = document.querySelector('#slant');
+let sampleText = document.querySelector('.sample');
+
+function update() {
+  let slant = `oblique ${slantInput.value}deg`;
+  slantLabel.textContent = `font-style: ${slant};`;
+  sampleText.style.fontStyle = slant;
+}
+
+slantInput.addEventListener('input', update);
+
+update();

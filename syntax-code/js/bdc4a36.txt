@@ -1,0 +1,11 @@
+window.addEventListener("beforeinstallprompt", function(beforeInstallPromptEvent) {
+  beforeInstallPromptEvent.preventDefault(); // Prevents immediate prompt display
+
+  // Shows prompt after a user clicks an "install" button
+  installButton.addEventListener("click", function(mouseEvent) {
+    // you should not use the MouseEvent here, obviously
+    beforeInstallPromptEvent.prompt();
+  });
+
+  installButton.hidden = false; // Make button operable
+});

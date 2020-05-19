@@ -1,0 +1,2 @@
+<p>This paragraph has <s>some erroneous text</s>
+    inside it that I want to call attention to.</p>

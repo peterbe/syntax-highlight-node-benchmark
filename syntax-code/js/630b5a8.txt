@@ -1,0 +1,5 @@
+function handleMyBackButton() { 
+  if (canGoBack) {
+    window.back();
+  }
+}

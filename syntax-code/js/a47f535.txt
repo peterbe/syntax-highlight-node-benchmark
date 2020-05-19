@@ -1,0 +1,19 @@
+var list = document.querySelector('ul');
+var port2;
+
+// Listen for the intial port transfer message
+window.addEventListener('message', initPort);
+
+// Setup the transfered port
+function initPort(e) {
+  port2 = e.ports[0];
+  port2.onmessage = onMessage;
+}
+
+// Handle messages received on port2
+function onMessage(e) {
+  var listItem = document.createElement('li');
+  listItem.textContent = e.data;
+  list.appendChild(listItem);
+  port2.postMessage('Message received by IFrame: "' + e.data + '"');
+}

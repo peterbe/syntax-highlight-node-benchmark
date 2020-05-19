@@ -1,0 +1,9 @@
+let transform = allComputedStyles.get('transform');
+
+console.log( transform );        // CSSTransformValue {0: CSSScale, 1: CSSTranslate, length: 2, is2D: true}
+console.log( transform.length ); // 1
+console.log( transform[0] );     // CSSScale {x: CSSUnitValue, y: CSSUnitValue, z: CSSUnitValue, is2D: true}
+console.log( transform[0].x );   // CSSUnitValue {value: 0.95, unit: "number"}
+console.log( transform[0].y );      // CSSUnitValue {value: 0.95, unit: "number"}
+console.log( transform[0].z );   // CSSUnitValue {value: 1, unit: "number"}
+console.log( transform.is2D );   // true

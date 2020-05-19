@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+
+function moveTouch(ev) {
+ // Process the event
+}
+
+function init() {
+ var el=document.getElementById("target1");
+ el.ontouchmove = moveTouch;
+}
+
+</script>
+</head>
+
+<body onload="init();">
+<div id="target1"> Touch me ... </div>
+<div id="target2" ontouchmove="moveTouch(event)"> Touch me ... </div>
+</body>
+</html>

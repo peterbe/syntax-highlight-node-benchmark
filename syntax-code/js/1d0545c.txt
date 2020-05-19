@@ -1,0 +1,13 @@
+// Create the matrix3d style property from a matrix array
+function matrixArrayToCssMatrix(array) {
+  return 'matrix3d(' + array.join(',') + ')';
+}
+	
+// Grab the DOM element
+let moveMe = document.getElementById('move-me');
+
+// Returns a result like: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 100, 0, 1);"
+let matrix3dRule = matrixArrayToCssMatrix(translationMatrix);
+
+// Set the transform
+moveMe.style.transform = matrix3dRule;

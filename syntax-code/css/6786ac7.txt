@@ -1,0 +1,5 @@
+<div class="grid">
+  I am a string and will become an anonymous item
+  <div>A grid item</div>
+  <div>A grid item</div>
+</div>

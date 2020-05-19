@@ -1,0 +1,13 @@
+const channel = new MessageChannel();
+const myPort = channel.port1;
+const targetFrame = window.top.frames[1];
+const targetOrigin = 'https://example.org';
+
+const messageControl = document.querySelector('#message');
+const channelMessageButton = document.querySelector('#channel-message');
+
+channelMessageButton.addEventListener('click', () => {
+    myPort.postMessage(messageControl.value);
+})
+
+targetFrame.postMessage('init', targetOrigin, [channel.port2]);

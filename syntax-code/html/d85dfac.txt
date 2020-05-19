@@ -1,0 +1,2 @@
+<div>XPath example</div>
+<div>Tag name of the element having the text content 'XPath example': <output></output></div>

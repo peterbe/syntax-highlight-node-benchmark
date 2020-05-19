@@ -1,0 +1,3 @@
+window.ontransitionrun = () => {
+  console.log('Started transitioning');
+};

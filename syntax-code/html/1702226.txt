@@ -1,0 +1,1 @@
+<p>If you're using a left-to-right interface, this should be red.</p>

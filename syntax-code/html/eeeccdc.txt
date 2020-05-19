@@ -1,0 +1,4 @@
+<label>
+  You’re currently using about <output id="percent">
+  </output>% of your available storage.
+</label>

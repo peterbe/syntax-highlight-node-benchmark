@@ -1,0 +1,3 @@
+window.onanimationend = () => {
+  console.log('Animation ended');
+};

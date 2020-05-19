@@ -1,0 +1,13 @@
+a {
+  border: 1px solid;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+}
+
+a:focus {
+  outline: 4px dotted #e73;
+  outline-offset: 4px;
+  background: #ffa;
+}

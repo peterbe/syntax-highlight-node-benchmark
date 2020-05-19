@@ -1,0 +1,3 @@
+xrSession.onvisibilitychange = (e) => {
+  /* event handled here */
+};

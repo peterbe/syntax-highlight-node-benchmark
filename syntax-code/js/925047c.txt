@@ -1,0 +1,39 @@
+window.addEventListener('load', function () {
+  var ANIMATION = Array.from(document.querySelectorAll('.animation'));
+  var BUTTON    = Array.from(document.querySelectorAll('button'));
+
+  function toggleButton (btn, type) {
+    btn.classList.remove('play', 'pause', 'restart');
+    btn.classList.add(type);
+    btn.title = type.toUpperCase(type);
+  }
+
+  function playPause (i) {
+    var btn  = BUTTON[i];
+    var anim = ANIMATION[i];
+
+    if (btn.classList.contains('play')) {
+      anim.style.animationPlayState = 'running';
+      toggleButton(btn, 'pause');
+    } else if (btn.classList.contains('pause')) {
+      anim.style.animationPlayState = 'paused';
+      toggleButton(btn, 'play');
+    } else {
+      anim.classList.remove('a' + (i + 1));
+      setTimeout(function () {
+        toggleButton(btn, i === 0 ? 'play' : 'pause');
+        anim.style.animationPlayState = '';
+        anim.classList.add('a' + (i + 1));
+      }, 100)
+    }
+  }
+
+  ANIMATION.forEach(function (node, index) {
+    node.addEventListener('animationstart', function () { toggleButton(BUTTON[index], 'pause');   });
+    node.addEventListener('animationend',   function () { toggleButton(BUTTON[index], 'restart'); });
+  });
+
+  BUTTON.forEach(function (btn, index) {
+    btn.addEventListener('click', function () { playPause(index); });
+  });
+})

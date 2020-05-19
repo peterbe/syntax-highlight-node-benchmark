@@ -1,0 +1,6 @@
+var parent = document.createElement("div");
+
+with(parent) { 
+  prepend("foo");
+}
+// ReferenceError: prepend is not defined 

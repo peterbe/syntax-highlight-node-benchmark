@@ -1,0 +1,6 @@
+function startCapture(displayMediaOptions) {
+ let captureStream = null;
+
+ return navigator.mediaDevices.getDisplayMedia(displayMediaOptions)
+    .catch(err => { console.error("Error:" + err); return null; });
+}

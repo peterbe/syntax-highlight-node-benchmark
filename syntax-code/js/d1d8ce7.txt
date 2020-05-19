@@ -1,0 +1,10 @@
+function processsPayment() {
+  const payRequest = new PaymentRequest(methodData, details, options);
+
+  payRequest.onshippingaddresschange = ev => ev.updateWith(checkAddress(payRequest));
+  payRequest.onshippingoptionchange = ev => ev.updateWith(checkShipping(payRequest));
+
+  payRequest.show()
+    .then(response => validateResponse(response))
+    .catch(err => handleError(err));
+}

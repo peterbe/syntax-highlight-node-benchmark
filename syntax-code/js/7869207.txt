@@ -1,0 +1,13 @@
+// Get a LockedFile object from the handle
+var myFile = myFileHandle.open('readwrite');
+
+// Start a writing operation
+var writing = myFile.append('Some content');
+
+writing.onsuccess = function () {
+  console.log('Writing operation successful');
+}
+
+writing.onerror = function () {
+  console.log('Something goes wrong in the writing process: ' + this.error);
+}

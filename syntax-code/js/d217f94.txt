@@ -1,0 +1,13 @@
+var myHeaders = new Headers();
+myHeaders.append('Content-Type', 'image/jpeg');
+
+var myInit = { 
+  method: 'GET',
+  headers: myHeaders,
+  mode: 'cors',
+  cache: 'default' 
+};
+
+var myRequest = new Request('flowers.jpg', myInit);
+
+myContentType = myRequest.headers.get('Content-Type'); // returns 'image/jpeg'

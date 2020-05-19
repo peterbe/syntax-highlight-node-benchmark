@@ -1,0 +1,3 @@
+<p>Type anything into the input box below to log a <code>charCode</code>.</p>
+<input type="text" />
+<p id="log"></p>

@@ -1,0 +1,4 @@
+/* Selects a scoped element */
+:scope {
+  background-color: lime;
+}

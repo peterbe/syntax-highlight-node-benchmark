@@ -1,0 +1,7 @@
+var editable = document.querySelector('p[contenteditable]');
+var result = document.querySelector('.result')
+var dataTransferObj;
+
+editable.addEventListener('input', (e) => {
+  result.textContent = e.dataTransfer.getData('text/html');
+});

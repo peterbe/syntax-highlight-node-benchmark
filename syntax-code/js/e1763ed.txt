@@ -1,0 +1,17 @@
+request.onpaymentmethodchange = ev => {
+  const { type: cardType } = ev.methodDetails;
+  const newStuff = {};
+  if (ev.methodName === "https://apple.com/apple-pay") {
+    switch (cardType) {
+      case "store":
+        // do Apple Pay specific handling for store card...
+        // methodDetails contains the store card information
+        const result = calculateDiscount(ev.methodDetails);
+        Object.assign(newStuff, result);
+        break;
+    }
+  }
+  // finally...
+  ev.updateWith(newStuff);
+};
+const response = await request.show();

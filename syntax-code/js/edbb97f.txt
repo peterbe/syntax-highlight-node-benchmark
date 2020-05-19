@@ -1,0 +1,6 @@
+let audioElement = document.getElementById("audio");
+let logElement = document.getElementById("log");
+
+function log(msg) {
+ logElement.innerHTML += msg + "<br>";
+}

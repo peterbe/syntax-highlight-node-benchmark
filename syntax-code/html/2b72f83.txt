@@ -1,0 +1,3 @@
+<p>Enter the following at the telnet command prompt: <code>set localecho</code><br />
+
+The telnet client should display: <tt>Local Echo is on</tt></p>

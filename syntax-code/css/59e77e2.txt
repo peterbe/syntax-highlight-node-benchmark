@@ -1,0 +1,6 @@
+@supports (animation-name: test) {
+  … /* CSS applied when animations are supported without a prefix */
+  @keyframes { /* Other at-rules can be nested inside */
+    …
+  }
+}

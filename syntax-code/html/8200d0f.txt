@@ -1,0 +1,29 @@
+<h3>A table with a caption</h3>
+<p>Although the table's border box doesn't include the
+  caption, the client rects do include the caption.</p>
+
+<div>
+  <strong>Original</strong>
+  <table>
+    <caption>caption</caption>
+    <thead>
+      <tr><th>thead</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>tbody</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <strong>table's rect</strong>
+  <table class="withClientRectsOverlay">
+    <caption>caption</caption>
+    <thead>
+      <tr><th>thead</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>tbody</td></tr>
+    </tbody>
+  </table>
+</div>

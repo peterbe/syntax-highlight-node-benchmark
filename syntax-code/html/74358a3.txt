@@ -1,0 +1,11 @@
+<div class="example">
+
+    <button type="button">Load video</button>
+    <video controls width="250"></video>
+
+    <div class="event-log">
+        <label>Event log:</label>
+        <textarea readonly class="event-log-contents"></textarea>
+    </div>
+
+</div>

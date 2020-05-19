@@ -1,0 +1,14 @@
+var pc = new RTCPeerConnection();
+
+var channel = pc.createDataChannel("Mydata");
+channel.onopen = function(event) {
+  channel.send('sending a message');
+}
+channel.onmessage = function(event) {
+  console.log(event.data);
+}
+
+// Determine the largest message size that can be sent
+
+var sctp = pc.sctp;
+var maxMessageSize = sctp.maxMessageSize;

@@ -1,0 +1,3 @@
+// Get the first <p> element in the document
+var para = document.getElementsByTagName("p")[0];
+var atts = para.attributes;

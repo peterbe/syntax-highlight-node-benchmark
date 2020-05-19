@@ -1,0 +1,4 @@
+paymentRequest.onshippingaddresschange = event => {
+  let detailsUpdate = checkAddress(paymentRequest.shippingAddress);
+  event.updateWith(detailsUpdate);
+};

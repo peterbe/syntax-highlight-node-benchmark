@@ -1,0 +1,2 @@
+gl.getParameter(gl.CULL_FACE_MODE) === gl.FRONT_AND_BACK;
+// true

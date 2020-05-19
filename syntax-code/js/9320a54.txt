@@ -1,0 +1,11 @@
+// parg is an object reference to a <p> element
+
+// First check that the element has child nodes 
+if (parg.hasChildNodes()) {
+  let children = parg.childNodes;
+
+  for (let i = 0; i < children.length; i++) {
+    // do something with each child as children[i]
+    // NOTE: List is live! Adding or removing children will change the list's `length`
+  }
+}

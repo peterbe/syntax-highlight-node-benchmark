@@ -1,0 +1,20 @@
+const writableStream = new WritableStream({
+  write(chunk) {
+    ...
+  },
+  close() {
+    ...
+  },
+  abort(err) {
+    ...
+  }
+}, queuingStrategy);
+
+...
+
+const writer = writableStream.getWriter();
+
+...
+
+// release writer's lock on the stream when desired
+writer.releaseLock();

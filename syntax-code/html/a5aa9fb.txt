@@ -1,0 +1,11 @@
+<p id="defaultThemes">
+  This paragraph should have a green background with Luna/Royale/Zune/Aero
+  Windows themes and red with other themes.
+</p>
+
+<p id="nonDefaultThemes">
+  This paragraph should have a green background with Windows Classic or
+  third-party themes and red with other themes.
+</p>
+
+<p id="notSupported">Theme detection is not supported.</p>

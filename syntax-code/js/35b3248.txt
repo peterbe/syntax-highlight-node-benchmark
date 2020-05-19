@@ -1,0 +1,2 @@
+// In a Web worker, on the page https://developer.mozilla.org/en-US/URLUtilsReadOnly.pathname
+var result = window.self.pathname; // Returns:'/en-US/URLUtilsReadOnly.pathname'

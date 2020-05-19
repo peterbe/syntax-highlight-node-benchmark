@@ -1,0 +1,5 @@
+<div>This is the first element.</div>
+<div>This is the second element.</div>
+<div>This is the first element.</div>
+
+<p id="output"></p>

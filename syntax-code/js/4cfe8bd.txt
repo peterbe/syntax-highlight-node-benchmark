@@ -1,0 +1,3 @@
+var audioCtx = new AudioContext();
+var compressor = audioCtx.createDynamicsCompressor();
+compressor.ratio.value = 12;

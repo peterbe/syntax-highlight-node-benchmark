@@ -1,0 +1,8 @@
+<form>
+  <label for="startTime">Start time: </label>
+  <input type="time" id="startTime">
+  <p>
+    Value of the <code>time</code> input: <code>
+            "<span id="value">n/a</span>"</code>.
+  </p>
+</form>

@@ -1,0 +1,13 @@
+const messageQueue = [];
+
+let sendMessage = message => {
+  messageQueue.push(message);
+
+  if (messageQueue.length === 1) {
+    queueMicrotask(() => {
+      const json = JSON.stringify(messageQueue);
+      messageQueue.length = 0;
+      fetch("url-of-receiver", json);
+    });
+  }
+};

@@ -1,0 +1,6 @@
+   var objectStore = db.transaction(['toDoList'], "readwrite").objectStore('toDoList');
+
+  objectStore.openCursor().onsuccess = function(event) {
+    var cursor = event.target.result;
+
+    if(cursor) {

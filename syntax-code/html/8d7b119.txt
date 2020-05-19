@@ -1,0 +1,2 @@
+<iframe src="https://mycode.example.net/etc" allow="display-capture">
+</iframe>

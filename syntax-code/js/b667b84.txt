@@ -1,0 +1,2 @@
+var xdr = new XDomainRequest();
+xdr.open("get", "http://example.com/api/method");

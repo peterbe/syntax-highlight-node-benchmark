@@ -1,0 +1,5 @@
+/* Simple usage */
+counter(countername);
+
+/* changing the counter display */
+counter(countername, upper-roman)

@@ -1,0 +1,11 @@
+<form>
+  <div>
+    <label for="week">What week would you like to start?</label>
+    <input id="week" type="week" name="week"
+         min="2017-W01" max="2017-W52" required>
+    <span class="validity"></span> 
+  </div>
+  <div>
+      <input type="submit" value="Submit form">
+  </div>
+</form>

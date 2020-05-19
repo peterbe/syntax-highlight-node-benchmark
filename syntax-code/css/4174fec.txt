@@ -1,0 +1,7 @@
+/* One value */
+height: auto;
+height: 320px;
+height: 15em;
+
+/* Two values */
+height: 320px 200px;

@@ -1,0 +1,3 @@
+scriptNode.onaudioprocess = function(audioProcessingEvent) {
+  ...
+}

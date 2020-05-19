@@ -1,0 +1,6 @@
+const source = document.getElementById('source');
+const textContentOutput = document.getElementById('textContentOutput');
+const innerTextOutput = document.getElementById('innerTextOutput');
+
+textContentOutput.innerHTML = source.textContent;
+innerTextOutput.innerHTML = source.innerText;

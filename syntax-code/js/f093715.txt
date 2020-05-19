@@ -1,0 +1,13 @@
+function depress() {
+  toast.classList.add('depressed');
+}
+
+function release() {
+  toast.classList.remove('depressed');
+}
+
+const toaster = document.querySelector('.toaster');
+const toast = document.querySelector('.toast');
+
+toaster.onmousedown = depress;
+document.onmouseup = release;

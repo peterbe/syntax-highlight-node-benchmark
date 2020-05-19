@@ -1,0 +1,16 @@
+<html>
+<script>
+function cancelTouch(ev) {
+  // Process the event
+}
+function init() {
+  let el = document.getElementById('target1');
+  el.ontouchcancel = cancelTouch;
+}
+</script>
+
+<body onload="init();">
+  <div id="target1"> Touch me ... </div>
+  <div id="target2" ontouchcancel="cancelTouch(event)"> Touch me ... </div>
+</body>
+</html>

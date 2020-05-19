@@ -1,0 +1,5 @@
+let height = CSS.vmax(50);
+
+console.log( height );       // CSSUnitValue {value: 50, unit: "vmax"}
+console.log( height.value )  // 50
+console.log( height.unit )   // vmax

@@ -1,0 +1,7 @@
+// Passing a function reference — do not add '()' after it, which would call the function!
+el.onclick = modifyText;
+
+// Using a function expression
+element.onclick = function() {
+  // ... function logic ...
+};

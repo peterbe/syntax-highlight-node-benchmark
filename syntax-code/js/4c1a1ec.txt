@@ -1,0 +1,1 @@
+var myFOV = new VRFieldOfView(upDegrees, rightDegrees, downDegrees, leftDegrees);

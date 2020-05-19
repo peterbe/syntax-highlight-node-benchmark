@@ -1,0 +1,8 @@
+     // Microsoft extensions
+     interface HTMLImageElement : HTMLElement
+     {
+                  attribute boolean msPlayToDisabled;
+                  attribute boolean msPlayToPrimary;
+                  attribute DOMString msPlayToPreferredSourceUri;
+     };
+

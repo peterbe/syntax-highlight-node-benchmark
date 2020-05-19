@@ -1,0 +1,14 @@
+var supportedInstruments = [{
+  supportedMethods: 'basic-card',
+  data: {
+    supportedNetworks: ['visa', 'mastercard', 'amex', 'jcb',
+                        'diners', 'discover', 'mir', 'unionpay'],
+    supportedTypes: ['credit', 'debit']
+  }
+}];
+
+var details = { ... };
+
+var options = { ... };
+
+var request = new PaymentRequest(supportedInstruments, details, options);

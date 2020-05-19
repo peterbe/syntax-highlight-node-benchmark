@@ -1,0 +1,6 @@
+// Alternative to load event
+document.onreadystatechange = function () {
+  if (document.readyState === 'complete') {
+    initApplication();
+  }
+}

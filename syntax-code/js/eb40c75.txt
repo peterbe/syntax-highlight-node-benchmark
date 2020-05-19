@@ -1,0 +1,9 @@
+function intersectionCallback(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      intersectingCount += 1;
+    } else {
+      intersectingCount -= 1;
+    }
+  });
+}

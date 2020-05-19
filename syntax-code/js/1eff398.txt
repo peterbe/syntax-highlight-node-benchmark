@@ -1,0 +1,2 @@
+gl.getParameter(gl.DEPTH_CLEAR_VALUE);
+// 0.5

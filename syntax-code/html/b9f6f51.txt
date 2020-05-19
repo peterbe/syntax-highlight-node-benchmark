@@ -1,0 +1,2 @@
+<input type="file" id="fileElem" multiple accept="image/*" class="visually-hidden">
+<label for="fileElem">Select some files</label>

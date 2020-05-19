@@ -1,0 +1,13 @@
+CubeDemo.prototype.computePerspectiveMatrix = function() {
+  var fieldOfViewInRadians = Math.PI * 0.5;
+  var aspectRatio = window.innerWidth / window.innerHeight;
+  var nearClippingPlaneDistance = 1;
+  var farClippingPlaneDistance = 50;
+  
+  this.transforms.projection = MDN.perspectiveMatrix(
+    fieldOfViewInRadians,
+    aspectRatio,
+    nearClippingPlaneDistance,
+    farClippingPlaneDistance
+  );
+};

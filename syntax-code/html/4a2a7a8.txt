@@ -1,0 +1,11 @@
+<form>
+  <label>
+    Choose your preferred party date (required, April 1st to 20th):
+    <input type="date" name="party" min="2017-04-01" max="2017-04-20" required>
+    <span class="validity"></span>
+  </label>
+    
+  <p>
+    <button>Submit</button>
+  </p>
+</form>

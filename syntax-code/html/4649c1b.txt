@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <title>Various DOM Tests</title>
+  <script>
+    let visibleScrollbars = window.scrollbars.visible;
+  </script>
+</head>
+<body>
+  <p>Various DOM Tests</p>
+</body>
+</html>

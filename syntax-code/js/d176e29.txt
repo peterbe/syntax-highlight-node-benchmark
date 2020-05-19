@@ -1,0 +1,9 @@
+myPeerConnection = new RTCPeerConnection({
+  iceServers: [
+    {
+      urls: ["turns:turnserver.example.org", "turn:turnserver.example.org"],
+      username: "webrtc",
+      credential: "turnpassword"
+    }
+  ]
+});

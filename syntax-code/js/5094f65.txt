@@ -1,0 +1,4 @@
+let node = document.getElementById("nested");
+if (node.parentNode) {
+  node.parentNode.removeChild(node);
+}

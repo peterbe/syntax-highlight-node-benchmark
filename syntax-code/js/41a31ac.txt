@@ -1,0 +1,5 @@
+let totalTaskCountElem = document.getElementById("totalTaskCount");
+let currentTaskNumberElem = document.getElementById("currentTaskNumber");
+let progressBarElem = document.getElementById("progress");
+let startButtonElem = document.getElementById("startButton");
+let logElem = document.getElementById("log");

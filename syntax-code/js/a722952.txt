@@ -1,0 +1,1 @@
+resizeObserver.observe(divElem, { box : 'border-box' });

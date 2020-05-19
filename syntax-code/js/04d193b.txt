@@ -1,0 +1,13 @@
+function pointerup_handler(ev) {
+  log(ev.type, ev);
+  // Remove this pointer from the cache and reset the target's
+  // background and border
+  remove_event(ev);
+  ev.target.style.background = "white";
+  ev.target.style.border = "1px solid black";
+
+  // If the number of pointers down is less than two then reset diff tracker
+  if (evCache.length < 2) {
+    prevDiff = -1;
+  }
+}

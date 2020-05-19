@@ -1,0 +1,6 @@
+var videoElem = document.getElementById("my_vid");
+var quality = videoElem.getVideoPlaybackQuality();
+
+if (quality.corruptedVideoFrames/quality.totalVideoFrames > 0.05) {
+  downgradeVideo(videoElem);
+}

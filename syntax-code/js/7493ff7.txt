@@ -1,0 +1,10 @@
+element.animate([ 
+  { // from
+    opacity: 0,
+    color: "#fff"
+  }, 
+  { // to
+    opacity: 1,
+ ​   color: "#000"
+  }
+], 2000);

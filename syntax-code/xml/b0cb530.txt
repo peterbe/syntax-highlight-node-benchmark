@@ -1,0 +1,4 @@
+<parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">
+  (error description)
+  <sourcetext>(a snippet of the source XML)</sourcetext>
+</parsererror>

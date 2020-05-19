@@ -1,0 +1,27 @@
+const nodeIterator = document.createNodeIterator(
+  // Node to use as root
+  document.getElementById('someId'),
+
+  // Only consider nodes that are text nodes (nodeType 3)
+  NodeFilter.SHOW_TEXT,
+
+  // Object containing the function to use for the acceptNode method
+  // of the NodeFilter
+    { acceptNode: function(node) {
+      // Logic to determine whether to accept, reject or skip node
+      // In this case, only accept nodes that have content
+      // other than whitespace
+      if ( ! /^\s*$/.test(node.data) ) {
+        return NodeFilter.FILTER_ACCEPT
+      }
+    }
+  },
+  false
+);
+
+// Show the content of every non-empty text node that is a child of root
+let node;
+
+while ((node = nodeIterator.nextNode())) {
+  alert(node.data)
+}

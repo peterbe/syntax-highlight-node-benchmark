@@ -1,0 +1,3 @@
+let osc = audioCtx.createOscillator();
+osc.type = 'sine';
+osc.frequency.value = 880;

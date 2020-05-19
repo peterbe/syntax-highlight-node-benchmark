@@ -1,0 +1,15 @@
+const canvas = document.createElement("canvas");
+canvas.width = 1;
+canvas.height = 1;
+const context = canvas.getContext("2d");
+const imgData = context.getImageData(0, 0, canvas.width, canvas.height);
+const pixels = imgData.data;
+pixels[0 + 0] = 1;
+pixels[0 + 1] = 127;
+pixels[0 + 2] = 255;
+pixels[0 + 3] = 1;
+console.log("before:", pixels);
+context.putImageData(imgData, 0, 0);
+const imgData2 = context.getImageData(0, 0, canvas.width, canvas.height);
+const pixels2 = imgData2.data;
+console.log("after:", pixels2);

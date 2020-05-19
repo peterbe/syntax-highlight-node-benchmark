@@ -1,0 +1,8 @@
+function print(evt) {
+  // the evt parameter is automatically assigned the event object
+  // take care of the differences between console.log & alert
+  console.log('print:', evt)
+  alert(evt)
+}
+// any function should have an appropriate name, that's what called semantic
+table_el.onclick = print   

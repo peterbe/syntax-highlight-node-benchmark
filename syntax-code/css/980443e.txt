@@ -1,0 +1,8 @@
+.scroll1 {
+  -ms-scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: snapInterval(0, 100%);
+}
+
+.scroll2 {
+  -ms-scroll-snap-y: mandatory snapInterval(0, 100%);
+}

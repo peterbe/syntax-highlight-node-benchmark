@@ -1,0 +1,6 @@
+<ul>
+  <li><a id="moz" href="http://www.mozilla.org/">
+    Mozilla Home Page</a></li>
+  <li><a id="mdn" href="https://developer.mozilla.org/">
+    Mozilla Developer Network</a></li>
+</ul>
