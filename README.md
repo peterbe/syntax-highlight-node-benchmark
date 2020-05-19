@@ -1,4 +1,4 @@
-# Syntax Hightlight Node Benchmark
+# Syntax Highlight Node Benchmark
 
 **See [this blog post](https://www.peterbe.com/plog/benchmark-compare-highlight.js-vs-prism)
 for context.**
